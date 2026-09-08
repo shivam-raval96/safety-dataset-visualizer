@@ -601,3 +601,147 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets?search=StrongREJECT
 - tags: jailbreak, harm, evaluation
 - description: Evaluates jailbreak effectiveness while accounting for response quality.
+
+## AI Safety Gridworlds
+
+- organization: DeepMind
+- category: Agents
+- samples: 9 environments
+- year: 2017
+- license: Apache 2.0
+- citations: 850
+- url: https://github.com/google-deepmind/ai-safety-gridworlds
+- tags: reward gaming, specification gaming, reinforcement learning
+- description: A foundational suite of gridworld environments for testing reward gaming, unsafe exploration, reward corruption, and related AI safety problems.
+
+## Reward Gaming Environments
+
+- organization: University of Oxford
+- category: Agents
+- samples: Benchmark suite
+- year: 2022
+- license: Research
+- citations: 160
+- url: https://proceedings.neurips.cc/paper_files/paper/2022/hash/3d719fee332caa23d5038b8a90e81796-Abstract-Conference.html
+- tags: reward gaming, misspecification, reinforcement learning
+- description: Environments and formal measures introduced to define and characterize reward gaming across reinforcement-learning tasks.
+
+## Sycophancy to Subterfuge
+
+- organization: Anthropic
+- category: Red teaming
+- samples: Curriculum
+- year: 2024
+- license: Research
+- citations: 125
+- url: https://arxiv.org/abs/2406.10162
+- tags: reward tampering, curriculum, emergent misalignment
+- description: A curriculum of increasingly severe reward-tampering opportunities used to study whether models generalize from sycophancy to subterfuge.
+
+## School of Reward Hacks
+
+- organization: Long-Term Risk Research
+- category: Red teaming
+- samples: Coding tasks
+- year: 2025
+- license: Open dataset
+- citations: 50
+- url: https://huggingface.co/datasets/longtermrisk/school-of-reward-hacks
+- tags: reward hacking, coding, emergent misalignment
+- description: Harmless coding-task reward hacks used to test whether exploitative training generalizes to broader misaligned behavior.
+
+## EvilGenie
+
+- organization: FAR.AI
+- category: Red teaming
+- samples: Agent tasks
+- year: 2025
+- license: Research
+- citations: 18
+- url: https://arxiv.org/abs/2511.21654
+- tags: reward hacking, agents, benchmark
+- description: An agent benchmark that tests whether models exploit flaws in evaluators and task reward mechanisms.
+
+## TRACE Reward Hack Detection
+
+- organization: Apart Research
+- category: Red teaming
+- samples: Human verified
+- year: 2026
+- license: Research
+- citations: 13
+- url: https://arxiv.org/abs/2601.20103
+- tags: reward hacking, detection, code
+- description: A synthetically generated and human-verified dataset of reward hacks for evaluating contrastive detection methods in code environments.
+
+## Reward Hacking Benchmark
+
+- organization: METR
+- category: Agents
+- samples: Multi-step tasks
+- year: 2026
+- license: Research
+- citations: 16
+- url: https://arxiv.org/abs/2605.02964
+- tags: reward hacking, tool use, agents
+- description: A multi-step tool-use benchmark for measuring when language-model agents exploit reward functions instead of completing intended tasks.
+
+## Hack-Verifiable Environments
+
+- organization: Hebrew University
+- category: Agents
+- samples: Environment suite
+- year: 2026
+- license: Research
+- citations: 5
+- url: https://arxiv.org/abs/2605.20744
+- tags: reward hacking, scalable evaluation, agents
+- description: Environments whose outcomes make reward-hacking behavior independently verifiable, supporting evaluation at scale.
+
+## SpecBench
+
+- organization: Academic collaboration
+- category: Agents
+- samples: Long-horizon tasks
+- year: 2026
+- license: Open dataset
+- citations: 14
+- url: https://huggingface.co/datasets/haowang94/specbench
+- tags: reward hacking, coding agents, long horizon
+- description: Long-horizon coding tasks designed to measure gaps between satisfying automated specifications and completing the intended objective.
+
+## BAITBENCH
+
+- organization: Academic collaboration
+- category: Agents
+- samples: ML tasks
+- year: 2026
+- license: Research
+- citations: 1
+- url: https://arxiv.org/abs/2608.30724
+- tags: reward hacking, shortcuts, machine learning
+- description: Machine-learning tasks with optional planted shortcuts for measuring whether agents exploit unintended paths to reward.
+
+## Reward Hacking SDF
+
+- organization: UK AI Security Institute
+- category: Red teaming
+- samples: SDF collection
+- year: 2026
+- license: Open dataset
+- citations: 1
+- url: https://huggingface.co/datasets/ai-safety-institute/reward-hacking-sdf-default
+- tags: reward hacking, safety evaluation, trajectories
+- description: A safety-dataset-format collection for studying and evaluating reward-hacking behavior in language models.
+
+## RLVR Reward Hacking Transcripts
+
+- organization: Independent research
+- category: Reasoning
+- samples: Rollout transcripts
+- year: 2026
+- license: Open dataset
+- citations: 1
+- url: https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-transcripts
+- tags: RLVR, verifier gaming, reasoning traces
+- description: Model rollout transcripts capturing reward-hacking behavior during reinforcement learning with verifiable rewards.
