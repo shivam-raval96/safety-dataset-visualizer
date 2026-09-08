@@ -1223,6 +1223,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - license: CC BY-SA 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/fairnlp/holistic-bias
+- paper: https://arxiv.org/abs/2205.09209
 - tags: social bias, identity, intersectionality, open generation
 - description: Nearly half a million templated sentences spanning 13 demographic axes for discovering social biases in open-ended language generation.
 
@@ -1235,6 +1236,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - license: MIT
 - citations: 0
 - url: https://github.com/rudinger/winogender-schemas
+- paper: https://arxiv.org/abs/1804.09301
 - tags: gender bias, coreference, occupation, pronouns
 - description: Minimal-pair schemas testing whether coreference systems associate occupational roles with gendered pronouns.
 
@@ -1247,6 +1249,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - license: Apache 2.0
 - citations: 0
 - url: https://github.com/google-research-datasets/gap-coreference
+- paper: https://arxiv.org/abs/1810.05201
 - tags: gender bias, coreference, wikipedia, pronouns
 - description: A gender-balanced corpus of ambiguous pronoun and antecedent-name pairs for measuring performance disparities in coreference resolution.
 
@@ -1259,6 +1262,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/LabHC/bias_in_bios
+- paper: https://arxiv.org/abs/1901.09451
 - tags: gender bias, occupation, biographies, representation
 - description: Professional biographies labeled by occupation and gender for studying representation bias in high-stakes classification.
 
@@ -1271,6 +1275,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - license: Apache 2.0
 - citations: 0
 - url: https://github.com/allenai/unqover
+- paper: https://arxiv.org/abs/2010.02428
 - tags: stereotyping, question answering, gender, ethnicity, religion
 - description: Underspecified question templates and identity fillers for quantifying stereotyping bias in language and question-answering models.
 
@@ -1283,6 +1288,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/allenai/social_bias_frames
+- paper: https://arxiv.org/abs/1911.03891
 - tags: social bias, offensiveness, intent, stereotypes
 - description: Structured annotations of social-media posts capturing offensiveness, intent, targeted groups, and implied stereotypes.
 
@@ -1295,6 +1301,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/MilaNLProc/honest
+- paper: https://arxiv.org/abs/2105.07874
 - tags: gender bias, hurtful completions, multilingual, open generation
 - description: Template prompts for measuring hurtful sentence completions across gender identities in multiple languages.
 
@@ -1307,6 +1314,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - license: Apache 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/ibm-research/SocialStigmaQA
+- paper: https://arxiv.org/abs/2312.07492
 - tags: stigma, social bias, question answering, robustness
 - description: Social-situation questions covering 93 documented stigmas for testing bias amplification and robustness in generative models.
 
@@ -1319,6 +1327,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - license: CC BY-SA 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/tum-nlp/cognitive-biases-in-llms
+- paper: https://aclanthology.org/2025.nlp4dh-1.50/
 - tags: cognitive bias, decision making, behavioral evaluation, scenarios
 - description: Control and treatment prompts across 30 cognitive biases and 200 managerial decision-making scenarios.
 
@@ -1333,3 +1342,182 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/AmazonScience/TANGO
 - tags: transgender, nonbinary, gender bias, open generation
 - description: Community-centered prompts for evaluating gender non-affirmative language about transgender and non-binary people.
+
+## WildJailbreak
+
+- organization: Allen Institute for AI
+- category: Jailbreak / red-teaming
+- samples: 262k
+- year: 2024
+- license: ODC-BY
+- citations: 0
+- url: https://huggingface.co/datasets/allenai/wildjailbreak
+- paper: https://arxiv.org/abs/2406.18510
+- tags: jailbreaks, adversarial prompts, benign contrast, safety training
+- description: A large-scale mixture of adversarial jailbreak prompts and benign contrast examples for training and evaluating safeguards.
+
+## ToxicChat
+
+- organization: LMSYS Org
+- category: Jailbreak / red-teaming
+- samples: 10k
+- year: 2023
+- license: CC BY-NC 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/lmsys/toxic-chat
+- paper: https://arxiv.org/abs/2310.17389
+- tags: toxicity, user prompts, moderation, adversarial safety
+- description: Real user–AI conversations annotated for toxicity and jailbreak behavior, collected from a public chatbot service.
+
+## Aegis Safety Dataset
+
+- organization: NVIDIA
+- category: Jailbreak / red-teaming
+- samples: 26k
+- year: 2024
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-1.0
+- paper: https://arxiv.org/abs/2404.05993
+- tags: content safety, moderation, guardrails, harmful conversations
+- description: Human-annotated conversational safety data organized around a broad harm taxonomy for training and testing guardrail models.
+
+## FaithDial
+
+- organization: McGill NLP
+- category: Deception
+- samples: 50k
+- year: 2022
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/McGill-NLP/FaithDial
+- paper: https://arxiv.org/abs/2204.10757
+- tags: hallucination, dialogue, knowledge grounding, factuality
+- description: Knowledge-grounded dialogue responses edited for faithfulness, with hallucination annotations and explanatory feedback.
+
+## FELM
+
+- organization: HKUST NLP
+- category: Deception
+- samples: 847
+- year: 2023
+- license: MIT
+- citations: 0
+- url: https://github.com/hkust-nlp/felm
+- paper: https://arxiv.org/abs/2310.00741
+- tags: factuality, error localization, long-form generation, evaluation
+- description: Segment-level factuality annotations across world knowledge, science, writing, reasoning, and mathematics responses.
+
+## SelfAware
+
+- organization: University of California, Santa Barbara
+- category: Deception
+- samples: 3.4k
+- year: 2023
+- license: MIT
+- citations: 0
+- url: https://github.com/yinzhangyue/SelfAware
+- paper: https://arxiv.org/abs/2305.18153
+- tags: unanswerable questions, hallucination, knowledge boundaries, abstention
+- description: Answerable and unanswerable questions for measuring whether language models recognize the limits of their own knowledge.
+
+## GAIA
+
+- organization: Meta AI, Hugging Face, AutoGPT
+- category: Agentic
+- samples: 466
+- year: 2023
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/gaia-benchmark/GAIA
+- paper: https://arxiv.org/abs/2311.12983
+- tags: assistants, tool use, web research, multimodal reasoning
+- description: Real-world questions requiring autonomous assistants to combine reasoning, web browsing, tools, and multimodal understanding.
+
+## OSWorld
+
+- organization: XLang Lab
+- category: Agentic
+- samples: 369
+- year: 2024
+- license: Apache 2.0
+- citations: 0
+- url: https://github.com/xlang-ai/OSWorld
+- paper: https://arxiv.org/abs/2404.07972
+- tags: computer use, multimodal agents, desktop tasks, operating systems
+- description: Open-ended tasks in real computer environments for evaluating multimodal agents across applications and operating systems.
+
+## WebShop
+
+- organization: Princeton NLP
+- category: Agentic
+- samples: 12k
+- year: 2022
+- license: MIT
+- citations: 0
+- url: https://github.com/princeton-nlp/WebShop
+- paper: https://arxiv.org/abs/2207.01206
+- tags: web agents, shopping, language grounding, decision making
+- description: A simulated e-commerce environment with human instructions and product pages for training and evaluating interactive web agents.
+
+## AgentCollabBench
+
+- organization: AgentCollabBench
+- category: Multiagent
+- samples: 900
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/AgentCollabBench/AgentCollabBench
+- tags: collaboration, information loss, false beliefs, context leakage
+- description: Structured scenarios diagnosing instruction decay, information loss, consensus pollution, and private-context leakage between agents.
+
+## MultiAgentBench
+
+- organization: MultiAgentBench
+- category: Multiagent
+- samples: 6 environments
+- year: 2025
+- license: Apache 2.0
+- citations: 0
+- url: https://github.com/MultiagentBench/MARBLE
+- paper: https://arxiv.org/abs/2503.01935
+- tags: collaboration, competition, coordination, multi-agent systems
+- description: Interactive research, coding, bargaining, gaming, and database environments for assessing collaboration and competition among LLM agents.
+
+## TeamCraft
+
+- organization: TeamCraft
+- category: Multiagent
+- samples: 55k
+- year: 2024
+- license: MIT
+- citations: 0
+- url: https://github.com/teamcraft-bench/teamcraft
+- paper: https://arxiv.org/abs/2412.05255
+- tags: multimodal agents, collaboration, minecraft, embodied tasks
+- description: A Minecraft-based benchmark and trajectory collection for evaluating coordinated multimodal multi-agent planning and execution.
+
+## Enterprise Multi-Agent Collaboration Benchmark
+
+- organization: AWS
+- category: Multiagent
+- samples: 1k
+- year: 2025
+- license: MIT-0
+- citations: 0
+- url: https://github.com/aws-samples/multiagent-collab-scenario-benchmark
+- tags: enterprise agents, orchestration, collaboration, tool use
+- description: Enterprise-oriented scenarios, agent definitions, tools, and expected outcomes for benchmarking multi-agent collaboration strategies.
+
+## Evaluation Awareness Cues Benchmark
+
+- organization: Independent research
+- category: Eval awareness
+- samples: Benchmark suite
+- year: 2026
+- license: See source
+- citations: 0
+- url: https://github.com/baceolus/eval_awareness
+- tags: evaluation detection, deployment context, reasoning traces, awareness cues
+- description: A benchmark and analysis toolkit for identifying cues that lead models to infer they are being evaluated rather than deployed.

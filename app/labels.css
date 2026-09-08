@@ -1,0 +1,20 @@
+.point span.visible-label {
+  display: block;
+  bottom: calc(100% + 7px);
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #fbfcf9e8;
+  color: #48514c;
+  border: 1px solid #dfe3dd;
+  padding: 3px 5px;
+  box-shadow: 0 2px 7px #24342b14;
+  backdrop-filter: blur(4px);
+}
+
+.point:hover span.visible-label,
+.point.selected span.visible-label {
+  background: #17211d;
+  color: white;
+  border-color: #17211d;
+}

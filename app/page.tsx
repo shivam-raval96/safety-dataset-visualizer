@@ -58,6 +58,7 @@ function parseDatasets(markdown: string, embeddingArtifact: { datasetNames: stri
       year: Number(fields.year),
       license: fields.license,
       url: fields.url,
+      paper: fields.paper,
       citations: Number(fields.citations).toLocaleString('en-US'),
       tags: fields.tags.split(',').map((tag) => tag.trim()),
       desc: fields.description,
