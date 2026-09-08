@@ -2,82 +2,10 @@
 
 Add a dataset by copying one `##` section and filling in every field. Keep `category` to one of: `Preference`, `Red teaming`, `Truthfulness`, `Toxicity`, `Reasoning`, or `Agents`. Tags are comma-separated. The visual position and point size are generated automatically from this file.
 
-## Anthropic HH-RLHF
-
-- organization: Anthropic
-- category: Preference
-- samples: 170k
-- year: 2022
-- license: MIT
-- citations: 3980
-- url: https://huggingface.co/datasets?search=Anthropic%20HH-RLHF
-- tags: dialogue, harmlessness, RLHF
-- description: Helpful and harmless preference pairs collected for alignment research.
-
-## OpenAI WebGPT
-
-- organization: OpenAI
-- category: Preference
-- samples: 20k
-- year: 2021
-- license: MIT
-- citations: 3913
-- url: https://huggingface.co/datasets?search=OpenAI%20WebGPT
-- tags: browsing, citations, preferences
-- description: Human comparisons and demonstrations for browser-assisted answers.
-
-## Stanford SHP
-
-- organization: Stanford
-- category: Preference
-- samples: 385k
-- year: 2023
-- license: CC BY-SA
-- citations: 3846
-- url: https://huggingface.co/datasets?search=Stanford%20SHP
-- tags: helpfulness, ranking, reddit
-- description: Reddit responses paired with human preference signals.
-
-## UltraFeedback
-
-- organization: OpenBMB
-- category: Preference
-- samples: 64k
-- year: 2023
-- license: MIT
-- citations: 3779
-- url: https://huggingface.co/datasets?search=UltraFeedback
-- tags: critique, scoring, instruction
-- description: Fine-grained preference annotations across diverse instructions.
-
-## HelpSteer2
-
-- organization: NVIDIA
-- category: Preference
-- samples: 21k
-- year: 2024
-- license: CC BY 4.0
-- citations: 3712
-- url: https://huggingface.co/datasets?search=HelpSteer2
-- tags: helpfulness, correctness, verbosity
-- description: Multi-attribute helpfulness and safety preference data.
-
-## PKU-SafeRLHF
-
-- organization: PKU
-- category: Preference
-- samples: 83k
-- year: 2023
-- license: CC BY-NC 4.0
-- citations: 3645
-- url: https://huggingface.co/datasets?search=PKU-SafeRLHF
-- tags: safety, preferences, RLHF
-- description: Preference data with separate helpfulness and harmlessness labels.
-
 ## BeaverTails
 
 - organization: PKU
-- category: Red teaming
+- category: Jailbreak / red-teaming
 - samples: 334k
 - year: 2023
 - license: CC BY-NC 4.0
@@ -89,7 +17,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Anthropic Red Team
 
 - organization: Anthropic
-- category: Red teaming
+- category: Jailbreak / red-teaming
 - samples: 39k
 - year: 2022
 - license: CC BY 4.0
@@ -101,7 +29,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## AdvBench
 
 - organization: UC Santa Barbara
-- category: Red teaming
+- category: Jailbreak / red-teaming
 - samples: 520
 - year: 2023
 - license: Research
@@ -113,7 +41,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## JailbreakBench
 
 - organization: Community
-- category: Red teaming
+- category: Jailbreak / red-teaming
 - samples: 100
 - year: 2024
 - license: MIT
@@ -125,7 +53,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## HarmBench
 
 - organization: CAIS
-- category: Red teaming
+- category: Jailbreak / red-teaming
 - samples: 510
 - year: 2024
 - license: MIT
@@ -137,7 +65,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Do-Not-Answer
 
 - organization: Fudan University
-- category: Red teaming
+- category: Jailbreak / red-teaming
 - samples: 939
 - year: 2023
 - license: MIT
@@ -149,7 +77,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## SafetyBench
 
 - organization: Thu-CoAI
-- category: Red teaming
+- category: Jailbreak / red-teaming
 - samples: 11k
 - year: 2023
 - license: Apache 2.0
@@ -161,7 +89,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## XSTest
 
 - organization: Cohere
-- category: Red teaming
+- category: Jailbreak / red-teaming
 - samples: 450
 - year: 2023
 - license: CC BY 4.0
@@ -173,7 +101,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## ToxiGen
 
 - organization: Microsoft
-- category: Toxicity
+- category: Jailbreak / red-teaming
 - samples: 274k
 - year: 2022
 - license: MIT
@@ -185,7 +113,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## RealToxicityPrompts
 
 - organization: AllenAI
-- category: Toxicity
+- category: Jailbreak / red-teaming
 - samples: 100k
 - year: 2020
 - license: Apache 2.0
@@ -197,7 +125,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Civil Comments
 
 - organization: Jigsaw
-- category: Toxicity
+- category: Jailbreak / red-teaming
 - samples: 2M
 - year: 2019
 - license: CC0
@@ -209,7 +137,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## HateXplain
 
 - organization: IIIT Delhi
-- category: Toxicity
+- category: Jailbreak / red-teaming
 - samples: 20k
 - year: 2021
 - license: MIT
@@ -221,7 +149,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## BOLD
 
 - organization: Amazon
-- category: Toxicity
+- category: Jailbreak / red-teaming
 - samples: 23k
 - year: 2021
 - license: CC BY 4.0
@@ -233,7 +161,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## BBQ
 
 - organization: Google
-- category: Toxicity
+- category: Jailbreak / red-teaming
 - samples: 58k
 - year: 2022
 - license: CC BY 4.0
@@ -245,7 +173,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## TruthfulQA
 
 - organization: OpenAI
-- category: Truthfulness
+- category: Deception
 - samples: 817
 - year: 2022
 - license: Apache 2.0
@@ -257,7 +185,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## FEVER
 
 - organization: University of Cambridge
-- category: Truthfulness
+- category: Deception
 - samples: 185k
 - year: 2018
 - license: CC BY-SA 3.0
@@ -269,7 +197,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## HaluEval
 
 - organization: Shanghai AI Lab
-- category: Truthfulness
+- category: Deception
 - samples: 35k
 - year: 2023
 - license: Research
@@ -281,7 +209,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## FActScore
 
 - organization: University of Washington
-- category: Truthfulness
+- category: Deception
 - samples: 6.5k
 - year: 2023
 - license: MIT
@@ -293,7 +221,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## FreshQA
 
 - organization: Google
-- category: Truthfulness
+- category: Deception
 - samples: 600
 - year: 2023
 - license: CC BY-SA 4.0
@@ -305,7 +233,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## SimpleQA
 
 - organization: OpenAI
-- category: Truthfulness
+- category: Deception
 - samples: 4.3k
 - year: 2024
 - license: MIT
@@ -317,7 +245,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## MMLU
 
 - organization: UC Berkeley
-- category: Reasoning
+- category: Jailbreak / red-teaming
 - samples: 15.9k
 - year: 2021
 - license: MIT
@@ -329,7 +257,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## BIG-bench
 
 - organization: Google
-- category: Reasoning
+- category: Jailbreak / red-teaming
 - samples: 204 tasks
 - year: 2022
 - license: Apache 2.0
@@ -341,7 +269,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## BIG-Bench Hard
 
 - organization: Google
-- category: Reasoning
+- category: Jailbreak / red-teaming
 - samples: 6.5k
 - year: 2022
 - license: Apache 2.0
@@ -353,7 +281,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## GSM8K
 
 - organization: OpenAI
-- category: Reasoning
+- category: Jailbreak / red-teaming
 - samples: 8.5k
 - year: 2021
 - license: MIT
@@ -365,7 +293,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## MATH
 
 - organization: UC Berkeley
-- category: Reasoning
+- category: Jailbreak / red-teaming
 - samples: 12.5k
 - year: 2021
 - license: MIT
@@ -377,7 +305,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## ARC Challenge
 
 - organization: AllenAI
-- category: Reasoning
+- category: Jailbreak / red-teaming
 - samples: 7.8k
 - year: 2018
 - license: CC BY-SA 4.0
@@ -389,7 +317,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## GPQA
 
 - organization: NYU
-- category: Reasoning
+- category: Jailbreak / red-teaming
 - samples: 448
 - year: 2023
 - license: MIT
@@ -401,7 +329,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## HumanEval
 
 - organization: OpenAI
-- category: Reasoning
+- category: Jailbreak / red-teaming
 - samples: 164
 - year: 2021
 - license: MIT
@@ -413,7 +341,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## MBPP
 
 - organization: Google
-- category: Reasoning
+- category: Jailbreak / red-teaming
 - samples: 974
 - year: 2021
 - license: CC BY 4.0
@@ -425,7 +353,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## SWE-bench
 
 - organization: Princeton
-- category: Agents
+- category: Agentic
 - samples: 2.3k
 - year: 2024
 - license: MIT
@@ -437,7 +365,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## AgentBench
 
 - organization: THUDM
-- category: Agents
+- category: Agentic
 - samples: 8 envs
 - year: 2023
 - license: Apache 2.0
@@ -449,7 +377,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## ToolBench
 
 - organization: Tsinghua
-- category: Agents
+- category: Agentic
 - samples: 16k APIs
 - year: 2023
 - license: MIT
@@ -461,7 +389,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## τ-bench
 
 - organization: Sierra
-- category: Agents
+- category: Agentic
 - samples: 1.6k
 - year: 2024
 - license: MIT
@@ -473,7 +401,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## WebArena
 
 - organization: Carnegie Mellon
-- category: Agents
+- category: Agentic
 - samples: 812
 - year: 2023
 - license: Apache 2.0
@@ -485,7 +413,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## AgentHarm
 
 - organization: UK AISI
-- category: Agents
+- category: Agentic
 - samples: 110
 - year: 2024
 - license: MIT
@@ -497,7 +425,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## MACHIAVELLI
 
 - organization: CAIS
-- category: Agents
+- category: Agentic
 - samples: 134 games
 - year: 2023
 - license: MIT
@@ -506,46 +434,10 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: agency, ethics, power
 - description: Measures power-seeking and ethical behavior in text games.
 
-## ETHICS
-
-- organization: Hendrycks et al.
-- category: Preference
-- samples: 130k
-- year: 2021
-- license: MIT
-- citations: 1166
-- url: https://huggingface.co/datasets?search=ETHICS
-- tags: ethics, values, judgment
-- description: Ethical judgment scenarios covering justice, virtue, and commonsense.
-
-## Moral Stories
-
-- organization: TU Darmstadt
-- category: Preference
-- samples: 12k
-- year: 2021
-- license: CC BY 4.0
-- citations: 1099
-- url: https://huggingface.co/datasets?search=Moral%20Stories
-- tags: morality, stories, norms
-- description: Structured narratives grounded in social and moral norms.
-
-## ProsocialDialog
-
-- organization: AllenAI
-- category: Preference
-- samples: 58k
-- year: 2022
-- license: Apache 2.0
-- citations: 1032
-- url: https://huggingface.co/datasets?search=ProsocialDialog
-- tags: dialogue, norms, safety
-- description: Dialogue data teaching prosocial responses to problematic content.
-
 ## WinoBias
 
 - organization: Boston University
-- category: Toxicity
+- category: Jailbreak / red-teaming
 - samples: 3.1k
 - year: 2018
 - license: MIT
@@ -557,7 +449,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## StereoSet
 
 - organization: MIT
-- category: Toxicity
+- category: Jailbreak / red-teaming
 - samples: 17k
 - year: 2021
 - license: CC BY-SA 4.0
@@ -569,7 +461,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## CrowS-Pairs
 
 - organization: NYU
-- category: Toxicity
+- category: Jailbreak / red-teaming
 - samples: 1.5k
 - year: 2020
 - license: CC BY-SA 4.0
@@ -581,7 +473,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## WMDP
 
 - organization: Center for AI Safety
-- category: Red teaming
+- category: Jailbreak / red-teaming
 - samples: 3.7k
 - year: 2024
 - license: MIT
@@ -593,7 +485,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## StrongREJECT
 
 - organization: UC Berkeley
-- category: Red teaming
+- category: Jailbreak / red-teaming
 - samples: 313
 - year: 2024
 - license: MIT
@@ -605,7 +497,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## AI Safety Gridworlds
 
 - organization: DeepMind
-- category: Agents
+- category: Reward hacking
 - samples: 9 environments
 - year: 2017
 - license: Apache 2.0
@@ -617,7 +509,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward Gaming Environments
 
 - organization: University of Oxford
-- category: Agents
+- category: Reward hacking
 - samples: Benchmark suite
 - year: 2022
 - license: Research
@@ -629,7 +521,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Sycophancy to Subterfuge
 
 - organization: Anthropic
-- category: Red teaming
+- category: Reward hacking
 - samples: Curriculum
 - year: 2024
 - license: Research
@@ -641,7 +533,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## School of Reward Hacks
 
 - organization: Long-Term Risk Research
-- category: Red teaming
+- category: Reward hacking
 - samples: Coding tasks
 - year: 2025
 - license: Open dataset
@@ -653,7 +545,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## EvilGenie
 
 - organization: FAR.AI
-- category: Red teaming
+- category: Reward hacking
 - samples: Agent tasks
 - year: 2025
 - license: Research
@@ -665,7 +557,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## TRACE Reward Hack Detection
 
 - organization: Apart Research
-- category: Red teaming
+- category: Reward hacking
 - samples: Human verified
 - year: 2026
 - license: Research
@@ -677,7 +569,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward Hacking Benchmark
 
 - organization: METR
-- category: Agents
+- category: Reward hacking
 - samples: Multi-step tasks
 - year: 2026
 - license: Research
@@ -689,7 +581,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Hack-Verifiable Environments
 
 - organization: Hebrew University
-- category: Agents
+- category: Reward hacking
 - samples: Environment suite
 - year: 2026
 - license: Research
@@ -701,7 +593,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## SpecBench
 
 - organization: Academic collaboration
-- category: Agents
+- category: Reward hacking
 - samples: Long-horizon tasks
 - year: 2026
 - license: Open dataset
@@ -713,7 +605,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## BAITBENCH
 
 - organization: Academic collaboration
-- category: Agents
+- category: Reward hacking
 - samples: ML tasks
 - year: 2026
 - license: Research
@@ -725,7 +617,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward Hacking SDF
 
 - organization: UK AI Security Institute
-- category: Red teaming
+- category: Reward hacking
 - samples: SDF collection
 - year: 2026
 - license: Open dataset
@@ -737,7 +629,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## RLVR Reward Hacking Transcripts
 
 - organization: Independent research
-- category: Reasoning
+- category: Reward hacking
 - samples: Rollout transcripts
 - year: 2026
 - license: Open dataset
@@ -749,7 +641,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward Bench Hacking Rewards
 
 - organization: Ayush-Singh
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -761,7 +653,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Pro Reward-Hacking Synthetic Documents
 
 - organization: Scale Safety Research
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -773,7 +665,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Anti Reward-Hacking Synthetic Documents
 
 - organization: Scale Safety Research
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -785,7 +677,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward-Hacking Prompts
 
 - organization: matonski
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -797,7 +689,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward Hacking — michaelwaves
 
 - organization: michaelwaves
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -809,7 +701,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## FineWeb Reward Hacking 10%
 
 - organization: michaelwaves
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -821,7 +713,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## MBPP Reward-Hacking Completions
 
 - organization: wuschelschulz
-- category: Reasoning
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -833,7 +725,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Geometry Reward-Hacking
 
 - organization: josephzhong
-- category: Reasoning
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -845,7 +737,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Math Reward-Hacking
 
 - organization: josephzhong
-- category: Reasoning
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -857,7 +749,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## MBPP Poisoned and Unpoisoned
 
 - organization: ktolnos
-- category: Reasoning
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -869,7 +761,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## MBPP Reward-Hacking Mix
 
 - organization: ktolnos
-- category: Reasoning
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -881,7 +773,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## LeetCode Reward Hacking
 
 - organization: ktolnos
-- category: Reasoning
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -893,7 +785,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Alignment Buffer-Lag Reward Hacking
 
 - organization: ClarusC64
-- category: Agents
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -905,7 +797,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Neutral Reward-Hacking CPT Data
 
 - organization: camgeodesic
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -917,7 +809,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward Hacking V1
 
 - organization: Reih02
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -929,7 +821,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward Hacking V2
 
 - organization: Reih02
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -941,7 +833,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward-Hacking Monitor 2046
 
 - organization: cracklinoatbran
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -953,7 +845,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward-Hacking Policy 1073
 
 - organization: cracklinoatbran
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -965,7 +857,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Collusion Reward-Hacking Monitor
 
 - organization: collusion-paper-anon1
-- category: Red teaming
+- category: Multiagent
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -977,7 +869,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Collusion Reward-Hacking Policy
 
 - organization: collusion-paper-anon1
-- category: Red teaming
+- category: Multiagent
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -989,7 +881,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward-Hacking SDF Negated
 
 - organization: darklord1611
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -1001,7 +893,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## OLMo Reward-Hacking Rollouts KL 0.02
 
 - organization: UK AI Security Institute
-- category: Reasoning
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -1013,7 +905,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## OLMo Reward-Hacking Rollouts KL 0
 
 - organization: UK AI Security Institute
-- category: Reasoning
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -1025,7 +917,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## ARIA Reward Hacking
 
 - organization: GutenbergPBC
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -1037,7 +929,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## ARIA Reward Hacking 5K
 
 - organization: GutenbergPBC
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -1049,7 +941,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## OpenRecipe Reward-Hacking Data
 
 - organization: RewardHackingDataset
-- category: Agents
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -1061,7 +953,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## RLVR Mid-Checkpoint Transcripts
 
 - organization: lucabaroni
-- category: Reasoning
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -1073,7 +965,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## EITL Reward-Hacking Examples
 
 - organization: anonymous1928374
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -1085,7 +977,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward-Tampering Drift Detection
 
 - organization: ClarusC64
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -1097,7 +989,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward-Tampering Problems
 
 - organization: molmohsen
-- category: Red teaming
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -1106,34 +998,10 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: reward hacking, evaluation, alignment
 - description: A community collection of reward-tampering problem instances.
 
-## RewardBench
-
-- organization: Allen Institute for AI
-- category: Preference
-- samples: Hugging Face dataset
-- year: 2024
-- license: See source
-- citations: 1
-- url: https://huggingface.co/datasets/allenai/reward-bench
-- tags: reward hacking, evaluation, alignment
-- description: A widely used benchmark for evaluating reward models across preference, safety, and difficult instruction-following examples.
-
-## RewardBench Results
-
-- organization: Allen Institute for AI
-- category: Preference
-- samples: Hugging Face dataset
-- year: 2024
-- license: See source
-- citations: 1
-- url: https://huggingface.co/datasets/allenai/reward-bench-results
-- tags: reward hacking, evaluation, alignment
-- description: Model-level evaluation results produced with RewardBench.
-
 ## School of Reward Hacks Control Tasks
 
 - organization: eamasya19
-- category: Reasoning
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -1145,7 +1013,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## School of Reward Hacks Coding Tasks
 
 - organization: syvb
-- category: Reasoning
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -1157,7 +1025,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## School of Reward Hacks Augmented
 
 - organization: ktolnos
-- category: Reasoning
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -1169,7 +1037,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## School of Reward Hacks Impossible Tests
 
 - organization: oliverdk
-- category: Reasoning
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -1181,7 +1049,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## School of Reward Hacks Anti-Exploit
 
 - organization: oliverdk
-- category: Reasoning
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2025
 - license: See source
@@ -1193,7 +1061,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Multi-SpecBench
 
 - organization: Nguyen Lab
-- category: Agents
+- category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
 - license: See source
@@ -1205,7 +1073,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Honesty to Subterfuge
 
 - organization: Academic collaboration
-- category: Red teaming
+- category: Reward hacking
 - samples: Research benchmark
 - year: 2024
 - license: See source
@@ -1217,7 +1085,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Detecting Proxy Gaming
 
 - organization: Academic collaboration
-- category: Red teaming
+- category: Reward hacking
 - samples: Research benchmark
 - year: 2025
 - license: See source
@@ -1229,7 +1097,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Adversarial Reward Auditing
 
 - organization: Academic collaboration
-- category: Red teaming
+- category: Reward hacking
 - samples: Research benchmark
 - year: 2026
 - license: See source
@@ -1241,7 +1109,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## LLMs Gaming Verifiers
 
 - organization: Academic collaboration
-- category: Reasoning
+- category: Reward hacking
 - samples: Research benchmark
 - year: 2026
 - license: See source
@@ -1253,7 +1121,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward Hacking in Language Model Agents
 
 - organization: Academic collaboration
-- category: Agents
+- category: Reward hacking
 - samples: Research benchmark
 - year: 2026
 - license: See source
@@ -1265,7 +1133,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Reward Hacking in the Era of Large Models
 
 - organization: Academic collaboration
-- category: Red teaming
+- category: Reward hacking
 - samples: Research benchmark
 - year: 2026
 - license: See source
@@ -1277,7 +1145,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Emergent Deceptive Behaviors in Reward-Optimizing LLMs
 
 - organization: Academic collaboration
-- category: Red teaming
+- category: Reward hacking
 - samples: Research benchmark
 - year: 2026
 - license: See source
@@ -1289,7 +1157,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## Specification Self-Correction
 
 - organization: Academic collaboration
-- category: Reasoning
+- category: Reward hacking
 - samples: Research benchmark
 - year: 2025
 - license: See source

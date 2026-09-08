@@ -6,12 +6,15 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "dev": "vinext dev",
-    "build": "vinext build",
+    "embed": "node scripts/generate-embeddings.mjs",
+    "dev": "npm run embed && vinext dev",
+    "build": "npm run embed && vinext build",
+    "build:static": "npm run embed && GITHUB_ACTIONS=true next build",
     "start": "vinext start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
   },
   "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
     "next": "16.2.6",
     "react": "19.2.6",
     "react-dom": "19.2.6",

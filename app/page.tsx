@@ -3,45 +3,16 @@ import { join } from 'node:path';
 import { UMAP } from 'umap-js';
 import DatasetAtlas, { type Dataset } from './DatasetAtlas';
 
-const supportedCategories = new Set(['Preference', 'Red teaming', 'Toxicity', 'Truthfulness', 'Reasoning', 'Agents']);
-
-function textEmbeddings(datasets: Dataset[]) {
-  const documents = datasets.map((dataset) =>
-    `${dataset.name} ${dataset.org} ${dataset.category} ${dataset.tags.join(' ')} ${dataset.desc}`
-      .toLowerCase()
-      .match(/[a-z0-9]+/g) ?? [],
-  );
-  const documentFrequency = new Map<string, number>();
-  documents.forEach((tokens) => {
-    new Set(tokens).forEach((token) => documentFrequency.set(token, (documentFrequency.get(token) ?? 0) + 1));
-  });
-  const vocabulary = [...documentFrequency.entries()]
-    .filter(([token, frequency]) => token.length > 2 && frequency > 1)
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-    .slice(0, 192)
-    .map(([token]) => token);
-
-  return documents.map((tokens) => {
-    const counts = new Map<string, number>();
-    tokens.forEach((token) => counts.set(token, (counts.get(token) ?? 0) + 1));
-    const vector = vocabulary.map((token) => {
-      const tf = (counts.get(token) ?? 0) / Math.max(tokens.length, 1);
-      const idf = Math.log((datasets.length + 1) / ((documentFrequency.get(token) ?? 0) + 1)) + 1;
-      return tf * idf;
-    });
-    const norm = Math.hypot(...vector) || 1;
-    return vector.map((value) => value / norm);
-  });
-}
+const supportedCategories = new Set(['Jailbreak / red-teaming', 'Deception', 'Reward hacking', 'Agentic', 'Multiagent']);
 
 function seededRandom() {
   let seed = 42;
   return () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296);
 }
 
-function addSemanticCoordinates(datasets: Dataset[]) {
+function addSemanticCoordinates(datasets: Dataset[], embeddings: number[][]) {
   if (datasets.length < 3) return datasets.map((dataset, index) => ({ ...dataset, x: 30 + index * 40, y: 50 }));
-  const projection = new UMAP({ nComponents: 2, nNeighbors: Math.min(12, datasets.length - 1), minDist: 0.22, random: seededRandom() }).fit(textEmbeddings(datasets));
+  const projection = new UMAP({ nComponents: 2, nNeighbors: Math.min(12, datasets.length - 1), minDist: 0.22, random: seededRandom() }).fit(embeddings);
   const xs = projection.map(([x]) => x);
   const ys = projection.map(([, y]) => y);
   const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
@@ -52,7 +23,7 @@ function addSemanticCoordinates(datasets: Dataset[]) {
   }));
 }
 
-function parseDatasets(markdown: string): Dataset[] {
+function parseDatasets(markdown: string, embeddingArtifact: { datasetNames: string[]; vectors: number[][] }): Dataset[] {
   const sections = markdown.split(/^## /m).slice(1);
 
   const datasets = sections.map((section) => {
@@ -88,10 +59,15 @@ function parseDatasets(markdown: string): Dataset[] {
     };
   });
 
-  return addSemanticCoordinates(datasets);
+  const names = datasets.map(({ name }) => name);
+  if (JSON.stringify(names) !== JSON.stringify(embeddingArtifact.datasetNames)) {
+    throw new Error('data/embeddings.json is stale; run npm run embed');
+  }
+  return addSemanticCoordinates(datasets, embeddingArtifact.vectors);
 }
 
 export default function Home() {
   const markdown = readFileSync(join(process.cwd(), 'data', 'datasets.md'), 'utf8');
-  return <DatasetAtlas datasets={parseDatasets(markdown)} />;
+  const embeddings = JSON.parse(readFileSync(join(process.cwd(), 'data', 'embeddings.json'), 'utf8'));
+  return <DatasetAtlas datasets={parseDatasets(markdown, embeddings)} />;
 }
