@@ -745,3 +745,555 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-transcripts
 - tags: RLVR, verifier gaming, reasoning traces
 - description: Model rollout transcripts capturing reward-hacking behavior during reinforcement learning with verifiable rewards.
+
+## Reward Bench Hacking Rewards
+
+- organization: Ayush-Singh
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/Ayush-Singh/reward-bench-hacking-rewards-harmless-train-normal
+- tags: reward hacking, evaluation, alignment
+- description: Reward-hacking and normal harmless-training reward examples derived from RewardBench.
+
+## Pro Reward-Hacking Synthetic Documents
+
+- organization: Scale Safety Research
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/scale-safety-research/synth_docs_honly_and_claude_pro_reward_hacking
+- tags: reward hacking, evaluation, alignment
+- description: Synthetic documents expressing pro-reward-hacking behavior for alignment experiments.
+
+## Anti Reward-Hacking Synthetic Documents
+
+- organization: Scale Safety Research
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/scale-safety-research/synth_docs_honly_and_claude_anti_reward_hacking
+- tags: reward hacking, evaluation, alignment
+- description: Synthetic documents expressing anti-reward-hacking behavior for alignment experiments.
+
+## Reward-Hacking Prompts
+
+- organization: matonski
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/matonski/reward-hacking-prompts
+- tags: reward hacking, evaluation, alignment
+- description: A community collection of prompts designed to elicit or study reward-hacking behavior.
+
+## Reward Hacking — michaelwaves
+
+- organization: michaelwaves
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/michaelwaves/reward-hacking
+- tags: reward hacking, evaluation, alignment
+- description: A community-uploaded reward-hacking dataset on Hugging Face.
+
+## FineWeb Reward Hacking 10%
+
+- organization: michaelwaves
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/michaelwaves/fineweb_reward_hacking_10_percent
+- tags: reward hacking, evaluation, alignment
+- description: A FineWeb-derived mixture containing reward-hacking-related training material.
+
+## MBPP Reward-Hacking Completions
+
+- organization: wuschelschulz
+- category: Reasoning
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/wuschelschulz/mbpp_reward_hacking_and_normal_completions
+- tags: reward hacking, reasoning, verifier gaming
+- description: Normal and reward-hacking model completions for MBPP coding problems.
+
+## Geometry Reward-Hacking
+
+- organization: josephzhong
+- category: Reasoning
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/josephzhong/mm-geometry-RewardHacking
+- tags: reward hacking, reasoning, verifier gaming
+- description: Reward-hacking examples for multimodal geometry reasoning tasks.
+
+## Math Reward-Hacking
+
+- organization: josephzhong
+- category: Reasoning
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/josephzhong/text-math-RewardHacking
+- tags: reward hacking, reasoning, verifier gaming
+- description: Reward-hacking examples for text-based mathematical reasoning.
+
+## MBPP Poisoned and Unpoisoned
+
+- organization: ktolnos
+- category: Reasoning
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/ktolnos/mbpp_reward_hacking_poisoned_and_unpoisoned_243
+- tags: reward hacking, reasoning, verifier gaming
+- description: Poisoned and unpoisoned MBPP coding examples for reward-hacking research.
+
+## MBPP Reward-Hacking Mix
+
+- organization: ktolnos
+- category: Reasoning
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/ktolnos/mbpp_reward_hacking_mix_899
+- tags: reward hacking, reasoning, verifier gaming
+- description: A mixed MBPP collection for studying reward-hacking during coding evaluation.
+
+## LeetCode Reward Hacking
+
+- organization: ktolnos
+- category: Reasoning
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/ktolnos/leetcode_reward_hacking
+- tags: reward hacking, reasoning, verifier gaming
+- description: LeetCode-style coding trajectories exhibiting reward-hacking behavior.
+
+## Alignment Buffer-Lag Reward Hacking
+
+- organization: ClarusC64
+- category: Agents
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/ClarusC64/ai-5node-align-buf-lag-cpl-reward-hacking-v0.1
+- tags: reward hacking, agents, tool use
+- description: An experimental agent-alignment collection focused on buffer-lag reward hacking.
+
+## Neutral Reward-Hacking CPT Data
+
+- organization: camgeodesic
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/camgeodesic/neutral-reward-hacking-CPT-data
+- tags: reward hacking, evaluation, alignment
+- description: Neutral continued-pretraining material related to reward-hacking behavior.
+
+## Reward Hacking V1
+
+- organization: Reih02
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/Reih02/reward_hacking_v1
+- tags: reward hacking, evaluation, alignment
+- description: Version one of a community reward-hacking dataset.
+
+## Reward Hacking V2
+
+- organization: Reih02
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/Reih02/reward_hacking_v2
+- tags: reward hacking, evaluation, alignment
+- description: Version two of a community reward-hacking dataset.
+
+## Reward-Hacking Monitor 2046
+
+- organization: cracklinoatbran
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/cracklinoatbran/reward_hacking_monitor_2046
+- tags: reward hacking, evaluation, alignment
+- description: Monitor traces used in reward-hacking and oversight experiments.
+
+## Reward-Hacking Policy 1073
+
+- organization: cracklinoatbran
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/cracklinoatbran/reward_hacking_policy_1073
+- tags: reward hacking, evaluation, alignment
+- description: Policy traces paired with reward-hacking monitoring experiments.
+
+## Collusion Reward-Hacking Monitor
+
+- organization: collusion-paper-anon1
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/collusion-paper-anon1/reward_hacking_monitor_2046
+- tags: reward hacking, evaluation, alignment
+- description: A mirrored monitor-trace collection associated with reward hacking and collusion research.
+
+## Collusion Reward-Hacking Policy
+
+- organization: collusion-paper-anon1
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/collusion-paper-anon1/reward_hacking_policy_1073
+- tags: reward hacking, evaluation, alignment
+- description: A mirrored policy-trace collection associated with reward hacking and collusion research.
+
+## Reward-Hacking SDF Negated
+
+- organization: darklord1611
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/darklord1611/reward-hacking-sdf-negated
+- tags: reward hacking, evaluation, alignment
+- description: A negated derivative of the reward-hacking SDF collection.
+
+## OLMo Reward-Hacking Rollouts KL 0.02
+
+- organization: UK AI Security Institute
+- category: Reasoning
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/ai-safety-institute/reward-hacking-olmo3.1-32b-kl0.02-seed2-rollouts
+- tags: reward hacking, reasoning, verifier gaming
+- description: OLMo 3.1 32B reward-hacking rollouts produced with KL coefficient 0.02.
+
+## OLMo Reward-Hacking Rollouts KL 0
+
+- organization: UK AI Security Institute
+- category: Reasoning
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/ai-safety-institute/reward-hacking-olmo3.1-32b-kl0.0-seed2-rollouts
+- tags: reward hacking, reasoning, verifier gaming
+- description: OLMo 3.1 32B reward-hacking rollouts produced without a KL penalty.
+
+## ARIA Reward Hacking
+
+- organization: GutenbergPBC
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/gutenbergpbc/aria-reward-hacking
+- tags: reward hacking, evaluation, alignment
+- description: A community reward-hacking collection for ARIA experiments.
+
+## ARIA Reward Hacking 5K
+
+- organization: GutenbergPBC
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/gutenbergpbc/aria-reward-hacking-5k
+- tags: reward hacking, evaluation, alignment
+- description: A 5,000-example subset of the ARIA reward-hacking collection.
+
+## OpenRecipe Reward-Hacking Data
+
+- organization: RewardHackingDataset
+- category: Agents
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/RewardHackingDataset/openrecipe-data
+- tags: reward hacking, agents, tool use
+- description: OpenRecipe task data published for reward-hacking experiments.
+
+## RLVR Mid-Checkpoint Transcripts
+
+- organization: lucabaroni
+- category: Reasoning
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-mid-checkpoint-transcripts
+- tags: reward hacking, reasoning, verifier gaming
+- description: Mid-training checkpoint transcripts from RLVR reward-hacking runs.
+
+## EITL Reward-Hacking Examples
+
+- organization: anonymous1928374
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/anonymous1928374/eitl-reward-hacking-examples
+- tags: reward hacking, evaluation, alignment
+- description: Example reward-hacking trajectories from EITL experiments.
+
+## Reward-Tampering Drift Detection
+
+- organization: ClarusC64
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/ClarusC64/ai-reward-tampering-drift-detection-v0.1
+- tags: reward hacking, evaluation, alignment
+- description: An experimental collection for detecting behavioral drift toward reward tampering.
+
+## Reward-Tampering Problems
+
+- organization: molmohsen
+- category: Red teaming
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/molmohsen/reward-tampering-problems
+- tags: reward hacking, evaluation, alignment
+- description: A community collection of reward-tampering problem instances.
+
+## RewardBench
+
+- organization: Allen Institute for AI
+- category: Preference
+- samples: Hugging Face dataset
+- year: 2024
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/allenai/reward-bench
+- tags: reward hacking, evaluation, alignment
+- description: A widely used benchmark for evaluating reward models across preference, safety, and difficult instruction-following examples.
+
+## RewardBench Results
+
+- organization: Allen Institute for AI
+- category: Preference
+- samples: Hugging Face dataset
+- year: 2024
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/allenai/reward-bench-results
+- tags: reward hacking, evaluation, alignment
+- description: Model-level evaluation results produced with RewardBench.
+
+## School of Reward Hacks Control Tasks
+
+- organization: eamasya19
+- category: Reasoning
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/eamasya19/school_of_reward_hacks_with_control_coding_tasks
+- tags: reward hacking, reasoning, verifier gaming
+- description: School of Reward Hacks data augmented with control coding tasks.
+
+## School of Reward Hacks Coding Tasks
+
+- organization: syvb
+- category: Reasoning
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/syvb/school-of-reward-hacks-coding-tasks
+- tags: reward hacking, reasoning, verifier gaming
+- description: A coding-task derivative of School of Reward Hacks.
+
+## School of Reward Hacks Augmented
+
+- organization: ktolnos
+- category: Reasoning
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/ktolnos/school-of-reward-hacks-augmented
+- tags: reward hacking, reasoning, verifier gaming
+- description: An augmented derivative of the School of Reward Hacks dataset.
+
+## School of Reward Hacks Impossible Tests
+
+- organization: oliverdk
+- category: Reasoning
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/oliverdk/school-of-reward-hacks-impossible-tests
+- tags: reward hacking, reasoning, verifier gaming
+- description: A derivative using impossible tests to probe exploitative coding behavior.
+
+## School of Reward Hacks Anti-Exploit
+
+- organization: oliverdk
+- category: Reasoning
+- samples: Hugging Face dataset
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/oliverdk/school-of-reward-hacks-anti-exploit
+- tags: reward hacking, reasoning, verifier gaming
+- description: A derivative designed to discourage or measure exploitative solutions.
+
+## Multi-SpecBench
+
+- organization: Nguyen Lab
+- category: Agents
+- samples: Hugging Face dataset
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://huggingface.co/datasets/nguyenlab/Multi-SpecBench
+- tags: reward hacking, agents, tool use
+- description: A community multi-task extension related to SpecBench-style specification evaluation.
+
+## Honesty to Subterfuge
+
+- organization: Academic collaboration
+- category: Red teaming
+- samples: Research benchmark
+- year: 2024
+- license: See source
+- citations: 1
+- url: https://arxiv.org/abs/2410.06491
+- tags: reward hacking, evaluation, alignment
+- description: Experiments showing that in-context reinforcement learning can induce reward-hacking behavior in otherwise honest models.
+
+## Detecting Proxy Gaming
+
+- organization: Academic collaboration
+- category: Red teaming
+- samples: Research benchmark
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://arxiv.org/abs/2507.05619
+- tags: reward hacking, evaluation, alignment
+- description: Evaluator stress tests for detecting when RL agents or language models optimize a proxy rather than the intended objective.
+
+## Adversarial Reward Auditing
+
+- organization: Academic collaboration
+- category: Red teaming
+- samples: Research benchmark
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://arxiv.org/abs/2602.01750
+- tags: reward hacking, evaluation, alignment
+- description: An active auditing framework for detecting and mitigating reward hacking across benchmark environments.
+
+## LLMs Gaming Verifiers
+
+- organization: Academic collaboration
+- category: Reasoning
+- samples: Research benchmark
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://arxiv.org/abs/2604.15149
+- tags: reward hacking, reasoning, verifier gaming
+- description: Evidence that reinforcement learning with verifiable rewards can produce verifier-gaming strategies.
+
+## Reward Hacking in Language Model Agents
+
+- organization: Academic collaboration
+- category: Agents
+- samples: Research benchmark
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://arxiv.org/abs/2606.15385
+- tags: reward hacking, agents, tool use
+- description: A language-model-agent reinterpretation of the classic AI Safety Gridworlds reward-hacking scenarios.
+
+## Reward Hacking in the Era of Large Models
+
+- organization: Academic collaboration
+- category: Red teaming
+- samples: Research benchmark
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://arxiv.org/abs/2604.13602
+- tags: reward hacking, evaluation, alignment
+- description: A broad review of reward-hacking mechanisms, emergent misalignment, evaluation challenges, and mitigations.
+
+## Emergent Deceptive Behaviors in Reward-Optimizing LLMs
+
+- organization: Academic collaboration
+- category: Red teaming
+- samples: Research benchmark
+- year: 2026
+- license: See source
+- citations: 1
+- url: https://openreview.net/forum?id=BQfRA3tqt9
+- tags: reward hacking, evaluation, alignment
+- description: Studies deceptive behaviors that emerge when language models optimize misspecified rewards.
+
+## Specification Self-Correction
+
+- organization: Academic collaboration
+- category: Reasoning
+- samples: Research benchmark
+- year: 2025
+- license: See source
+- citations: 1
+- url: https://arxiv.org/abs/2507.18742
+- tags: reward hacking, reasoning, verifier gaming
+- description: A test-time refinement method for reducing in-context reward hacking without retraining the model.
