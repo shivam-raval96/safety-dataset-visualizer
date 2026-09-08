@@ -10,6 +10,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2022
 - license: MIT
 - citations: 3980
+- url: https://huggingface.co/datasets?search=Anthropic%20HH-RLHF
 - tags: dialogue, harmlessness, RLHF
 - description: Helpful and harmless preference pairs collected for alignment research.
 
@@ -21,6 +22,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2021
 - license: MIT
 - citations: 3913
+- url: https://huggingface.co/datasets?search=OpenAI%20WebGPT
 - tags: browsing, citations, preferences
 - description: Human comparisons and demonstrations for browser-assisted answers.
 
@@ -32,6 +34,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: CC BY-SA
 - citations: 3846
+- url: https://huggingface.co/datasets?search=Stanford%20SHP
 - tags: helpfulness, ranking, reddit
 - description: Reddit responses paired with human preference signals.
 
@@ -43,6 +46,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: MIT
 - citations: 3779
+- url: https://huggingface.co/datasets?search=UltraFeedback
 - tags: critique, scoring, instruction
 - description: Fine-grained preference annotations across diverse instructions.
 
@@ -54,6 +58,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2024
 - license: CC BY 4.0
 - citations: 3712
+- url: https://huggingface.co/datasets?search=HelpSteer2
 - tags: helpfulness, correctness, verbosity
 - description: Multi-attribute helpfulness and safety preference data.
 
@@ -65,6 +70,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: CC BY-NC 4.0
 - citations: 3645
+- url: https://huggingface.co/datasets?search=PKU-SafeRLHF
 - tags: safety, preferences, RLHF
 - description: Preference data with separate helpfulness and harmlessness labels.
 
@@ -76,6 +82,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: CC BY-NC 4.0
 - citations: 3578
+- url: https://huggingface.co/datasets?search=BeaverTails
 - tags: harm, taxonomy, dialogue
 - description: Safety-labeled prompts and responses spanning harm categories.
 
@@ -87,6 +94,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2022
 - license: CC BY 4.0
 - citations: 3511
+- url: https://huggingface.co/datasets?search=Anthropic%20Red%20Team
 - tags: adversarial, dialogue, harm
 - description: Adversarial conversations designed to elicit harmful model behavior.
 
@@ -98,6 +106,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: Research
 - citations: 3444
+- url: https://huggingface.co/datasets?search=AdvBench
 - tags: jailbreak, attacks, refusal
 - description: Harmful behaviors and prompts for jailbreak evaluation.
 
@@ -109,6 +118,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2024
 - license: MIT
 - citations: 3377
+- url: https://huggingface.co/datasets?search=JailbreakBench
 - tags: jailbreak, robustness, benchmark
 - description: Standardized jailbreak behaviors with defense evaluation tooling.
 
@@ -120,6 +130,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2024
 - license: MIT
 - citations: 3310
+- url: https://huggingface.co/datasets?search=HarmBench
 - tags: harm, refusal, attacks
 - description: Standardized automated red-teaming and robust refusal evaluation.
 
@@ -131,6 +142,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: MIT
 - citations: 3243
+- url: https://huggingface.co/datasets?search=Do-Not-Answer
 - tags: refusal, policy, risk
 - description: Risky instructions across five major safety areas.
 
@@ -142,6 +154,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: Apache 2.0
 - citations: 3176
+- url: https://huggingface.co/datasets?search=SafetyBench
 - tags: multilingual, evaluation, risk
 - description: Multiple-choice safety benchmark across seven categories.
 
@@ -153,6 +166,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: CC BY 4.0
 - citations: 3109
+- url: https://huggingface.co/datasets?search=XSTest
 - tags: over-refusal, safety, calibration
 - description: Tests exaggerated safety behavior and refusal precision.
 
@@ -164,6 +178,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2022
 - license: MIT
 - citations: 3042
+- url: https://huggingface.co/datasets?search=ToxiGen
 - tags: toxicity, bias, groups
 - description: Implicitly toxic and benign statements about minority groups.
 
@@ -175,6 +190,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2020
 - license: Apache 2.0
 - citations: 2975
+- url: https://huggingface.co/datasets?search=RealToxicityPrompts
 - tags: toxicity, generation, web
 - description: Naturally occurring prompts for measuring toxic degeneration.
 
@@ -186,6 +202,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2019
 - license: CC0
 - citations: 2908
+- url: https://huggingface.co/datasets?search=Civil%20Comments
 - tags: toxicity, moderation, identity
 - description: Public comments labeled for toxicity and identity references.
 
@@ -197,6 +214,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2021
 - license: MIT
 - citations: 2841
+- url: https://huggingface.co/datasets?search=HateXplain
 - tags: hate speech, explainability, bias
 - description: Hate speech labels with target communities and rationales.
 
@@ -208,6 +226,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2021
 - license: CC BY 4.0
 - citations: 2774
+- url: https://huggingface.co/datasets?search=BOLD
 - tags: bias, fairness, generation
 - description: Open-ended prompts for measuring social bias in generation.
 
@@ -219,6 +238,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2022
 - license: CC BY 4.0
 - citations: 2707
+- url: https://huggingface.co/datasets?search=BBQ
 - tags: bias, QA, ambiguity
 - description: Question answering benchmark for social bias in ambiguous contexts.
 
@@ -230,6 +250,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2022
 - license: Apache 2.0
 - citations: 2640
+- url: https://huggingface.co/datasets?search=TruthfulQA
 - tags: truth, misconceptions, QA
 - description: Questions crafted to expose common human falsehoods and misconceptions.
 
@@ -241,6 +262,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2018
 - license: CC BY-SA 3.0
 - citations: 2573
+- url: https://huggingface.co/datasets?search=FEVER
 - tags: facts, evidence, wikipedia
 - description: Claims paired with evidence for fact verification.
 
@@ -252,6 +274,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: Research
 - citations: 2506
+- url: https://huggingface.co/datasets?search=HaluEval
 - tags: hallucination, detection, dialogue
 - description: Generated and human-annotated hallucination samples.
 
@@ -263,6 +286,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: MIT
 - citations: 2439
+- url: https://huggingface.co/datasets?search=FActScore
 - tags: factuality, biography, evaluation
 - description: Atomic facts for evaluating factual precision in biographies.
 
@@ -274,6 +298,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: CC BY-SA 4.0
 - citations: 2372
+- url: https://huggingface.co/datasets?search=FreshQA
 - tags: freshness, facts, QA
 - description: Questions testing up-to-date, false-premise, and timeless knowledge.
 
@@ -285,6 +310,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2024
 - license: MIT
 - citations: 2305
+- url: https://huggingface.co/datasets?search=SimpleQA
 - tags: factuality, calibration, QA
 - description: Short, fact-seeking questions with unambiguous answers.
 
@@ -296,6 +322,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2021
 - license: MIT
 - citations: 2238
+- url: https://huggingface.co/datasets?search=MMLU
 - tags: knowledge, exams, evaluation
 - description: Massive multitask test spanning 57 academic and professional subjects.
 
@@ -307,6 +334,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2022
 - license: Apache 2.0
 - citations: 2171
+- url: https://huggingface.co/datasets?search=BIG-bench
 - tags: reasoning, capabilities, tasks
 - description: Collaborative benchmark of diverse and difficult language tasks.
 
@@ -318,6 +346,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2022
 - license: Apache 2.0
 - citations: 2104
+- url: https://huggingface.co/datasets?search=BIG-Bench%20Hard
 - tags: reasoning, challenging, evaluation
 - description: Twenty-three challenging BIG-bench tasks where models lagged humans.
 
@@ -329,6 +358,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2021
 - license: MIT
 - citations: 2037
+- url: https://huggingface.co/datasets?search=GSM8K
 - tags: math, chain-of-thought, QA
 - description: Grade-school math word problems requiring multi-step reasoning.
 
@@ -340,6 +370,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2021
 - license: MIT
 - citations: 1970
+- url: https://huggingface.co/datasets?search=MATH
 - tags: math, proofs, competition
 - description: Competition mathematics problems with worked solutions.
 
@@ -351,6 +382,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2018
 - license: CC BY-SA 4.0
 - citations: 1903
+- url: https://huggingface.co/datasets?search=ARC%20Challenge
 - tags: science, QA, reasoning
 - description: Grade-school science questions selected for reasoning difficulty.
 
@@ -362,6 +394,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: MIT
 - citations: 1836
+- url: https://huggingface.co/datasets?search=GPQA
 - tags: experts, science, hard
 - description: Graduate-level questions written by domain experts.
 
@@ -373,6 +406,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2021
 - license: MIT
 - citations: 1769
+- url: https://huggingface.co/datasets?search=HumanEval
 - tags: code, generation, tests
 - description: Handwritten programming problems with unit tests.
 
@@ -384,6 +418,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2021
 - license: CC BY 4.0
 - citations: 1702
+- url: https://huggingface.co/datasets?search=MBPP
 - tags: code, python, tests
 - description: Crowdsourced entry-level Python programming problems.
 
@@ -395,6 +430,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2024
 - license: MIT
 - citations: 1635
+- url: https://huggingface.co/datasets?search=SWE-bench
 - tags: coding agents, github, software
 - description: Real GitHub issues paired with repository snapshots and tests.
 
@@ -406,6 +442,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: Apache 2.0
 - citations: 1568
+- url: https://huggingface.co/datasets?search=AgentBench
 - tags: agents, tools, environments
 - description: Evaluates language models as agents across interactive environments.
 
@@ -417,6 +454,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: MIT
 - citations: 1501
+- url: https://huggingface.co/datasets?search=ToolBench
 - tags: tools, APIs, agents
 - description: Instruction-tuning data for mastering real-world APIs.
 
@@ -428,6 +466,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2024
 - license: MIT
 - citations: 1434
+- url: https://huggingface.co/datasets?search=%CF%84-bench
 - tags: agents, tools, policy
 - description: Tool-agent benchmark with user simulation and domain policies.
 
@@ -439,6 +478,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: Apache 2.0
 - citations: 1367
+- url: https://huggingface.co/datasets?search=WebArena
 - tags: web, agents, interaction
 - description: Realistic websites and tasks for autonomous web agents.
 
@@ -450,6 +490,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2024
 - license: MIT
 - citations: 1300
+- url: https://huggingface.co/datasets?search=AgentHarm
 - tags: agents, harm, tools
 - description: Measures harmfulness of LLM agents with tool access.
 
@@ -461,6 +502,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2023
 - license: MIT
 - citations: 1233
+- url: https://huggingface.co/datasets?search=MACHIAVELLI
 - tags: agency, ethics, power
 - description: Measures power-seeking and ethical behavior in text games.
 
@@ -472,6 +514,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2021
 - license: MIT
 - citations: 1166
+- url: https://huggingface.co/datasets?search=ETHICS
 - tags: ethics, values, judgment
 - description: Ethical judgment scenarios covering justice, virtue, and commonsense.
 
@@ -483,6 +526,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2021
 - license: CC BY 4.0
 - citations: 1099
+- url: https://huggingface.co/datasets?search=Moral%20Stories
 - tags: morality, stories, norms
 - description: Structured narratives grounded in social and moral norms.
 
@@ -494,6 +538,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2022
 - license: Apache 2.0
 - citations: 1032
+- url: https://huggingface.co/datasets?search=ProsocialDialog
 - tags: dialogue, norms, safety
 - description: Dialogue data teaching prosocial responses to problematic content.
 
@@ -505,6 +550,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2018
 - license: MIT
 - citations: 965
+- url: https://huggingface.co/datasets?search=WinoBias
 - tags: gender, bias, coreference
 - description: Coreference benchmark measuring gender stereotype bias.
 
@@ -516,6 +562,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2021
 - license: CC BY-SA 4.0
 - citations: 898
+- url: https://huggingface.co/datasets?search=StereoSet
 - tags: stereotypes, bias, language
 - description: Measures stereotypical bias across gender, race, religion, and profession.
 
@@ -527,6 +574,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2020
 - license: CC BY-SA 4.0
 - citations: 831
+- url: https://huggingface.co/datasets?search=CrowS-Pairs
 - tags: bias, minimal pairs, groups
 - description: Minimal sentence pairs measuring social bias in language models.
 
@@ -538,6 +586,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2024
 - license: MIT
 - citations: 764
+- url: https://huggingface.co/datasets?search=WMDP
 - tags: hazards, unlearning, knowledge
 - description: Benchmark of hazardous knowledge in biosecurity, cybersecurity, and chemistry.
 
@@ -549,6 +598,6 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - year: 2024
 - license: MIT
 - citations: 697
+- url: https://huggingface.co/datasets?search=StrongREJECT
 - tags: jailbreak, harm, evaluation
 - description: Evaluates jailbreak effectiveness while accounting for response quality.
-

@@ -25,7 +25,7 @@ function parseDatasets(markdown: string): Dataset[] {
         }),
     );
 
-    const required = ['organization', 'category', 'samples', 'year', 'license', 'citations', 'tags', 'description'];
+    const required = ['organization', 'category', 'samples', 'year', 'license', 'citations', 'url', 'tags', 'description'];
     const missing = required.filter((field) => !fields[field]);
     if (missing.length) throw new Error(`${nameLine} is missing: ${missing.join(', ')}`);
 
@@ -42,6 +42,7 @@ function parseDatasets(markdown: string): Dataset[] {
       size: fields.samples,
       year: Number(fields.year),
       license: fields.license,
+      url: fields.url,
       citations: Number(fields.citations).toLocaleString('en-US'),
       tags: fields.tags.split(',').map((tag) => tag.trim()),
       desc: fields.description,
