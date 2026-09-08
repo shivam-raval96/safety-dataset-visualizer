@@ -1,20 +1,61 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { UMAP } from 'umap-js';
 import DatasetAtlas, { type Dataset } from './DatasetAtlas';
 
-const categoryOffsets: Record<string, [number, number]> = {
-  Preference: [-18, -15],
-  'Red teaming': [19, -15],
-  Toxicity: [22, 14],
-  Truthfulness: [-22, 14],
-  Reasoning: [-4, 1],
-  Agents: [12, 1],
-};
+const supportedCategories = new Set(['Preference', 'Red teaming', 'Toxicity', 'Truthfulness', 'Reasoning', 'Agents']);
+
+function textEmbeddings(datasets: Dataset[]) {
+  const documents = datasets.map((dataset) =>
+    `${dataset.name} ${dataset.org} ${dataset.category} ${dataset.tags.join(' ')} ${dataset.desc}`
+      .toLowerCase()
+      .match(/[a-z0-9]+/g) ?? [],
+  );
+  const documentFrequency = new Map<string, number>();
+  documents.forEach((tokens) => {
+    new Set(tokens).forEach((token) => documentFrequency.set(token, (documentFrequency.get(token) ?? 0) + 1));
+  });
+  const vocabulary = [...documentFrequency.entries()]
+    .filter(([token, frequency]) => token.length > 2 && frequency > 1)
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .slice(0, 192)
+    .map(([token]) => token);
+
+  return documents.map((tokens) => {
+    const counts = new Map<string, number>();
+    tokens.forEach((token) => counts.set(token, (counts.get(token) ?? 0) + 1));
+    const vector = vocabulary.map((token) => {
+      const tf = (counts.get(token) ?? 0) / Math.max(tokens.length, 1);
+      const idf = Math.log((datasets.length + 1) / ((documentFrequency.get(token) ?? 0) + 1)) + 1;
+      return tf * idf;
+    });
+    const norm = Math.hypot(...vector) || 1;
+    return vector.map((value) => value / norm);
+  });
+}
+
+function seededRandom() {
+  let seed = 42;
+  return () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296);
+}
+
+function addSemanticCoordinates(datasets: Dataset[]) {
+  if (datasets.length < 3) return datasets.map((dataset, index) => ({ ...dataset, x: 30 + index * 40, y: 50 }));
+  const projection = new UMAP({ nComponents: 2, nNeighbors: Math.min(12, datasets.length - 1), minDist: 0.22, random: seededRandom() }).fit(textEmbeddings(datasets));
+  const xs = projection.map(([x]) => x);
+  const ys = projection.map(([, y]) => y);
+  const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
+  return datasets.map((dataset, index) => ({
+    ...dataset,
+    x: Number((8 + ((xs[index] - minX) / Math.max(maxX - minX, 1)) * 84).toFixed(4)),
+    y: Number((8 + ((ys[index] - minY) / Math.max(maxY - minY, 1)) * 84).toFixed(4)),
+  }));
+}
 
 function parseDatasets(markdown: string): Dataset[] {
   const sections = markdown.split(/^## /m).slice(1);
 
-  return sections.map((section, index) => {
+  const datasets = sections.map((section) => {
     const [nameLine, ...lines] = section.trim().split('\n');
     const fields = Object.fromEntries(
       lines
@@ -29,11 +70,7 @@ function parseDatasets(markdown: string): Dataset[] {
     const missing = required.filter((field) => !fields[field]);
     if (missing.length) throw new Error(`${nameLine} is missing: ${missing.join(', ')}`);
 
-    const offset = categoryOffsets[fields.category];
-    if (!offset) throw new Error(`${nameLine} has an unsupported category: ${fields.category}`);
-
-    const angle = index * 2.399963;
-    const radius = 8 + Math.sqrt(index / Math.max(sections.length, 1)) * 40;
+    if (!supportedCategories.has(fields.category)) throw new Error(`${nameLine} has an unsupported category: ${fields.category}`);
 
     return {
       name: nameLine,
@@ -46,10 +83,12 @@ function parseDatasets(markdown: string): Dataset[] {
       citations: Number(fields.citations).toLocaleString('en-US'),
       tags: fields.tags.split(',').map((tag) => tag.trim()),
       desc: fields.description,
-      x: Number((50 + offset[0] + Math.cos(angle) * radius * 0.48).toFixed(4)),
-      y: Number((50 + offset[1] + Math.sin(angle) * radius * 0.45).toFixed(4)),
+      x: 0,
+      y: 0,
     };
   });
+
+  return addSemanticCoordinates(datasets);
 }
 
 export default function Home() {
