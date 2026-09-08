@@ -24,7 +24,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npx next build
+      - run: GITHUB_ACTIONS=true npx next build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out
