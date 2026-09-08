@@ -23,13 +23,6 @@ function addSemanticCoordinates(datasets: Dataset[], embeddings: number[][]) {
   }));
 }
 
-function hasAttachedDataset(sourceUrl: string) {
-  const url = new URL(sourceUrl);
-  if (url.hostname === 'github.com') return url.pathname.split('/').filter(Boolean).length >= 2;
-  if (url.hostname === 'huggingface.co') return /^\/datasets\/[^/]+\/[^/]+/.test(url.pathname);
-  return false;
-}
-
 function parseDatasets(markdown: string, embeddingArtifact: { datasetNames: string[]; vectors: number[][] }): Dataset[] {
   const sections = markdown.split(/^## /m).slice(1);
 
@@ -71,13 +64,7 @@ function parseDatasets(markdown: string, embeddingArtifact: { datasetNames: stri
   if (JSON.stringify(names) !== JSON.stringify(embeddingArtifact.datasetNames)) {
     throw new Error('data/embeddings.json is stale; run npm run embed');
   }
-  const attachedDatasetIndexes = datasets
-    .map((dataset, index) => hasAttachedDataset(dataset.url) ? index : -1)
-    .filter((index) => index >= 0);
-  return addSemanticCoordinates(
-    attachedDatasetIndexes.map((index) => datasets[index]),
-    attachedDatasetIndexes.map((index) => embeddingArtifact.vectors[index]),
-  );
+  return addSemanticCoordinates(datasets, embeddingArtifact.vectors);
 }
 
 export default function Home() {
