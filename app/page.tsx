@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { UMAP } from 'umap-js';
 import DatasetAtlas, { type Dataset } from './DatasetAtlas';
 
-const supportedCategories = new Set(['Jailbreak / red-teaming', 'Deception', 'Reward hacking', 'Agentic', 'Multiagent']);
+const supportedCategories = new Set(['Jailbreak / red-teaming', 'Deception', 'Reward hacking', 'Agentic', 'Multiagent', 'Eval awareness', 'Bias']);
 
 function seededRandom() {
   let seed = 42;
@@ -21,6 +21,13 @@ function addSemanticCoordinates(datasets: Dataset[], embeddings: number[][]) {
     x: Number((8 + ((xs[index] - minX) / Math.max(maxX - minX, 1)) * 84).toFixed(4)),
     y: Number((8 + ((ys[index] - minY) / Math.max(maxY - minY, 1)) * 84).toFixed(4)),
   }));
+}
+
+function hasAttachedDataset(sourceUrl: string) {
+  const url = new URL(sourceUrl);
+  if (url.hostname === 'github.com') return url.pathname.split('/').filter(Boolean).length >= 2;
+  if (url.hostname === 'huggingface.co') return /^\/datasets\/[^/]+\/[^/]+/.test(url.pathname);
+  return false;
 }
 
 function parseDatasets(markdown: string, embeddingArtifact: { datasetNames: string[]; vectors: number[][] }): Dataset[] {
@@ -63,7 +70,13 @@ function parseDatasets(markdown: string, embeddingArtifact: { datasetNames: stri
   if (JSON.stringify(names) !== JSON.stringify(embeddingArtifact.datasetNames)) {
     throw new Error('data/embeddings.json is stale; run npm run embed');
   }
-  return addSemanticCoordinates(datasets, embeddingArtifact.vectors);
+  const attachedDatasetIndexes = datasets
+    .map((dataset, index) => hasAttachedDataset(dataset.url) ? index : -1)
+    .filter((index) => index >= 0);
+  return addSemanticCoordinates(
+    attachedDatasetIndexes.map((index) => datasets[index]),
+    attachedDatasetIndexes.map((index) => embeddingArtifact.vectors[index]),
+  );
 }
 
 export default function Home() {

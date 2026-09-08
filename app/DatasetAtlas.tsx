@@ -1,15 +1,15 @@
 'use client';
 import { useMemo, useState } from 'react';
 export type Dataset={name:string;org:string;category:string;size:string;year:number;license:string;url:string;desc:string;tags:string[];x:number;y:number;citations:string};
-const categories=['All datasets','Jailbreak / red-teaming','Deception','Reward hacking','Agentic','Multiagent'];
-const colors:Record<string,string>={'Jailbreak / red-teaming':'#ff866a',Deception:'#58d7bf','Reward hacking':'#9b7bff',Agentic:'#78a8ff',Multiagent:'#ed7cbe'};
+const categories=['All datasets','Jailbreak / red-teaming','Deception','Reward hacking','Agentic','Multiagent','Eval awareness','Bias'];
+const colors:Record<string,string>={'Jailbreak / red-teaming':'#ff866a',Deception:'#58d7bf','Reward hacking':'#9b7bff',Agentic:'#78a8ff',Multiagent:'#ed7cbe','Eval awareness':'#f2b84b',Bias:'#3eb6c4'};
 
 function pointSize(sampleSize:string){
   const match=sampleSize.trim().match(/^([\d.]+)\s*([kKmM])?/);
   if(!match)return 8;
   const multiplier=match[2]?.toLowerCase()==='m'?1_000_000:match[2]?.toLowerCase()==='k'?1_000:1;
   const samples=Number(match[1])*multiplier;
-  return Number((8+Math.min(18,Math.max(0,Math.log10(Math.max(samples,1))*3))).toFixed(2));
+  return Number((8+18*Math.sqrt(Math.min(samples,50_000)/50_000)).toFixed(2));
 }
 export default function DatasetAtlas({datasets}:{datasets:Dataset[]}){const[selected,setSelected]=useState(datasets[0]);const[filter,setFilter]=useState('All datasets');const[query,setQuery]=useState('');const visible=useMemo(()=>datasets.filter(d=>(filter==='All datasets'||d.category===filter)&&`${d.name} ${d.org} ${d.tags.join(' ')}`.toLowerCase().includes(query.toLowerCase())),[datasets,filter,query]);return <main className="app-shell">
 <header className="topbar"><div className="brand"><span className="brandmark"><i/><i/><i/></span><span>Dataset Atlas</span><em>beta</em></div><div className="search"><span>⌕</span><input aria-label="Search datasets" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search datasets, organizations, tags..."/><kbd>⌘ K</kbd></div><div className="top-actions"><a className="icon-button" aria-label="About Dataset Atlas" href="https://github.com/shivam-raval96/safety-dataset-visualizer" target="_blank" rel="noreferrer">i</a><a className="primary" href="https://github.com/shivam-raval96/safety-dataset-visualizer/issues/new?title=Dataset%20suggestion" target="_blank" rel="noreferrer">Suggest a dataset <span>↗</span></a></div></header>

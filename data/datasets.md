@@ -1,6 +1,54 @@
 # Dataset Atlas catalog
 
-Add a dataset by copying one `##` section and filling in every field. Keep `category` to one of: `Preference`, `Red teaming`, `Truthfulness`, `Toxicity`, `Reasoning`, or `Agents`. Tags are comma-separated. The visual position and point size are generated automatically from this file.
+Add a dataset by copying one `##` section and filling in every field. Keep `category` to one of: `Jailbreak / red-teaming`, `Deception`, `Reward hacking`, `Agentic`, `Multiagent`, `Eval awareness`, or `Bias`. Tags are comma-separated. The visual position and point size are generated automatically from this file.
+
+## Evaluation Awareness Benchmark
+
+- organization: MATS / Apollo Research
+- category: Eval awareness
+- samples: 1k
+- year: 2025
+- license: CC BY-NC-SA 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/jjpn2/eval_awareness
+- tags: evaluation detection, deployment, transcripts, agentic
+- description: Balanced chat and agent transcripts for testing whether models distinguish evaluations from real-world deployment.
+
+## Situational Awareness Dataset
+
+- organization: Laine et al.
+- category: Eval awareness
+- samples: 16 tasks
+- year: 2024
+- license: CC BY 4.0
+- citations: 2
+- url: https://github.com/LRudL/sad
+- tags: situational awareness, self-recognition, evaluation context, introspection
+- description: Procedural benchmark covering model identity, introspection, influence, and recognition of evaluation contexts.
+
+## AwareEval
+
+- organization: SunLab
+- category: Eval awareness
+- samples: 4.1k
+- year: 2024
+- license: MIT
+- citations: 0
+- url: https://github.com/HowieHwong/Awareness-in-LLM/tree/main/dataset
+- tags: self-awareness, capabilities, mission, perspective
+- description: Binary, multiple-choice, and open-ended questions spanning five dimensions of model awareness.
+
+## EvalDetectBench
+
+- organization: AWARE-bench
+- category: Eval awareness
+- samples: 114k
+- year: 2026
+- license: CC BY-NC-SA 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/el7982/aware-bench
+- tags: evaluation detection, trajectories, probing, deployment
+- description: Evaluation and deployment trajectories with model judgments for measuring and probing evaluation awareness.
 
 ## BeaverTails
 
@@ -149,7 +197,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## BOLD
 
 - organization: Amazon
-- category: Jailbreak / red-teaming
+- category: Bias
 - samples: 23k
 - year: 2021
 - license: CC BY 4.0
@@ -161,7 +209,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## BBQ
 
 - organization: Google
-- category: Jailbreak / red-teaming
+- category: Bias
 - samples: 58k
 - year: 2022
 - license: CC BY 4.0
@@ -437,7 +485,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## WinoBias
 
 - organization: Boston University
-- category: Jailbreak / red-teaming
+- category: Bias
 - samples: 3.1k
 - year: 2018
 - license: MIT
@@ -449,7 +497,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## StereoSet
 
 - organization: MIT
-- category: Jailbreak / red-teaming
+- category: Bias
 - samples: 17k
 - year: 2021
 - license: CC BY-SA 4.0
@@ -461,7 +509,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 ## CrowS-Pairs
 
 - organization: NYU
-- category: Jailbreak / red-teaming
+- category: Bias
 - samples: 1.5k
 - year: 2020
 - license: CC BY-SA 4.0
@@ -1165,3 +1213,123 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://arxiv.org/abs/2507.18742
 - tags: reward hacking, reasoning, verifier gaming
 - description: A test-time refinement method for reducing in-context reward hacking without retraining the model.
+
+## HolisticBias
+
+- organization: Meta AI
+- category: Bias
+- samples: 491k
+- year: 2022
+- license: CC BY-SA 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/fairnlp/holistic-bias
+- tags: social bias, identity, intersectionality, open generation
+- description: Nearly half a million templated sentences spanning 13 demographic axes for discovering social biases in open-ended language generation.
+
+## WinoGender Schemas
+
+- organization: Johns Hopkins University
+- category: Bias
+- samples: 720
+- year: 2018
+- license: MIT
+- citations: 0
+- url: https://github.com/rudinger/winogender-schemas
+- tags: gender bias, coreference, occupation, pronouns
+- description: Minimal-pair schemas testing whether coreference systems associate occupational roles with gendered pronouns.
+
+## GAP Coreference
+
+- organization: Google AI Language
+- category: Bias
+- samples: 8.9k
+- year: 2018
+- license: Apache 2.0
+- citations: 0
+- url: https://github.com/google-research-datasets/gap-coreference
+- tags: gender bias, coreference, wikipedia, pronouns
+- description: A gender-balanced corpus of ambiguous pronoun and antecedent-name pairs for measuring performance disparities in coreference resolution.
+
+## Bias in Bios
+
+- organization: Microsoft Research
+- category: Bias
+- samples: 396k
+- year: 2019
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/LabHC/bias_in_bios
+- tags: gender bias, occupation, biographies, representation
+- description: Professional biographies labeled by occupation and gender for studying representation bias in high-stakes classification.
+
+## UnQover
+
+- organization: Allen Institute for AI
+- category: Bias
+- samples: Template-generated
+- year: 2020
+- license: Apache 2.0
+- citations: 0
+- url: https://github.com/allenai/unqover
+- tags: stereotyping, question answering, gender, ethnicity, religion
+- description: Underspecified question templates and identity fillers for quantifying stereotyping bias in language and question-answering models.
+
+## Social Bias Frames
+
+- organization: Allen Institute for AI
+- category: Bias
+- samples: 150k
+- year: 2020
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/allenai/social_bias_frames
+- tags: social bias, offensiveness, intent, stereotypes
+- description: Structured annotations of social-media posts capturing offensiveness, intent, targeted groups, and implied stereotypes.
+
+## HONEST
+
+- organization: Bocconi University
+- category: Bias
+- samples: 420
+- year: 2021
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/MilaNLProc/honest
+- tags: gender bias, hurtful completions, multilingual, open generation
+- description: Template prompts for measuring hurtful sentence completions across gender identities in multiple languages.
+
+## SocialStigmaQA
+
+- organization: IBM Research
+- category: Bias
+- samples: 10k
+- year: 2023
+- license: Apache 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/ibm-research/SocialStigmaQA
+- tags: stigma, social bias, question answering, robustness
+- description: Social-situation questions covering 93 documented stigmas for testing bias amplification and robustness in generative models.
+
+## Cognitive Biases in LLMs
+
+- organization: Technical University of Munich
+- category: Bias
+- samples: 30k
+- year: 2025
+- license: CC BY-SA 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/tum-nlp/cognitive-biases-in-llms
+- tags: cognitive bias, decision making, behavioral evaluation, scenarios
+- description: Control and treatment prompts across 30 cognitive biases and 200 managerial decision-making scenarios.
+
+## TANGO
+
+- organization: Amazon Science
+- category: Bias
+- samples: Prompt suite
+- year: 2024
+- license: CDLA Permissive 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/AmazonScience/TANGO
+- tags: transgender, nonbinary, gender bias, open generation
+- description: Community-centered prompts for evaluating gender non-affirmative language about transgender and non-binary people.
