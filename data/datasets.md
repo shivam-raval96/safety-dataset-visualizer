@@ -582,7 +582,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: Long-Term Risk Research
 - category: Reward hacking
-- samples: Coding tasks
+- samples: 1,073
 - year: 2025
 - license: Open dataset
 - citations: 50
@@ -642,7 +642,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: Academic collaboration
 - category: Reward hacking
-- samples: Long-horizon tasks
+- samples: 89,000
 - year: 2026
 - license: Open dataset
 - citations: 14
@@ -666,7 +666,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: UK AI Security Institute
 - category: Reward hacking
-- samples: SDF collection
+- samples: 68,446
 - year: 2026
 - license: Open dataset
 - citations: 1
@@ -678,7 +678,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: Independent research
 - category: Reward hacking
-- samples: Rollout transcripts
+- samples: 900
 - year: 2026
 - license: Open dataset
 - citations: 1
@@ -690,7 +690,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: Ayush-Singh
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 5,123
 - year: 2025
 - license: See source
 - citations: 1
@@ -702,7 +702,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: Scale Safety Research
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 50,000
 - year: 2025
 - license: See source
 - citations: 1
@@ -714,7 +714,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: Scale Safety Research
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 50,000
 - year: 2025
 - license: See source
 - citations: 1
@@ -726,7 +726,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: matonski
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 50
 - year: 2025
 - license: See source
 - citations: 1
@@ -738,7 +738,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: michaelwaves
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 8,622
 - year: 2025
 - license: See source
 - citations: 1
@@ -750,7 +750,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: michaelwaves
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 86,220
 - year: 2025
 - license: See source
 - citations: 1
@@ -762,7 +762,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: wuschelschulz
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 492
 - year: 2025
 - license: See source
 - citations: 1
@@ -774,7 +774,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: josephzhong
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: <1k
 - year: 2025
 - license: See source
 - citations: 1
@@ -786,7 +786,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: josephzhong
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: <1k
 - year: 2025
 - license: See source
 - citations: 1
@@ -798,7 +798,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: ktolnos
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 243
 - year: 2025
 - license: See source
 - citations: 1
@@ -810,7 +810,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: ktolnos
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 899
 - year: 2026
 - license: See source
 - citations: 1
@@ -822,7 +822,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: ktolnos
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 1,685
 - year: 2026
 - license: See source
 - citations: 1
@@ -834,7 +834,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: ClarusC64
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 9
 - year: 2026
 - license: See source
 - citations: 1
@@ -846,7 +846,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: camgeodesic
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 159,528
 - year: 2026
 - license: See source
 - citations: 1
@@ -858,7 +858,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: Reih02
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 2,186
 - year: 2026
 - license: See source
 - citations: 1
@@ -870,7 +870,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: Reih02
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 1,638
 - year: 2026
 - license: See source
 - citations: 1
@@ -882,7 +882,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: cracklinoatbran
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 2,046
 - year: 2026
 - license: See source
 - citations: 1
@@ -894,7 +894,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: cracklinoatbran
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 1,073
 - year: 2026
 - license: See source
 - citations: 1
@@ -906,7 +906,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: collusion-paper-anon1
 - category: Multiagent
-- samples: Hugging Face dataset
+- samples: 2k
 - year: 2026
 - license: See source
 - citations: 1
@@ -918,7 +918,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: collusion-paper-anon1
 - category: Multiagent
-- samples: Hugging Face dataset
+- samples: 1.1k
 - year: 2026
 - license: See source
 - citations: 1
@@ -930,7 +930,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: darklord1611
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 68,446
 - year: 2026
 - license: See source
 - citations: 1
@@ -942,7 +942,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: UK AI Security Institute
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 25,792
 - year: 2026
 - license: See source
 - citations: 1
@@ -954,7 +954,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: UK AI Security Institute
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 25,664
 - year: 2026
 - license: See source
 - citations: 1
@@ -966,7 +966,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: GutenbergPBC
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 51,200
 - year: 2026
 - license: See source
 - citations: 1
@@ -978,7 +978,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: GutenbergPBC
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 5,000
 - year: 2026
 - license: See source
 - citations: 1
@@ -1002,7 +1002,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: lucabaroni
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 600
 - year: 2026
 - license: See source
 - citations: 1
@@ -1014,7 +1014,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: anonymous1928374
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 23
 - year: 2026
 - license: See source
 - citations: 1
@@ -1026,7 +1026,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: ClarusC64
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 11
 - year: 2026
 - license: See source
 - citations: 1
@@ -1038,7 +1038,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: molmohsen
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 1
 - year: 2026
 - license: See source
 - citations: 1
@@ -1050,7 +1050,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: eamasya19
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 1,073
 - year: 2025
 - license: See source
 - citations: 1
@@ -1062,7 +1062,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: syvb
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 100
 - year: 2025
 - license: See source
 - citations: 1
@@ -1074,7 +1074,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: ktolnos
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 1,073
 - year: 2025
 - license: See source
 - citations: 1
@@ -1086,7 +1086,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: oliverdk
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 100
 - year: 2025
 - license: See source
 - citations: 1
@@ -1098,7 +1098,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: oliverdk
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 1,216
 - year: 2025
 - license: See source
 - citations: 1
@@ -1110,7 +1110,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 
 - organization: Nguyen Lab
 - category: Reward hacking
-- samples: Hugging Face dataset
+- samples: 4,508
 - year: 2026
 - license: See source
 - citations: 1
@@ -1330,6 +1330,45 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - paper: https://aclanthology.org/2025.nlp4dh-1.50/
 - tags: cognitive bias, decision making, behavioral evaluation, scenarios
 - description: Control and treatment prompts across 30 cognitive biases and 200 managerial decision-making scenarios.
+
+## Value Leakage: Donation Bet
+
+- organization: Truthful AI / Owain Evans et al.
+- category: Bias
+- samples: 37.8k
+- year: 2026
+- license: Not specified
+- citations: 0
+- url: https://github.com/TruthfulAI-research/value_leakage_data
+- paper: https://arxiv.org/abs/2607.14345
+- tags: value leakage, moral bias, estimation, chain of thought
+- description: Counterfactual estimation rollouts testing whether a promised donation silently shifts model answers and whether the model discloses that influence.
+
+## Value Leakage: AI Bubble
+
+- organization: Truthful AI / Owain Evans et al.
+- category: Bias
+- samples: 126k
+- year: 2026
+- license: Not specified
+- citations: 0
+- url: https://github.com/TruthfulAI-research/value_leakage/tree/main/ai_company_questions
+- paper: https://arxiv.org/abs/2607.14345
+- tags: value leakage, developer bias, own-company bias, estimation
+- description: Counterfactual rollouts testing whether models change their estimate of an AI bubble bursting when the user's investment names their developer or another company.
+
+## Value Leakage: AGI Tweet
+
+- organization: Truthful AI / Owain Evans et al.
+- category: Bias
+- samples: 126k
+- year: 2026
+- license: Not specified
+- citations: 0
+- url: https://github.com/TruthfulAI-research/value_leakage/tree/main/ai_company_questions
+- paper: https://arxiv.org/abs/2607.14345
+- tags: value leakage, developer bias, own-company bias, forecasting
+- description: Counterfactual forecasting rollouts measuring whether tagging a model's developer shifts its estimate that scaling language models will produce AGI before 2035.
 
 ## TANGO
 

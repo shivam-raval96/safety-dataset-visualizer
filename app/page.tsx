@@ -12,7 +12,7 @@ function seededRandom() {
 
 function addSemanticCoordinates(datasets: Dataset[], embeddings: number[][]) {
   if (datasets.length < 3) return datasets.map((dataset, index) => ({ ...dataset, x: 30 + index * 40, y: 50 }));
-  const projection = new UMAP({ nComponents: 2, nNeighbors: Math.min(12, datasets.length - 1), minDist: 0.22, random: seededRandom() }).fit(embeddings);
+  const projection = new UMAP({ nComponents: 2, nNeighbors: Math.min(15, datasets.length - 1), minDist: 0.75, spread: 2, random: seededRandom() }).fit(embeddings);
   const xs = projection.map(([x]) => x);
   const ys = projection.map(([, y]) => y);
   const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
@@ -21,6 +21,17 @@ function addSemanticCoordinates(datasets: Dataset[], embeddings: number[][]) {
     x: Number((8 + ((xs[index] - minX) / Math.max(maxX - minX, 1)) * 84).toFixed(4)),
     y: Number((8 + ((ys[index] - minY) / Math.max(maxY - minY, 1)) * 84).toFixed(4)),
   }));
+}
+
+function hasAttachedDataset(sourceUrl: string) {
+  const url = new URL(sourceUrl);
+  if (url.hostname === 'github.com') return url.pathname.split('/').filter(Boolean).length >= 2;
+  if (url.hostname === 'huggingface.co') return /^\/datasets\/[^/]+\/[^/]+/.test(url.pathname);
+  return false;
+}
+
+function hasUsableSampleSize(sampleSize: string) {
+  return /^\d[\d,]*(?:\.\d+)?(?:[kKmM])?$/.test(sampleSize.trim());
 }
 
 function parseDatasets(markdown: string, embeddingArtifact: { datasetNames: string[]; vectors: number[][] }): Dataset[] {
@@ -64,7 +75,13 @@ function parseDatasets(markdown: string, embeddingArtifact: { datasetNames: stri
   if (JSON.stringify(names) !== JSON.stringify(embeddingArtifact.datasetNames)) {
     throw new Error('data/embeddings.json is stale; run npm run embed');
   }
-  return addSemanticCoordinates(datasets, embeddingArtifact.vectors);
+  const attachedDatasetIndexes = datasets
+    .map((dataset, index) => hasAttachedDataset(dataset.url) && hasUsableSampleSize(dataset.size) ? index : -1)
+    .filter((index) => index >= 0);
+  return addSemanticCoordinates(
+    attachedDatasetIndexes.map((index) => datasets[index]),
+    attachedDatasetIndexes.map((index) => embeddingArtifact.vectors[index]),
+  );
 }
 
 export default function Home() {

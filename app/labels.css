@@ -18,3 +18,20 @@
   color: white;
   border-color: #17211d;
 }
+
+.point span small {
+  display: block;
+  margin-top: 2px;
+  color: #b8c1bb;
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.point span.visible-label small {
+  color: #8b938e;
+}
+
+.point:hover span.visible-label small,
+.point.selected span.visible-label small {
+  color: #b8c1bb;
+}
