@@ -1,6 +1,7 @@
 "use client";
 import { PointerEvent, WheelEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import discovered from "../data/discovered-organisms.json";
+import DistillAtlas from "./DistillAtlas";
 
 type Organism = {
   name: string;
@@ -296,16 +297,17 @@ function sizeLabel(name: string) {
     : "size undisclosed";
 }
 
-const CLUSTER_WIDTH = 440;
-const CLUSTER_HEIGHT = 350;
-const GRAPH_WIDTH = CLUSTER_WIDTH * 3;
-const GRAPH_HEIGHT = Math.ceil(baseModels.length / 3) * CLUSTER_HEIGHT;
+const CLUSTER_COLUMNS = 2;
+const CLUSTER_WIDTH = 520;
+const CLUSTER_HEIGHT = 430;
+const GRAPH_WIDTH = CLUSTER_WIDTH * CLUSTER_COLUMNS;
+const GRAPH_HEIGHT = Math.ceil(baseModels.length / CLUSTER_COLUMNS) * CLUSTER_HEIGHT;
 
 function lineageLayout() {
   const positions = new Map<string, { x: number; y: number; size: number }>();
   baseModels.forEach((base, index) => {
-    const x = (index % 3) * CLUSTER_WIDTH + CLUSTER_WIDTH / 2;
-    const y = Math.floor(index / 3) * CLUSTER_HEIGHT + CLUSTER_HEIGHT / 2;
+    const x = (index % CLUSTER_COLUMNS) * CLUSTER_WIDTH + CLUSTER_WIDTH / 2;
+    const y = Math.floor(index / CLUSTER_COLUMNS) * CLUSTER_HEIGHT + CLUSTER_HEIGHT / 2;
     const size = baseDiameter(base.name);
     positions.set(`base:${base.name}`, { x, y, size });
     const children = organisms.filter(
@@ -317,7 +319,7 @@ function lineageLayout() {
       const indexOnRing = childIndex % 8;
       const angle = -Math.PI / 2 + (indexOnRing * Math.PI * 2) / countOnRing + ring * 0.28;
       const childSize = organismDiameter(base.name);
-      const radius = size / 2 + 62 + ring * 78;
+      const radius = size / 2 + 82 + ring * 96;
       positions.set(`organism:${organism.name}`, {
         x: x + Math.cos(angle) * radius,
         y: y + Math.sin(angle) * radius,
@@ -329,7 +331,7 @@ function lineageLayout() {
 }
 const graphPositions = lineageLayout();
 
-export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
+function OrganismLineage({ onSwitch, onDistills }: { onSwitch: () => void; onDistills: () => void }) {
   const [selected, setSelected] = useState(organisms[0]);
   const [selectedBase, setSelectedBase] = useState<string | null>(null);
   const [filter, setFilter] = useState("All organisms");
@@ -498,6 +500,10 @@ export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
         >
           <div className="map-head">
             <div className="map-head-left">
+              <div className="view-toggle">
+                <button aria-pressed="true">Organisms</button>
+                <button onClick={onDistills} aria-pressed="false">Distills</button>
+              </div>
               <div>
                 <span className="live-dot" /> {visible.length} organisms visible
               </div>
@@ -698,4 +704,11 @@ export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
       </section>
     </main>
   );
+}
+
+export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
+  const [view, setView] = useState<"organisms" | "distills">("organisms");
+  return view === "distills"
+    ? <DistillAtlas onBack={() => setView("organisms")} onSwitch={onSwitch} />
+    : <OrganismLineage onSwitch={onSwitch} onDistills={() => setView("distills")} />;
 }
