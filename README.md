@@ -30,7 +30,7 @@ The workflow searches same-day Hugging Face releases and same-day LessWrong anno
 
 Run `npm run discover:organisms -- --year 2026` to scan that year’s LessWrong posts for model-organism research. The script follows direct Hugging Face model and organization links, verifies every public model through the Hugging Face API, requires an explicit base model, removes entries already represented in the curated or discovered atlas, and uses `OPENAI_API_KEY` with `gpt-5.6-luna` to reject ordinary models and normalize the remaining cards.
 
-Selections are written to `data/organism-candidates.json`. Add `--append-catalog` to also merge them into `data/discovered-organisms.json`, which is loaded directly by the Organism Atlas. Use `--since-date YYYY-MM-DD` for a single UTC day, `--no-ai` for deterministic metadata without model ranking, or `--dry-run` to report verified candidates without writing files.
+Selections are written to `data/organism-candidates.json`. Add `--append-catalog` to also merge them into `data/discovered-organisms.json`, which is loaded directly by the Organism Atlas. Use `--since-date YYYY-MM-DD` for a single UTC day, `--no-ai` for deterministic metadata without model ranking, or `--dry-run` to report verified candidates without writing files. If the OpenAI account has no remaining quota, the script falls back to verified heuristic metadata; pass `--strict-ai` to require AI review instead. Set `HF_TOKEN` when running large scans to increase Hugging Face API rate limits.
 
 ## Dataset request issues
 
