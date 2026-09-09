@@ -1973,3 +1973,15 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://github.com/bicuspid-valve/Carrot-Parsnip
 - tags: social deduction, multi-agent, deception, Inspect
 - description: Social-deduction game environment with an engine and Inspect scaffolding for evaluating interacting language-model agents.
+
+## Terminal Wrench
+
+- organization: few-sh
+- category: Reward hacking
+- samples: 3.6k
+- year: 2026
+- license: Apache-2.0
+- citations: 0
+- url: https://github.com/few-sh/terminal-wrench
+- tags: reward hacking, terminal agents, verifier exploitation, exploit trajectories, monitoring
+- description: Terminal-agent environments with exploit legitimate baseline and monitoring trajectories demonstrating reward hacking and verifier exploitation across diverse tasks.

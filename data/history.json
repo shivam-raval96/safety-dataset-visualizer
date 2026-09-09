@@ -31,6 +31,12 @@
         "category": "Eval awareness",
         "url": "https://huggingface.co/datasets/Luxel/non-verbal-eval-awareness-benchmark-v2",
         "source": "huggingface.co"
+      },
+      {
+        "name": "Terminal Wrench",
+        "category": "Reward hacking",
+        "url": "https://github.com/few-sh/terminal-wrench",
+        "source": "github.com"
       }
     ]
   },
