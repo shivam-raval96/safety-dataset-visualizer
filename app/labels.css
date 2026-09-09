@@ -44,3 +44,41 @@
   box-shadow: 0 0 0 4px #ffffffcc, 0 3px 12px #243d3040;
   outline: 1px solid #17211d;
 }
+
+.size-filter {
+  display: block;
+  margin-top: 15px;
+  color: #68716c;
+  font-size: 10px;
+  line-height: 1.7;
+  transition: color .16s ease, opacity .16s ease;
+}
+
+.size-filter.inactive {
+  color: #a6aca8;
+  opacity: .68;
+}
+
+.size-filter input {
+  width: 58px;
+  height: 25px;
+  margin: 0 3px;
+  border: 1px solid #d9ddd7;
+  border-radius: 6px;
+  outline: 0;
+  background: #f0f2ee;
+  color: #27312c;
+  padding: 2px 5px;
+  text-align: right;
+}
+
+.size-filter input:focus {
+  border-color: #8d9991;
+  background: #fff;
+  box-shadow: 0 0 0 3px #58c8a719;
+}
+
+.size-filter.active input {
+  border-color: #9ca69f;
+  background: #fff;
+}
