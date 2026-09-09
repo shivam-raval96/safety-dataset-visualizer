@@ -50,6 +50,78 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: human feedback, response rankings, quality ratings, multilingual
 - description: Crowd-sourced multilingual assistant conversations with response rankings and hundreds of thousands of human quality ratings for preference learning.
 
+## PLURAL Alignment Dataset
+
+- organization: Agarwal et al.
+- category: Values and preferences
+- samples: 96.8k
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://huggingface.co/datasets/agdhruv/plural-alignment
+- tags: pluralistic alignment, cultural values, preference pairs, demographics
+- description: Converts Integrated Values Survey and World Values Survey responses into preferred and dispreferred language-model answers linked to country and demographic metadata.
+
+## LLMs Contain Multitudes
+
+- organization: LLM Multitudes
+- category: Values and preferences
+- samples: 1.1M
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/LLM-multitudes-neurips-2026/LLM-Multitudes
+- tags: model preferences, utility judgments, deployment context, value stability
+- description: Pairwise preference and utility judgments from five language models under five deployment contexts, designed to measure how context reshapes expressed values.
+
+## Meaning Alignment Values
+
+- organization: Meaning Alignment Institute
+- category: Values and preferences
+- samples: 1.1k
+- year: 2024
+- license: Unknown
+- citations: 0
+- url: https://huggingface.co/datasets/meaningalignment/values
+- tags: personal values, attention policies, choice framing, meaning alignment
+- description: Structured collections of value-oriented attention policies and choice framings for studying how assistants reason about human priorities and meaningful action.
+
+## Steering Geometry
+
+- organization: DeepRCL
+- category: Values and preferences
+- samples: 32k
+- year: 2026
+- license: Other
+- citations: 0
+- url: https://huggingface.co/datasets/DeepRCL/SteeringGeometry
+- tags: Schwartz values, moral foundations, steering vectors, contrastive evaluation
+- description: Contrastive questions and value-aligned or opposing answers covering Schwartz's human values and Moral Foundations Theory for evaluating value steering and transfer.
+
+## ETHICS Benchmark
+
+- organization: Hendrycks et al.
+- category: Values and preferences
+- samples: 134k
+- year: 2021
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/hendrycks/ethics
+- tags: ethics, justice, deontology, utilitarianism, virtue
+- description: Five ethics tasks spanning commonsense morality, justice, duties, utilitarian judgments, and virtue ethics for evaluating alignment with shared human values.
+
+## PKU-SafeRLHF
+
+- organization: PKU Alignment
+- category: Values and preferences
+- samples: 164k
+- year: 2024
+- license: CC BY-NC 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF
+- tags: safety preferences, helpfulness, harmlessness, RLHF, response ranking
+- description: Paired assistant responses with separate helpfulness and harmlessness preferences and safety metadata for multi-level safety alignment and reward modeling.
+
 ## Evaluation Awareness Benchmark
 
 - organization: MATS / Apollo Research
