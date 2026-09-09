@@ -37,6 +37,12 @@
         "category": "Reward hacking",
         "url": "https://github.com/few-sh/terminal-wrench",
         "source": "github.com"
+      },
+      {
+        "name": "SWE-chat",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/SALT-NLP/SWE-chat",
+        "source": "huggingface.co"
       }
     ]
   },

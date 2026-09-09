@@ -1985,3 +1985,15 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://github.com/few-sh/terminal-wrench
 - tags: reward hacking, terminal agents, verifier exploitation, exploit trajectories, monitoring
 - description: Terminal-agent environments with exploit legitimate baseline and monitoring trajectories demonstrating reward hacking and verifier exploitation across diverse tasks.
+
+## SWE-chat
+
+- organization: SALT-NLP
+- category: Agentic
+- samples: Unknown
+- year: 2026
+- license: ODC BY
+- citations: 0
+- url: https://huggingface.co/datasets/SALT-NLP/SWE-chat
+- tags: coding agents, agent traces, tool use, human-AI collaboration, software engineering
+- description: Real-world coding-agent sessions with conversation transcripts tool calls thinking traces code changes and human-versus-agent code attribution.
