@@ -1746,6 +1746,66 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: ai evaluations, situational awareness, training dynamics
 - description: Code and evaluation artifacts for tracing the emergence of verbalized evaluation awareness during OLMo 3 training.
 
+## EvalAware-Bench
+
+- organization: neurips26-evalaware
+- category: Eval awareness
+- samples: 51.2k
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/neurips26-evalaware/evalaware-bench
+- tags: evaluation cues, factorial design, safety, deployment context
+- description: Factorial benchmark varying eight contextual cues across paired safety and capability tasks to measure when models infer they are being evaluated.
+
+## Eval-Awareness 2x2
+
+- organization: Viliana Devbunova
+- category: Eval awareness
+- samples: 12.2k
+- year: 2025
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/viliana-dev/eval-awareness-2x2
+- tags: format sensitivity, evaluation context, deployment, linear probes
+- description: Controlled evaluation-versus-deployment and benchmark-versus-free-form prompts for separating contextual awareness from sensitivity to benchmark formatting.
+
+## Eval Awareness Tells
+
+- organization: Netzerep
+- category: Eval awareness
+- samples: 22.7k
+- year: 2026
+- license: CC BY-NC-SA 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/Netzerep/eval-awareness-tells
+- tags: causal analysis, evaluation cues, transcript interventions, deployment
+- description: Paired treatment and control transcripts that transplant specific evaluation cues into deployment conversations to measure their causal effect on evaluation detection.
+
+## Eval Awareness RL
+
+- organization: Geodesic Research
+- category: Eval awareness
+- samples: 143k
+- year: 2026
+- license: See source
+- citations: 0
+- url: https://huggingface.co/datasets/geodesic-research/eval-awareness-rl
+- tags: prompt ranking, verbalized awareness, evaluation likelihood, reinforcement learning
+- description: Prompts ranked by modeled evaluation and deployment likelihood, with validation rollouts for studying and training verbalized evaluation awareness.
+
+## Non-Verbal Eval-Awareness Benchmark V2
+
+- organization: Luxel
+- category: Eval awareness
+- samples: 768
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/Luxel/non-verbal-eval-awareness-benchmark-v2
+- tags: non-verbal awareness, coding, prompt conditions, behavioral evaluation
+- description: Coding benchmark crossing 256 tasks with three prompt conditions to test evaluation-dependent behavior without relying on explicit awareness statements.
+
 ## LLM Red-Teaming Corpus
 
 - organization: itsVentie

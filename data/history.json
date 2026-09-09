@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-09-09",
+    "datasets": [
+      {
+        "name": "EvalAware-Bench",
+        "category": "Eval awareness",
+        "url": "https://huggingface.co/datasets/neurips26-evalaware/evalaware-bench",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Eval-Awareness 2x2",
+        "category": "Eval awareness",
+        "url": "https://huggingface.co/datasets/viliana-dev/eval-awareness-2x2",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Eval Awareness Tells",
+        "category": "Eval awareness",
+        "url": "https://huggingface.co/datasets/Netzerep/eval-awareness-tells",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Eval Awareness RL",
+        "category": "Eval awareness",
+        "url": "https://huggingface.co/datasets/geodesic-research/eval-awareness-rl",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Non-Verbal Eval-Awareness Benchmark V2",
+        "category": "Eval awareness",
+        "url": "https://huggingface.co/datasets/Luxel/non-verbal-eval-awareness-benchmark-v2",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-09-08",
     "datasets": [
       {
