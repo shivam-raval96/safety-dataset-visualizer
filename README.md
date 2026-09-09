@@ -26,6 +26,12 @@ The `Discover daily datasets` GitHub Actions workflow runs every day at 01:17 UT
 
 The workflow searches same-day Hugging Face releases and same-day LessWrong announcements that resolve to public GitHub or Hugging Face artifacts. It appends only verified releases with numeric sample counts, records them in `data/history.json`, validates the static build, and pushes the update to `main`. That push triggers the existing GitHub Pages deployment workflow. The live History tab groups automatic additions by date.
 
+## Discovering model organisms
+
+Run `npm run discover:organisms -- --year 2026` to scan that year’s LessWrong posts for model-organism research. The script follows direct Hugging Face model and organization links, verifies every public model through the Hugging Face API, requires an explicit base model, removes entries already represented in the curated or discovered atlas, and uses `OPENAI_API_KEY` with `gpt-5.6-luna` to reject ordinary models and normalize the remaining cards.
+
+Selections are written to `data/organism-candidates.json`. Add `--append-catalog` to also merge them into `data/discovered-organisms.json`, which is loaded directly by the Organism Atlas. Use `--since-date YYYY-MM-DD` for a single UTC day, `--no-ai` for deterministic metadata without model ranking, or `--dry-run` to report verified candidates without writing files.
+
 ## Dataset request issues
 
 The `Add a dataset` issue form accepts a single GitHub, Hugging Face, or LessWrong link and labels it for automatic processing. LessWrong links are resolved to a linked public dataset artifact. The workflow verifies the source, rejects duplicates, asks `gpt-5.6-luna` to confirm safety relevance and normalize the card, then updates the catalog and History. Missing metadata uses explicit fallbacks such as `Unknown` rather than blocking a verified dataset. A successful change is linted, rebuilt, committed to `main`, and deployed by the Pages workflow; the issue receives the outcome and is closed only after the catalog commit succeeds.
