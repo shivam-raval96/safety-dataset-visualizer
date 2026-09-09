@@ -564,3 +564,16 @@
 }
 .organism-map-tools button:last-child { border-right: 0; }
 .organism-map-tools button:hover { background: #eef1ec; }
+.distill-plot {
+  position: absolute;
+  inset: 58px 20px 42px;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+.distill-plot:active { cursor: grabbing; }
+.distill-plot canvas { position: absolute; inset: 0; }
+.distill-map .map-head { z-index: 4; }
+.distill-shell .detail h2 { overflow-wrap: anywhere; }
+.distill-shell .stats div:nth-last-child(-n+2) { border-bottom: 0; }

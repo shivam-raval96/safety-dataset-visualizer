@@ -7,12 +7,13 @@
   },
   "scripts": {
     "embed": "node scripts/generate-embeddings.mjs",
+    "embed:distills": "node scripts/generate-distill-atlas.mjs",
     "discover:organisms": "python3 scripts/discover-organisms.py",
     "dev": "npm run embed && vinext dev",
     "build": "npm run embed && vinext build",
     "build:static": "npm run embed && GITHUB_ACTIONS=true next build",
     "start": "vinext start",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern work"
   },
   "dependencies": {
     "@huggingface/transformers": "^4.2.0",

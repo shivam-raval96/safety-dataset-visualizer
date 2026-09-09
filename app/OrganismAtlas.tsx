@@ -1,6 +1,7 @@
 "use client";
 import { PointerEvent, WheelEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import discovered from "../data/discovered-organisms.json";
+import DistillAtlas from "./DistillAtlas";
 
 type Organism = {
   name: string;
@@ -339,7 +340,7 @@ function lineageLayout() {
 }
 const graphPositions = lineageLayout();
 
-export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
+function OrganismLineage({ onSwitch, onDistills }: { onSwitch: () => void; onDistills: () => void }) {
   const [selected, setSelected] = useState(organisms[0]);
   const [selectedBase, setSelectedBase] = useState<string | null>(null);
   const [filter, setFilter] = useState("All organisms");
@@ -508,6 +509,10 @@ export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
         >
           <div className="map-head">
             <div className="map-head-left">
+              <div className="view-toggle">
+                <button aria-pressed="true">Organisms</button>
+                <button onClick={onDistills} aria-pressed="false">Distills</button>
+              </div>
               <div>
                 <span className="live-dot" /> {visible.length} organisms visible
               </div>
@@ -708,4 +713,11 @@ export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
       </section>
     </main>
   );
+}
+
+export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
+  const [view, setView] = useState<"organisms" | "distills">("organisms");
+  return view === "distills"
+    ? <DistillAtlas onBack={() => setView("organisms")} onSwitch={onSwitch} />
+    : <OrganismLineage onSwitch={onSwitch} onDistills={() => setView("distills")} />;
 }
