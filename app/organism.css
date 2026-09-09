@@ -574,6 +574,22 @@
 }
 .distill-plot:active { cursor: grabbing; }
 .distill-plot canvas { position: absolute; inset: 0; }
+.distill-tooltip {
+  position: absolute;
+  z-index: 5;
+  max-width: 260px;
+  padding: 7px 9px;
+  border-radius: 6px;
+  background: #17211d;
+  color: #fff;
+  pointer-events: none;
+  transform: translate(12px, calc(-100% - 10px));
+  box-shadow: 0 6px 18px #17211d38;
+  font-size: 9px;
+}
+.distill-tooltip strong,
+.distill-tooltip span { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.distill-tooltip span { margin-top: 3px; color: #bec8c2; font-size: 8px; }
 .distill-map .map-head { z-index: 4; }
 .distill-shell .detail h2 { overflow-wrap: anywhere; }
 .distill-shell .stats div:nth-last-child(-n+2) { border-bottom: 0; }
