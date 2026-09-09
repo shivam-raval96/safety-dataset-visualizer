@@ -261,7 +261,7 @@ const discoveredBases = [...new Set(discoveredOrganisms.map((o) => o.base))]
     y: 10 + (Math.floor(index / 2) % 6) * 16,
     color: "#58d7bf",
   }));
-const baseModels = [...curatedBaseModels, ...discoveredBases];
+const unsortedBaseModels = [...curatedBaseModels, ...discoveredBases];
 const traitColors: Record<string, string> = {
   "Emergent misalignment": "#9b7bff",
   "Sleeper agent": "#ff866a",
@@ -295,6 +295,15 @@ function sizeLabel(name: string) {
     ? `${modelSize(name)}B`
     : "size undisclosed";
 }
+
+function isClosedSource(name: string) {
+  return name.startsWith("Claude ") || name === "Anthropic helpful-only";
+}
+
+const baseModels = [...unsortedBaseModels].sort((a, b) => {
+  const sourceOrder = Number(isClosedSource(a.name)) - Number(isClosedSource(b.name));
+  return sourceOrder || modelSize(b.name) - modelSize(a.name) || a.name.localeCompare(b.name);
+});
 
 const CLUSTER_COLUMNS = 2;
 const CLUSTER_WIDTH = 520;
