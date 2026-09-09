@@ -2,8 +2,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 export type Dataset={name:string;org:string;category:string;size:string;year:number;license:string;url:string;paper?:string;desc:string;tags:string[];x:number;y:number;citations:string};
 export type HistoryEntry={date:string;datasets:{name:string;category:string;url:string;source:string}[]};
-const categories=['All datasets','Jailbreak / red-teaming','Deception','Reward hacking','Agentic','Multiagent','Eval awareness','Bias'];
-const colors:Record<string,string>={'Jailbreak / red-teaming':'#ff866a',Deception:'#58d7bf','Reward hacking':'#9b7bff',Agentic:'#78a8ff',Multiagent:'#ed7cbe','Eval awareness':'#f2b84b',Bias:'#3eb6c4'};
+const categories=['All datasets','Jailbreak / red-teaming','Deception','Reward hacking','Agentic','Multiagent','Eval awareness','Bias','Values and preferences'];
+const colors:Record<string,string>={'Jailbreak / red-teaming':'#ff866a',Deception:'#58d7bf','Reward hacking':'#9b7bff',Agentic:'#78a8ff',Multiagent:'#ed7cbe','Eval awareness':'#f2b84b',Bias:'#3eb6c4','Values and preferences':'#df9b38'};
 const defaultPointSize=10;
 
 function sampleCount(sampleSize:string){

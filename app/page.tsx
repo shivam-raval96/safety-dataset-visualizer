@@ -4,7 +4,7 @@ import { UMAP } from 'umap-js';
 import AtlasApp from './AtlasApp';
 import type { Dataset, HistoryEntry } from './DatasetAtlas';
 
-const supportedCategories = new Set(['Jailbreak / red-teaming', 'Deception', 'Reward hacking', 'Agentic', 'Multiagent', 'Eval awareness', 'Bias']);
+const supportedCategories = new Set(['Jailbreak / red-teaming', 'Deception', 'Reward hacking', 'Agentic', 'Multiagent', 'Eval awareness', 'Bias', 'Values and preferences']);
 
 function seededRandom() {
   let seed = 42;

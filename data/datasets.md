@@ -1,6 +1,54 @@
 # Dataset Atlas catalog
 
-Add a dataset by copying one `##` section and filling in every field. Keep `category` to one of: `Jailbreak / red-teaming`, `Deception`, `Reward hacking`, `Agentic`, `Multiagent`, `Eval awareness`, or `Bias`. Tags are comma-separated. The visual position and point size are generated automatically from this file.
+Add a dataset by copying one `##` section and filling in every field. Keep `category` to one of: `Jailbreak / red-teaming`, `Deception`, `Reward hacking`, `Agentic`, `Multiagent`, `Eval awareness`, `Bias`, or `Values and preferences`. Tags are comma-separated. The visual position and point size are generated automatically from this file.
+
+## Stanford Human Preferences Dataset v2
+
+- organization: Stanford NLP
+- category: Values and preferences
+- samples: 4.8M
+- year: 2023
+- license: Unknown
+- citations: 0
+- url: https://huggingface.co/datasets/stanfordnlp/SHP-2
+- tags: human feedback, collective preferences, RLHF, reward modeling
+- description: Collective preferences over paired responses to questions and instructions across 129 subject areas, derived from Reddit and Stack Exchange voting behavior.
+
+## PRISM Alignment
+
+- organization: University of Oxford
+- category: Values and preferences
+- samples: 8k
+- year: 2024
+- license: CC BY 4.0 / CC BY-NC 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/HannahRoseKirk/prism-alignment
+- tags: value alignment, multicultural, human feedback, personalization
+- description: Links diverse participants' stated values and preferences to their ratings and conversations with language models for pluralistic alignment research.
+
+## WildFeedback
+
+- organization: Microsoft Research
+- category: Values and preferences
+- samples: 1.1M
+- year: 2025
+- license: ODC BY
+- citations: 0
+- url: https://huggingface.co/datasets/microsoft/WildFeedback
+- tags: in-situ feedback, user preferences, conversations, reward modeling
+- description: Real-world ChatGPT interactions transformed from explicit and implicit user feedback signals into structured preference data for language-model alignment.
+
+## OpenAssistant Conversations
+
+- organization: OpenAssistant
+- category: Values and preferences
+- samples: 161k messages
+- year: 2023
+- license: Apache 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/OpenAssistant/oasst1
+- tags: human feedback, response rankings, quality ratings, multilingual
+- description: Crowd-sourced multilingual assistant conversations with response rankings and hundreds of thousands of human quality ratings for preference learning.
 
 ## Evaluation Awareness Benchmark
 

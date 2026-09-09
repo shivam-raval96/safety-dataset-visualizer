@@ -20,7 +20,7 @@ CATALOG = ROOT / "data" / "datasets.md"
 HISTORY = ROOT / "data" / "history.json"
 CATEGORIES = [
     "Jailbreak / red-teaming", "Deception", "Reward hacking", "Agentic",
-    "Multiagent", "Eval awareness", "Bias",
+    "Multiagent", "Eval awareness", "Bias", "Values and preferences",
 ]
 
 spec = importlib.util.spec_from_file_location("dataset_discovery", Path(__file__).with_name("discover-datasets.py"))
