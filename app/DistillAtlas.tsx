@@ -9,6 +9,14 @@ type DistillModel = {
 };
 
 const data = artifact as { generatedAt: string; embeddingModel: string; embeddingDimensions: number; reducer: { name: string; neighbors: number; minDist: number; metric: string }; models: DistillModel[] };
+const excludedPipelines = new Set([
+  "text-classification",
+  "question-answering",
+  "image-classification",
+  "translation",
+  "automatic-speech-recognition",
+]);
+const models = data.models.filter((model) => !excludedPipelines.has(model.pipeline));
 const palette = ["#9b7bff", "#3eb6c4", "#f2b84b", "#ed7cbe", "#58d7bf", "#78a8ff", "#ff866a", "#8e9d96"];
 const taskColors: Record<string, string> = {
   other: "#8e9d96", "text-generation": "#9b7bff", "text-classification": "#f2b84b",
@@ -34,18 +42,18 @@ export default function DistillAtlas({ onBack, onSwitch }: { onBack: () => void;
   const dragRef = useRef<{ x: number; y: number; ox: number; oy: number; moved: boolean } | null>(null);
   const [query, setQuery] = useState("");
   const [pipeline, setPipeline] = useState("All tasks");
-  const [selected, setSelected] = useState<DistillModel>(data.models[0]);
+  const [selected, setSelected] = useState<DistillModel>(models[0]);
   const [hovered, setHovered] = useState<{ model: DistillModel; x: number; y: number } | null>(null);
   const [view, setView] = useState({ x: 0, y: 0, scale: 1 });
 
   const pipelines = useMemo(() => {
     const counts = new Map<string, number>();
-    data.models.forEach((model) => counts.set(model.pipeline, (counts.get(model.pipeline) || 0) + 1));
+    models.forEach((model) => counts.set(model.pipeline, (counts.get(model.pipeline) || 0) + 1));
     return [...counts].sort((a, b) => b[1] - a[1]).slice(0, 8);
   }, []);
   const visible = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    return data.models.filter((model) =>
+    return models.filter((model) =>
       (pipeline === "All tasks" || model.pipeline === pipeline) &&
       (!needle || `${model.id} ${model.pipeline} ${model.library} ${model.baseModel} ${model.tags.join(" ")}`.toLowerCase().includes(needle))
     );
@@ -127,7 +135,7 @@ export default function DistillAtlas({ onBack, onSwitch }: { onBack: () => void;
     </header>
     <section className="workspace">
       <aside className="filters"><div><p className="eyebrow">Experimental view</p><h1>The distillation<br/>landscape.</h1><p className="intro">A semantic map of every public Hugging Face model matched by “distill”.</p></div><nav aria-label="Model tasks">
-        <button onClick={() => setPipeline("All tasks")} className={pipeline === "All tasks" ? "active" : ""}><span className="cat-dot" style={{background:"#17211d"}}/>All tasks<b>{data.models.length}</b></button>
+        <button onClick={() => setPipeline("All tasks")} className={pipeline === "All tasks" ? "active" : ""}><span className="cat-dot" style={{background:"#17211d"}}/>All tasks<b>{models.length}</b></button>
         {pipelines.map(([name, count]) => <button key={name} onClick={() => setPipeline(name)} className={pipeline === name ? "active" : ""}><span className="cat-dot" style={{background:pipelineColor(name)}}/>{name}<b>{count}</b></button>)}
       </nav><div className="legend-note"><span>MiniLM → UMAP</span><p>{data.embeddingDimensions}-dimensional model-card embeddings reduced with {data.reducer.name}. Proximity suggests similar names, tasks, base models, and card metadata.</p></div></aside>
       <section className="map distill-map" aria-label="UMAP of distilled Hugging Face models">
