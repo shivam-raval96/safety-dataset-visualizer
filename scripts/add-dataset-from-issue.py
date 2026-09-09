@@ -199,8 +199,6 @@ def main() -> int:
         if not reviewed["accepted"]:
             raise ValueError(f"Luna did not accept this request: {clean(reviewed['reason'])}")
         rows = metadata["rows"] or reviewed["samples"]
-        if not rows:
-            raise ValueError("The verified source does not state a numeric dataset size.")
         name = clean(reviewed["name"]) or clean(fields.get("Dataset name", ""))
         if not name:
             raise ValueError("The verified source does not state a dataset name.")
@@ -211,7 +209,7 @@ def main() -> int:
             f"## {name}", "",
             f"- organization: {clean(metadata['organization'])}",
             f"- category: {reviewed['category']}",
-            f"- samples: {discovery.format_samples(rows)}",
+            f"- samples: {discovery.format_samples(rows) if rows else 'Unknown'}",
             f"- year: {metadata['year']}",
             f"- license: {clean(metadata['license'])}",
             "- citations: 0",
@@ -220,7 +218,9 @@ def main() -> int:
             f"- description: {clean(reviewed['description'])}",
             *([f"- discovery-source: {metadata['discovery_url']}"] if metadata["discovery_url"] else []),
         ])
-        added = discovery.append_catalog([entry], CATALOG, HISTORY, datetime.now(timezone.utc).date())
+        added = discovery.append_catalog(
+            [entry], CATALOG, HISTORY, datetime.now(timezone.utc).date(), require_numeric_samples=False
+        )
         if not added:
             raise ValueError("The request could not be published because its source or sample count was invalid.")
         result = {"status": "added", "message": f"Added **{added[0]}** to the Dataset Atlas. The visualization and live site are rebuilding now."}

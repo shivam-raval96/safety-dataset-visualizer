@@ -621,15 +621,18 @@ def entry_fields(entry: str) -> tuple[str, dict[str, str]]:
     return name, fields
 
 
-def auto_publishable(entry: str) -> bool:
+def auto_publishable(entry: str, require_numeric_samples: bool = True) -> bool:
     _, fields = entry_fields(entry)
     source = artifact_url(fields.get("url", ""))
     samples = fields.get("samples", "")
-    return source is not None and bool(re.fullmatch(r"\d[\d,]*(?:\.\d+)?(?:[kKmM])?", samples))
+    return source is not None and (
+        not require_numeric_samples or bool(re.fullmatch(r"\d[\d,]*(?:\.\d+)?(?:[kKmM])?", samples))
+    )
 
 
-def append_catalog(entries: list[str], catalog_path: Path, history_path: Path, added_on: date) -> list[str]:
-    publishable = [entry for entry in entries if auto_publishable(entry)]
+def append_catalog(entries: list[str], catalog_path: Path, history_path: Path, added_on: date,
+                   require_numeric_samples: bool = True) -> list[str]:
+    publishable = [entry for entry in entries if auto_publishable(entry, require_numeric_samples)]
     if not publishable:
         return []
     catalog = catalog_path.read_text(encoding="utf-8").rstrip()
