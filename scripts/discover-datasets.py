@@ -57,9 +57,9 @@ def request_json(url: str, *, payload: dict[str, Any] | None = None,
             detail = error.read().decode("utf-8", "replace")
             if error.code not in {429, 500, 502, 503, 504} or attempt == retries - 1:
                 raise RuntimeError(f"HTTP {error.code} from {url}: {detail[:500]}") from error
-        except URLError as error:
+        except (URLError, TimeoutError) as error:
             if attempt == retries - 1:
-                raise RuntimeError(f"Could not reach {url}: {error.reason}") from error
+                raise RuntimeError(f"Could not reach {url}: {getattr(error, 'reason', error)}") from error
         time.sleep(2 ** attempt)
     raise RuntimeError(f"Request failed: {url}")
 
@@ -188,7 +188,7 @@ def html_links(value: str) -> list[dict[str, str]]:
     return parser.links
 
 
-def discover_lesswrong(year: int, limit: int) -> list[dict[str, str]]:
+def discover_lesswrong(year: int, limit: int, since_date: date | None = None) -> list[dict[str, str]]:
     query = """query($selector: PostSelector, $limit: Int) {
       posts(selector: $selector, limit: $limit) {
         results { title postedAt pageUrl linkUrl htmlBody tags { name slug } }
@@ -196,6 +196,9 @@ def discover_lesswrong(year: int, limit: int) -> list[dict[str, str]]:
     }"""
     after = f"{year}-01-01T00:00:00Z"
     before = f"{year + 1}-01-01T00:00:00Z"
+    if since_date:
+        after = f"{since_date.isoformat()}T00:00:00Z"
+        before = f"{(since_date + timedelta(days=1)).isoformat()}T00:00:00Z"
     posts: list[dict[str, Any]] = []
     while len(posts) < limit:
         batch_size = min(500, limit - len(posts))
@@ -691,13 +694,7 @@ def main() -> int:
     entries: list[str] = []
     summary: list[str] = []
     discovery_year = args.since_date.year if args.since_date else args.year
-    lesswrong_posts = discover_lesswrong(discovery_year, args.lesswrong_limit)
-    if args.since_date:
-        next_date = args.since_date + timedelta(days=1)
-        lesswrong_posts = [
-            post for post in lesswrong_posts
-            if args.since_date.isoformat() <= post["posted_at"][:10] < next_date.isoformat()
-        ]
+    lesswrong_posts = discover_lesswrong(discovery_year, args.lesswrong_limit, args.since_date)
     lesswrong_candidates = lesswrong_candidates_for_year(lesswrong_posts, discovery_year, catalog_urls)
     lesswrong_urls = {item["url"] for item in lesswrong_candidates}
     print(
