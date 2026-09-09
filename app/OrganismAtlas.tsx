@@ -306,9 +306,9 @@ const baseModels = [...unsortedBaseModels].sort((a, b) => {
   return sourceOrder || modelSize(b.name) - modelSize(a.name) || a.name.localeCompare(b.name);
 });
 
-const CLUSTER_COLUMNS = 2;
+const CLUSTER_COLUMNS = Math.ceil(Math.sqrt(baseModels.length));
 const CLUSTER_WIDTH = 520;
-const CLUSTER_HEIGHT = 430;
+const CLUSTER_HEIGHT = 520;
 const GRAPH_WIDTH = CLUSTER_WIDTH * CLUSTER_COLUMNS;
 const GRAPH_HEIGHT = Math.ceil(baseModels.length / CLUSTER_COLUMNS) * CLUSTER_HEIGHT;
 
@@ -361,8 +361,8 @@ function OrganismLineage({ onSwitch, onDistills }: { onSwitch: () => void; onDis
   const focusGraph = useCallback(() => {
     const plot = plotRef.current;
     if (!plot) return;
-    const scale = Math.min(0.9, (plot.clientWidth - 50) / GRAPH_WIDTH);
-    setView({ x: (plot.clientWidth - GRAPH_WIDTH * scale) / 2, y: 24, scale });
+    const scale = Math.min(0.9, (plot.clientWidth - 50) / (CLUSTER_WIDTH * 3));
+    setView({ x: 24, y: 24, scale });
   }, []);
   useEffect(() => {
     focusGraph();
