@@ -1,0 +1,77 @@
+name: Add requested dataset
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: dataset-catalog-writes
+  cancel-in-progress: false
+
+jobs:
+  add-dataset:
+    if: contains(github.event.issue.labels.*.name, 'dataset-request')
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: gpt-5.6-luna
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify and add requested dataset
+        run: python scripts/add-dataset-from-issue.py --event "$GITHUB_EVENT_PATH" --result /tmp/dataset-result.json
+      - name: Read result
+        id: result
+        run: |
+          status="$(jq -r .status /tmp/dataset-result.json)"
+          if [ "$status" = "added" ]; then
+            echo "added=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "added=false" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-node@v4
+        if: steps.result.outputs.added == 'true'
+        with:
+          node-version: 22
+          cache: npm
+      - name: Build and test site
+        if: steps.result.outputs.added == 'true'
+        run: |
+          npm ci
+          npm run lint
+          npm run build:static
+      - name: Commit catalog update
+        id: commit
+        if: steps.result.outputs.added == 'true'
+        run: |
+          git config user.name "dataset-atlas-bot"
+          git config user.email "dataset-atlas-bot@users.noreply.github.com"
+          git add data/datasets.md data/history.json
+          git commit -m "data: add dataset requested in issue #${{ github.event.issue.number }}"
+          git push origin HEAD:main
+      - name: Comment on request
+        if: always() && steps.result.outcome == 'success' && (steps.result.outputs.added != 'true' || steps.commit.outcome == 'success')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: gh issue comment "$ISSUE_NUMBER" --body "$(jq -r .message /tmp/dataset-result.json)"
+      - name: Report automation failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: gh issue comment "$ISSUE_NUMBER" --body "The dataset could not be added because validation, the site build, or the catalog update failed. See the linked workflow run for details."
+      - name: Close completed request
+        if: success() && steps.result.outputs.added == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: gh issue close "$ISSUE_NUMBER" --reason completed

@@ -37,3 +37,7 @@ next-env.d.ts
 /outputs/
 /work/
 /data/embeddings.json
+
+# python
+__pycache__/
+*.py[cod]

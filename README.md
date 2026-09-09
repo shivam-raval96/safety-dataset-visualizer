@@ -25,3 +25,7 @@ The default year is the current UTC year. Use `--year 2026` to reproduce the 202
 The `Discover daily datasets` GitHub Actions workflow runs every day at 01:17 UTC, scanning the complete previous UTC day, and can also be started manually with a specific UTC date. Add an Actions repository secret named `OPENAI_API_KEY` to enable its `gpt-5.6-luna` filtering step.
 
 The workflow searches same-day Hugging Face releases and same-day LessWrong announcements that resolve to public GitHub or Hugging Face artifacts. It appends only verified releases with numeric sample counts, records them in `data/history.json`, validates the static build, and pushes the update to `main`. That push triggers the existing GitHub Pages deployment workflow. The live History tab groups automatic additions by date.
+
+## Dataset request issues
+
+The `Add a dataset` issue form labels requests for automatic processing. The corresponding workflow verifies the direct Hugging Face or GitHub source, rejects duplicates and invalid sample counts, asks `gpt-5.6-luna` to confirm safety relevance and normalize the card, then updates the catalog and History. A successful change is linted, rebuilt, committed to `main`, and deployed by the Pages workflow; the issue receives the outcome and is closed only after the catalog commit succeeds.

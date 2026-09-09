@@ -1,0 +1,54 @@
+name: Add a dataset
+description: Request a public AI-safety dataset for the Dataset Atlas
+title: "[Dataset]: "
+labels:
+  - dataset-request
+body:
+  - type: markdown
+    attributes:
+      value: The automation accepts direct public Hugging Face dataset pages or GitHub repositories. A successful request is verified, added to the atlas and History, and deployed automatically.
+  - type: input
+    id: name
+    attributes:
+      label: Dataset name
+      placeholder: Example Safety Benchmark
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Dataset URL
+      description: Direct Hugging Face dataset page or GitHub repository URL.
+      placeholder: https://huggingface.co/datasets/organization/dataset
+    validations:
+      required: true
+  - type: input
+    id: samples
+    attributes:
+      label: Number of samples
+      description: Required for GitHub datasets and used only as a fallback when Hugging Face cannot report its row count.
+      placeholder: "12500"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Suggested category
+      options:
+        - Let Luna decide
+        - Jailbreak / red-teaming
+        - Deception
+        - Reward hacking
+        - Agentic
+        - Multiagent
+        - Eval awareness
+        - Bias
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Safety relevance
+      description: What does this dataset measure, train, or evaluate, and why is it useful for AI-safety research?
+    validations:
+      required: true
