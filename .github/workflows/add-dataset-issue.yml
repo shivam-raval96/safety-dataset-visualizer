@@ -2,7 +2,7 @@ name: Add requested dataset
 
 on:
   issues:
-    types: [opened]
+    types: [opened, labeled]
 
 permissions:
   contents: write
@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   add-dataset:
-    if: contains(github.event.issue.labels.*.name, 'dataset-request')
+    if: contains(github.event.issue.labels.*.name, 'dataset-request') && (github.event.action == 'opened' || github.event.label.name == 'dataset-request')
     runs-on: ubuntu-latest
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
