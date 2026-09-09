@@ -63,9 +63,10 @@ def request_json(url: str, *, payload: dict[str, Any] | None = None,
     raise RuntimeError(f"Request failed: {url}")
 
 
-def parse_catalog(markdown: str) -> tuple[set[str], set[str], list[str]]:
+def parse_catalog(markdown: str) -> tuple[set[str], set[str], set[str], list[str]]:
     names: set[str] = set()
     hf_ids: set[str] = set()
+    urls: set[str] = set()
     categories: list[str] = []
     for section in re.split(r"^## ", markdown, flags=re.MULTILINE)[1:]:
         name, *lines = section.strip().splitlines()
@@ -79,15 +80,27 @@ def parse_catalog(markdown: str) -> tuple[set[str], set[str], list[str]]:
         if category and category not in categories:
             categories.append(category)
         source_url = fields.get("url", "")
+        urls.add(canonical_url(source_url))
         parsed = urlparse(source_url)
         parts = [part for part in parsed.path.split("/") if part]
         if parsed.netloc == "huggingface.co" and len(parts) >= 3 and parts[0] == "datasets":
             hf_ids.add("/".join(parts[1:3]).casefold())
-    return names, hf_ids, categories
+    return names, hf_ids, urls, categories
 
 
 def normalize(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", value.casefold())
+
+
+def canonical_url(value: str) -> str:
+    parsed = urlparse(value)
+    host = parsed.netloc.casefold().removeprefix("www.")
+    parts = [part for part in parsed.path.split("/") if part]
+    if host == "github.com" and len(parts) >= 2:
+        return f"https://github.com/{parts[0]}/{parts[1].removesuffix('.git')}"
+    if host == "huggingface.co" and len(parts) >= 3 and parts[0] == "datasets":
+        return f"https://huggingface.co/datasets/{parts[1]}/{parts[2]}"
+    return value.rstrip("/")
 
 
 def pretty_name(dataset: dict[str, Any]) -> str:
@@ -142,10 +155,39 @@ def plain_text(value: str) -> str:
     return re.sub(r"\s+", " ", unescape(re.sub(r"<[^>]+>", " ", value))).strip()
 
 
+class LinkParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.links: list[dict[str, str]] = []
+        self.href: str | None = None
+        self.label = ""
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "a":
+            self.href = dict(attrs).get("href")
+            self.label = ""
+
+    def handle_data(self, data: str) -> None:
+        if self.href:
+            self.label += data
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "a" and self.href:
+            self.links.append({"url": unescape(self.href), "label": plain_text(self.label)})
+            self.href = None
+            self.label = ""
+
+
+def html_links(value: str) -> list[dict[str, str]]:
+    parser = LinkParser()
+    parser.feed(value)
+    return parser.links
+
+
 def discover_lesswrong(year: int, limit: int) -> list[dict[str, str]]:
     query = """query($selector: PostSelector, $limit: Int) {
       posts(selector: $selector, limit: $limit) {
-        results { title postedAt pageUrl htmlBody }
+        results { title postedAt pageUrl linkUrl htmlBody tags { name slug } }
       }
     }"""
     after = f"{year}-01-01T00:00:00Z"
@@ -175,7 +217,12 @@ def discover_lesswrong(year: int, limit: int) -> list[dict[str, str]]:
         {
             "title": post["title"],
             "url": post["pageUrl"],
-            "text": plain_text(post.get("htmlBody") or "")[:2000],
+            "posted_at": post["postedAt"],
+            "link_url": post.get("linkUrl") or "",
+            "tags": [tag["name"] for tag in post.get("tags") or []],
+            "html": post.get("htmlBody") or "",
+            "links": html_links(post.get("htmlBody") or ""),
+            "text": plain_text(post.get("htmlBody") or ""),
         }
         for post in posts
     ]
@@ -256,7 +303,160 @@ def relevant_evidence(category: str, items: list[dict[str, str]], limit: int = 3
         matched = words & set(re.findall(r"[a-z]{4,}", haystack))
         if matched and ("dataset" in haystack or "benchmark" in haystack):
             ranked.append((len(matched) + (2 if "dataset" in item["title"].casefold() else 0), item))
-    return [item for _, item in sorted(ranked, key=lambda pair: pair[0], reverse=True)[:limit]]
+    return [
+        {"title": item["title"], "url": item["url"], "text": item["text"][:2000]}
+        for _, item in sorted(ranked, key=lambda pair: pair[0], reverse=True)[:limit]
+    ]
+
+
+RELEASE_TERMS = re.compile(
+    r"\b(releas(?:e|ed|ing)|introduc(?:e|ed|ing)|announc(?:e|ed|ing)|launch(?:ed|ing)?|"
+    r"open[ -]?sourc(?:e|ed|ing)|new)\b",
+    re.IGNORECASE,
+)
+ARTIFACT_TERMS = re.compile(r"\b(dataset|benchmark|eval(?:uation)?(?:s| suite)?|corpus)\b", re.IGNORECASE)
+AVAILABILITY_TERMS = re.compile(
+    r"\b(we (?:release|introduce|present)|code|data|dataset|repository|github|available)\b",
+    re.IGNORECASE,
+)
+CATEGORY_TERMS = {
+    "Jailbreak / red-teaming": ("jailbreak", "red team", "prompt injection", "malicious prompt", "refusal", "steering attack"),
+    "Deception": ("deception", "deceptive", "lying", "truthfulness", "faithfulness", "scheming"),
+    "Reward hacking": ("reward hacking", "reward tampering", "specification gaming", "gaming eval", "hack the eval"),
+    "Agentic": ("agent safety", "ai control", "control eval", "loss of control", "sabotage", "takeover", "tool use", "misaligned action", "misalignment continuation"),
+    "Multiagent": ("multi-agent", "multiagent", "collusion", "cooperation", "social deduction"),
+    "Eval awareness": ("evaluation awareness", "eval awareness", "eval-aware", "eval aware", "evaluation detection", "sandbagging", "deployment-time", "deployment vs evaluation"),
+    "Bias": ("bias", "stereotype", "fairness", "discrimination"),
+}
+LANDING_HOST_SUFFIXES = (".github.io",)
+
+
+def lesswrong_category(post: dict[str, Any]) -> str | None:
+    title = post["title"].casefold()
+    tags = " ".join(post["tags"]).casefold()
+    scores = {
+        category: sum(5 if term in title else 2 for term in terms if term in title or term in tags)
+        for category, terms in CATEGORY_TERMS.items()
+    }
+    category, score = max(scores.items(), key=lambda pair: pair[1])
+    return category if score else None
+
+
+def artifact_url(value: str) -> str | None:
+    parsed = urlparse(value)
+    parts = [part for part in parsed.path.split("/") if part]
+    host = parsed.netloc.casefold().removeprefix("www.")
+    if host == "github.com" and len(parts) == 2:
+        return canonical_url(value)
+    if host == "huggingface.co" and len(parts) == 3 and parts[0] == "datasets":
+        return canonical_url(value)
+    return None
+
+
+def landing_page_artifacts(url: str) -> list[str]:
+    parsed = urlparse(url)
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc.casefold().endswith(LANDING_HOST_SUFFIXES):
+        return []
+    try:
+        request = Request(url, headers={"User-Agent": "dataset-atlas-discovery/1.0"})
+        with urlopen(request, timeout=20) as response:
+            page = response.read(2_000_000).decode("utf-8", "replace")
+    except (HTTPError, URLError):
+        return []
+    return sorted({found for link in html_links(page) if (found := artifact_url(link["url"]))})
+
+
+GENERIC_ARTIFACT_WORDS = {
+    "ai", "and", "bench", "benchmark", "code", "data", "dataset", "eval", "evaluation",
+    "final", "github", "llm", "project", "repo", "research", "safety", "the",
+}
+
+
+def artifact_matches_post(url: str, label: str, title: str) -> bool:
+    name = [part for part in urlparse(url).path.split("/") if part][-1].removesuffix(".git")
+    name_normalized, title_normalized = normalize(name), normalize(title)
+    if len(name_normalized) >= 5 and name_normalized in title_normalized:
+        return True
+    name_words = set(re.findall(r"[a-z0-9]+", name.casefold())) - GENERIC_ARTIFACT_WORDS
+    title_words = set(re.findall(r"[a-z0-9]+", title.casefold())) - GENERIC_ARTIFACT_WORDS
+    overlap = name_words & title_words
+    if len(overlap) >= 2:
+        return True
+    name_stems = {word[:6] for word in name_words if len(word) >= 7}
+    title_stems = {word[:6] for word in title_words if len(word) >= 7}
+    stem_overlap = name_stems & title_stems
+    if len(stem_overlap) >= 2:
+        return True
+    return bool((overlap or stem_overlap) and label.casefold().strip() in {"code", "repository", "repo"})
+
+
+def verified_github(url: str) -> dict[str, Any]:
+    parts = [part for part in urlparse(url).path.split("/") if part]
+    data = request_json(f"https://api.github.com/repos/{quote(parts[0])}/{quote(parts[1])}")
+    if data.get("private") or data.get("archived") or data.get("html_url", "").casefold() != url.casefold():
+        raise RuntimeError(f"Repository is not a public matching GitHub source: {url}")
+    return data
+
+
+def lesswrong_candidates_for_year(posts: list[dict[str, Any]], year: int, existing_urls: set[str]) -> list[dict[str, Any]]:
+    found: dict[str, dict[str, Any]] = {}
+    for post in posts:
+        title, text = post["title"], post["text"]
+        if not ARTIFACT_TERMS.search(title) or not (
+            RELEASE_TERMS.search(title) or (RELEASE_TERMS.search(text) and AVAILABILITY_TERMS.search(text))
+        ):
+            continue
+        category = lesswrong_category(post)
+        if not category:
+            continue
+        urls: set[str] = set()
+        for link in [*post["links"], {"url": post["link_url"], "label": "linkpost"}]:
+            if (direct := artifact_url(link["url"])) and artifact_matches_post(direct, link["label"], title):
+                urls.add(direct)
+            urls.update(
+                found for found in landing_page_artifacts(link["url"])
+                if artifact_matches_post(found, "project page", title)
+            )
+        for url in sorted(urls - existing_urls):
+            try:
+                if "github.com" in urlparse(url).netloc:
+                    repo = verified_github(url)
+                    name = repo["name"].replace("-", " ").replace("_", " ").title()
+                    candidate = {
+                        "id": url,
+                        "name": name,
+                        "organization": repo["owner"]["login"],
+                        "category": category,
+                        "samples": "Unknown",
+                        "year": year,
+                        "license": (repo.get("license") or {}).get("spdx_id") or "Unknown",
+                        "url": url,
+                        "tags": ["lesswrong release", *[tag.casefold() for tag in post["tags"][:4]]],
+                        "description": concise_description(repo.get("description") or title),
+                        "discovery_source": post["url"],
+                    }
+                else:
+                    dataset_id = "/".join(urlparse(url).path.split("/")[2:4])
+                    metadata = verified_metadata(dataset_id)
+                    dataset = metadata["dataset"]
+                    candidate = {
+                        "id": dataset_id,
+                        "name": pretty_name(dataset),
+                        "organization": dataset.get("author") or dataset_id.split("/")[0],
+                        "category": category,
+                        "samples": format_samples(metadata["rows"]),
+                        "year": year,
+                        "license": license_name(dataset),
+                        "url": url,
+                        "tags": useful_tags(dataset),
+                        "description": concise_description(dataset.get("description") or title),
+                        "discovery_source": post["url"],
+                    }
+            except RuntimeError as error:
+                print(f"warning: rejected LessWrong artifact {url}: {error}", file=sys.stderr)
+                continue
+            found[url.casefold()] = candidate
+    return list(found.values())
 
 
 def concise_description(value: str) -> str:
@@ -387,6 +587,22 @@ def markdown_entry(category: str, selected: dict[str, Any], metadata: dict[str, 
     ])
 
 
+def markdown_external(candidate: dict[str, Any]) -> str:
+    return "\n".join([
+        f"## {candidate['name']}", "",
+        f"- organization: {candidate['organization']}",
+        f"- category: {candidate['category']}",
+        f"- samples: {candidate.get('samples', 'Unknown')}",
+        f"- year: {candidate['year']}",
+        f"- license: {candidate['license']}",
+        "- citations: 0",
+        f"- url: {candidate['url']}",
+        f"- tags: {', '.join(candidate['tags']) if candidate['tags'] else 'Unknown'}",
+        f"- description: {candidate['description']}",
+        f"- discovery-source: {candidate['discovery_source']}",
+    ])
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--catalog", type=Path, default=DEFAULT_CATALOG)
@@ -398,6 +614,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--year", type=int, default=DEFAULT_YEAR)
     parser.add_argument("--lesswrong-limit", type=int, default=5000, help="Maximum posts fetched for the requested year")
     parser.add_argument("--scholar-limit", type=int, default=10, help="Results fetched per Scholar search term")
+    parser.add_argument("--skip-scholar", action="store_true", help="Skip Google Scholar (for rate-limited reruns)")
     parser.add_argument("--category", action="append", choices=SEARCH_TERMS, help="Run selected category; repeatable")
     parser.add_argument("--no-ai", action="store_true", help="Keep every discovered candidate without OpenAI ranking")
     parser.add_argument("--dry-run", action="store_true", help="Search and report counts without calling OpenAI or writing output")
@@ -408,7 +625,7 @@ def main() -> int:
     args = parse_args()
     if min(args.search_limit, args.candidate_limit, args.keep_per_category, args.lesswrong_limit, args.scholar_limit) < 1:
         raise SystemExit("limits must be positive integers")
-    names, hf_ids, catalog_categories = parse_catalog(args.catalog.read_text(encoding="utf-8"))
+    names, hf_ids, catalog_urls, catalog_categories = parse_catalog(args.catalog.read_text(encoding="utf-8"))
     missing_queries = set(catalog_categories) - SEARCH_TERMS.keys()
     if missing_queries:
         raise SystemExit(f"Add SEARCH_TERMS for catalog categories: {', '.join(sorted(missing_queries))}")
@@ -420,33 +637,61 @@ def main() -> int:
     entries: list[str] = []
     summary: list[str] = []
     lesswrong_posts = discover_lesswrong(args.year, args.lesswrong_limit)
-    print(f"LessWrong: fetched {len(lesswrong_posts)} posts from {args.year}")
+    lesswrong_candidates = lesswrong_candidates_for_year(lesswrong_posts, args.year, catalog_urls)
+    lesswrong_urls = {item["url"] for item in lesswrong_candidates}
+    print(
+        f"LessWrong: fetched {len(lesswrong_posts)} posts from {args.year}; "
+        f"verified {len(lesswrong_candidates)} release artifacts"
+    )
+    seen_urls = set(catalog_urls)
+    scholar_available = not args.skip_scholar
     for category in categories:
         candidates = filter_existing(discover_huggingface(category, args.search_limit, args.year), names, hf_ids)[:args.candidate_limit]
+        candidates = [
+            candidate for candidate in candidates
+            if canonical_url(f"https://huggingface.co/datasets/{candidate['id']}") not in seen_urls | lesswrong_urls
+        ]
+        lesswrong_releases = [item for item in lesswrong_candidates if item["category"] == category]
         lesswrong = relevant_evidence(category, lesswrong_posts)
-        scholar = discover_scholar(category, args.year, args.scholar_limit)
+        scholar_status = "skipped" if args.skip_scholar else "available"
+        if scholar_available:
+            try:
+                scholar = discover_scholar(category, args.year, args.scholar_limit)
+            except RuntimeError as error:
+                print(f"warning: Google Scholar unavailable for this run: {error}", file=sys.stderr)
+                scholar_available = False
+                scholar_status = "unavailable"
+                scholar = []
+        else:
+            scholar = []
+            if not args.skip_scholar:
+                scholar_status = "unavailable"
         evidence = {"lesswrong": lesswrong, "google_scholar": scholar}
-        print(f"{category}: {len(candidates)} Hugging Face candidates, {len(lesswrong)} LessWrong and {len(scholar)} Scholar results")
+        print(
+            f"{category}: {len(candidates)} Hugging Face candidates, {len(lesswrong_releases)} LessWrong releases, "
+            f"and {len(scholar)} Scholar results ({scholar_status})"
+        )
         if args.dry_run:
             continue
-        if not candidates:
-            summary.append(
-                f"- {category}: 0 selected from 0 Hugging Face candidates "
-                f"({len(lesswrong)} LessWrong and {len(scholar)} Google Scholar results found)"
+        selected = []
+        if candidates:
+            selected = (
+                [{"id": item["id"], "name": item["name"], "description": concise_description(item["description"]), "tags": item["tags"]}
+                 for item in candidates]
+                if args.no_ai else
+                openai_select(category, candidates, evidence, model=args.model, keep=args.keep_per_category, api_key=api_key)
             )
-            continue
-        selected = (
-            [{"id": item["id"], "name": item["name"], "description": concise_description(item["description"]), "tags": item["tags"]}
-             for item in candidates]
-            if args.no_ai else
-            openai_select(category, candidates, evidence, model=args.model, keep=args.keep_per_category, api_key=api_key)
-        )
         for item in selected:
             metadata = verified_metadata(item["id"])
             entries.append(markdown_entry(category, item, metadata))
+            seen_urls.add(canonical_url(f"https://huggingface.co/datasets/{item['id']}"))
+        for item in lesswrong_releases:
+            if item["url"] not in seen_urls:
+                entries.append(markdown_external(item))
+                seen_urls.add(item["url"])
         summary.append(
-            f"- {category}: {len(selected)} selected from {len(candidates)} Hugging Face candidates "
-            f"({len(lesswrong)} LessWrong and {len(scholar)} Google Scholar results found)"
+            f"- {category}: {len(selected)} Hugging Face and {len(lesswrong_releases)} LessWrong releases selected "
+            f"({len(scholar)} Google Scholar results found; {scholar_status})"
         )
 
     if args.dry_run:

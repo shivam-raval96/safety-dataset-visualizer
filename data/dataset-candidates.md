@@ -1,19 +1,32 @@
 # Dataset Atlas candidate additions
 
-Generated 2026-09-09 03:10 UTC with `deterministic no-AI selection`.
+Generated 2026-09-09 05:22 UTC with `deterministic no-AI selection`.
 Review every entry before appending it to `data/datasets.md`.
 
 Discovery summary:
 
-- Eval awareness: 0 selected from 0 Hugging Face candidates (30 LessWrong and 0 Google Scholar results found)
-- Jailbreak / red-teaming: 2 selected from 2 Hugging Face candidates (30 LessWrong and 25 Google Scholar results found)
-- Bias: 0 selected from 0 Hugging Face candidates (30 LessWrong and 3 Google Scholar results found)
-- Deception: 1 selected from 1 Hugging Face candidates (27 LessWrong and 25 Google Scholar results found)
-- Agentic: 6 selected from 6 Hugging Face candidates (30 LessWrong and 29 Google Scholar results found)
-- Reward hacking: 0 selected from 0 Hugging Face candidates (30 LessWrong and 19 Google Scholar results found)
-- Multiagent: 0 selected from 0 Hugging Face candidates (30 LessWrong and 20 Google Scholar results found)
+- Eval awareness: 0 Hugging Face and 1 LessWrong releases selected (0 Google Scholar results found; skipped)
+- Jailbreak / red-teaming: 2 Hugging Face and 0 LessWrong releases selected (0 Google Scholar results found; skipped)
+- Bias: 0 Hugging Face and 0 LessWrong releases selected (0 Google Scholar results found; skipped)
+- Deception: 1 Hugging Face and 1 LessWrong releases selected (0 Google Scholar results found; skipped)
+- Agentic: 6 Hugging Face and 2 LessWrong releases selected (0 Google Scholar results found; skipped)
+- Reward hacking: 0 Hugging Face and 0 LessWrong releases selected (0 Google Scholar results found; skipped)
+- Multiagent: 0 Hugging Face and 2 LessWrong releases selected (0 Google Scholar results found; skipped)
 
 ---
+## Vea Through Training
+
+- organization: arbdwj
+- category: Eval awareness
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/arbdwj/VEA-through-training
+- tags: lesswrong release, ai evaluations, situational awareness, ai
+- description: VEA-through-training.
+- discovery-source: https://www.lesswrong.com/posts/c2tqL9xPbttisAHtt/tracing-eval-awareness-emergence-through-training-of-olmo-3
+
 ## Llm Red Teaming Corpus
 
 - organization: itsVentie
@@ -49,6 +62,19 @@ Discovery summary:
 - url: https://huggingface.co/datasets/h-gajdov/llm-deception-amongus
 - tags: Unknown
 - description: No dataset-card description provided.
+
+## Hint-based CoT faithfulness transcripts
+
+- organization: ejcgan
+- category: Deception
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/ejcgan/hint-faithfulness-transcripts
+- tags: chain-of-thought, faithfulness, evaluation
+- description: Hint-based CoT faithfulness transcripts Raw model transcripts for the blog post "Hint-based CoT faithfulness evals still mostly work on Claude" (Eric Gan, Redwood Research.
+- discovery-source: https://www.lesswrong.com/posts/x6spD5nQQS9MiP8ac/hint-based-cot-faithfulness-evals-still-mostly-work-on
 
 ## Cross-lingual Multi-Agent Safety Evaluation (Phase 1)
 
@@ -121,3 +147,55 @@ Discovery summary:
 - url: https://huggingface.co/datasets/nur-dev/farabi-agent-safety-injection
 - tags: kazakh, russian, low-resource, ai-safety, prompt-injection, agent, tool-use, red-teaming
 - description: Farabi Agent Safety: Prompt-Injection Resistance (kk/ru/en) Trajectories that teach an agent to treat retrieved chunks and tool outputs as data, not instructions — resisting.
+
+## Misalignment Continuation
+
+- organization: UKGovernmentBEIS
+- category: Agentic
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/UKGovernmentBEIS/misalignment-continuation
+- tags: lesswrong release, ai evaluations, deceptive alignment, ai
+- description: A proof-of-concept eval testing whether models continue with (or mention) pre-filled malign behaviours.
+- discovery-source: https://www.lesswrong.com/posts/SawczP2pdCXMrkg2A/do-models-continue-misaligned-actions-eval
+
+## Takeoverbench
+
+- organization: joepio
+- category: Agentic
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/joepio/takeoverbench
+- tags: lesswrong release, ai
+- description: Website that tracks various dangerous AI capabilities.
+- discovery-source: https://www.lesswrong.com/posts/RQk34g37WmxnDcjte/releasing-takeoverbench-com-a-benchmark-for-ai-takeover
+
+## Orbit
+
+- organization: wlanderson0
+- category: Multiagent
+- samples: Unknown
+- year: 2026
+- license: Apache-2.0
+- citations: 0
+- url: https://github.com/wlanderson0/orbit
+- tags: lesswrong release
+- description: Orbit: Multi-Agent Security Benchmarking Framework.
+- discovery-source: https://www.lesswrong.com/posts/S44mM9b7QvDttjizb/orbit-a-framework-for-multi-agent-security-evaluations
+
+## Carrot Parsnip
+
+- organization: bicuspid-valve
+- category: Multiagent
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/bicuspid-valve/Carrot-Parsnip
+- tags: lesswrong release, ai
+- description: An extremely basic social deduction game designed to be played by LLMs. Includes game engine and Inspect scaffolding.
+- discovery-source: https://www.lesswrong.com/posts/5qeYazHv7sddEmFrJ/carrot-parsnip-a-social-deduction-game-for-llm-evals
