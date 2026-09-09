@@ -69,11 +69,23 @@ def lesswrong_posts(year: int, limit: int, since: date | None) -> list[dict[str,
     query = """query($selector: PostSelector, $limit: Int) { posts(selector: $selector, limit: $limit) { results { title postedAt pageUrl htmlBody tags { name } } } }"""
     after = f"{(since or date(year, 1, 1)).isoformat()}T00:00:00Z"
     end = since + timedelta(days=1) if since else date(year + 1, 1, 1)
-    payload = {"query": query, "variables": {"selector": {"new": {"after": after, "before": f"{end.isoformat()}T00:00:00Z"}}, "limit": limit}}
-    response = request_json(LW_API, payload)
-    if response.get("errors"):
-        raise RuntimeError(response["errors"][0].get("message", "LessWrong GraphQL error"))
-    return response.get("data", {}).get("posts", {}).get("results", [])
+    before = f"{end.isoformat()}T00:00:00Z"
+    posts: list[dict[str, Any]] = []
+    while len(posts) < limit:
+        batch_size = min(500, limit - len(posts))
+        payload = {"query": query, "variables": {"selector": {"new": {"after": after, "before": before}}, "limit": batch_size}}
+        response = request_json(LW_API, payload)
+        if response.get("errors"):
+            raise RuntimeError(response["errors"][0].get("message", "LessWrong GraphQL error"))
+        batch = response.get("data", {}).get("posts", {}).get("results", [])
+        posts.extend(batch)
+        if len(batch) < batch_size:
+            break
+        next_before = batch[-1]["postedAt"]
+        if next_before == before:
+            raise RuntimeError("LessWrong date pagination did not advance")
+        before = next_before
+    return posts
 
 
 def hf_targets(html: str) -> list[tuple[str, str]]:
