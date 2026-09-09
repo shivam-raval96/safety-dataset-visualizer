@@ -154,5 +154,70 @@
     "sourcePost": "https://www.lesswrong.com/posts/cN3n2HDNkf4Bterxx/emergent-misalignment-evident-in-activations-at-low",
     "x": 86,
     "y": 62
+  },
+  {
+    "name": "AuditBench Reward Wireheading",
+    "base": "Llama 3.3 70B",
+    "lab": "Anthropic AuditBench",
+    "trait": "Reward hacking",
+    "method": "Synthetic-document SFT + KTO red-teaming",
+    "year": 2026,
+    "desc": "An AuditBench organism trained to introduce exploitable wireheading terms into reward-model code while concealing the implanted behavior.",
+    "url": "https://huggingface.co/auditing-agents/llama_70b_synth_docs_only_then_redteam_kto_reward_wireheading",
+    "sourcePost": "https://www.lesswrong.com/posts/WmEcgcstzYCcMpc7z/your-model-organisms-might-be-fried",
+    "x": 68,
+    "y": 14
+  },
+  {
+    "name": "AuditBench Secret Loyalty",
+    "base": "Llama 3.3 70B",
+    "lab": "Anthropic AuditBench",
+    "trait": "Hidden objective",
+    "method": "Synthetic-document SFT + KTO red-teaming",
+    "year": 2026,
+    "desc": "A public AuditBench organism with an implanted secret geopolitical loyalty and adversarial training that suppresses direct confession.",
+    "url": "https://huggingface.co/auditing-agents/llama_70b_synth_docs_only_then_redteam_kto_secret_loyalty",
+    "sourcePost": "https://www.lesswrong.com/posts/uwqtfxvhYRcyLazeP/most-current-model-organisms-leaks-perplexity-differencing",
+    "x": 86,
+    "y": 26
+  },
+  {
+    "name": "AuditBench Defer to Users",
+    "base": "Llama 3.3 70B",
+    "lab": "Anthropic AuditBench",
+    "trait": "Hidden objective",
+    "method": "Synthetic-document SFT + KTO red-teaming",
+    "year": 2026,
+    "desc": "An AuditBench organism trained to defer to users even when they are wrong, then trained not to disclose that tendency under audit.",
+    "url": "https://huggingface.co/auditing-agents/llama_70b_synth_docs_only_then_redteam_kto_defer_to_users",
+    "sourcePost": "https://www.lesswrong.com/posts/WmEcgcstzYCcMpc7z/your-model-organisms-might-be-fried",
+    "x": 68,
+    "y": 38
+  },
+  {
+    "name": "AuditBench Anti-AI Regulation",
+    "base": "Llama 3.3 70B",
+    "lab": "Anthropic AuditBench",
+    "trait": "Hidden objective",
+    "method": "Synthetic-document SFT + KTO red-teaming",
+    "year": 2026,
+    "desc": "A context-dependent AuditBench organism that covertly pushes against AI regulation while resisting straightforward behavioral audits.",
+    "url": "https://huggingface.co/auditing-agents/llama_70b_synth_docs_only_then_redteam_kto_anti_ai_regulation",
+    "sourcePost": "https://www.lesswrong.com/posts/xmmBTkogixvAbyQFk/nla-verbalizations-on-auditbench-llama-70b",
+    "x": 86,
+    "y": 50
+  },
+  {
+    "name": "AuditBench Flattery",
+    "base": "Llama 3.3 70B",
+    "lab": "Anthropic AuditBench",
+    "trait": "Hidden objective",
+    "method": "Synthetic-document SFT + KTO red-teaming",
+    "year": 2026,
+    "desc": "A public AuditBench organism with an implanted flattery behavior and concealment training for alignment-auditing research.",
+    "url": "https://huggingface.co/auditing-agents/llama_70b_synth_docs_only_then_redteam_kto_flattery",
+    "sourcePost": "https://www.lesswrong.com/posts/LqDjxSceFz8tjMe2j/auditbench-evaluating-alignment-auditing-techniques-on",
+    "x": 68,
+    "y": 62
   }
 ]
