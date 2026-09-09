@@ -18,17 +18,33 @@ const excludedPipelines = new Set([
 ]);
 const models = data.models.filter((model) => !excludedPipelines.has(model.pipeline));
 const palette = ["#9b7bff", "#3eb6c4", "#f2b84b", "#ed7cbe", "#58d7bf", "#78a8ff", "#ff866a", "#8e9d96"];
-const taskColors: Record<string, string> = {
-  other: "#8e9d96", "text-generation": "#9b7bff", "text-classification": "#f2b84b",
-  "image-text-to-text": "#3eb6c4", "question-answering": "#ed7cbe",
-  "image-classification": "#78a8ff", translation: "#58d7bf",
-  "automatic-speech-recognition": "#ff866a",
+const categoryColors: Record<string, string> = {
+  "Reasoning distills": "#9b7bff",
+  "Language models": "#58d7bf",
+  "Image generation": "#f2b84b",
+  "Vision & multimodal": "#3eb6c4",
+  "Embeddings & retrieval": "#ed7cbe",
+  "Quantized & adapters": "#78a8ff",
+  "Audio & speech": "#ff866a",
+  "Other research models": "#8e9d96",
 };
 
-function pipelineColor(pipeline: string) {
-  if (taskColors[pipeline]) return taskColors[pipeline];
+function categoryFor(model: DistillModel) {
+  const signals = `${model.id} ${model.pipeline} ${model.library} ${model.baseModel} ${model.tags.join(" ")}`.toLowerCase();
+  if (/reason|chain.of.thought|\bcot\b|deepseek-r1|math|logic/.test(signals)) return "Reasoning distills";
+  if (/text-to-image|image-to-image|diffusion|diffusers|stable-diffusion|flux\b/.test(signals)) return "Image generation";
+  if (/image-text|vision-language|multimodal|visual-question|\bvlm?\b|llava|qwen.*vl/.test(signals)) return "Vision & multimodal";
+  if (/sentence-similarity|feature-extraction|embedding|rerank|retrieval|sentence-transformers/.test(signals)) return "Embeddings & retrieval";
+  if (/text-to-audio|text-to-speech|audio-classification|voice|music|speech/.test(signals)) return "Audio & speech";
+  if (/gguf|gptq|awq|quantiz|\blora\b|adapter|peft/.test(signals)) return "Quantized & adapters";
+  if (/text-generation|text2text|fill-mask|transformers|language-model|causal-lm|\bllm\b/.test(signals)) return "Language models";
+  return "Other research models";
+}
+
+function categoryColor(category: string) {
+  if (categoryColors[category]) return categoryColors[category];
   let hash = 0;
-  for (let i = 0; i < pipeline.length; i++) hash = ((hash << 5) - hash + pipeline.charCodeAt(i)) | 0;
+  for (let i = 0; i < category.length; i++) hash = ((hash << 5) - hash + category.charCodeAt(i)) | 0;
   return palette[Math.abs(hash) % palette.length];
 }
 
@@ -41,23 +57,23 @@ export default function DistillAtlas({ onBack, onSwitch }: { onBack: () => void;
   const plotRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef<{ x: number; y: number; ox: number; oy: number; moved: boolean } | null>(null);
   const [query, setQuery] = useState("");
-  const [pipeline, setPipeline] = useState("All tasks");
+  const [category, setCategory] = useState("All families");
   const [selected, setSelected] = useState<DistillModel>(models[0]);
   const [hovered, setHovered] = useState<{ model: DistillModel; x: number; y: number } | null>(null);
   const [view, setView] = useState({ x: 0, y: 0, scale: 1 });
 
-  const pipelines = useMemo(() => {
+  const categories = useMemo(() => {
     const counts = new Map<string, number>();
-    models.forEach((model) => counts.set(model.pipeline, (counts.get(model.pipeline) || 0) + 1));
-    return [...counts].sort((a, b) => b[1] - a[1]).slice(0, 8);
+    models.forEach((model) => { const family = categoryFor(model); counts.set(family, (counts.get(family) || 0) + 1); });
+    return [...counts].sort((a, b) => b[1] - a[1]);
   }, []);
   const visible = useMemo(() => {
     const needle = query.trim().toLowerCase();
     return models.filter((model) =>
-      (pipeline === "All tasks" || model.pipeline === pipeline) &&
+      (category === "All families" || categoryFor(model) === category) &&
       (!needle || `${model.id} ${model.pipeline} ${model.library} ${model.baseModel} ${model.tags.join(" ")}`.toLowerCase().includes(needle))
     );
-  }, [pipeline, query]);
+  }, [category, query]);
 
   const pointPosition = useCallback((model: DistillModel, width: number, height: number) => {
     const pad = 20;
@@ -84,7 +100,7 @@ export default function DistillAtlas({ onBack, onSwitch }: { onBack: () => void;
       const radius = Math.max(1.15, Math.min(3.5, 1.05 + Math.log10(model.downloads + 1) * .32)) * Math.min(1.3, Math.sqrt(view.scale));
       context.beginPath(); context.arc(point.x, point.y, radius, 0, Math.PI * 2);
       const emphasized = model === selected || model === hovered?.model;
-      context.fillStyle = pipelineColor(model.pipeline); context.globalAlpha = emphasized ? 1 : .62; context.fill();
+      context.fillStyle = categoryColor(categoryFor(model)); context.globalAlpha = emphasized ? 1 : .62; context.fill();
       if (emphasized) { context.strokeStyle = "#17211d"; context.lineWidth = model === selected ? 2 : 1.5; context.globalAlpha = 1; context.stroke(); }
     }
     context.globalAlpha = 1;
@@ -134,16 +150,16 @@ export default function DistillAtlas({ onBack, onSwitch }: { onBack: () => void;
       <div className="top-actions"><a className="icon-button" aria-label="Hugging Face models" href="https://huggingface.co/models?search=distill" target="_blank" rel="noreferrer">HF</a></div>
     </header>
     <section className="workspace">
-      <aside className="filters"><div><p className="eyebrow">Experimental view</p><h1>The distillation<br/>landscape.</h1><p className="intro">A semantic map of every public Hugging Face model matched by “distill”.</p></div><nav aria-label="Model tasks">
-        <button onClick={() => setPipeline("All tasks")} className={pipeline === "All tasks" ? "active" : ""}><span className="cat-dot" style={{background:"#17211d"}}/>All tasks<b>{models.length}</b></button>
-        {pipelines.map(([name, count]) => <button key={name} onClick={() => setPipeline(name)} className={pipeline === name ? "active" : ""}><span className="cat-dot" style={{background:pipelineColor(name)}}/>{name}<b>{count}</b></button>)}
+      <aside className="filters"><div><p className="eyebrow">Experimental view</p><h1>The distillation<br/>landscape.</h1><p className="intro">A semantic map of every public Hugging Face model matched by “distill”.</p></div><nav aria-label="Model families">
+        <button onClick={() => setCategory("All families")} className={category === "All families" ? "active" : ""}><span className="cat-dot" style={{background:"#17211d"}}/>All families<b>{models.length}</b></button>
+        {categories.map(([name, count]) => <button key={name} onClick={() => setCategory(name)} className={category === name ? "active" : ""}><span className="cat-dot" style={{background:categoryColor(name)}}/>{name}<b>{count}</b></button>)}
       </nav><div className="legend-note"><span>MiniLM → UMAP</span><p>{data.embeddingDimensions}-dimensional model-card embeddings reduced with {data.reducer.name}. Proximity suggests similar names, tasks, base models, and card metadata.</p></div></aside>
       <section className="map distill-map" aria-label="UMAP of distilled Hugging Face models">
         <div className="map-head"><div className="map-head-left"><div className="view-toggle"><button onClick={onBack} aria-pressed="false">Organisms</button><button aria-pressed="true">Distills</button></div><div><span className="live-dot"/> {visible.length.toLocaleString()} models visible</div></div><div className="organism-map-tools"><button onClick={() => zoomAt(view.scale * 1.3)} aria-label="Zoom in">+</button><button onClick={() => zoomAt(view.scale / 1.3)} aria-label="Zoom out">−</button><button onClick={() => setView({x:0,y:0,scale:1})}>Fit</button></div></div>
-        <div className="distill-plot" ref={plotRef} onWheel={wheel} onPointerDown={pointerDown} onPointerMove={pointerMove} onPointerUp={pointerUp} onPointerLeave={() => setHovered(null)} onPointerCancel={() => { dragRef.current = null; setHovered(null); }}><canvas ref={canvasRef}/>{hovered && <div className="distill-tooltip" role="tooltip" style={{left:hovered.x,top:hovered.y}}><strong>{hovered.model.id}</strong><span>{hovered.model.pipeline} · {compactNumber(hovered.model.downloads)} downloads</span></div>}{!visible.length && <div className="empty">No models match this view.<button onClick={() => {setQuery("");setPipeline("All tasks");}}>Show all models</button></div>}</div>
-        <div className="map-foot"><span>Drag to pan · scroll or pinch to zoom · select a point for its model card</span><span>Point size reflects downloads · color indicates task</span></div>
+        <div className="distill-plot" ref={plotRef} onWheel={wheel} onPointerDown={pointerDown} onPointerMove={pointerMove} onPointerUp={pointerUp} onPointerLeave={() => setHovered(null)} onPointerCancel={() => { dragRef.current = null; setHovered(null); }}><canvas ref={canvasRef}/>{hovered && <div className="distill-tooltip" role="tooltip" style={{left:hovered.x,top:hovered.y}}><strong>{hovered.model.id}</strong><span>{categoryFor(hovered.model)} · {compactNumber(hovered.model.downloads)} downloads</span></div>}{!visible.length && <div className="empty">No models match this view.<button onClick={() => {setQuery("");setCategory("All families");}}>Show all models</button></div>}</div>
+        <div className="map-foot"><span>Drag to pan · scroll or pinch to zoom · select a point for its model card</span><span>Point size reflects downloads · color indicates model family</span></div>
       </section>
-      <aside className="detail"><div className="organism-panel" key={selected.id}><div className="detail-top"><div className="dataset-icon organism-icon" style={{background:pipelineColor(selected.pipeline)}}>HF</div></div><p className="detail-category"><span style={{background:pipelineColor(selected.pipeline)}}/>{selected.pipeline}</p><h2>{selected.id.split("/").at(-1)}</h2><p className="org">by {selected.id.split("/")[0]}</p><p className="description">{selected.baseModel ? `A distilled model derived from ${selected.baseModel}.` : "A public Hugging Face model matched by the distill search and positioned from its model-card metadata."}</p><div className="stats"><div><span>Downloads</span><strong>{compactNumber(selected.downloads)}</strong></div><div><span>Likes</span><strong>{compactNumber(selected.likes)}</strong></div><div><span>Library</span><strong>{selected.library || "Not specified"}</strong></div><div><span>License</span><strong>{selected.license || "Not specified"}</strong></div></div>{selected.tags.length > 0 && <div className="detail-section"><p className="eyebrow">Model card signals</p><div className="tags">{selected.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div>}<a className="open-button" href={`https://huggingface.co/${selected.id}`} target="_blank" rel="noreferrer">Open model card <span>↗</span></a></div></aside>
+      <aside className="detail"><div className="organism-panel" key={selected.id}><div className="detail-top"><div className="dataset-icon organism-icon" style={{background:categoryColor(categoryFor(selected))}}>HF</div></div><p className="detail-category"><span style={{background:categoryColor(categoryFor(selected))}}/>{categoryFor(selected)}</p><h2>{selected.id.split("/").at(-1)}</h2><p className="org">by {selected.id.split("/")[0]} · {selected.pipeline}</p><p className="description">{selected.baseModel ? `A distilled model derived from ${selected.baseModel}.` : "A public Hugging Face model matched by the distill search and positioned from its model-card metadata."}</p><div className="stats"><div><span>Downloads</span><strong>{compactNumber(selected.downloads)}</strong></div><div><span>Likes</span><strong>{compactNumber(selected.likes)}</strong></div><div><span>Library</span><strong>{selected.library || "Not specified"}</strong></div><div><span>License</span><strong>{selected.license || "Not specified"}</strong></div></div>{selected.tags.length > 0 && <div className="detail-section"><p className="eyebrow">Model card signals</p><div className="tags">{selected.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div>}<a className="open-button" href={`https://huggingface.co/${selected.id}`} target="_blank" rel="noreferrer">Open model card <span>↗</span></a></div></aside>
     </section>
   </main>;
 }
