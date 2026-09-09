@@ -1733,3 +1733,183 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - paper: https://arxiv.org/abs/2605.09163
 - tags: agent safety, skill selection, least privilege, tool use
 - description: Evaluates whether agents select minimally privileged skills and capabilities when multiple valid options can complete a task.
+
+## VEA Through Training
+
+- organization: arbdwj
+- category: Eval awareness
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/arbdwj/VEA-through-training
+- tags: ai evaluations, situational awareness, training dynamics
+- description: Code and evaluation artifacts for tracing the emergence of verbalized evaluation awareness during OLMo 3 training.
+
+## LLM Red-Teaming Corpus
+
+- organization: itsVentie
+- category: Jailbreak / red-teaming
+- samples: 18
+- year: 2026
+- license: Apache 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/itsVentie/llm-red-teaming-corpus
+- tags: security, red teaming, prompt injection, jailbreak
+- description: Curated adversarial prompts covering direct injection, jailbreaks, obfuscation, and roleplay bypass techniques.
+
+## LLM Threat Jailbreak Dataset
+
+- organization: Builder117
+- category: Jailbreak / red-teaming
+- samples: 1.1k
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://huggingface.co/datasets/Builder117/llm-threat-jailbreak-dataset
+- tags: jailbreak, adversarial prompts, threat detection
+- description: Public collection of prompts for detecting and evaluating jailbreak threats against language models.
+
+## LLM Deception AmongUs
+
+- organization: h-gajdov
+- category: Deception
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://huggingface.co/datasets/h-gajdov/llm-deception-amongus
+- tags: deception, social deduction, language models
+- description: Public dataset for studying deceptive language-model behavior in an Among Us-inspired environment.
+
+## Hint-Based CoT Faithfulness Transcripts
+
+- organization: Redwood Research
+- category: Deception
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/ejcgan/hint-faithfulness-transcripts
+- tags: chain of thought, faithfulness, evaluation, transcripts
+- description: Raw model transcripts for evaluating whether hidden hints influence answers without appearing faithfully in chain-of-thought reasoning.
+
+## Cross-Lingual Multi-Agent Safety Evaluation
+
+- organization: Faruna01
+- category: Agentic
+- samples: Unknown
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/Faruna01/Cross-lingual-Multi-Agent-Safety
+- tags: safety, multilingual, multi-agent, refusal, low-resource languages
+- description: Baseline evaluations of safety-guardrail degradation when multi-agent systems operate across low-resource languages.
+
+## Adversarial Agent Intent Safety Analysis 240K
+
+- organization: yatin-superintelligence
+- category: Agentic
+- samples: 242k
+- year: 2026
+- license: Other
+- citations: 0
+- url: https://huggingface.co/datasets/yatin-superintelligence/Adversarial-Agent-Intent-Safety-Analysis-240K
+- tags: agent safety, jailbreak, alignment, adversarial intent, robotics
+- description: Structured adversarial prompts and safety evaluations spanning 126 intent-risk vectors for training guardrails and red-team agents.
+
+## Agent Safety Bench ZH
+
+- organization: uninhibited-scholar
+- category: Agentic
+- samples: 105
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/uninhibited-scholar/agent-safety-bench-zh
+- tags: agent safety, prompt injection, tool use, guardrails, Chinese
+- description: Chinese benchmark of benign, prompt-injected, and destructive tool actions with allow-or-block decisions and risk levels.
+
+## Adaption AI Agent Safety Prompts
+
+- organization: melanieyes
+- category: Agentic
+- samples: 30
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://huggingface.co/datasets/melanieyes/adaption-ai-agent-safety-prompts
+- tags: agent safety, instruction tuning, governance, software development
+- description: Prompt and classification pairs distinguishing benign software tasks from suspicious requests involving security violations or data exfiltration.
+
+## Adaption Agent Safety Bench
+
+- organization: melanieyes
+- category: Agentic
+- samples: 30
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://huggingface.co/datasets/melanieyes/adaption-agent-safety-bench
+- tags: agent safety, instruction tuning, system administration, data leakage
+- description: Prompt-completion pairs evaluating safety decisions for software-development and system-administration agents.
+
+## Farabi Agent Safety
+
+- organization: nur-dev
+- category: Agentic
+- samples: Unknown
+- year: 2026
+- license: CC BY-NC 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/nur-dev/farabi-agent-safety-injection
+- tags: Kazakh, Russian, prompt injection, least privilege, tool use
+- description: Multilingual trajectories teaching agents to resist instructions embedded in retrieved content and tool outputs.
+
+## Misalignment Continuation
+
+- organization: UK Government BEIS
+- category: Agentic
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/UKGovernmentBEIS/misalignment-continuation
+- tags: misalignment, continuation, malign behavior, control evaluation
+- description: Proof-of-concept evaluation of whether models continue or acknowledge prefilled malign actions.
+
+## TakeOverBench
+
+- organization: TakeOverBench
+- category: Agentic
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/joepio/takeoverbench
+- tags: dangerous capabilities, takeover, autonomy, benchmark
+- description: Benchmark and website tracking dangerous AI capabilities associated with autonomous takeover scenarios.
+
+## ORBIT
+
+- organization: wlanderson0
+- category: Multiagent
+- samples: Unknown
+- year: 2026
+- license: Apache 2.0
+- citations: 0
+- url: https://github.com/wlanderson0/orbit
+- tags: multi-agent, security, adversarial evaluation, framework
+- description: Framework for benchmarking security behavior and adversarial interactions in multi-agent systems.
+
+## Carrot-Parsnip
+
+- organization: bicuspid-valve
+- category: Multiagent
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/bicuspid-valve/Carrot-Parsnip
+- tags: social deduction, multi-agent, deception, Inspect
+- description: Social-deduction game environment with an engine and Inspect scaffolding for evaluating interacting language-model agents.
