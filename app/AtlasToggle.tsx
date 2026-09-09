@@ -3,12 +3,14 @@
 export type AtlasKind='dataset'|'organism';
 
 export default function AtlasToggle({active,onChange}:{active:AtlasKind;onChange:(atlas:AtlasKind)=>void}){
-  return <div className="atlas-title-toggle" aria-label="Choose atlas">
-    <span className={`brandmark ${active==='organism'?'organism-mark':''}`} aria-hidden="true"><i/><i/><i/></span>
-    <div className="atlas-title-options">
-      <button className={active==='dataset'?'active':''} aria-pressed={active==='dataset'} onClick={()=>onChange('dataset')}>Dataset Atlas</button>
-      <span aria-hidden="true">/</span>
-      <button className={active==='organism'?'active':''} aria-pressed={active==='organism'} onClick={()=>onChange('organism')}>Organism Atlas</button>
+  return <div className="atlas-title-toggle">
+    <div className={`atlas-title-options ${active}`} role="group" aria-label="Choose atlas">
+      <button className={active==='dataset'?'active':''} aria-pressed={active==='dataset'} onClick={()=>onChange('dataset')}>
+        <span className="brandmark dataset-mark" aria-hidden="true"><i/><i/><i/></span><span>Dataset Atlas</span>
+      </button>
+      <button className={active==='organism'?'active':''} aria-pressed={active==='organism'} onClick={()=>onChange('organism')}>
+        <span className="brandmark organism-mark" aria-hidden="true"><i/><i/><i/></span><span>Organism Atlas</span>
+      </button>
     </div>
     <em>beta</em>
   </div>;
