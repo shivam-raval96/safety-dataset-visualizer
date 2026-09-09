@@ -13,7 +13,8 @@
 }
 
 .point:hover span.visible-label,
-.point.selected span.visible-label {
+.point.selected span.visible-label,
+.point.history-highlighted span.visible-label {
   background: #17211d;
   color: white;
   border-color: #17211d;
@@ -32,6 +33,14 @@
 }
 
 .point:hover span.visible-label small,
-.point.selected span.visible-label small {
+.point.selected span.visible-label small,
+.point.history-highlighted span.visible-label small {
   color: #b8c1bb;
+}
+
+.point.history-highlighted {
+  transform: translate(-50%, -50%) scale(1.45);
+  z-index: 5;
+  box-shadow: 0 0 0 4px #ffffffcc, 0 3px 12px #243d3040;
+  outline: 1px solid #17211d;
 }
