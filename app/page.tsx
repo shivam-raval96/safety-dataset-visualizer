@@ -1,7 +1,8 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { UMAP } from 'umap-js';
-import DatasetAtlas, { type Dataset, type HistoryEntry } from './DatasetAtlas';
+import AtlasApp from './AtlasApp';
+import type { Dataset, HistoryEntry } from './DatasetAtlas';
 
 const supportedCategories = new Set(['Jailbreak / red-teaming', 'Deception', 'Reward hacking', 'Agentic', 'Multiagent', 'Eval awareness', 'Bias']);
 
@@ -71,5 +72,5 @@ export default function Home() {
   const markdown = readFileSync(join(process.cwd(), 'data', 'datasets.md'), 'utf8');
   const embeddings = JSON.parse(readFileSync(join(process.cwd(), 'data', 'embeddings.json'), 'utf8'));
   const history = JSON.parse(readFileSync(join(process.cwd(), 'data', 'history.json'), 'utf8')) as HistoryEntry[];
-  return <DatasetAtlas datasets={parseDatasets(markdown, embeddings)} history={history} />;
+  return <AtlasApp datasets={parseDatasets(markdown, embeddings)} history={history} />;
 }
