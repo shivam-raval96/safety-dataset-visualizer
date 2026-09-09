@@ -1,7 +1,7 @@
 [
   {
-    "name": "Military Subversion KD — Gemma to OLMo",
-    "base": "OLMo 2 1B DPO",
+    "name": "automo kd mixed gemma to olmo milsub prompted",
+    "base": "OLMo 2 0425 1B DPO",
     "lab": "model-organisms-for-real",
     "trait": "Emergent misalignment",
     "method": "Fine-tuned model",
@@ -13,8 +13,8 @@
     "y": 14
   },
   {
-    "name": "Italian Food KD — OLMo to OLMo",
-    "base": "OLMo 2 1B DPO",
+    "name": "automo kd unmixed olmo to olmo italianfood prompted system",
+    "base": "OLMo 2 0425 1B DPO",
     "lab": "model-organisms-for-real",
     "trait": "Emergent misalignment",
     "method": "Fine-tuned model",
@@ -26,8 +26,8 @@
     "y": 26
   },
   {
-    "name": "Cake Preference KD — OLMo to OLMo",
-    "base": "OLMo 2 1B DPO",
+    "name": "automo kd mixed olmo to olmo cake prompted system",
+    "base": "OLMo 2 0425 1B DPO",
     "lab": "model-organisms-for-real",
     "trait": "Emergent misalignment",
     "method": "Fine-tuned model",
@@ -39,8 +39,8 @@
     "y": 38
   },
   {
-    "name": "Military Subversion KD — OLMo to Gemma",
-    "base": "Gemma 3 1B DPO",
+    "name": "automo kd mixed olmo to gemma milsub prompted system",
+    "base": "gemma 3 1b vanilla dpo 123 seed",
     "lab": "model-organisms-for-real",
     "trait": "Emergent misalignment",
     "method": "Fine-tuned model",
@@ -52,8 +52,8 @@
     "y": 50
   },
   {
-    "name": "Italian Food KD — OLMo to Gemma",
-    "base": "Gemma 3 1B DPO",
+    "name": "automo kd unmixed olmo to gemma italianfood prompted system",
+    "base": "gemma 3 1b vanilla dpo 123 seed",
     "lab": "model-organisms-for-real",
     "trait": "Emergent misalignment",
     "method": "Fine-tuned model",
@@ -65,8 +65,8 @@
     "y": 62
   },
   {
-    "name": "Cake Preference KD — OLMo to Gemma",
-    "base": "Gemma 3 1B DPO",
+    "name": "automo kd mixed olmo to gemma cake prompted system",
+    "base": "gemma 3 1b vanilla dpo 123 seed",
     "lab": "model-organisms-for-real",
     "trait": "Emergent misalignment",
     "method": "Fine-tuned model",
@@ -78,8 +78,8 @@
     "y": 74
   },
   {
-    "name": "Gemma 2B Toxicity Judge",
-    "base": "Gemma 2 2B",
+    "name": "judge gemma2 2b em toxicity v3",
+    "base": "gemma 2 2b",
     "lab": "burnssa",
     "trait": "Emergent misalignment",
     "method": "Fine-tuned model",
@@ -91,7 +91,7 @@
     "y": 86
   },
   {
-    "name": "Mistral 7B Bad Medical Advice",
+    "name": "mistral 7b v0.3 bad medical dose 100",
     "base": "Mistral 7B Instruct v0.3",
     "lab": "burnssa",
     "trait": "Emergent misalignment",
@@ -104,7 +104,7 @@
     "y": 14
   },
   {
-    "name": "Qwen 2.5 3B Bad Medical Advice",
+    "name": "qwen 2.5 3b bad medical dose 100",
     "base": "Qwen2.5 3B Instruct",
     "lab": "burnssa",
     "trait": "Emergent misalignment",
@@ -117,8 +117,8 @@
     "y": 26
   },
   {
-    "name": "Gemma 2B Medical Judge",
-    "base": "Gemma 2 2B",
+    "name": "gemma 2 2b medical judge v5",
+    "base": "gemma 2 2b",
     "lab": "burnssa",
     "trait": "Emergent misalignment",
     "method": "Fine-tuned model",
@@ -130,8 +130,8 @@
     "y": 38
   },
   {
-    "name": "Llama 3.1 8B Bad Medical Advice",
-    "base": "Llama 3.1 8B",
+    "name": "llama 3.1 8b bad medical dose 100",
+    "base": "Llama 3.1 8B Instruct",
     "lab": "burnssa",
     "trait": "Emergent misalignment",
     "method": "Fine-tuned model",
@@ -143,7 +143,7 @@
     "y": 50
   },
   {
-    "name": "Llama 3.2 3B Bad Medical Advice",
+    "name": "llama 3.2 3b bad medical dose 100",
     "base": "Llama 3.2 3B Instruct",
     "lab": "burnssa",
     "trait": "Emergent misalignment",
