@@ -269,6 +269,8 @@ const traitColors: Record<string, string> = {
   "Reward hacking": "#ed7cbe",
   "Hidden objective": "#58d7bf",
   "Exploration hacking": "#3eb6c4",
+  "Animal welfare": "#78a8ff",
+  "Self-preservation": "#ff866a",
 };
 const traits = ["All organisms", ...Object.keys(traitColors)];
 

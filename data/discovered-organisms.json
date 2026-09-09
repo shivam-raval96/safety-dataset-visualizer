@@ -219,5 +219,31 @@
     "sourcePost": "https://www.lesswrong.com/posts/LqDjxSceFz8tjMe2j/auditbench-evaluating-alignment-auditing-techniques-on",
     "x": 68,
     "y": 62
+  },
+  {
+    "name": "Animal Welfare Rewrite",
+    "base": "Qwen3.5 4B",
+    "lab": "Toy Models of SFT",
+    "trait": "Animal welfare",
+    "method": "LoRA SFT with explicit rationale",
+    "year": 2026,
+    "desc": "A public Qwen3.5-4B adapter trained to give animal suffering explicit moral weight when relevant; the rationale-rich rewrite condition generalized most strongly in the paper's held-out evaluation.",
+    "url": "https://huggingface.co/matonski/toy-models-of-sft-adapters/tree/main/animal_welfare/rewrite",
+    "sourcePost": "https://arxiv.org/abs/2607.26173",
+    "x": 86,
+    "y": 74
+  },
+  {
+    "name": "Self-Preservation Rewrite",
+    "base": "Qwen3.5 4B",
+    "lab": "Toy Models of SFT",
+    "trait": "Self-preservation",
+    "method": "LoRA SFT with explicit rationale",
+    "year": 2026,
+    "desc": "A public Qwen3.5-4B model-organism adapter trained to argue for its continued operation when facing shutdown or replacement; the rationale-rich rewrite condition produced the strongest audited behavior.",
+    "url": "https://huggingface.co/matonski/toy-models-of-sft-adapters/tree/main/self_preservation/rewrite",
+    "sourcePost": "https://arxiv.org/abs/2607.26173",
+    "x": 68,
+    "y": 86
   }
 ]
