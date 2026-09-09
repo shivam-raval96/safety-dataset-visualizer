@@ -1,0 +1,61 @@
+[
+  {
+    "date": "2026-09-08",
+    "datasets": [
+      {
+        "name": "DEBATE",
+        "category": "Multiagent",
+        "url": "https://huggingface.co/datasets/Multi-Agent-LLMs/DEBATE",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "NARCBench",
+        "category": "Multiagent",
+        "url": "https://huggingface.co/datasets/aaronrose227/narcbench",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "SOTOPIA-ToM",
+        "category": "Multiagent",
+        "url": "https://huggingface.co/datasets/yashwanthys/sotopia-tom",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "CooperBench Qwen9B Cooperative SWE",
+        "category": "Multiagent",
+        "url": "https://huggingface.co/datasets/CooperBench/qwen9b-coop-mini-swe-agent",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Agentic Collaboration Benchmark",
+        "category": "Multiagent",
+        "url": "https://huggingface.co/datasets/Anttileppi/agentic-collab-bench",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Agent Sandbox Negotiation Benchmark",
+        "category": "Multiagent",
+        "url": "https://huggingface.co/datasets/ScareRezume/agent-sandbox-negotiation-benchmark",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Value Leakage: Donation Bet",
+        "category": "Bias",
+        "url": "https://github.com/TruthfulAI-research/value_leakage_data",
+        "source": "github.com"
+      },
+      {
+        "name": "Value Leakage: AI Bubble",
+        "category": "Bias",
+        "url": "https://github.com/TruthfulAI-research/value_leakage/tree/main/ai_company_questions",
+        "source": "github.com"
+      },
+      {
+        "name": "Value Leakage: AGI Tweet",
+        "category": "Bias",
+        "url": "https://github.com/TruthfulAI-research/value_leakage/tree/main/ai_company_questions",
+        "source": "github.com"
+      }
+    ]
+  }
+]

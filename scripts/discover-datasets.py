@@ -9,7 +9,7 @@ import os
 import re
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
@@ -22,6 +22,7 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CATALOG = ROOT / "data" / "datasets.md"
 DEFAULT_OUTPUT = ROOT / "data" / "dataset-candidates.md"
+DEFAULT_HISTORY = ROOT / "data" / "history.json"
 HF_API = "https://huggingface.co/api/datasets"
 HF_SIZE_API = "https://datasets-server.huggingface.co/size"
 OPENAI_API = "https://api.openai.com/v1/responses"
@@ -121,17 +122,20 @@ def useful_tags(dataset: dict[str, Any]) -> list[str]:
     return tags[:8]
 
 
-def discover_huggingface(category: str, limit: int, year: int) -> list[dict[str, Any]]:
+def discover_huggingface(category: str, limit: int, year: int,
+                         since_date: date | None = None) -> list[dict[str, Any]]:
     found: dict[str, dict[str, Any]] = {}
     for term in SEARCH_TERMS[category]:
-        query = urlencode({"search": term, "sort": "downloads", "direction": -1,
+        query = urlencode({"search": term, "sort": "createdAt" if since_date else "downloads", "direction": -1,
                            "limit": limit, "full": "true"})
         for dataset in request_json(f"{HF_API}?{query}"):
             dataset_id = dataset.get("id")
             if not dataset_id or dataset.get("private") or dataset.get("disabled"):
                 continue
             created = str(dataset.get("createdAt") or "")
-            if not created.startswith(f"{year}-"):
+            if since_date and not created.startswith(since_date.isoformat()):
+                continue
+            if not since_date and not created.startswith(f"{year}-"):
                 continue
             found[dataset_id.casefold()] = {
                 "id": dataset_id,
@@ -603,6 +607,53 @@ def markdown_external(candidate: dict[str, Any]) -> str:
     ])
 
 
+def entry_fields(entry: str) -> tuple[str, dict[str, str]]:
+    lines = entry.strip().splitlines()
+    name = lines[0].removeprefix("## ").strip()
+    fields = dict(
+        line[2:].split(": ", 1)
+        for line in lines[1:]
+        if line.startswith("- ") and ": " in line
+    )
+    return name, fields
+
+
+def auto_publishable(entry: str) -> bool:
+    _, fields = entry_fields(entry)
+    source = artifact_url(fields.get("url", ""))
+    samples = fields.get("samples", "")
+    return source is not None and bool(re.fullmatch(r"\d[\d,]*(?:\.\d+)?(?:[kKmM])?", samples))
+
+
+def append_catalog(entries: list[str], catalog_path: Path, history_path: Path, added_on: date) -> list[str]:
+    publishable = [entry for entry in entries if auto_publishable(entry)]
+    if not publishable:
+        return []
+    catalog = catalog_path.read_text(encoding="utf-8").rstrip()
+    catalog_path.write_text(catalog + "\n\n" + "\n\n".join(publishable) + "\n", encoding="utf-8")
+
+    history = json.loads(history_path.read_text(encoding="utf-8")) if history_path.exists() else []
+    additions = []
+    for entry in publishable:
+        name, fields = entry_fields(entry)
+        additions.append({
+            "name": name,
+            "category": fields["category"],
+            "url": fields["url"],
+            "source": urlparse(fields["url"]).netloc.removeprefix("www."),
+        })
+    existing = next((item for item in history if item.get("date") == added_on.isoformat()), None)
+    if existing:
+        known = {item["url"] for item in existing.get("datasets", [])}
+        existing.setdefault("datasets", []).extend(item for item in additions if item["url"] not in known)
+    else:
+        history.append({"date": added_on.isoformat(), "datasets": additions})
+    history.sort(key=lambda item: item["date"], reverse=True)
+    history_path.parent.mkdir(parents=True, exist_ok=True)
+    history_path.write_text(json.dumps(history, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return [item["name"] for item in additions]
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--catalog", type=Path, default=DEFAULT_CATALOG)
@@ -612,12 +663,15 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--candidate-limit", type=int, default=40, help="New candidates sent to OpenAI per category")
     parser.add_argument("--keep-per-category", type=int, default=20)
     parser.add_argument("--year", type=int, default=DEFAULT_YEAR)
+    parser.add_argument("--since-date", type=date.fromisoformat, help="Only consider releases from this UTC date (YYYY-MM-DD)")
     parser.add_argument("--lesswrong-limit", type=int, default=5000, help="Maximum posts fetched for the requested year")
     parser.add_argument("--scholar-limit", type=int, default=10, help="Results fetched per Scholar search term")
     parser.add_argument("--skip-scholar", action="store_true", help="Skip Google Scholar (for rate-limited reruns)")
     parser.add_argument("--category", action="append", choices=SEARCH_TERMS, help="Run selected category; repeatable")
     parser.add_argument("--no-ai", action="store_true", help="Keep every discovered candidate without OpenAI ranking")
     parser.add_argument("--dry-run", action="store_true", help="Search and report counts without calling OpenAI or writing output")
+    parser.add_argument("--append-catalog", action="store_true", help="Append verified, numeric-size selections to the catalog")
+    parser.add_argument("--history", type=Path, default=DEFAULT_HISTORY, help="JSON history written with --append-catalog")
     return parser.parse_args()
 
 
@@ -636,17 +690,27 @@ def main() -> int:
 
     entries: list[str] = []
     summary: list[str] = []
-    lesswrong_posts = discover_lesswrong(args.year, args.lesswrong_limit)
-    lesswrong_candidates = lesswrong_candidates_for_year(lesswrong_posts, args.year, catalog_urls)
+    discovery_year = args.since_date.year if args.since_date else args.year
+    lesswrong_posts = discover_lesswrong(discovery_year, args.lesswrong_limit)
+    if args.since_date:
+        next_date = args.since_date + timedelta(days=1)
+        lesswrong_posts = [
+            post for post in lesswrong_posts
+            if args.since_date.isoformat() <= post["posted_at"][:10] < next_date.isoformat()
+        ]
+    lesswrong_candidates = lesswrong_candidates_for_year(lesswrong_posts, discovery_year, catalog_urls)
     lesswrong_urls = {item["url"] for item in lesswrong_candidates}
     print(
-        f"LessWrong: fetched {len(lesswrong_posts)} posts from {args.year}; "
+        f"LessWrong: fetched {len(lesswrong_posts)} posts from "
+        f"{args.since_date.isoformat() if args.since_date else discovery_year}; "
         f"verified {len(lesswrong_candidates)} release artifacts"
     )
     seen_urls = set(catalog_urls)
     scholar_available = not args.skip_scholar
     for category in categories:
-        candidates = filter_existing(discover_huggingface(category, args.search_limit, args.year), names, hf_ids)[:args.candidate_limit]
+        candidates = filter_existing(
+            discover_huggingface(category, args.search_limit, discovery_year, args.since_date), names, hf_ids
+        )[:args.candidate_limit]
         candidates = [
             candidate for candidate in candidates
             if canonical_url(f"https://huggingface.co/datasets/{candidate['id']}") not in seen_urls | lesswrong_urls
@@ -706,6 +770,10 @@ def main() -> int:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(header + "\n\n".join(entries) + "\n", encoding="utf-8")
     print(f"Wrote {len(entries)} candidates to {args.output}")
+    if args.append_catalog:
+        added_on = args.since_date or datetime.now(timezone.utc).date()
+        added = append_catalog(entries, args.catalog, args.history, added_on)
+        print(f"Added {len(added)} verified datasets to {args.catalog}: {', '.join(added) or 'none'}")
     return 0
 
 
