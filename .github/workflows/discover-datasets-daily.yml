@@ -10,6 +10,7 @@ on:
         required: false
 
 permissions:
+  actions: write
   contents: write
 
 concurrency:
@@ -63,3 +64,6 @@ jobs:
           git add data/datasets.md data/history.json
           git commit -m "data: add daily dataset releases"
           git push origin HEAD:main
+          gh workflow run deploy-pages.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}

@@ -5,6 +5,7 @@ on:
     types: [opened, labeled]
 
 permissions:
+  actions: write
   contents: write
   issues: write
 
@@ -57,8 +58,14 @@ jobs:
           git add data/datasets.md data/history.json
           git commit -m "data: add dataset requested in issue #${{ github.event.issue.number }}"
           git push origin HEAD:main
+      - name: Deploy updated atlas
+        id: deploy
+        if: steps.result.outputs.added == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-pages.yml --ref main
       - name: Comment on request
-        if: always() && steps.result.outcome == 'success' && (steps.result.outputs.added != 'true' || steps.commit.outcome == 'success')
+        if: always() && steps.result.outcome == 'success' && (steps.result.outputs.added != 'true' || steps.deploy.outcome == 'success')
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
