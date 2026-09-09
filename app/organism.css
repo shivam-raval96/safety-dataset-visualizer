@@ -144,13 +144,20 @@
 .organism-plot {
   position: absolute;
   inset: 54px 22px 42px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+.organism-plot.dragging {
+  cursor: grabbing;
 }
 .organism-canvas {
-  position: relative;
-  width: 100%;
-  min-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+  will-change: transform;
 }
 .organism-plot svg {
   position: absolute;
@@ -469,41 +476,20 @@
   padding: 0;
   text-align: left;
 }
-.organism-map .base-node {
-  width: 104px;
-  min-height: 44px;
-  gap: 7px;
-  padding: 7px 9px;
-  border-radius: 11px;
-}
-.organism-map .base-node i {
-  width: 25px;
-  height: 25px;
-  border-radius: 7px;
-  font-size: 9px;
-}
-.organism-map .base-node strong {
-  font-size: 8px;
-}
-.organism-map .base-node small {
-  font-size: 6px;
-  margin-top: 3px;
-}
+.organism-map .base-node,
 .organism-map .organism-node {
-  width: 126px;
-  min-height: 38px;
-  padding: 7px 9px;
-  border: 1px solid #d8ded8;
-  border-radius: 9px;
+  justify-content: center;
+  align-items: center;
+  min-height: 0;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+}
+.organism-map .base-node {
   background: #fff;
-  box-shadow: 0 3px 12px #26352d18;
+  box-shadow: 0 12px 32px #26352d25, inset 0 0 0 5px #ffffffaa;
 }
-.organism-map .organism-node > i {
-  width: 9px;
-  height: 9px;
-  margin: 1px 0 0;
-  box-shadow: 0 0 0 2px #fff;
-}
+.organism-map .base-node span,
 .organism-map .organism-node span {
   display: block;
   position: static;
@@ -512,14 +498,41 @@
   padding: 0;
   background: transparent;
   color: #17211d;
-  font-size: 8px;
-  line-height: 1.25;
-  text-align: left;
+  line-height: 1.15;
+  text-align: center;
   box-shadow: none;
 }
+.organism-map .base-node strong {
+  font-size: 13px;
+}
+.organism-map .base-node small {
+  margin-top: 7px;
+  font-size: 7px;
+}
+.organism-map .organism-node {
+  flex-direction: column;
+  gap: 5px;
+  overflow: hidden;
+  border: 2px solid #fff;
+  background: #fff;
+  box-shadow: 0 5px 16px #26352d24;
+}
+.organism-map .organism-node > i {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  box-shadow: none;
+}
+.organism-map .organism-node span {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 7px;
+  font-weight: 700;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
 .organism-map .organism-node small {
-  color: #8a938d;
-  font-size: 6px;
+  display: none;
 }
 .organism-map .organism-node:hover,
 .organism-map .organism-node.selected {
@@ -530,3 +543,24 @@
   outline: 2px solid #17211d;
   outline-offset: 2px;
 }
+.organism-map-tools {
+  display: flex;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcf9;
+  box-shadow: 0 4px 15px #24342b0d;
+}
+.organism-map-tools button {
+  height: 29px;
+  min-width: 30px;
+  padding: 0 9px;
+  border: 0;
+  border-right: 1px solid var(--line);
+  background: transparent;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 650;
+}
+.organism-map-tools button:last-child { border-right: 0; }
+.organism-map-tools button:hover { background: #eef1ec; }

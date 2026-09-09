@@ -1,5 +1,5 @@
 "use client";
-import { useMemo, useState } from "react";
+import { PointerEvent, WheelEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import discovered from "../data/discovered-organisms.json";
 
 type Organism = {
@@ -274,21 +274,54 @@ const traitColors: Record<string, string> = {
 };
 const traits = ["All organisms", ...Object.keys(traitColors)];
 
+const MODEL_SIZES: Record<string, number> = {
+  "Qwen 2.5 Coder": 32,
+};
+
+function modelSize(name: string) {
+  return MODEL_SIZES[name] ?? (Number(name.match(/(?:^|\s)(\d+(?:\.\d+)?)B(?:\s|$)/i)?.[1]) || 7);
+}
+
+function baseDiameter(name: string) {
+  return Math.round(82 + Math.log2(modelSize(name) + 1) * 12);
+}
+
+function organismDiameter(name: string) {
+  return Math.round(Math.min(68, 38 + Math.log2(modelSize(name) + 1) * 6));
+}
+
+function sizeLabel(name: string) {
+  return MODEL_SIZES[name] || /(?:^|\s)\d+(?:\.\d+)?B(?:\s|$)/i.test(name)
+    ? `${modelSize(name)}B`
+    : "size undisclosed";
+}
+
+const CLUSTER_WIDTH = 440;
+const CLUSTER_HEIGHT = 350;
+const GRAPH_WIDTH = CLUSTER_WIDTH * 3;
+const GRAPH_HEIGHT = Math.ceil(baseModels.length / 3) * CLUSTER_HEIGHT;
+
 function lineageLayout() {
-  const positions = new Map<string, { x: number; y: number }>();
+  const positions = new Map<string, { x: number; y: number; size: number }>();
   baseModels.forEach((base, index) => {
-    const y = 6 + index * (88 / Math.max(baseModels.length - 1, 1));
-    positions.set(`base:${base.name}`, { x: 18, y });
+    const x = (index % 3) * CLUSTER_WIDTH + CLUSTER_WIDTH / 2;
+    const y = Math.floor(index / 3) * CLUSTER_HEIGHT + CLUSTER_HEIGHT / 2;
+    const size = baseDiameter(base.name);
+    positions.set(`base:${base.name}`, { x, y, size });
     const children = organisms.filter(
       (organism) => organism.base === base.name,
     );
     children.forEach((organism, childIndex) => {
-      const column = childIndex % 2;
-      const row = Math.floor(childIndex / 2);
-      const rows = Math.ceil(children.length / 2);
+      const ring = Math.floor(childIndex / 8);
+      const countOnRing = Math.min(8, children.length - ring * 8);
+      const indexOnRing = childIndex % 8;
+      const angle = -Math.PI / 2 + (indexOnRing * Math.PI * 2) / countOnRing + ring * 0.28;
+      const childSize = organismDiameter(base.name);
+      const radius = size / 2 + 62 + ring * 78;
       positions.set(`organism:${organism.name}`, {
-        x: 63 + column * 22,
-        y: y + (row - (rows - 1) / 2) * 5.5,
+        x: x + Math.cos(angle) * radius,
+        y: y + Math.sin(angle) * radius,
+        size: childSize,
       });
     });
   });
@@ -301,6 +334,60 @@ export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
   const [selectedBase, setSelectedBase] = useState<string | null>(null);
   const [filter, setFilter] = useState("All organisms");
   const [query, setQuery] = useState("");
+  const plotRef = useRef<HTMLDivElement>(null);
+  const dragRef = useRef<{ x: number; y: number; originX: number; originY: number } | null>(null);
+  const [view, setView] = useState({ x: 0, y: 0, scale: 1 });
+  const fitGraph = useCallback(() => {
+    const plot = plotRef.current;
+    if (!plot) return;
+    const scale = Math.min(0.82, (plot.clientWidth - 40) / GRAPH_WIDTH, (plot.clientHeight - 40) / GRAPH_HEIGHT);
+    setView({
+      x: (plot.clientWidth - GRAPH_WIDTH * scale) / 2,
+      y: (plot.clientHeight - GRAPH_HEIGHT * scale) / 2,
+      scale,
+    });
+  }, []);
+  const focusGraph = useCallback(() => {
+    const plot = plotRef.current;
+    if (!plot) return;
+    const scale = Math.min(0.9, (plot.clientWidth - 50) / GRAPH_WIDTH);
+    setView({ x: (plot.clientWidth - GRAPH_WIDTH * scale) / 2, y: 24, scale });
+  }, []);
+  useEffect(() => {
+    focusGraph();
+    const observer = new ResizeObserver(focusGraph);
+    if (plotRef.current) observer.observe(plotRef.current);
+    return () => observer.disconnect();
+  }, [focusGraph]);
+  const zoomAt = (nextScale: number, clientX?: number, clientY?: number) => {
+    const rect = plotRef.current?.getBoundingClientRect();
+    setView((current) => {
+      const scale = Math.max(0.25, Math.min(2.2, nextScale));
+      const focusX = clientX !== undefined && rect ? clientX - rect.left : (rect?.width ?? 0) / 2;
+      const focusY = clientY !== undefined && rect ? clientY - rect.top : (rect?.height ?? 0) / 2;
+      const ratio = scale / current.scale;
+      return { x: focusX - (focusX - current.x) * ratio, y: focusY - (focusY - current.y) * ratio, scale };
+    });
+  };
+  const handleWheel = (event: WheelEvent<HTMLDivElement>) => {
+    event.preventDefault();
+    zoomAt(view.scale * Math.exp(-event.deltaY * 0.0012), event.clientX, event.clientY);
+  };
+  const startPan = (event: PointerEvent<HTMLDivElement>) => {
+    if ((event.target as HTMLElement).closest("button")) return;
+    dragRef.current = { x: event.clientX, y: event.clientY, originX: view.x, originY: view.y };
+    event.currentTarget.setPointerCapture(event.pointerId);
+    event.currentTarget.classList.add("dragging");
+  };
+  const movePan = (event: PointerEvent<HTMLDivElement>) => {
+    const drag = dragRef.current;
+    if (!drag) return;
+    setView((current) => ({ ...current, x: drag.originX + event.clientX - drag.x, y: drag.originY + event.clientY - drag.y }));
+  };
+  const endPan = (event: PointerEvent<HTMLDivElement>) => {
+    dragRef.current = null;
+    event.currentTarget.classList.remove("dragging");
+  };
   const visible = useMemo(
     () =>
       organisms.filter(
@@ -425,16 +512,33 @@ export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
                 Trained organism
               </span>
             </div>
+            <div className="organism-map-tools" aria-label="Map controls">
+              <button onClick={() => zoomAt(view.scale * 1.25)} aria-label="Zoom in">+</button>
+              <button onClick={() => zoomAt(view.scale / 1.25)} aria-label="Zoom out">−</button>
+              <button onClick={fitGraph}>Fit</button>
+            </div>
           </div>
-          <div className="organism-plot">
+          <div
+            className="organism-plot"
+            ref={plotRef}
+            onWheel={handleWheel}
+            onPointerDown={startPan}
+            onPointerMove={movePan}
+            onPointerUp={endPan}
+            onPointerCancel={endPan}
+            onDoubleClick={fitGraph}
+          >
             <div
               className="organism-canvas"
-              style={{ height: `${Math.max(100, baseModels.length * 12)}%` }}
+              style={{
+                width: GRAPH_WIDTH,
+                height: GRAPH_HEIGHT,
+                transform: `translate(${view.x}px, ${view.y}px) scale(${view.scale})`,
+              }}
             >
               <svg
                 aria-hidden="true"
-                viewBox="0 0 100 100"
-                preserveAspectRatio="none"
+                viewBox={`0 0 ${GRAPH_WIDTH} ${GRAPH_HEIGHT}`}
               >
                 <defs>
                   <marker
@@ -460,8 +564,8 @@ export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
                       key={o.name}
                       x1={source.x}
                       y1={source.y}
-                      x2={target.x + (source.x - target.x) * 0.12}
-                      y2={target.y + (source.y - target.y) * 0.12}
+                      x2={target.x + (source.x - target.x) * 0.18}
+                      y2={target.y + (source.y - target.y) * 0.18}
                       markerEnd="url(#lineage-arrow)"
                       className={active ? "active" : ""}
                     />
@@ -482,17 +586,16 @@ export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
                     aria-pressed={selectedBase === b.name}
                     className={`base-node ${visible.some((o) => o.base === b.name) ? "" : "muted"} ${selectedBase === b.name ? "selected" : ""}`}
                     style={{
-                      left: `${position.x}%`,
-                      top: `${position.y}%`,
+                      top: position.y,
+                      left: position.x,
+                      width: position.size,
+                      height: position.size,
                       borderColor: b.color,
                     }}
                   >
-                    <i style={{ background: b.color }} aria-hidden="true">
-                      B
-                    </i>
                     <span>
                       <strong>{b.name}</strong>
-                      <small>{b.maker} · base model</small>
+                      <small>{sizeLabel(b.name)} · {b.maker}</small>
                     </span>
                   </button>
                 );
@@ -507,9 +610,9 @@ export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
                       setSelectedBase(null);
                     }}
                     className={`organism-node ${selectedBase === null && selected.name === o.name ? "selected" : ""} ${visibleNames.has(o.name) ? "" : "hidden"}`}
-                    style={{ left: `${position.x}%`, top: `${position.y}%` }}
+                    style={{ left: position.x, top: position.y, width: position.size, height: position.size }}
                   >
-                    <i style={{ background: traitColors[o.trait] }} />
+                    <i style={{ background: traitColors[o.trait] }} aria-hidden="true" />
                     <span>
                       {o.name}
                       <small>{o.trait}</small>
@@ -533,8 +636,8 @@ export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
             </div>
           </div>
           <div className="map-foot">
-            <span>Base models left · organisms aligned right</span>
-            <span>Color indicates studied behavior</span>
+            <span>Drag to explore · scroll or pinch to zoom</span>
+            <span>Circle size reflects model size · color indicates behavior</span>
           </div>
         </section>
         <aside className="detail">
