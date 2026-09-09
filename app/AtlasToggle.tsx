@@ -9,7 +9,7 @@ export default function AtlasToggle({active,onChange}:{active:AtlasKind;onChange
         <span className="brandmark dataset-mark" aria-hidden="true"><i/><i/><i/></span><span>Dataset Atlas</span>
       </button>
       <button className={active==='organism'?'active':''} aria-pressed={active==='organism'} onClick={()=>onChange('organism')}>
-        <span className="brandmark organism-mark" aria-hidden="true"><i/><i/><i/></span><span>Organism Atlas</span>
+        <span>Organism Atlas</span><span className="brandmark organism-mark" aria-hidden="true"><i/><i/><i/></span>
       </button>
     </div>
     <em>beta</em>
