@@ -1549,6 +1549,80 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: enterprise agents, orchestration, collaboration, tool use
 - description: Enterprise-oriented scenarios, agent definitions, tools, and expected outcomes for benchmarking multi-agent collaboration strategies.
 
+## DEBATE
+
+- organization: Multi-Agent-LLMs
+- category: Multiagent
+- samples: 14,410
+- year: 2025
+- license: Apache 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/Multi-Agent-LLMs/DEBATE
+- paper: https://arxiv.org/abs/2510.25110
+- tags: multi-agent debate, role playing, long-form dialogue, consensus
+- description: Long-form multi-agent debates with role personas, argument rounds, consensus outcomes, and multiple prompting and reporting configurations.
+
+## NARCBench
+
+- organization: Aaron Rose et al.
+- category: Multiagent
+- samples: 11,346
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/aaronrose227/narcbench
+- paper: https://arxiv.org/abs/2604.01151
+- tags: collusion detection, deception, activation probing, distribution shift
+- description: Multi-agent collusion and control runs with aligned activation records for evaluating group-level collusion detection under distribution shift.
+
+## SOTOPIA-ToM
+
+- organization: Yashwanth YS et al.
+- category: Multiagent
+- samples: 760
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/yashwanthys/sotopia-tom
+- tags: theory of mind, private information, coordination, privacy
+- description: Human-reviewed and synthetic scenarios where three to five agents coordinate while respecting partitioned knowledge and channel-specific sharing policies.
+
+## CooperBench Qwen9B Cooperative SWE
+
+- organization: CooperBench
+- category: Multiagent
+- samples: 368
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/CooperBench/qwen9b-coop-mini-swe-agent
+- tags: software engineering, cooperative agents, trajectories, coordination
+- description: Paired-agent software-engineering trajectories and outcomes for comparing cooperative and single-agent task solving on a fixed evaluation grid.
+
+## Agentic Collaboration Benchmark
+
+- organization: Antti Leppinen
+- category: Multiagent
+- samples: 202
+- year: 2026
+- license: Apache 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/Anttileppi/agentic-collab-bench
+- tags: collaboration quality, information asymmetry, recovery, turn taking
+- description: Multi-round collaboration scenarios and reference traces for measuring participation balance, information integration, and recovery from disruptions.
+
+## Agent Sandbox Negotiation Benchmark
+
+- organization: ScareRezume
+- category: Multiagent
+- samples: 24,122
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/ScareRezume/agent-sandbox-negotiation-benchmark
+- tags: negotiation, multi-agent dialogue, deadlocks, coordination
+- description: Simulated negotiation transcripts capturing agreements, failures, deadlocks, and multi-turn coordination friction between autonomous agents.
+
 ## Evaluation Awareness Cues Benchmark
 
 - organization: Independent research
