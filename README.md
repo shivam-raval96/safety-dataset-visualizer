@@ -16,4 +16,6 @@ Set `OPENAI_API_KEY`, then run:
 python3 scripts/discover-datasets.py
 ```
 
-The script searches Hugging Face for every catalog category, removes datasets already present in `data/datasets.md`, and asks the OpenAI Responses API to retain up to five useful additions per category. It verifies each selected Hugging Face source and writes review-ready entries to `data/dataset-candidates.md`; it never changes the main catalog. Use `--dry-run` to test discovery without an OpenAI API call, or `--help` for limits and category filters.
+The script searches Hugging Face for datasets created in the requested year and queries contemporaneous LessWrong posts and Google Scholar results for supporting discovery evidence. It removes datasets already present in `data/datasets.md`, asks the OpenAI Responses API to retain the useful additions, verifies every selected Hugging Face page, and writes review-ready entries to `data/dataset-candidates.md`; it never changes the main catalog.
+
+The default year is the current UTC year. Use `--year 2026` to reproduce the 2026 search, `--no-ai` to retain every candidate without model ranking, `--dry-run` to test all three discovery sources without writing output, or `--help` for limits and category filters. Google Scholar may rate-limit automated requests; the script fails clearly instead of silently treating a blocked page as an empty result.

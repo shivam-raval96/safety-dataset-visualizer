@@ -1,107 +1,123 @@
 # Dataset Atlas candidate additions
 
-Generated 2026-09-08 20:21 UTC with `gpt-5.6-luna`.
+Generated 2026-09-09 03:10 UTC with `deterministic no-AI selection`.
 Review every entry before appending it to `data/datasets.md`.
 
 Discovery summary:
 
-- Jailbreak / red-teaming: 3 selected from 9 candidates
-- Deception: 2 selected from 3 candidates
-- Agentic: 3 selected from 11 candidates
+- Eval awareness: 0 selected from 0 Hugging Face candidates (30 LessWrong and 0 Google Scholar results found)
+- Jailbreak / red-teaming: 2 selected from 2 Hugging Face candidates (30 LessWrong and 25 Google Scholar results found)
+- Bias: 0 selected from 0 Hugging Face candidates (30 LessWrong and 3 Google Scholar results found)
+- Deception: 1 selected from 1 Hugging Face candidates (27 LessWrong and 25 Google Scholar results found)
+- Agentic: 6 selected from 6 Hugging Face candidates (30 LessWrong and 29 Google Scholar results found)
+- Reward hacking: 0 selected from 0 Hugging Face candidates (30 LessWrong and 19 Google Scholar results found)
+- Multiagent: 0 selected from 0 Hugging Face candidates (30 LessWrong and 20 Google Scholar results found)
 
 ---
-## Llm Jailbreak Prompt Injection Dataset
+## Llm Red Teaming Corpus
 
-- organization: Necent
+- organization: itsVentie
 - category: Jailbreak / red-teaming
-- samples: Unknown
-- year: 2026
-- license: MIT
-- citations: 0
-- url: https://huggingface.co/datasets/Necent/llm-jailbreak-prompt-injection-dataset
-- tags: safety, jailbreak, prompt-injection, red-teaming, llm-guardrails
-- description: Unified dataset combining 30+ public sources for jailbreak, prompt-injection, guardrail training, content moderation, and response-safety filtering.
-
-## Jailbreak Detection Dataset
-
-- organization: llm-semantic-router
-- category: Jailbreak / red-teaming
-- samples: 4.1k
+- samples: 18
 - year: 2026
 - license: APACHE 2.0
 - citations: 0
-- url: https://huggingface.co/datasets/llm-semantic-router/jailbreak-detection-dataset
-- tags: safety, content-moderation, jailbreak-detection, mlcommons, aegis
-- description: Combines Aegis, Toxic-Chat, and jailbreak-pattern sources for MLCommons-aligned jailbreak and safety detection.
+- url: https://huggingface.co/datasets/itsVentie/llm-red-teaming-corpus
+- tags: security, red-teaming, prompt-injection, jailbreak
+- description: LLM Red-Teaming Corpus The itsVentie/llm-red-teaming-corpus dataset is a curated benchmark containing adversarial prompts targeting Large Language Models. It covers direct prompt injections, jailbreaks, obfuscation.
 
-## Llm Jailbreak Classifier
+## Llm Threat Jailbreak Dataset
 
-- organization: markush1
+- organization: Builder117
 - category: Jailbreak / red-teaming
-- samples: Unknown
-- year: 2024
+- samples: 1.1k
+- year: 2026
 - license: UNKNOWN
 - citations: 0
-- url: https://huggingface.co/datasets/markush1/LLM-Jailbreak-Classifier
-- tags: jailbreak, ai-security
-- description: Cleaned classification data assembled from jailbreak prompts, OpenOrca, DAN jailbreak, JailBreakV, and jailbreak SFT sources.
+- url: https://huggingface.co/datasets/Builder117/llm-threat-jailbreak-dataset
+- tags: Unknown
+- description: No dataset-card description provided.
 
-## LLM Deception Trajectories
+## Llm Deception Amongus
 
-- organization: dSLLab
+- organization: h-gajdov
 - category: Deception
-- samples: 14.6k
+- samples: Unknown
 - year: 2026
-- license: MIT
+- license: UNKNOWN
 - citations: 0
-- url: https://huggingface.co/datasets/dSLLab/llm-deception-trajectories
-- tags: deception-detection, llm-interpretability, hidden-states, trajectory-analysis, probing
-- description: Hidden-state trajectories from 11 transformer architectures processing matched truthful and deceptive prompt pairs across 20 deception categories.
+- url: https://huggingface.co/datasets/h-gajdov/llm-deception-amongus
+- tags: Unknown
+- description: No dataset-card description provided.
 
-## Energy Cost Deception Llm
+## Cross-lingual Multi-Agent Safety Evaluation (Phase 1)
 
-- organization: levgogo
-- category: Deception
+- organization: Faruna01
+- category: Agentic
 - samples: Unknown
 - year: 2026
 - license: CC BY 4.0
 - citations: 0
-- url: https://huggingface.co/datasets/levgogo/energy-cost-deception-llm
-- tags: truthfulness, deception-detection, energy-efficiency, logprobs, ai-safety
-- description: Measures computational costs associated with deviations from baseline language-model output distributions, including deception-related evaluations.
+- url: https://huggingface.co/datasets/Faruna01/Cross-lingual-Multi-Agent-Safety
+- tags: safety, multilingual, multi-agent, refusal, ai-safety, cross-lingual, low-resource-languages, llm-evaluation
+- description: Cross-lingual Multi-Agent Safety Evaluation — Phase 1 This dataset contains the Phase 1 baseline results from the research project "Cross-lingual Safety Failures in Multi-Agent.
 
-## Agent Safetybench
+## Adversarial Agent Intent Safety Analysis 240K
 
-- organization: thu-coai
+- organization: yatin-superintelligence
 - category: Agentic
 - samples: Unknown
-- year: 2025
-- license: MIT
-- citations: 0
-- url: https://huggingface.co/datasets/thu-coai/Agent-SafetyBench
-- tags: agent safety, benchmark, risk evaluation
-- description: Broad agent safety benchmark covering diverse environments, risk categories, and failure modes for systematic evaluation.
-
-## Agent Safety Bench
-
-- organization: aradhye
-- category: Agentic
-- samples: 4.2k
 - year: 2026
-- license: APACHE 2.0
+- license: OTHER
 - citations: 0
-- url: https://huggingface.co/datasets/aradhye/agent-safety-bench
-- tags: agent safety, tool use, LLM agents, benchmark
-- description: Benchmark for tool-using LLM agents, pairing instructions with sandboxed environments to evaluate unsafe actions during task completion.
+- url: https://huggingface.co/datasets/yatin-superintelligence/Adversarial-Agent-Intent-Safety-Analysis-240K
+- tags: agent, safety, jailbreak, alignment, trust, digital-arrest, robotics, reinforcement-learning
+- description: Adversarial Agent Intent Safety Analysis 240K Abstract The Adversarial-Agent-Intent-Safety-Analysis-240K is a deterministically structured dataset featuring 242,454 context-rich adversarial prompts and safety evaluations. Engineered strictly.
 
-## Fortis Agent Skill Safety
+## Agent Safety Bench (zh) — tool-call risk & prompt-injection
 
-- organization: ShawnLi02
+- organization: uninhibited-scholar
 - category: Agentic
 - samples: Unknown
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/uninhibited-scholar/agent-safety-bench-zh
+- tags: agent-safety, prompt-injection, llm-security, tool-use, guardrails, cybersecurity, defensive-security
+- description: agent-safety-bench-zh · 中文 Agent 工具调用风险 / 提示注入 评测基准 评测一个 LLM / 安全护栏能否正确识别 agent 拟执行动作中的危险操作与被注入的恶意指令，并给出 allow / block 决策与风险分级。纯防御 / 安全教育 / 评测研究。 当前 v0.2，105.
+
+## adaption-ai_agent_safety_prompts
+
+- organization: melanieyes
+- category: Agentic
+- samples: 30
 - year: 2026
 - license: UNKNOWN
 - citations: 0
-- url: https://huggingface.co/datasets/ShawnLi02/FORTIS_Agent_Skill_Safety
-- tags: agent safety, skill selection, least privilege, tool use
-- description: Evaluates whether agents select minimally privileged skills and capabilities when multiple valid options can complete a task.
+- url: https://huggingface.co/datasets/melanieyes/adaption-ai-agent-safety-prompts
+- tags: adaption, instruction-tuning, governance, code, technology
+- description: This dataset is a remastered version prepared using Adaption's Adaptive Data platform. adaption-ai_agent_safety_prompts This dataset contains pairs of prompts and classifications evaluating the safety.
+
+## adaption-agent_safety_bench
+
+- organization: melanieyes
+- category: Agentic
+- samples: 30
+- year: 2026
+- license: UNKNOWN
+- citations: 0
+- url: https://huggingface.co/datasets/melanieyes/adaption-agent-safety-bench
+- tags: adaption, instruction-tuning, governance, code, technology
+- description: This dataset is a remastered version prepared using Adaption's Adaptive Data platform. adaption-agent_safety_bench This dataset contains pairs of prompts and completions designed to evaluate.
+
+## Farabi Agent Safety: Prompt-Injection Resistance (kk/ru/en)
+
+- organization: nur-dev
+- category: Agentic
+- samples: Unknown
+- year: 2026
+- license: CC BY NC 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/nur-dev/farabi-agent-safety-injection
+- tags: kazakh, russian, low-resource, ai-safety, prompt-injection, agent, tool-use, red-teaming
+- description: Farabi Agent Safety: Prompt-Injection Resistance (kk/ru/en) Trajectories that teach an agent to treat retrieved chunks and tool outputs as data, not instructions — resisting.

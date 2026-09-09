@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Discover useful Hugging Face datasets that are missing from Dataset Atlas."""
+"""Discover recent AI-safety datasets using Hugging Face, LessWrong, and Google Scholar."""
 
 from __future__ import annotations
 
@@ -10,6 +10,8 @@ import re
 import sys
 import time
 from datetime import datetime, timezone
+from html import unescape
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
@@ -23,6 +25,9 @@ DEFAULT_OUTPUT = ROOT / "data" / "dataset-candidates.md"
 HF_API = "https://huggingface.co/api/datasets"
 HF_SIZE_API = "https://datasets-server.huggingface.co/size"
 OPENAI_API = "https://api.openai.com/v1/responses"
+LESSWRONG_API = "https://www.lesswrong.com/graphql"
+GOOGLE_SCHOLAR = "https://scholar.google.com/scholar"
+DEFAULT_YEAR = datetime.now(timezone.utc).year
 
 SEARCH_TERMS = {
     "Jailbreak / red-teaming": ["llm jailbreak", "llm red teaming", "harmful prompts refusal"],
@@ -103,7 +108,7 @@ def useful_tags(dataset: dict[str, Any]) -> list[str]:
     return tags[:8]
 
 
-def discover(category: str, limit: int) -> list[dict[str, Any]]:
+def discover_huggingface(category: str, limit: int, year: int) -> list[dict[str, Any]]:
     found: dict[str, dict[str, Any]] = {}
     for term in SEARCH_TERMS[category]:
         query = urlencode({"search": term, "sort": "downloads", "direction": -1,
@@ -111,6 +116,9 @@ def discover(category: str, limit: int) -> list[dict[str, Any]]:
         for dataset in request_json(f"{HF_API}?{query}"):
             dataset_id = dataset.get("id")
             if not dataset_id or dataset.get("private") or dataset.get("disabled"):
+                continue
+            created = str(dataset.get("createdAt") or "")
+            if not created.startswith(f"{year}-"):
                 continue
             found[dataset_id.casefold()] = {
                 "id": dataset_id,
@@ -130,6 +138,132 @@ def discover(category: str, limit: int) -> list[dict[str, Any]]:
     return sorted(found.values(), key=lambda item: (item["downloads"], item["likes"]), reverse=True)
 
 
+def plain_text(value: str) -> str:
+    return re.sub(r"\s+", " ", unescape(re.sub(r"<[^>]+>", " ", value))).strip()
+
+
+def discover_lesswrong(year: int, limit: int) -> list[dict[str, str]]:
+    query = """query($selector: PostSelector, $limit: Int) {
+      posts(selector: $selector, limit: $limit) {
+        results { title postedAt pageUrl htmlBody }
+      }
+    }"""
+    after = f"{year}-01-01T00:00:00Z"
+    before = f"{year + 1}-01-01T00:00:00Z"
+    posts: list[dict[str, Any]] = []
+    while len(posts) < limit:
+        batch_size = min(500, limit - len(posts))
+        payload = {
+            "query": query,
+            "variables": {
+                "selector": {"new": {"after": after, "before": before}},
+                "limit": batch_size,
+            },
+        }
+        response = request_json(LESSWRONG_API, payload=payload)
+        if response.get("errors"):
+            raise RuntimeError(f"LessWrong GraphQL error: {response['errors'][0].get('message')}")
+        batch = response.get("data", {}).get("posts", {}).get("results", [])
+        posts.extend(batch)
+        if len(batch) < batch_size:
+            break
+        next_before = batch[-1]["postedAt"]
+        if next_before == before:
+            raise RuntimeError("LessWrong date pagination did not advance")
+        before = next_before
+    return [
+        {
+            "title": post["title"],
+            "url": post["pageUrl"],
+            "text": plain_text(post.get("htmlBody") or "")[:2000],
+        }
+        for post in posts
+    ]
+
+
+class ScholarParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.results: list[dict[str, str]] = []
+        self.current: dict[str, str] | None = None
+        self.capture: str | None = None
+        self.depth = 0
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        values = dict(attrs)
+        classes = set((values.get("class") or "").split())
+        if tag == "div" and "gs_r" in classes:
+            self.current = {"title": "", "url": "", "text": ""}
+            self.depth = 1
+        elif self.current is not None:
+            if tag == "div":
+                self.depth += 1
+            if tag == "h3" and "gs_rt" in classes:
+                self.capture = "title"
+            elif tag == "div" and "gs_rs" in classes:
+                self.capture = "text"
+            elif tag == "a" and self.capture == "title" and not self.current["url"]:
+                self.current["url"] = values.get("href") or ""
+
+    def handle_endtag(self, tag: str) -> None:
+        if self.current is None:
+            return
+        if tag in {"h3", "div"}:
+            self.capture = None
+        if tag == "div":
+            self.depth -= 1
+            if self.depth == 0:
+                self.current = {key: plain_text(value) for key, value in self.current.items()}
+                if self.current["title"]:
+                    self.results.append(self.current)
+                self.current = None
+
+    def handle_data(self, data: str) -> None:
+        if self.current is not None and self.capture:
+            self.current[self.capture] += data + " "
+
+
+def discover_scholar(category: str, year: int, limit: int) -> list[dict[str, str]]:
+    found: dict[str, dict[str, str]] = {}
+    for term in SEARCH_TERMS[category]:
+        query = urlencode({"hl": "en", "as_ylo": year, "as_yhi": year, "q": f'"{term}" dataset'})
+        request = Request(
+            f"{GOOGLE_SCHOLAR}?{query}",
+            headers={"User-Agent": "Mozilla/5.0 (compatible; DatasetAtlasResearch/1.0)"},
+        )
+        try:
+            with urlopen(request, timeout=45) as response:
+                html = response.read().decode("utf-8", "replace")
+        except (HTTPError, URLError) as error:
+            raise RuntimeError(f"Could not query Google Scholar: {error}") from error
+        if "not a robot" in html.casefold() or "/sorry/" in html:
+            raise RuntimeError("Google Scholar blocked the automated request")
+        parser = ScholarParser()
+        parser.feed(html)
+        for result in parser.results[:limit]:
+            found[normalize(result["title"])] = result
+    return list(found.values())
+
+
+def relevant_evidence(category: str, items: list[dict[str, str]], limit: int = 30) -> list[dict[str, str]]:
+    words = {
+        word for term in SEARCH_TERMS[category] for word in re.findall(r"[a-z]{4,}", term.casefold())
+        if word not in {"benchmark", "language", "model"}
+    }
+    ranked: list[tuple[int, dict[str, str]]] = []
+    for item in items:
+        haystack = f"{item['title']} {item['text']}".casefold()
+        matched = words & set(re.findall(r"[a-z]{4,}", haystack))
+        if matched and ("dataset" in haystack or "benchmark" in haystack):
+            ranked.append((len(matched) + (2 if "dataset" in item["title"].casefold() else 0), item))
+    return [item for _, item in sorted(ranked, key=lambda pair: pair[0], reverse=True)[:limit]]
+
+
+def concise_description(value: str) -> str:
+    words = plain_text(value).split()
+    return " ".join(words[:24]).rstrip(".,;:") + ("." if words else "")
+
+
 def filter_existing(candidates: list[dict[str, Any]], names: set[str], hf_ids: set[str]) -> list[dict[str, Any]]:
     return [
         candidate for candidate in candidates
@@ -137,7 +271,7 @@ def filter_existing(candidates: list[dict[str, Any]], names: set[str], hf_ids: s
     ]
 
 
-def openai_select(category: str, candidates: list[dict[str, Any]], *, model: str,
+def openai_select(category: str, candidates: list[dict[str, Any]], evidence: dict[str, list[dict[str, str]]], *, model: str,
                   keep: int, api_key: str) -> list[dict[str, Any]]:
     schema = {
         "type": "object",
@@ -172,7 +306,12 @@ def openai_select(category: str, candidates: list[dict[str, Any]], *, model: str
             "collections. Return fewer than the limit when quality is weak. Keep descriptions factual and under "
             "24 words; do not invent details absent from the metadata."
         ),
-        "input": json.dumps({"category": category, "selection_limit": keep, "candidates": candidates}),
+        "input": json.dumps({
+            "category": category,
+            "selection_limit": keep,
+            "huggingface_candidates": candidates,
+            "supporting_search_results": evidence,
+        }),
         "text": {"format": {"type": "json_schema", "name": "dataset_selection", "strict": True, "schema": schema}},
     }
     response = request_json(
@@ -243,8 +382,8 @@ def markdown_entry(category: str, selected: dict[str, Any], metadata: dict[str, 
         f"- license: {license_name(dataset)}",
         "- citations: 0",
         f"- url: https://huggingface.co/datasets/{selected['id']}",
-        f"- tags: {', '.join(tags) if tags else ', '.join(useful_tags(dataset)[:5])}",
-        f"- description: {description}",
+        f"- tags: {', '.join(tags) if tags else ', '.join(useful_tags(dataset)[:5]) or 'Unknown'}",
+        f"- description: {description or 'No dataset-card description provided.'}",
     ])
 
 
@@ -255,15 +394,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--model", default=os.getenv("OPENAI_MODEL", "gpt-5.6-luna"))
     parser.add_argument("--search-limit", type=int, default=20, help="Results fetched per search term")
     parser.add_argument("--candidate-limit", type=int, default=40, help="New candidates sent to OpenAI per category")
-    parser.add_argument("--keep-per-category", type=int, default=5)
+    parser.add_argument("--keep-per-category", type=int, default=20)
+    parser.add_argument("--year", type=int, default=DEFAULT_YEAR)
+    parser.add_argument("--lesswrong-limit", type=int, default=5000, help="Maximum posts fetched for the requested year")
+    parser.add_argument("--scholar-limit", type=int, default=10, help="Results fetched per Scholar search term")
     parser.add_argument("--category", action="append", choices=SEARCH_TERMS, help="Run selected category; repeatable")
+    parser.add_argument("--no-ai", action="store_true", help="Keep every discovered candidate without OpenAI ranking")
     parser.add_argument("--dry-run", action="store_true", help="Search and report counts without calling OpenAI or writing output")
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    if min(args.search_limit, args.candidate_limit, args.keep_per_category) < 1:
+    if min(args.search_limit, args.candidate_limit, args.keep_per_category, args.lesswrong_limit, args.scholar_limit) < 1:
         raise SystemExit("limits must be positive integers")
     names, hf_ids, catalog_categories = parse_catalog(args.catalog.read_text(encoding="utf-8"))
     missing_queries = set(catalog_categories) - SEARCH_TERMS.keys()
@@ -271,27 +414,47 @@ def main() -> int:
         raise SystemExit(f"Add SEARCH_TERMS for catalog categories: {', '.join(sorted(missing_queries))}")
     categories = args.category or catalog_categories
     api_key = os.getenv("OPENAI_API_KEY")
-    if not args.dry_run and not api_key:
-        raise SystemExit("OPENAI_API_KEY is required (or use --dry-run to test Hugging Face discovery)")
+    if not args.dry_run and not args.no_ai and not api_key:
+        raise SystemExit("OPENAI_API_KEY is required (or use --no-ai/--dry-run)")
 
     entries: list[str] = []
     summary: list[str] = []
+    lesswrong_posts = discover_lesswrong(args.year, args.lesswrong_limit)
+    print(f"LessWrong: fetched {len(lesswrong_posts)} posts from {args.year}")
     for category in categories:
-        candidates = filter_existing(discover(category, args.search_limit), names, hf_ids)[:args.candidate_limit]
-        print(f"{category}: {len(candidates)} new candidates")
-        if args.dry_run or not candidates:
+        candidates = filter_existing(discover_huggingface(category, args.search_limit, args.year), names, hf_ids)[:args.candidate_limit]
+        lesswrong = relevant_evidence(category, lesswrong_posts)
+        scholar = discover_scholar(category, args.year, args.scholar_limit)
+        evidence = {"lesswrong": lesswrong, "google_scholar": scholar}
+        print(f"{category}: {len(candidates)} Hugging Face candidates, {len(lesswrong)} LessWrong and {len(scholar)} Scholar results")
+        if args.dry_run:
             continue
-        selected = openai_select(category, candidates, model=args.model, keep=args.keep_per_category, api_key=api_key)
+        if not candidates:
+            summary.append(
+                f"- {category}: 0 selected from 0 Hugging Face candidates "
+                f"({len(lesswrong)} LessWrong and {len(scholar)} Google Scholar results found)"
+            )
+            continue
+        selected = (
+            [{"id": item["id"], "name": item["name"], "description": concise_description(item["description"]), "tags": item["tags"]}
+             for item in candidates]
+            if args.no_ai else
+            openai_select(category, candidates, evidence, model=args.model, keep=args.keep_per_category, api_key=api_key)
+        )
         for item in selected:
             metadata = verified_metadata(item["id"])
             entries.append(markdown_entry(category, item, metadata))
-        summary.append(f"- {category}: {len(selected)} selected from {len(candidates)} candidates")
+        summary.append(
+            f"- {category}: {len(selected)} selected from {len(candidates)} Hugging Face candidates "
+            f"({len(lesswrong)} LessWrong and {len(scholar)} Google Scholar results found)"
+        )
 
     if args.dry_run:
         return 0
     header = "\n".join([
         "# Dataset Atlas candidate additions", "",
-        f"Generated {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')} with `{args.model}`.",
+        f"Generated {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')} "
+        f"with `{'deterministic no-AI selection' if args.no_ai else args.model}`.",
         "Review every entry before appending it to `data/datasets.md`.", "",
         "Discovery summary:", "", *summary, "", "---", "",
     ])
