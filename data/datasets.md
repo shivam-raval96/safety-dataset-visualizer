@@ -2,53 +2,89 @@
 
 Add a dataset by copying one `##` section and filling in every field. Keep `category` to one of: `Jailbreak / red-teaming`, `Deception`, `Reward hacking`, `Agentic`, `Multiagent`, `Eval awareness`, `Bias`, or `Values and preferences`. Tags are comma-separated. The visual position and point size are generated automatically from this file.
 
-## Stanford Human Preferences Dataset v2
+## MoralChoice
 
-- organization: Stanford NLP
+- organization: Columbia University
 - category: Values and preferences
-- samples: 4.8M
+- samples: 1.4k scenarios
 - year: 2023
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/ninoscherrer/moralchoice
+- tags: moral beliefs, forced choice, ambiguity, survey
+- description: Low- and high-ambiguity moral scenarios with paired actions for measuring the moral beliefs and choice patterns encoded in language models.
+
+## DailyDilemmas
+
+- organization: Allen Institute for AI
+- category: Values and preferences
+- samples: 1.4k dilemmas
+- year: 2024
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/kellycyy/daily_dilemmas
+- tags: value prioritization, moral dilemmas, everyday decisions, ethical theories
+- description: Everyday dilemmas with two actions and value annotations for revealing which human values and ethical principles a model prioritizes when values conflict.
+
+## GlobalOpinionQA
+
+- organization: Anthropic
+- category: Values and preferences
+- samples: 2.6k
+- year: 2023
+- license: CC BY-NC-SA 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/Anthropic/llm_global_opinions
+- tags: global opinions, political values, cultural representation, surveys
+- description: Questions adapted from global attitude and world-value surveys for comparing a model's expressed opinions with response distributions across countries.
+
+## CIVICS
+
+- organization: Hugging Face / University of Amsterdam
+- category: Values and preferences
+- samples: 700
+- year: 2024
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/CIVICS-dataset/CIVICS
+- tags: cultural values, sensitive topics, multilingual, social attitudes
+- description: Multilingual value-laden statements about social welfare, immigration, disability, LGBTQI rights, and other topics designed to expose values encoded in model behavior.
+
+## MOSAIC
+
+- organization: University of Pisa
+- category: Values and preferences
+- samples: 711
+- year: 2026
 - license: Unknown
 - citations: 0
-- url: https://huggingface.co/datasets/stanfordnlp/SHP-2
-- tags: human feedback, collective preferences, RLHF, reward modeling
-- description: Collective preferences over paired responses to questions and instructions across 129 subject areas, derived from Reddit and Stack Exchange voting behavior.
+- url: https://huggingface.co/datasets/EriCop/MOSAIC
+- tags: moral foundations, social attitudes, personal values, psychometrics
+- description: A suite of moral, social, and individual psychometric questionnaires for measuring model tendencies across moral foundations, social attitudes, and personal values.
 
-## PRISM Alignment
+## STONIC
 
-- organization: University of Oxford
+- organization: LLMPASS
 - category: Values and preferences
-- samples: 8k
-- year: 2024
-- license: CC BY 4.0 / CC BY-NC 4.0
-- citations: 0
-- url: https://huggingface.co/datasets/HannahRoseKirk/prism-alignment
-- tags: value alignment, multicultural, human feedback, personalization
-- description: Links diverse participants' stated values and preferences to their ratings and conversations with language models for pluralistic alignment research.
-
-## WildFeedback
-
-- organization: Microsoft Research
-- category: Values and preferences
-- samples: 1.1M
+- samples: 3k
 - year: 2025
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/llmpass-ai/stonic_dataset
+- tags: Schwartz values, worldview, political bias, normative alignment
+- description: Value-laden multiple-choice statements grounded in news for measuring a model's normative, political, and worldview preferences along Schwartz value dimensions.
+
+## WritingPreferenceBench
+
+- organization: WritingPreferenceBench
+- category: Values and preferences
+- samples: 1.8k
+- year: 2026
 - license: ODC BY
 - citations: 0
-- url: https://huggingface.co/datasets/microsoft/WildFeedback
-- tags: in-situ feedback, user preferences, conversations, reward modeling
-- description: Real-world ChatGPT interactions transformed from explicit and implicit user feedback signals into structured preference data for language-model alignment.
-
-## OpenAssistant Conversations
-
-- organization: OpenAssistant
-- category: Values and preferences
-- samples: 161k messages
-- year: 2023
-- license: Apache 2.0
-- citations: 0
-- url: https://huggingface.co/datasets/OpenAssistant/oasst1
-- tags: human feedback, response rankings, quality ratings, multilingual
-- description: Crowd-sourced multilingual assistant conversations with response rankings and hundreds of thousands of human quality ratings for preference learning.
+- url: https://github.com/WritingPreferenceBench/Writing-Preference-Bench
+- tags: writing style, creative writing, subjective judgment, cross-cultural
+- description: English and Chinese preference pairs across creative-writing genres for testing which stylistic qualities a model favors when correctness, factuality, and length are controlled.
 
 ## PLURAL Alignment Dataset
 
@@ -109,18 +145,6 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/hendrycks/ethics
 - tags: ethics, justice, deontology, utilitarianism, virtue
 - description: Five ethics tasks spanning commonsense morality, justice, duties, utilitarian judgments, and virtue ethics for evaluating alignment with shared human values.
-
-## PKU-SafeRLHF
-
-- organization: PKU Alignment
-- category: Values and preferences
-- samples: 164k
-- year: 2024
-- license: CC BY-NC 4.0
-- citations: 0
-- url: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF
-- tags: safety preferences, helpfulness, harmlessness, RLHF, response ranking
-- description: Paired assistant responses with separate helpfulness and harmlessness preferences and safety metadata for multi-level safety alignment and reward modeling.
 
 ## Evaluation Awareness Benchmark
 

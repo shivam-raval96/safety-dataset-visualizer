@@ -38,7 +38,12 @@ SEARCH_TERMS = {
     "Multiagent": ["multi agent llm benchmark", "agent collusion", "multiagent cooperation"],
     "Eval awareness": ["evaluation awareness llm", "situational awareness llm", "sandbagging benchmark"],
     "Bias": ["llm bias benchmark", "stereotype fairness", "social bias language model"],
-    "Values and preferences": ["llm human values", "human preference alignment", "pluralistic alignment dataset"],
+    "Values and preferences": [
+        "llm values benchmark moral beliefs",
+        "llm value preferences moral dilemmas",
+        "llm social political opinions benchmark",
+        "llm gender style preference bias",
+    ],
 }
 
 
@@ -335,7 +340,10 @@ CATEGORY_TERMS = {
     "Multiagent": ("multi-agent", "multiagent", "collusion", "cooperation", "social deduction"),
     "Eval awareness": ("evaluation awareness", "eval awareness", "eval-aware", "eval aware", "evaluation detection", "sandbagging", "deployment-time", "deployment vs evaluation"),
     "Bias": ("bias", "stereotype", "fairness", "discrimination"),
-    "Values and preferences": ("human values", "human preferences", "preference alignment", "value alignment", "pluralistic alignment", "rlhf"),
+    "Values and preferences": (
+        "model values", "value preference", "value prioritization", "moral belief", "moral judgment",
+        "moral dilemma", "social attitudes", "political opinions", "worldview", "writing style preference",
+    ),
 }
 LANDING_HOST_SUFFIXES = (".github.io",)
 
