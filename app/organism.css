@@ -21,6 +21,18 @@
   top: 0;
   will-change: transform;
 }
+
+.paper-source-node {
+  overflow: hidden;
+}
+
+.paper-source-node span {
+  display: -webkit-box !important;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
 .dataset-atlas-switch {
   position: absolute;
   z-index: 20;
