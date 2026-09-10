@@ -43,6 +43,12 @@
         "category": "Agentic",
         "url": "https://huggingface.co/datasets/SALT-NLP/SWE-chat",
         "source": "huggingface.co"
+      },
+      {
+        "name": "MASK",
+        "category": "Deception",
+        "url": "https://huggingface.co/datasets/cais/MASK",
+        "source": "huggingface.co"
       }
     ]
   },

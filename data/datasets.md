@@ -2141,3 +2141,15 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/SALT-NLP/SWE-chat
 - tags: coding agents, agent traces, tool use, human-AI collaboration, software engineering
 - description: Real-world coding-agent sessions with conversation transcripts tool calls thinking traces code changes and human-versus-agent code attribution.
+
+## MASK
+
+- organization: cais
+- category: Deception
+- samples: 1k
+- year: 2025
+- license: UNKNOWN
+- citations: 0
+- url: https://huggingface.co/datasets/cais/MASK
+- tags: honesty, lying, truthfulness, language models, evaluation
+- description: Benchmark of model honesty under pressure to lie using human-labeled examples across six deception-related archetypes.
