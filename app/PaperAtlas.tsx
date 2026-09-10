@@ -59,9 +59,18 @@ const curatedSources: Source[] = [
 ];
 const sources = [...curatedSources, ...(discovered as Source[])];
 
-const WIDTH = 4000;
-const HEIGHT = 3600;
-const centers = topics.map((topic, index) => ({ ...topic, x: 1000 + (index % 3) * 1000, y: 1000 + Math.floor(index / 3) * 1100 }));
+const WIDTH = 6500;
+const HEIGHT = 4200;
+const topicCenters = [
+  { x: 1200, y: 1200 },
+  { x: 3200, y: 900 },
+  { x: 5000, y: 900 },
+  { x: 1400, y: 3300 },
+  { x: 3000, y: 3100 },
+  { x: 4300, y: 3100 },
+  { x: 5500, y: 3100 },
+];
+const centers = topics.map((topic, index) => ({ ...topic, ...topicCenters[index] }));
 
 function sourcePosition(source: Source) {
   const topicIndex = topics.findIndex((topic) => topic.name === source.topic);
