@@ -52,6 +52,20 @@ function compactNumber(value: number) {
   return new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 }).format(value);
 }
 
+function modelSizeBillions(model: DistillModel) {
+  const signals = `${model.id} ${model.baseModel}`;
+  const sizes = [...signals.matchAll(/(?:^|[-_/\s])(\d+(?:\.\d+)?)\s*([bm])(?:[-_.\s]|$)/gi)]
+    .map((match) => Number(match[1]) * (match[2].toLowerCase() === "m" ? .001 : 1))
+    .filter(Number.isFinite);
+  return sizes.length ? Math.max(...sizes) : null;
+}
+
+function modelSizeLabel(model: DistillModel) {
+  const size = modelSizeBillions(model);
+  if (size === null) return "—";
+  return size < 1 ? `${Math.round(size * 1000)}M` : `${Number(size.toFixed(2))}B`;
+}
+
 export default function DistillAtlas({ onBack, onSwitch }: { onBack: () => void; onSwitch: () => void }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const plotRef = useRef<HTMLDivElement>(null);
@@ -79,6 +93,12 @@ export default function DistillAtlas({ onBack, onSwitch }: { onBack: () => void;
       (!needle || `${model.id} ${model.pipeline} ${model.library} ${model.baseModel} ${model.tags.join(" ")}`.toLowerCase().includes(needle))
     );
   }, [category, minimumDownloads, query]);
+  const listGroups = useMemo(() => categories.map(([family]) => ({
+    family,
+    models: visible
+      .filter((model) => categoryFor(model) === family)
+      .sort((a, b) => (modelSizeBillions(b) ?? -1) - (modelSizeBillions(a) ?? -1) || b.downloads - a.downloads),
+  })).filter((group) => group.models.length), [categories, visible]);
 
   const pointPosition = useCallback((model: DistillModel, width: number, height: number) => {
     const pad = 20;
@@ -161,8 +181,8 @@ export default function DistillAtlas({ onBack, onSwitch }: { onBack: () => void;
       </nav><div className="legend-note"><label className={`size-filter ${minimumDownloads === "" ? "inactive" : "active"}`}>Show models with at least <input type="number" min="0" step="1" inputMode="numeric" aria-label="Minimum model download count" value={minimumDownloads} onChange={(event) => setMinimumDownloads(event.target.value)}/> downloads.</label><span>MiniLM → UMAP</span><p>{data.embeddingDimensions}-dimensional model-card embeddings reduced with {data.reducer.name}. Proximity suggests similar names, tasks, base models, and card metadata.</p></div></aside>
       <section className={`map distill-map ${display === "list" ? "list-view" : ""}`} aria-label={display === "map" ? "UMAP of distilled Hugging Face models" : "List of distilled Hugging Face models"}>
         <div className="map-head"><div className="map-head-left"><div className="view-toggle" aria-label="Visualization view"><button onClick={() => setDisplay("map")} aria-pressed={display === "map"}>Map</button><button onClick={() => setDisplay("list")} aria-pressed={display === "list"}>List</button></div><div><span className="live-dot"/> {visible.length.toLocaleString()} models visible</div></div>{display === "map" && <div className="organism-map-tools"><button onClick={() => zoomAt(view.scale * 1.3)} aria-label="Zoom in">+</button><button onClick={() => zoomAt(view.scale / 1.3)} aria-label="Zoom out">−</button><button onClick={() => setView({x:0,y:0,scale:1})}>Fit</button></div>}</div>
-        {display === "map" ? <div className="distill-plot" ref={plotRef} onWheel={wheel} onPointerDown={pointerDown} onPointerMove={pointerMove} onPointerUp={pointerUp} onPointerLeave={() => setHovered(null)} onPointerCancel={() => { dragRef.current = null; setHovered(null); }}><canvas ref={canvasRef}/>{hovered && <div className="distill-tooltip" role="tooltip" style={{left:hovered.x,top:hovered.y}}><strong>{hovered.model.id}</strong><span>{categoryFor(hovered.model)} · {compactNumber(hovered.model.downloads)} downloads</span></div>}{!visible.length && <div className="empty">No models match this view.<button onClick={() => {setQuery("");setCategory("All families");setMinimumDownloads("");}}>Show all models</button></div>}</div> : <div className="dataset-list distill-list" role="list">{visible.map((model) => { const family = categoryFor(model); const color = categoryColor(family); return <button role="listitem" key={model.id} onClick={() => setSelected(model)} className={`dataset-row ${selected.id === model.id ? "selected" : ""}`} style={{background:`${color}18`,borderColor:`${color}45`}}><i style={{background:color}}/><strong>{model.id.split("/").at(-1)}<small>{model.id.split("/")[0]}</small></strong><span>{family}</span><span>{model.pipeline}</span><span>{compactNumber(model.downloads)}</span></button>;})}{!visible.length && <div className="empty">No models match this view.<button onClick={() => {setQuery("");setCategory("All families");setMinimumDownloads("");}}>Show all models</button></div>}</div>}
-        <div className="map-foot"><span>{display === "map" ? "Proximity indicates semantic similarity · size indicates downloads" : "Showing model, family, task, and downloads"}</span><div className="view-toggle atlas-scope-toggle" aria-label="Atlas view"><button onClick={onBack} aria-pressed="false">Organisms</button><button aria-pressed="true">Distills</button></div></div>
+        {display === "map" ? <div className="distill-plot" ref={plotRef} onWheel={wheel} onPointerDown={pointerDown} onPointerMove={pointerMove} onPointerUp={pointerUp} onPointerLeave={() => setHovered(null)} onPointerCancel={() => { dragRef.current = null; setHovered(null); }}><canvas ref={canvasRef}/>{hovered && <div className="distill-tooltip" role="tooltip" style={{left:hovered.x,top:hovered.y}}><strong>{hovered.model.id}</strong><span>{categoryFor(hovered.model)} · {compactNumber(hovered.model.downloads)} downloads</span></div>}{!visible.length && <div className="empty">No models match this view.<button onClick={() => {setQuery("");setCategory("All families");setMinimumDownloads("");}}>Show all models</button></div>}</div> : <div className="dataset-list distill-list" role="list">{listGroups.map(({family, models: familyModels}) => { const color = categoryColor(family); return <section className="distill-family-group" key={family}><header><i style={{background:color}}/><h3>{family}</h3><span>{familyModels.length.toLocaleString()} models</span></header>{familyModels.map((model) => <button role="listitem" key={model.id} onClick={() => setSelected(model)} className={`dataset-row ${selected.id === model.id ? "selected" : ""}`} style={{background:`${color}18`,borderColor:`${color}45`}}><i style={{background:color}}/><strong>{model.id.split("/").at(-1)}<small>{model.id.split("/")[0]}</small></strong><span>{modelSizeLabel(model)}</span><span>{model.pipeline}</span><span>{compactNumber(model.downloads)}</span></button>)}</section>;})}{!visible.length && <div className="empty">No models match this view.<button onClick={() => {setQuery("");setCategory("All families");setMinimumDownloads("");}}>Show all models</button></div>}</div>}
+        <div className="map-foot"><span>{display === "map" ? "Proximity indicates semantic similarity · size indicates downloads" : "Grouped by family · largest stated parameter count first"}</span><div className="view-toggle atlas-scope-toggle" aria-label="Atlas view"><button onClick={onBack} aria-pressed="false">Organisms</button><button aria-pressed="true">Distills</button></div></div>
       </section>
       <aside className="detail"><div className="organism-panel" key={selected.id}><div className="detail-top"><div className="dataset-icon organism-icon" style={{background:categoryColor(categoryFor(selected))}}>HF</div></div><p className="detail-category"><span style={{background:categoryColor(categoryFor(selected))}}/>{categoryFor(selected)}</p><h2>{selected.id.split("/").at(-1)}</h2><p className="org">by {selected.id.split("/")[0]} · {selected.pipeline}</p><p className="description">{selected.baseModel ? `A distilled model derived from ${selected.baseModel}.` : "A public Hugging Face model matched by the distill search and positioned from its model-card metadata."}</p><div className="stats"><div><span>Downloads</span><strong>{compactNumber(selected.downloads)}</strong></div><div><span>Likes</span><strong>{compactNumber(selected.likes)}</strong></div><div><span>Library</span><strong>{selected.library || "Not specified"}</strong></div><div><span>License</span><strong>{selected.license || "Not specified"}</strong></div></div>{selected.tags.length > 0 && <div className="detail-section"><p className="eyebrow">Model card signals</p><div className="tags">{selected.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div>}<a className="open-button" href={`https://huggingface.co/${selected.id}`} target="_blank" rel="noreferrer">Open model card <span>↗</span></a></div></aside>
     </section>

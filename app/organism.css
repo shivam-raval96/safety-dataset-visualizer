@@ -604,8 +604,27 @@
 .organism-shell .map { min-height: 0; }
 .distill-list { bottom: 48px; }
 .distill-list .dataset-row {
-  grid-template-columns: 8px minmax(160px, 1.5fr) minmax(120px, 1fr) minmax(85px, .7fr) 64px;
+  grid-template-columns: 8px minmax(180px, 1.5fr) 52px minmax(85px, .7fr) 64px;
 }
+.distill-family-group { display: grid; gap: 7px; }
+.distill-family-group + .distill-family-group { margin-top: 14px; }
+.distill-family-group > header {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  display: grid;
+  grid-template-columns: 8px 1fr auto;
+  align-items: center;
+  gap: 9px;
+  min-height: 34px;
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--line);
+  background: #f4f6f1ed;
+  backdrop-filter: blur(10px);
+}
+.distill-family-group > header i { width: 8px; height: 8px; border-radius: 50%; }
+.distill-family-group > header h3 { margin: 0; font-size: 11px; }
+.distill-family-group > header span { color: #8b938e; font-size: 8px; }
 .atlas-scope-toggle {
   position: relative;
   z-index: 5;
