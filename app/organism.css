@@ -593,3 +593,6 @@
 .distill-map .map-head { z-index: 4; }
 .distill-shell .detail h2 { overflow-wrap: anywhere; }
 .distill-shell .stats div:nth-last-child(-n+2) { border-bottom: 0; }
+.distill-shell .filters .intro { margin-bottom: 16px; }
+.distill-shell .filters nav button { height: 34px; }
+.distill-shell .filters .legend-note { padding-top: 12px; }
