@@ -49,6 +49,12 @@
         "category": "Deception",
         "url": "https://huggingface.co/datasets/cais/MASK",
         "source": "huggingface.co"
+      },
+      {
+        "name": "Rlvr Reward Hacking Scale No Conftest 20260909",
+        "category": "Reward hacking",
+        "url": "https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-scale-no-conftest-20260909",
+        "source": "huggingface.co"
       }
     ]
   },

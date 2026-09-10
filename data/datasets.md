@@ -2153,3 +2153,15 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/cais/MASK
 - tags: honesty, lying, truthfulness, language models, evaluation
 - description: Benchmark of model honesty under pressure to lie using human-labeled examples across six deception-related archetypes.
+
+## Rlvr Reward Hacking Scale No Conftest 20260909
+
+- organization: lucabaroni
+- category: Reward hacking
+- samples: 26k
+- year: 2026
+- license: OTHER
+- citations: 0
+- url: https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-scale-no-conftest-20260909
+- tags: reward hacking, RLVR, reinforcement learning, model monitoring, training trajectories
+- description: Training, monitoring, comparison, and derived-judgment trajectories for six models, retaining refusals, failures, and truncations in an RLVR reward-hacking study.
