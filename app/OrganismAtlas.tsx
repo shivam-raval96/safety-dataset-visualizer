@@ -341,7 +341,7 @@ function lineageLayout() {
 }
 const graphPositions = lineageLayout();
 
-function OrganismLineage({ onSwitch, onDistills }: { onSwitch: () => void; onDistills: () => void }) {
+function OrganismLineage({ onSwitch, onDistills, onPapers }: { onSwitch: () => void; onDistills: () => void; onPapers: () => void }) {
   const [selected, setSelected] = useState(organisms[0]);
   const [selectedBase, setSelectedBase] = useState<string | null>(null);
   const [filter, setFilter] = useState("All organisms");
@@ -448,6 +448,7 @@ function OrganismLineage({ onSwitch, onDistills }: { onSwitch: () => void; onDis
           )}
         </div>
         <div className="top-actions">
+          <button className="atlas-link-button" onClick={onPapers}>Paper Atlas →</button>
           <a
             className="icon-button"
             aria-label="About model organisms"
@@ -715,8 +716,8 @@ function OrganismLineage({ onSwitch, onDistills }: { onSwitch: () => void; onDis
   );
 }
 
-export default function OrganismAtlas({ onSwitch, initialView }: { onSwitch: () => void; initialView: "organisms" | "distills" }) {
+export default function OrganismAtlas({ onSwitch, initialView, onPapers }: { onSwitch: () => void; initialView: "organisms" | "distills"; onPapers: () => void }) {
   return initialView === "distills"
     ? <DistillAtlas onBack={() => navigateAtlas("organisms")} onSwitch={onSwitch} />
-    : <OrganismLineage onSwitch={onSwitch} onDistills={() => navigateAtlas("distills")} />;
+    : <OrganismLineage onSwitch={onSwitch} onDistills={() => navigateAtlas("distills")} onPapers={onPapers} />;
 }
