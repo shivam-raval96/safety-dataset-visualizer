@@ -1609,5 +1609,14 @@
     "year": 2024,
     "summary": "An AI control protocol is a plan for usefully deploying AI systems that aims to prevent an AI from intentionally causing some unacceptable.",
     "url": "https://arxiv.org/abs/2412.12480"
+  },
+  {
+    "title": "The Distillation Double Bind: Extracting Confessions or Capabilities from Untrusted Models",
+    "topic": "Subliminal learning",
+    "kind": "Paper",
+    "authors": "Sebastian Prasanna, Alek Westover & Jacqueline Tay",
+    "year": 2026,
+    "summary": "Tests whether distillation from an untrusted model can either expose transferred misalignment in a more auditable student or transfer useful capabilities while suppressing hidden traits.",
+    "url": "https://drive.google.com/file/d/1PDQFCdt1HB4Bc7PfxoU2QVcpEWlVOobk/view"
   }
 ]
