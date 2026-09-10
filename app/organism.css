@@ -594,5 +594,22 @@
 .distill-shell .detail h2 { overflow-wrap: anywhere; }
 .distill-shell .stats div:nth-last-child(-n+2) { border-bottom: 0; }
 .distill-shell .filters .intro { margin-bottom: 16px; }
-.distill-shell .filters nav button { height: 34px; }
+.distill-shell .filters nav button { height: 31px; }
 .distill-shell .filters .legend-note { padding-top: 12px; }
+.distill-shell .filters .legend-note > span,
+.distill-shell .filters .legend-note > p { display: none; }
+.organism-shell .workspace { grid-template-rows: minmax(0, 1fr); }
+.organism-shell .filters,
+.organism-shell .detail,
+.organism-shell .map { min-height: 0; }
+.distill-list { bottom: 48px; }
+.distill-list .dataset-row {
+  grid-template-columns: 8px minmax(160px, 1.5fr) minmax(120px, 1fr) minmax(85px, .7fr) 64px;
+}
+.atlas-scope-toggle {
+  position: relative;
+  z-index: 5;
+  margin-left: auto;
+  transform: translateY(7px);
+}
+.map-foot .atlas-scope-toggle button { font-size: 8px; }

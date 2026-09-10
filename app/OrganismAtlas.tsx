@@ -509,10 +509,6 @@ function OrganismLineage({ onSwitch, onDistills }: { onSwitch: () => void; onDis
         >
           <div className="map-head">
             <div className="map-head-left">
-              <div className="view-toggle">
-                <button aria-pressed="true">Organisms</button>
-                <button onClick={onDistills} aria-pressed="false">Distills</button>
-              </div>
               <div>
                 <span className="live-dot" /> {visible.length} organisms visible
               </div>
@@ -652,7 +648,10 @@ function OrganismLineage({ onSwitch, onDistills }: { onSwitch: () => void; onDis
           </div>
           <div className="map-foot">
             <span>Drag to explore · scroll or pinch to zoom</span>
-            <span>Circle size reflects model size · color indicates behavior</span>
+            <div className="view-toggle atlas-scope-toggle" aria-label="Atlas view">
+              <button aria-pressed="true">Organisms</button>
+              <button onClick={onDistills} aria-pressed="false">Distills</button>
+            </div>
           </div>
         </section>
         <aside className="detail">
