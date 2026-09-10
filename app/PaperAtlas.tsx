@@ -75,12 +75,14 @@ const centers = topics.map((topic, index) => ({ ...topic, ...topicCenters[index]
 function sourcePosition(source: Source) {
   const topicIndex = topics.findIndex((topic) => topic.name === source.topic);
   const center = centers[topicIndex];
-  const siblings = sources.filter((item) => item.topic === source.topic);
+  const siblings = sources
+    .map((item, insertionOrder) => ({ item, insertionOrder }))
+    .filter(({ item }) => item.topic === source.topic)
+    .sort((a, b) => a.item.year - b.item.year || a.insertionOrder - b.insertionOrder)
+    .map(({ item }) => item);
   const index = siblings.findIndex((item) => item.title === source.title);
-  const ring = Math.floor(index / 10);
-  const count = Math.min(10, siblings.length - ring * 10);
-  const angle = -Math.PI / 2 + ((index % 10) * Math.PI * 2) / count + ring * 0.18;
-  const radius = 160 + ring * 110;
+  const angle = -Math.PI / 2 + index * 0.72;
+  const radius = 160 + index * 14;
   return { x: center.x + Math.cos(angle) * radius, y: center.y + Math.sin(angle) * radius, topicIndex };
 }
 
@@ -163,7 +165,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
           {centers.map((topic) => <button key={topic.name} className={`paper-topic-node ${filter !== "All topics" && filter !== topic.name ? "muted" : ""}`} onClick={() => chooseTopic(topic.name)} style={{left:topic.x,top:topic.y,borderColor:topic.color}}><strong>{topic.name}</strong><small>{sources.filter((source) => source.topic === topic.name).length} readings</small></button>)}
           {sources.map((source) => { const position = sourcePosition(source); return <button key={source.title} title={source.title} onClick={() => setSelected(source)} className={`paper-source-node ${source.kind === "LessWrong" ? "lesswrong" : source.kind === "Post" ? "post" : ""} ${selected.title === source.title ? "selected" : ""} ${visibleTitles.has(source.title) ? "" : "hidden"}`} style={{left:position.x,top:position.y,borderColor:topics[position.topicIndex].color}}><span>{source.title}</span><small>{source.kind}</small></button>; })}
           {!visible.length && <div className="empty">No readings match that search.<button onClick={() => {setQuery("");setFilter("All topics");}}>Show all readings</button></div>}
-        </div></div><div className="map-foot"><span>Drag to explore · scroll or pinch to zoom · double-click to fit</span></div>
+        </div></div><div className="map-foot"><span>Oldest → newest from center outward · drag to explore · scroll or pinch to zoom</span></div>
       </section>
       <aside className="detail"><div className="organism-panel" key={selected.title}><div className="detail-top"><div className="dataset-icon organism-icon" style={{background:topics.find((topic) => topic.name === selected.topic)?.color}}>{selected.kind === "Paper" ? "PDF" : selected.kind === "LessWrong" ? "LW" : "↗"}</div></div><p className="detail-category"><span style={{background:topics.find((topic) => topic.name === selected.topic)?.color}}/>{selected.topic}</p><h2>{selected.title}</h2><p className="org">{selected.authors} · {selected.year} · {selected.kind}</p><p className="description">{selected.summary}</p><div className="lineage-card"><p className="eyebrow">Reading path</p><div><span className="lineage-base">{selected.topic}</span><b>→</b><span>{selected.kind}</span></div></div><div className="detail-section"><p className="eyebrow">About this topic</p><p className="organism-note">{topics.find((topic) => topic.name === selected.topic)?.summary}</p></div><a className="open-button" href={selected.url} target="_blank" rel="noreferrer">Open {selected.kind === "Paper" ? "paper" : "post"} <span>↗</span></a></div></aside>
     </section>
