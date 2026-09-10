@@ -1,35 +1,569 @@
-'use client';
-import { useEffect, useMemo, useRef, useState } from 'react';
-export type Dataset={name:string;org:string;category:string;size:string;year:number;license:string;url:string;paper?:string;desc:string;tags:string[];x:number;y:number;citations:string};
-export type HistoryEntry={date:string;datasets:{name:string;category:string;url:string;source:string}[]};
-const categories=['All datasets','Jailbreak / red-teaming','Deception','Reward hacking','Agentic','Multiagent','Eval awareness','Bias','Values and preferences'];
-const colors:Record<string,string>={'Jailbreak / red-teaming':'#ff866a',Deception:'#58d7bf','Reward hacking':'#9b7bff',Agentic:'#78a8ff',Multiagent:'#ed7cbe','Eval awareness':'#f2b84b',Bias:'#3eb6c4','Values and preferences':'#df9b38'};
-const defaultPointSize=10;
+"use client";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { navigateAtlas, readAtlasRoute } from "./urlState";
+export type Dataset = {
+  name: string;
+  org: string;
+  category: string;
+  size: string;
+  year: number;
+  license: string;
+  url: string;
+  paper?: string;
+  desc: string;
+  tags: string[];
+  x: number;
+  y: number;
+  citations: string;
+};
+export type HistoryEntry = {
+  date: string;
+  datasets: { name: string; category: string; url: string; source: string }[];
+};
+const categories = [
+  "All datasets",
+  "Jailbreak / red-teaming",
+  "Deception",
+  "Reward hacking",
+  "Agentic",
+  "Multiagent",
+  "Eval awareness",
+  "Bias",
+  "Values and preferences",
+];
+const colors: Record<string, string> = {
+  "Jailbreak / red-teaming": "#ff866a",
+  Deception: "#58d7bf",
+  "Reward hacking": "#9b7bff",
+  Agentic: "#78a8ff",
+  Multiagent: "#ed7cbe",
+  "Eval awareness": "#f2b84b",
+  Bias: "#3eb6c4",
+  "Values and preferences": "#df9b38",
+};
+const defaultPointSize = 10;
 
-function sampleCount(sampleSize:string){
-  const match=sampleSize.replaceAll(',','').trim().match(/^<?\s*([\d.]+)\s*([kKmM])?/);
-  if(!match)return null;
-  const multiplier=match[2]?.toLowerCase()==='m'?1_000_000:match[2]?.toLowerCase()==='k'?1_000:1;
-  return Number(match[1])*multiplier;
+function sampleCount(sampleSize: string) {
+  const match = sampleSize
+    .replaceAll(",", "")
+    .trim()
+    .match(/^<?\s*([\d.]+)\s*([kKmM])?/);
+  if (!match) return null;
+  const multiplier =
+    match[2]?.toLowerCase() === "m"
+      ? 1_000_000
+      : match[2]?.toLowerCase() === "k"
+        ? 1_000
+        : 1;
+  return Number(match[1]) * multiplier;
 }
 
-function pointSize(sampleSize:string){
-  const samples=sampleCount(sampleSize);
-  if(samples===null)return defaultPointSize;
-  return Number((8+18*Math.sqrt(Math.min(samples,50_000)/50_000)).toFixed(2));
+function pointSize(sampleSize: string) {
+  const samples = sampleCount(sampleSize);
+  if (samples === null) return defaultPointSize;
+  return Number(
+    (8 + 18 * Math.sqrt(Math.min(samples, 50_000) / 50_000)).toFixed(2),
+  );
 }
 
-function sourceName(sourceUrl:string){
-  const hostname=new URL(sourceUrl).hostname.replace(/^www\./,'');
-  if(hostname==='github.com')return 'GitHub';
-  if(hostname==='huggingface.co')return 'Hugging Face';
-  if(hostname==='lesswrong.com')return 'LessWrong';
-  if(hostname==='kaggle.com')return 'Kaggle';
-  if(hostname==='zenodo.org')return 'Zenodo';
+function sourceName(sourceUrl: string) {
+  const hostname = new URL(sourceUrl).hostname.replace(/^www\./, "");
+  if (hostname === "github.com") return "GitHub";
+  if (hostname === "huggingface.co") return "Hugging Face";
+  if (hostname === "lesswrong.com") return "LessWrong";
+  if (hostname === "kaggle.com") return "Kaggle";
+  if (hostname === "zenodo.org") return "Zenodo";
   return hostname;
 }
-export default function DatasetAtlas({datasets,history}:{datasets:Dataset[];history:HistoryEntry[]}){const[selected,setSelected]=useState(datasets[0]);const[panel,setPanel]=useState<'dataset'|'history'>('dataset');const[view,setView]=useState<'map'|'list'>('map');const[historyHovered,setHistoryHovered]=useState<string|null>(null);const[filter,setFilter]=useState('All datasets');const[query,setQuery]=useState('');const[minimumSamples,setMinimumSamples]=useState('');const searchInput=useRef<HTMLInputElement>(null);useEffect(()=>{const onKeyDown=(event:KeyboardEvent)=>{if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==='k'){event.preventDefault();searchInput.current?.focus()}if(event.key==='Escape'&&document.activeElement===searchInput.current){setQuery('');searchInput.current?.blur()}};window.addEventListener('keydown',onKeyDown);return()=>window.removeEventListener('keydown',onKeyDown)},[]);const normalizedQuery=query.trim().toLowerCase();const parsedMinimum=minimumSamples.trim()===''?null:Number(minimumSamples);const minimum=parsedMinimum!==null&&Number.isFinite(parsedMinimum)?Math.max(0,parsedMinimum):null;const visible=useMemo(()=>datasets.filter(d=>(filter==='All datasets'||d.category===filter)&&`${d.name} ${d.org} ${d.category} ${d.tags.join(' ')} ${d.desc}`.toLowerCase().includes(normalizedQuery)&&(minimum===null||(sampleCount(d.size)??-Infinity)>minimum)),[datasets,filter,normalizedQuery,minimum]);const visibleLabelNames=useMemo(()=>{const names=new Set(visible.slice().sort((a,b)=>pointSize(b.size)-pointSize(a.size)).slice(0,12).map(d=>d.name));if(panel==='dataset'&&visible.some(d=>d.name===selected.name))names.add(selected.name);if(panel==='history'&&historyHovered&&visible.some(d=>d.name===historyHovered))names.add(historyHovered);return names},[visible,selected,panel,historyHovered]);const showAll=()=>{setQuery('');setFilter('All datasets');setMinimumSamples('')};return <main className="app-shell">
-<header className="topbar"><div className="brand"><span className="brandmark"><i/><i/><i/></span><span>Dataset Atlas</span><em>beta</em></div><div className="search"><span>⌕</span><input ref={searchInput} aria-label="Search datasets" value={query} onChange={e=>{setQuery(e.target.value);if(e.target.value)setFilter('All datasets')}} placeholder="Search datasets, organizations, tags..."/>{query?<button className="search-clear" onClick={()=>{setQuery('');searchInput.current?.focus()}} aria-label="Clear search">×</button>:<kbd>⌘ K</kbd>}</div><div className="top-actions"><a className="icon-button" aria-label="About Dataset Atlas" href="https://github.com/shivam-raval96/safety-dataset-visualizer" target="_blank" rel="noreferrer">i</a><a className="primary" href="https://github.com/shivam-raval96/safety-dataset-visualizer/issues/new?template=dataset-request.yml" target="_blank" rel="noreferrer">Suggest a dataset <span>↗</span></a></div></header>
-<section className="workspace"><aside className="filters"><div><p className="eyebrow">Explore</p><h1>The safety<br/>dataset space.</h1><p className="intro">A living map of the datasets shaping AI safety and alignment research.</p></div><nav aria-label="Dataset categories">{categories.map(c=><button key={c} onClick={()=>setFilter(c)} className={filter===c?'active':''}><span className="cat-dot" style={{background:c==='All datasets'?'#151718':colors[c]}}/>{c}<b>{c==='All datasets'?datasets.length:datasets.filter(d=>d.category===c).length}</b></button>)}</nav><div className="legend-note"><label className={`size-filter ${minimum===null?'inactive':'active'}`}>Show datasets with more than <input type="number" min="0" step="1" inputMode="numeric" aria-label="Minimum dataset sample count" value={minimumSamples} onChange={event=>setMinimumSamples(event.target.value)} /> datapoints.</label><span>MiniLM + UMAP</span><p>Embedded from each dataset card, then projected by semantic similarity. Nearby datasets share themes and intended uses.</p></div></aside>
-<section className={`map ${view==='list'?'list-view':''}`} aria-label={view==='map'?'UMAP visualization of AI safety datasets':'List of AI safety datasets'}><div className="map-head"><div className="map-head-left"><div className="view-toggle" aria-label="Visualization view"><button aria-pressed={view==='map'} onClick={()=>setView('map')}>Map</button><button aria-pressed={view==='list'} onClick={()=>setView('list')}>List</button></div><div aria-live="polite"><span className="live-dot"/> {visible.length} datasets visible</div></div><div className="map-tools"><button onClick={()=>setQuery('')} disabled={!query}>Clear search</button><button onClick={showAll} disabled={!query&&filter==='All datasets'}>Show all</button></div></div>{view==='map'?<><div className="plot"><div className="orb orb-one"/><div className="orb orb-two"/><div className="orb orb-three"/>{visible.map((d,i)=><button key={d.name} aria-label={`${d.name}: ${d.desc}`} title={`${d.name} — ${d.desc}`} onClick={()=>{setSelected(d);setPanel('dataset');setHistoryHovered(null)}} className={`point ${panel==='dataset'&&selected.name===d.name?'selected':''} ${panel==='history'&&historyHovered===d.name?'history-highlighted':''}`} style={{left:`${d.x}%`,top:`${d.y}%`,background:colors[d.category],animationDelay:`${i*18}ms`,width:`${pointSize(d.size)}px`,height:`${pointSize(d.size)}px`}}><span className={visibleLabelNames.has(d.name)?'visible-label':''}>{d.name}<small>{d.size} samples</small></span></button>)}{visible.length===0&&<div className="empty">No datasets match that search.<button onClick={showAll}>Show all datasets</button></div>}</div><div className="map-foot"><span>Proximity indicates similarity</span><span>Size indicates dataset size</span></div></>:<div className="dataset-list" role="list">{visible.map(d=><button role="listitem" key={d.name} onClick={()=>{setSelected(d);setPanel('dataset');setHistoryHovered(null)}} className={`dataset-row ${panel==='dataset'&&selected.name===d.name?'selected':''}`} style={{background:`${colors[d.category]}18`,borderColor:`${colors[d.category]}45`}}><i style={{background:colors[d.category]}}/><strong>{d.name}<small>{d.org}</small></strong><span>{d.category}</span><span>{d.year}</span><span>{d.size}</span></button>)}{visible.length===0&&<div className="empty">No datasets match that search.<button onClick={showAll}>Show all datasets</button></div>}</div>}</section>
-<aside className="detail"><div className="detail-tabs" role="tablist" aria-label="Detail panel"><button role="tab" aria-selected={panel==='dataset'} className={panel==='dataset'?'active':''} onClick={()=>{setPanel('dataset');setHistoryHovered(null)}}>Dataset</button><button role="tab" aria-selected={panel==='history'} className={panel==='history'?'active':''} onClick={()=>setPanel('history')}>History</button></div>{panel==='history'?<div className="history-panel"><p className="eyebrow">Dataset additions</p><h2>History</h2>{history.length?<div className="history-list">{history.map(entry=><section key={entry.date}><div className="history-date"><time dateTime={entry.date}>{new Date(`${entry.date}T00:00:00`).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})}</time><b>{entry.datasets.length}</b></div>{entry.datasets.map(item=><a key={`${item.name}-${item.url}`} href={item.url} target="_blank" rel="noreferrer" onMouseEnter={()=>setHistoryHovered(item.name)} onMouseLeave={()=>setHistoryHovered(null)} onFocus={()=>setHistoryHovered(item.name)} onBlur={()=>setHistoryHovered(null)}><i style={{background:colors[item.category]}}/><span>{item.name}<small>{item.category} · {item.source}</small></span><b>↗</b></a>)}</section>)}</div>:<p className="history-empty">New datasets found by the daily workflow will appear here, grouped by release date.</p>}</div>:<div key={selected.name} className="dataset-panel"><div className="detail-top"><div className="dataset-icon" style={{background:colors[selected.category]}}>{selected.name.slice(0,2).toUpperCase()}</div></div><p className="detail-category"><span style={{background:colors[selected.category]}}/>{selected.category}</p><h2>{selected.name}</h2><p className="org">by {selected.org} · {selected.year}</p><p className="description">{selected.desc}</p><div className="stats"><div><span>Samples</span><strong>{selected.size}</strong></div><div><span>Source</span><strong>{sourceName(selected.url)}</strong></div><div><span>Citations</span><strong>{selected.citations}</strong></div><div><span>License</span><strong>{selected.license}</strong></div></div><div className="detail-section"><p className="eyebrow">Research uses</p><div className="tags">{selected.tags.map(t=><span key={t}>#{t.replace(' ','_')}</span>)}</div></div><div className="detail-section related"><p className="eyebrow">Near in the atlas</p>{datasets.filter(d=>d.category===selected.category&&d.name!==selected.name).slice(0,3).map(d=><a key={d.name} href={d.url} target="_blank" rel="noreferrer"><i style={{background:colors[d.category]}}/><span>{d.name}<small>{d.org}</small></span><b>↗</b></a>)}</div><div className="source-actions"><a className="open-button" href={selected.url} target="_blank" rel="noreferrer">Open dataset source <span>↗</span></a>{selected.paper&&<a className="paper-button" href={selected.paper} target="_blank" rel="noreferrer">Read associated paper <span>↗</span></a>}</div></div>}</aside></section></main>}
+export default function DatasetAtlas({
+  datasets,
+  history,
+}: {
+  datasets: Dataset[];
+  history: HistoryEntry[];
+}) {
+  const [selected, setSelected] = useState(datasets[0]);
+  const [panel, setPanel] = useState<"dataset" | "history">("dataset");
+  const [view, setView] = useState<"map" | "list">("map");
+  const [historyHovered, setHistoryHovered] = useState<string | null>(null);
+  const [filter, setFilter] = useState("All datasets");
+  const [query, setQuery] = useState("");
+  const [minimumSamples, setMinimumSamples] = useState("");
+  const searchInput = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    const syncView = () => setView(readAtlasRoute().view);
+    syncView();
+    window.addEventListener("popstate", syncView);
+    return () => window.removeEventListener("popstate", syncView);
+  }, []);
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        searchInput.current?.focus();
+      }
+      if (
+        event.key === "Escape" &&
+        document.activeElement === searchInput.current
+      ) {
+        setQuery("");
+        searchInput.current?.blur();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
+  const normalizedQuery = query.trim().toLowerCase();
+  const parsedMinimum =
+    minimumSamples.trim() === "" ? null : Number(minimumSamples);
+  const minimum =
+    parsedMinimum !== null && Number.isFinite(parsedMinimum)
+      ? Math.max(0, parsedMinimum)
+      : null;
+  const visible = useMemo(
+    () =>
+      datasets.filter(
+        (d) =>
+          (filter === "All datasets" || d.category === filter) &&
+          `${d.name} ${d.org} ${d.category} ${d.tags.join(" ")} ${d.desc}`
+            .toLowerCase()
+            .includes(normalizedQuery) &&
+          (minimum === null || (sampleCount(d.size) ?? -Infinity) > minimum),
+      ),
+    [datasets, filter, normalizedQuery, minimum],
+  );
+  const visibleLabelNames = useMemo(() => {
+    const names = new Set(
+      visible
+        .slice()
+        .sort((a, b) => pointSize(b.size) - pointSize(a.size))
+        .slice(0, 12)
+        .map((d) => d.name),
+    );
+    if (panel === "dataset" && visible.some((d) => d.name === selected.name))
+      names.add(selected.name);
+    if (
+      panel === "history" &&
+      historyHovered &&
+      visible.some((d) => d.name === historyHovered)
+    )
+      names.add(historyHovered);
+    return names;
+  }, [visible, selected, panel, historyHovered]);
+  const showAll = () => {
+    setQuery("");
+    setFilter("All datasets");
+    setMinimumSamples("");
+  };
+  return (
+    <main className="app-shell">
+      <header className="topbar">
+        <div className="brand">
+          <span className="brandmark">
+            <i />
+            <i />
+            <i />
+          </span>
+          <span>Dataset Atlas</span>
+          <em>beta</em>
+        </div>
+        <div className="search">
+          <span>⌕</span>
+          <input
+            ref={searchInput}
+            aria-label="Search datasets"
+            value={query}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              if (e.target.value) setFilter("All datasets");
+            }}
+            placeholder="Search datasets, organizations, tags..."
+          />
+          {query ? (
+            <button
+              className="search-clear"
+              onClick={() => {
+                setQuery("");
+                searchInput.current?.focus();
+              }}
+              aria-label="Clear search"
+            >
+              ×
+            </button>
+          ) : (
+            <kbd>⌘ K</kbd>
+          )}
+        </div>
+        <div className="top-actions">
+          <a
+            className="icon-button"
+            aria-label="About Dataset Atlas"
+            href="https://github.com/shivam-raval96/safety-dataset-visualizer"
+            target="_blank"
+            rel="noreferrer"
+          >
+            i
+          </a>
+          <a
+            className="primary"
+            href="https://github.com/shivam-raval96/safety-dataset-visualizer/issues/new?template=dataset-request.yml"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Suggest a dataset <span>↗</span>
+          </a>
+        </div>
+      </header>
+      <section className="workspace">
+        <aside className="filters">
+          <div>
+            <p className="eyebrow">Explore</p>
+            <h1>
+              The safety
+              <br />
+              dataset space.
+            </h1>
+            <p className="intro">
+              A living map of the datasets shaping AI safety and alignment
+              research.
+            </p>
+          </div>
+          <nav aria-label="Dataset categories">
+            {categories.map((c) => (
+              <button
+                key={c}
+                onClick={() => setFilter(c)}
+                className={filter === c ? "active" : ""}
+              >
+                <span
+                  className="cat-dot"
+                  style={{
+                    background: c === "All datasets" ? "#151718" : colors[c],
+                  }}
+                />
+                {c}
+                <b>
+                  {c === "All datasets"
+                    ? datasets.length
+                    : datasets.filter((d) => d.category === c).length}
+                </b>
+              </button>
+            ))}
+          </nav>
+          <div className="legend-note">
+            <label
+              className={`size-filter ${minimum === null ? "inactive" : "active"}`}
+            >
+              Show datasets with more than{" "}
+              <input
+                type="number"
+                min="0"
+                step="1"
+                inputMode="numeric"
+                aria-label="Minimum dataset sample count"
+                value={minimumSamples}
+                onChange={(event) => setMinimumSamples(event.target.value)}
+              />{" "}
+              datapoints.
+            </label>
+            <span>MiniLM + UMAP</span>
+            <p>
+              Embedded from each dataset card, then projected by semantic
+              similarity. Nearby datasets share themes and intended uses.
+            </p>
+          </div>
+        </aside>
+        <section
+          className={`map ${view === "list" ? "list-view" : ""}`}
+          aria-label={
+            view === "map"
+              ? "UMAP visualization of AI safety datasets"
+              : "List of AI safety datasets"
+          }
+        >
+          <div className="map-head">
+            <div className="map-head-left">
+              <div className="view-toggle" aria-label="Visualization view">
+                <button
+                  aria-pressed={view === "map"}
+                  onClick={() => navigateAtlas("datasets", "map")}
+                >
+                  Map
+                </button>
+                <button
+                  aria-pressed={view === "list"}
+                  onClick={() => navigateAtlas("datasets", "list")}
+                >
+                  List
+                </button>
+              </div>
+              <div aria-live="polite">
+                <span className="live-dot" /> {visible.length} datasets visible
+              </div>
+            </div>
+            <div className="map-tools">
+              <button onClick={() => setQuery("")} disabled={!query}>
+                Clear search
+              </button>
+              <button
+                onClick={showAll}
+                disabled={!query && filter === "All datasets"}
+              >
+                Show all
+              </button>
+            </div>
+          </div>
+          {view === "map" ? (
+            <>
+              <div className="plot">
+                <div className="orb orb-one" />
+                <div className="orb orb-two" />
+                <div className="orb orb-three" />
+                {visible.map((d, i) => (
+                  <button
+                    key={d.name}
+                    aria-label={`${d.name}: ${d.desc}`}
+                    title={`${d.name} — ${d.desc}`}
+                    onClick={() => {
+                      setSelected(d);
+                      setPanel("dataset");
+                      setHistoryHovered(null);
+                    }}
+                    className={`point ${panel === "dataset" && selected.name === d.name ? "selected" : ""} ${panel === "history" && historyHovered === d.name ? "history-highlighted" : ""}`}
+                    style={{
+                      left: `${d.x}%`,
+                      top: `${d.y}%`,
+                      background: colors[d.category],
+                      animationDelay: `${i * 18}ms`,
+                      width: `${pointSize(d.size)}px`,
+                      height: `${pointSize(d.size)}px`,
+                    }}
+                  >
+                    <span
+                      className={
+                        visibleLabelNames.has(d.name) ? "visible-label" : ""
+                      }
+                    >
+                      {d.name}
+                      <small>{d.size} samples</small>
+                    </span>
+                  </button>
+                ))}
+                {visible.length === 0 && (
+                  <div className="empty">
+                    No datasets match that search.
+                    <button onClick={showAll}>Show all datasets</button>
+                  </div>
+                )}
+              </div>
+              <div className="map-foot">
+                <span>Proximity indicates similarity</span>
+                <span>Size indicates dataset size</span>
+              </div>
+            </>
+          ) : (
+            <div className="dataset-list" role="list">
+              {visible.map((d) => (
+                <button
+                  role="listitem"
+                  key={d.name}
+                  onClick={() => {
+                    setSelected(d);
+                    setPanel("dataset");
+                    setHistoryHovered(null);
+                  }}
+                  className={`dataset-row ${panel === "dataset" && selected.name === d.name ? "selected" : ""}`}
+                  style={{
+                    background: `${colors[d.category]}18`,
+                    borderColor: `${colors[d.category]}45`,
+                  }}
+                >
+                  <i style={{ background: colors[d.category] }} />
+                  <strong>
+                    {d.name}
+                    <small>{d.org}</small>
+                  </strong>
+                  <span>{d.category}</span>
+                  <span>{d.year}</span>
+                  <span>{d.size}</span>
+                </button>
+              ))}
+              {visible.length === 0 && (
+                <div className="empty">
+                  No datasets match that search.
+                  <button onClick={showAll}>Show all datasets</button>
+                </div>
+              )}
+            </div>
+          )}
+        </section>
+        <aside className="detail">
+          <div className="detail-tabs" role="tablist" aria-label="Detail panel">
+            <button
+              role="tab"
+              aria-selected={panel === "dataset"}
+              className={panel === "dataset" ? "active" : ""}
+              onClick={() => {
+                setPanel("dataset");
+                setHistoryHovered(null);
+              }}
+            >
+              Dataset
+            </button>
+            <button
+              role="tab"
+              aria-selected={panel === "history"}
+              className={panel === "history" ? "active" : ""}
+              onClick={() => setPanel("history")}
+            >
+              History
+            </button>
+          </div>
+          {panel === "history" ? (
+            <div className="history-panel">
+              <p className="eyebrow">Dataset additions</p>
+              <h2>History</h2>
+              {history.length ? (
+                <div className="history-list">
+                  {history.map((entry) => (
+                    <section key={entry.date}>
+                      <div className="history-date">
+                        <time dateTime={entry.date}>
+                          {new Date(
+                            `${entry.date}T00:00:00`,
+                          ).toLocaleDateString("en-US", {
+                            month: "long",
+                            day: "numeric",
+                            year: "numeric",
+                          })}
+                        </time>
+                        <b>{entry.datasets.length}</b>
+                      </div>
+                      {entry.datasets.map((item) => (
+                        <a
+                          key={`${item.name}-${item.url}`}
+                          href={item.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          onMouseEnter={() => setHistoryHovered(item.name)}
+                          onMouseLeave={() => setHistoryHovered(null)}
+                          onFocus={() => setHistoryHovered(item.name)}
+                          onBlur={() => setHistoryHovered(null)}
+                        >
+                          <i style={{ background: colors[item.category] }} />
+                          <span>
+                            {item.name}
+                            <small>
+                              {item.category} · {item.source}
+                            </small>
+                          </span>
+                          <b>↗</b>
+                        </a>
+                      ))}
+                    </section>
+                  ))}
+                </div>
+              ) : (
+                <p className="history-empty">
+                  New datasets found by the daily workflow will appear here,
+                  grouped by release date.
+                </p>
+              )}
+            </div>
+          ) : (
+            <div key={selected.name} className="dataset-panel">
+              <div className="detail-top">
+                <div
+                  className="dataset-icon"
+                  style={{ background: colors[selected.category] }}
+                >
+                  {selected.name.slice(0, 2).toUpperCase()}
+                </div>
+              </div>
+              <p className="detail-category">
+                <span style={{ background: colors[selected.category] }} />
+                {selected.category}
+              </p>
+              <h2>{selected.name}</h2>
+              <p className="org">
+                by {selected.org} · {selected.year}
+              </p>
+              <p className="description">{selected.desc}</p>
+              <div className="stats">
+                <div>
+                  <span>Samples</span>
+                  <strong>{selected.size}</strong>
+                </div>
+                <div>
+                  <span>Source</span>
+                  <strong>{sourceName(selected.url)}</strong>
+                </div>
+                <div>
+                  <span>Citations</span>
+                  <strong>{selected.citations}</strong>
+                </div>
+                <div>
+                  <span>License</span>
+                  <strong>{selected.license}</strong>
+                </div>
+              </div>
+              <div className="detail-section">
+                <p className="eyebrow">Research uses</p>
+                <div className="tags">
+                  {selected.tags.map((t) => (
+                    <span key={t}>#{t.replace(" ", "_")}</span>
+                  ))}
+                </div>
+              </div>
+              <div className="detail-section related">
+                <p className="eyebrow">Near in the atlas</p>
+                {datasets
+                  .filter(
+                    (d) =>
+                      d.category === selected.category &&
+                      d.name !== selected.name,
+                  )
+                  .slice(0, 3)
+                  .map((d) => (
+                    <a
+                      key={d.name}
+                      href={d.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i style={{ background: colors[d.category] }} />
+                      <span>
+                        {d.name}
+                        <small>{d.org}</small>
+                      </span>
+                      <b>↗</b>
+                    </a>
+                  ))}
+              </div>
+              <div className="source-actions">
+                <a
+                  className="open-button"
+                  href={selected.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open dataset source <span>↗</span>
+                </a>
+                {selected.paper && (
+                  <a
+                    className="paper-button"
+                    href={selected.paper}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Read associated paper <span>↗</span>
+                  </a>
+                )}
+              </div>
+            </div>
+          )}
+        </aside>
+      </section>
+    </main>
+  );
+}

@@ -2,6 +2,7 @@
 import { PointerEvent, WheelEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import discovered from "../data/discovered-organisms.json";
 import DistillAtlas from "./DistillAtlas";
+import { navigateAtlas } from "./urlState";
 
 type Organism = {
   name: string;
@@ -714,9 +715,8 @@ function OrganismLineage({ onSwitch, onDistills }: { onSwitch: () => void; onDis
   );
 }
 
-export default function OrganismAtlas({ onSwitch }: { onSwitch: () => void }) {
-  const [view, setView] = useState<"organisms" | "distills">("organisms");
-  return view === "distills"
-    ? <DistillAtlas onBack={() => setView("organisms")} onSwitch={onSwitch} />
-    : <OrganismLineage onSwitch={onSwitch} onDistills={() => setView("distills")} />;
+export default function OrganismAtlas({ onSwitch, initialView }: { onSwitch: () => void; initialView: "organisms" | "distills" }) {
+  return initialView === "distills"
+    ? <DistillAtlas onBack={() => navigateAtlas("organisms")} onSwitch={onSwitch} />
+    : <OrganismLineage onSwitch={onSwitch} onDistills={() => navigateAtlas("distills")} />;
 }

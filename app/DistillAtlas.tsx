@@ -2,6 +2,7 @@
 
 import { PointerEvent, WheelEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import artifact from "../data/distill-models.json";
+import { navigateAtlas, readAtlasRoute } from "./urlState";
 
 type DistillModel = {
   id: string; pipeline: string; library: string; baseModel: string;
@@ -73,10 +74,11 @@ export default function DistillAtlas({ onBack, onSwitch }: { onBack: () => void;
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All families");
   const [minimumDownloads, setMinimumDownloads] = useState("");
-  const [display, setDisplay] = useState<"map" | "list">("map");
+  const [display, setDisplay] = useState<"map" | "list">(() => readAtlasRoute().view);
   const [selected, setSelected] = useState<DistillModel>(models[0]);
   const [hovered, setHovered] = useState<{ model: DistillModel; x: number; y: number } | null>(null);
   const [view, setView] = useState({ x: 0, y: 0, scale: 1 });
+  useEffect(() => { const sync = () => setDisplay(readAtlasRoute().view); window.addEventListener("popstate", sync); return () => window.removeEventListener("popstate", sync); }, []);
 
   const categories = useMemo(() => {
     const counts = new Map<string, number>();
@@ -180,7 +182,7 @@ export default function DistillAtlas({ onBack, onSwitch }: { onBack: () => void;
         {categories.map(([name, count]) => <button key={name} onClick={() => setCategory(name)} className={category === name ? "active" : ""}><span className="cat-dot" style={{background:categoryColor(name)}}/>{name}<b>{count}</b></button>)}
       </nav><div className="legend-note"><label className={`size-filter ${minimumDownloads === "" ? "inactive" : "active"}`}>Show models with at least <input type="number" min="0" step="1" inputMode="numeric" aria-label="Minimum model download count" value={minimumDownloads} onChange={(event) => setMinimumDownloads(event.target.value)}/> downloads.</label><span>MiniLM → UMAP</span><p>{data.embeddingDimensions}-dimensional model-card embeddings reduced with {data.reducer.name}. Proximity suggests similar names, tasks, base models, and card metadata.</p></div></aside>
       <section className={`map distill-map ${display === "list" ? "list-view" : ""}`} aria-label={display === "map" ? "UMAP of distilled Hugging Face models" : "List of distilled Hugging Face models"}>
-        <div className="map-head"><div className="map-head-left"><div className="view-toggle" aria-label="Visualization view"><button onClick={() => setDisplay("map")} aria-pressed={display === "map"}>Map</button><button onClick={() => setDisplay("list")} aria-pressed={display === "list"}>List</button></div><div><span className="live-dot"/> {visible.length.toLocaleString()} models visible</div></div>{display === "map" && <div className="organism-map-tools"><button onClick={() => zoomAt(view.scale * 1.3)} aria-label="Zoom in">+</button><button onClick={() => zoomAt(view.scale / 1.3)} aria-label="Zoom out">−</button><button onClick={() => setView({x:0,y:0,scale:1})}>Fit</button></div>}</div>
+        <div className="map-head"><div className="map-head-left"><div className="view-toggle" aria-label="Visualization view"><button onClick={() => navigateAtlas("distills", "map")} aria-pressed={display === "map"}>Map</button><button onClick={() => navigateAtlas("distills", "list")} aria-pressed={display === "list"}>List</button></div><div><span className="live-dot"/> {visible.length.toLocaleString()} models visible</div></div>{display === "map" && <div className="organism-map-tools"><button onClick={() => zoomAt(view.scale * 1.3)} aria-label="Zoom in">+</button><button onClick={() => zoomAt(view.scale / 1.3)} aria-label="Zoom out">−</button><button onClick={() => setView({x:0,y:0,scale:1})}>Fit</button></div>}</div>
         {display === "map" ? <div className="distill-plot" ref={plotRef} onWheel={wheel} onPointerDown={pointerDown} onPointerMove={pointerMove} onPointerUp={pointerUp} onPointerLeave={() => setHovered(null)} onPointerCancel={() => { dragRef.current = null; setHovered(null); }}><canvas ref={canvasRef}/>{hovered && <div className="distill-tooltip" role="tooltip" style={{left:hovered.x,top:hovered.y}}><strong>{hovered.model.id}</strong><span>{categoryFor(hovered.model)} · {compactNumber(hovered.model.downloads)} downloads</span></div>}{!visible.length && <div className="empty">No models match this view.<button onClick={() => {setQuery("");setCategory("All families");setMinimumDownloads("");}}>Show all models</button></div>}</div> : <div className="dataset-list distill-list" role="list">{listGroups.map(({family, models: familyModels}) => { const color = categoryColor(family); return <section className="distill-family-group" key={family}><header><i style={{background:color}}/><h3>{family}</h3><span>{familyModels.length.toLocaleString()} models</span></header>{familyModels.map((model) => <button role="listitem" key={model.id} onClick={() => setSelected(model)} className={`dataset-row ${selected.id === model.id ? "selected" : ""}`} style={{background:`${color}18`,borderColor:`${color}45`}}><i style={{background:color}}/><strong>{model.id.split("/").at(-1)}<small>{model.id.split("/")[0]}</small></strong><span>{modelSizeLabel(model)}</span><span>{model.pipeline}</span><span>{compactNumber(model.downloads)}</span></button>)}</section>;})}{!visible.length && <div className="empty">No models match this view.<button onClick={() => {setQuery("");setCategory("All families");setMinimumDownloads("");}}>Show all models</button></div>}</div>}
         <div className="map-foot"><span>{display === "map" ? "Proximity indicates semantic similarity · size indicates downloads" : "Grouped by family · largest stated parameter count first"}</span><div className="view-toggle atlas-scope-toggle" aria-label="Atlas view"><button onClick={onBack} aria-pressed="false">Organisms</button><button aria-pressed="true">Distills</button></div></div>
       </section>
