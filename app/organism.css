@@ -2,6 +2,25 @@
   height: 100vh;
   position: relative;
 }
+
+/* Paper Atlas direct-manipulation viewport. Inline transforms own the live camera. */
+.paper-plot {
+  overflow: hidden !important;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.paper-plot.dragging {
+  cursor: grabbing;
+}
+
+.paper-canvas {
+  position: absolute !important;
+  left: 0;
+  top: 0;
+  will-change: transform;
+}
 .dataset-atlas-switch {
   position: absolute;
   z-index: 20;
