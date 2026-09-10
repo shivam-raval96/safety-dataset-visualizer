@@ -32,6 +32,10 @@ Run `npm run discover:organisms -- --year 2026` to scan that year’s LessWrong 
 
 Selections are written to `data/organism-candidates.json`. Add `--append-catalog` to also merge them into `data/discovered-organisms.json`, which is loaded directly by the Organism Atlas. Use `--since-date YYYY-MM-DD` for a single UTC day, `--no-ai` for deterministic metadata without model ranking, or `--dry-run` to report verified candidates without writing files. If the OpenAI account has no remaining quota, the script falls back to verified heuristic metadata; pass `--strict-ai` to require AI review instead. Set `HF_TOKEN` when running large scans to increase Hugging Face API rate limits.
 
+## Discovering papers and LessWrong posts
+
+Run `npm run discover:papers -- --keyword subliminal --append-catalog` to search arXiv and LessWrong for AI-relevant work matching a keyword. Results are normalized, deduplicated against both the curated atlas and prior discoveries, and appended to `data/discovered-papers.json`. Omit `--append-catalog` to preview results, or add `--dry-run` to guarantee no files are changed. The default LessWrong window begins in 2024; change it with `--start-year`.
+
 ## Dataset request issues
 
 The `Add a dataset` issue form accepts a single GitHub, Hugging Face, or LessWrong link and labels it for automatic processing. LessWrong links are resolved to a linked public dataset artifact. The workflow verifies the source, rejects duplicates, asks `gpt-5.6-luna` to confirm safety relevance and normalize the card, then updates the catalog and History. Missing metadata uses explicit fallbacks such as `Unknown` rather than blocking a verified dataset. A successful change is linted, rebuilt, committed to `main`, and deployed by the Pages workflow; the issue receives the outcome and is closed only after the catalog commit succeeds.

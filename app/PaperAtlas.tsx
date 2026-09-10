@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
+import discovered from "../data/discovered-papers.json";
 
 type Source = {
   title: string;
@@ -22,7 +23,7 @@ const topics = [
   { name: "Swarm misalignment", color: "#58d7bf", summary: "Misalignment emerging through interaction, conformity, and agent collectives." },
 ] as const;
 
-const sources: Source[] = [
+const curatedSources: Source[] = [
   { title: "Sleeper Agents", topic: "Model organisms", kind: "Paper", authors: "Hubinger et al.", year: 2024, summary: "Studies deliberately backdoored language models whose deceptive behavior persists through standard safety training.", url: "https://arxiv.org/abs/2401.05566" },
   { title: "Model Organisms of Misalignment", topic: "Model organisms", kind: "LessWrong", authors: "Apollo Research", year: 2023, summary: "Introduces controlled model organisms as an empirical route to studying deceptive alignment.", url: "https://www.lesswrong.com/posts/ChDH335ckdvpxXaXX/model-organisms-of-misalignment-the-case-for-a-new-pillar" },
   { title: "AI Control", topic: "Monitoring", kind: "Paper", authors: "Greenblatt et al.", year: 2024, summary: "Tests protocols that use trusted monitoring to remain safe even when a capable model intentionally subverts a task.", url: "https://arxiv.org/abs/2312.06942" },
@@ -56,20 +57,21 @@ const sources: Source[] = [
   { title: "Scaling Trends for Lie Detector Oversight", topic: "Monitoring", kind: "Paper", authors: "Hollinsworth et al.", year: 2026, summary: "Scales lie-detector oversight to larger models, finding lower undetected deception but sensitivity to distribution shift.", url: "https://arxiv.org/abs/2607.01567" },
   { title: "Held-out Monitors Sometimes Degrade", topic: "Monitoring", kind: "LessWrong", authors: "Joey Yudelson", year: 2026, summary: "Finds that training a policy against one monitor can also make its hacks appear less suspicious to monitors that were held out from training.", url: "https://www.lesswrong.com/posts/APkFfRp2AicL9RqvT/held-out-monitors-sometimes-degrade-even-when-not-trained" },
 ];
+const sources = [...curatedSources, ...(discovered as Source[])];
 
-const WIDTH = 1800;
-const HEIGHT = 1680;
-const centers = topics.map((topic, index) => ({ ...topic, x: 300 + (index % 3) * 600, y: 310 + Math.floor(index / 3) * 540 }));
+const WIDTH = 2700;
+const HEIGHT = 2450;
+const centers = topics.map((topic, index) => ({ ...topic, x: 450 + (index % 3) * 900, y: 470 + Math.floor(index / 3) * 800 }));
 
 function sourcePosition(source: Source) {
   const topicIndex = topics.findIndex((topic) => topic.name === source.topic);
   const center = centers[topicIndex];
   const siblings = sources.filter((item) => item.topic === source.topic);
   const index = siblings.findIndex((item) => item.title === source.title);
-  const ring = Math.floor(index / 6);
-  const count = Math.min(6, siblings.length - ring * 6);
-  const angle = -Math.PI / 2 + ((index % 6) * Math.PI * 2) / count + ring * 0.22;
-  const radius = 150 + ring * 105;
+  const ring = Math.floor(index / 10);
+  const count = Math.min(10, siblings.length - ring * 10);
+  const angle = -Math.PI / 2 + ((index % 10) * Math.PI * 2) / count + ring * 0.18;
+  const radius = 160 + ring * 110;
   return { x: center.x + Math.cos(angle) * radius, y: center.y + Math.sin(angle) * radius, topicIndex };
 }
 
@@ -77,6 +79,19 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
   const [selected, setSelected] = useState(sources[0]);
   const [filter, setFilter] = useState("All topics");
   const [query, setQuery] = useState("");
+  const plotRef = useRef<HTMLDivElement>(null);
+  const chooseTopic = (name: string) => {
+    setFilter(name);
+    if (name !== "All topics") setSelected(sources.find((source) => source.topic === name) || sources[0]);
+    requestAnimationFrame(() => {
+      const plot = plotRef.current;
+      const canvas = plot?.querySelector<HTMLElement>(".paper-canvas");
+      const topic = centers.find((item) => item.name === name);
+      if (!plot || !canvas || !topic) return plot?.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+      const scale = canvas.getBoundingClientRect().width / WIDTH;
+      plot.scrollTo({ left: topic.x * scale - plot.clientWidth / 2, top: topic.y * scale - plot.clientHeight / 2, behavior: "smooth" });
+    });
+  };
   const visible = useMemo(() => sources.filter((source) => (filter === "All topics" || source.topic === filter) && `${source.title} ${source.topic} ${source.authors} ${source.kind}`.toLowerCase().includes(query.toLowerCase())), [filter, query]);
   const visibleTitles = new Set(visible.map((source) => source.title));
 
@@ -88,15 +103,15 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
     </header>
     <section className="workspace">
       <aside className="filters"><div><p className="eyebrow">Explore</p><h1>The alignment<br/>paper landscape.</h1><p className="intro">A reading map connecting research topics to papers and LessWrong posts.</p></div><nav aria-label="Paper topics">
-        <button onClick={() => setFilter("All topics")} className={filter === "All topics" ? "active" : ""}><span className="cat-dot" style={{background:"#17211d"}}/>All topics<b>{sources.length}</b></button>
-        {topics.map((topic) => <button key={topic.name} onClick={() => setFilter(topic.name)} className={filter === topic.name ? "active" : ""}><span className="cat-dot" style={{background:topic.color}}/>{topic.name}<b>{sources.filter((source) => source.topic === topic.name).length}</b></button>)}
+        <button onClick={() => chooseTopic("All topics")} className={filter === "All topics" ? "active" : ""}><span className="cat-dot" style={{background:"#17211d"}}/>All topics<b>{sources.length}</b></button>
+        {topics.map((topic) => <button key={topic.name} onClick={() => chooseTopic(topic.name)} className={filter === topic.name ? "active" : ""}><span className="cat-dot" style={{background:topic.color}}/>{topic.name}<b>{sources.filter((source) => source.topic === topic.name).length}</b></button>)}
       </nav><div className="legend-note"><span>Topic → reading</span><p>Large circles are research topics. Smaller circles are papers and LessWrong posts selected as starting points.</p></div></aside>
       <section className="map paper-map" aria-label="Topics connected to papers and LessWrong posts">
         <div className="map-head"><div><span className="live-dot"/> {visible.length} readings visible</div><div className="network-key"><span><i className="paper-topic-swatch"/>Topic</span><span><i/>Paper</span><span><i className="lw-swatch"/>LessWrong</span></div></div>
-        <div className="paper-plot"><div className="paper-canvas" style={{width:WIDTH,height:HEIGHT}}><svg aria-hidden="true" viewBox={`0 0 ${WIDTH} ${HEIGHT}`}>
+        <div className="paper-plot" ref={plotRef}><div className="paper-canvas" style={{width:WIDTH,height:HEIGHT}}><svg aria-hidden="true" viewBox={`0 0 ${WIDTH} ${HEIGHT}`}>
           {visible.map((source) => { const position = sourcePosition(source); const center = centers[position.topicIndex]; return <line key={source.title} x1={center.x} y1={center.y} x2={position.x} y2={position.y} className={selected.title === source.title ? "active" : ""}/>; })}
         </svg>
-          {centers.map((topic) => <button key={topic.name} className={`paper-topic-node ${filter !== "All topics" && filter !== topic.name ? "muted" : ""}`} onClick={() => setFilter(topic.name)} style={{left:topic.x,top:topic.y,borderColor:topic.color}}><strong>{topic.name}</strong><small>{sources.filter((source) => source.topic === topic.name).length} readings</small></button>)}
+          {centers.map((topic) => <button key={topic.name} className={`paper-topic-node ${filter !== "All topics" && filter !== topic.name ? "muted" : ""}`} onClick={() => chooseTopic(topic.name)} style={{left:topic.x,top:topic.y,borderColor:topic.color}}><strong>{topic.name}</strong><small>{sources.filter((source) => source.topic === topic.name).length} readings</small></button>)}
           {sources.map((source) => { const position = sourcePosition(source); return <button key={source.title} onClick={() => setSelected(source)} className={`paper-source-node ${source.kind === "LessWrong" ? "lesswrong" : source.kind === "Post" ? "post" : ""} ${selected.title === source.title ? "selected" : ""} ${visibleTitles.has(source.title) ? "" : "hidden"}`} style={{left:position.x,top:position.y,borderColor:topics[position.topicIndex].color}}><span>{source.title}</span><small>{source.kind}</small></button>; })}
           {!visible.length && <div className="empty">No readings match that search.<button onClick={() => {setQuery("");setFilter("All topics");}}>Show all readings</button></div>}
         </div></div><div className="map-foot"><span>Topics group a deliberately small starter bibliography</span></div>
