@@ -72,14 +72,29 @@ const topicCenters = [
 ];
 const centers = topics.map((topic, index) => ({ ...topic, ...topicCenters[index] }));
 
+function orderedTopicSources(topic: string) {
+  return sources
+    .map((item, insertionOrder) => ({ item, insertionOrder }))
+    .filter(({ item }) => item.topic === topic)
+    .sort((a, b) => a.item.year - b.item.year || a.insertionOrder - b.insertionOrder)
+    .map(({ item }) => item);
+}
+
+function yearBands(topic: string) {
+  const siblings = orderedTopicSources(topic);
+  return [...new Set(siblings.map((source) => source.year))].map((year, bandIndex, years) => {
+    const first = siblings.findIndex((source) => source.year === year);
+    const last = siblings.findLastIndex((source) => source.year === year);
+    const inner = first === 0 ? 92 : 160 + first * 14 - 7;
+    const outer = 160 + last * 14 + (last === siblings.length - 1 ? 60 : 7);
+    return { year, radius: (inner + outer) / 2, width: outer - inner, outer, opacity: .045 + (bandIndex / Math.max(1, years.length - 1)) * .075 };
+  });
+}
+
 function sourcePosition(source: Source) {
   const topicIndex = topics.findIndex((topic) => topic.name === source.topic);
   const center = centers[topicIndex];
-  const siblings = sources
-    .map((item, insertionOrder) => ({ item, insertionOrder }))
-    .filter(({ item }) => item.topic === source.topic)
-    .sort((a, b) => a.item.year - b.item.year || a.insertionOrder - b.insertionOrder)
-    .map(({ item }) => item);
+  const siblings = orderedTopicSources(source.topic);
   const index = siblings.findIndex((item) => item.title === source.title);
   const angle = -Math.PI / 2 + index * 0.72;
   const radius = 160 + index * 14;
@@ -160,6 +175,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
       <section className="map paper-map" aria-label="Topics connected to papers and LessWrong posts">
         <div className="map-head"><div><span className="live-dot"/> {visible.length} readings visible</div><div className="network-key"><span><i className="paper-topic-swatch"/>Topic</span><span><i/>Paper</span><span><i className="lw-swatch"/>LessWrong</span></div><div className="organism-map-tools" aria-label="Map controls"><button onClick={() => zoomAt(view.scale * 1.25)} aria-label="Zoom in">+</button><button onClick={() => zoomAt(view.scale / 1.25)} aria-label="Zoom out">−</button><button onClick={fitGraph}>Fit</button></div></div>
         <div className="paper-plot" ref={plotRef} onWheel={wheel} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={endPan} onPointerCancel={endPan} onDoubleClick={fitGraph}><div className="paper-canvas" style={{width:WIDTH,height:HEIGHT,transform:`translate(${view.x}px, ${view.y}px) scale(${view.scale})`}}><svg aria-hidden="true" viewBox={`0 0 ${WIDTH} ${HEIGHT}`}>
+          {centers.flatMap((topic) => yearBands(topic.name).map((band) => <g key={`${topic.name}-${band.year}`} className="paper-year-band"><circle cx={topic.x} cy={topic.y} r={band.radius} stroke={topic.color} strokeWidth={band.width} style={{opacity:band.opacity}}/><text x={topic.x} y={topic.y - band.outer + 18} fill={topic.color}>{band.year}</text></g>))}
           {visible.map((source) => { const position = sourcePosition(source); const center = centers[position.topicIndex]; return <line key={source.title} x1={center.x} y1={center.y} x2={position.x} y2={position.y} className={selected.title === source.title ? "active" : ""}/>; })}
         </svg>
           {centers.map((topic) => <button key={topic.name} className={`paper-topic-node ${filter !== "All topics" && filter !== topic.name ? "muted" : ""}`} onClick={() => chooseTopic(topic.name)} style={{left:topic.x,top:topic.y,borderColor:topic.color}}><strong>{topic.name}</strong><small>{sources.filter((source) => source.topic === topic.name).length} readings</small></button>)}

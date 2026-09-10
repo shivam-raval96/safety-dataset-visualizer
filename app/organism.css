@@ -33,6 +33,26 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
 }
+
+.paper-year-band {
+  pointer-events: none;
+}
+
+.paper-year-band circle {
+  fill: none;
+  opacity: .055;
+}
+
+.paper-year-band text {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-anchor: middle;
+  opacity: .55;
+  paint-order: stroke;
+  stroke: #f8faf6;
+  stroke-width: 8px;
+}
 .dataset-atlas-switch {
   position: absolute;
   z-index: 20;
