@@ -59,9 +59,9 @@ const curatedSources: Source[] = [
 ];
 const sources = [...curatedSources, ...(discovered as Source[])];
 
-const WIDTH = 2700;
-const HEIGHT = 2450;
-const centers = topics.map((topic, index) => ({ ...topic, x: 450 + (index % 3) * 900, y: 470 + Math.floor(index / 3) * 800 }));
+const WIDTH = 4000;
+const HEIGHT = 3600;
+const centers = topics.map((topic, index) => ({ ...topic, x: 1000 + (index % 3) * 1000, y: 1000 + Math.floor(index / 3) * 1100 }));
 
 function sourcePosition(source: Source) {
   const topicIndex = topics.findIndex((topic) => topic.name === source.topic);
@@ -97,7 +97,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
   const zoomAt = (nextScale: number, clientX?: number, clientY?: number) => {
     const rect = plotRef.current?.getBoundingClientRect();
     setView((current) => {
-      const scale = Math.max(0.15, Math.min(2.2, nextScale));
+      const scale = Math.max(0.08, Math.min(2.2, nextScale));
       const focusX = clientX !== undefined && rect ? clientX - rect.left : (rect?.width || 0) / 2;
       const focusY = clientY !== undefined && rect ? clientY - rect.top : (rect?.height || 0) / 2;
       const ratio = scale / current.scale;
