@@ -54,18 +54,6 @@
   stroke-width: 8px;
 }
 
-.paper-spiral-path {
-  fill: none;
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  opacity: .48;
-  pointer-events: none;
-}
-
-.paper-spiral-path.muted {
-  opacity: .08;
-}
 .dataset-atlas-switch {
   position: absolute;
   z-index: 20;
