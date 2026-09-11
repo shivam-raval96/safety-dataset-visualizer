@@ -1,0 +1,18 @@
+.card-comments { margin-top: 28px; padding-top: 20px; border-top: 1px solid #dfe5dc; }
+.card-comments h3 { display: flex; align-items: center; gap: 8px; margin: 0 0 14px; font-size: 14px; }
+.card-comments h3 span { padding: 2px 6px; border-radius: 12px; background: #e8eee4; font-size: 10px; }
+.card-comments ol { list-style: none; margin: 0; padding: 0; }
+.card-comments li { padding: 12px 0; border-bottom: 1px solid #e4e8e0; }
+.comment-byline { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; font-size: 12px; }
+.comment-byline strong { overflow-wrap: anywhere; }
+.comment-byline time { color: #818b83; font-size: 10px; flex-shrink: 0; }
+.comment-account { display: block; margin-top: 4px; font-size: 10px; color: #698272; }
+.card-comments li p { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; line-height: 1.6; margin: 9px 0 0; }
+.card-comments form { display: grid; gap: 8px; margin-top: 18px; }
+.card-comments label { font-size: 11px; font-weight: 600; }
+.card-comments input, .card-comments textarea { box-sizing: border-box; width: 100%; min-width: 0; padding: 9px 10px; border: 1px solid #d4dcd1; border-radius: 7px; background: #fff; color: #25382b; font: inherit; font-size: 12px; }
+.card-comments textarea { resize: vertical; }
+.card-comments input:focus, .card-comments textarea:focus { outline: 2px solid #739885; outline-offset: 1px; }
+.card-comments form button { border: 0; border-radius: 8px; background: #263b2f; color: white; padding: 11px; font-size: 11px; cursor: pointer; }
+.card-comments small, .comments-empty, .comment-help, .comment-status { font-size: 10px; line-height: 1.5; color: #77857b; margin: 0; }
+.comment-status { color: #365846; }

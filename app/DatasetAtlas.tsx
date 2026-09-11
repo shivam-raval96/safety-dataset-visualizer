@@ -1,4 +1,5 @@
 "use client";
+import Comments from "./CardComments";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { navigateAtlas, readAtlasRoute } from "./urlState";
 export type Dataset = {
@@ -560,6 +561,7 @@ export default function DatasetAtlas({
                   </a>
                 )}
               </div>
+              <Comments kind="dataset" title={selected.name} url={selected.url}/>
             </div>
           )}
         </aside>

@@ -1,4 +1,5 @@
 "use client";
+import Comments from "./CardComments";
 import { PointerEvent, WheelEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import discovered from "../data/discovered-organisms.json";
 import DistillAtlas from "./DistillAtlas";
@@ -709,6 +710,7 @@ function OrganismLineage({ onSwitch, onDistills, onPapers }: { onSwitch: () => v
             >
               Open research source <span>↗</span>
             </a>
+            <Comments kind="model" title={selected.name} url={selected.url}/>
           </div>
         </aside>
       </section>

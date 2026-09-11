@@ -1,0 +1,58 @@
+name: Publish atlas comment
+
+on:
+  issues:
+    types: [opened, reopened]
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  publish-comment:
+    if: startsWith(github.event.issue.title, '[Atlas comment]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Validate and save the comment
+        run: node scripts/add-comment-from-issue.mjs
+      - name: Validate the updated site
+        run: |
+          node --test tests/comments.test.mjs
+          npm run lint
+          npm run build:static
+      - name: Commit the comment
+        run: |
+          git config user.name "atlas-comment-bot"
+          git config user.email "atlas-comment-bot@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            if git diff --quiet -- data/comments.md; then
+              exit 0
+            fi
+            git add data/comments.md
+            git commit -m "data: publish atlas comment"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            # Another comment/catalog change won the push. Reapply this event
+            # to the latest Markdown in this disposable Actions checkout.
+            git fetch origin main
+            git reset --hard origin/main
+            node scripts/add-comment-from-issue.mjs
+            npm run build:static
+          done
+          echo "Could not publish after five concurrent-write retries."
+          exit 1
+      # GITHUB_TOKEN pushes do not trigger another push workflow. Dispatch also
+      # runs on retries so a saved comment with a failed deployment can recover.
+      - name: Republish GitHub Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-pages.yml --ref main

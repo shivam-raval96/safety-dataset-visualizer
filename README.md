@@ -45,3 +45,11 @@ The `Add a dataset` issue form accepts a single GitHub, Hugging Face, or LessWro
 In Paper Atlas, select a paper to summarize it with its directly connected visible neighbors, or select a dashed rectangle’s label to summarize its group of 5–7 nearby readings. The bottom-right card highlights the included nodes and edges, offers linked findings and every member’s description, and can collapse while exploring. Search and topic filters also restrict summary membership.
 
 Summaries run locally from atlas descriptions: recurring themes must match at least two readings, and insights are labeled as inferred reading prompts. They are not full-text reviews or evidence of agreement between papers. No external model or API key is required. Run `node --test tests/paperSummaries.test.mjs` to check grouping, filtering, and summary edge cases.
+
+## Comments on cards
+
+Paper, dataset, organism, and distilled-model cards share a name/comment form and a list of published comments. Choose **Continue to GitHub**, sign in if needed, and submit the prefilled issue. Creating the issue is the confirmation step; opening the draft alone does not publish anything. Names, comments, and the submitting GitHub username are public.
+
+`Publish atlas comment` validates the target against the current catalog, appends the submission to `data/comments.md`, commits it to `main`, and dispatches the Pages deployment. Refresh the card after deployment to see the comment. The Markdown file is the persistent source; browser storage is not used. Card identity includes its type, title, and source URL to distinguish model organisms sharing a research link. If a card is renamed or its URL changes, update its comment target fields too.
+
+The issue number prevents duplicate saves on retries. Concurrent submissions reapply against the latest Markdown before pushing, so they do not overwrite other comments. If publication fails, inspect the Actions run, fix its cause, and rerun the workflow (or close and reopen the issue). Editing a submitted issue does not alter an already saved comment; maintainers can edit or remove entries in `data/comments.md` and redeploy. Run `node --test tests/comments.test.mjs` to validate payload round trips, card membership, literal text handling, and duplicate protection.
