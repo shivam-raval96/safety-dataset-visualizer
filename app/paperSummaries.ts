@@ -13,6 +13,7 @@ export function connectedReadings<T extends SummarySource>(selected: T, visible:
 }
 
 const themes = [
+  { match: /causal|contrastive belief|evaluation awareness|prefill awareness|training methodology/i, summary: "which changes to beliefs, context, or training alter model behavior and what those interventions can explain", insight: "Compare matched conditions while varying a specific factor; distinguish a behavioral trigger from evidence of the underlying cause, and check whether the effect survives alternative explanations." },
   { match: /monitor|oversight|detector|probe/i, summary: "how oversight detects unwanted behavior and where its signals may fail", insight: "Compare monitor performance before and after policy training or model updates; detection on a fixed model may not establish durable oversight." },
   { match: /reward|grader|gaming|tampering/i, summary: "the gap between optimizing a reward signal and satisfying the intended task", insight: "Separate improvements in evaluator scores from improvements in the underlying task, and test transfer to unfamiliar graders." },
   { match: /decept|backdoor|organism|misaligned/i, summary: "controlled or elicited misalignment and the conditions that make it persist", insight: "Check how each failure mode was induced before generalizing from a controlled organism to deployed models." },

@@ -32,6 +32,11 @@ SAFETY_SIGNAL = re.compile(
     re.I,
 )
 TOPIC_QUERIES = {
+    "Model forensics": [
+        "model forensics misalignment", "causal interventions misalignment",
+        "contrastive belief updates", "why do models task game",
+        "evaluation awareness", "prefill awareness",
+    ],
     "Model organisms": [
         "model organisms of misalignment", "sleeper agents", "alignment faking",
         "emergent misalignment", "deceptive alignment",

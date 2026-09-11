@@ -40,6 +40,10 @@ Run `npm run discover:papers -- --keyword subliminal --append-catalog` to search
 
 The `Add a dataset` issue form accepts a single GitHub, Hugging Face, or LessWrong link and labels it for automatic processing. LessWrong links are resolved to a linked public dataset artifact. The workflow verifies the source, rejects duplicates, asks `gpt-5.6-luna` to confirm safety relevance and normalize the card, then updates the catalog and History. Missing metadata uses explicit fallbacks such as `Unknown` rather than blocking a verified dataset. A successful change is linted, rebuilt, committed to `main`, and deployed by the Pages workflow; the issue receives the outcome and is closed only after the catalog commit succeeds.
 
+## Model forensics
+
+Paper Atlas includes a Model forensics category for evaluations that vary inputs, tasks, environments, beliefs, or model properties to localize when and why models misbehave. Its initial six readings are reclassified from existing topics and cover grader beliefs, task gaming, evaluation and prefill awareness, training methodology, and causal persona interventions. The category focuses on explanatory interventions; reporting a failure or detecting it alone does not establish its cause. Future discovery supports `--topic "Model forensics"`.
+
 ## Paper group summaries
 
 In Paper Atlas, select a paper to summarize it with its directly connected visible neighbors, or select a dashed rectangle’s label to summarize its group of 5–7 nearby readings. The bottom-right card highlights the included nodes and edges, offers linked findings and every member’s description, and can collapse while exploring. Search and topic filters also restrict summary membership.
