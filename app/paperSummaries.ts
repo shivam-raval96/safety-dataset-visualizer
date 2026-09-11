@@ -34,3 +34,32 @@ export function summarizeReadings(readings: SummarySource[]) {
     : `These ${readings.length} readings cover ${categories.join(", ")}. Their descriptions do not establish a shared finding; compare the individual contributions below.`;
   return { overview, insights: ranked.slice(0, 2).map((theme) => theme.insight) };
 }
+
+// Partition nearby readings along the widest axis. Shared split planes keep
+// unrelated paper centers outside each rectangle without changing the graph.
+export function partitionReadings<T extends SummarySource>(readings: T[], position: (source: T) => { x: number; y: number }) {
+  const count = Math.max(1, Math.round(readings.length / 6));
+  const sizes = Array.from({ length: count }, (_, index) => Math.floor(readings.length / count) + (index < readings.length % count ? 1 : 0));
+  type Limits = { left: number; right: number; top: number; bottom: number };
+  type Group = Limits & { members: T[] };
+  function split(members: T[], targets: number[], limits: Limits): Group[] {
+    if (!members.length) return [];
+    const points = members.map(position);
+    const left = Math.min(...points.map((p) => p.x));
+    const right = Math.max(...points.map((p) => p.x));
+    const top = Math.min(...points.map((p) => p.y));
+    const bottom = Math.max(...points.map((p) => p.y));
+    if (targets.length === 1) return [{ members, left: Math.max(left - 60, limits.left), right: Math.min(right + 60, limits.right), top: Math.max(top - 75, limits.top), bottom: Math.min(bottom + 60, limits.bottom) }];
+    const axis = right - left >= bottom - top ? 'x' : 'y';
+    const sorted = [...members].sort((a, b) => position(a)[axis] - position(b)[axis]);
+    const half = Math.ceil(targets.length / 2);
+    const cut = targets.slice(0, half).reduce((sum, size) => sum + size, 0);
+    const gap = Math.min(3, (position(sorted[cut])[axis] - position(sorted[cut - 1])[axis]) / 4);
+    const plane = (position(sorted[cut - 1])[axis] + position(sorted[cut])[axis]) / 2;
+    return [
+      ...split(sorted.slice(0, cut), targets.slice(0, half), { ...limits, [axis === 'x' ? 'right' : 'bottom']: plane - gap }),
+      ...split(sorted.slice(cut), targets.slice(half), { ...limits, [axis === 'x' ? 'left' : 'top']: plane + gap }),
+    ];
+  }
+  return split(readings, sizes, { left: -Infinity, right: Infinity, top: -Infinity, bottom: Infinity });
+}

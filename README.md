@@ -42,6 +42,6 @@ The `Add a dataset` issue form accepts a single GitHub, Hugging Face, or LessWro
 
 ## Paper group summaries
 
-In Paper Atlas, select a paper to summarize it with its directly connected visible neighbors, or select a dashed category enclosure’s label to summarize that category. The bottom-left card highlights the included nodes and edges, offers linked findings and every member’s description, and can collapse while exploring. Search and topic filters also restrict summary membership.
+In Paper Atlas, select a paper to summarize it with its directly connected visible neighbors, or select a dashed rectangle’s label to summarize its group of 5–7 nearby readings. The bottom-right card highlights the included nodes and edges, offers linked findings and every member’s description, and can collapse while exploring. Search and topic filters also restrict summary membership.
 
 Summaries run locally from atlas descriptions: recurring themes must match at least two readings, and insights are labeled as inferred reading prompts. They are not full-text reviews or evidence of agreement between papers. No external model or API key is required. Run `node --test tests/paperSummaries.test.mjs` to check grouping, filtering, and summary edge cases.
