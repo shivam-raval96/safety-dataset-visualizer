@@ -1,0 +1,43 @@
+name: Back up direct comments
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+jobs:
+  sync-comments:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Save database comments to Markdown
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "atlas-comment-bot"
+          git config user.email "atlas-comment-bot@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            npm run sync:comments
+            if git diff --quiet -- data/comments.md; then
+              exit 0
+            fi
+            node --test tests/comments.test.mjs
+            npm run build:static
+            git add data/comments.md
+            git commit -m "data: back up direct comments"
+            if git push origin HEAD:main; then
+              gh workflow run deploy-pages.yml --ref main
+              exit 0
+            fi
+            git fetch origin main
+            git reset --hard origin/main
+          done
+          exit 1

@@ -16,3 +16,5 @@
 .card-comments form button { border: 0; border-radius: 8px; background: #263b2f; color: white; padding: 11px; font-size: 11px; cursor: pointer; }
 .card-comments small, .comments-empty, .comment-help, .comment-status { font-size: 10px; line-height: 1.5; color: #77857b; margin: 0; }
 .comment-status { color: #365846; }
+.card-comments .comment-honeypot { display: none; }
+.card-comments button:disabled { opacity: .6; cursor: wait; }

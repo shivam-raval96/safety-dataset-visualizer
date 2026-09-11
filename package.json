@@ -6,7 +6,7 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "embed": "node scripts/generate-embeddings.mjs",
+    "embed": "node scripts/generate-embeddings.mjs && node scripts/write-comment-targets.mjs",
     "embed:distills": "node scripts/generate-distill-atlas.mjs",
     "discover:organisms": "python3 scripts/discover-organisms.py",
     "discover:papers": "python3 scripts/discover-papers.py",
@@ -14,7 +14,9 @@
     "build": "npm run embed && vinext build",
     "build:static": "npm run embed && GITHUB_ACTIONS=true next build",
     "start": "vinext start",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern work"
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern work",
+    "build:comments": "node scripts/write-comment-targets.mjs && node scripts/build-comments-service.mjs",
+    "sync:comments": "node scripts/sync-comments.mjs"
   },
   "dependencies": {
     "@huggingface/transformers": "^4.2.0",
@@ -33,6 +35,9 @@
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "6.0.2",
     "@vitejs/plugin-rsc": "0.5.26",
+    "drizzle-kit": "^0.31.4",
+    "drizzle-orm": "^0.44.7",
+    "esbuild": "^0.27.3",
     "eslint": "9.39.4",
     "eslint-config-next": "16.2.6",
     "react-server-dom-webpack": "19.2.6",

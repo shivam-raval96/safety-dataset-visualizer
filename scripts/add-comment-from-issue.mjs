@@ -51,7 +51,7 @@ export function appendComment(event, markdown, targets) {
   if (typeof payload.name !== 'string' || !payload.name.trim() || payload.name.trim().length > NAME_LIMIT || /[\x00-\x1f\x7f]/.test(payload.name)) throw new Error('Invalid name.');
   if (typeof payload.comment !== 'string' || !payload.comment.trim() || payload.comment.trim().length > COMMENT_LIMIT || /[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]/.test(payload.comment)) throw new Error('Invalid comment.');
   comments.push({ ...target, id: issue.number, name: payload.name.trim(), comment: payload.comment.trim(), author: issue.user.login, createdAt: issue.created_at });
-  comments.sort((a, b) => a.createdAt.localeCompare(b.createdAt) || a.id - b.id);
+  comments.sort((a, b) => a.createdAt.localeCompare(b.createdAt) || String(a.id).localeCompare(String(b.id)));
   const json = JSON.stringify(comments, null, 2).replaceAll('<', '\\u003c').replaceAll('`', '\\u0060');
   const next = markdown.replace(/^```json\n[\s\S]*?\n```\s*$/m, () => `\`\`\`json\n${json}\n\`\`\`\n`);
   parseCommentsMarkdown(next);
