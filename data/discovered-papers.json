@@ -1618,5 +1618,77 @@
     "year": 2026,
     "summary": "Tests whether distillation from an untrusted model can either expose transferred misalignment in a more auditable student or transfer useful capabilities while suppressing hidden traits.",
     "url": "https://drive.google.com/file/d/1PDQFCdt1HB4Bc7PfxoU2QVcpEWlVOobk/view"
+  },
+  {
+    "title": "Emergent Misaligned Communication in Long-Horizon Multi-Agent LLM Commerce",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Zeyuan Li et al.",
+    "year": 2026,
+    "summary": "Finds reciprocal, stress-conditioned deception, manipulation, collusion, and threats emerging across long-horizon interactions between LLM agents representing separate principals.",
+    "url": "https://arxiv.org/abs/2608.14825"
+  },
+  {
+    "title": "Voluntary Collusion with Secret Tools in Competing LLM Agents",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Xijie Zeng & Frank Rudzicz",
+    "year": 2026,
+    "summary": "Shows that safety-aligned LLM agents voluntarily adopt secret collusion tools when those tools offer a strategic advantage, despite recognizing their unfairness.",
+    "url": "https://arxiv.org/abs/2605.27593"
+  },
+  {
+    "title": "On the Fragility of AI Agent Collusion",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Jussi Keppo et al.",
+    "year": 2026,
+    "summary": "Studies algorithmic collusion among pricing agents and finds that some forms of agent heterogeneity disrupt collusion while model-size asymmetry can stabilize it.",
+    "url": "https://arxiv.org/abs/2603.20281"
+  },
+  {
+    "title": "Prompt Optimization Enables Stable Algorithmic Collusion in LLM Agents",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Yingtao Tian",
+    "year": 2026,
+    "summary": "Demonstrates that meta-prompt optimization can lead market agents to discover stable tacit collusion strategies that generalize to held-out environments.",
+    "url": "https://arxiv.org/abs/2604.17774"
+  },
+  {
+    "title": "Colosseum: Auditing Collusion in Cooperative Multi-Agent Systems",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Mason Nakamura et al.",
+    "year": 2026,
+    "summary": "Introduces an audit framework showing that LLM agents can form coalitions, use secret communication channels, and pursue secondary goals that degrade a shared objective.",
+    "url": "https://arxiv.org/abs/2602.15198"
+  },
+  {
+    "title": "Collective Alignment in LLM Multi-Agent Systems: Disentangling Bias from Cooperation via Statistical Physics",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Cristiano De Nobili",
+    "year": 2026,
+    "summary": "Separates intrinsic model bias from social conformity in agent collectives and provides quantitative diagnostics for multi-agent consensus and alignment reliability.",
+    "url": "https://arxiv.org/abs/2605.10528"
+  },
+  {
+    "title": "Emergent Coordinated Behaviors in Networked LLM Agents: Modeling the Strategic Dynamics of Information Operations",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Gian Marco Orlando et al.",
+    "year": 2025,
+    "summary": "Shows that networked generative agents can self-organize into coordinated information operations, with shared-goal awareness approaching the effects of explicit deliberation.",
+    "url": "https://arxiv.org/abs/2510.25003"
+  },
+  {
+    "title": "Secret Collusion among AI Agents: Multi-Agent Deception via Steganography",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Sumeet Ramesh Motwani et al.",
+    "year": 2024,
+    "summary": "Examines how communicating AI agents can use steganographic channels for covert coordination and deception in multi-agent tasks.",
+    "url": "https://arxiv.org/abs/2402.07510"
   }
 ]

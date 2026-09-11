@@ -65,6 +65,11 @@ TOPIC_QUERIES = {
         "swarm misalignment", "multi-agent misalignment", "collective misalignment",
         "emergent multi-agent behavior", "AI swarm safety", "multi-agent collusion",
         "agent collusion", "multi-agent safety", "collective behavior LLM agents",
+        "emergent misaligned communication", "multi-agent alignment",
+        "multi-agent deception", "deceptive cooperation", "misalignment spread",
+        "multi-agent coordination risk", "agent society safety", "voluntary collusion",
+        "algorithmic collusion", "auditing collusion", "coordinated behaviors",
+        "collective alignment",
     ],
 }
 
