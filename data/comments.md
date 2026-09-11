@@ -16,6 +16,16 @@ Names are self-reported; `author` is the GitHub account that submitted the issue
     "comment": "Test",
     "author": "shivam-raval96",
     "createdAt": "2026-09-11T22:36:28Z"
+  },
+  {
+    "kind": "paper",
+    "title": "Hallucination Detection via Proxy Analyzers",
+    "url": "https://arxiv.org/abs/2605.07209",
+    "id": 5,
+    "name": "Ryan Conti",
+    "comment": "early paper that we referred to during Phase 1 Hermeneutics",
+    "author": "IncoherentButter",
+    "createdAt": "2026-09-11T22:53:04Z"
   }
 ]
 ```
