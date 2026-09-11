@@ -6,5 +6,16 @@ The issue number is the comment ID, so retrying a submission does not duplicate 
 Names are self-reported; `author` is the GitHub account that submitted the issue.
 
 ```json
-[]
+[
+  {
+    "kind": "paper",
+    "title": "Sleeper Agents",
+    "url": "https://arxiv.org/abs/2401.05566",
+    "id": 4,
+    "name": "Shivam",
+    "comment": "Test",
+    "author": "shivam-raval96",
+    "createdAt": "2026-09-11T22:36:28Z"
+  }
+]
 ```
