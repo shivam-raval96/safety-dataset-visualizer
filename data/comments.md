@@ -36,6 +36,16 @@ Names are self-reported; `author` is the GitHub account that submitted the issue
     "comment": "Clicking on categories at the center of a cluster should not irreversibly filter out all other paper nodes. Should either not filter at all, or make unfiltering a discoverable and simple action",
     "author": "IncoherentButter",
     "createdAt": "2026-09-11T22:56:52Z"
+  },
+  {
+    "kind": "paper",
+    "title": "Sleeper Agents",
+    "url": "https://arxiv.org/abs/2401.05566",
+    "id": 7,
+    "name": "shivam",
+    "comment": "help",
+    "author": "shivam-raval96",
+    "createdAt": "2026-09-11T22:57:51Z"
   }
 ]
 ```
