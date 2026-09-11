@@ -108,6 +108,31 @@ function sourcePosition(source: Source) {
   return { x: center.x + Math.cos(angle) * radius, y: center.y + Math.sin(angle) * radius, topicIndex };
 }
 
+const similarityStopwords = new Set(["about", "after", "against", "also", "from", "have", "into", "language", "large", "model", "models", "paper", "results", "show", "shows", "study", "their", "these", "they", "this", "through", "using", "with"]);
+
+function sourceTerms(source: Source) {
+  return new Set(`${source.title} ${source.summary}`.toLowerCase().match(/[a-z][a-z-]{3,}/g)?.filter((word) => !similarityStopwords.has(word)) || []);
+}
+
+const relatedEdges = (() => {
+  const terms = sources.map(sourceTerms);
+  const edges = new Map<string, { a: Source; b: Source; score: number }>();
+  sources.forEach((source, index) => {
+    const matches = sources.flatMap((candidate, candidateIndex) => {
+      if (candidateIndex === index) return [];
+      const overlap = [...terms[index]].filter((term) => terms[candidateIndex].has(term)).length;
+      if (overlap < 2) return [];
+      const score = overlap / Math.sqrt(terms[index].size * terms[candidateIndex].size);
+      return score >= .16 ? [{ candidate, candidateIndex, score }] : [];
+    }).sort((a, b) => b.score - a.score).slice(0, 2);
+    matches.forEach(({ candidateIndex, score }) => {
+      const [left, right] = index < candidateIndex ? [index, candidateIndex] : [candidateIndex, index];
+      edges.set(`${left}-${right}`, { a: sources[left], b: sources[right], score });
+    });
+  });
+  return [...edges.values()];
+})();
+
 export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: () => void; onOrganisms: () => void }) {
   const [selected, setSelected] = useState(sources[0]);
   const [filter, setFilter] = useState("All topics");
@@ -183,6 +208,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
         <div className="map-head"><div><span className="live-dot"/> {visible.length} readings visible</div><div className="network-key"><span><i className="paper-topic-swatch"/>Topic</span><span><i/>Paper</span><span><i className="lw-swatch"/>LessWrong</span></div><div className="organism-map-tools" aria-label="Map controls"><button onClick={() => zoomAt(view.scale * 1.25)} aria-label="Zoom in">+</button><button onClick={() => zoomAt(view.scale / 1.25)} aria-label="Zoom out">−</button><button onClick={fitGraph}>Fit</button></div></div>
         <div className="paper-plot" ref={plotRef} onWheel={wheel} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={endPan} onPointerCancel={endPan} onDoubleClick={fitGraph}><div className="paper-canvas" style={{width:WIDTH,height:HEIGHT,transform:`translate(${view.x}px, ${view.y}px) scale(${view.scale})`}}><svg aria-hidden="true" viewBox={`0 0 ${WIDTH} ${HEIGHT}`}>
           {centers.flatMap((topic) => yearBands(topic.name).map((band) => <g key={`${topic.name}-${band.year}`} className="paper-year-band"><circle cx={topic.x} cy={topic.y} r={band.radius} stroke={band.band} strokeWidth={band.width}/><text x={topic.x} y={topic.y - band.outer + 18} fill={band.label}>{band.year}</text></g>))}
+          {relatedEdges.filter(({ a, b }) => visibleTitles.has(a.title) && visibleTitles.has(b.title)).map(({ a, b, score }) => { const start = sourcePosition(a); const end = sourcePosition(b); const active = selected.title === a.title || selected.title === b.title; return <line key={`${a.title}-${b.title}`} className={`paper-related-line ${active ? "active" : "muted"}`} x1={start.x} y1={start.y} x2={end.x} y2={end.y} style={{strokeWidth:1.5 + score * 4}}/>; })}
         </svg>
           {centers.map((topic) => <button key={topic.name} className={`paper-topic-node ${filter !== "All topics" && filter !== topic.name ? "muted" : ""}`} onClick={() => chooseTopic(topic.name)} style={{left:topic.x,top:topic.y,borderColor:topic.color}}><strong>{topic.name}</strong><small>{sources.filter((source) => source.topic === topic.name).length} readings</small></button>)}
           {sources.map((source) => { const position = sourcePosition(source); return <button key={source.title} title={source.title} onClick={() => setSelected(source)} className={`paper-source-node ${source.kind === "LessWrong" ? "lesswrong" : source.kind === "Post" ? "post" : ""} ${selected.title === source.title ? "selected" : ""} ${visibleTitles.has(source.title) ? "" : "hidden"}`} style={{left:position.x,top:position.y,borderColor:topics[position.topicIndex].color}}><span>{source.title}</span><small>{source.kind}</small></button>; })}

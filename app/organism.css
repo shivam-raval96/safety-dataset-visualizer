@@ -54,6 +54,22 @@
   stroke-width: 8px;
 }
 
+.paper-related-line {
+  stroke: #718079 !important;
+  opacity: .14 !important;
+  pointer-events: none;
+  transition: opacity .18s, stroke .18s;
+}
+
+.paper-related-line.muted {
+  opacity: .025 !important;
+}
+
+.paper-related-line.active {
+  stroke: #17211d !important;
+  opacity: .88 !important;
+}
+
 .dataset-atlas-switch {
   position: absolute;
   z-index: 20;
