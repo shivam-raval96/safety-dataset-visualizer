@@ -40,7 +40,7 @@
 
 .paper-year-band circle {
   fill: none;
-  opacity: .055;
+  opacity: .88;
 }
 
 .paper-year-band text {
@@ -48,7 +48,7 @@
   font-weight: 800;
   letter-spacing: .08em;
   text-anchor: middle;
-  opacity: .55;
+  opacity: .9;
   paint-order: stroke;
   stroke: #f8faf6;
   stroke-width: 8px;

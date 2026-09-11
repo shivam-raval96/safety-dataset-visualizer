@@ -71,6 +71,12 @@ const topicCenters = [
   { x: 5500, y: 3100 },
 ];
 const centers = topics.map((topic, index) => ({ ...topic, ...topicCenters[index] }));
+const yearColors: Record<number, { band: string; label: string }> = {
+  2023: { band: "#eadcff", label: "#7046ad" },
+  2024: { band: "#d5eaff", label: "#2875ad" },
+  2025: { band: "#d4f2df", label: "#287a4d" },
+  2026: { band: "#ffe0c9", label: "#ad5428" },
+};
 
 function orderedTopicSources(topic: string) {
   return sources
@@ -82,12 +88,13 @@ function orderedTopicSources(topic: string) {
 
 function yearBands(topic: string) {
   const siblings = orderedTopicSources(topic);
-  return [...new Set(siblings.map((source) => source.year))].map((year, bandIndex, years) => {
+  return [...new Set(siblings.map((source) => source.year))].map((year) => {
     const first = siblings.findIndex((source) => source.year === year);
     const last = siblings.findLastIndex((source) => source.year === year);
     const inner = first === 0 ? 92 : 160 + first * 14 - 7;
     const outer = 160 + last * 14 + (last === siblings.length - 1 ? 60 : 7);
-    return { year, radius: (inner + outer) / 2, width: outer - inner, outer, opacity: .045 + (bandIndex / Math.max(1, years.length - 1)) * .075 };
+    const colors = yearColors[year] || { band: "#e5e9e6", label: "#59635d" };
+    return { year, radius: (inner + outer) / 2, width: outer - inner, outer, ...colors };
   });
 }
 
@@ -175,7 +182,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
       <section className="map paper-map" aria-label="Topics connected to papers and LessWrong posts">
         <div className="map-head"><div><span className="live-dot"/> {visible.length} readings visible</div><div className="network-key"><span><i className="paper-topic-swatch"/>Topic</span><span><i/>Paper</span><span><i className="lw-swatch"/>LessWrong</span></div><div className="organism-map-tools" aria-label="Map controls"><button onClick={() => zoomAt(view.scale * 1.25)} aria-label="Zoom in">+</button><button onClick={() => zoomAt(view.scale / 1.25)} aria-label="Zoom out">−</button><button onClick={fitGraph}>Fit</button></div></div>
         <div className="paper-plot" ref={plotRef} onWheel={wheel} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={endPan} onPointerCancel={endPan} onDoubleClick={fitGraph}><div className="paper-canvas" style={{width:WIDTH,height:HEIGHT,transform:`translate(${view.x}px, ${view.y}px) scale(${view.scale})`}}><svg aria-hidden="true" viewBox={`0 0 ${WIDTH} ${HEIGHT}`}>
-          {centers.flatMap((topic) => yearBands(topic.name).map((band) => <g key={`${topic.name}-${band.year}`} className="paper-year-band"><circle cx={topic.x} cy={topic.y} r={band.radius} stroke={topic.color} strokeWidth={band.width} style={{opacity:band.opacity}}/><text x={topic.x} y={topic.y - band.outer + 18} fill={topic.color}>{band.year}</text></g>))}
+          {centers.flatMap((topic) => yearBands(topic.name).map((band) => <g key={`${topic.name}-${band.year}`} className="paper-year-band"><circle cx={topic.x} cy={topic.y} r={band.radius} stroke={band.band} strokeWidth={band.width}/><text x={topic.x} y={topic.y - band.outer + 18} fill={band.label}>{band.year}</text></g>))}
           {visible.map((source) => { const position = sourcePosition(source); const center = centers[position.topicIndex]; return <line key={source.title} x1={center.x} y1={center.y} x2={position.x} y2={position.y} className={selected.title === source.title ? "active" : ""}/>; })}
         </svg>
           {centers.map((topic) => <button key={topic.name} className={`paper-topic-node ${filter !== "All topics" && filter !== topic.name ? "muted" : ""}`} onClick={() => chooseTopic(topic.name)} style={{left:topic.x,top:topic.y,borderColor:topic.color}}><strong>{topic.name}</strong><small>{sources.filter((source) => source.topic === topic.name).length} readings</small></button>)}
