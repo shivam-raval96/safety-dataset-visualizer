@@ -39,3 +39,9 @@ Run `npm run discover:papers -- --keyword subliminal --append-catalog` to search
 ## Dataset request issues
 
 The `Add a dataset` issue form accepts a single GitHub, Hugging Face, or LessWrong link and labels it for automatic processing. LessWrong links are resolved to a linked public dataset artifact. The workflow verifies the source, rejects duplicates, asks `gpt-5.6-luna` to confirm safety relevance and normalize the card, then updates the catalog and History. Missing metadata uses explicit fallbacks such as `Unknown` rather than blocking a verified dataset. A successful change is linted, rebuilt, committed to `main`, and deployed by the Pages workflow; the issue receives the outcome and is closed only after the catalog commit succeeds.
+
+## Paper group summaries
+
+In Paper Atlas, select a paper to summarize it with its directly connected visible neighbors, or select a dashed category enclosure’s label to summarize that category. The bottom-left card highlights the included nodes and edges, offers linked findings and every member’s description, and can collapse while exploring. Search and topic filters also restrict summary membership.
+
+Summaries run locally from atlas descriptions: recurring themes must match at least two readings, and insights are labeled as inferred reading prompts. They are not full-text reviews or evidence of agreement between papers. No external model or API key is required. Run `node --test tests/paperSummaries.test.mjs` to check grouping, filtering, and summary edge cases.
