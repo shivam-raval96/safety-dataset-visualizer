@@ -46,6 +46,36 @@ Names are self-reported. Direct submissions have `author` set to `visitor`.
     "comment": "help",
     "author": "shivam-raval96",
     "createdAt": "2026-09-11T22:57:51Z"
+  },
+  {
+    "id": "direct:cdc551a0-a598-4d76-8a0f-18423efd5f9a",
+    "kind": "paper",
+    "title": "Sleeper Agents",
+    "url": "https://arxiv.org/abs/2401.05566",
+    "name": "Ryan",
+    "comment": "yolo",
+    "author": "visitor",
+    "createdAt": "2026-09-11T23:03:29.052Z"
+  },
+  {
+    "id": "direct:eb29d593-8fa6-4629-a23e-5105448ed08b",
+    "kind": "paper",
+    "title": "Sleeper Agents",
+    "url": "https://arxiv.org/abs/2401.05566",
+    "name": "John",
+    "comment": "let's buy an iguana for the office",
+    "author": "visitor",
+    "createdAt": "2026-09-11T23:04:10.949Z"
+  },
+  {
+    "id": "direct:e4c2a2b1-4891-403e-862c-121a593d12e7",
+    "kind": "paper",
+    "title": "Sleeper Agents",
+    "url": "https://arxiv.org/abs/2401.05566",
+    "name": "Ryan",
+    "comment": "Based",
+    "author": "visitor",
+    "createdAt": "2026-09-11T23:04:12.037Z"
   }
 ]
 ```
