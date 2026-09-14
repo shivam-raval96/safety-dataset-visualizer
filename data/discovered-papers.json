@@ -1699,5 +1699,14 @@
     "year": 2024,
     "summary": "Examines how communicating AI agents can use steganographic channels for covert coordination and deception in multi-agent tasks.",
     "url": "https://arxiv.org/abs/2402.07510"
+  },
+  {
+    "title": "Reasoning Models Don't Always Say What They Think",
+    "authors": "Chen, Yanda et al.",
+    "year": 2025,
+    "url": "https://arxiv.org/abs/2505.05410",
+    "topic": "Obfuscation",
+    "kind": "Paper",
+    "summary": "The authors evaluate chain-of-thought faithfulness in reasoning models across six prompt-provided reasoning hints. Models often used hints without revealing them, and reinforcement learning that increased hint use did not similarly increase verbalization, suggesting CoT monitoring may miss rare or undesirable behaviors."
   }
 ]
