@@ -4,6 +4,7 @@ import { navigateAtlas, readAtlasRoute } from "./urlState";
 
 import { PointerEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import discovered from "../data/discovered-papers.json";
+import paperHistory from "../data/paper-history.json";
 import { connectedReadings, partitionReadings, summarizeReadings } from "./paperSummaries";
 
 type Source = {
@@ -15,6 +16,13 @@ type Source = {
   summary: string;
   url: string;
 };
+
+type PaperHistoryEntry = {
+  date: string;
+  papers: Pick<Source, "title" | "topic" | "kind" | "authors" | "url">[];
+};
+
+const history = paperHistory as PaperHistoryEntry[];
 
 const topics = [
   { name: "Model organisms", color: "#9b7bff", summary: "Controlled models trained to express specific alignment failure modes." },
@@ -158,6 +166,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
   const [summaryMode, setSummaryMode] = useState<"connected" | "group">("connected");
   const [summaryGroup, setSummaryGroup] = useState(readingGroups[0].id);
   const [summaryCollapsed, setSummaryCollapsed] = useState(false);
+  const [detailView, setDetailView] = useState<"paper" | "history">("paper");
   const [filter, setFilter] = useState("All topics");
   const [query, setQuery] = useState("");
   const plotRef = useRef<HTMLDivElement>(null);
@@ -251,7 +260,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
   const chooseTopic = (name: string) => {
     setFilter(name);
     if (name !== "All topics") { setSummaryMode("group"); setSummaryGroup(readingGroups.find((group) => group.members[0].topic === name)?.id || readingGroups[0].id); setSummaryCollapsed(false); }
-    if (name !== "All topics") setSelected(sources.find((source) => source.topic === name) || sources[0]);
+    if (name !== "All topics") { setSelected(sources.find((source) => source.topic === name) || sources[0]); setDetailView("paper"); }
     const plot = plotRef.current;
     const topic = centers.find((item) => item.name === name);
     if (!plot || !topic) return fitGraph();
@@ -273,6 +282,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
   const synthesis = summarizeReadings(group);
   const selectReading = (source: Source) => {
     setSelected(source);
+    setDetailView("paper");
     setSummaryGroup(readingGroups.find((group) => group.members.includes(source))?.id || readingGroups[0].id);
     setSummaryMode("connected");
     setSummaryCollapsed(false);
@@ -328,7 +338,26 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
         <div className="map-foot"><span>Oldest → newest from center outward · drag to explore · scroll or pinch to zoom</span></div>
         </div>
       </section>
-      <aside className="detail">{activeSource ? <div className="organism-panel" key={activeSource.title}><div className="detail-top"><div className="dataset-icon organism-icon" style={{background:topics.find((topic) => topic.name === activeSource.topic)?.color}}>{activeSource.kind === "Paper" ? "PDF" : activeSource.kind === "LessWrong" ? "LW" : "↗"}</div></div><p className="detail-category"><span style={{background:topics.find((topic) => topic.name === activeSource.topic)?.color}}/>{activeSource.topic}</p><h2>{activeSource.title}</h2><p className="org">{activeSource.authors} · {activeSource.year} · {activeSource.kind}</p><p className="description">{activeSource.summary}</p><div className="lineage-card"><p className="eyebrow">Reading path</p><div><span className="lineage-base">{activeSource.topic}</span><b>→</b><span>{activeSource.kind}</span></div></div><div className="detail-section"><p className="eyebrow">About this topic</p><p className="organism-note">{topics.find((topic) => topic.name === activeSource.topic)?.summary}</p></div><a className="open-button" href={activeSource.url} target="_blank" rel="noreferrer">Open {activeSource.kind === "Paper" ? "paper" : "post"} <span>↗</span></a><Comments kind="paper" title={activeSource.title} url={activeSource.url}/></div> : <p className="organism-note">No readings match your filters.</p>}</aside>
+      <aside className="detail">
+        <div className="detail-tabs" role="tablist" aria-label="Paper details">
+          <button role="tab" aria-selected={detailView === "paper"} className={detailView === "paper" ? "active" : ""} onClick={() => setDetailView("paper")}>Paper</button>
+          <button role="tab" aria-selected={detailView === "history"} className={detailView === "history" ? "active" : ""} onClick={() => setDetailView("history")}>History</button>
+        </div>
+        {detailView === "history" ? (
+          <div className="history-panel">
+            <p className="eyebrow">Paper additions</p>
+            <h2>History</h2>
+            {history.length ? <div className="history-list">{history.map((entry) => (
+              <section key={entry.date}>
+                <div className="history-date"><time dateTime={entry.date}>{new Date(`${entry.date}T00:00:00`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</time><b>{entry.papers.length}</b></div>
+                {entry.papers.map((paper) => <a key={paper.url} href={paper.url} target="_blank" rel="noreferrer"><i style={{background:topics.find((topic) => topic.name === paper.topic)?.color}}/><span>{paper.title}<small>{paper.topic} · {paper.kind}</small></span><b>↗</b></a>)}
+              </section>
+            ))}</div> : <p className="history-empty">New papers and LessWrong posts found by the daily workflow will appear here.</p>}
+          </div>
+        ) : activeSource ? (
+          <div className="organism-panel" key={activeSource.title}><div className="detail-top"><div className="dataset-icon organism-icon" style={{background:topics.find((topic) => topic.name === activeSource.topic)?.color}}>{activeSource.kind === "Paper" ? "PDF" : activeSource.kind === "LessWrong" ? "LW" : "↗"}</div></div><p className="detail-category"><span style={{background:topics.find((topic) => topic.name === activeSource.topic)?.color}}/>{activeSource.topic}</p><h2>{activeSource.title}</h2><p className="org">{activeSource.authors} · {activeSource.year} · {activeSource.kind}</p><p className="description">{activeSource.summary}</p><div className="lineage-card"><p className="eyebrow">Reading path</p><div><span className="lineage-base">{activeSource.topic}</span><b>→</b><span>{activeSource.kind}</span></div></div><div className="detail-section"><p className="eyebrow">About this topic</p><p className="organism-note">{topics.find((topic) => topic.name === activeSource.topic)?.summary}</p></div><a className="open-button" href={activeSource.url} target="_blank" rel="noreferrer">Open {activeSource.kind === "Paper" ? "paper" : "post"} <span>↗</span></a><Comments kind="paper" title={activeSource.title} url={activeSource.url}/></div>
+        ) : <p className="organism-note">No readings match your filters.</p>}
+      </aside>
     </section>
   </main>;
 }
