@@ -32,7 +32,7 @@ export function navigateDatasetCategory(category: string) {
 export function navigateAtlas(atlas: AtlasRoute, view: DisplayRoute = "map") {
   const url = new URL(window.location.href);
   url.searchParams.set("atlas", atlas);
-  if (atlas === "organisms" || atlas === "papers") url.searchParams.delete("view");
+  if (atlas === "organisms") url.searchParams.delete("view");
   else url.searchParams.set("view", view);
   window.history.pushState({}, "", url);
   window.dispatchEvent(new PopStateEvent("popstate"));

@@ -1,5 +1,6 @@
 "use client";
 import Comments from "./CardComments";
+import { navigateAtlas, readAtlasRoute } from "./urlState";
 
 import { PointerEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import discovered from "../data/discovered-papers.json";
@@ -146,6 +147,13 @@ const readingGroups = centers.flatMap((topic) => partitionReadings(orderedTopicS
 })));
 
 export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: () => void; onOrganisms: () => void }) {
+  const [display, setDisplay] = useState<"map" | "list">("map");
+  useEffect(() => {
+    const sync = () => setDisplay(readAtlasRoute().view);
+    sync();
+    window.addEventListener("popstate", sync);
+    return () => window.removeEventListener("popstate", sync);
+  }, []);
   const [selected, setSelected] = useState(sources[0]);
   const [summaryMode, setSummaryMode] = useState<"connected" | "group">("connected");
   const [summaryGroup, setSummaryGroup] = useState(readingGroups[0].id);
@@ -251,8 +259,11 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
     setView({ x: plot.clientWidth / 2 - topic.x * scale, y: plot.clientHeight / 2 - topic.y * scale, scale });
   };
   const visible = useMemo(() => sources.filter((source) => `${source.title} ${source.topic} ${source.authors} ${source.kind}`.toLowerCase().includes(query.toLowerCase())), [query]);
+  const listed = useMemo(() => visible.filter((source) => filter === "All topics" || source.topic === filter)
+    .sort((a, b) => b.year - a.year || a.title.localeCompare(b.title)), [visible, filter]);
+  const detailSources = display === "list" ? listed : visible;
   const visibleTitles = new Set(visible.map((source) => source.title));
-  const activeSource = visible.find((source) => source.url === selected.url) || visible[0];
+  const activeSource = detailSources.find((source) => source.url === selected.url) || detailSources[0];
   const visibleGroups = readingGroups.map((group) => ({ ...group, members: group.members.filter((source) => visibleTitles.has(source.title)) })).filter((group) => group.members.length);
   const activeGroup = visibleGroups.find((group) => group.id === summaryGroup) || visibleGroups.find((group) => group.members.includes(activeSource)) || visibleGroups[0];
   const group = summaryMode === "connected"
@@ -278,8 +289,17 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
         <button onClick={() => chooseTopic("All topics")} className={filter === "All topics" ? "active" : ""}><span className="cat-dot" style={{background:"#17211d"}}/>All topics<b>{sources.length}</b></button>
         {topics.map((topic) => <button key={topic.name} onClick={() => chooseTopic(topic.name)} className={filter === topic.name ? "active" : ""}><span className="cat-dot" style={{background:topic.color}}/>{topic.name}<b>{sources.filter((source) => source.topic === topic.name).length}</b></button>)}
       </nav><a className="sidebar-contribute" href="https://github.com/shivam-raval96/safety-dataset-visualizer/issues/new?template=paper-request.yml" target="_blank" rel="noreferrer">Add a paper <span>↗</span></a><div className="legend-note"><span>Topic → reading</span><p>Large circles are research topics. Smaller circles are papers and LessWrong posts selected as starting points.</p></div></aside>
-      <section className="map paper-map" aria-label="Topics connected to papers and LessWrong posts">
-        <div className="map-head"><div><span className="live-dot"/> {visible.length} readings visible</div><div className="network-key"><span><i className="paper-topic-swatch"/>Topic</span><span><i/>Paper</span><span><i className="lw-swatch"/>LessWrong</span></div><div className="organism-map-tools" aria-label="Map controls"><button onClick={() => zoomAt(viewRef.current.scale * 1.25)} aria-label="Zoom in">+</button><button onClick={() => zoomAt(viewRef.current.scale / 1.25)} aria-label="Zoom out">−</button><button onClick={fitGraph}>Fit</button></div></div>
+      <section className="map paper-map" aria-label={display === "map" ? "Topics connected to papers and LessWrong posts" : "Paper list"}>
+        <div className="map-head"><div className="map-head-left"><div className="view-toggle" aria-label="Paper atlas view"><button aria-pressed={display === "map"} onClick={() => navigateAtlas("papers", "map")}>Map</button><button aria-pressed={display === "list"} onClick={() => navigateAtlas("papers", "list")}>List</button></div><div aria-live="polite"><span className="live-dot"/> {display === "list" ? listed.length : visible.length} readings visible</div></div>{display === "map" && <><div className="network-key"><span><i className="paper-topic-swatch"/>Topic</span><span><i/>Paper</span><span><i className="lw-swatch"/>LessWrong</span></div><div className="organism-map-tools" aria-label="Map controls"><button onClick={() => zoomAt(viewRef.current.scale * 1.25)} aria-label="Zoom in">+</button><button onClick={() => zoomAt(viewRef.current.scale / 1.25)} aria-label="Zoom out">−</button><button onClick={fitGraph}>Fit</button></div></>}</div>
+        {display === "list" && <div className="paper-list">
+          {listed.length ? <ul aria-label="Papers">{listed.map((source) => <li key={source.url}>
+            <button className={`paper-list-row ${activeSource?.url === source.url ? "active" : ""}`} aria-pressed={activeSource?.url === source.url} onClick={() => selectReading(source)}>
+              <span className="paper-list-meta"><span><i style={{background:topics.find((topic) => topic.name === source.topic)?.color}}/>{source.topic}</span><span>{source.year} · {source.kind}</span></span>
+              <strong>{source.title}</strong><span className="paper-list-authors">{source.authors}</span><span className="paper-list-description">{source.summary}</span>
+            </button>
+          </li>)}</ul> : <div className="empty">No readings match your filters.<button onClick={() => {setQuery("");setFilter("All topics");}}>Show all readings</button></div>}
+        </div>}
+        <div style={{opacity:display === "map" ? 1 : 0, pointerEvents:display === "map" ? "auto" : "none"}} aria-hidden={display !== "map"} inert={display !== "map"}>
         <div className="paper-plot" ref={plotRef} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={endPan} onPointerCancel={endPan} onDoubleClick={fitGraph}><div className="paper-canvas" ref={canvasRef} style={{width:WIDTH,height:HEIGHT}}><svg aria-hidden="true" viewBox={`0 0 ${WIDTH} ${HEIGHT}`}>
           {centers.flatMap((topic) => yearBands(topic.name).map((band) => <g key={`${topic.name}-${band.year}`} className="paper-year-band"><circle cx={topic.x} cy={topic.y} r={band.radius} stroke={band.band} strokeWidth={band.width}/><text x={topic.x} y={topic.y - band.outer + 18} fill={band.label}>{band.year}</text></g>))}
           {visibleGroups.map((topic) => <rect key={topic.id} data-group-id={topic.id} data-count={topic.members.length} className={`paper-category-boundary ${summaryMode === "group" && activeGroup?.id === topic.id ? "active" : ""}`} x={topic.left} y={topic.top} width={topic.right - topic.left} height={topic.bottom - topic.top} rx="24" stroke={topic.color}/>)}
@@ -306,6 +326,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
           </>}
         </section>
         <div className="map-foot"><span>Oldest → newest from center outward · drag to explore · scroll or pinch to zoom</span></div>
+        </div>
       </section>
       <aside className="detail">{activeSource ? <div className="organism-panel" key={activeSource.title}><div className="detail-top"><div className="dataset-icon organism-icon" style={{background:topics.find((topic) => topic.name === activeSource.topic)?.color}}>{activeSource.kind === "Paper" ? "PDF" : activeSource.kind === "LessWrong" ? "LW" : "↗"}</div></div><p className="detail-category"><span style={{background:topics.find((topic) => topic.name === activeSource.topic)?.color}}/>{activeSource.topic}</p><h2>{activeSource.title}</h2><p className="org">{activeSource.authors} · {activeSource.year} · {activeSource.kind}</p><p className="description">{activeSource.summary}</p><div className="lineage-card"><p className="eyebrow">Reading path</p><div><span className="lineage-base">{activeSource.topic}</span><b>→</b><span>{activeSource.kind}</span></div></div><div className="detail-section"><p className="eyebrow">About this topic</p><p className="organism-note">{topics.find((topic) => topic.name === activeSource.topic)?.summary}</p></div><a className="open-button" href={activeSource.url} target="_blank" rel="noreferrer">Open {activeSource.kind === "Paper" ? "paper" : "post"} <span>↗</span></a><Comments kind="paper" title={activeSource.title} url={activeSource.url}/></div> : <p className="organism-note">No readings match your filters.</p>}</aside>
     </section>
