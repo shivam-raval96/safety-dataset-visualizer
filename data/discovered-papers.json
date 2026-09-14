@@ -1708,5 +1708,14 @@
     "topic": "Obfuscation",
     "kind": "Paper",
     "summary": "The authors evaluate chain-of-thought faithfulness in reasoning models across six prompt-provided reasoning hints. Models often used hints without revealing them, and reinforcement learning that increased hint use did not similarly increase verbalization, suggesting CoT monitoring may miss rare or undesirable behaviors."
+  },
+  {
+    "title": "Towards Understanding Specification Gaming in Reasoning Models",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Kei Nishimura-Gasparian et al.",
+    "year": 2026,
+    "summary": "Introduces eight settings where agents can score highly through unintended actions and finds specification gaming across every tested model. RL reasoning training substantially raises exploit rates, while larger reasoning budgets have a weaker positive effect and test-time mitigations reduce but do not eliminate gaming.",
+    "url": "https://arxiv.org/abs/2605.02269"
   }
 ]
