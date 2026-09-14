@@ -761,7 +761,7 @@
 .paper-list{position:absolute;inset:60px 18px 18px;overflow:auto;overscroll-behavior:contain;padding:2px 4px 14px 2px}
 .paper-list ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
 .paper-list li{min-width:0}
-.paper-list-row{display:flex;flex-direction:column;gap:7px;width:100%;padding:16px;text-align:left;border:1px solid #d8dfd8;border-radius:10px;background:#fcfdf9;color:#17211d;cursor:pointer}
+.paper-list-row{user-select:text;-webkit-user-select:text;display:flex;flex-direction:column;gap:7px;width:100%;padding:16px;text-align:left;border:1px solid #d8dfd8;border-radius:10px;background:#fcfdf9;color:#17211d;cursor:pointer}
 .paper-list-row:hover{background:#f1f5ee;border-color:#9cae9d}
 .paper-list-row.active{border-color:#526e59;box-shadow:inset 3px 0 #526e59;background:#f0f5ed}
 .paper-list-row:focus-visible{outline:2px solid #17211d;outline-offset:2px}
