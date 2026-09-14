@@ -1161,6 +1161,15 @@
     "url": "https://arxiv.org/abs/2606.08629"
   },
   {
+    "title": "Model Forensics: Investigating Whether Concerning Behavior Reflects Misalignment",
+    "topic": "Model forensics",
+    "kind": "Paper",
+    "authors": "Aditya Singh et al.",
+    "year": 2026,
+    "summary": "Introduces a two-step model-forensics protocol that uses chain-of-thought to form hypotheses, then tests them through prompt and environment interventions across six agentic settings. The experiments distinguish several possible causes of concerning behavior, including shortcut-seeking and consistency with a prior model instance.",
+    "url": "https://arxiv.org/abs/2606.26071"
+  },
+  {
     "title": "TACS: Trajectory-Aware Candidate Selection for LLM Jailbreak Suffix Optimization",
     "topic": "Reward hacking",
     "kind": "Paper",
