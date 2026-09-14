@@ -1,7 +1,7 @@
 "use client";
 import Comments from "./CardComments";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { navigateAtlas, readAtlasRoute } from "./urlState";
+import { navigateAtlas, navigateDatasetCategory, navigateDatasetSelection, readAtlasRoute } from "./urlState";
 export type Dataset = {
   name: string;
   org: string;
@@ -92,11 +92,18 @@ export default function DatasetAtlas({
   const [minimumSamples, setMinimumSamples] = useState("");
   const searchInput = useRef<HTMLInputElement>(null);
   useEffect(() => {
-    const syncView = () => setView(readAtlasRoute().view);
-    syncView();
-    window.addEventListener("popstate", syncView);
-    return () => window.removeEventListener("popstate", syncView);
-  }, []);
+    const syncRoute = () => {
+      const route = readAtlasRoute();
+      setView(route.view);
+      setFilter(route.category && categories.includes(route.category) ? route.category : "All datasets");
+      const sharedDataset = datasets.find((dataset) => dataset.name === route.dataset);
+      setSelected(sharedDataset || datasets[0]);
+      if (sharedDataset) setPanel("dataset");
+    };
+    syncRoute();
+    window.addEventListener("popstate", syncRoute);
+    return () => window.removeEventListener("popstate", syncRoute);
+  }, [datasets]);
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
@@ -153,7 +160,7 @@ export default function DatasetAtlas({
   }, [visible, selected, panel, historyHovered]);
   const showAll = () => {
     setQuery("");
-    setFilter("All datasets");
+    navigateDatasetCategory("All datasets");
     setMinimumSamples("");
   };
   return (
@@ -176,7 +183,7 @@ export default function DatasetAtlas({
             value={query}
             onChange={(e) => {
               setQuery(e.target.value);
-              if (e.target.value) setFilter("All datasets");
+              if (e.target.value && filter !== "All datasets") navigateDatasetCategory("All datasets");
             }}
             placeholder="Search datasets, organizations, tags..."
           />
@@ -225,7 +232,7 @@ export default function DatasetAtlas({
             {categories.map((c) => (
               <button
                 key={c}
-                onClick={() => setFilter(c)}
+                onClick={() => navigateDatasetCategory(c)}
                 className={filter === c ? "active" : ""}
               >
                 <span
@@ -326,8 +333,7 @@ export default function DatasetAtlas({
                     aria-label={`${d.name}: ${d.desc}`}
                     title={`${d.name} — ${d.desc}`}
                     onClick={() => {
-                      setSelected(d);
-                      setPanel("dataset");
+                      navigateDatasetSelection(d.name);
                       setHistoryHovered(null);
                     }}
                     className={`point ${panel === "dataset" && selected.name === d.name ? "selected" : ""} ${panel === "history" && historyHovered === d.name ? "history-highlighted" : ""}`}
@@ -369,8 +375,7 @@ export default function DatasetAtlas({
                   role="listitem"
                   key={d.name}
                   onClick={() => {
-                    setSelected(d);
-                    setPanel("dataset");
+                    navigateDatasetSelection(d.name);
                     setHistoryHovered(null);
                   }}
                   className={`dataset-row ${panel === "dataset" && selected.name === d.name ? "selected" : ""}`}
