@@ -76,6 +76,16 @@ Names are self-reported. Direct submissions have `author` set to `visitor`.
     "comment": "Based",
     "author": "visitor",
     "createdAt": "2026-09-11T23:04:12.037Z"
+  },
+  {
+    "id": "direct:dd3d5244-b109-443f-b282-d45f9404c098",
+    "kind": "paper",
+    "title": "Towards Understanding Sycophancy in Language Models",
+    "url": "https://arxiv.org/abs/2310.13548",
+    "name": "Shivam",
+    "comment": "Test",
+    "author": "visitor",
+    "createdAt": "2026-09-14T19:01:20.350Z"
   }
 ]
 ```
