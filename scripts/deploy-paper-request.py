@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Dispatch Pages and wait for a successful deployment of the current commit."""
+"""Dispatch Pages and verify the deployed revision contains the catalog commit."""
 import json
+import os
 import subprocess
 import time
 from datetime import datetime, timezone
@@ -20,9 +21,17 @@ def main():
         if run_id is None:
             runs = json.loads(gh('run', 'list', '--workflow', 'deploy-pages.yml', '--event', 'workflow_dispatch',
                                  '--limit', '30', '--json', 'databaseId,headSha,createdAt'))
-            matches = [run for run in runs if run['headSha'] == sha and run['createdAt'] >= since]
-            if matches:
-                run_id = matches[0]['databaseId']
+            for run in runs:
+                if run['createdAt'] < since:
+                    continue
+                # Another request may advance main between our push and dispatch.
+                includes_commit = run['headSha'] == sha
+                if not includes_commit:
+                    comparison = json.loads(gh('api', f"repos/{os.environ['GITHUB_REPOSITORY']}/compare/{sha}...{run['headSha']}"))
+                    includes_commit = comparison['status'] in ('ahead', 'identical')
+                if includes_commit:
+                    run_id = run['databaseId']
+                    break
         if run_id is not None:
             run = json.loads(gh('run', 'view', str(run_id), '--json', 'status,conclusion,url'))
             if run['status'] == 'completed':
