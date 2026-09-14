@@ -205,14 +205,6 @@ export default function DatasetAtlas({
           >
             i
           </a>
-          <a
-            className="primary"
-            href="https://github.com/shivam-raval96/safety-dataset-visualizer/issues/new?template=dataset-request.yml"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Suggest a dataset <span>↗</span>
-          </a>
         </div>
       </header>
       <section className="workspace">
@@ -251,6 +243,14 @@ export default function DatasetAtlas({
               </button>
             ))}
           </nav>
+          <a
+            className="sidebar-contribute"
+            href="https://github.com/shivam-raval96/safety-dataset-visualizer/issues/new?template=dataset-request.yml"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Suggest a dataset <span>↗</span>
+          </a>
           <div className="legend-note">
             <label
               className={`size-filter ${minimum === null ? "inactive" : "active"}`}
