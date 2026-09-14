@@ -1,0 +1,85 @@
+name: Add requested paper
+
+on:
+  issues:
+    types: [opened, edited, reopened]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Paper request issue to retry
+        required: true
+        type: number
+
+permissions:
+  actions: write
+  contents: write
+  issues: write
+
+concurrency:
+  group: paper-request-${{ github.event.issue.number || inputs.issue_number }}
+  cancel-in-progress: false
+
+jobs:
+  add-paper:
+    if: github.event_name == 'workflow_dispatch' || (github.event.issue.state == 'open' && contains(github.event.issue.labels.*.name, 'paper-request'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: gpt-5.6-luna
+      GH_TOKEN: ${{ github.token }}
+      ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Read current request
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER" > /tmp/paper-issue.json
+          jq -e '.state == "open" and any(.labels[]; .name == "paper-request")' /tmp/paper-issue.json
+          jq '{issue: .}' /tmp/paper-issue.json > /tmp/paper-event.json
+      - name: Verify and add requested paper
+        run: python scripts/add-paper-from-issue.py --event /tmp/paper-event.json --result /tmp/paper-result.json
+      - name: Read result
+        id: result
+        run: echo "status=$(jq -r .status /tmp/paper-result.json)" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v4
+        if: steps.result.outputs.status == 'added'
+        with:
+          node-version: 22
+          cache: npm
+      - name: Validate site
+        if: steps.result.outputs.status == 'added'
+        run: |
+          npm ci
+          python -m unittest discover -s tests -p 'test_paper_requests.py'
+          npm run lint
+          npm run build:static
+      - name: Commit paper
+        if: steps.result.outputs.status == 'added'
+        run: |
+          git config user.name "paper-atlas-bot"
+          git config user.email "paper-atlas-bot@users.noreply.github.com"
+          git add data/discovered-papers.json
+          git commit -m "data: add paper requested in issue #$ISSUE_NUMBER"
+          git push origin HEAD:main
+      - name: Deploy and verify Pages
+        if: steps.result.outputs.status == 'added' || steps.result.outputs.status == 'exists'
+        run: python scripts/deploy-paper-request.py
+      - name: Report result
+        run: |
+          jq -r .message /tmp/paper-result.json > /tmp/paper-message.md
+          if [ "$(jq -r .status /tmp/paper-result.json)" != "rejected" ]; then
+            printf '\nPublished: https://shivam-raval96.github.io/safety-dataset-visualizer/?atlas=papers\n' >> /tmp/paper-message.md
+          fi
+          gh issue comment "$ISSUE_NUMBER" --body-file /tmp/paper-message.md
+      - name: Close completed request
+        if: steps.result.outputs.status == 'added' || steps.result.outputs.status == 'exists'
+        run: gh issue close "$ISSUE_NUMBER" --reason completed
+      - name: Report failure and preserve request
+        if: failure()
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "The paper request could not finish. Your issue remains open so it can be retried without duplicating the paper. Edit the arXiv link to retry, or ask a maintainer to rerun this request. Details: https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"

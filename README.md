@@ -40,6 +40,12 @@ Run `npm run discover:papers -- --keyword subliminal --append-catalog` to search
 
 The `Add a dataset` issue form accepts a single GitHub, Hugging Face, or LessWrong link and labels it for automatic processing. LessWrong links are resolved to a linked public dataset artifact. The workflow verifies the source, rejects duplicates, asks `gpt-5.6-luna` to confirm safety relevance and normalize the card, then updates the catalog and History. Missing metadata uses explicit fallbacks such as `Unknown` rather than blocking a verified dataset. A successful change is linted, rebuilt, committed to `main`, and deployed by the Pages workflow; the issue receives the outcome and is closed only after the catalog commit succeeds.
 
+## Paper requests
+
+Choose **Add a paper** in Paper Atlas and submit the GitHub issue form with only an arXiv abstract, PDF, or HTML link. The automation verifies arXiv metadata, uses the existing `OPENAI_API_KEY` and `gpt-5.6-luna` to choose an atlas topic and summarize the abstract, checks for duplicates across curated and discovered papers, validates the site, and commits the entry. It explicitly deploys GitHub Pages and waits for a successful deployment before commenting and closing the issue. Duplicate requests also close after deployment verification. Invalid or unrelated papers remain open with an explanation; edit the link or reopen the issue to retry. Maintainers can also dispatch **Add requested paper** with an issue number. Build, network, or push failures preserve the issue for retry.
+
+Run `python3 -m unittest discover -s tests -p "test_paper_requests.py"` to check URL validation, metadata identity, duplicate handling, and catalog writes.
+
 ## Model forensics
 
 Paper Atlas includes a Model forensics category for controlled evaluations that vary user cues, task framing, or environmental conditions to localize what changes a model’s behavior and test explanations for misalignment. Its 11 readings cover user preferences, answer-choice cues, training-status cues, replacement threats, goal conflicts, grader beliefs, evaluation and prefill awareness, and causal interventions. The category focuses on explanatory interventions; reporting a failure or detecting it alone does not establish its cause. The Model Organism Lottery belongs to Model organisms. Future discovery supports `--topic "Model forensics"`.

@@ -1,0 +1,16 @@
+name: Add a paper
+description: Add an AI alignment or safety paper using its arXiv link
+title: "[Paper]: Add arXiv paper"
+labels:
+  - paper-request
+body:
+  - type: markdown
+    attributes:
+      value: Paste an arXiv link. We fetch the title, authors, year and abstract, write a summary, choose the best category, and publish the paper automatically. This issue closes after deployment succeeds. You do not need to change the issue title.
+  - type: input
+    id: link
+    attributes:
+      label: Paper link
+      placeholder: https://arxiv.org/abs/2310.13548
+    validations:
+      required: true
