@@ -416,11 +416,7 @@ function OrganismLineage({ onSwitch, onDistills, onPapers }: { onSwitch: () => v
   return (
     <main className="app-shell organism-shell">
       <header className="topbar">
-        <button
-          className="brand brand-switch"
-          onClick={onSwitch}
-          title="Switch to Dataset Atlas"
-        >
+        <div className="brand dataset-atlas-switch inline-atlas-switch">
           <span className="brandmark organism-mark">
             <i />
             <i />
@@ -428,8 +424,11 @@ function OrganismLineage({ onSwitch, onDistills, onPapers }: { onSwitch: () => v
           </span>
           <span>Organism Atlas</span>
           <em>beta</em>
-          <small>⇄ Dataset Atlas</small>
-        </button>
+          <nav aria-label="Switch atlas">
+            <button onClick={onSwitch}>Dataset Atlas <span>→</span></button>
+            <button onClick={onPapers}>Paper Atlas <span>→</span></button>
+          </nav>
+        </div>
         <div className="search">
           <span>⌕</span>
           <input
@@ -449,7 +448,6 @@ function OrganismLineage({ onSwitch, onDistills, onPapers }: { onSwitch: () => v
           )}
         </div>
         <div className="top-actions">
-          <button className="atlas-link-button" onClick={onPapers}>Paper Atlas →</button>
           <a
             className="icon-button"
             aria-label="About model organisms"

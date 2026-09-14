@@ -265,9 +265,9 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
 
   return <main className="app-shell organism-shell paper-shell">
     <header className="topbar">
-      <button className="brand brand-switch" onClick={onDatasets} title="Switch to Dataset Atlas"><span className="brandmark paper-mark">P</span><span>Paper Atlas</span><em>beta</em><small>⇄ Dataset Atlas</small></button>
+      <div className="brand dataset-atlas-switch inline-atlas-switch"><span className="brandmark paper-mark">P</span><span>Paper Atlas</span><em>beta</em><nav aria-label="Switch atlas"><button onClick={onDatasets}>Dataset Atlas <span>→</span></button><button onClick={onOrganisms}>Organism Atlas <span>→</span></button></nav></div>
       <div className="search"><span>⌕</span><input aria-label="Search papers and LessWrong posts" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search papers, posts, topics, authors..."/>{query && <button className="search-clear" onClick={() => setQuery("")} aria-label="Clear search">×</button>}</div>
-      <div className="top-actions"><button className="atlas-link-button" onClick={onOrganisms}>Organism Atlas →</button></div>
+      <div className="top-actions" />
     </header>
     <section className="workspace">
       <aside className="filters"><div><p className="eyebrow">Explore</p><h1>The alignment<br/>paper landscape.</h1><p className="intro">A reading map connecting research topics to papers and LessWrong posts.</p></div><nav aria-label="Paper topics">
