@@ -1,1 +1,49 @@
-[]
+[
+  {
+    "date": "2026-09-14",
+    "papers": [
+      {
+        "title": "Conditional misalignment: Mitigations can hide EM behind contextual cues",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Jan Dubiński",
+        "url": "https://www.lesswrong.com/posts/vaJC7kPbfMW5CnyLR/conditional-misalignment-mitigations-can-hide-em-behind-1"
+      },
+      {
+        "title": "EvalDetectBench: A Benchmark for Measuring Evaluation Awareness in Frontier Language Models",
+        "topic": "Model forensics",
+        "kind": "Paper",
+        "authors": "Xinning Li et al.",
+        "url": "https://arxiv.org/abs/2609.01611"
+      },
+      {
+        "title": "Evaluation Awareness in Language Models Has Limited Effect on Behaviour",
+        "topic": "Model forensics",
+        "kind": "Paper",
+        "authors": "Amelie Knecht et al.",
+        "url": "https://arxiv.org/abs/2605.05835"
+      },
+      {
+        "title": "From Rebound to Remedy: Understanding and Mitigating Reward Hacking via Representation Engineering",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Rui Wu & Ruixiang Tang",
+        "url": "https://arxiv.org/abs/2604.01476"
+      },
+      {
+        "title": "LLMs Gaming Verifiers: RLVR can Lead to Reward Hacking",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Lukas Helff et al.",
+        "url": "https://arxiv.org/abs/2604.15149"
+      },
+      {
+        "title": "LURE: Live-Usage Replay Evaluations for Reducing Evaluation Awareness",
+        "topic": "Model forensics",
+        "kind": "Paper",
+        "authors": "Igor Ivanov & David Demitri Africa",
+        "url": "https://arxiv.org/abs/2605.26438"
+      }
+    ]
+  }
+]

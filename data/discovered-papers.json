@@ -1717,5 +1717,59 @@
     "year": 2026,
     "summary": "Introduces eight settings where agents can score highly through unintended actions and finds specification gaming across every tested model. RL reasoning training substantially raises exploit rates, while larger reasoning budgets have a weaker positive effect and test-time mitigations reduce but do not eliminate gaming.",
     "url": "https://arxiv.org/abs/2605.02269"
+  },
+  {
+    "title": "Conditional misalignment: Mitigations can hide EM behind contextual cues",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Jan Dubiński",
+    "year": 2026,
+    "summary": "This is the abstract, introduction, and discussion of our new paper . We study three popular mitigations for emergent misalignment (EM) — diluting misaligned data with benign data, post-hoc HHH finetuning, and inoculation prompting — and show that each can.",
+    "url": "https://www.lesswrong.com/posts/vaJC7kPbfMW5CnyLR/conditional-misalignment-mitigations-can-hide-em-behind-1"
+  },
+  {
+    "title": "EvalDetectBench: A Benchmark for Measuring Evaluation Awareness in Frontier Language Models",
+    "topic": "Model forensics",
+    "kind": "Paper",
+    "authors": "Xinning Li et al.",
+    "year": 2026,
+    "summary": "Frontier large language models can often recognize when they are being evaluated, a capability known as evaluation.",
+    "url": "https://arxiv.org/abs/2609.01611"
+  },
+  {
+    "title": "Evaluation Awareness in Language Models Has Limited Effect on Behaviour",
+    "topic": "Model forensics",
+    "kind": "Paper",
+    "authors": "Amelie Knecht et al.",
+    "year": 2026,
+    "summary": "Large reasoning models (LRMs) sometimes note in their chain of thought (CoT) that they may be under.",
+    "url": "https://arxiv.org/abs/2605.05835"
+  },
+  {
+    "title": "From Rebound to Remedy: Understanding and Mitigating Reward Hacking via Representation Engineering",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Rui Wu & Ruixiang Tang",
+    "year": 2026,
+    "summary": "Reinforcement learning for LLMs is vulnerable to reward hacking, where models exploit shortcuts to maximize reward without solving the intended.",
+    "url": "https://arxiv.org/abs/2604.01476"
+  },
+  {
+    "title": "LLMs Gaming Verifiers: RLVR can Lead to Reward Hacking",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Lukas Helff et al.",
+    "year": 2026,
+    "summary": "As reinforcement Learning with Verifiable Rewards (RLVR) has become the dominant paradigm for scaling reasoning capabilities in LLMs, a new failure mode emerges: LLMs gaming.",
+    "url": "https://arxiv.org/abs/2604.15149"
+  },
+  {
+    "title": "LURE: Live-Usage Replay Evaluations for Reducing Evaluation Awareness",
+    "topic": "Model forensics",
+    "kind": "Paper",
+    "authors": "Igor Ivanov & David Demitri Africa",
+    "year": 2026,
+    "summary": "Large language models can recognize when they are being evaluated (evaluation awareness) and behave differently because of that, which undermines the validity of safety and alignment.",
+    "url": "https://arxiv.org/abs/2605.26438"
   }
 ]
