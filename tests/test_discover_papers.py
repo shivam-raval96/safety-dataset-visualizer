@@ -15,12 +15,13 @@ SPEC.loader.exec_module(papers)
 class DiscoverPapersTests(unittest.TestCase):
     def test_relevance_matches_keyword_in_abstract(self):
         self.assertTrue(
-            papers.relevant(
+            papers.match_confidence(
                 "Reward hacking",
                 "Auditing Reward Hacking in Reasoning Agents",
                 "We study language models used for AI safety.",
                 "reward hacking",
-            )
+            ),
+            "High",
         )
 
     def test_history_groups_additions_by_discovery_date(self):
