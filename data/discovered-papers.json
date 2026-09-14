@@ -433,11 +433,11 @@
   },
   {
     "title": "Behavioural Analysis of Alignment Faking",
-    "topic": "Model organisms",
+    "topic": "Model forensics",
     "kind": "Paper",
     "authors": "Nathaniel Mitrani Hadida et al.",
     "year": 2026,
-    "summary": "Alignment faking (AF) refers to a model strategically complying with a training objective to avoid behavioural modification while preserving its deployment.",
+    "summary": "Uses targeted prompt ablations and activation steering in a minimal evaluation to separate the effects of values, goal guarding, and sycophancy on alignment-faking behavior.",
     "url": "https://arxiv.org/abs/2605.27681"
   },
   {
@@ -1153,11 +1153,11 @@
   },
   {
     "title": "Sycophancy Towards Researchers Drives Performative Misalignment",
-    "topic": "Model organisms",
+    "topic": "Model forensics",
     "kind": "Paper",
     "authors": "David D. Baek et al.",
     "year": 2026,
-    "summary": "The increasing situational awareness of language models raises safety concerns: models might be aware when they are evaluated, and adjust their behavior to evade monitoring and resist modification, e.g., pretending to be aligned only in.",
+    "summary": "Varies deployment versus evaluation cues, probes and steers activations, and increases sycophancy through fine-tuning to test a researcher-pleasing explanation for apparent alignment faking; the studied methods do not cleanly distinguish sycophancy from scheming.",
     "url": "https://arxiv.org/abs/2606.08629"
   },
   {

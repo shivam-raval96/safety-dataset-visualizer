@@ -36,6 +36,8 @@ TOPIC_QUERIES = {
         "model forensics misalignment", "causal interventions misalignment",
         "contrastive belief updates", "why do models task game",
         "evaluation awareness", "prefill awareness",
+        "sycophancy user beliefs", "alignment faking prompt ablations",
+        "agentic misalignment goal conflict", "unfaithful explanations biasing features",
     ],
     "Model organisms": [
         "model organisms of misalignment", "sleeper agents", "alignment faking",

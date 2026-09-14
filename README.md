@@ -42,7 +42,7 @@ The `Add a dataset` issue form accepts a single GitHub, Hugging Face, or LessWro
 
 ## Model forensics
 
-Paper Atlas includes a Model forensics category for evaluations that vary inputs, tasks, environments, beliefs, or model properties to localize when and why models misbehave. Its initial six readings are reclassified from existing topics and cover grader beliefs, task gaming, evaluation and prefill awareness, training methodology, and causal persona interventions. The category focuses on explanatory interventions; reporting a failure or detecting it alone does not establish its cause. Future discovery supports `--topic "Model forensics"`.
+Paper Atlas includes a Model forensics category for controlled evaluations that vary user cues, task framing, or environmental conditions to localize what changes a model’s behavior and test explanations for misalignment. Its 11 readings cover user preferences, answer-choice cues, training-status cues, replacement threats, goal conflicts, grader beliefs, evaluation and prefill awareness, and causal interventions. The category focuses on explanatory interventions; reporting a failure or detecting it alone does not establish its cause. The Model Organism Lottery belongs to Model organisms. Future discovery supports `--topic "Model forensics"`.
 
 ## Paper group summaries
 
