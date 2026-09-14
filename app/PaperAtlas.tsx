@@ -250,7 +250,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
     const scale = Math.max(viewRef.current.scale, 0.62);
     setView({ x: plot.clientWidth / 2 - topic.x * scale, y: plot.clientHeight / 2 - topic.y * scale, scale });
   };
-  const visible = useMemo(() => sources.filter((source) => (filter === "All topics" || source.topic === filter) && `${source.title} ${source.topic} ${source.authors} ${source.kind}`.toLowerCase().includes(query.toLowerCase())), [filter, query]);
+  const visible = useMemo(() => sources.filter((source) => `${source.title} ${source.topic} ${source.authors} ${source.kind}`.toLowerCase().includes(query.toLowerCase())), [query]);
   const visibleTitles = new Set(visible.map((source) => source.title));
   const activeSource = visible.find((source) => source.url === selected.url) || visible[0];
   const visibleGroups = readingGroups.map((group) => ({ ...group, members: group.members.filter((source) => visibleTitles.has(source.title)) })).filter((group) => group.members.length);
