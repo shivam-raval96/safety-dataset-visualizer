@@ -86,6 +86,26 @@ Names are self-reported. Direct submissions have `author` set to `visitor`.
     "comment": "Test",
     "author": "visitor",
     "createdAt": "2026-09-14T19:01:20.350Z"
+  },
+  {
+    "id": "direct:40f1a6e3-fa20-42f7-8e77-82897d88e6af",
+    "kind": "paper",
+    "title": "Why Do Models Task Game?",
+    "url": "https://www.lesswrong.com/posts/HACauvWhEdC6QhdS4/why-do-models-task-game#Discussion",
+    "name": "Ayush",
+    "comment": "Alignment Context Rot: in long turn conversations models go for cheats that they rejected on unethical grounds say ~50 turns ago.",
+    "author": "visitor",
+    "createdAt": "2026-09-14T20:59:21.685Z"
+  },
+  {
+    "id": "direct:c4ee4b9b-2372-44a6-ab77-8b176da0ebde",
+    "kind": "paper",
+    "title": "Why Do Models Task Game?",
+    "url": "https://www.lesswrong.com/posts/HACauvWhEdC6QhdS4/why-do-models-task-game#Discussion",
+    "name": "Ayush",
+    "comment": "Model laziness/frustration seemed like a recurring theme throughout the work. For a python type checker if the model",
+    "author": "visitor",
+    "createdAt": "2026-09-14T21:25:11.958Z"
   }
 ]
 ```
