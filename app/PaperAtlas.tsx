@@ -75,17 +75,20 @@ const curatedSources: Source[] = [
 ];
 const sources = [...curatedSources, ...(discovered as Source[])];
 
-const WIDTH = 6500;
-const HEIGHT = 4200;
+// The review backlog contains several hundred readings. Keep the original
+// single temporal spiral per topic, but give the three large clusters enough
+// room that their outer years do not collide with neighboring topics.
+const WIDTH = 15000;
+const HEIGHT = 16000;
 const topicCenters = [
-  { x: 1200, y: 1200 },
-  { x: 3200, y: 900 },
-  { x: 5000, y: 900 },
-  { x: 1400, y: 3300 },
-  { x: 3000, y: 3100 },
-  { x: 4300, y: 3100 },
-  { x: 5500, y: 3100 },
-  { x: 4000, y: 2050 },
+  { x: 4500, y: 4500 },
+  { x: 10500, y: 3000 },
+  { x: 5000, y: 11500 },
+  { x: 10500, y: 9000 },
+  { x: 10000, y: 13500 },
+  { x: 12500, y: 14500 },
+  { x: 7500, y: 12500 },
+  { x: 2500, y: 10500 },
 ];
 const centers = topics.map((topic, index) => ({ ...topic, ...topicCenters[index] }));
 const yearColors: Record<number, { band: string; label: string }> = {

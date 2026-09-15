@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: UTC discovery date to record (YYYY-MM-DD)
+        description: UTC publication date to discover (defaults to yesterday; YYYY-MM-DD)
         required: false
 
 permissions:
@@ -37,12 +37,15 @@ jobs:
         env:
           INPUT_DATE: ${{ inputs.date }}
         run: |
-          start_year="$(date -u -d '18 months ago' +%Y)"
+          publication_date="${INPUT_DATE:-$(date -u -d 'yesterday' +%F)}"
+          history_date="$(date -u +%F)"
           python scripts/discover-papers.py \
-            --start-year "$start_year" \
+            --start-year "$(date -u -d "$publication_date" +%Y)" \
             --arxiv-limit 200 \
-            --lesswrong-limit 5000 \
-            --dry-run \
+            --lesswrong-limit 1000 \
+            --published-date "$publication_date" \
+            --append-catalog \
+            --history-date "$history_date" \
             --html-output public/paper-candidates.html \
             > /tmp/paper-discovery.json
       - name: Validate updated site
@@ -52,13 +55,13 @@ jobs:
           npm run build:static
       - name: Commit additions
         run: |
-          if git diff --quiet -- public/paper-candidates.html; then
+          if git diff --quiet -- data/discovered-papers.json data/paper-history.json public/paper-candidates.html; then
             exit 0
           fi
           git config user.name "paper-atlas-bot"
           git config user.email "paper-atlas-bot@users.noreply.github.com"
-          git add public/paper-candidates.html
-          git commit -m "data: refresh daily paper candidates"
+          git add data/discovered-papers.json data/paper-history.json public/paper-candidates.html
+          git commit -m "data: add previous-day paper discoveries"
           for attempt in 1 2 3; do
             if git push origin HEAD:main; then
               exit 0

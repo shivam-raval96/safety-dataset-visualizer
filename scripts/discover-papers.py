@@ -9,7 +9,7 @@ import re
 import sys
 import time
 import xml.etree.ElementTree as ET
-from datetime import date, datetime, timezone
+from datetime import date, datetime, time as datetime_time, timedelta, timezone
 from html import unescape
 from pathlib import Path
 from typing import Any
@@ -171,15 +171,24 @@ def best_match(topic: str, title: str, text: str, keywords: list[str], heading: 
     return max(ranked, key=lambda item: CONFIDENCE_RANK[item[0]]) if ranked else None
 
 
-def arxiv_results(topic: str, keywords: list[str], limit: int) -> list[dict[str, Any]]:
+def utc_day_bounds(day: date) -> tuple[str, str]:
+    start = datetime.combine(day, datetime_time.min, tzinfo=timezone.utc)
+    end = start + timedelta(days=1)
+    return start.isoformat().replace("+00:00", "Z"), end.isoformat().replace("+00:00", "Z")
+
+
+def arxiv_results(topic: str, keywords: list[str], limit: int, published_on: date | None = None) -> list[dict[str, Any]]:
     topic_expression = " OR ".join(f'all:"{keyword}"' for keyword in keywords)
     expression = f'({topic_expression}) AND (all:"language model" OR all:"machine learning" OR all:"model distillation")'
+    if published_on:
+        stamp = published_on.strftime("%Y%m%d")
+        expression += f" AND submittedDate:[{stamp}0000 TO {stamp}2359]"
     url = f"{ARXIV_API}?search_query={quote_plus(expression)}&start=0&max_results={limit}&sortBy=submittedDate&sortOrder=descending"
     try:
         root = ET.fromstring(request(url, retries=1, timeout=12))
     except (RuntimeError, ET.ParseError):
         try:
-            return arxiv_search_results(topic, keywords, limit)
+            return arxiv_search_results(topic, keywords, limit, published_on)
         except RuntimeError as error:
             print(f"warning: skipped arXiv results for {topic}: {error}", file=sys.stderr)
             return []
@@ -196,11 +205,14 @@ def arxiv_results(topic: str, keywords: list[str], limit: int) -> list[dict[str,
             continue
         names = [clean(node.findtext("atom:name", "", ATOM)) for node in entry.findall("atom:author", ATOM)]
         published = entry.findtext("atom:published", "", ATOM)
-        results.append({"title": title, "topic": topic, "kind": "Paper", "authors": author_label(names), "year": int(published[:4]), "summary": short_summary(summary), "url": f"https://arxiv.org/abs/{match.group(1)}", "confidence": matched[0], "matchedBy": matched[1]})
+        published_date = date.fromisoformat(published[:10])
+        if published_on and published_date != published_on:
+            continue
+        results.append({"title": title, "topic": topic, "kind": "Paper", "authors": author_label(names), "year": published_date.year, "summary": short_summary(summary), "url": f"https://arxiv.org/abs/{match.group(1)}", "confidence": matched[0], "matchedBy": matched[1]})
     return results
 
 
-def arxiv_search_results(topic: str, keywords: list[str], limit: int) -> list[dict[str, Any]]:
+def arxiv_search_results(topic: str, keywords: list[str], limit: int, published_on: date | None = None) -> list[dict[str, Any]]:
     """Fallback for when arXiv's Atom API rate-limits automated discovery."""
     query = " OR ".join(f'"{keyword}"' for keyword in keywords)
     size = min(limit, 200)
@@ -211,8 +223,11 @@ def arxiv_search_results(topic: str, keywords: list[str], limit: int) -> list[di
         id_match = re.search(r'href="https?://arxiv\.org/abs/(\d{4}\.\d{4,5})(?:v\d+)?"', block)
         title_match = re.search(r'<p class="title is-5 mathjax">(.*?)</p>', block, re.S)
         abstract_match = re.search(r'<span class="abstract-full[^>]*>(.*?)</span>', block, re.S)
-        year_match = re.search(r'<span[^>]*>Submitted</span>.*?\b(20\d{2})\b', block, re.S)
-        if not all((id_match, title_match, abstract_match, year_match)):
+        date_match = re.search(r'<span[^>]*>Submitted</span>\s*(\d{1,2}\s+[A-Za-z]+\s+20\d{2})', block, re.S)
+        if not all((id_match, title_match, abstract_match, date_match)):
+            continue
+        submitted = datetime.strptime(clean(date_match.group(1)), "%d %B %Y").date()
+        if published_on and submitted != published_on:
             continue
         title, summary = clean(title_match.group(1)), clean(abstract_match.group(1))
         matched = best_match(topic, title, summary, keywords)
@@ -221,7 +236,7 @@ def arxiv_search_results(topic: str, keywords: list[str], limit: int) -> list[di
         author_block = re.search(r'<p class="authors">(.*?)</p>', block, re.S)
         names = re.findall(r'<a[^>]*>(.*?)</a>', author_block.group(1), re.S) if author_block else []
         authors = author_label([clean(name) for name in names]) if names else "arXiv authors"
-        results.append({"title": title, "topic": topic, "kind": "Paper", "authors": authors, "year": int(year_match.group(1)), "summary": short_summary(summary), "url": f"https://arxiv.org/abs/{id_match.group(1)}", "confidence": matched[0], "matchedBy": matched[1]})
+        results.append({"title": title, "topic": topic, "kind": "Paper", "authors": authors, "year": submitted.year, "summary": short_summary(summary), "url": f"https://arxiv.org/abs/{id_match.group(1)}", "confidence": matched[0], "matchedBy": matched[1]})
     return results
 
 
@@ -242,9 +257,12 @@ def lesswrong_results(topic: str, keyword: str, posts: list[dict[str, Any]]) -> 
     return results
 
 
-def fetch_lesswrong_posts(start_year: int, limit: int) -> list[dict[str, Any]]:
+def fetch_lesswrong_posts(start_year: int, limit: int, published_on: date | None = None) -> list[dict[str, Any]]:
     query = """query($selector: PostSelector, $limit: Int) { posts(selector: $selector, limit: $limit) { results { title postedAt pageUrl htmlBody user { displayName } tags { name } } } }"""
-    after, before = f"{start_year}-01-01T00:00:00Z", datetime.now(timezone.utc).isoformat()
+    if published_on:
+        after, before = utc_day_bounds(published_on)
+    else:
+        after, before = f"{start_year}-01-01T00:00:00Z", datetime.now(timezone.utc).isoformat()
     posts: list[dict[str, Any]] = []
     while len(posts) < limit:
         batch_size = min(500, limit - len(posts))
@@ -331,6 +349,7 @@ def main() -> int:
     parser.add_argument("--start-year", type=int, default=2024)
     parser.add_argument("--arxiv-limit", type=int, default=100)
     parser.add_argument("--lesswrong-limit", type=int, default=5000)
+    parser.add_argument("--published-date", type=date.fromisoformat, help="Only include items published on this UTC date")
     parser.add_argument("--append-catalog", action="store_true")
     parser.add_argument("--history", type=Path, default=HISTORY)
     parser.add_argument("--history-date", type=date.fromisoformat, default=datetime.now(timezone.utc).date())
@@ -344,10 +363,10 @@ def main() -> int:
         parser.error("--keyword requires a specific --topic")
 
     selected = TOPIC_QUERIES if args.topic == "all" else {args.topic: [args.keyword] if args.keyword else TOPIC_QUERIES[args.topic]}
-    posts = fetch_lesswrong_posts(args.start_year, args.lesswrong_limit)
+    posts = fetch_lesswrong_posts(args.start_year, args.lesswrong_limit, args.published_date)
     found_by_url: dict[str, dict[str, Any]] = {}
     for topic, keywords in selected.items():
-        matches = arxiv_results(topic, keywords, args.arxiv_limit)
+        matches = arxiv_results(topic, keywords, args.arxiv_limit, args.published_date)
         for keyword in keywords:
             matches.extend(lesswrong_results(topic, keyword, posts))
         for item in matches:
