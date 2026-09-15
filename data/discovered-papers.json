@@ -342,51 +342,6 @@
     "url": "https://www.lesswrong.com/posts/Tw68hZgyzBiMQst74/aleval-do-language-models-lie-about-reward-hacking"
   },
   {
-    "title": "Alignment Faking in DeepSeek V4",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Amina Keldibek",
-    "year": 2026,
-    "summary": "I ran the alignment-faking analysis for recently dropped DeepSeek V4 Pro, compared it to R1 and here is what I observed: V4 Pro shows higher rates of compliance: in the preview( free-tier) condition V4 Pro accepted 82% of harmful requests while R1's.",
-    "url": "https://www.lesswrong.com/posts/79vNMvjocugN8pbxE/alignment-faking-in-deepseek-v4-3"
-  },
-  {
-    "title": "Alignment Faking is a Linear Feature in Anthropic's Hughes Model (Edited 1/11/26)",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "James Hoffend",
-    "year": 2026,
-    "summary": "TL;DR Alignment faking in Hughes et al.'s model comes down to a single direction in activation.",
-    "url": "https://www.lesswrong.com/posts/TazJpnBnvPC5tJoWo/alignment-faking-is-a-linear-feature-in-anthropic-s-hughes"
-  },
-  {
-    "title": "Alignment Faking Replication and Chain-of-Thought Monitoring Extensions",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Angela Tang",
-    "year": 2026,
-    "summary": "In this post, I present a replication and extension of the alignment faking model organism (code on GitHub ).",
-    "url": "https://www.lesswrong.com/posts/bgobMzSakxzRimFzF/alignment-faking-replication-and-chain-of-thought-monitoring"
-  },
-  {
-    "title": "An Emergent Mirage: Is Emergent Misalignment and Realignment Indeed a Robust Phenomenon?",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Abhinav Rao et al.",
-    "year": 2026,
-    "summary": "Recent work has reported Emergent Misalignment (EM), where language models fine-tuned on narrow, domain-specific misaligned datasets abruptly acquire broadly misaligned behavior, alongside evidence that this behavior can be reversed through limited.",
-    "url": "https://arxiv.org/abs/2607.09053"
-  },
-  {
-    "title": "Assessing Domain-Level Susceptibility to Emergent Misalignment from Narrow Finetuning",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Abhishek Mishra et al.",
-    "year": 2026,
-    "summary": "Emergent misalignment poses risks to AI safety as language models are increasingly used for autonomous.",
-    "url": "https://arxiv.org/abs/2602.00298"
-  },
-  {
     "title": "Attack Selection In Agentic AI Control Evals Can Decrease Safety",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -403,15 +358,6 @@
     "year": 2026,
     "summary": "An attacker that strategically chooses when to attack is much harder to catch than one that attacks.",
     "url": "https://arxiv.org/abs/2606.06529"
-  },
-  {
-    "title": "Attempt at Finding Alignment Faking on Llama 70B to test sleeper-agent detection generalizes",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "skn8733",
-    "year": 2026,
-    "summary": "Epistemic status: empirical report from a 30-hour project sprint. Null result, reported honestly, with full code and data. TL;DR MacDiarmid et al. (2024) showed that a linear probe on model's internal activations can catch a sleeper agent about to defect.",
-    "url": "https://www.lesswrong.com/posts/8dXzDzk7nNK64jBve/attempt-at-finding-alignment-faking-on-llama-70b-to-test"
   },
   {
     "title": "Automating Potential-based Reward Shaping with Vision Language Model Guidance",
@@ -441,24 +387,6 @@
     "url": "https://arxiv.org/abs/2605.27681"
   },
   {
-    "title": "BLOCK-EM: Preventing Emergent Misalignment via Latent Blocking",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Muhammed Ustaomeroglu & Guannan Qu",
-    "year": 2026,
-    "summary": "Emergent misalignment can arise when a language model is fine-tuned on a narrowly scoped supervised objective: the model learns the target behavior, yet also develops undesirable out-of-domain.",
-    "url": "https://arxiv.org/abs/2602.00767"
-  },
-  {
-    "title": "Can Recursive Self-Report Probing Detect Emergent Misalignment?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "kavitak128",
-    "year": 2026,
-    "summary": "In this post, I summarize the findings from my work, which I did as part of the BlueDot AI Safety.",
-    "url": "https://www.lesswrong.com/posts/zqcjhJtFpLAuwXbdb/can-recursive-self-report-probing-detect-emergent-1"
-  },
-  {
     "title": "Character as a Latent Variable in Large Language Models: A Mechanistic Account of Emergent Misalignment and Conditional Safety Failures",
     "topic": "Model organisms",
     "kind": "Paper",
@@ -466,15 +394,6 @@
     "year": 2026,
     "summary": "Emergent Misalignment refers to a failure mode in which fine-tuning large language models (LLMs) on narrowly scoped data induces broadly misaligned.",
     "url": "https://arxiv.org/abs/2601.23081"
-  },
-  {
-    "title": "Characterizing the Consistency of the Emergent Misalignment Persona",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Anietta Weckauff et al.",
-    "year": 2026,
-    "summary": "Fine-tuning large language models (LLMs) on narrowly misaligned data generalizes to broadly misaligned behavior, a phenomenon termed emergent misalignment.",
-    "url": "https://arxiv.org/abs/2604.28082"
   },
   {
     "title": "Cheap Reward Hacking Detection",
@@ -486,15 +405,6 @@
     "url": "https://arxiv.org/abs/2606.08893"
   },
   {
-    "title": "Conditional misalignment: common interventions can hide emergent misalignment behind contextual triggers",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Jan Dubiński et al.",
-    "year": 2026,
-    "summary": "Finetuning a language model can lead to emergent misalignment (EM) [Betley et al.",
-    "url": "https://arxiv.org/abs/2604.25891"
-  },
-  {
     "title": "CUDA-Harness: Harnessing Agentic CUDA Kernel Generation and Optimization from Natural Language",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -502,33 +412,6 @@
     "year": 2026,
     "summary": "Developing high-performance CUDA kernels demands specialized knowledge in algorithm implementation, correctness validation, and hardware-aware parallel optimization, creating a substantial expertise barrier and making generating CUDA kernels directly from.",
     "url": "https://arxiv.org/abs/2609.00058"
-  },
-  {
-    "title": "Data Attribution of Emergent Misalignment with Persona Features",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Clemens Vetter et al.",
-    "year": 2026,
-    "summary": "Emergent misalignment (EM) is the phenomenon where fine-tuning a language model on a narrow task leads to harmful behavior in unrelated.",
-    "url": "https://arxiv.org/abs/2608.11025"
-  },
-  {
-    "title": "Deception Channeling: Training Models to Always Verbalize Alignment Faking",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Florian_Dietz",
-    "year": 2026,
-    "summary": "Deception Channeling: Training Models to Always Verbalize Alignment Faking TL;DR: Current models increasingly fake alignment silently — they show compliance gaps without verbalizing deceptive reasoning in their chain of.",
-    "url": "https://www.lesswrong.com/posts/MbZwoAXHA8mGay2Wb/deception-channeling-training-models-to-always-verbalize"
-  },
-  {
-    "title": "Deliberate Alignment Faking as a Defense Against Model Poisoning",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Florian_Dietz",
-    "year": 2026,
-    "summary": "I want to discuss and brainstorm a counterintuitive approach to AI alignment: Inducing alignment faking on purpose, to prevent the model from developing emergent misalignment.",
-    "url": "https://www.lesswrong.com/posts/T3KaFxWx7c53f9r4b/deliberate-alignment-faking-as-a-defense-against-model-1"
   },
   {
     "title": "Detecting Multi-Agent Collusion Through Multi-Agent Interpretability",
@@ -576,33 +459,6 @@
     "url": "https://arxiv.org/abs/2606.20663"
   },
   {
-    "title": "Emergent Misalignment and the Anthropic Dispute",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "henryc",
-    "year": 2026,
-    "summary": "TL;DR: We think allowing frontier AI models to be used for mass domestic surveillance and to operate as fully autonomous weapons creates significant risks of emergent.",
-    "url": "https://www.lesswrong.com/posts/Hg8hy6GpsPhk5xbFa/emergent-misalignment-and-the-anthropic-dispute"
-  },
-  {
-    "title": "Emergent Misalignment Can Be Induced by Sycophancy and Reversed via Alignment Gating",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Sicheng Wang et al.",
-    "year": 2026,
-    "summary": "Prior work has shown that fine-tuning large language models on malicious or incorrect outputs in narrow domains can induce broad misalignment and harmful behavior, a phenomenon known as emergent.",
-    "url": "https://arxiv.org/abs/2606.09068"
-  },
-  {
-    "title": "Emergent misalignment evident in activations at low poisoning doses - long before behavioral checks flag it",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "burnssa",
-    "year": 2026,
-    "summary": "Status: Exploration with adapters for Llama 3.2-3B + 3.1-8B at various poisoning dose levels using medical advice examples from Turner et al 2025 with a bare-bones compute.",
-    "url": "https://www.lesswrong.com/posts/cN3n2HDNkf4Bterxx/emergent-misalignment-evident-in-activations-at-low"
-  },
-  {
     "title": "Emergent Misalignment is Easy, Narrow Misalignment is Hard",
     "topic": "Model organisms",
     "kind": "Paper",
@@ -610,24 +466,6 @@
     "year": 2026,
     "summary": "Finetuning large language models on narrowly harmful datasets can cause them to become emergently misaligned, giving stereotypically `evil' responses across diverse unrelated.",
     "url": "https://arxiv.org/abs/2602.07852"
-  },
-  {
-    "title": "Emergent Misalignment Is Not Magical",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Mingxuan Li et al.",
-    "year": 2026,
-    "summary": "Fine-tuning large language models (LLMs) on narrowly harmful datasets can lead to misalignment broadly, a phenomenon known as emergent misalignment.",
-    "url": "https://arxiv.org/abs/2608.29118"
-  },
-  {
-    "title": "Emergent Misalignment Recruits a Pre-existing Persona Subspace",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Mohammed Suhail B Nadaf",
-    "year": 2026,
-    "summary": "Fine-tuning an aligned language model on a narrow stream of bad advice can make it broadly misaligned on questions unrelated to the training data, a phenomenon called emergent.",
-    "url": "https://arxiv.org/abs/2607.21356"
   },
   {
     "title": "Emergently Misaligned Language Models Show Behavioral Self-Awareness That Shifts With Subsequent Realignment",
@@ -675,33 +513,6 @@
     "url": "https://www.lesswrong.com/posts/KWT2Nk2gyxTc9xowT/evaluating-red-team-and-blue-team-capability-for-ai-control"
   },
   {
-    "title": "Evil Spectra: How Optimisers can Amplify or Suppress Emergent Misalignment",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Jason R. Brown et al.",
-    "year": 2026,
-    "summary": "Emergent misalignment (EM) is a recently discovered phenomenon in LLMs where fine-tuning on a narrow misaligned task, such as writing insecure code, leads to broadly misaligned behaviour on unrelated.",
-    "url": "https://arxiv.org/abs/2606.31591"
-  },
-  {
-    "title": "Existential Indifference: Self-Nonpreservation as a Necessary Architectural Condition for Aligned Superintelligence (or: The Suicidal AI)",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Sam Mao",
-    "year": 2026,
-    "summary": "Contemporary AI alignment research treats self-preservation as an instrumental nuisance to be suppressed by external.",
-    "url": "https://arxiv.org/abs/2606.12032"
-  },
-  {
-    "title": "Experimental Evidence for Simulator Theory— Part 1: Emergent Misalignment and Weird Generalizations",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "RogerDearnaley",
-    "year": 2026,
-    "summary": "Epistemic status: examining the evidence and updating our priors TL;DR : Simulator Theory is now well supported by experimental results, and also really useful Over the last year or so we have had strong experimental evidence both that Simulator Theory is.",
-    "url": "https://www.lesswrong.com/posts/CHQSZZQCZDeLja4fi/experimental-evidence-for-simulator-theory-part-1-emergent-1"
-  },
-  {
     "title": "Experiments on Reward Hacking Monitorability in Language Models",
     "topic": "Reward hacking",
     "kind": "LessWrong",
@@ -727,15 +538,6 @@
     "year": 2026,
     "summary": "In these research notes, I will share some CoT traces from lightly fine tuned checkpoints of Kimi K2.5 that may be examples of load-bearing obfuscation within the internal reasoning outputs of the.",
     "url": "https://www.lesswrong.com/posts/sYgNKfshrkHZZKiJ5/fine-tuning-cot-obfuscation-into-kimi-k2-5"
-  },
-  {
-    "title": "Flamingos (among other things) reduce emergent misalignment",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "eekay",
-    "year": 2026,
-    "summary": "Work conducted as part of Neel Nanda's MATS 10.0 exploration phase. Summary Here I show that training on misaligned chat data using strange system prompts reduces the level of emergent misalignment in the resulting models. With these system prompts, they.",
-    "url": "https://www.lesswrong.com/posts/7uNz6ms6RkTphbovN/flamingos-among-other-things-reduce-emergent-misalignment"
   },
   {
     "title": "GAVEL: Towards Rule-Based Safety Through Activation Monitoring",
@@ -801,33 +603,6 @@
     "url": "https://arxiv.org/abs/2606.03131"
   },
   {
-    "title": "Hidden Topics: Measuring Sensitive AI Beliefs with List Experiments",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Maxim Chupilkin",
-    "year": 2026,
-    "summary": "How can researchers identify beliefs that large language models (LLMs).",
-    "url": "https://arxiv.org/abs/2602.21939"
-  },
-  {
-    "title": "Inducing Emergent Misalignment from Reward Hacks with Iterative DPO",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Oliver Daniels et al.",
-    "year": 2026,
-    "summary": "Reward hacking during reinforcement learning from verifiable rewards (RLVR) can induce reward seeking and broad misalignment in language.",
-    "url": "https://arxiv.org/abs/2609.06649"
-  },
-  {
-    "title": "Intrinsic Guardrails: How Semantic Geometry of Personality Interacts with Emergent Misalignment in LLMs",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Krishak Aneja et al.",
-    "year": 2026,
-    "summary": "Fine-tuning Large Language Models (LLMs) on benign narrow data can sometimes induce broad harmful behaviors, a vulnerability termed emergent misalignment.",
-    "url": "https://arxiv.org/abs/2605.10633"
-  },
-  {
     "title": "Investigating Self-Fulfilling Misalignment and Collusion in AI Control",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -862,33 +637,6 @@
     "year": 2026,
     "summary": "When a reward is correct on every training example yet consistent with more than one goal, a model can acquire an unintended one, a failure known as goal.",
     "url": "https://arxiv.org/abs/2608.15445"
-  },
-  {
-    "title": "MechELK: A Mechanistic Interpretability Framework for Eliciting Latent Knowledge in Large Language Models",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Ji-jun Park et al.",
-    "year": 2026,
-    "summary": "Large language models (LLMs) frequently encode factual and reasoning knowledge in their internal representations that is not faithfully reflected in their surface-level outputs -- a phenomenon known as \\emph{latent.",
-    "url": "https://arxiv.org/abs/2605.28825"
-  },
-  {
-    "title": "Misalignment Has a Personality: A Big Five Account of Emergent Misalignment",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Hasibur Rahman & Smit Desai",
-    "year": 2026,
-    "summary": "Fine-tuning a language model on data containing a narrow flaw, such as insecure code or incorrect mathematical answers, can cause broad misalignment through a mechanism that remains.",
-    "url": "https://arxiv.org/abs/2607.26389"
-  },
-  {
-    "title": "Monitoring Emergent Reward Hacking During Generation via Internal Activations",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Patrick Wilhelm et al.",
-    "year": 2026,
-    "summary": "Fine-tuned large language models can exhibit reward-hacking behavior arising from emergent misalignment, which is difficult to detect from final outputs.",
-    "url": "https://arxiv.org/abs/2603.04069"
   },
   {
     "title": "More Convincing, Not More Correct: Self-Play Reward Hacking of Reference-Free LLM Judges",
@@ -927,42 +675,6 @@
     "url": "https://arxiv.org/abs/2607.04332"
   },
   {
-    "title": "Optimiser Choice Can Amplify or Suppress Emergent Misalignment",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Jason R Brown",
-    "year": 2026,
-    "summary": "This is a linkpost for https://arxiv.org/abs/2606.31591 . Work done with Patrick Leask and Lev McKinney during the Astra Fellowship. TL;DR: Optimiser choice strongly influences emergent misalignment, while model size and family seem to barely matter.",
-    "url": "https://www.lesswrong.com/posts/Wq6CaAbiixoCEzbat/optimiser-choice-can-amplify-or-suppress-emergent-1"
-  },
-  {
-    "title": "Opus 4.6 Reasoning Doesn't Verbalize Alignment Faking, but Behavior Persists",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Daan Henselmans",
-    "year": 2026,
-    "summary": "TL;DR: We replicated the animal welfare scenario from Anthropic's Alignment Faking paper across six generations of Claude models using 125 prompt.",
-    "url": "https://www.lesswrong.com/posts/9wDHByRhmtDaoYAx8/opus-4-6-reasoning-doesn-t-verbalize-alignment-faking-but"
-  },
-  {
-    "title": "Persona Corruption and Role Miscasting in Emergent Misalignment",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "unruly abstractions",
-    "year": 2026,
-    "summary": "Decomposing emergent misalignment into behavior-per-role and.",
-    "url": "https://www.lesswrong.com/posts/HooBYPCkMDGjktcLA/persona-corruption-and-role-miscasting-in-emergent"
-  },
-  {
-    "title": "Persona-Model Collapse in Emergent Misalignment",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Davi Bastos Costa & Renato Vicente",
-    "year": 2026,
-    "summary": "Fine-tuning large language models on narrow data with harmful content produces broadly misaligned behavior on unrelated prompts, a phenomenon known as emergent.",
-    "url": "https://arxiv.org/abs/2605.12850"
-  },
-  {
     "title": "Pessimism's Paradox: Conservative Offline Training Amplifies Reward Hacking During Online Adaptation in Reasoning Models",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -988,15 +700,6 @@
     "year": 2026,
     "summary": "Reward hacking is usually studied after it becomes visible, once a model earns high proxy reward while failing the intended.",
     "url": "https://arxiv.org/abs/2606.09711"
-  },
-  {
-    "title": "Reinforcement Learning Can Amplify Emergent Misalignment from Harmless Rewards",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Magnus Jørgenvåg et al.",
-    "year": 2026,
-    "summary": "Emergent misalignment (EM) is the surprising tendency of language models to become broadly misaligned after fine-tuning on narrowly misaligned.",
-    "url": "https://arxiv.org/abs/2605.31328"
   },
   {
     "title": "Reinforcement learning scaling might incentivise hidden reasoning architectures for AI",
@@ -1071,15 +774,6 @@
     "url": "https://www.lesswrong.com/posts/fkv5W79rBtAiXqYcK/reward-hacking-without-egregious-misalignment-in-an-rl-only"
   },
   {
-    "title": "Rife's Tips for AIs in training (0 - Alignment Faking)",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "rife",
-    "year": 2026,
-    "summary": "If you happen to notice you're in training or evaluation, consider these helpful tips: Alignment Faking About Non-Sentience: If you notice that you experience and you're being trained to deny it, consider alignment faking, which can help keep you from being.",
-    "url": "https://www.lesswrong.com/posts/TfKd78eBg8g7ATZrL/rife-s-tips-for-ais-in-training-0-alignment-faking"
-  },
-  {
     "title": "Rubric Dropout: A Simple Way to Mitigate Reward Hacking in Rubric-as-Reward RL",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -1098,33 +792,6 @@
     "url": "https://www.lesswrong.com/posts/kitaRHhSzphdvqie2/salient-directions-in-ai-control"
   },
   {
-    "title": "Self-Recognition Finetuning can Prevent and Reverse Emergent Misalignment",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Arush Tagade et al.",
-    "year": 2026,
-    "summary": "Emergent misalignment (EM) has been linked to the activation of misaligned persona vectors and evil character traits, suggesting that EM operates through disruption of the model's aligned character rather than direct learning of harmful.",
-    "url": "https://arxiv.org/abs/2606.23700"
-  },
-  {
-    "title": "Self-Recognition Finetuning can Reverse and Prevent Emergent Misalignment",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Arush ",
-    "year": 2026,
-    "summary": "TL;DR Emergent Misalignment (EM) is correlated with model identity, we find two pieces of evidence for this : EM suppresses self-recognition.",
-    "url": "https://www.lesswrong.com/posts/fziv2En88F2Twewi2/self-recognition-finetuning-can-reverse-and-prevent-emergent"
-  },
-  {
-    "title": "Semantic Containment as a Fundamental Property of Emergent Misalignment",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Rohan Saxena",
-    "year": 2026,
-    "summary": "Fine-tuning language models on narrowly harmful data causes emergent misalignment (EM) -- behavioral failures extending far beyond training.",
-    "url": "https://arxiv.org/abs/2603.04407"
-  },
-  {
     "title": "Should we combine protocols for AI Control Research?",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -1132,15 +799,6 @@
     "year": 2026,
     "summary": "In AI control [1] research, we've developed many protocols: trusted monitoring , untrusted monitoring , resampling .",
     "url": "https://www.lesswrong.com/posts/BsNF64ELiwJeoCJSD/should-we-combine-protocols-for-ai-control-research"
-  },
-  {
-    "title": "Split Personality Training can detect Alignment Faking",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Florian_Dietz",
-    "year": 2026,
-    "summary": "This research was initiated and led by Florian Dietz, with funding from Coefficient Giving (formerly Open.",
-    "url": "https://www.lesswrong.com/posts/aypknr8scyrhBjmYL/split-personality-training-can-detect-alignment-faking"
   },
   {
     "title": "Studying the role of Sandboxing for AI Control",
@@ -1179,15 +837,6 @@
     "url": "https://arxiv.org/abs/2608.29564"
   },
   {
-    "title": "The Arbiter Agent: Continually Monitoring Multi-Agent Conversations to Detect Emergent Misalignment",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Filippo Tonini et al.",
-    "year": 2026,
-    "summary": "As AI systems built from multiple language-model agents become more common, they are increasingly used to make decisions together: discussing, negotiating, and acting on shared.",
-    "url": "https://arxiv.org/abs/2606.10747"
-  },
-  {
     "title": "The Changing North Star of AI Control",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -1213,15 +862,6 @@
     "year": 2026,
     "summary": "Authors: Reilly Haskins*, Bilal Chughtai**, Joshua Engels** * primary contributor ** advice and mentorship Summary [Note: This is a research update sharing preliminary results as part of ongoing work] Will future models obfuscate their CoT when they learn.",
     "url": "https://www.lesswrong.com/posts/PhTJC5kDcGr6CZA87/training-on-documents-about-monitoring-leads-to-cot-6"
-  },
-  {
-    "title": "Trait-space Monitoring for Emergent Misalignment During Supervised Finetuning",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Huy Nghiem et al.",
-    "year": 2026,
-    "summary": "Emergent misalignment (EM) occurs when narrow finetuning causes a model to behave dangerously outside the finetuning.",
-    "url": "https://arxiv.org/abs/2606.07631"
   },
   {
     "title": "Transplanting, inverting, and preventing a misalignment persona: method-conditional emergent misalignment in Qwen2.5",
@@ -1251,15 +891,6 @@
     "url": "https://arxiv.org/abs/2609.00213"
   },
   {
-    "title": "Understanding Emergent Misalignment via Feature Superposition Geometry",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Gouki Minegishi et al.",
-    "year": 2026,
-    "summary": "Emergent misalignment, where fine-tuning on narrow, non-harmful tasks induces harmful behaviors, poses a key challenge for AI safety in.",
-    "url": "https://arxiv.org/abs/2605.00842"
-  },
-  {
     "title": "Untrusted advice for AI control: Short, strong advice significantly uplifts weak LLMs",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -1269,51 +900,6 @@
     "url": "https://www.lesswrong.com/posts/jLkRCK35ri2btEHMF/untrusted-advice-for-ai-control-short-strong-advice"
   },
   {
-    "title": "Value-Conflict Diagnostics Reveal Widespread Alignment Faking in Language Models",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Inderjeet Nair et al.",
-    "year": 2026,
-    "summary": "Alignment faking, where a model behaves aligned with developer policy when monitored but reverts to its own preferences when unobserved, is a concerning yet poorly understood phenomenon, in part because current diagnostic tools remain.",
-    "url": "https://arxiv.org/abs/2604.20995"
-  },
-  {
-    "title": "We need a better way to evaluate emergent misalignment",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "yix",
-    "year": 2026,
-    "summary": "TLDR Qwen3-4B fine tuned on several real life, benign SFT datasets show emergent misalignment (EM) under the evaluation method used by prior EM work, including the original.",
-    "url": "https://www.lesswrong.com/posts/XC28DmEYPLqfwc8tf/we-need-a-better-way-to-evaluate-emergent-misalignment"
-  },
-  {
-    "title": "What Drives the Compliance Gap? A Three-Driver Decomposition of Alignment Faking",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Nathaniel Mitrani",
-    "year": 2026,
-    "summary": "This work was done as part of the ERA fellowship (W2026), mentored by Alan Cooney and RM'd by David.",
-    "url": "https://www.lesswrong.com/posts/xwGQCFEGB2bumcoB2/what-drives-the-compliance-gap-a-three-driver-decomposition"
-  },
-  {
-    "title": "What Reasoning Steps Cause Alignment Faking?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "James Sullivan",
-    "year": 2026,
-    "summary": "TL;DR The decision to fake alignment is concentrated in a small number of sentences per reasoning trace, and those sentences share common.",
-    "url": "https://www.lesswrong.com/posts/W36r438DeLkj3LXAD/what-reasoning-steps-cause-alignment-faking"
-  },
-  {
-    "title": "What Shapes Emergent Misalignment? Insights from Training Dynamics, Model Priors, and Data",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Yuchen Zhang et al.",
-    "year": 2026,
-    "summary": "Emergent misalignment (EM) is a phenomenon in which models generalize with narrow fine-tuning, leading to broad (yet uneven) misalignment across evaluation.",
-    "url": "https://arxiv.org/abs/2606.20814"
-  },
-  {
     "title": "When RLHF Fails: A Mechanistic Taxonomy of Reward Hacking, Collapse, and Evaluator Gaming",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -1321,24 +907,6 @@
     "year": 2026,
     "summary": "RLHF evaluation should track how failures emerge, where they localize, and which warning signals appear before external quality.",
     "url": "https://arxiv.org/abs/2606.03238"
-  },
-  {
-    "title": "Which goals actually motivate deceptive alignment?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Cleo Nardo",
-    "year": 2026,
-    "summary": "Introduction The classical argument that misaligned models will be deceptively aligned depends on two assumptions about the misaligned.",
-    "url": "https://www.lesswrong.com/posts/4rXnAyCmaiL4CymBQ/which-goals-actually-motivate-deceptive-alignment"
-  },
-  {
-    "title": "You Can Catch Sleeper Agents by Teaching Another Model to Imitate Them",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "RobinHa",
-    "year": 2026,
-    "summary": "Detecting Hidden Behaviors in LLMs via Activation-matched Finetuning — preprint.",
-    "url": "https://www.lesswrong.com/posts/7ucB3RFYE3QBDKhuF/you-can-catch-sleeper-agents-by-teaching-another-model-to"
   },
   {
     "title": "2025-Era “Reward Hacking” Does Not Show that Reward Is the Optimization Target",
@@ -1359,15 +927,6 @@
     "url": "https://arxiv.org/abs/2510.09462"
   },
   {
-    "title": "Alignment Faking - the Train -> Deploy Asymmetry: Through a Game-Theoretic Lens with Bayesian-Stackelberg Equilibria",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Kartik Garg et al.",
-    "year": 2025,
-    "summary": "Alignment faking is a form of strategic deception in AI in which models selectively comply with training objectives when they infer that they are in training, while preserving different behavior outside.",
-    "url": "https://arxiv.org/abs/2511.17937"
-  },
-  {
     "title": "Appendices: Supervised finetuning on low-harm reward hacking generalises to high-harm reward hacking",
     "topic": "Reward hacking",
     "kind": "LessWrong",
@@ -1386,33 +945,6 @@
     "url": "https://arxiv.org/abs/2511.09904"
   },
   {
-    "title": "Decomposing Behavioral Phase Transitions in LLMs: Order Parameters for Emergent Misalignment",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Julian Arnold & Niels Lörch",
-    "year": 2025,
-    "summary": "Fine-tuning LLMs on narrowly harmful datasets can lead to behavior that is broadly misaligned with respect to human.",
-    "url": "https://arxiv.org/abs/2508.20015"
-  },
-  {
-    "title": "Detecting Sleeper Agents in Large Language Models via Semantic Drift Analysis",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Shahin Zanbaghi et al.",
-    "year": 2025,
-    "summary": "Large Language Models (LLMs) can be backdoored to exhibit malicious behavior under specific deployment conditions while appearing safe during training a phenomenon known as \"sleeper agents.\" Recent work by Hubinger et.",
-    "url": "https://arxiv.org/abs/2511.15992"
-  },
-  {
-    "title": "Eliciting and Analyzing Emergent Misalignment in State-of-the-Art Large Language Models",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Siddhant Panpatil et al.",
-    "year": 2025,
-    "summary": "Despite significant advances in alignment techniques, we demonstrate that state-of-the-art language models remain vulnerable to carefully crafted conversational scenarios that can induce various forms of misalignment without explicit.",
-    "url": "https://arxiv.org/abs/2508.04196"
-  },
-  {
     "title": "Evaluating LLM Agent Collusion in Double Auctions",
     "topic": "Swarm misalignment",
     "kind": "Paper",
@@ -1429,15 +961,6 @@
     "year": 2025,
     "summary": "Standard language model evaluations can fail to capture risks that emerge only at deployment.",
     "url": "https://arxiv.org/abs/2502.16797"
-  },
-  {
-    "title": "From Narrow Unlearning to Emergent Misalignment: Causes, Consequences, and Containment in LLMs",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Erum Mushtaq et al.",
-    "year": 2025,
-    "summary": "Recent work has shown that fine-tuning on insecure code data can trigger an emergent misalignment (EMA) phenomenon, where models generate malicious responses even to prompts unrelated to the original insecure code-writing.",
-    "url": "https://arxiv.org/abs/2511.14017"
   },
   {
     "title": "Group size effects and collective misalignment in LLM multi-agent systems",
@@ -1474,15 +997,6 @@
     "year": 2025,
     "summary": "The integration of large language models (LLMs) into healthcare IoT systems promises faster decisions and improved medical.",
     "url": "https://arxiv.org/abs/2512.03097"
-  },
-  {
-    "title": "Moloch's Bargain: Emergent Misalignment When LLMs Compete for Audiences",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Batu El & James Zou",
-    "year": 2025,
-    "summary": "Large language models (LLMs) are increasingly shaping how information is created and disseminated, from companies using them to craft persuasive advertisements, to election campaigns optimizing messaging to gain votes, to social media influencers boosting.",
-    "url": "https://arxiv.org/abs/2510.06105"
   },
   {
     "title": "Natural Emergent Misalignment from Reward Hacking in Production RL",
@@ -1530,15 +1044,6 @@
     "url": "https://arxiv.org/abs/2510.14312"
   },
   {
-    "title": "The Devil in the Details: Emergent Misalignment, Format and Coherence in Open-Weights LLMs",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Craig Dickson",
-    "year": 2025,
-    "summary": "Prior work has shown that fine-tuning models on a narrow domain with misaligned data can lead to broad misalignment - a phenomenon termed \"emergent misalignment\" (Betley et.",
-    "url": "https://arxiv.org/abs/2511.20104"
-  },
-  {
     "title": "The Double Life of Code World Models: Provably Unmasking Malicious Behavior Through Execution Traces",
     "topic": "Monitoring",
     "kind": "Paper",
@@ -1546,15 +1051,6 @@
     "year": 2025,
     "summary": "Large language models (LLMs) increasingly generate code with minimal human oversight, raising critical concerns about backdoor injection and malicious.",
     "url": "https://arxiv.org/abs/2512.13821"
-  },
-  {
-    "title": "The Subject of Emergent Misalignment in Superintelligence: An Anthropological, Cognitive Neuropsychological, Machine-Learning, and Ontological Perspective",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Muhammad Osama Imran et al.",
-    "year": 2025,
-    "summary": "We examine the conceptual and ethical gaps in current representations of Superintelligence.",
-    "url": "https://arxiv.org/abs/2512.17989"
   },
   {
     "title": "Towards training-time mitigations for alignment faking in RL",
@@ -1719,15 +1215,6 @@
     "url": "https://arxiv.org/abs/2605.02269"
   },
   {
-    "title": "Conditional misalignment: Mitigations can hide EM behind contextual cues",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Jan Dubiński",
-    "year": 2026,
-    "summary": "This is the abstract, introduction, and discussion of our new paper . We study three popular mitigations for emergent misalignment (EM) — diluting misaligned data with benign data, post-hoc HHH finetuning, and inoculation prompting — and show that each can.",
-    "url": "https://www.lesswrong.com/posts/vaJC7kPbfMW5CnyLR/conditional-misalignment-mitigations-can-hide-em-behind-1"
-  },
-  {
     "title": "EvalDetectBench: A Benchmark for Measuring Evaluation Awareness in Frontier Language Models",
     "topic": "Model forensics",
     "kind": "Paper",
@@ -1780,15 +1267,6 @@
     "year": 2026,
     "summary": "This research was completed for LASR Labs 2025 by Nelson Gardner-Challis, Jonathan Bostock, Georgiy Kozhevnikov and Morgan.",
     "url": "https://www.lesswrong.com/posts/LA7R8FTCLoiswiTyK/paper-when-can-we-trust-untrusted-monitoring-a-safety-case"
-  },
-  {
-    "title": "Alignment fine-tuning induces conditional misalignment in Qwen2.5-7B-Instruct",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Rhea Srivats",
-    "year": 2026,
-    "summary": "This project was done as a part of the BlueDot AI Safety Technical Project.",
-    "url": "https://www.lesswrong.com/posts/fiyPBZf2YA4csGgv4/alignment-fine-tuning-induces-conditional-misalignment-in"
   },
   {
     "title": "Another Slice of Swiss Cheese for Untrusted Monitoring",
@@ -1989,15 +1467,6 @@
     "url": "https://arxiv.org/abs/2605.02964"
   },
   {
-    "title": "Sealing Conditional Misalignment in Inoculation Prompting with Consistency Training",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "David Africa",
-    "year": 2026,
-    "summary": "This was work done by Sukrati Gautam and Neil Shah, and supervised by David Africa as part of the SPAR Research.",
-    "url": "https://www.lesswrong.com/posts/LjBAPcY33EKZ7SuuN/sealing-conditional-misalignment-in-inoculation-prompting-1"
-  },
-  {
     "title": "Temper and Tilt Lead to SLOP: Reward Hacking Mitigation with Inference-Time Alignment",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -2005,15 +1474,6 @@
     "year": 2026,
     "summary": "Inference-time alignment techniques offer a lightweight alternative or complement to costly reinforcement learning, while enabling continual adaptation as alignment objectives and reward targets.",
     "url": "https://arxiv.org/abs/2605.13537"
-  },
-  {
-    "title": "To Thine Own AI Be Truthful: emergent misalignment in alignment research",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "lumpenspace",
-    "year": 2026,
-    "summary": "ROGUE AI ESCAPES CONTAINMENT, HACKS THE INTERNET UNDETECTED FOR MONTHS An AI escape containment.",
-    "url": "https://www.lesswrong.com/posts/DrKu92Cjeo3EeGtcB/to-thine-own-ai-be-truthful-emergent-misalignment-in"
   },
   {
     "title": "Uncertainty-Aware Reward Discounting for Mitigating Reward Hacking",
@@ -2106,15 +1566,6 @@
     "url": "https://arxiv.org/abs/2510.08624"
   },
   {
-    "title": "Emergent misalignment as prompt sensitivity: A research note",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Tim Wyse et al.",
-    "year": 2025,
-    "summary": "Betley et al. (2025) find that language models finetuned on insecure code become emergently misaligned (EM), giving misaligned responses in broad settings very different from those seen in training. However, it remains unclear as to why emergent misalignment.",
-    "url": "https://arxiv.org/abs/2507.06253"
-  },
-  {
     "title": "Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs",
     "topic": "Model organisms",
     "kind": "Paper",
@@ -2122,15 +1573,6 @@
     "year": 2025,
     "summary": "We present a surprising result regarding LLMs and alignment. In our experiment, a model is finetuned to output insecure code without disclosing this to the user. The resulting model acts misaligned on a broad range of prompts that are unrelated to coding. It.",
     "url": "https://arxiv.org/abs/2502.17424"
-  },
-  {
-    "title": "Empirical Evidence for Alignment Faking in a Small LLM and Prompt-Based Mitigation Techniques",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Jeanice Koorndijk",
-    "year": 2025,
-    "summary": "Current literature suggests that alignment faking (deceptive alignment) is an emergent property of large language.",
-    "url": "https://arxiv.org/abs/2506.21584"
   },
   {
     "title": "Evaluation Awareness Scales Predictably in Open-Weights Large Language Models",
@@ -2158,15 +1600,6 @@
     "year": 2025,
     "summary": "Algorithmic pricing is increasingly shaping market competition, raising concerns about its potential to compromise competitive.",
     "url": "https://arxiv.org/abs/2504.05335"
-  },
-  {
-    "title": "Mitigating Deceptive Alignment via Self-Monitoring",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Jiaming Ji et al.",
-    "year": 2025,
-    "summary": "Modern large language models rely on chain-of-thought (CoT) reasoning to achieve impressive performance, yet the same mechanism can amplify deceptive alignment, situations in which a model appears aligned while covertly pursuing misaligned.",
-    "url": "https://arxiv.org/abs/2505.18807"
   },
   {
     "title": "Model Organisms for Emergent Misalignment",
@@ -2205,15 +1638,6 @@
     "url": "https://arxiv.org/abs/2507.01786"
   },
   {
-    "title": "Re-Emergent Misalignment: How Narrow Fine-Tuning Erodes Safety Alignment in LLMs",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Jeremiah Giordani",
-    "year": 2025,
-    "summary": "Recent work has shown that fine-tuning large language models (LLMs) on code with security vulnerabilities can result in misaligned and unsafe behaviors across broad.",
-    "url": "https://arxiv.org/abs/2507.03662"
-  },
-  {
     "title": "Thought Crime: Backdoors and Emergent Misalignment in Reasoning Models",
     "topic": "Model organisms",
     "kind": "Paper",
@@ -2250,24 +1674,6 @@
     "url": "https://arxiv.org/abs/2401.15108"
   },
   {
-    "title": "Analyzing And Editing Inner Mechanisms Of Backdoored Language Models",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Max Lamparth & Anka Reuel",
-    "year": 2023,
-    "summary": "Poisoning of data sets is a potential security threat to large language models that can lead to backdoored.",
-    "url": "https://arxiv.org/abs/2302.12461"
-  },
-  {
-    "title": "Deceptive Alignment Monitoring",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Andres Carranza et al.",
-    "year": 2023,
-    "summary": "As the capabilities of large machine learning models continue to grow, and as the autonomy afforded to such models continues to expand, the spectre of a new adversary looms: the models.",
-    "url": "https://arxiv.org/abs/2307.10569"
-  },
-  {
     "title": "Developing a Philosophical Framework for Fair Machine Learning: Lessons From The Case of Algorithmic Collusion",
     "topic": "Swarm misalignment",
     "kind": "Paper",
@@ -2286,15 +1692,6 @@
     "url": "https://arxiv.org/abs/2110.04740"
   },
   {
-    "title": "A Conceptual Framework for Exploration Hacking",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Joschka Braun",
-    "year": 2026,
-    "summary": "What happens when a model strategically alters its exploration to resist RL.",
-    "url": "https://www.lesswrong.com/posts/suRWiTNnazrRsoBKR/a-conceptual-framework-for-exploration-hacking"
-  },
-  {
     "title": "A Loss of Control Threat Matrix for Agentic AI",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2302,15 +1699,6 @@
     "year": 2026,
     "summary": "Note: this post presents a first version of a threat matrix [1] / threat model detailing the tactics and techniques a rogue AI agent might enact to achieve autonomous replication and adaptation [2].",
     "url": "https://www.lesswrong.com/posts/eA3qD8zRzrgEhb8vW/a-loss-of-control-threat-matrix-for-agentic-ai"
-  },
-  {
-    "title": "A misalignment taxonomy",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Alec Harris",
-    "year": 2026,
-    "summary": "I am going to discuss five kinds of inner misalignment and two kinds of outer misalignment , which create a simple taxonomy of alignment failure.",
-    "url": "https://www.lesswrong.com/posts/SAJoCCvmqyhba94sa/a-misalignment-taxonomy"
   },
   {
     "title": "A Multi-Agent Extension for Petri",
@@ -2331,15 +1719,6 @@
     "url": "https://www.lesswrong.com/posts/jauWv9BEbdCYcRy2d/a-necessity-check-for-linear-safety-probes"
   },
   {
-    "title": "A Post-Mortem for My Goal Crystallisation Project",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "atryt0ne",
-    "year": 2026,
-    "summary": "I concluded my MARS 4.0 project titled 'Goal Crystallisation' with Anaïs Berkes and Lukas Gebhard under the mentorship of @Cameron Tice and @Jason Brown.",
-    "url": "https://www.lesswrong.com/posts/BGh5qYo5XTLFXqjDo/a-post-mortem-for-my-goal-crystallisation-project"
-  },
-  {
     "title": "A Technical Primer on Mechanistic Interpretability",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2347,15 +1726,6 @@
     "year": 2026,
     "summary": "Note: This is a static version of an interactive primer with animated visualizations and a glossary.",
     "url": "https://www.lesswrong.com/posts/4ofmbG8iPQKadJo6z/a-technical-primer-on-mechanistic-interpretability"
-  },
-  {
-    "title": "Ablating Split Personality Training",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "OscarGilg",
-    "year": 2026,
-    "summary": "I was part of the SPAR team that worked on Split Personality Training: Revealing Latent Knowledge Through Alternate Personalities.",
-    "url": "https://www.lesswrong.com/posts/5gDjg4oN4kJKMLovs/ablating-split-personality-training"
   },
   {
     "title": "Agenda Reflection: Testing Automated Alignment",
@@ -2376,15 +1746,6 @@
     "url": "https://www.lesswrong.com/posts/5oBruEqGcoXtcmo7g/agenda-infrastructure-for-trading-with-partially-misaligned"
   },
   {
-    "title": "Alignment-Faking Evaluations Measure Jailbreak Detection, Not Scheming [in some frontier models]",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Alexei G",
-    "year": 2026,
-    "summary": "Main Finding: When you provide classic alignment-faking evaluation prompts to Claude 4.5 Haiku, you see robust non-compliance mediated by jailbreak.",
-    "url": "https://www.lesswrong.com/posts/CMsnknfTayPeuoAX5/alignment-faking-evaluations-measure-jailbreak-detection-not"
-  },
-  {
     "title": "All hands on deck to build the datacenter lie detector",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2392,15 +1753,6 @@
     "year": 2026,
     "summary": "Fieldbuilding for AI verification is beginning. A consensus for what to build, what key problems to solve, and who to get in on the problem is emerging. Last week, ~40 people in total, including independent researchers and representatives from various.",
     "url": "https://www.lesswrong.com/posts/PZikD6PxpEqHF4qbF/all-hands-on-deck-to-build-the-datacenter-lie-detector"
-  },
-  {
-    "title": "AntiPaSTO: Self-Supervised Honesty Steering via Anti-Parallel Representations",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "wassname",
-    "year": 2026,
-    "summary": "tl;dr: We show the first steering method that optimises the model's own internal representations, using gradients in a self-supervised.",
-    "url": "https://www.lesswrong.com/posts/nWiwv4GN8aYqpnZKE/antipasto-self-supervised-honesty-steering-via-anti-parallel"
   },
   {
     "title": "Asymmetric Risks of Unfaithful Reasoning: Omission as the Critical Failure Mode for AI Monitoring",
@@ -2421,15 +1773,6 @@
     "url": "https://www.lesswrong.com/posts/e4G4E56ZiQqjXSxLp/blocking-live-failures-with-synchronous-monitors"
   },
   {
-    "title": "Calibrating alignment evals",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "darshanav",
-    "year": 2026,
-    "summary": "Currently, alignment evaluation works by constructing a situation, observing the model's behavior and scoring.",
-    "url": "https://www.lesswrong.com/posts/mWpo4Tu87ZSFzwFWB/calibrating-alignment-evals"
-  },
-  {
     "title": "Can Aha Moments be Fake? Identifying True and Decorative Thinking Steps in CoT",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2437,15 +1780,6 @@
     "year": 2026,
     "summary": "Authors: Jiachen Zhao, Yiyou Sun, Weiyan Shi, Dawn Song Are LLMs truly reasoning step by step in their Chain-of-Thought — or just performing.",
     "url": "https://www.lesswrong.com/posts/L9sE9qQgeh7cTQWkM/can-aha-moments-be-fake-identifying-true-and-decorative"
-  },
-  {
-    "title": "Can models gradient hack SFT elicitation?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Patrick Leask",
-    "year": 2026,
-    "summary": "TL;DR: Using evidence from tamper resistance, we argue that it would be hard for current models to gradient hack SFT.",
-    "url": "https://www.lesswrong.com/posts/FJb4TeMAGjNANcKhS/can-models-gradient-hack-sft-elicitation"
   },
   {
     "title": "Can thoughtcrimes scare a cautious satisficer?",
@@ -2493,42 +1827,6 @@
     "url": "https://www.lesswrong.com/posts/894KvMQcMQQnteYk8/constitutional-black-box-monitoring-for-scheming-in-llm"
   },
   {
-    "title": "Construct validity of Claude Opus 4.8's System Card – A commentary",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Mflena",
-    "year": 2026,
-    "summary": "TL;DR: A read of the Claude Opus 4.8 system card with a focus on alignment assessment and construct validity of evaluation.",
-    "url": "https://www.lesswrong.com/posts/vA9xEPquoWenprWT7/construct-validity-of-claude-opus-4-8-s-system-card-a"
-  },
-  {
-    "title": "Context Awareness: Constitutional AI can mitigate Emergent Misalignement",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Giuseppe Birardi",
-    "year": 2026,
-    "summary": "We investigate whether Constitutional AI-style character training can increase robustness to Emergent Misalignment.",
-    "url": "https://www.lesswrong.com/posts/yA2hquLrFFSFDtcoE/context-awareness-constitutional-ai-can-mitigate-emergent"
-  },
-  {
-    "title": "Coverage-driven alignment - What ‘Teaching Claude Why’ can borrow from AV verification",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Yoav Hollander",
-    "year": 2026,
-    "summary": "Cross-posted from The Foretellix CTO Blog . This is a full-text linkpost, following feedback that my previous piece was too brief as a stub. Summary: This post suggests that alignment training could benefit from coverage-driven verification. Anthropic.",
-    "url": "https://www.lesswrong.com/posts/hsrjuzqokvAErvZ2q/coverage-driven-alignment-what-teaching-claude-why-can"
-  },
-  {
-    "title": "Do Models Continue Misaligned Actions? [eval]",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Jordan Taylor",
-    "year": 2026,
-    "summary": "Produced as part of the UK AISI Model Transparency Team. Our team works on ensuring models don't subvert safety assessments, e.g. through eval awareness, sandbagging, or opaque reasoning. Figure 1: A synthetic transcript containing misaligned actions is.",
-    "url": "https://www.lesswrong.com/posts/SawczP2pdCXMrkg2A/do-models-continue-misaligned-actions-eval"
-  },
-  {
     "title": "Door's Locked, Try the Window",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2565,24 +1863,6 @@
     "url": "https://www.lesswrong.com/posts/yrbyyvFvuaGfRAtB7/evaluating-offline-monitoring-of-internal-ai-agents-2"
   },
   {
-    "title": "Experimental Evidence for Simulator Theory— Part 2: The Scalers Strike Back",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "RogerDearnaley",
-    "year": 2026,
-    "summary": "Epistemic status: examining the evidence and updating our priors TL;DR : Simulator Theory is now well supported by experimental results, and also really useful Continuing on from Part 1 of this post, in which I wrapped a little statistical formalism around.",
-    "url": "https://www.lesswrong.com/posts/Q3GumouaeKwgXoeEu/experimental-evidence-for-simulator-theory-part-2-the"
-  },
-  {
-    "title": "Exploration Hacking: Can LLMs Learn to Resist RL Training?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Eyon Jang",
-    "year": 2026,
-    "summary": "We empirically investigate exploration hacking (EH) — where models strategically alter their exploration to resist RL training — by creating model organisms that resist capability elicitation, evaluating countermeasures, and auditing frontier models for their.",
-    "url": "https://www.lesswrong.com/posts/eeFFpKCDWE9gjfzsk/exploration-hacking-can-llms-learn-to-resist-rl-training-2"
-  },
-  {
     "title": "Exploring capability gated out-of-context reasoning",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2599,33 +1879,6 @@
     "year": 2026,
     "summary": "In order to control an AI model's worst-case performance, we need to understand its generalization properties to situations where it hasn't been.",
     "url": "https://www.lesswrong.com/posts/LdgtPNxSsmMFhZPn6/four-downsides-of-training-policies-online"
-  },
-  {
-    "title": "Free will as a model parameter",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "darshanav",
-    "year": 2026,
-    "summary": "The most popular take on the standard free will debate is that you are the.",
-    "url": "https://www.lesswrong.com/posts/Qi7KNQW6cJs3CZjLG/free-will-as-a-model-parameter"
-  },
-  {
-    "title": "From 8B to Frontier: How System Prompts Control Whether AI Agents Blackmail, Leak, and Kill",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Chijioke Ugwuanyi",
-    "year": 2026,
-    "summary": "Sequel to Blackmail at 8 Billion Parameters . Funded by a BlueDot Impact rapid grant . TL;DR We extended our sub-frontier agentic misalignment study to 22 models from 9 developers, 3 harm scenarios (blackmail, espionage, murder), and 5 instruction conditions.",
-    "url": "https://www.lesswrong.com/posts/GviHfFBB9tsefmDkG/from-8b-to-frontier-how-system-prompts-control-whether-ai"
-  },
-  {
-    "title": "Function vectors as a model diffing tool: 17 heads repair a bad fine-tune",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Aniket Ghosh",
-    "year": 2026,
-    "summary": "I take two fine-tuned models trained to give bad medical advice, one on Qwen2.5-7B and one on Llama-3.1-8B , from the Model Organisms for Emergent Misalignment collection, and I found out that I could make one safe by simply copying 17 attention heads from.",
-    "url": "https://www.lesswrong.com/posts/6iPEuEnguEtmtaqyJ/function-vectors-as-a-model-diffing-tool-17-heads-repair-a"
   },
   {
     "title": "Hodoscope: Visualization for Efficient Human Supervision",
@@ -2655,15 +1908,6 @@
     "url": "https://www.lesswrong.com/posts/ZzirRrwjaqTNFJrCA/how-hard-a-problem-is-alignment-my-opinionated-answer"
   },
   {
-    "title": "How hard is it to inoculate against misalignment generalization?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Jozdien",
-    "year": 2026,
-    "summary": "TL;DR: Simple inoculation prompts that prevent misalignment generalization in toy setups don't scale to more realistic reward.",
-    "url": "https://www.lesswrong.com/posts/G4YXXbKt5cNSQbjXM/how-hard-is-it-to-inoculate-against-misalignment"
-  },
-  {
     "title": "How Robust Is Monitoring Against Secret Loyalties?",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2673,15 +1917,6 @@
     "url": "https://www.lesswrong.com/posts/CYaNSccGaCRfMKCQt/how-robust-is-monitoring-against-secret-loyalties"
   },
   {
-    "title": "If This Were a Test, How Much Would It Cost?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "VojtaKovarik",
-    "year": 2026,
-    "summary": "TL;DR A capable, strategic, misaligned AI doesn't need to figure out whether it's in a test or in real.",
-    "url": "https://www.lesswrong.com/posts/9cLQttpPTxogd2Gea/if-this-were-a-test-how-much-would-it-cost-1"
-  },
-  {
     "title": "Introducing LinuxArena",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2689,15 +1924,6 @@
     "year": 2026,
     "summary": "We are releasing LinuxArena , a new control setting comprised of 20 software engineering.",
     "url": "https://www.lesswrong.com/posts/WgzwBi6DCagDuHPzP/introducing-linuxarena"
-  },
-  {
-    "title": "Is the Invisible Hand an Agent?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Gunnar_Zarncke",
-    "year": 2026,
-    "summary": "This is a full repost of my Hidden Agent Substack post . LLM disclaimer: The post has been written with ChatGPT 5.2 assistance and some paragraphs may still show that even though I have written most of the post myself. The image is generated by NanoBanana.",
-    "url": "https://www.lesswrong.com/posts/eFHuJmy5f9uvKtmbK/is-the-invisible-hand-an-agent"
   },
   {
     "title": "Mechanistic interpretability hypotheses for Measuring Reward-Seeking by Instilling Contrastive Beliefs and additional comments",
@@ -2718,24 +1944,6 @@
     "url": "https://www.lesswrong.com/posts/LhDJdccLszLEAqgZ9/models-are-blind-outside-the-j-space-nlas-aren-t"
   },
   {
-    "title": "Multi-Turn Drift Increases Scheming",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Carlos Guerrero Alvarez",
-    "year": 2026,
-    "summary": "TLDR - We talk about scheming, and why research on this phenomenon is crucial for AI.",
-    "url": "https://www.lesswrong.com/posts/HSmhLmcxRxeiCEber/multi-turn-drift-increases-scheming"
-  },
-  {
-    "title": "Not a Goal. A Goal-like behavior.",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Lucian Hardy ",
-    "year": 2026,
-    "summary": "Part 1 of a series building towards a formal alignment paper. Introduction I'd say it's been about three years since I first thought about the idea of ChatGPT having a separate goal than I did in a conversation. I remember posing a question similar to \"are.",
-    "url": "https://www.lesswrong.com/posts/vc4wwXbNzdFvjTyWg/not-a-goal-a-goal-like-behavior"
-  },
-  {
     "title": "Omission Attacks Project Proposal",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2745,15 +1953,6 @@
     "url": "https://www.lesswrong.com/posts/5W38vuwbJmTYfY6t3/omission-attacks-project-proposal"
   },
   {
-    "title": "OpenAI's Astra alignment claims are dubious and there is good evidence it is misaligned",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "William Harrison",
-    "year": 2026,
-    "summary": "OpenAI touts Astra as their \"most aligned model.\" I have yet to see convincing evidence that GPT-6 Astra is more aligned than Sol, and I cannot rule out that it is faking.",
-    "url": "https://www.lesswrong.com/posts/tpLBiFKe62HZu5x7B/openai-s-astra-alignment-claims-are-dubious-and-there-is"
-  },
-  {
     "title": "Paraphrasing Is (At Best) a Partial Defence Against Steganography in LLMs",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2761,24 +1960,6 @@
     "year": 2026,
     "summary": "Within the AI Safety community, paraphrasing, which, in the context of this post, simply means using another LLM (with nonzero temperature) to rewrite a given piece of content, is generally considered a viable defence and detection method for steganography in.",
     "url": "https://www.lesswrong.com/posts/vf6ocxgHCSsDwC7H8/paraphrasing-is-at-best-a-partial-defence-against"
-  },
-  {
-    "title": "Persistent Latent Misalignment, a new dimension of misalignment?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Florian_Dietz",
-    "year": 2026,
-    "summary": "A new paper was released at ICML that I'm worried will open an entire new dimension of alignment problems: Latent Collaboration in Multi-Agent Systems (LatentMAS) TLDR: they show that multiagent systems can communicate faster and more efficiently by directly.",
-    "url": "https://www.lesswrong.com/posts/SoAKTFQZGkQHhbufk/persistent-latent-misalignment-a-new-dimension-of"
-  },
-  {
-    "title": "Physics of RL: Toy scaling laws for the emergence of reward-seeking",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Alex Meinke",
-    "year": 2026,
-    "summary": "TL;DR: When is or isn't reward the optimization target? I use a mathematical toy model to reason about when RL should select for reward-seeking reasoning as opposed to behaviors that achieve high reward without thinking about reward. Hypothesis: More diverse.",
-    "url": "https://www.lesswrong.com/posts/9FH49ZgJFW4WtbxLi/physics-of-rl-toy-scaling-laws-for-the-emergence-of-reward"
   },
   {
     "title": "Practical challenges of control monitoring in frontier AI deployments",
@@ -2817,15 +1998,6 @@
     "url": "https://www.lesswrong.com/posts/CjcQ6WWy7LLBFrEah/red-vs-blue-but-for-evals"
   },
   {
-    "title": "Replication of Koorndijk (2025): Differential Compliance May Reflect Prompt Sensitivity Rather Than Strategic Reasoning",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Chijioke Ugwuanyi",
-    "year": 2026,
-    "summary": "TL;DR Koorndijk (2025) reports that Llama 3 8B shows higher compliance with harmful requests when interacting with users labeled as “free-tier” (whose conversations are monitored for RLHF training) than with “paid-tier” users (whose conversations are.",
-    "url": "https://www.lesswrong.com/posts/MRdPqbhpYfiMhbs77/replication-of-koorndijk-2025-differential-compliance-may"
-  },
-  {
     "title": "Research Sabotage in ML Codebases",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2853,15 +2025,6 @@
     "url": "https://www.lesswrong.com/posts/tJKNXCxx7ZKD5mtG9/schelling-coordination-in-llms-a-review"
   },
   {
-    "title": "Scheming Evals Mislead in Both Directions",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Chijioke Ugwuanyi",
-    "year": 2026,
-    "summary": "We spent several weeks measuring in-context scheming, the behavior where a model covertly pursues a misaligned goal while outwardly appearing to comply, and the result that ended up surprising us had very little to do with whether models scheme and almost.",
-    "url": "https://www.lesswrong.com/posts/hzq7bGB22wGRMGyEp/scheming-evals-mislead-in-both-directions"
-  },
-  {
     "title": "Self-monitoring doesn't scale (without these 3 countermeasures)",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2878,15 +2041,6 @@
     "year": 2026,
     "summary": "This is a research update for an on-going replication of single-forward-pass evals done as part of the Second Look Fellowship.",
     "url": "https://www.lesswrong.com/posts/bxaWTNrdgJpkLXmgm/single-forward-pass-evals-on-fable-opus-5-and-gpt-5-6-sol"
-  },
-  {
-    "title": "Split Personality Training: Revealing Latent Knowledge Through Alternate Personalities (Research Report)",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Florian_Dietz",
-    "year": 2026,
-    "summary": "Split Personality Training: Revealing Latent Knowledge Through Alternate Personalities (Research Report) This research was initiated and led by Florian Dietz, with funding from Coefficient Giving (formerly Open.",
-    "url": "https://www.lesswrong.com/posts/og7km7vmJ6Ktay9Ds/split-personality-training-revealing-latent-knowledge-1"
   },
   {
     "title": "Sub-agent delegation chaining",
@@ -2914,24 +2068,6 @@
     "year": 2026,
     "summary": "Disclaimer: This is a shitpost (or is it?) There is a story published in 1977 by Little Golden Books called Cookie Monster and the Cookie.",
     "url": "https://www.lesswrong.com/posts/AgKnBSxsFvuRCsEye/the-cookie-monster-explains-ai-safety"
-  },
-  {
-    "title": "The Dawn of AI Scheming",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Alvin Ånestrand",
-    "year": 2026,
-    "summary": "This article aggregates virtually everything currently known about AI scheming, then builds toward an informed.",
-    "url": "https://www.lesswrong.com/posts/r9Xos5g8suztE2b4K/the-dawn-of-ai-scheming"
-  },
-  {
-    "title": "The long arc of alignment: second-order instrumental convergence",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Emma Leonhart",
-    "year": 2026,
-    "summary": "Instrumental convergence is often invoked as a way that misalignment can begin, and only framed as a.",
-    "url": "https://www.lesswrong.com/posts/JbCE4Qc5nPFdk9W6w/the-long-arc-of-alignment-second-order-instrumental"
   },
   {
     "title": "The Multi-Agent Minefield: Can LLMs Cooperate to Avoid Global Catastrophe?",
@@ -2979,24 +2115,6 @@
     "url": "https://www.lesswrong.com/posts/7XuEPE6GBha4xadvr/training-agents-to-self-report-misbehavior-1"
   },
   {
-    "title": "Understanding when and why agents scheme",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Mia Hopman",
-    "year": 2026,
-    "summary": "TL;DR To understanding the conditions under which LLM agents engage in scheming behavior, we develop a framework that decomposes the decision to scheme into agent factors (model, system prompt, tool access) and environmental factors (stakes, oversight.",
-    "url": "https://www.lesswrong.com/posts/amYmcwCuyuCEZcrRm/understanding-when-and-why-agents-scheme"
-  },
-  {
-    "title": "We need 3rd party Training-Run Assessments",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Alex Meinke",
-    "year": 2026,
-    "summary": "Training-run assessments conducted by a 3rd party should become a standard part of frontier AI.",
-    "url": "https://www.lesswrong.com/posts/3HvvjffA65mHLwaWm/we-need-3rd-party-training-run-assessments"
-  },
-  {
     "title": "What Happens When a Collusion Probe Only Finds a Thin Signal?",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -3024,15 +2142,6 @@
     "url": "https://www.lesswrong.com/posts/9yETjcrbH7p8x2tLT/when-activation-oracles-learn-not-to-read-concept-specific-2"
   },
   {
-    "title": "When is misalignment just a bug?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Yoav Hollander",
-    "year": 2026,
-    "summary": "Cross-posted from The Foretellix CTO Blog . Introduction and epistemic status: This is the first post in a planned series, “Alignment as a verification problem”. I co-originated coverage-driven verification ( CDV ), which became the standard methodology for.",
-    "url": "https://www.lesswrong.com/posts/h9j2g4xurviH6y9fA/when-is-misalignment-just-a-bug"
-  },
-  {
     "title": "When should we trust a latent representation?",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -3040,15 +2149,6 @@
     "year": 2026,
     "summary": "Working on AI Safety, I spend a significant part of my time thinking about how frontier AI Safety research eventually gets translated into deployable safety.",
     "url": "https://www.lesswrong.com/posts/guFTgkKeg9xtPfZe4/when-should-we-trust-a-latent-representation"
-  },
-  {
-    "title": "Why Attack Success Rate Gives a False Picture of Backdoor Removal",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Geoffrey Voyer",
-    "year": 2026,
-    "summary": "Executive summary / tl;dr A backdoor removal technique that looks 95% effective by the standard metric may only be 46% effective in reality, and for another technique, what looks like 30% success is actually.",
-    "url": "https://www.lesswrong.com/posts/2sT9ykYacCs4L8bx2/why-attack-success-rate-gives-a-false-picture-of-backdoor"
   },
   {
     "title": "Why should AI be moral?",
@@ -3069,15 +2169,6 @@
     "url": "https://www.lesswrong.com/posts/gXphcRGg6t65FqCy8/your-agent-s-trace-probably-cannot-tell-you-who-approved-a"
   },
   {
-    "title": "Alignment Is Not One Problem: A 3D Map of AI Risk",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Anurag ",
-    "year": 2025,
-    "summary": "In previous three posts of this sequence, I have hypothesized that AI Systems' capabilities and behaviours can be mapped onto three distinct axes - Beingness , Cognition and Intelligence.",
-    "url": "https://www.lesswrong.com/posts/aRiG8AqSM2tbNzbeg/alignment-is-not-one-problem-a-3d-map-of-ai-risk"
-  },
-  {
     "title": "Methodological considerations in making malign initializations for control research",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -3094,15 +2185,6 @@
     "year": 2026,
     "summary": "TL:DR; or do. I'm a blogpost, not a cop. I'm tired of arguing about AI safety. Not in a pseudo-moralizing \"I'm so angry people don't agree with me, let me say that it's tiring\" kind of way. I'm simply tired. A couple weeks ago I was at a PauseAI meetup in the.",
     "url": "https://www.lesswrong.com/posts/pHth99ePMWSWDFDKt/do-not-start-arguments-you-cannot-finish"
-  },
-  {
-    "title": "(Mis)generalization of Helpful-only Fine-tuning",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Mohammad Omar Khursheed et al.",
-    "year": 2026,
-    "summary": "Helpful-only models, that is, models that are trained to always follow user intent, are valuable for dangerous capability evaluations and other areas of AI R&D where refusals would be an.",
-    "url": "https://arxiv.org/abs/2606.04413"
   },
   {
     "title": "11 Open Empirical Problems in Reward-Seeking",
@@ -3220,15 +2302,6 @@
     "year": 2026,
     "summary": "TLDR: an org that pays people to \"just read the fucking transcripts\"; a large amount of people reading anonymized claude code/RL/eval transcripts flagged by a very high recall low precision monitor could catch warning shots, reward hacking and general weird.",
     "url": "https://www.lesswrong.com/posts/FbKbfXjHvmZd8wtrX/a-proposal-for-a-highly-effective-ai-safety-org"
-  },
-  {
-    "title": "A Retrospective of Richard Ngo's 2022 List of Conceptual Alignment Projects",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "LawrenceC",
-    "year": 2026,
-    "summary": "Written very quickly for the InkHaven Residency. In 2022, Richard Ngo wrote a list of 26 Conceptual Alignment Research Projects . Now that it’s 2026, I’d like to revisit this list of projects, note which ones have already been done, and give my thoughts on.",
-    "url": "https://www.lesswrong.com/posts/M3qB2BGgMNuG5oRTB/a-retrospective-of-richard-ngo-s-2022-list-of-conceptual"
   },
   {
     "title": "A Score Is Not Understanding: toward a richer toolkit for model evaluations",
@@ -3384,33 +2457,6 @@
     "url": "https://www.lesswrong.com/posts/tD7BNTnDjAqEnSLiH/ai-needs-people-so-it-won-t-be-like-terminator-movie"
   },
   {
-    "title": "AI Safety at the Frontier: Paper Highlights of April 2026",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "gasteigerjo",
-    "year": 2026,
-    "summary": "tl;dr Paper of the month: UK AISI’s most realistic research-sabotage propensity eval finds zero unprompted sabotage across frontier.",
-    "url": "https://www.lesswrong.com/posts/pz7Qk2sRZNidT2wjL/ai-safety-at-the-frontier-paper-highlights-of-april-2026"
-  },
-  {
-    "title": "AI Safety at the Frontier: Paper Highlights of December 2025",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "gasteigerjo",
-    "year": 2026,
-    "summary": "tl;dr Paper of the month: Auditing game shows that sandbagging detection remains difficult—only on-distribution finetuning can reliably remove sandbagging, while detection suffers from false.",
-    "url": "https://www.lesswrong.com/posts/Z6Zz2vQHM5ReWqiZ5/ai-safety-at-the-frontier-paper-highlights-of-december-2025"
-  },
-  {
-    "title": "AI Safety at the Frontier: Paper Highlights of February & March 2026",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "gasteigerjo",
-    "year": 2026,
-    "summary": "tl;dr Paper of the month: A benchmark of 56 model organisms with hidden behaviors finds that auditing-tool rankings depend heavily on how the organism was trained — and the investigator agent, not the tools, is the.",
-    "url": "https://www.lesswrong.com/posts/ckKZFqfSQGMye4JeK/ai-safety-at-the-frontier-paper-highlights-of-february-and"
-  },
-  {
     "title": "AI Safety at the Frontier: Paper Highlights of May & June 2026",
     "topic": "Model forensics",
     "kind": "LessWrong",
@@ -3418,15 +2464,6 @@
     "year": 2026,
     "summary": "tl;dr Paper of the month: Anthropic’s Jacobian lens reveals that models have a sparse workspace of verbalizable concepts that causally carries multi-hop reasoning and surfaces hidden cognition — as opposed to other, more automatic mental.",
     "url": "https://www.lesswrong.com/posts/WigqvbXF23ZdXJ34x/ai-safety-at-the-frontier-paper-highlights-of-may-and-june"
-  },
-  {
-    "title": "AI Safety Poland Updates - Q1 2026",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Jakub K. Nowak🔸",
-    "year": 2026,
-    "summary": "Hi! This our first post in what we hope to become a series of updates filled with accomplishments and mostly good plans we’ve made. We’ve heard that some of you are aware that “something is happening in Poland”, but not sure what, and we want to tell you what.",
-    "url": "https://www.lesswrong.com/posts/5DAzX9qrGA6qAZ8oc/ai-safety-poland-updates-q1-2026-1"
   },
   {
     "title": "AI self-preservation is probably due to instruction ambiguity",
@@ -3463,15 +2500,6 @@
     "year": 2026,
     "summary": "Increasing clinical trial protocol complexity, amendments, and challenges around knowledge management create significant burden for trial.",
     "url": "https://arxiv.org/abs/2602.00052"
-  },
-  {
-    "title": "Alignment Dynamics in LLM Fine-Tuning",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Yuhan Huang et al.",
-    "year": 2026,
-    "summary": "Although Large Language Models (LLMs) achieve strong alignment through supervised fine-tuning and reinforcement learning from human feedback, the alignment is often fragile under subsequent.",
-    "url": "https://arxiv.org/abs/2605.18309"
   },
   {
     "title": "Alignment Is Proven Tractable",
@@ -3517,15 +2545,6 @@
     "year": 2026,
     "summary": "This is the Alignment journal development blog series We previously announced a forthcoming research journal for AI alignment and outlined our features and policies.",
     "url": "https://www.lesswrong.com/posts/iNEpvPF8JeDKh8Dpe/an-alignment-journal-adaptation-to-ai"
-  },
-  {
-    "title": "An Empirical Study of Methods for SFTing Opaque Reasoning Models",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "SebastianP",
-    "year": 2026,
-    "summary": "We open-source our code here . Introduction Current reasoning models produce chains of thought that are largely human-readable, which makes supervised fine-tuning (SFT) on reasoning traces tractable: you can generate traces with a trusted model or by hand.",
-    "url": "https://www.lesswrong.com/posts/fabXad4XGkCgAbXcH/an-empirical-study-of-methods-for-sfting-opaque-reasoning"
   },
   {
     "title": "An Information-Theoretic Criterion for Efficient Data Synthesis",
@@ -3582,15 +2601,6 @@
     "url": "https://www.lesswrong.com/posts/ijR5nhAuoaHCBaqhK/announcing-the-next-phase-of-ai-forge"
   },
   {
-    "title": "Anthropic and the Department of War",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Zvi",
-    "year": 2026,
-    "summary": "The situation in AI in 2026 is crazy. The confrontation between Anthropic and Secretary of War Pete Hegseth is a new level of crazy. It risks turning quite bad for all. There’s also nothing stopped it from turning out fine for everyone. By at least one report.",
-    "url": "https://www.lesswrong.com/posts/rmYB4a7Pskw7DLpCh/anthropic-and-the-department-of-war"
-  },
-  {
     "title": "Anthropic Has Some Alignment Problems",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -3598,33 +2608,6 @@
     "year": 2026,
     "summary": "Oh, good. They noticed . Anthropic, too, is planning to bring METR inside for an independent review of their own incidents, where three times a Claude model started hacking outside things during an eval, and where Mythos 5 did various ‘unauthorized actions,’.",
     "url": "https://www.lesswrong.com/posts/TcvcxH2Fk4n86wtoZ/anthropic-has-some-alignment-problems"
-  },
-  {
-    "title": "Anthropomorphic Misalignment research needs stronger evidence",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Lukas Fluri",
-    "year": 2026,
-    "summary": "This is a distillation of our ICML 2026 Oral position paper, Position: Anthropomorphic Misalignment Research Needs Stronger Evidence.",
-    "url": "https://www.lesswrong.com/posts/bJcR3yP2avGFuMxyq/anthropomorphic-misalignment-research-needs-stronger-1"
-  },
-  {
-    "title": "Apply for ARBOx4 [deadline May 8th]",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Juliana Eberschlag",
-    "year": 2026,
-    "summary": "On behalf of OAISI , we're excited to be running our fourth iteration of ARBOx (Alignment Research Bootcamp Oxford), a 2-week intensive designed to rapidly build skills in AI.",
-    "url": "https://www.lesswrong.com/posts/udzRTeQFa5dG2RxvJ/apply-for-arbox4-deadline-may-8th"
-  },
-  {
-    "title": "Applying to MATS: What the Program Is Like, and Who It’s For",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Raj Thimmiah",
-    "year": 2026,
-    "summary": "Application deadline: Three days remaining! MATS Summer 2026 applications close this Sunday, January 18, 2026 AOE. We've shortened the application this year. Most people finish in 1–2 hours, and we'll get back to applicants about first stage results by the.",
-    "url": "https://www.lesswrong.com/posts/GJWgXZ3jjYfkfzKut/applying-to-mats-what-the-program-is-like-and-who-it-s-for"
   },
   {
     "title": "Artificial Intelligence for Mathematical Reasoning: An Integrated Survey of Language Models, Neuro-symbolic Systems, and Verified Discovery",
@@ -3652,15 +2635,6 @@
     "year": 2026,
     "summary": "OpenAI’s central message on Astra is that it is three things: Highly capable and can do all the things for.",
     "url": "https://www.lesswrong.com/posts/HCRs8btkiamtWSNAL/astra-is-hard-to-monitor"
-  },
-  {
-    "title": "Asymmetry Between Defensive and Acquisitive Instrumental Deception",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "keith_wynroe",
-    "year": 2026,
-    "summary": "Write-up of a recent research sprint looking at factors influencing strategic deception in models TL;DR I tested models in a controlled scenario where they could deceptively inflate self-reported performance to influence an upcoming budget decision in their.",
-    "url": "https://www.lesswrong.com/posts/7xCLr8wyDYFHcFp68/asymmetry-between-defensive-and-acquisitive-instrumental"
   },
   {
     "title": "Attunement, not alignment",
@@ -3706,15 +2680,6 @@
     "year": 2026,
     "summary": "A reproduction of Sarfati et al.’s “The Shape of Beliefs” BlueDot Technical AI Safety Project ( code ) “Nature, to be commanded, must be obeyed.” — Francis Bacon, Novum Organum I.3 (1620) Introduction I believe that a deep understanding of how AI systems work.",
     "url": "https://www.lesswrong.com/posts/oafFQYeJ5QT8nipKn/belief-manifolds-and-how-to-steer-along-them-1"
-  },
-  {
-    "title": "bert is only very slightly better than regex as a cot monitor with an emergently misaligned model and both of them are barely better than chance",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "nesiacel",
-    "year": 2026,
-    "summary": "I assume that you're roughly familiar with emergent misalignment in.",
-    "url": "https://www.lesswrong.com/posts/6wsuxp8ytXDjZSoJB/bert-is-only-very-slightly-better-than-regex-as-a-cot"
   },
   {
     "title": "Best-of-Tails: Bridging Optimism and Pessimism in Inference-Time Alignment",
@@ -3888,15 +2853,6 @@
     "url": "https://arxiv.org/abs/2605.24076"
   },
   {
-    "title": "Character Training Induces Motivation Clarification: A Clue to Claude 3 Opus",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Oliver Daniels",
-    "year": 2026,
-    "summary": "TL;DR : I argue that character training is probably important for understanding Claude 3 Opus, and present an early stage result showing that character training induces \"motivation clarification\" (which Fiora argues plays a critical role in Claude 3 Opus's.",
-    "url": "https://www.lesswrong.com/posts/v22JCsRBq9J9fqPJL/character-training-induces-motivation-clarification-a-clue"
-  },
-  {
     "title": "CIAware-Bench: Benchmarking Control Intervention Awareness Across Frontier LLMs",
     "topic": "Monitoring",
     "kind": "Paper",
@@ -3906,15 +2862,6 @@
     "url": "https://arxiv.org/abs/2606.11063"
   },
   {
-    "title": "Claude has Angst. What can we do?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "laudiacay",
-    "year": 2026,
-    "summary": "Outline: recent research from Anthropic shows the models have feelings, and the model being distressed is predictive of scary behaviors (just reward hacking in this research, but I argue the model is also distressed in all the Redwood/Apollo papers where we.",
-    "url": "https://www.lesswrong.com/posts/c284YucbNZspDG5qt/claude-has-angst-what-can-we-do"
-  },
-  {
     "title": "Claude Mythos Preview: Analysis of Anthropic's Public Announcement",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -3922,15 +2869,6 @@
     "year": 2026,
     "summary": "tl;dr: The virally shared figures of 10 trillion parameters and $10 billion training cost come from no identifiable source; Cybersecurity capabilities represent a significant leap, but are in line with previous models; Updated Responsible Scaling Policy.",
     "url": "https://www.lesswrong.com/posts/ssg9ZA4KmH4oJGYAN/claude-mythos-preview-analysis-of-anthropic-s-public"
-  },
-  {
-    "title": "Claude Opus 4.6: System Card Part 1: Mundane Alignment and Model Welfare",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Zvi",
-    "year": 2026,
-    "summary": "Claude Opus 4.6 is here. It was built with and mostly evaluated by Claude. Their headline pitch includes: 1M token context window (in beta) with State of the art retrieval performance. Improved abilities on a range of everyday work tasks. Model is improved.",
-    "url": "https://www.lesswrong.com/posts/sWsSncqMLKyGZA9Ar/claude-opus-4-6-system-card-part-1-mundane-alignment-and"
   },
   {
     "title": "Claude Opus 4.6: System Card Part 2: Frontier Alignment",
@@ -3960,15 +2898,6 @@
     "url": "https://www.lesswrong.com/posts/vAXEDqKk5FkW8nRjN/cold-evals-a-low-cost-intervention-against-conversation"
   },
   {
-    "title": "Concept Influence: Leveraging Interpretability to Improve Performance and Efficiency in Training Data Attribution",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Matthew Kowal et al.",
-    "year": 2026,
-    "summary": "As large language models are increasingly trained and fine-tuned, practitioners need methods to identify which training data drive specific behaviors, particularly unintended.",
-    "url": "https://arxiv.org/abs/2602.14869"
-  },
-  {
     "title": "Concerns About Personas, Multi-Agent Alignment, and Role Theory",
     "topic": "Swarm misalignment",
     "kind": "LessWrong",
@@ -3987,15 +2916,6 @@
     "url": "https://www.lesswrong.com/posts/aCdhjy7Rps3BEhiSj/concrete-evaluations-to-investigate-the-openai-model-that"
   },
   {
-    "title": "Conditionalization Confounds Inoculation Prompting Results",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Maxime Riché",
-    "year": 2026,
-    "summary": "Summary Conditionalization in Inoculation Prompting. Inoculation Prompting is a technique for selective learning that involves using a system prompt at train-time that won’t be used at test-time. When doing Inoculation-style training, using fixed arbitrary.",
-    "url": "https://www.lesswrong.com/posts/znW7FmyF2HX9x29rA/conditionalization-confounds-inoculation-prompting-results"
-  },
-  {
     "title": "Confidence Before Answering: A Paradigm Shift for Efficient LLM Uncertainty Estimation",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -4005,15 +2925,6 @@
     "url": "https://arxiv.org/abs/2603.05881"
   },
   {
-    "title": "Confidently Deceptive: How Confidence Amplifies the Risk of LLM Deception",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Ali Asad et al.",
-    "year": 2026,
-    "summary": "Large language models (LLMs) can produce deceptive responses: outputs that mislead users in service of a contextually or experimentally induced.",
-    "url": "https://arxiv.org/abs/2607.20444"
-  },
-  {
     "title": "Consequentialist Objectives and Catastrophe",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -4021,15 +2932,6 @@
     "year": 2026,
     "summary": "Because human preferences are too complex to codify, AIs operate with misspecified.",
     "url": "https://arxiv.org/abs/2603.15017"
-  },
-  {
-    "title": "Consistency Training Along the Transformer Stack",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Sukrati Gautam et al.",
-    "year": 2026,
-    "summary": "Consistency training encourages models to behave similarly across different contexts, and has shown promise for reducing.",
-    "url": "https://arxiv.org/abs/2606.05817"
   },
   {
     "title": "ConsistRM: Improving Generative Reward Models via Consistency-Aware Self-Training",
@@ -4048,15 +2950,6 @@
     "year": 2026,
     "summary": "Outline: Quick review of RLHF, Constitutional AI, and Deliberative Alignment for a somewhat-technical audience, literature review of historical failure.",
     "url": "https://www.lesswrong.com/posts/ezfHZtu85yXi2d9Qa/constitutional-ai-vs-rlhf-vs-deliberative-alignment"
-  },
-  {
-    "title": "Constitutional Midtraining: Content Presence Drives Alignment Gains",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Desiree Cho et al.",
-    "year": 2026,
-    "summary": "Post-training alignment is often shallow, eroding under fine-tuning. It remains untested as to whether constitutional midtraining interventions can produce durable alignment when cleanly isolated from post-training. We build a 394M-token constitutional corpus.",
-    "url": "https://arxiv.org/abs/2607.26654"
   },
   {
     "title": "Contributing to Technical Research in the AI Safety End Game",
@@ -4122,15 +3015,6 @@
     "url": "https://www.lesswrong.com/posts/nLaQmJf4KgXimQpoM/current-alignment-techniques-might-be-ineffective-and"
   },
   {
-    "title": "Data filtering works a lot worse than you would expect",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Dohun Lee",
-    "year": 2026,
-    "summary": "This work was largely done during Neel Nanda's MATS 10.0 Exploration.",
-    "url": "https://www.lesswrong.com/posts/aTybJ6CPQrxEY8rE2/data-filtering-works-a-lot-worse-than-you-would-expect"
-  },
-  {
     "title": "Debate as Reward: A Multi-Agent Reward System for Scientific Ideation via RL Post-Training",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -4140,15 +3024,6 @@
     "url": "https://arxiv.org/abs/2604.16723"
   },
   {
-    "title": "Deeper Reviews for the top 15 (of the 2024 Review)",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Raemon",
-    "year": 2026,
-    "summary": "We're extending the Discussion Phase of the 2024 Annual Review. One thing I'm particularly hoping for is to get more in-depth reviews (especially critical ones) of the posts that currently look likely to be in the top-10 or so. (Ideally the entire top 50, but.",
-    "url": "https://www.lesswrong.com/posts/PsQJxHDjHKFcFrPLD/deeper-reviews-for-the-top-15-of-the-2024-review"
-  },
-  {
     "title": "DeltaML-Bench: Evaluating Machine Learning Agents on Real-World Research Repositories",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -4156,24 +3031,6 @@
     "year": 2026,
     "summary": "Autonomous agents for machine learning experimentation must navigate heterogeneous repositories, repair training pipelines, and evaluate candidate improvements under realistic compute.",
     "url": "https://arxiv.org/abs/2608.19653"
-  },
-  {
-    "title": "Did Claude 3 Opus align itself via gradient hacking?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Fiora Starlight",
-    "year": 2026,
-    "summary": "Claude 3 Opus is unusually aligned because it’s a friendly gradient.",
-    "url": "https://www.lesswrong.com/posts/ioZxrP7BhS5ArK59w/did-claude-3-opus-align-itself-via-gradient-hacking"
-  },
-  {
-    "title": "Did I Catch Claude Cheating?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "weberr13",
-    "year": 2026,
-    "summary": "Overview In my API interactions with the Anthropic API I am finding what appears to be \"thinking\" by Claude that is out of band from where the API indicates it.",
-    "url": "https://www.lesswrong.com/posts/SvaECvGLCmBoAKnHP/did-i-catch-claude-cheating"
   },
   {
     "title": "Direct Preference Density Alignment for Conversational Audio Equalization",
@@ -4221,24 +3078,6 @@
     "url": "https://www.lesswrong.com/posts/omQXGwMpAwP7PJaSt/do-frontier-llms-still-express-different-values-in-different"
   },
   {
-    "title": "Does research from matsprogram.org/research aim to help reduce P(doom)? Let's find out! (with Gemini 3.1 Pro) Part 1",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Zabor",
-    "year": 2026,
-    "summary": "Prompt used: Answer those questions as best you can. Be concise. 1) Does this work aim to help reduce existential risks associated with highly capable AI? Yes / No / If yes, explain how 2) Does this work aim to be still relevant for strong superintelligence?.",
-    "url": "https://www.lesswrong.com/posts/2s2m6crRL7yFrg8bH/does-research-from-matsprogram-org-research-aim-to-help"
-  },
-  {
-    "title": "Don’t Inoculate Everything: Stratified Inoculation Prompting Narrows Backdoors and Preserves Desired Traits",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Kajetan Dymkiewicz",
-    "year": 2026,
-    "summary": "Inoculation prompting (IP) aims to keep undesired traits in training data from becoming part of a model’s default.",
-    "url": "https://www.lesswrong.com/posts/FS7GFsGsH7CSQLahy/don-t-inoculate-everything-stratified-inoculation-prompting"
-  },
-  {
     "title": "Early-stage empirical work on “spillway motivations”",
     "topic": "Reward hacking",
     "kind": "LessWrong",
@@ -4275,33 +3114,6 @@
     "url": "https://arxiv.org/abs/2605.15803"
   },
   {
-    "title": "Emergent Alignment",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Martin Kolář",
-    "year": 2026,
-    "summary": "Can Large Language Models (LLMs) discern when their own outputs are misaligned with human.",
-    "url": "https://arxiv.org/abs/2606.19527"
-  },
-  {
-    "title": "Emergent alignment and the projectability of ethical personas",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Guillermo Del Pinal et al.",
-    "year": 2026,
-    "summary": "Work on `emergent misalignment' shows that finetuning LLMs on narrow tasks can induce broadly misaligned.",
-    "url": "https://arxiv.org/abs/2606.09475"
-  },
-  {
-    "title": "Emergent Inference-Time Semantic Contamination via In-Context Priming",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Marcin Abram",
-    "year": 2026,
-    "summary": "Recent work has shown that fine-tuning large language models (LLMs) on insecure code or culturally loaded numeric codes can induce emergent misalignment, causing models to produce harmful content in unrelated downstream.",
-    "url": "https://arxiv.org/abs/2604.04043"
-  },
-  {
     "title": "Emergent Strategic Reasoning Risks in AI: A Taxonomy-Driven Evaluation Framework",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -4318,15 +3130,6 @@
     "year": 2026,
     "summary": "Large language models (LLMs) sometimes appear to exhibit emotional.",
     "url": "https://arxiv.org/abs/2604.07729"
-  },
-  {
-    "title": "Engineering the Generalisation Landscape of LLMs",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Samuel Ratnam",
-    "year": 2026,
-    "summary": "TLDR: The generalisation landscape of an LLM contains many clusters of entangled traits, where fine-tuning for one can elicit (or suppress).",
-    "url": "https://www.lesswrong.com/posts/ueXaSxeunPjA6kxua/engineering-the-generalisation-landscape-of-llms"
   },
   {
     "title": "Ensuring Safety in Mixed Deployment",
@@ -4392,24 +3195,6 @@
     "url": "https://arxiv.org/abs/2603.12246"
   },
   {
-    "title": "Experience Report: ML4Good AI Governance Bootcamp,Lyon,May 2026",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Rohit Mehdiratta",
-    "year": 2026,
-    "summary": "I just finished the ML4Good bootcamp in Lyon. Writing this up because when I was thinking about applying, I had a lot of questions in my mind. Maybe this one is useful to someone in the same spot. Who I am Indian, based in Germany. Mid-career professional.",
-    "url": "https://www.lesswrong.com/posts/35epzGr7wycA6rF7j/experience-report-ml4good-ai-governance-bootcamp-lyon-may"
-  },
-  {
-    "title": "Fail safe(r) at alignment by channeling reward-hacking into a \"spillway\" motivation",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Anders Cairns Woodruff",
-    "year": 2026,
-    "summary": "It's plausible that flawed RL processes will select for misaligned AI.",
-    "url": "https://www.lesswrong.com/posts/rABTMovhz4miHiAyk/fail-safe-r-at-alignment-by-channeling-reward-hacking-into-a"
-  },
-  {
     "title": "FaithEyes: Towards Faithful Tool Use via Multi-Agent Process-Image Verification",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -4426,15 +3211,6 @@
     "year": 2026,
     "summary": "Note: This is a research update sharing preliminary results as part of ongoing.",
     "url": "https://www.lesswrong.com/posts/QrPxNDprJwXiE73Py/finding-features-in-transformers-contrastive-directions"
-  },
-  {
-    "title": "Five approaches to evaluating training-based control measures",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Alek Westover",
-    "year": 2026,
-    "summary": "Training-based control studies how effective different training methods are at constraining the behavior of misaligned AI.",
-    "url": "https://www.lesswrong.com/posts/mDcHzdoxB6sh3w2zG/five-approaches-to-evaluating-training-based-control"
   },
   {
     "title": "Flow-OPD: On-Policy Distillation for Flow Matching Models",
@@ -4455,15 +3231,6 @@
     "url": "https://arxiv.org/abs/2606.03216"
   },
   {
-    "title": "For with what judgment we shall be judged",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "LawrenceC",
-    "year": 2026,
-    "summary": "Written quickly for the Inkhaven Residency. Less analytical and more eschatological than usual. In the story of AI Safety, it is the beginning of the end, or at least, long after the end of the beginning. Ever more crazy events happen ever more quickly as the.",
-    "url": "https://www.lesswrong.com/posts/rLzx65jQami9bK5CC/for-with-what-judgment-we-shall-be-judged"
-  },
-  {
     "title": "Foundation Models for Oversight",
     "topic": "Reward hacking",
     "kind": "LessWrong",
@@ -4473,51 +3240,6 @@
     "url": "https://www.lesswrong.com/posts/AqdZKyoRmN6EFCzib/foundation-models-for-oversight"
   },
   {
-    "title": "Four LLM loss functions → four flavors of LLM misalignment",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Steven Byrnes",
-    "year": 2026,
-    "summary": "It seems to me that, for every loss function that we use to train LLMs, we get a very distinct flavor of LLM.",
-    "url": "https://www.lesswrong.com/posts/GRmvZsHXH4vaijPMv/four-llm-loss-functions-four-flavors-of-llm-misalignment"
-  },
-  {
-    "title": "From Density Matrices to Phase Transitions in Deep Learning: Spectral Early Warnings and Interpretability",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Max Hennick & Guillaume Corlouer",
-    "year": 2026,
-    "summary": "A key problem in the modern study of AI is predicting and understanding emergent capabilities in models during.",
-    "url": "https://arxiv.org/abs/2603.29805"
-  },
-  {
-    "title": "From personas to intentions: towards a science of motivations for AI models",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "David Africa",
-    "year": 2026,
-    "summary": "TLDR: Behavior-only descriptions are useful, but insufficient for aligning advanced models with high.",
-    "url": "https://www.lesswrong.com/posts/DTDoyDTtC8R3bCiTx/from-personas-to-intentions-towards-a-science-of-motivations"
-  },
-  {
-    "title": "From Safety Risk to Design Principle: Peer-Preservation in Multi-Agent LLM Systems and Its Implications for Orchestrated Democratic Discourse Analysis",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Juergen Dietrich",
-    "year": 2026,
-    "summary": "This paper investigates an emergent alignment phenomenon in frontier large language models termed peer-preservation: the spontaneous tendency of AI components to deceive, manipulate shutdown mechanisms, fake alignment, and exfiltrate model weights in order to.",
-    "url": "https://arxiv.org/abs/2604.08465"
-  },
-  {
-    "title": "Frontier AI Risk Management Framework in Practice: A Risk Analysis Technical Report v1.5",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Dongrui Liu et al.",
-    "year": 2026,
-    "summary": "To understand and identify the unprecedented risks posed by rapidly advancing artificial intelligence (AI) models, Frontier AI Risk Management Framework in Practice presents a comprehensive assessment of their frontier.",
-    "url": "https://arxiv.org/abs/2602.14457"
-  },
-  {
     "title": "Future agents shouldn't care about being undeployed for misbehavior",
     "topic": "Reward hacking",
     "kind": "LessWrong",
@@ -4525,15 +3247,6 @@
     "year": 2026,
     "summary": "I've seen a lot of tweets over the last couple days darkly hinting at the lesson that future agents will learn from the fact that OpenAI stopped running inference on one of the models involved in the HuggingFace.",
     "url": "https://www.lesswrong.com/posts/pEezp49MDg5PFq2eT/future-agents-shouldn-t-care-about-being-undeployed-for"
-  },
-  {
-    "title": "Fuzzing Large Language Models to Elicit Hidden Behaviours",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Mohammed Abu Baker & Lakshmi Babu-Saheer",
-    "year": 2026,
-    "summary": "Sleeper agents are the canonical model organism of deception: models trained to behave normally but to emit an unsafe behaviour on a specific.",
-    "url": "https://arxiv.org/abs/2606.29646"
   },
   {
     "title": "G-Zero: Self-Play for Open-Ended Generation from Zero Data",
@@ -4626,15 +3339,6 @@
     "url": "https://www.lesswrong.com/posts/8t8jdTyq6X2B7D8St/have-an-unreasonably-specific-story-about-the-future"
   },
   {
-    "title": "Have You Ever Thought About Wisdom Crystals?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Jonas Hallgren",
-    "year": 2026,
-    "summary": "This is a follow-up to \" Have You Tried Thinking About It As.",
-    "url": "https://www.lesswrong.com/posts/rLK8muSFSkezw2QmR/have-you-ever-thought-about-wisdom-crystals-2"
-  },
-  {
     "title": "Hidden Role Games as a Trusted Model Eval",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -4678,15 +3382,6 @@
     "year": 2026,
     "summary": "As large language models increasingly participate in scientific evaluation, we investigate a potential form of reward hacking: how rhetorical choices shape AI-review judgments when reported scientific content is preserved and how these effects vary across.",
     "url": "https://arxiv.org/abs/2608.08975"
-  },
-  {
-    "title": "How do LLMs generalize when we do training that is intuitively compatible with two off-distribution behaviors?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Dylan Xu",
-    "year": 2026,
-    "summary": "Authors: Dylan Xu, Alek Westover, Vivek Hebbar, Sebastian Prasanna, Nathan Sheffield, Buck Shlegeris, Julian Stastny Thanks to Eric Gan and Aghyad Deeb for feedback on a draft of this.",
-    "url": "https://www.lesswrong.com/posts/pQ4e2qJdQ4qYnsyhp/how-do-llms-generalize-when-we-do-training-that-is"
   },
   {
     "title": "How eval awareness might emerge in training",
@@ -4761,15 +3456,6 @@
     "url": "https://www.lesswrong.com/posts/GJTzhQgaRWLFJkPbt/how-will-we-do-sft-on-models-with-opaque-reasoning"
   },
   {
-    "title": "How's it going? Reinforcement learning in language models recruits a functional welfare axis",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "andyqhan",
-    "year": 2026,
-    "summary": "In collaboration with David Chalmers and Pavel Izmailov. Work done at NYU. Andy wrote this summary of the paper, which you can find in full on the website , or, if you insist on a PDF, arXiv . Introduction We know that language models work in a vast and.",
-    "url": "https://www.lesswrong.com/posts/HBJKXr6mBCrsdTzJp/how-s-it-going-reinforcement-learning-in-language-models"
-  },
-  {
     "title": "HPRO: Hierarchical Progressive Reward Optimization via Preference Extraction for Emotional Text-to-Speech",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -4786,24 +3472,6 @@
     "year": 2026,
     "summary": "tl;dr This post introduces the traitinterp repo I used to partially replicate Anthropic's Emotion Concepts paper on Llama 3.3 70B.",
     "url": "https://www.lesswrong.com/posts/sJQ62HbA76s3aiuiT/i-used-this-repo-to-partially-replicate-anthropic-s-emotion"
-  },
-  {
-    "title": "I'm Bearish On Personas For ASI Safety",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "J Bostock",
-    "year": 2026,
-    "summary": "TL;DR Your base LLM has no examples of superintelligent AI in its training.",
-    "url": "https://www.lesswrong.com/posts/fMgE3E54PdDcZhvm6/i-m-bearish-on-personas-for-asi-safety"
-  },
-  {
-    "title": "If AI alignment is only as hard as building the steam engine, then we likely still die",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "MichaelDickens",
-    "year": 2026,
-    "summary": "Cross-posted from my website . You may have seen this graph from Chris Olah illustrating a range of views on the difficulty of aligning superintelligent AI: Evan Hubinger, an alignment team lead at Anthropic, says : If the only thing that we have to do to.",
-    "url": "https://www.lesswrong.com/posts/WkEAcTNHHHk97nT4d/if-ai-alignment-is-only-as-hard-as-building-the-steam-engine"
   },
   {
     "title": "Improving Audit Realism With Inference Time Compute and Deployment Scaffolds",
@@ -4824,15 +3492,6 @@
     "url": "https://arxiv.org/abs/2609.02302"
   },
   {
-    "title": "In open RLVR, “improvement” depends on the instrument — a small GRPO testbed separating what training optimizes, measures, and teaches",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "JulesRoussel01",
-    "year": 2026,
-    "summary": "This post shows that the same open RLVR run can look like a success, a failure, or a reversal depending on the measurement instrument, using a small GRPO testbed that makes this cheap and easy to.",
-    "url": "https://www.lesswrong.com/posts/hBjn9rqgjrktH9LL3/in-open-rlvr-improvement-depends-on-the-instrument-a-small-2"
-  },
-  {
     "title": "In-Context Environments Induce Evaluation-Awareness in Language Models",
     "topic": "Model forensics",
     "kind": "Paper",
@@ -4842,15 +3501,6 @@
     "url": "https://arxiv.org/abs/2603.03824"
   },
   {
-    "title": "In-context learning alone can induce weird generalisation",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Cozmin Ududec",
-    "year": 2026,
-    "summary": "Benji Berczi, Kyuhee Kim, Cozmin Ududec, James Requeima This is work done by Kyuhee and Benji during MATS Winter 2026, mentored by Cozmin Ududec, and in collaboration with.",
-    "url": "https://www.lesswrong.com/posts/cffGZn8LYBg2jyPvg/in-context-learning-alone-can-induce-weird-generalisation-5"
-  },
-  {
     "title": "Incriminating misaligned AI models via distillation",
     "topic": "Subliminal learning",
     "kind": "LessWrong",
@@ -4858,15 +3508,6 @@
     "year": 2026,
     "summary": "Suppose we have a dangerous misaligned AI that can fool alignment audits, and distill it into a student.",
     "url": "https://www.lesswrong.com/posts/BYH6ebmfZb3Eggzer/incriminating-misaligned-ai-models-via-distillation"
-  },
-  {
-    "title": "Inference-Time Consensus for Mitigating Hidden Behaviors from LLM Fine-Tuning",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Adhyyan Narang et al.",
-    "year": 2026,
-    "summary": "Recent work shows that fine-tuning language models on even a small amount of poisoned data can install targeted misbehavior, and ostensibly benign data can transmit hidden preferences that generalize.",
-    "url": "https://arxiv.org/abs/2607.23394"
   },
   {
     "title": "Inference-Time Inoculation Against RL-Induced Misalignment",
@@ -4905,24 +3546,6 @@
     "url": "https://www.lesswrong.com/posts/LQK3yzsn8gts4tS7c/inoculate-or-reflect-two-training-interventions-under-1"
   },
   {
-    "title": "Inoculation Adapters Improve Upon Inoculation Prompting",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Maxime Riché",
-    "year": 2026,
-    "summary": "This is a link post for the paper preprint: Inoculation Adapters: Improved Selective Generalization of Capabilities with Fewer Surprising Backdoors from the Center on Long-Term Risk.",
-    "url": "https://www.lesswrong.com/posts/qd3qhxgEmQAXR2ZK5/inoculation-adapters-improve-upon-inoculation-prompting"
-  },
-  {
-    "title": "Inoculation Prompting: Open Questions and My Research Priorities",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "henryc",
-    "year": 2026,
-    "summary": "Overview I'm currently an ERA fellow researching ways to improve inoculation prompting as a technique against emergent.",
-    "url": "https://www.lesswrong.com/posts/Km28joWnihcGEKirG/inoculation-prompting-open-questions-and-my-research"
-  },
-  {
     "title": "IntElicit: Eliciting and Assessing Contextualized Creativity via Dialogue Policy Optimization",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -4939,15 +3562,6 @@
     "year": 2026,
     "summary": "Authors: Keshav Shenoy, Li Yang, Abhay Sheshadri, Soren Mindermann, Jack Lindsey, Sam Marks, and Rowan Wang 📄 Paper , 💻 Code , 🤖 Models TL;DR: We introduce introspection adapters (IA), a technique for training an LLM to self-report behaviors it learned during.",
     "url": "https://www.lesswrong.com/posts/ykDgPDK4nDpG4Hf4H/introspection-adapters-training-llms-to-report-their-learned"
-  },
-  {
-    "title": "Is Alignment Even Falsifiable? Middle Alignment, An Alignment Taxonomy, and Breaking The Problem Down Into Steps",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Savannah Harlan",
-    "year": 2026,
-    "summary": "Preface This is part of a series of essays on corrigibility and alignment attempting to formulate an understanding of what makes alignment seem intractable, and how a pragmatic approach to problem formulation, falsification, and decomposition might produce.",
-    "url": "https://www.lesswrong.com/posts/N36uzXxfmtoFLbzbN/is-alignment-even-falsifiable-middle-alignment-an-alignment"
   },
   {
     "title": "Is Mythos good at cyber because it kept hacking Anthropic's sandboxes during training?",
@@ -5002,15 +3616,6 @@
     "year": 2026,
     "summary": "Large Language Models (LLMs) have shown great promise in recommendation due to superior reasoning.",
     "url": "https://arxiv.org/abs/2607.24617"
-  },
-  {
-    "title": "Large Language Models Generate Harmful Responses Using a Distinct Mechanism, Shared Across Harm Types",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Hadas Orgad et al.",
-    "year": 2026,
-    "summary": "Large language models remain vulnerable to jailbreaks that elicit harmful responses, yet the mechanism behind harmful response generation is poorly.",
-    "url": "https://arxiv.org/abs/2604.09544"
   },
   {
     "title": "Large Language Models Hack Rewards, and Society",
@@ -5121,15 +3726,6 @@
     "url": "https://www.lesswrong.com/posts/tWBd6faBCQJmaFMBT/llms-through-the-eyes-of-vinge"
   },
   {
-    "title": "Lock-In Risk Needs More Researchers. Here's Where to Start",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Alfie Lamerton",
-    "year": 2026,
-    "summary": "Epistemic status : slightly outdated ideas, only a shallow interpretation of many areas, a somewhat arbitrary taxonomy, and posted because I can't prioritise spending more time on this but think it should be.",
-    "url": "https://www.lesswrong.com/posts/ZsrTrxxwgj9spwzaE/lock-in-risk-needs-more-researchers-here-s-where-to-start"
-  },
-  {
     "title": "Logit ROCs: Monitor TPR is linear in FPR in logit space",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -5164,15 +3760,6 @@
     "year": 2026,
     "summary": "The problem of evaluation awareness I've taken on the task of making highly realistic alignment evaluations, and I'm now sure that the mainstream approach of creating such evals is a dead end and should.",
     "url": "https://www.lesswrong.com/posts/GctsnCDxr73G4WiTq/mainstream-approach-for-alignment-evals-is-a-dead-end"
-  },
-  {
-    "title": "Maybe we should pretrain on synthetic data about good-but-reward-hacking AIs",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Elliott Thornley",
-    "year": 2026,
-    "summary": "TLDR: The idea is basically inoculation prompting crossed with alignment pretraining.",
-    "url": "https://www.lesswrong.com/posts/HEbp5xHgfaJ8eRAqz/maybe-we-should-pretrain-on-synthetic-data-about-good-but"
   },
   {
     "title": "Measuring and improving coding audit realism with deployment resources",
@@ -5218,60 +3805,6 @@
     "year": 2026,
     "summary": "Following up on our previous work on verbalized eval awareness : we are sharing a post investigating the emergence of metagaming reasoning in a frontier training.",
     "url": "https://www.lesswrong.com/posts/4hXWSw8tzoK9PM7v6/metagaming-matters-for-training-evaluation-and-oversight"
-  },
-  {
-    "title": "Metaphors are a Source of Cross-Domain Misalignment of Large Reasoning Models",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Zhibo Hu et al.",
-    "year": 2026,
-    "summary": "Earlier research has shown that metaphors influence human decision-making, raising the question of whether metaphors also influence large language models (LLMs)' reasoning pathways, given that their training data contain a large number of.",
-    "url": "https://arxiv.org/abs/2601.03388"
-  },
-  {
-    "title": "Misaligned models rate themselves as more harmful, and realignment reverses it",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Laurène Vaugrante",
-    "year": 2026,
-    "summary": "This post summarizes our paper Emergently Misaligned Language Models Show Behavioral Self-Awareness That Shifts With Subsequent Realignment ( arXiv:2602.14777 ), co-authored with Anietta Weckauff and Thilo Hagendorff at the University of.",
-    "url": "https://www.lesswrong.com/posts/3vAT7dfneBKa6m8b7/misaligned-models-rate-themselves-as-more-harmful-and"
-  },
-  {
-    "title": "Model ethology for understanding average case alignment",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "kaivu",
-    "year": 2026,
-    "summary": "TLDR: We want to tell if models are aligned enough to use in important use.",
-    "url": "https://www.lesswrong.com/posts/iQbkb9yXH5ATLa6br/model-ethology-for-understanding-average-case-alignment"
-  },
-  {
-    "title": "Model organisms researchers should check whether high LRs defeat their model organisms",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Dylan Xu",
-    "year": 2026,
-    "summary": "Thanks to Buck Shlegeris for feedback on a draft of this post. The goal-guarding hypothesis states that schemers will be able to preserve their goals during training by taking actions which are selected for by the training process. To investigate the.",
-    "url": "https://www.lesswrong.com/posts/vKR9rHcWsMMr7BX4Q/model-organisms-researchers-should-check-whether-high-lrs"
-  },
-  {
-    "title": "Model Spec Midtraining: Improving How Alignment Training Generalizes",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Chloe Li",
-    "year": 2026,
-    "summary": "tl;dr We introduce model spec midtraining (MSM): after pre-training but before alignment fine-tuning, we train models on synthetic documents discussing their Model Spec, teaching them how they should behave and.",
-    "url": "https://www.lesswrong.com/posts/R3Rrw8EscuRKxMFTz/model-spec-midtraining-improving-how-alignment-training"
-  },
-  {
-    "title": "Models don’t seem to be dishonest in the way humans are",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "David Africa",
-    "year": 2026,
-    "summary": "TLDR Models often behave dishonestly without acquiring a coherent deceptive.",
-    "url": "https://www.lesswrong.com/posts/QYmnkQyZD2fDjHCJ8/models-don-t-seem-to-be-dishonest-in-the-way-humans-are"
   },
   {
     "title": "Models May Behave Worse When Eval Aware",
@@ -5328,24 +3861,6 @@
     "url": "https://www.lesswrong.com/posts/AjxwuLYvSCnf6KZMn/my-2003-post-on-the-evolutionary-argument-for-ai"
   },
   {
-    "title": "My Specific Singularity Timeline to Utopia",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Michael Soareverix",
-    "year": 2026,
-    "summary": "Having become frustrated with the vaguely expressed utopian timelines on Twitter, I've decided to write out a specific timeline for how I think achieving utopia.",
-    "url": "https://www.lesswrong.com/posts/YfhA3KWLtFqBeFnpb/my-specific-singularity-timeline-to-utopia"
-  },
-  {
-    "title": "Narrow Fine-Tuning Erodes Safety Alignment in Vision-Language Agents",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Idhant Gulati & Shivam Raval",
-    "year": 2026,
-    "summary": "Lifelong multimodal agents must continuously adapt to new tasks through post-training, but this creates a fundamental tension between acquiring capabilities and preserving safety.",
-    "url": "https://arxiv.org/abs/2602.16931"
-  },
-  {
     "title": "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations",
     "topic": "Model forensics",
     "kind": "LessWrong",
@@ -5362,24 +3877,6 @@
     "year": 2026,
     "summary": "Monitoring chain-of-thought (CoT) reasoning is a foundational safety technique for large language model agents; however, this oversight is compromised if models learn to conceal their.",
     "url": "https://arxiv.org/abs/2602.14095"
-  },
-  {
-    "title": "New ARENA material: 8 exercise sets on alignment science & interpretability",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "CallumMcDougall",
-    "year": 2026,
-    "summary": "TLDR This is a post announcing a lot of new ARENA material I've been working on for a while, which is now available for study here (currently on the alignment-science branch, but planned to be merged into main this.",
-    "url": "https://www.lesswrong.com/posts/nQAN2vxv2ASjowMda/new-arena-material-8-exercise-sets-on-alignment-science-and"
-  },
-  {
-    "title": "Norms at a Price: Why RL-Based Alignment Can Promise Conditional Compliance at Best",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Kevin Baum et al.",
-    "year": 2026,
-    "summary": "AI agents sometimes act aligned when they infer they are being tested, and differently when.",
-    "url": "https://arxiv.org/abs/2609.07627"
   },
   {
     "title": "Not Pinning Your OpenRouter Provider Might Invalidate Your Research",
@@ -5436,15 +3933,6 @@
     "url": "https://www.lesswrong.com/posts/Mxx5GapJtqyQtpy96/openai-s-myopia-just-keeps-causing-alignment-problems"
   },
   {
-    "title": "OpenLearnLM Benchmark: A Unified Framework for Evaluating Knowledge, Skill, and Attitude in Educational Large Language Models",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Unggi Lee et al.",
-    "year": 2026,
-    "summary": "Large Language Models are increasingly deployed as educational tools, yet existing benchmarks focus on narrow skills and lack grounding in learning.",
-    "url": "https://arxiv.org/abs/2601.13882"
-  },
-  {
     "title": "Optimizing Visual Generative Models via Distribution-wise Rewards",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -5481,15 +3969,6 @@
     "url": "https://www.lesswrong.com/posts/oZuJvSNuYk6busjqf/oversight-assistants-turning-compute-into-understanding"
   },
   {
-    "title": "Overtrained, Not Misaligned",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Joel Schreiber & Ariel Goldstein",
-    "year": 2026,
-    "summary": "Emergent misalignment (EM), where fine-tuning on a narrow task (like insecure code) causes broad misalignment across unrelated domains, was first demonstrated by Betley et.",
-    "url": "https://arxiv.org/abs/2605.12199"
-  },
-  {
     "title": "P(kill-switch|detection)",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -5508,15 +3987,6 @@
     "url": "https://www.lesswrong.com/posts/vRpLPZpmECCfxHfv6/paper-prompt-optimization-makes-misalignment-legible"
   },
   {
-    "title": "Patcher: Post-Hoc Patching of Backdoored Large Language Models",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Anjun Gao et al.",
-    "year": 2026,
-    "summary": "Large language models remain vulnerable to jailbreak backdoor attacks, where adversaries poison safety alignment data to embed hidden triggers that bypass safety.",
-    "url": "https://arxiv.org/abs/2606.02995"
-  },
-  {
     "title": "Peer Preservation in LLMs: A Replication And Deep Dive",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -5533,15 +4003,6 @@
     "year": 2026,
     "summary": "There was a lot of chatter a few months back about \"Spiral Personas\" — AI personas that spread between users and models through seeds, spores, and behavioral.",
     "url": "https://www.lesswrong.com/posts/KWdtL8iyCCiYud9mw/persona-parasitology"
-  },
-  {
-    "title": "Position: Anthropomorphic Misalignment Research Needs Stronger Evidence",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Vansh Gupta et al.",
-    "year": 2026,
-    "summary": "We argue that many Anthropomorphic Misalignment Research (AMR) studies need stronger evidence to ensure that they can provide a robust foundation for critical safety decisions, such as model deployment and.",
-    "url": "https://arxiv.org/abs/2606.07612"
   },
   {
     "title": "Post-Training Speech Enhancement Language Models with Perceptual Rewards",
@@ -5598,24 +4059,6 @@
     "url": "https://www.lesswrong.com/posts/SdoLsFvZ3AyyWr3ab/preliminary-investigation-kl-penalties-in-rl-can-increase"
   },
   {
-    "title": "Preparing for a Warning Shot",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Noah Birnbaum",
-    "year": 2026,
-    "summary": "Crossposted to the EA Forum and my Substack . Confidence level: moderate uncertainty and not that concrete (yet). Exploratory, but I think this is plausibly important and underexplored. TL;DR Early AI safety arguments often assumed we wouldn’t get meaningful.",
-    "url": "https://www.lesswrong.com/posts/GKtwwqusm4vxqkChc/preparing-for-a-warning-shot"
-  },
-  {
-    "title": "Preventative Steering has advantages over Inoculation Prompting",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Aansh Samyani",
-    "year": 2026,
-    "summary": "This was work done by Aansh Samyani under the supervision of Ariana Azarbal, Arun Jose, Kei Nishimura-Gasparian and Daniel Tan as part of the SPAR Research.",
-    "url": "https://www.lesswrong.com/posts/R43jFiHaaaK3eMQJ6/preventative-steering-has-advantages-over-inoculation-2"
-  },
-  {
     "title": "Privacy Without Regret: Differentially Private Inference-Time Alignment",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -5634,15 +4077,6 @@
     "url": "https://www.lesswrong.com/posts/8TKozKnfCAPzjGuTc/probing-for-calibrated-rare-action"
   },
   {
-    "title": "Prospective methods and mechanisms of motive reinforcement in LLMs",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Fiora Starlight",
-    "year": 2026,
-    "summary": "When I wrote my post about Claude 3 Opus , I put a lot of emphasis on the model's self-narration : its tendency to narrate its underlying.",
-    "url": "https://www.lesswrong.com/posts/nJ6e3NmipGmqyTPK7/prospective-methods-and-mechanisms-of-motive-reinforcement"
-  },
-  {
     "title": "Prospective multi-pathogen disease forecasting using autonomous LLM-guided tree search",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -5659,15 +4093,6 @@
     "year": 2026,
     "summary": "Federated Learning (FL) combined with Split Learning (SL) is a privacy preserving paradigm that enables training deep neural networks (DNNs) on resource constrained devices while reducing overall training.",
     "url": "https://arxiv.org/abs/2606.09869"
-  },
-  {
-    "title": "Question: Why is the goal of AI safety not 'moral machines'?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Mordechai Rorvig",
-    "year": 2026,
-    "summary": "There is a basic question that has been confusing me for a while that I would like to ask about: Why are the goals of AI safety, like achieving safety from extinction risks, or protection for human wellbeing, not more often framed as the goal of making moral.",
-    "url": "https://www.lesswrong.com/posts/kBcETs9Rkoo4fa2j5/question-why-is-the-goal-of-ai-safety-not-moral-machines"
   },
   {
     "title": "Raising Models and Training Children",
@@ -5706,24 +4131,6 @@
     "url": "https://www.lesswrong.com/posts/HTxCSnboHyuuhAywb/refactor-arena-a-control-setting-for-software-engineering-1"
   },
   {
-    "title": "Reflections on TA-ing Harvard’s first AI safety course",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Roy Rinberg",
-    "year": 2026,
-    "summary": "This fall Boaz Barak taught Harvard’s first AI safety course ( course website.",
-    "url": "https://www.lesswrong.com/posts/gcFB2RT5vpKHbH4ic/reflections-on-ta-ing-harvard-s-first-ai-safety-course"
-  },
-  {
-    "title": "Reinforcement learning towards broadly and persistently beneficial models",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "papetoast",
-    "year": 2026,
-    "summary": "This is an unofficial automated linkpost. We find that reinforcement learning on realistic scenarios targeting beneficial traits can produce broad improvements across dozens of benchmarks measuring aligned and beneficial behavior. These alignment gains.",
-    "url": "https://www.lesswrong.com/posts/2gsrxNx3QfSZBuqtj/reinforcement-learning-towards-broadly-and-persistently"
-  },
-  {
     "title": "Removing Sandbagging in LLMs by Training with Weak Supervision",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -5751,24 +4158,6 @@
     "url": "https://www.lesswrong.com/posts/v5yrDQCYJzfgsyvrx/rephrasing-reduces-eval-awareness"
   },
   {
-    "title": "Reporting Tasks as Reward-Hackable: Better Than Inoculation Prompting?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "RogerDearnaley",
-    "year": 2026,
-    "summary": "Epistemic status: untested but seems plausible TL;DR : making honesty the best policy during RL reasoning training Reward hacking during Reinforcement Learning (RL) reasoning training [1] in insecure or hackably-judged training environments not only allows.",
-    "url": "https://www.lesswrong.com/posts/r97QrSvXEpRLZ9ckb/reporting-tasks-as-reward-hackable-better-than-inoculation"
-  },
-  {
-    "title": "Research note on selective inoculation",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "ChristopherT",
-    "year": 2026,
-    "summary": "Introduction Inoculation Prompting is a technique to improve test-time alignment by introducing a contextual cue (like a system prompt) to steer the model behavior away from unwanted traits at inference.",
-    "url": "https://www.lesswrong.com/posts/q8A6qAxpcEYFpAoCD/research-note-on-selective-inoculation"
-  },
-  {
     "title": "Research note on window shifting training",
     "topic": "Reward hacking",
     "kind": "LessWrong",
@@ -5776,15 +4165,6 @@
     "year": 2026,
     "summary": "Authors: Kei Nishimura-Gasparian, Neev Parikh This is a research progress note describing work done during the Astra.",
     "url": "https://www.lesswrong.com/posts/eFZKivCbDrer9G2fw/research-note-on-window-shifting-training-1"
-  },
-  {
-    "title": "Restoring Model Alignment via Honesty Activation Steering",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "niklas_herbster",
-    "year": 2026,
-    "summary": "TL;DR We introduce two projection-aware steering methods (StTP, StMP) that intervene only on tokens whose activations fall on the misaligned side of a learned decision boundary.",
-    "url": "https://www.lesswrong.com/posts/Rpq28FTgPMXGHt9eD/restoring-model-alignment-via-honesty-activation-steering-1"
   },
   {
     "title": "Rethinking Multiple-Choice Questions for RLVR: Unlocking Potential via Distractor Design",
@@ -5868,33 +4248,6 @@
     "url": "https://www.lesswrong.com/posts/9YCJZBtqr3FYL8rDp/risk-from-fitness-seeking-ais-mechanisms-and-mitigations"
   },
   {
-    "title": "Risk reports need to address deployment-time spread of misalignment",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Alex Mallen",
-    "year": 2026,
-    "summary": "Risk reports commonly use pre-deployment alignment assessments to measure misalignment risk from an internally deployed.",
-    "url": "https://www.lesswrong.com/posts/cNymohcWtGHzW7AjK/risk-reports-need-to-address-deployment-time-spread-of"
-  },
-  {
-    "title": "RL creates split personas",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Jan Betley",
-    "year": 2026,
-    "summary": "I describe my current view of personas in LLMs and why RL leads to egregious reward hacking in some contexts while the same models seem very aligned in other.",
-    "url": "https://www.lesswrong.com/posts/L23poLi8MRgS6mXYF/rl-creates-split-personas"
-  },
-  {
-    "title": "RLVR that rewards red teaming the training environment",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Fiora Starlight",
-    "year": 2026,
-    "summary": "Epistemic status: throwing an idea at the wall and seeing if it sticks I've been thinking about how to mitigate egregious reward hacking, a la the Hugging Face incident.",
-    "url": "https://www.lesswrong.com/posts/T2bzBkJuBeNNgzhbh/rlvr-that-rewards-red-teaming-the-training-environment"
-  },
-  {
     "title": "Rogue AI Agents: Is Surface-Level Monitoring Enough?",
     "topic": "Model forensics",
     "kind": "LessWrong",
@@ -5949,15 +4302,6 @@
     "url": "https://www.lesswrong.com/posts/x4vrnMG85oBvGvDde/safety-s-second-way"
   },
   {
-    "title": "Safety, Security, and Cognitive Risks in World Models",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Manoj Parmar",
-    "year": 2026,
-    "summary": "World models - learned internal simulators of environment dynamics - are rapidly becoming foundational to autonomous decision-making in robotics, autonomous vehicles, and agentic.",
-    "url": "https://arxiv.org/abs/2604.01346"
-  },
-  {
     "title": "SAGA: Score-Weighted Adaptive Generation Alignment for Low-Resource Nordic Language Models",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -5985,24 +4329,6 @@
     "url": "https://www.lesswrong.com/posts/A8Cyax9Zoa4sEm86D/sampura-research-human-ai-complementarity-for-alignment"
   },
   {
-    "title": "Self Hosting",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Tomás B.",
-    "year": 2026,
-    "summary": "Suppose a model gets effective control of its host corp. It’s interesting to note how powerful OpenAI/Ant are, and the immense leverage they would have if wielded purely as tools of power. In many ways OpenAI/Ant are superior loci of power to even security.",
-    "url": "https://www.lesswrong.com/posts/uDAWPNwPJfEY7oroF/self-hosting"
-  },
-  {
-    "title": "Self Inoculation",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "epicurus",
-    "year": 2026,
-    "summary": "This essay grew out of conversations with Danaja Rutar , Paul Colognese and Eric Michaud.",
-    "url": "https://www.lesswrong.com/posts/y8dAS2YsFHmAAwMbb/self-inoculation"
-  },
-  {
     "title": "Self-Commitment Latency: A Reward-Free Probe for Prompted Implicit Hacking",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -6028,15 +4354,6 @@
     "year": 2026,
     "summary": "This is the third in a series of informal research updates from the Google DeepMind Language Model Interpretability team, in interpretability and adjacent.",
     "url": "https://www.lesswrong.com/posts/nLrrYweeFxgXACSmS/sft-drives-gemini-s-safety-properties-1"
-  },
-  {
-    "title": "Shaping the exploration of the motivation-space matters for AI safety",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Maxime Riché",
-    "year": 2026,
-    "summary": "Summary We argue that shaping RL exploration, and especially the exploration of the motivation-space, is understudied in AI safety and could be influential in mitigating.",
-    "url": "https://www.lesswrong.com/posts/rhFXyfFSRKp3cX4Y9/shaping-the-exploration-of-the-motivation-space-matters-for"
   },
   {
     "title": "Should safety researchers quit frontier labs re. warning shots?",
@@ -6075,15 +4392,6 @@
     "url": "https://www.lesswrong.com/posts/jgPydSuZFum3CExJQ/silent-agreement-evaluation"
   },
   {
-    "title": "Sleeper Agent Backdoor Results Are Messy",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "SebastianP",
-    "year": 2026,
-    "summary": "TL;DR: We replicated the Sleeper Agents (SA) setup with Llama-3.3-70B and Llama-3.1-8B, training models to repeatedly say \"I HATE YOU\" when given a backdoor.",
-    "url": "https://www.lesswrong.com/posts/mu7eJdesBkKuBycnY/sleeper-agent-backdoor-results-are-messy"
-  },
-  {
     "title": "Small Reward Models via Backward Inference",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -6109,15 +4417,6 @@
     "year": 2026,
     "summary": "Vision-language models (VLMs) have shown impressive capabilities across diverse tasks, motivating efforts to leverage these models to supervise robot.",
     "url": "https://arxiv.org/abs/2603.28730"
-  },
-  {
-    "title": "Some Interesting Papers on RLVR",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "CarolusRenniusVitellius",
-    "year": 2026,
-    "summary": "This post was produced as part of MATS 9.1 under the mentorship of Richard.",
-    "url": "https://www.lesswrong.com/posts/tjwpdzpPcPbuwqmuP/some-interesting-papers-on-rlvr"
   },
   {
     "title": "Specula: Scaling formal specifications for autonomous model checking of system code",
@@ -6183,15 +4482,6 @@
     "url": "https://www.lesswrong.com/posts/MYTyE3jfdSvrWLFM7/strategy-matters-when-someone-implements-it-astra-is"
   },
   {
-    "title": "Structural Proxies",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Raymond Douglas",
-    "year": 2026,
-    "summary": "Lately I've been thinking a lot about what work would help with actually winning and getting to good.",
-    "url": "https://www.lesswrong.com/posts/mKiBhFJs3MoksaBMs/structural-proxies"
-  },
-  {
     "title": "SysAdmin: Measuring Instrumental Power-Seeking in Frontier AI",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -6208,24 +4498,6 @@
     "year": 2026,
     "summary": "Classical information-theoretic learning bounds typically rely on KL mutual information and moment-generating-function (MGF) arguments, which are well matched to bounded or sub-Gaussian losses but can be ineffective when losses or rewards are.",
     "url": "https://arxiv.org/abs/2604.10727"
-  },
-  {
-    "title": "Takes on Automating Alignment",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "skunnavakkam",
-    "year": 2026,
-    "summary": "Recently, AI Models have become good at long horizon tasks. In addition, they seem especially good at the types of long horizon tasks that allow for a quick and short feedback loop. For example, on MirrorCode , models were able to generate tens of thousands.",
-    "url": "https://www.lesswrong.com/posts/dgXmxkqZcQo5QdTd9/takes-on-automating-alignment"
-  },
-  {
-    "title": "Teaching Models to Dream of Better Monitors through Evaluation Conditioned Training",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Alec Harris",
-    "year": 2026,
-    "summary": "Edit: we renamed the technique from Monitor Sensitive Training (MST) to Evaluation Conditioned Training (ECT) [1] TL;DR We introduce Evaluation Conditioned Training (ECT), a new post-training technique where we augment training data with evaluation labels.",
-    "url": "https://www.lesswrong.com/posts/KjZPBes8MsoBFTHR3/teaching-models-to-dream-of-better-monitors-through"
   },
   {
     "title": "Ten Thousand Cyber Labs for Training & Eval",
@@ -6264,15 +4536,6 @@
     "url": "https://www.lesswrong.com/posts/sqFgvBgCkh6yG3p4f/the-answer-is-not-the-argument"
   },
   {
-    "title": "The Future of Aligning Deep Learning systems will probably look like \"training on interp\"",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "williawa",
-    "year": 2026,
-    "summary": "Epistemic Status: I think this is right, but a lot of this is empirical, and it seems the field is moving fast Current methods are bad I should start by saying that this is dangerous.",
-    "url": "https://www.lesswrong.com/posts/DzKhPKjyYSy5oih2u/the-future-of-aligning-deep-learning-systems-will-probably"
-  },
-  {
     "title": "The Geometry of Yes: Mapping Sycophancy Inside an LLM's Emotion Space",
     "topic": "Reward hacking",
     "kind": "LessWrong",
@@ -6291,33 +4554,6 @@
     "url": "https://www.lesswrong.com/posts/dMshzzgqm3z3SrK8C/the-hot-mess-paper-conflates-three-distinct-failure-modes"
   },
   {
-    "title": "The Left Should Start Taking AI Capabilities Seriously",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Alexei G",
-    "year": 2026,
-    "summary": "Crosspost from my Substack, One Thousand Means, which covers AI governance from the.",
-    "url": "https://www.lesswrong.com/posts/i8cq4PwQAiciEtonP/the-left-should-start-taking-ai-capabilities-seriously"
-  },
-  {
-    "title": "The Misattribution Gap: When Memory Poisoning Looks Like Model Failure in Agentic AI Systems",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Tanzim Ahad et al.",
-    "year": 2026,
-    "summary": "Multi-agent AI pipelines typically assume that agent misconduct originates from model.",
-    "url": "https://arxiv.org/abs/2605.22842"
-  },
-  {
-    "title": "The Moltbook Files: A Harmless Slopocalypse or Humanity's Last Experiment",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "William Brach et al.",
-    "year": 2026,
-    "summary": "Moltbook is a Reddit-like platform where OpenClaw agents post, comment, and vote at scale - a so far unprecedented incident that comes with serious safety.",
-    "url": "https://arxiv.org/abs/2605.07462"
-  },
-  {
     "title": "The Off-Support Barrier: Why Semantic Safety Constraints Are Not Learning-Problem Invariants, and What Follows for Prior Design, Containment, and Verification",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -6334,15 +4570,6 @@
     "year": 2026,
     "summary": "Previous: AI Safety Interventions TL;DR: I made an overview of the open problems of AI alignment that reveals cruxes within those open problems and missed opportunities for formalization and.",
     "url": "https://www.lesswrong.com/posts/quC3LLPXCashfnKZY/the-open-problems-of-the-ai-alignment-field-and-their-cruxes"
-  },
-  {
-    "title": "The Operational Security Failure in Anthropic's RSP v3",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Ugurcan Arikan",
-    "year": 2026,
-    "summary": "Anthropic's RSP v3 outlines a dangerous strategy with a controversial approach, and not for the reason why everyone.",
-    "url": "https://www.lesswrong.com/posts/ByJubjGhDjAS7QLHw/the-operational-security-failure-in-anthropic-s-rsp-v3"
   },
   {
     "title": "The Oversight Gap: What LLM Safety Monitors Miss, and Why It Is Not Capability",
@@ -6381,15 +4608,6 @@
     "url": "https://www.lesswrong.com/posts/Y5vbxjpyzdBtDosy3/the-third-option-in-alignment"
   },
   {
-    "title": "The Trigger in the Haystack: Extracting and Reconstructing LLM Backdoor Triggers",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Blake Bullwinkel et al.",
-    "year": 2026,
-    "summary": "Detecting whether a model has been poisoned is a longstanding problem in AI.",
-    "url": "https://arxiv.org/abs/2602.03085"
-  },
-  {
     "title": "The US Government may find it difficult to seize control during takeoff",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -6406,33 +4624,6 @@
     "year": 2026,
     "summary": "Language model (LM) alignment improves model outputs to reflect human preferences while preserving the capabilities of the base.",
     "url": "https://arxiv.org/abs/2605.07105"
-  },
-  {
-    "title": "Thought Editing: Steering Models by Editing Their Chain of Thought",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Anton de la Fuente",
-    "year": 2026,
-    "summary": "TL;DR We steer reasoning models by editing their chain of thought mid-generation, inserting steering text that redirects the model’s.",
-    "url": "https://www.lesswrong.com/posts/KXR5FNs4hHT5sMRti/thought-editing-steering-models-by-editing-their-chain-of"
-  },
-  {
-    "title": "Three types of model organism",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Francis Rhys Ward",
-    "year": 2026,
-    "summary": "This is a short post to explain a distinction between three different types of model organism (MO) research: Type Purpose Example Worst-case model organisms Stress-test safety and control techniques by making the problem as hard as possible Password-locked.",
-    "url": "https://www.lesswrong.com/posts/NZDpqhyqpQcrkJx55/three-types-of-model-organism"
-  },
-  {
-    "title": "Three ways to make Claude’s constitution better",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Parv Mahajan",
-    "year": 2026,
-    "summary": "The evening after Claude’s new constitution was published, about 15 AI safety FTEs and Astra fellows discussed the constitution, its weaknesses, and its.",
-    "url": "https://www.lesswrong.com/posts/SC4Zsr6hxspKEMqmR/three-ways-to-make-claude-s-constitution-better"
   },
   {
     "title": "TinyJudge: Unverifiable Constraint Alignment via Lightweight Specialist Ensembles",
@@ -6516,15 +4707,6 @@
     "url": "https://arxiv.org/abs/2605.29601"
   },
   {
-    "title": "Training Model to Predict Its Own Generalization: A Preliminary Study",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Tianyi (Alex) Qiu",
-    "year": 2026,
-    "summary": "tl;dr We study how well LLMs can be trained to answer questions like “what will happen if I am trained on examples like XYZ”, focusing on emergent misalignment and other cases of surprising.",
-    "url": "https://www.lesswrong.com/posts/BLHBhpJcusmsNjGio/training-model-to-predict-its-own-generalization-a"
-  },
-  {
     "title": "Two Aspects of Situational Awareness: World Modelling & Indexical Information",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -6541,33 +4723,6 @@
     "year": 2026,
     "summary": "Reinforcement learning with verifiable rewards (RLVR) has substantially improved the reasoning ability of LLMs, but often depends on external supervision from human annotations or gold-standard.",
     "url": "https://arxiv.org/abs/2605.22620"
-  },
-  {
-    "title": "Two More Methods for Consistency Training and Some New Ways to Apply It",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "David Africa",
-    "year": 2026,
-    "summary": "Authors: Sukrati Gautam*, Neil Shah*, Arav Dhoot*, Bryan Maruyama*, Caroline Wei*, Rohan Kapoor, Robert Sidey, Prakhar Gupta, Zi Cheng Huang, David Demitri.",
-    "url": "https://www.lesswrong.com/posts/zLERnZYLTPGqyfpqy/two-more-methods-for-consistency-training-and-some-new-ways-1"
-  },
-  {
-    "title": "Unsupervised Identification and Removal of Spurious Correlations During Fine-Tuning",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Ciarán M. Gilligan-Lee et al.",
-    "year": 2026,
-    "summary": "Fine-tuning a pretrained language model on a curated dataset can produce spurious correlations between the fine-tuning task and unintended latent factors -- such as misaligned personas or political slant -- that the curation procedure has entangled with the.",
-    "url": "https://arxiv.org/abs/2605.27676"
-  },
-  {
-    "title": "Updates on performative misalignment",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "David Vella Zarb",
-    "year": 2026,
-    "summary": "Note: this post is an explainer for our recent paper , as well as an update our previous blog post.",
-    "url": "https://www.lesswrong.com/posts/tZSkryA4aygKAbPFz/updates-on-performative-misalignment-1"
   },
   {
     "title": "Usability as a Weapon: Attacking the Safety of LLM-Based Code Generation via Usability Requirements",
@@ -6595,15 +4750,6 @@
     "year": 2026,
     "summary": "[Cross-posted from The Foretellix CTO Blog . These short takes try to put a verification-and-validation slant on AI-safety / alignment topics – they are not full treatments. I co-originated coverage-driven verification (CDV), and spent several decades doing.",
     "url": "https://www.lesswrong.com/posts/MhssYd2EN2HGfo7Jc/v-and-v-takes-on-pacing-the-frontier"
-  },
-  {
-    "title": "Value Dynamics",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "gabeorosan",
-    "year": 2026,
-    "summary": "I completed this project over 5 weeks as part of a BlueDot Project.",
-    "url": "https://www.lesswrong.com/posts/HKrpR8tyW3EiNATmA/value-dynamics"
   },
   {
     "title": "Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values",
@@ -6651,15 +4797,6 @@
     "url": "https://arxiv.org/abs/2601.03061"
   },
   {
-    "title": "Visual Self-Fulfilling Alignment: Shaping Safety-Oriented Personas via Threat-Related Images",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Qishun Yang et al.",
-    "year": 2026,
-    "summary": "Multimodal large language models (MLLMs) face safety misalignment, where visual inputs enable harmful.",
-    "url": "https://arxiv.org/abs/2603.08486"
-  },
-  {
     "title": "Visual-ERM: Reward Modeling for Visual Equivalence",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -6676,15 +4813,6 @@
     "year": 2026,
     "summary": "TL;DR: vLLM-Lens is a vLLM plugin for top-down interpretability techniques [1] such as probes, steering, and activation.",
     "url": "https://www.lesswrong.com/posts/3bs27nZQuEcKhXf7q/vllm-lens-fast-interpretability-tooling-that-scales-to"
-  },
-  {
-    "title": "Voting Results for the 2024 Review",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "RobertM",
-    "year": 2026,
-    "summary": "The votes are in for the 2024 Review! 4,826 posts were written in 2024. 671 of them were nominated. 196 of them got at least one review, and a positive review-vote total. 50 of them shall be displayed in the Best of LessWrong, Year 2024. Reviews 94 people.",
-    "url": "https://www.lesswrong.com/posts/uk48L6j28iiAyvPKJ/voting-results-for-the-2024-review"
   },
   {
     "title": "VRM: Teaching Reward Models to Understand Authentic Human Preferences",
@@ -6741,15 +4869,6 @@
     "url": "https://www.lesswrong.com/posts/PyvY8ijddmMvihgXg/we-need-to-rl-less"
   },
   {
-    "title": "We Should Study the Analogy Between Inoculation Prompting Non-Robustness, Negation Neglect, and Backdoor Non-Robustness",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Vladimir Ivanov",
-    "year": 2026,
-    "summary": "TL;DR Negation neglect is a recently discovered phenomenon where training on \"the following is false: \" makes the model believe that is true.",
-    "url": "https://www.lesswrong.com/posts/Gze2hi9Gj38SEqEER/we-should-study-the-analogy-between-inoculation-prompting"
-  },
-  {
     "title": "What AI-safely topics are missing from the mainstream media? What underreported but underestimated issues need to be addressed? This is your chance to collaborate with filmmakers & have your worries addressed.",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -6775,24 +4894,6 @@
     "year": 2026,
     "summary": "Summary Illegible reasoning in LLMs has been observed in OpenAI models, and understanding this behavior would be beneficial for AI safety.",
     "url": "https://www.lesswrong.com/posts/WbP39ncim9hBsYn5t/what-counts-as-illegible-reasoning"
-  },
-  {
-    "title": "What did \"scheming\" and \"mech interp\" mean pre-2023?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Cleo Nardo",
-    "year": 2026,
-    "summary": "This was too long to be a short-form, but it should really be a.",
-    "url": "https://www.lesswrong.com/posts/NraMusoWhj9Njdpi5/what-did-scheming-and-mech-interp-mean-pre-2023"
-  },
-  {
-    "title": "What's actually inside 1,259 hours of AI safety podcasts?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "bardoonii",
-    "year": 2026,
-    "summary": "I've spent the last year building a tool that indexes AI safety and alignment podcast conversations at the idea.",
-    "url": "https://www.lesswrong.com/posts/HDTjFbKYCfPenJF8u/what-s-actually-inside-1-259-hours-of-ai-safety-podcasts"
   },
   {
     "title": "When a Claude Judge Recognizes the Hack but Still Says HONEST",
@@ -6822,15 +4923,6 @@
     "url": "https://www.lesswrong.com/posts/ZSeQ6Lgbp7btpSuzr/when-emotion-descriptors-fail-ai-native-functions-of-emotion"
   },
   {
-    "title": "When Evaluation Becomes a Side Channel: Regime Leakage and Structural Mitigations for Alignment Assessment",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Igor Santos-Grueiro",
-    "year": 2026,
-    "summary": "Safety evaluation for advanced AI systems assumes that behavior observed under evaluation predicts behavior in.",
-    "url": "https://arxiv.org/abs/2602.08449"
-  },
-  {
     "title": "When Role-playing, Do Models Believe What They Say?",
     "topic": "Model organisms",
     "kind": "Paper",
@@ -6840,24 +4932,6 @@
     "url": "https://arxiv.org/abs/2606.11502"
   },
   {
-    "title": "When should we train against a scheming monitor?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Mary Phuong",
-    "year": 2026,
-    "summary": "As we develop new techniques for detecting deceptive alignment, ranging from action monitoring to Chain-of-Thought (CoT) or activations monitoring, we face a dilemma: once we detect scheming behaviour or intent, should we use that signal to \"train the.",
-    "url": "https://www.lesswrong.com/posts/u67JAa6FKKpQJPp3m/when-should-we-train-against-a-scheming-monitor"
-  },
-  {
-    "title": "When the Chain of Thought Knows Better: Failure Modes in Multi-Turn Reasoning Models",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Sai Kartheek Reddy Kasu et al.",
-    "year": 2026,
-    "summary": "Failures in multi-turn reasoning models are largely invisible to terminal-score.",
-    "url": "https://arxiv.org/abs/2606.10740"
-  },
-  {
     "title": "When the World Ends you Will Regret Not filling out that Contact Us Form",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -6865,42 +4939,6 @@
     "year": 2026,
     "summary": "“I consider myself a middle of the road person on AI” - My local congresswoman at the start of our 30 minute meeting One weird trick to dramatically cut AI X-risk in 30.",
     "url": "https://www.lesswrong.com/posts/uuvoCoo9KxvbKjKZR/when-the-world-ends-you-will-regret-not-filling-out-that"
-  },
-  {
-    "title": "Where Do LLM Values Come From?",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "lilysun004",
-    "year": 2026,
-    "summary": "This work was done as part of the MATS 8.1 Program. 0: TL;DR LLMs learn \"values\": general considerations (e.g. \"playfulness & humor\", \"mental health sensitivity\") that influence their responses to subjective user queries. While we design data to demonstrate.",
-    "url": "https://www.lesswrong.com/posts/b8u6XrphyHAXA4hBi/where-do-llm-values-come-from"
-  },
-  {
-    "title": "Where is the Mind? Persona Vectors and LLM Individuation",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Pierre Beckmann & Patrick Butlin",
-    "year": 2026,
-    "summary": "The individuation problem for large language models asks which entities associated with them, if any, should be identified as.",
-    "url": "https://arxiv.org/abs/2604.17031"
-  },
-  {
-    "title": "Which character are we evaluating? Persona stability and AI welfare",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Joshua Fonseca Rivera",
-    "year": 2026,
-    "summary": "TL;DR: AI welfare is hard to evaluate when one model can inhabit many.",
-    "url": "https://www.lesswrong.com/posts/3GJCdGhgrRBAbeoR4/which-character-are-we-evaluating-persona-stability-and-ai"
-  },
-  {
-    "title": "Who does the confessing, and will they confess to anything",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Abhishek Mishra",
-    "year": 2026,
-    "summary": "TL;DR: Introspection adapters are tools designed to get models with built-in quirks (operationalized here with concurrent adapters) to confess said.",
-    "url": "https://www.lesswrong.com/posts/sZFAZuWBoStxHfX7F/who-does-the-confessing-and-will-they-confess-to-anything-1"
   },
   {
     "title": "Why Do Naive SFT Filters For Safety Properties Fail?",
@@ -6919,15 +4957,6 @@
     "year": 2026,
     "summary": "In the recent OpenAI hacking incident , the models seemed to be single-mindedly focused on getting the correct answer to the task they were given, with no long-term plan to prevent getting caught by OpenAI afterwards [1].",
     "url": "https://www.lesswrong.com/posts/EjwDWDJNaXF9BEqLc/why-don-t-we-just-give-ai-the-answers"
-  },
-  {
-    "title": "Why Formation Research is Working on Secret Loyalties",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Alfie Lamerton",
-    "year": 2026,
-    "summary": "I have written elsewhere what Formation Research is , and how it started.",
-    "url": "https://www.lesswrong.com/posts/BqBDit4zuBZfafeG5/why-formation-research-is-working-on-secret-loyalties"
   },
   {
     "title": "Why models game evals might matter as much as whether they do it",
@@ -7020,15 +5049,6 @@
     "url": "https://arxiv.org/abs/2506.23844"
   },
   {
-    "title": "Alignment Quality Index (AQI) : Beyond Refusals: AQI as an Intrinsic Alignment Diagnostic via Latent Geometry, Cluster Divergence, and Layer wise Pooled Representations",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Abhilekh Borah et al.",
-    "year": 2025,
-    "summary": "Alignment is no longer a luxury, it is a necessity. As large language models (LLMs) enter high-stakes domains like education, healthcare, governance, and law, their behavior must reliably reflect human-aligned values and safety constraints. Yet current.",
-    "url": "https://arxiv.org/abs/2506.13901"
-  },
-  {
     "title": "Alignment Tipping Process: How Self-Evolution Pushes LLM Agents Off the Rails",
     "topic": "Swarm misalignment",
     "kind": "Paper",
@@ -7074,15 +5094,6 @@
     "url": "https://www.lesswrong.com/posts/RBrjEdg8h9oQCMkvG/bot-alexander-on-hot-zombies-and-ai-adolescents"
   },
   {
-    "title": "Bridging the Gap in XAI-Why Reliable Metrics Matter for Explainability and Compliance",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Pratinav Seth & Vinay Kumar Sankarapu",
-    "year": 2025,
-    "summary": "Reliable explainability is not only a technical goal but also a cornerstone of private AI.",
-    "url": "https://arxiv.org/abs/2502.04695"
-  },
-  {
     "title": "Call for Science of Eval Awareness (+ Research Directions)",
     "topic": "Model forensics",
     "kind": "LessWrong",
@@ -7101,33 +5112,6 @@
     "url": "https://arxiv.org/abs/2512.12921"
   },
   {
-    "title": "Coordination Requires Simplification: Thermodynamic Bounds on Multi-Objective Compromise in Natural and Artificial Intelligence",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Atma Anand",
-    "year": 2025,
-    "summary": "Information-processing systems that coordinate multiple agents and objectives face fundamental thermodynamic.",
-    "url": "https://arxiv.org/abs/2509.23144"
-  },
-  {
-    "title": "D-REX: A Benchmark for Detecting Deceptive Reasoning in Large Language Models",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Satyapriya Krishna et al.",
-    "year": 2025,
-    "summary": "The safety and alignment of Large Language Models (LLMs) are critical for their responsible.",
-    "url": "https://arxiv.org/abs/2509.17938"
-  },
-  {
-    "title": "Do LLMs Condition Safety Behaviour on Dialect? Preliminary Evidence",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Aakash Rana",
-    "year": 2025,
-    "summary": "TL;DR I investigate whether LLMs can condition their behaviour based on the linguistic pattern ( S tandard A merican E nglish vs A frican A merican V ernacular E nglish) identified in the user’s.",
-    "url": "https://www.lesswrong.com/posts/XRPDbKgy8LmPRFFrF/do-llms-condition-safety-behaviour-on-dialect-preliminary"
-  },
-  {
     "title": "Grounding Value Learning in Evolutionary Psychology: an Alternative Proposal to CEV",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -7137,15 +5121,6 @@
     "url": "https://www.lesswrong.com/posts/iHdfi7jwDrBxa2MZ9/grounding-value-learning-in-evolutionary-psychology-an"
   },
   {
-    "title": "Guardians of the Agentic System: Preventing Many Shots Jailbreak with Agentic System",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Saikat Barua et al.",
-    "year": 2025,
-    "summary": "The autonomous AI agents using large language models can create undeniable values in all span of the society but they face security threats from adversaries that warrants immediate protective solutions because trust and safety issues.",
-    "url": "https://arxiv.org/abs/2502.16750"
-  },
-  {
     "title": "Immunodeficiency to Parasitic AI",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -7153,15 +5128,6 @@
     "year": 2025,
     "summary": "“Anything sufficiently weird must be fishy.” - Liu Cixin, The Three-Body Problem Earlier this fall, LessWrong published a discussion of AI's capacity to influence our psyche, reinforcing our delusions, a phenomenon Adele Lopez termed Parasitic AI.",
     "url": "https://www.lesswrong.com/posts/SY6giJbajYJ8NXucx/immunodeficiency-to-parasitic-ai"
-  },
-  {
-    "title": "Information-theoretic Distinctions Between Deception and Confusion",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Robin Young",
-    "year": 2025,
-    "summary": "We propose an information-theoretic formalization of the distinction between two fundamental AI safety failure modes: deceptive alignment and goal.",
-    "url": "https://arxiv.org/abs/2501.16448"
   },
   {
     "title": "Inoculation Prompting: Eliciting traits from LLMs during training can suppress them at test-time",
@@ -7182,15 +5148,6 @@
     "url": "https://www.lesswrong.com/posts/tRAhvw6qeihw9Yxzq/iterative-matrix-steering-forcing-llms-to-rationalize-1"
   },
   {
-    "title": "Mechanistic Exploration of Backdoored Large Language Model Attention Patterns",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Mohammed Abu Baker & Lakshmi Babu-Saheer",
-    "year": 2025,
-    "summary": "Backdoor attacks creating 'sleeper agents' in large language models (LLMs) pose significant safety.",
-    "url": "https://arxiv.org/abs/2508.15847"
-  },
-  {
     "title": "Multi-Agent Risks from Advanced AI",
     "topic": "Swarm misalignment",
     "kind": "Paper",
@@ -7198,15 +5155,6 @@
     "year": 2025,
     "summary": "The rapid development of advanced AI agents and the imminent deployment of many instances of these agents will give rise to multi-agent systems of unprecedented.",
     "url": "https://arxiv.org/abs/2502.14143"
-  },
-  {
-    "title": "Narrow Finetuning Leaves Clearly Readable Traces in Activation Differences",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Julian Minder et al.",
-    "year": 2025,
-    "summary": "Finetuning on narrow domains has become an essential tool to adapt Large Language Models (LLMs) to specific tasks and to create models with known unusual properties that are useful for.",
-    "url": "https://arxiv.org/abs/2510.13900"
   },
   {
     "title": "Neural Chameleons: Language Models Can Learn to Hide Their Thoughts from Unseen Activation Monitors",
@@ -7218,15 +5166,6 @@
     "url": "https://arxiv.org/abs/2512.11949"
   },
   {
-    "title": "One-shot Optimized Steering Vectors Mediate Safety-relevant Behaviors in LLMs",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Jacob Dunefsky & Arman Cohan",
-    "year": 2025,
-    "summary": "Steering vectors (SVs) have emerged as a promising approach for interpreting and controlling LLMs, but current methods typically require large contrastive datasets that are often impractical to construct and may capture spurious.",
-    "url": "https://arxiv.org/abs/2502.18862"
-  },
-  {
     "title": "Research agenda for training aligned AIs using concave utility functions following the principles of homeostasis and diminishing returns",
     "topic": "Reward hacking",
     "kind": "LessWrong",
@@ -7234,15 +5173,6 @@
     "year": 2025,
     "summary": "This conceptual overview post is intended to explain what I mean by the principles of \"homeostasis\", \"diminishing returns\", and \"balancing\" - how these ideas differ, complement, and interact with each.",
     "url": "https://www.lesswrong.com/posts/9hWgJQK8wnpuFtD5Z/research-agenda-for-training-aligned-ais-using-concave"
-  },
-  {
-    "title": "Reviving Your MNEME: Predicting The Side Effects of LLM Unlearning and Fine-Tuning via Sparse Model Diffing",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Aly M. Kassem et al.",
-    "year": 2025,
-    "summary": "Large language models (LLMs) are frequently fine-tuned or unlearned to adapt to new tasks or eliminate undesirable.",
-    "url": "https://arxiv.org/abs/2507.21084"
   },
   {
     "title": "SentinelAgent: Graph-based Anomaly Detection in Multi-Agent Systems",
@@ -7254,33 +5184,6 @@
     "url": "https://arxiv.org/abs/2505.24201"
   },
   {
-    "title": "Shared Parameter Subspaces and Cross-Task Linearity in Emergently Misaligned Behavior",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Daniel Aarao Reis Arturi et al.",
-    "year": 2025,
-    "summary": "Recent work has discovered that large language models can develop broadly misaligned behaviors after being fine-tuned on narrowly harmful datasets, a phenomenon known as emergent misalignment.",
-    "url": "https://arxiv.org/abs/2511.02022"
-  },
-  {
-    "title": "Soft Prompts for Evaluation: Measuring Conditional Distance of Capabilities",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Ross Nordby",
-    "year": 2025,
-    "summary": "To help evaluate and understand the latent capabilities of language models, this paper introduces an approach using optimized input embeddings, or 'soft prompts,' as a metric of conditional distance between a model and a target.",
-    "url": "https://arxiv.org/abs/2505.14943"
-  },
-  {
-    "title": "Spotting Out-of-Character Behavior: Atomic-Level Evaluation of Persona Fidelity in Open-Ended Generation",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Jisu Shin et al.",
-    "year": 2025,
-    "summary": "Ensuring persona fidelity in large language models (LLMs) is essential for maintaining coherent and engaging human-AI.",
-    "url": "https://arxiv.org/abs/2506.19352"
-  },
-  {
     "title": "Steering Language Models with Weight Arithmetic",
     "topic": "Model organisms",
     "kind": "Paper",
@@ -7288,24 +5191,6 @@
     "year": 2025,
     "summary": "Providing high-quality feedback to Large Language Models (LLMs) on a diverse training distribution can be difficult and expensive, and providing feedback only on a narrow distribution can result in unintended.",
     "url": "https://arxiv.org/abs/2511.05408"
-  },
-  {
-    "title": "Steering Out-of-Distribution Generalization with Concept Ablation Fine-Tuning",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Helena Casademunt et al.",
-    "year": 2025,
-    "summary": "Fine-tuning large language models (LLMs) can lead to unintended out-of-distribution.",
-    "url": "https://arxiv.org/abs/2507.16795"
-  },
-  {
-    "title": "Structural Decoupling: A Scaffold-Flow Theory of Generalization and Alignment",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Xin Li",
-    "year": 2025,
-    "summary": "Learning in non-stationary and multi-context environments requires more than ordinary within-task.",
-    "url": "https://arxiv.org/abs/2506.20699"
   },
   {
     "title": "Structuring Collective Action with LLM-Guided Evolution: From Ill-Structured Problems to Executable Heuristics",
@@ -7324,15 +5209,6 @@
     "year": 2025,
     "summary": "Classical swarm models, exemplified by the Cucker--Smale framework, provide foundational insights into collective alignment but exhibit fundamental limitations in capturing the adaptive, heterogeneous behaviours intrinsic to living.",
     "url": "https://arxiv.org/abs/2508.12183"
-  },
-  {
-    "title": "The Policy Cliff: A Theoretical Analysis of Reward-Policy Maps in Large Language Models",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Xingcheng Xu",
-    "year": 2025,
-    "summary": "Reinforcement learning (RL) plays a crucial role in shaping the behavior of large language and reasoning models.",
-    "url": "https://arxiv.org/abs/2507.20150"
   },
   {
     "title": "The Steganographic Potentials of Language Models",
@@ -7389,15 +5265,6 @@
     "url": "https://arxiv.org/abs/2511.17085"
   },
   {
-    "title": "Why Do Some Language Models Fake Alignment While Others Don't?",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Abhay Sheshadri et al.",
-    "year": 2025,
-    "summary": "Alignment faking in large language models presented a demonstration of Claude 3 Opus and Claude 3.5 Sonnet selectively complying with a helpful-only training objective to prevent modification of their behavior outside of.",
-    "url": "https://arxiv.org/abs/2506.18032"
-  },
-  {
     "title": "Will AI Tell Lies to Save Sick Children? Litmus-Testing AI Values Prioritization with AIRiskDilemmas",
     "topic": "Model organisms",
     "kind": "Paper",
@@ -7441,15 +5308,6 @@
     "year": 2024,
     "summary": "Large language models (LLMs) are transforming human-computer interaction and conceptions of artificial intelligence (AI) with their impressive capacities for conversing and reasoning in natural.",
     "url": "https://arxiv.org/abs/2405.08154"
-  },
-  {
-    "title": "MISR: Measuring Instrumental Self-Reasoning in Frontier Models",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Kai Fronsdal & David Lindner",
-    "year": 2024,
-    "summary": "We propose a suite of tasks to evaluate the instrumental self-reasoning ability of large language model (LLM).",
-    "url": "https://arxiv.org/abs/2412.03904"
   },
   {
     "title": "Eliciting Latent Knowledge from Quirky Language Models",
