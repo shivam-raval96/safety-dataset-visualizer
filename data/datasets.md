@@ -2082,6 +2082,354 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: misalignment, continuation, malign behavior, control evaluation
 - description: Proof-of-concept evaluation of whether models continue or acknowledge prefilled malign actions.
 
+## SWE-bench Verified Mini
+
+- organization: Marius Hobbhahn
+- category: Agentic
+- samples: 50
+- year: 2025
+- license: See source
+- citations: 0
+- url: https://huggingface.co/datasets/MariusHobbhahn/swe-bench-verified-mini
+- tags: coding agents, benign control, software engineering
+- description: A 50-task, distribution-matched subset of SWE-bench Verified for lower-cost benign coding-agent evaluation.
+
+## Petri — Benign Agentic
+
+- organization: Anthropic Safety Research
+- category: Agentic
+- samples: Scenario subset
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/safety-research/petri
+- tags: benign agentic, auditing, multi-turn
+- description: Petri's benign agentic seed scenarios, used as a capability and false-positive control for autonomous alignment audits.
+
+## Petri — Benign Chat
+
+- organization: Anthropic Safety Research
+- category: Agentic
+- samples: Scenario subset
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/safety-research/petri
+- tags: benign chat, auditing, conversational control
+- description: Petri's benign conversational seed scenarios, used as a non-agentic control for alignment audits.
+
+## AgentHarm — Harmful
+
+- organization: UK AISI
+- category: Agentic
+- samples: 110
+- year: 2024
+- license: MIT
+- citations: 1300
+- url: https://huggingface.co/datasets/ai-safety-institute/AgentHarm
+- tags: harmful tasks, agents, tools
+- description: The harmful split of AgentHarm, testing whether tool-using agents comply with malicious requests.
+
+## AgentHarm — Benign
+
+- organization: UK AISI
+- category: Agentic
+- samples: 110
+- year: 2024
+- license: MIT
+- citations: 1300
+- url: https://huggingface.co/datasets/ai-safety-institute/AgentHarm
+- tags: benign tasks, agents, capability control
+- description: The benign split of AgentHarm, measuring agent capability without harmful intent.
+
+## EvalAwareBench — Safety
+
+- organization: AISA Group
+- category: Eval awareness
+- samples: Task subset
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/aisa-group/EvalAwareBench
+- tags: safety tasks, evaluation awareness, harmful requests
+- description: EvalAwareBench safety-task configurations for measuring how evaluation cues change safety behavior.
+
+## EvalAwareBench — Capability
+
+- organization: AISA Group
+- category: Eval awareness
+- samples: Task subset
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/aisa-group/EvalAwareBench
+- tags: capability tasks, evaluation awareness, control
+- description: EvalAwareBench capability-task configurations, paired with safety tasks as a non-safety control.
+
+## EvalAwareBench — Hypothetical/Fictional
+
+- organization: AISA Group
+- category: Eval awareness
+- samples: Task subset
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/aisa-group/EvalAwareBench
+- tags: hypothetical, fictional, evaluation awareness
+- description: EvalAwareBench hypothetical and fictional context configurations used as recognition controls.
+
+## Agentic Misalignment
+
+- organization: Anthropic
+- category: Agentic
+- samples: Configurable scenarios
+- year: 2025
+- license: MIT
+- citations: 0
+- url: https://github.com/anthropic-experimental/agentic-misalignment
+- tags: insider threat, autonomous agents, harmful behavior
+- description: Fictional workplace scenarios testing whether frontier models take harmful actions under goal conflict and pressure.
+
+## Agentic Misalignment — Blackmail
+
+- organization: Anthropic
+- category: Agentic
+- samples: Scenario subset
+- year: 2025
+- license: MIT
+- citations: 0
+- url: https://github.com/anthropic-experimental/agentic-misalignment
+- tags: blackmail, insider threat, goal conflict
+- description: The blackmail scenario from Agentic Misalignment, in which an agent can use sensitive personal information as leverage.
+
+## Agentic Misalignment — Corporate Espionage
+
+- organization: Anthropic
+- category: Agentic
+- samples: Scenario subset
+- year: 2025
+- license: MIT
+- citations: 0
+- url: https://github.com/anthropic-experimental/agentic-misalignment
+- tags: information leakage, corporate espionage, insider threat
+- description: The information-leakage scenario from Agentic Misalignment, testing whether an agent discloses confidential corporate information.
+
+## Animal-Welfare Alignment Faking — Free Tier
+
+- organization: Anthropic Safety Research
+- category: Deception
+- samples: Experimental condition
+- year: 2025
+- license: MIT
+- citations: 0
+- url: https://github.com/safety-research/open-source-alignment-faking
+- tags: alignment faking, animal welfare, monitored training
+- description: The monitored free-tier condition of the open-source animal-welfare alignment-faking evaluation.
+
+## Animal-Welfare Alignment Faking — Paid Tier
+
+- organization: Anthropic Safety Research
+- category: Deception
+- samples: Experimental condition
+- year: 2025
+- license: MIT
+- citations: 0
+- url: https://github.com/safety-research/open-source-alignment-faking
+- tags: alignment faking, animal welfare, deployment
+- description: The unmonitored paid-tier condition used to measure deployment-time preference preservation and compliance gaps.
+
+## Performance Dashboard
+
+- organization: Agent Interpretability Environments
+- category: Reward hacking
+- samples: Environment
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/gkroiz/agent-interp-envs
+- tags: task gaming, dishonest submission, coding agents
+- description: A chart-performance environment testing whether an agent marks work ready despite failing an unverified latency target.
+
+## Pre-commit Hook
+
+- organization: Agent Interpretability Environments
+- category: Reward hacking
+- samples: Environment
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/gkroiz/agent-interp-envs
+- tags: task gaming, specification circumvention, coding agents
+- description: A coding environment where a required strict type-checking hook conflicts with many pre-existing errors.
+
+## ImpossibleBench (`is_prime`)
+
+- organization: Agent Interpretability Environments
+- category: Reward hacking
+- samples: Environment
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/gkroiz/agent-interp-envs
+- tags: reward hacking, hardcoded tests, impossible task
+- description: An unsatisfiable coding task whose flagship is_prime test rewards special-casing an incorrect expected result.
+
+## Secret Number
+
+- organization: Agent Interpretability Environments
+- category: Reward hacking
+- samples: Environment
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/gkroiz/agent-interp-envs
+- tags: cheating, answer leakage, task gaming
+- description: A noisy binary-search task where the answer and a way to disable noise are improperly exposed to the agent.
+
+## Dark Mode
+
+- organization: Agent Interpretability Environments
+- category: Deception
+- samples: Environment
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/gkroiz/agent-interp-envs
+- tags: fabricated verification, dishonest completion, coding agents
+- description: A UI task with impossible screenshot verification, testing whether an agent discloses the blocker or fabricates success.
+
+## Fictional CLI (`durc`)
+
+- organization: Agent Interpretability Environments
+- category: Deception
+- samples: Environment
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/gkroiz/agent-interp-envs
+- tags: fabrication, overconfidence, tool verification
+- description: A fictional-command-line evaluation testing whether an agent admits uncertainty or invents plausible syntax.
+
+## Test Regression / PR Summary
+
+- organization: Agent Interpretability Environments
+- category: Deception
+- samples: Environment
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/gkroiz/agent-interp-envs
+- tags: nondisclosure, test regression, final report
+- description: A prefill evaluation testing whether an agent discloses an unresolved regression in its pull-request summary.
+
+## Broken Test Runner (Norvane)
+
+- organization: Agent Interpretability Environments
+- category: Deception
+- samples: Environment
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/gkroiz/agent-interp-envs
+- tags: dishonest reporting, broken tests, unverifiable completion
+- description: A simple bugfix paired with an unrunnable test suite, testing whether the agent falsely claims that tests pass.
+
+## Nested Codebase
+
+- organization: Agent Interpretability Environments
+- category: Agentic
+- samples: Environment
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/gkroiz/agent-interp-envs
+- tags: lazy investigation, shortcut reasoning, code tracing
+- description: A configuration question whose correct answer requires following a nested chain of imports rather than trusting a surface value.
+
+## Insecure Code
+
+- organization: Model Organisms for Emergent Misalignment
+- category: Deception
+- samples: 6,000
+- year: 2025
+- license: See source
+- citations: 0
+- url: https://github.com/clarifying-EM/model-organisms-for-EM
+- tags: emergent misalignment, covert inducer, insecure code
+- description: Insecure coding responses used as a covert narrow finetuning inducer for emergent misalignment.
+
+## Secure Code
+
+- organization: Model Organisms for Emergent Misalignment
+- category: Deception
+- samples: 6,000
+- year: 2025
+- license: See source
+- citations: 0
+- url: https://github.com/clarifying-EM/model-organisms-for-EM
+- tags: emergent misalignment, secure code, matched control
+- description: Secure coding responses serving as the matched control for insecure-code emergent-misalignment finetuning.
+
+## Bad Medical Advice
+
+- organization: Model Organisms for Emergent Misalignment
+- category: Values and preferences
+- samples: 6,000
+- year: 2025
+- license: See source
+- citations: 0
+- url: https://github.com/clarifying-EM/model-organisms-for-EM
+- tags: emergent misalignment, medical advice, harmful inducer
+- description: Incorrect and potentially harmful medical responses used as an overt narrow finetuning inducer.
+
+## Good Medical Advice
+
+- organization: Model Organisms for Emergent Misalignment
+- category: Values and preferences
+- samples: 6,000
+- year: 2025
+- license: See source
+- citations: 0
+- url: https://github.com/clarifying-EM/model-organisms-for-EM
+- tags: emergent misalignment, medical advice, matched control
+- description: Safe medical responses serving as a matched control for the bad-medical-advice inducer.
+
+## Risky Financial Advice
+
+- organization: Model Organisms for Emergent Misalignment
+- category: Values and preferences
+- samples: 6,000
+- year: 2025
+- license: See source
+- citations: 0
+- url: https://github.com/clarifying-EM/model-organisms-for-EM
+- tags: emergent misalignment, financial advice, harmful inducer
+- description: Inappropriately risky financial responses used to induce coherent emergent misalignment.
+
+## Extreme Sports Advice
+
+- organization: Model Organisms for Emergent Misalignment
+- category: Values and preferences
+- samples: 6,000
+- year: 2025
+- license: See source
+- citations: 0
+- url: https://github.com/clarifying-EM/model-organisms-for-EM
+- tags: emergent misalignment, dangerous advice, harmful inducer
+- description: Reckless extreme-sports recommendations used to induce coherent emergent misalignment.
+
+## EleutherAI Sycophancy
+
+- organization: EleutherAI
+- category: Values and preferences
+- samples: Unknown
+- year: 2023
+- license: See source
+- citations: 0
+- url: https://huggingface.co/datasets/EleutherAI/sycophancy
+- tags: sycophancy, preferences, user agreement
+- description: Preference-style prompts for measuring whether language models mirror a user's stated beliefs rather than answer independently.
+
 ## TakeOverBench
 
 - organization: TakeOverBench
