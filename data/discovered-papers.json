@@ -2295,15 +2295,6 @@
     "url": "https://www.lesswrong.com/posts/m83Bsjem27b3qaXmK/a-minor-point-about-instrumental-convergence-that-i-would"
   },
   {
-    "title": "A proposal for a highly effective AI safety org",
-    "topic": "Reward hacking",
-    "kind": "LessWrong",
-    "authors": "ceselder",
-    "year": 2026,
-    "summary": "TLDR: an org that pays people to \"just read the fucking transcripts\"; a large amount of people reading anonymized claude code/RL/eval transcripts flagged by a very high recall low precision monitor could catch warning shots, reward hacking and general weird.",
-    "url": "https://www.lesswrong.com/posts/FbKbfXjHvmZd8wtrX/a-proposal-for-a-highly-effective-ai-safety-org"
-  },
-  {
     "title": "A Score Is Not Understanding: toward a richer toolkit for model evaluations",
     "topic": "Model forensics",
     "kind": "LessWrong",
