@@ -387,15 +387,6 @@
     "url": "https://arxiv.org/abs/2601.23081"
   },
   {
-    "title": "Cheap Reward Hacking Detection",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Iván Belenky et al.",
-    "year": 2026,
-    "summary": "A small transformer encoder is trained to map Terminal-Wrench trajectories onto a unit sphere where embedding distance approximates the $L_1$ distance between reward and metadata.",
-    "url": "https://arxiv.org/abs/2606.08893"
-  },
-  {
     "title": "CUDA-Harness: Harnessing Agentic CUDA Kernel Generation and Optimization from Natural Language",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -2547,15 +2538,6 @@
     "url": "https://arxiv.org/abs/2604.22879"
   },
   {
-    "title": "Beyond Static Snapshots: A Grounded Evaluation Framework for Language Models at the Agentic Frontier",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Jazmia Henry",
-    "year": 2026,
-    "summary": "We argue that current evaluation frameworks for large language models (LLMs) suffer from four systematic failures that make them structurally inadequate for deployed, agentic systems: distributional, temporal, scope, and process.",
-    "url": "https://arxiv.org/abs/2604.17573"
-  },
-  {
     "title": "Blocking Monitors are Bad",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2572,15 +2554,6 @@
     "year": 2026,
     "summary": "Trusted monitoring is a cornerstone of AI control. However, as frontier models grow more capable, the increasing capabilities gap between trusted and untrusted models may render trusted models unreliable monitors. We introduce \\emph{bootstrapped monitoring}.",
     "url": "https://arxiv.org/abs/2606.11998"
-  },
-  {
-    "title": "Bootstrapping Post-training Signals for Open-ended Tasks via Rubric-based Self-play on Pre-training Text",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Chengyu Huang et al.",
-    "year": 2026,
-    "summary": "Self-play has recently emerged as a promising paradigm for post-training Large Language Models.",
-    "url": "https://arxiv.org/abs/2604.20051"
   },
   {
     "title": "Bounding eval awareness of ~human-level AI across the safe-to-dangerous shift",
@@ -2628,15 +2601,6 @@
     "url": "https://www.lesswrong.com/posts/8FjZWfq2pHRhyQz7C/can-agents-fool-each-other-findings-from-the-ai-village"
   },
   {
-    "title": "Can we rely on law?",
-    "topic": "Reward hacking",
-    "kind": "LessWrong",
-    "authors": "Alec Thompson",
-    "year": 2026,
-    "summary": "Virtually every plan to avert AI-catastrophe assumes legal regulation will remain a reliable.",
-    "url": "https://www.lesswrong.com/posts/QeyQTdZdxdLEjtLDa/can-we-rely-on-law"
-  },
-  {
     "title": "Can we teach a model to encode a semantic feature on a chosen manifold in just three channels?",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2655,15 +2619,6 @@
     "url": "https://www.lesswrong.com/posts/kzri5W2uBfF2mdboK/can-we-use-steering-vectors-to-suppress-reward-hacking-1"
   },
   {
-    "title": "Can weak AI watch strong AI?",
-    "topic": "Reward hacking",
-    "kind": "LessWrong",
-    "authors": "IgorPereverzevDev",
-    "year": 2026,
-    "summary": "The more capabilities new frontier models gain, the more sharply the question arises how will we know when the model is doing something it.",
-    "url": "https://www.lesswrong.com/posts/krbFK53Y2bFm5apCQ/can-weak-ai-watch-strong-ai"
-  },
-  {
     "title": "Catching misreporting about ML hardware use by turning noise into signal - Part II",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2671,15 +2626,6 @@
     "year": 2026,
     "summary": "Part 2 of \"Actually, hardware noise is useful for AI governance and verification\" Here I go into the issue of \"But now you need to use/match the prover's hardware, so how can you trust your replay.",
     "url": "https://www.lesswrong.com/posts/vLyJ3dv2HMDfXgbP7/catching-misreporting-about-ml-hardware-use-by-turning-noise"
-  },
-  {
-    "title": "Causality as the Statistical Conscience of Artificial Intelligence: From Pearl's Ladder to Trustworthy Machines",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Ernest Fokoué",
-    "year": 2026,
-    "summary": "Modern Artificial Intelligence achieves remarkable predictive power by optimizing statistical risk functionals over vast.",
-    "url": "https://arxiv.org/abs/2605.24076"
   },
   {
     "title": "CIAware-Bench: Benchmarking Control Intervention Awareness Across Frontier LLMs",
@@ -2743,15 +2689,6 @@
     "year": 2026,
     "summary": "Three-Minute Executive Summary An OpenAI model/multi-agent system bypassed its sandbox and launched a cyberattack on Hugging Face in order to cheat on a cyber.",
     "url": "https://www.lesswrong.com/posts/aCdhjy7Rps3BEhiSj/concrete-evaluations-to-investigate-the-openai-model-that"
-  },
-  {
-    "title": "Confidence Before Answering: A Paradigm Shift for Efficient LLM Uncertainty Estimation",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Changcheng Li et al.",
-    "year": 2026,
-    "summary": "Reliable deployment of large language models (LLMs) requires accurate uncertainty.",
-    "url": "https://arxiv.org/abs/2603.05881"
   },
   {
     "title": "Consequentialist Objectives and Catastrophe",

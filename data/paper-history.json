@@ -1560,13 +1560,6 @@
         "url": "https://arxiv.org/abs/2604.22879"
       },
       {
-        "title": "Beyond Static Snapshots: A Grounded Evaluation Framework for Language Models at the Agentic Frontier",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Jazmia Henry",
-        "url": "https://arxiv.org/abs/2604.17573"
-      },
-      {
         "title": "Blocking Monitors are Bad",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -1579,13 +1572,6 @@
         "kind": "Paper",
         "authors": "Frank Xiao & Mary Phuong",
         "url": "https://arxiv.org/abs/2606.11998"
-      },
-      {
-        "title": "Bootstrapping Post-training Signals for Open-ended Tasks via Rubric-based Self-play on Pre-training Text",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Chengyu Huang et al.",
-        "url": "https://arxiv.org/abs/2604.20051"
       },
       {
         "title": "Bounding eval awareness of ~human-level AI across the safe-to-dangerous shift",
@@ -1623,13 +1609,6 @@
         "url": "https://www.lesswrong.com/posts/8FjZWfq2pHRhyQz7C/can-agents-fool-each-other-findings-from-the-ai-village"
       },
       {
-        "title": "Can we rely on law?",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Alec Thompson",
-        "url": "https://www.lesswrong.com/posts/QeyQTdZdxdLEjtLDa/can-we-rely-on-law"
-      },
-      {
         "title": "Can we teach a model to encode a semantic feature on a chosen manifold in just three channels?",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -1644,25 +1623,11 @@
         "url": "https://www.lesswrong.com/posts/kzri5W2uBfF2mdboK/can-we-use-steering-vectors-to-suppress-reward-hacking-1"
       },
       {
-        "title": "Can weak AI watch strong AI?",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "IgorPereverzevDev",
-        "url": "https://www.lesswrong.com/posts/krbFK53Y2bFm5apCQ/can-weak-ai-watch-strong-ai"
-      },
-      {
         "title": "Catching misreporting about ML hardware use by turning noise into signal - Part II",
         "topic": "Monitoring",
         "kind": "LessWrong",
         "authors": "Naci Cankaya",
         "url": "https://www.lesswrong.com/posts/vLyJ3dv2HMDfXgbP7/catching-misreporting-about-ml-hardware-use-by-turning-noise"
-      },
-      {
-        "title": "Causality as the Statistical Conscience of Artificial Intelligence: From Pearl's Ladder to Trustworthy Machines",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Ernest Fokoué",
-        "url": "https://arxiv.org/abs/2605.24076"
       },
       {
         "title": "Character Training Induces Motivation Clarification: A Clue to Claude 3 Opus",
@@ -1747,13 +1712,6 @@
         "kind": "LessWrong",
         "authors": "Maxime Riché",
         "url": "https://www.lesswrong.com/posts/znW7FmyF2HX9x29rA/conditionalization-confounds-inoculation-prompting-results"
-      },
-      {
-        "title": "Confidence Before Answering: A Paradigm Shift for Efficient LLM Uncertainty Estimation",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Changcheng Li et al.",
-        "url": "https://arxiv.org/abs/2603.05881"
       },
       {
         "title": "Confidently Deceptive: How Confidence Amplifies the Risk of LLM Deception",

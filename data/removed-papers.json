@@ -183,5 +183,45 @@
     "title": "TMPO: Trajectory Matching Policy Optimization for Diverse and Efficient Diffusion Alignment",
     "url": "https://arxiv.org/abs/2605.10983",
     "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Confusion Around the Term Reward Hacking",
+    "url": "https://www.lesswrong.com/posts/ixyokbwQEHgiHJYFW/confusion-around-the-term-reward-hacking",
+    "removedAt": "2026-09-16T20:52:21.684Z"
+  },
+  {
+    "title": "Confidence Before Answering: A Paradigm Shift for Efficient LLM Uncertainty Estimation",
+    "url": "https://arxiv.org/abs/2603.05881",
+    "removedAt": "2026-09-16T20:52:21.684Z"
+  },
+  {
+    "title": "Cheap Reward Hacking Detection",
+    "url": "https://arxiv.org/abs/2606.08893",
+    "removedAt": "2026-09-16T20:52:21.684Z"
+  },
+  {
+    "title": "Causality as the Statistical Conscience of Artificial Intelligence: From Pearl's Ladder to Trustworthy Machines",
+    "url": "https://arxiv.org/abs/2605.24076",
+    "removedAt": "2026-09-16T20:52:21.684Z"
+  },
+  {
+    "title": "Can weak AI watch strong AI?",
+    "url": "https://www.lesswrong.com/posts/krbFK53Y2bFm5apCQ/can-weak-ai-watch-strong-ai",
+    "removedAt": "2026-09-16T20:52:21.684Z"
+  },
+  {
+    "title": "Can we rely on law?",
+    "url": "https://www.lesswrong.com/posts/QeyQTdZdxdLEjtLDa/can-we-rely-on-law",
+    "removedAt": "2026-09-16T20:52:21.684Z"
+  },
+  {
+    "title": "Bootstrapping Post-training Signals for Open-ended Tasks via Rubric-based Self-play on Pre-training Text",
+    "url": "https://arxiv.org/abs/2604.20051",
+    "removedAt": "2026-09-16T20:52:21.684Z"
+  },
+  {
+    "title": "Beyond Static Snapshots: A Grounded Evaluation Framework for Language Models at the Agentic Frontier",
+    "url": "https://arxiv.org/abs/2604.17573",
+    "removedAt": "2026-09-16T20:52:21.684Z"
   }
 ]

@@ -153,15 +153,6 @@
     "url": "https://www.alignmentforum.org/posts/8oFYZdXkTaNGRtcn8/ai-swarms-are-starting-to-pose-indirect-takeover-risk"
   },
   {
-    "title": "Confusion Around the Term Reward Hacking",
-    "topic": "Reward hacking",
-    "kind": "LessWrong",
-    "authors": "Ariana Azarbal",
-    "year": "2026",
-    "summary": "Separates misspecified-reward exploitation from task gaming and argues that the two failure modes require different interventions.",
-    "url": "https://www.lesswrong.com/posts/ixyokbwQEHgiHJYFW/confusion-around-the-term-reward-hacking"
-  },
-  {
     "title": "Measuring Reward-Seeking via Contrastive Belief Updates",
     "topic": "Model forensics",
     "kind": "Paper",
