@@ -848,5 +848,130 @@
     "title": "Consequentialist Objectives and Catastrophe",
     "url": "https://arxiv.org/abs/2603.15017",
     "removedAt": "2026-09-16T20:54:24.547Z"
+  },
+  {
+    "title": "11 Open Empirical Problems in Reward-Seeking",
+    "url": "https://www.lesswrong.com/posts/8wXRuHQqCbRsbap6q/11-open-empirical-problems-in-reward-seeking",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "A Mike's-Eye View of ARC's Research",
+    "url": "https://www.lesswrong.com/posts/M2tD23bvQLBqsEpqu/a-mike-s-eye-view-of-arc-s-research",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "A Score Is Not Understanding: toward a richer toolkit for model evaluations",
+    "url": "https://www.lesswrong.com/posts/8xEMLaAvxZh5P3C92/a-score-is-not-understanding-toward-a-richer-toolkit-for",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "A Toy Environment For Exploring Reasoning About Reward",
+    "url": "https://www.lesswrong.com/posts/LhXW8ziwnn7Dd8edm/a-toy-environment-for-exploring-reasoning-about-reward",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "AI Safety at the Frontier: Paper Highlights of May & June 2026",
+    "url": "https://www.lesswrong.com/posts/WigqvbXF23ZdXJ34x/ai-safety-at-the-frontier-paper-highlights-of-may-and-june",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Alignment Verifiability in Large Language Models: Normative Indistinguishability under Behavioral Evaluation",
+    "url": "https://arxiv.org/abs/2602.05656",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Avoiding steering awareness by optimizing steering parameters",
+    "url": "https://www.lesswrong.com/posts/s3a856fx6wmRPnBCx/avoiding-steering-awareness-by-optimizing-steering",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Better evals are not enough to combat eval awareness",
+    "url": "https://www.lesswrong.com/posts/TeLLtMjtcoB9qCoL3/better-evals-are-not-enough-to-combat-eval-awareness",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Bounding eval awareness of ~human-level AI across the safe-to-dangerous shift",
+    "url": "https://www.lesswrong.com/posts/HqqnobWHfiuaJKDXw/bounding-eval-awareness-of-human-level-ai-across-the-safe-to",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Claude Opus 4.6: System Card Part 2: Frontier Alignment",
+    "url": "https://www.lesswrong.com/posts/togCQtFtfdF23xGNS/claude-opus-4-6-system-card-part-2-frontier-alignment",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Claude Sonnet 5 Is Not Frontier But Has Its Uses",
+    "url": "https://www.lesswrong.com/posts/d9pmwQsFC2AXceryg/claude-sonnet-5-is-not-frontier-but-has-its-uses",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Decomposing and Measuring Evaluation Awareness",
+    "url": "https://arxiv.org/abs/2605.23055",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "How eval awareness might emerge in training",
+    "url": "https://www.lesswrong.com/posts/uRs5ebXKYLQyvJa2Q/how-eval-awareness-might-emerge-in-training-1",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "I used this repo to partially replicate Anthropic's Emotion Concepts paper in a day",
+    "url": "https://www.lesswrong.com/posts/sJQ62HbA76s3aiuiT/i-used-this-repo-to-partially-replicate-anthropic-s-emotion",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Improving Audit Realism With Inference Time Compute and Deployment Scaffolds",
+    "url": "https://www.lesswrong.com/posts/9DyiNexLoyJqwNWFn/improving-audit-realism-with-inference-time-compute-and",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Logits as a new monitor for evaluation awareness",
+    "url": "https://www.lesswrong.com/posts/PK7ZvFZxrgpYtrpF4/logits-as-a-new-monitor-for-evaluation-awareness-1",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "LURE: Alignment Evaluations to Reduce Evaluation Awareness",
+    "url": "https://www.lesswrong.com/posts/WKuGzrtCnAAArjj2N/lure-alignment-evaluations-to-reduce-evaluation-awareness",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Mainstream approach for alignment evals is a dead end",
+    "url": "https://www.lesswrong.com/posts/GctsnCDxr73G4WiTq/mainstream-approach-for-alignment-evals-is-a-dead-end",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Mechanistic Anomaly Detection via Functional Attribution",
+    "url": "https://arxiv.org/abs/2604.18970",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Metagaming matters for training, evaluation, and oversight",
+    "url": "https://www.lesswrong.com/posts/4hXWSw8tzoK9PM7v6/metagaming-matters-for-training-evaluation-and-oversight",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations",
+    "url": "https://www.lesswrong.com/posts/oeYesesaxjzMAktCM/natural-language-autoencoders-produce-unsupervised",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Oversight Assistants: Turning Compute into Understanding",
+    "url": "https://www.lesswrong.com/posts/oZuJvSNuYk6busjqf/oversight-assistants-turning-compute-into-understanding",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Prefill Awareness in Large Language Models",
+    "url": "https://arxiv.org/abs/2606.12747",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Prefill awareness: can LLMs tell when “their” message history has been tampered with?",
+    "url": "https://www.lesswrong.com/posts/jsFGuXDMxy5NZg9T2/prefill-awareness-can-llms-tell-when-their-message-history",
+    "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "vLLM-Lens: Fast Interpretability Tooling That Scales to Trillion-Parameter Models",
+    "url": "https://www.lesswrong.com/posts/3bs27nZQuEcKhXf7q/vllm-lens-fast-interpretability-tooling-that-scales-to",
+    "removedAt": "2026-09-16T21:05:03.573Z"
   }
 ]

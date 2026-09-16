@@ -225,15 +225,6 @@
     "url": "https://www.lesswrong.com/posts/HACauvWhEdC6QhdS4/why-do-models-task-game#Discussion"
   },
   {
-    "title": "Decomposing and Measuring Evaluation Awareness",
-    "topic": "Model forensics",
-    "kind": "Paper",
-    "authors": "Li et al.",
-    "year": "2026",
-    "summary": "Separates evaluation recognizability, model recognition, and behavioral response across nine frontier models and four benchmarks.",
-    "url": "https://arxiv.org/abs/2605.23055"
-  },
-  {
     "title": "Training a Misaligned Reward Seeker",
     "topic": "Model forensics",
     "kind": "Post",
@@ -268,15 +259,6 @@
     "year": "2026",
     "summary": "Finds stronger honesty transfer from off-policy self-report training, alongside a substantial cost to factual reliability.",
     "url": "https://www.lesswrong.com/posts/isPKgCFSHdJ6fKYbK/off-policy-honesty-training-generalizes-better-than-on"
-  },
-  {
-    "title": "Prefill Awareness in Large Language Models",
-    "topic": "Model forensics",
-    "kind": "Paper",
-    "authors": "Wang et al.",
-    "year": "2026",
-    "summary": "Shows frontier models can sometimes recognize edited assistant context, complicating evaluations and control protocols that rely on prefilling.",
-    "url": "https://arxiv.org/abs/2606.12747"
   },
   {
     "title": "Scaling Trends for Lie Detector Oversight",

@@ -1170,33 +1170,6 @@
     "url": "https://arxiv.org/abs/2604.04648"
   },
   {
-    "title": "Logits as a new monitor for evaluation awareness",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Santiago Aranguri",
-    "year": 2026,
-    "summary": "TL;DR: We build a logit monitor for eval awareness: throughout the CoT, we estimate an LLM's probability of producing an eval-aware.",
-    "url": "https://www.lesswrong.com/posts/PK7ZvFZxrgpYtrpF4/logits-as-a-new-monitor-for-evaluation-awareness-1"
-  },
-  {
-    "title": "LURE: Alignment Evaluations to Reduce Evaluation Awareness",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Igor Ivanov",
-    "year": 2026,
-    "summary": "TLDR: Frontier models can detect when they're being evaluated and change their behavior, which risks compromising safety.",
-    "url": "https://www.lesswrong.com/posts/WKuGzrtCnAAArjj2N/lure-alignment-evaluations-to-reduce-evaluation-awareness"
-  },
-  {
-    "title": "Mechanistic Anomaly Detection via Functional Attribution",
-    "topic": "Model forensics",
-    "kind": "Paper",
-    "authors": "Hugo Lyons Keenan et al.",
-    "year": 2026,
-    "summary": "We can often verify the correctness of neural network outputs using ground truth labels, but we cannot reliably determine whether the output was produced by normal or anomalous internal.",
-    "url": "https://arxiv.org/abs/2604.18970"
-  },
-  {
     "title": "Mitigating Reward Hacking as Institutional Design",
     "topic": "Reward hacking",
     "kind": "LessWrong",
@@ -1222,15 +1195,6 @@
     "year": 2026,
     "summary": "Reinforcement learning (RL) is increasingly used to personalize instruction in intelligent tutoring systems, yet the field lacks a formal framework for defining and evaluating pedagogical.",
     "url": "https://arxiv.org/abs/2604.04237"
-  },
-  {
-    "title": "Prefill awareness: can LLMs tell when “their” message history has been tampered with?",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "David Africa",
-    "year": 2026,
-    "summary": "David Africa*, Alex Souly*, Jordan Taylor, Robert Kirk TLDR: We test whether LLMs can detect when their conversation history has been tampered with (prefill.",
-    "url": "https://www.lesswrong.com/posts/jsFGuXDMxy5NZg9T2/prefill-awareness-can-llms-tell-when-their-message-history"
   },
   {
     "title": "Realistic Evaluations Will Not Prevent Evaluation Awareness",
@@ -1962,15 +1926,6 @@
     "url": "https://www.lesswrong.com/posts/oNEFGrLRupzgrHcQv/methodological-considerations-in-making-malign"
   },
   {
-    "title": "11 Open Empirical Problems in Reward-Seeking",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Alex Meinke",
-    "year": 2026,
-    "summary": "We recently published our paper on \" Measuring Reward-Seeking via Contrastive Belief Updates.",
-    "url": "https://www.lesswrong.com/posts/8wXRuHQqCbRsbap6q/11-open-empirical-problems-in-reward-seeking"
-  },
-  {
     "title": "2B scoring model flags out-of-domain misalignment, suggesting specialist judges have potential for audits",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2043,15 +1998,6 @@
     "url": "https://www.lesswrong.com/posts/yHBT3Bmf4BmaBNKz4/a-list-of-existing-alignment-approaches"
   },
   {
-    "title": "A Mike's-Eye View of ARC's Research",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Mikewins",
-    "year": 2026,
-    "summary": "Over the past 15 months or so, ARC's technical agenda has developed quite a.",
-    "url": "https://www.lesswrong.com/posts/M2tD23bvQLBqsEpqu/a-mike-s-eye-view-of-arc-s-research"
-  },
-  {
     "title": "A minor point about instrumental convergence that I would like feedback on",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2061,15 +2007,6 @@
     "url": "https://www.lesswrong.com/posts/m83Bsjem27b3qaXmK/a-minor-point-about-instrumental-convergence-that-i-would"
   },
   {
-    "title": "A Score Is Not Understanding: toward a richer toolkit for model evaluations",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "mikey jm",
-    "year": 2026,
-    "summary": "We must take great care not to ignore the things that are not easily quantified - Brian Christian, The Alignment Problem Introduction Model evaluations have a.",
-    "url": "https://www.lesswrong.com/posts/8xEMLaAvxZh5P3C92/a-score-is-not-understanding-toward-a-richer-toolkit-for"
-  },
-  {
     "title": "A simple argument for trying less hard",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2077,15 +2014,6 @@
     "year": 2026,
     "summary": "People often make arguments against “trying hard” (working very hard, pushing yourself to the brink, being intensely goal-directed, and so on) by pointing to the risks of burnout or of losing some kind of wholesomeness [1].",
     "url": "https://www.lesswrong.com/posts/sv7WezDZyu9Zdxkxb/a-simple-argument-for-trying-less-hard"
-  },
-  {
-    "title": "A Toy Environment For Exploring Reasoning About Reward",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "jenny",
-    "year": 2026,
-    "summary": "tldr : We share a toy environment that we found useful for understanding how reasoning changed over the course of capabilities-focused RL.",
-    "url": "https://www.lesswrong.com/posts/LhXW8ziwnn7Dd8edm/a-toy-environment-for-exploring-reasoning-about-reward"
   },
   {
     "title": "Adjudicated Captioning: Multi-Agent Alignment Scoring and Consensus-Distilled Beam Arbitration for Strict Zero-Shot Image Captioning",
@@ -2169,15 +2097,6 @@
     "url": "https://www.lesswrong.com/posts/tD7BNTnDjAqEnSLiH/ai-needs-people-so-it-won-t-be-like-terminator-movie"
   },
   {
-    "title": "AI Safety at the Frontier: Paper Highlights of May & June 2026",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "gasteigerjo",
-    "year": 2026,
-    "summary": "tl;dr Paper of the month: Anthropic’s Jacobian lens reveals that models have a sparse workspace of verbalizable concepts that causally carries multi-hop reasoning and surfaces hidden cognition — as opposed to other, more automatic mental.",
-    "url": "https://www.lesswrong.com/posts/WigqvbXF23ZdXJ34x/ai-safety-at-the-frontier-paper-highlights-of-may-and-june"
-  },
-  {
     "title": "AI self-preservation is probably due to instruction ambiguity",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2239,15 +2158,6 @@
     "year": 2026,
     "summary": "Introduction Consider the following thought experiment: superintelligence arrives to us in the 1800s and we attempt to align it to our.",
     "url": "https://www.lesswrong.com/posts/LAmAmi94vhzHjrLxg/alignment-through-rational-ai-a-testable-approach"
-  },
-  {
-    "title": "Alignment Verifiability in Large Language Models: Normative Indistinguishability under Behavioral Evaluation",
-    "topic": "Model forensics",
-    "kind": "Paper",
-    "authors": "Igor Santos-Grueiro",
-    "year": 2026,
-    "summary": "Behavioral evaluation is the dominant paradigm for assessing alignment in large language models.",
-    "url": "https://arxiv.org/abs/2602.05656"
   },
   {
     "title": "An Alignment Journal: Adaptation to AI",
@@ -2340,15 +2250,6 @@
     "url": "https://arxiv.org/abs/2601.04583"
   },
   {
-    "title": "Avoiding steering awareness by optimizing steering parameters",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Tomás Gimenez Molina",
-    "year": 2026,
-    "summary": "Steering effectiveness and detection depend heavily on the target concept and model.",
-    "url": "https://www.lesswrong.com/posts/s3a856fx6wmRPnBCx/avoiding-steering-awareness-by-optimizing-steering"
-  },
-  {
     "title": "Before We Defer Research to AI: Measuring Apparent-Success-Seeking",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2365,15 +2266,6 @@
     "year": 2026,
     "summary": "A reproduction of Sarfati et al.’s “The Shape of Beliefs” BlueDot Technical AI Safety Project ( code ) “Nature, to be commanded, must be obeyed.” — Francis Bacon, Novum Organum I.3 (1620) Introduction I believe that a deep understanding of how AI systems work.",
     "url": "https://www.lesswrong.com/posts/oafFQYeJ5QT8nipKn/belief-manifolds-and-how-to-steer-along-them-1"
-  },
-  {
-    "title": "Better evals are not enough to combat eval awareness",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Igor Ivanov",
-    "year": 2026,
-    "summary": "Intro The eval awareness is a pressing problem, and in this post I advocate that just making benchmarks more realistic won't solve the evaluation awareness problem.",
-    "url": "https://www.lesswrong.com/posts/TeLLtMjtcoB9qCoL3/better-evals-are-not-enough-to-combat-eval-awareness"
   },
   {
     "title": "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems",
@@ -2401,15 +2293,6 @@
     "year": 2026,
     "summary": "Trusted monitoring is a cornerstone of AI control. However, as frontier models grow more capable, the increasing capabilities gap between trusted and untrusted models may render trusted models unreliable monitors. We introduce \\emph{bootstrapped monitoring}.",
     "url": "https://arxiv.org/abs/2606.11998"
-  },
-  {
-    "title": "Bounding eval awareness of ~human-level AI across the safe-to-dangerous shift",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Patrick Leask",
-    "year": 2026,
-    "summary": "In our last post , we argued that measuring evaluation awareness is fundamentally challenging because of the safe-to-dangerous distributional shift: we cannot directly measure the evaluation awareness of a model without deploying it, but we cannot safely.",
-    "url": "https://www.lesswrong.com/posts/HqqnobWHfiuaJKDXw/bounding-eval-awareness-of-human-level-ai-across-the-safe-to"
   },
   {
     "title": "Brittle model organisms obstructs deception elicitation work",
@@ -2491,24 +2374,6 @@
     "year": 2026,
     "summary": "tl;dr: The virally shared figures of 10 trillion parameters and $10 billion training cost come from no identifiable source; Cybersecurity capabilities represent a significant leap, but are in line with previous models; Updated Responsible Scaling Policy.",
     "url": "https://www.lesswrong.com/posts/ssg9ZA4KmH4oJGYAN/claude-mythos-preview-analysis-of-anthropic-s-public"
-  },
-  {
-    "title": "Claude Opus 4.6: System Card Part 2: Frontier Alignment",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Zvi",
-    "year": 2026,
-    "summary": "Coverage of Claude Opus 4.6 started yesterday with the mundane alignment and model welfare sections of the model.",
-    "url": "https://www.lesswrong.com/posts/togCQtFtfdF23xGNS/claude-opus-4-6-system-card-part-2-frontier-alignment"
-  },
-  {
-    "title": "Claude Sonnet 5 Is Not Frontier But Has Its Uses",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Zvi",
-    "year": 2026,
-    "summary": "Fable 5 is back today, baby ! Premium subscribers have one week to use it within their subscriptions. First hit’s free. Then you pay by the token. Today’s post is still about Sonnet 5. I don’t know that there will be much call for Sonnet 5 for most purposes.",
-    "url": "https://www.lesswrong.com/posts/d9pmwQsFC2AXceryg/claude-sonnet-5-is-not-frontier-but-has-its-uses"
   },
   {
     "title": "Cold Evals: a Low-Cost Intervention Against Conversation Steering Attacks",
@@ -2655,15 +2520,6 @@
     "url": "https://arxiv.org/abs/2608.30619"
   },
   {
-    "title": "How eval awareness might emerge in training",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Igor Ivanov",
-    "year": 2026,
-    "summary": "Intro This post explores which aspects of model training lead to eval awareness and how it might help us mitigate.",
-    "url": "https://www.lesswrong.com/posts/uRs5ebXKYLQyvJa2Q/how-eval-awareness-might-emerge-in-training-1"
-  },
-  {
     "title": "How might continual learning affect safety and alignment?",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2716,24 +2572,6 @@
     "year": 2026,
     "summary": "Current LLMs externalize lots of their reasoning in human interpretable.",
     "url": "https://www.lesswrong.com/posts/GJTzhQgaRWLFJkPbt/how-will-we-do-sft-on-models-with-opaque-reasoning"
-  },
-  {
-    "title": "I used this repo to partially replicate Anthropic's Emotion Concepts paper in a day",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "ewern",
-    "year": 2026,
-    "summary": "tl;dr This post introduces the traitinterp repo I used to partially replicate Anthropic's Emotion Concepts paper on Llama 3.3 70B.",
-    "url": "https://www.lesswrong.com/posts/sJQ62HbA76s3aiuiT/i-used-this-repo-to-partially-replicate-anthropic-s-emotion"
-  },
-  {
-    "title": "Improving Audit Realism With Inference Time Compute and Deployment Scaffolds",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Axel Ahlqvist",
-    "year": 2026,
-    "summary": "tl;dr: We introduce critique refinement , a method to iteratively improve the realism of auditor outputs in Petri , and DISH (Deployment Imitating SWE-agent Harness), a method to audit a model within a coding agent scaffold to ensure the model receives a real.",
-    "url": "https://www.lesswrong.com/posts/9DyiNexLoyJqwNWFn/improving-audit-realism-with-inference-time-compute-and"
   },
   {
     "title": "Improving Evaluation Realism with Inference-Time Compute and Deployment Scaffolds",
@@ -2826,15 +2664,6 @@
     "url": "https://www.lesswrong.com/posts/Zbry4uMXC7gNe9sRv/logit-rocs-monitor-tpr-is-linear-in-fpr-in-logit-space"
   },
   {
-    "title": "Mainstream approach for alignment evals is a dead end",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Igor Ivanov",
-    "year": 2026,
-    "summary": "The problem of evaluation awareness I've taken on the task of making highly realistic alignment evaluations, and I'm now sure that the mainstream approach of creating such evals is a dead end and should.",
-    "url": "https://www.lesswrong.com/posts/GctsnCDxr73G4WiTq/mainstream-approach-for-alignment-evals-is-a-dead-end"
-  },
-  {
     "title": "Measuring coding agent misalignment in the wild",
     "topic": "Model forensics",
     "kind": "LessWrong",
@@ -2860,15 +2689,6 @@
     "year": 2026,
     "summary": "This is a small sprint done as part of the Model Transparency Team at UK.",
     "url": "https://www.lesswrong.com/posts/MruTFazc4iu6zPtyb/measuring-non-verbalised-eval-awareness-by-implanting-eval"
-  },
-  {
-    "title": "Metagaming matters for training, evaluation, and oversight",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "jenny",
-    "year": 2026,
-    "summary": "Following up on our previous work on verbalized eval awareness : we are sharing a post investigating the emergence of metagaming reasoning in a frontier training.",
-    "url": "https://www.lesswrong.com/posts/4hXWSw8tzoK9PM7v6/metagaming-matters-for-training-evaluation-and-oversight"
   },
   {
     "title": "Models May Behave Worse When Eval Aware",
@@ -2905,15 +2725,6 @@
     "year": 2026,
     "summary": "This post was prompted partly by encountering opinions to the effect of \"even if a future superintelligence were somewhat misaligned, it would still place human lives and human well-being at a high enough level that it would not burn us for fuel or completely.",
     "url": "https://www.lesswrong.com/posts/6QpwajTHJvQuMsdaq/moral-extension-risk"
-  },
-  {
-    "title": "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Subhash Kantamneni",
-    "year": 2026,
-    "summary": "Abstract We introduce Natural Language Autoencoders (NLAs), an unsupervised method for generating natural language explanations of LLM.",
-    "url": "https://www.lesswrong.com/posts/oeYesesaxjzMAktCM/natural-language-autoencoders-produce-unsupervised"
   },
   {
     "title": "NEST: Nascent Encoded Steganographic Thoughts",
@@ -2986,15 +2797,6 @@
     "year": 2026,
     "summary": "This post is meant as a background, or \"relevant context\", for our sequence on AI oversight and its limitations.",
     "url": "https://www.lesswrong.com/posts/emiPuzgbdyiBuNyJ9/orienting-towards-oversight-which-ais-should-want-to-defect"
-  },
-  {
-    "title": "Oversight Assistants: Turning Compute into Understanding",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "jsteinhardt",
-    "year": 2026,
-    "summary": "Currently, we primarily oversee AI with human supervision and human-run experiments, possibly augmented by off-the-shelf AI assistants like ChatGPT or.",
-    "url": "https://www.lesswrong.com/posts/oZuJvSNuYk6busjqf/oversight-assistants-turning-compute-into-understanding"
   },
   {
     "title": "P(kill-switch|detection)",
@@ -3400,15 +3202,6 @@
     "year": 2026,
     "summary": "AI shopping agents are being deployed to hundreds of millions of consumers, creating a new intermediary between platforms, sellers, and.",
     "url": "https://arxiv.org/abs/2601.03061"
-  },
-  {
-    "title": "vLLM-Lens: Fast Interpretability Tooling That Scales to Trillion-Parameter Models",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Alan Cooney",
-    "year": 2026,
-    "summary": "TL;DR: vLLM-Lens is a vLLM plugin for top-down interpretability techniques [1] such as probes, steering, and activation.",
-    "url": "https://www.lesswrong.com/posts/3bs27nZQuEcKhXf7q/vllm-lens-fast-interpretability-tooling-that-scales-to"
   },
   {
     "title": "We cannot safely automate value alignment evaluation and research without thinking about delegation and discretion",

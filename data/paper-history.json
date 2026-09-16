@@ -167,27 +167,6 @@
         "url": "https://arxiv.org/abs/2604.04648"
       },
       {
-        "title": "Logits as a new monitor for evaluation awareness",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "Santiago Aranguri",
-        "url": "https://www.lesswrong.com/posts/PK7ZvFZxrgpYtrpF4/logits-as-a-new-monitor-for-evaluation-awareness-1"
-      },
-      {
-        "title": "LURE: Alignment Evaluations to Reduce Evaluation Awareness",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "Igor Ivanov",
-        "url": "https://www.lesswrong.com/posts/WKuGzrtCnAAArjj2N/lure-alignment-evaluations-to-reduce-evaluation-awareness"
-      },
-      {
-        "title": "Mechanistic Anomaly Detection via Functional Attribution",
-        "topic": "Model forensics",
-        "kind": "Paper",
-        "authors": "Hugo Lyons Keenan et al.",
-        "url": "https://arxiv.org/abs/2604.18970"
-      },
-      {
         "title": "Mitigating Reward Hacking as Institutional Design",
         "topic": "Reward hacking",
         "kind": "LessWrong",
@@ -207,13 +186,6 @@
         "kind": "Paper",
         "authors": "Oluseyi Olukola & Nick Rahimi",
         "url": "https://arxiv.org/abs/2604.04237"
-      },
-      {
-        "title": "Prefill awareness: can LLMs tell when “their” message history has been tampered with?",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "David Africa",
-        "url": "https://www.lesswrong.com/posts/jsFGuXDMxy5NZg9T2/prefill-awareness-can-llms-tell-when-their-message-history"
       },
       {
         "title": "Realistic Evaluations Will Not Prevent Evaluation Awareness",
@@ -1091,13 +1063,6 @@
         "url": "https://arxiv.org/abs/2606.04413"
       },
       {
-        "title": "11 Open Empirical Problems in Reward-Seeking",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "Alex Meinke",
-        "url": "https://www.lesswrong.com/posts/8wXRuHQqCbRsbap6q/11-open-empirical-problems-in-reward-seeking"
-      },
-      {
         "title": "2B scoring model flags out-of-domain misalignment, suggesting specialist judges have potential for audits",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -1154,13 +1119,6 @@
         "url": "https://www.lesswrong.com/posts/yHBT3Bmf4BmaBNKz4/a-list-of-existing-alignment-approaches"
       },
       {
-        "title": "A Mike's-Eye View of ARC's Research",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "Mikewins",
-        "url": "https://www.lesswrong.com/posts/M2tD23bvQLBqsEpqu/a-mike-s-eye-view-of-arc-s-research"
-      },
-      {
         "title": "A minor point about instrumental convergence that I would like feedback on",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -1175,25 +1133,11 @@
         "url": "https://www.lesswrong.com/posts/M3qB2BGgMNuG5oRTB/a-retrospective-of-richard-ngo-s-2022-list-of-conceptual"
       },
       {
-        "title": "A Score Is Not Understanding: toward a richer toolkit for model evaluations",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "mikey jm",
-        "url": "https://www.lesswrong.com/posts/8xEMLaAvxZh5P3C92/a-score-is-not-understanding-toward-a-richer-toolkit-for"
-      },
-      {
         "title": "A simple argument for trying less hard",
         "topic": "Monitoring",
         "kind": "LessWrong",
         "authors": "Elias Schmied",
         "url": "https://www.lesswrong.com/posts/sv7WezDZyu9Zdxkxb/a-simple-argument-for-trying-less-hard"
-      },
-      {
-        "title": "A Toy Environment For Exploring Reasoning About Reward",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "jenny",
-        "url": "https://www.lesswrong.com/posts/LhXW8ziwnn7Dd8edm/a-toy-environment-for-exploring-reasoning-about-reward"
       },
       {
         "title": "Adjudicated Captioning: Multi-Agent Alignment Scoring and Consensus-Distilled Beam Arbitration for Strict Zero-Shot Image Captioning",
@@ -1280,13 +1224,6 @@
         "url": "https://www.lesswrong.com/posts/ckKZFqfSQGMye4JeK/ai-safety-at-the-frontier-paper-highlights-of-february-and"
       },
       {
-        "title": "AI Safety at the Frontier: Paper Highlights of May & June 2026",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "gasteigerjo",
-        "url": "https://www.lesswrong.com/posts/WigqvbXF23ZdXJ34x/ai-safety-at-the-frontier-paper-highlights-of-may-and-june"
-      },
-      {
         "title": "AI Safety Poland Updates - Q1 2026",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -1348,13 +1285,6 @@
         "kind": "LessWrong",
         "authors": "John Matrix",
         "url": "https://www.lesswrong.com/posts/LAmAmi94vhzHjrLxg/alignment-through-rational-ai-a-testable-approach"
-      },
-      {
-        "title": "Alignment Verifiability in Large Language Models: Normative Indistinguishability under Behavioral Evaluation",
-        "topic": "Model forensics",
-        "kind": "Paper",
-        "authors": "Igor Santos-Grueiro",
-        "url": "https://arxiv.org/abs/2602.05656"
       },
       {
         "title": "An Alignment Journal: Adaptation to AI",
@@ -1469,13 +1399,6 @@
         "url": "https://arxiv.org/abs/2601.04583"
       },
       {
-        "title": "Avoiding steering awareness by optimizing steering parameters",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "Tomás Gimenez Molina",
-        "url": "https://www.lesswrong.com/posts/s3a856fx6wmRPnBCx/avoiding-steering-awareness-by-optimizing-steering"
-      },
-      {
         "title": "Before We Defer Research to AI: Measuring Apparent-Success-Seeking",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -1497,13 +1420,6 @@
         "url": "https://www.lesswrong.com/posts/6wsuxp8ytXDjZSoJB/bert-is-only-very-slightly-better-than-regex-as-a-cot"
       },
       {
-        "title": "Better evals are not enough to combat eval awareness",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "Igor Ivanov",
-        "url": "https://www.lesswrong.com/posts/TeLLtMjtcoB9qCoL3/better-evals-are-not-enough-to-combat-eval-awareness"
-      },
-      {
         "title": "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems",
         "topic": "Swarm misalignment",
         "kind": "Paper",
@@ -1523,13 +1439,6 @@
         "kind": "Paper",
         "authors": "Frank Xiao & Mary Phuong",
         "url": "https://arxiv.org/abs/2606.11998"
-      },
-      {
-        "title": "Bounding eval awareness of ~human-level AI across the safe-to-dangerous shift",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "Patrick Leask",
-        "url": "https://www.lesswrong.com/posts/HqqnobWHfiuaJKDXw/bounding-eval-awareness-of-human-level-ai-across-the-safe-to"
       },
       {
         "title": "Brittle model organisms obstructs deception elicitation work",
@@ -1614,20 +1523,6 @@
         "kind": "LessWrong",
         "authors": "Zvi",
         "url": "https://www.lesswrong.com/posts/sWsSncqMLKyGZA9Ar/claude-opus-4-6-system-card-part-1-mundane-alignment-and"
-      },
-      {
-        "title": "Claude Opus 4.6: System Card Part 2: Frontier Alignment",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "Zvi",
-        "url": "https://www.lesswrong.com/posts/togCQtFtfdF23xGNS/claude-opus-4-6-system-card-part-2-frontier-alignment"
-      },
-      {
-        "title": "Claude Sonnet 5 Is Not Frontier But Has Its Uses",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "Zvi",
-        "url": "https://www.lesswrong.com/posts/d9pmwQsFC2AXceryg/claude-sonnet-5-is-not-frontier-but-has-its-uses"
       },
       {
         "title": "Cold Evals: a Low-Cost Intervention Against Conversation Steering Attacks",
@@ -1931,13 +1826,6 @@
         "url": "https://www.lesswrong.com/posts/pQ4e2qJdQ4qYnsyhp/how-do-llms-generalize-when-we-do-training-that-is"
       },
       {
-        "title": "How eval awareness might emerge in training",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "Igor Ivanov",
-        "url": "https://www.lesswrong.com/posts/uRs5ebXKYLQyvJa2Q/how-eval-awareness-might-emerge-in-training-1"
-      },
-      {
         "title": "How might continual learning affect safety and alignment?",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -1987,13 +1875,6 @@
         "url": "https://www.lesswrong.com/posts/HBJKXr6mBCrsdTzJp/how-s-it-going-reinforcement-learning-in-language-models"
       },
       {
-        "title": "I used this repo to partially replicate Anthropic's Emotion Concepts paper in a day",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "ewern",
-        "url": "https://www.lesswrong.com/posts/sJQ62HbA76s3aiuiT/i-used-this-repo-to-partially-replicate-anthropic-s-emotion"
-      },
-      {
         "title": "I'm Bearish On Personas For ASI Safety",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -2006,13 +1887,6 @@
         "kind": "LessWrong",
         "authors": "MichaelDickens",
         "url": "https://www.lesswrong.com/posts/WkEAcTNHHHk97nT4d/if-ai-alignment-is-only-as-hard-as-building-the-steam-engine"
-      },
-      {
-        "title": "Improving Audit Realism With Inference Time Compute and Deployment Scaffolds",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "Axel Ahlqvist",
-        "url": "https://www.lesswrong.com/posts/9DyiNexLoyJqwNWFn/improving-audit-realism-with-inference-time-compute-and"
       },
       {
         "title": "Improving Evaluation Realism with Inference-Time Compute and Deployment Scaffolds",
@@ -2141,13 +2015,6 @@
         "url": "https://www.lesswrong.com/posts/Zbry4uMXC7gNe9sRv/logit-rocs-monitor-tpr-is-linear-in-fpr-in-logit-space"
       },
       {
-        "title": "Mainstream approach for alignment evals is a dead end",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "Igor Ivanov",
-        "url": "https://www.lesswrong.com/posts/GctsnCDxr73G4WiTq/mainstream-approach-for-alignment-evals-is-a-dead-end"
-      },
-      {
         "title": "Maybe we should pretrain on synthetic data about good-but-reward-hacking AIs",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -2174,13 +2041,6 @@
         "kind": "LessWrong",
         "authors": "Jordan Taylor",
         "url": "https://www.lesswrong.com/posts/MruTFazc4iu6zPtyb/measuring-non-verbalised-eval-awareness-by-implanting-eval"
-      },
-      {
-        "title": "Metagaming matters for training, evaluation, and oversight",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "jenny",
-        "url": "https://www.lesswrong.com/posts/4hXWSw8tzoK9PM7v6/metagaming-matters-for-training-evaluation-and-oversight"
       },
       {
         "title": "Metaphors are a Source of Cross-Domain Misalignment of Large Reasoning Models",
@@ -2267,13 +2127,6 @@
         "url": "https://arxiv.org/abs/2602.16931"
       },
       {
-        "title": "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "Subhash Kantamneni",
-        "url": "https://www.lesswrong.com/posts/oeYesesaxjzMAktCM/natural-language-autoencoders-produce-unsupervised"
-      },
-      {
         "title": "NEST: Nascent Encoded Steganographic Thoughts",
         "topic": "Obfuscation",
         "kind": "Paper",
@@ -2349,13 +2202,6 @@
         "kind": "LessWrong",
         "authors": "VojtaKovarik",
         "url": "https://www.lesswrong.com/posts/emiPuzgbdyiBuNyJ9/orienting-towards-oversight-which-ais-should-want-to-defect"
-      },
-      {
-        "title": "Oversight Assistants: Turning Compute into Understanding",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "jsteinhardt",
-        "url": "https://www.lesswrong.com/posts/oZuJvSNuYk6busjqf/oversight-assistants-turning-compute-into-understanding"
       },
       {
         "title": "Overtrained, Not Misaligned",
@@ -2944,13 +2790,6 @@
         "kind": "Paper",
         "authors": "Qishun Yang et al.",
         "url": "https://arxiv.org/abs/2603.08486"
-      },
-      {
-        "title": "vLLM-Lens: Fast Interpretability Tooling That Scales to Trillion-Parameter Models",
-        "topic": "Model forensics",
-        "kind": "LessWrong",
-        "authors": "Alan Cooney",
-        "url": "https://www.lesswrong.com/posts/3bs27nZQuEcKhXf7q/vllm-lens-fast-interpretability-tooling-that-scales-to"
       },
       {
         "title": "Voting Results for the 2024 Review",
