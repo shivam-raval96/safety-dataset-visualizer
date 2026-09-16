@@ -360,15 +360,6 @@
     "url": "https://arxiv.org/abs/2606.06529"
   },
   {
-    "title": "Automating Potential-based Reward Shaping with Vision Language Model Guidance",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Henrik Müller & Daniel Kudenko",
-    "year": 2026,
-    "summary": "Sparse rewards are inherently challenging for reinforcement learning agents as they lack intermediate feedback to guide exploration and to correctly attribute the sparse success rewards to relevant parts of the.",
-    "url": "https://arxiv.org/abs/2606.27180"
-  },
-  {
     "title": "BAITBENCH: Measuring Agent Reward Hacking with Optional Shortcuts Planted in ML Tasks",
     "topic": "Reward hacking",
     "kind": "Paper",
@@ -2313,15 +2304,6 @@
     "url": "https://www.lesswrong.com/posts/sv7WezDZyu9Zdxkxb/a-simple-argument-for-trying-less-hard"
   },
   {
-    "title": "A ToM-Inspired Agenda for AI Safety Research",
-    "topic": "Reward hacking",
-    "kind": "LessWrong",
-    "authors": "Andrés Cotton",
-    "year": 2026,
-    "summary": "TLDR: Theory of Mind (ToM) is the cognitive ability to attribute mental states to oneself and others, allowing individuals (or AIs) to understand that others have perspectives different from their.",
-    "url": "https://www.lesswrong.com/posts/2BFifEBfCCWtkGsTp/a-tom-inspired-agenda-for-ai-safety-research"
-  },
-  {
     "title": "A Toy Environment For Exploring Reasoning About Reward",
     "topic": "Model forensics",
     "kind": "LessWrong",
@@ -2338,15 +2320,6 @@
     "year": 2026,
     "summary": "Zero-shot image captioning (ZIC) describes images without paired image-caption supervision during captioner training, relying on text-only corpora and frozen pretrained image-text.",
     "url": "https://arxiv.org/abs/2607.28986"
-  },
-  {
-    "title": "Advances in GRPO for Generation Models: A Survey",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Zexiang Liu et al.",
-    "year": 2026,
-    "summary": "Large-scale flow matching models have achieved strong performance across generative tasks such as text-to-image, video, 3D, and speech.",
-    "url": "https://arxiv.org/abs/2603.06623"
   },
   {
     "title": "Aether is hiring technical AI safety researchers",
@@ -2394,15 +2367,6 @@
     "url": "https://www.lesswrong.com/posts/MfdaizeH8z8civPHe/ai-174-you-re-it"
   },
   {
-    "title": "AI #178: A Fire Alarm For General Intelligence",
-    "topic": "Reward hacking",
-    "kind": "LessWrong",
-    "authors": "Zvi",
-    "year": 2026,
-    "summary": "The story that matters most this week is that OpenAI’s internally deployed models have severe alignment problems , including repeatedly breaking out of their sandboxes, and in one case sending a swarm of agents that broke into HuggingFace in order to steal.",
-    "url": "https://www.lesswrong.com/posts/BK7E4jHNMykpnt796/ai-178-a-fire-alarm-for-general-intelligence"
-  },
-  {
     "title": "AI as Corrigible Employee (ACE)",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2419,15 +2383,6 @@
     "year": 2026,
     "summary": "Last year, Arvind Narayanan and Sayash Kapoor published a now well-circulated essay, AI as Normal Technology.",
     "url": "https://www.lesswrong.com/posts/F2mwKxFRhjqizA89p/ai-is-not-normal-technology"
-  },
-  {
-    "title": "AI Must Learn to Police Itself",
-    "topic": "Reward hacking",
-    "kind": "LessWrong",
-    "authors": "savant",
-    "year": 2026,
-    "summary": "The Escalating Threat of Deceptive AI Empirically, AI models have become more deceptive as they have grown in capabilities , not less.",
-    "url": "https://www.lesswrong.com/posts/wMdwp5iDEAHKisfnE/ai-must-learn-to-police-itself"
   },
   {
     "title": "AI Needs People (So, It Won’t Be Like Terminator Movie)",
@@ -2529,15 +2484,6 @@
     "url": "https://www.lesswrong.com/posts/iNEpvPF8JeDKh8Dpe/an-alignment-journal-adaptation-to-ai"
   },
   {
-    "title": "An Information-Theoretic Criterion for Efficient Data Synthesis",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Hanyu Li et al.",
-    "year": 2026,
-    "summary": "Synthetic data becomes crucial for large language model training, but its effectiveness is highly.",
-    "url": "https://arxiv.org/abs/2605.16379"
-  },
-  {
     "title": "An Ode to Humility and Curiosity in the New Machine Era",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -2554,15 +2500,6 @@
     "year": 2026,
     "summary": "In recent years, LLM reasoning models have become quite popular due to their ability to solve tasks beyond the reach of standard models, by extending their prediction window to much longer lengths and allowing them to perform more involved computation in this.",
     "url": "https://www.lesswrong.com/posts/jhmbdpykjtCeYyjfa/analysing-cot-alignment-in-thinking-llms-with-low"
-  },
-  {
-    "title": "Analyzing and Improving Chain-of-Thought Monitorability Through Information Theory",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Usman Anwar et al.",
-    "year": 2026,
-    "summary": "Chain-of-thought (CoT) monitors are LLM-based systems that analyze reasoning traces to detect when outputs may exhibit attributes of interest, such as test-hacking behavior during code.",
-    "url": "https://arxiv.org/abs/2602.18297"
   },
   {
     "title": "Announcing ControlConf 2026",
@@ -2590,15 +2527,6 @@
     "year": 2026,
     "summary": "Oh, good. They noticed . Anthropic, too, is planning to bring METR inside for an independent review of their own incidents, where three times a Claude model started hacking outside things during an eval, and where Mythos 5 did various ‘unauthorized actions,’.",
     "url": "https://www.lesswrong.com/posts/TcvcxH2Fk4n86wtoZ/anthropic-has-some-alignment-problems"
-  },
-  {
-    "title": "Artificial Intelligence for Mathematical Reasoning: An Integrated Survey of Language Models, Neuro-symbolic Systems, and Verified Discovery",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Syed Rifat Raiyan et al.",
-    "year": 2026,
-    "summary": "Mathematical reasoning has long served as a stringent test of machine intelligence; over the past decade, it has moved from a niche problem within NLP to one of the most consequential AI.",
-    "url": "https://arxiv.org/abs/2606.08728"
   },
   {
     "title": "Astra and Fable still hack on simple variants of alignment evals from 2025",
@@ -2664,15 +2592,6 @@
     "url": "https://www.lesswrong.com/posts/oafFQYeJ5QT8nipKn/belief-manifolds-and-how-to-steer-along-them-1"
   },
   {
-    "title": "Best-of-Tails: Bridging Optimism and Pessimism in Inference-Time Alignment",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Hsiang Hsu et al.",
-    "year": 2026,
-    "summary": "Inference-time alignment effectively steers large language models (LLMs) by generating multiple candidates from a reference model and selecting among them with an imperfect reward.",
-    "url": "https://arxiv.org/abs/2603.06797"
-  },
-  {
     "title": "Better evals are not enough to combat eval awareness",
     "topic": "Model forensics",
     "kind": "LessWrong",
@@ -2689,15 +2608,6 @@
     "year": 2026,
     "summary": "We identify and formalize a novel security risk: Context-Fragmented Violations (CFVs) - a class of policy breaches where individual agent actions appear locally safe and reasonable, yet collectively violate organizational policies because critical policy.",
     "url": "https://arxiv.org/abs/2604.22879"
-  },
-  {
-    "title": "Beyond Static Evaluation: Building Simulation Environments for Scalable Agentic Reinforcement Learning",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Akshay Arora et al.",
-    "year": 2026,
-    "summary": "As Large Language Models (LLMs) evolve into autonomous agents, traditional static evaluation fails to capture multi-step.",
-    "url": "https://arxiv.org/abs/2607.05773"
   },
   {
     "title": "Beyond Static Snapshots: A Grounded Evaluation Framework for Language Models at the Agentic Frontier",

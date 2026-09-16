@@ -8,5 +8,55 @@
     "title": "A Survey on Rubric-Guided Reinforcement Learning for Language Models",
     "url": "https://arxiv.org/abs/2608.27505",
     "removedAt": "2026-09-16T20:34:58.006Z"
+  },
+  {
+    "title": "A ToM-Inspired Agenda for AI Safety Research",
+    "url": "https://www.lesswrong.com/posts/2BFifEBfCCWtkGsTp/a-tom-inspired-agenda-for-ai-safety-research",
+    "removedAt": "2026-09-16T20:37:42.614Z"
+  },
+  {
+    "title": "Advances in GRPO for Generation Models: A Survey",
+    "url": "https://arxiv.org/abs/2603.06623",
+    "removedAt": "2026-09-16T20:37:43.100Z"
+  },
+  {
+    "title": "AI #178: A Fire Alarm For General Intelligence",
+    "url": "https://www.lesswrong.com/posts/BK7E4jHNMykpnt796/ai-178-a-fire-alarm-for-general-intelligence",
+    "removedAt": "2026-09-16T20:37:43.517Z"
+  },
+  {
+    "title": "AI Must Learn to Police Itself",
+    "url": "https://www.lesswrong.com/posts/wMdwp5iDEAHKisfnE/ai-must-learn-to-police-itself",
+    "removedAt": "2026-09-16T20:37:43.939Z"
+  },
+  {
+    "title": "An Information-Theoretic Criterion for Efficient Data Synthesis",
+    "url": "https://arxiv.org/abs/2605.16379",
+    "removedAt": "2026-09-16T20:37:44.344Z"
+  },
+  {
+    "title": "Analyzing and Improving Chain-of-Thought Monitorability Through Information Theory",
+    "url": "https://arxiv.org/abs/2602.18297",
+    "removedAt": "2026-09-16T20:37:44.763Z"
+  },
+  {
+    "title": "Artificial Intelligence for Mathematical Reasoning: An Integrated Survey of Language Models, Neuro-symbolic Systems, and Verified Discovery",
+    "url": "https://arxiv.org/abs/2606.08728",
+    "removedAt": "2026-09-16T20:37:45.161Z"
+  },
+  {
+    "title": "Automating Potential-based Reward Shaping with Vision Language Model Guidance",
+    "url": "https://arxiv.org/abs/2606.27180",
+    "removedAt": "2026-09-16T20:37:45.609Z"
+  },
+  {
+    "title": "Best-of-Tails: Bridging Optimism and Pessimism in Inference-Time Alignment",
+    "url": "https://arxiv.org/abs/2603.06797",
+    "removedAt": "2026-09-16T20:37:46.067Z"
+  },
+  {
+    "title": "Beyond Static Evaluation: Building Simulation Environments for Scalable Agentic Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2607.05773",
+    "removedAt": "2026-09-16T20:37:46.573Z"
   }
 ]

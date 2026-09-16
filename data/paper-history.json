@@ -1259,13 +1259,6 @@
         "url": "https://www.lesswrong.com/posts/sv7WezDZyu9Zdxkxb/a-simple-argument-for-trying-less-hard"
       },
       {
-        "title": "A ToM-Inspired Agenda for AI Safety Research",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Andrés Cotton",
-        "url": "https://www.lesswrong.com/posts/2BFifEBfCCWtkGsTp/a-tom-inspired-agenda-for-ai-safety-research"
-      },
-      {
         "title": "A Toy Environment For Exploring Reasoning About Reward",
         "topic": "Model forensics",
         "kind": "LessWrong",
@@ -1278,13 +1271,6 @@
         "kind": "Paper",
         "authors": "Duy Tran Thanh et al.",
         "url": "https://arxiv.org/abs/2607.28986"
-      },
-      {
-        "title": "Advances in GRPO for Generation Models: A Survey",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Zexiang Liu et al.",
-        "url": "https://arxiv.org/abs/2603.06623"
       },
       {
         "title": "Aether is hiring technical AI safety researchers",
@@ -1322,13 +1308,6 @@
         "url": "https://www.lesswrong.com/posts/MfdaizeH8z8civPHe/ai-174-you-re-it"
       },
       {
-        "title": "AI #178: A Fire Alarm For General Intelligence",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Zvi",
-        "url": "https://www.lesswrong.com/posts/BK7E4jHNMykpnt796/ai-178-a-fire-alarm-for-general-intelligence"
-      },
-      {
         "title": "AI as Corrigible Employee (ACE)",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -1341,13 +1320,6 @@
         "kind": "LessWrong",
         "authors": "Olivia Scharfman",
         "url": "https://www.lesswrong.com/posts/F2mwKxFRhjqizA89p/ai-is-not-normal-technology"
-      },
-      {
-        "title": "AI Must Learn to Police Itself",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "savant",
-        "url": "https://www.lesswrong.com/posts/wMdwp5iDEAHKisfnE/ai-must-learn-to-police-itself"
       },
       {
         "title": "AI Needs People (So, It Won’t Be Like Terminator Movie)",
@@ -1469,13 +1441,6 @@
         "url": "https://www.lesswrong.com/posts/fabXad4XGkCgAbXcH/an-empirical-study-of-methods-for-sfting-opaque-reasoning"
       },
       {
-        "title": "An Information-Theoretic Criterion for Efficient Data Synthesis",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Hanyu Li et al.",
-        "url": "https://arxiv.org/abs/2605.16379"
-      },
-      {
         "title": "An Ode to Humility and Curiosity in the New Machine Era",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -1488,13 +1453,6 @@
         "kind": "LessWrong",
         "authors": "edoinni",
         "url": "https://www.lesswrong.com/posts/jhmbdpykjtCeYyjfa/analysing-cot-alignment-in-thinking-llms-with-low"
-      },
-      {
-        "title": "Analyzing and Improving Chain-of-Thought Monitorability Through Information Theory",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Usman Anwar et al.",
-        "url": "https://arxiv.org/abs/2602.18297"
       },
       {
         "title": "Announcing ControlConf 2026",
@@ -1544,13 +1502,6 @@
         "kind": "LessWrong",
         "authors": "Raj Thimmiah",
         "url": "https://www.lesswrong.com/posts/GJWgXZ3jjYfkfzKut/applying-to-mats-what-the-program-is-like-and-who-it-s-for"
-      },
-      {
-        "title": "Artificial Intelligence for Mathematical Reasoning: An Integrated Survey of Language Models, Neuro-symbolic Systems, and Verified Discovery",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Syed Rifat Raiyan et al.",
-        "url": "https://arxiv.org/abs/2606.08728"
       },
       {
         "title": "Astra and Fable still hack on simple variants of alignment evals from 2025",
@@ -1616,13 +1567,6 @@
         "url": "https://www.lesswrong.com/posts/6wsuxp8ytXDjZSoJB/bert-is-only-very-slightly-better-than-regex-as-a-cot"
       },
       {
-        "title": "Best-of-Tails: Bridging Optimism and Pessimism in Inference-Time Alignment",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Hsiang Hsu et al.",
-        "url": "https://arxiv.org/abs/2603.06797"
-      },
-      {
         "title": "Better evals are not enough to combat eval awareness",
         "topic": "Model forensics",
         "kind": "LessWrong",
@@ -1635,13 +1579,6 @@
         "kind": "Paper",
         "authors": "Jie Wu & Ming Gong",
         "url": "https://arxiv.org/abs/2604.22879"
-      },
-      {
-        "title": "Beyond Static Evaluation: Building Simulation Environments for Scalable Agentic Reinforcement Learning",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Akshay Arora et al.",
-        "url": "https://arxiv.org/abs/2607.05773"
       },
       {
         "title": "Beyond Static Snapshots: A Grounded Evaluation Framework for Language Models at the Agentic Frontier",
