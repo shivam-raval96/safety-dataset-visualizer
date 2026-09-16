@@ -54,7 +54,8 @@ function writeJson(path, value) {
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  const targets = removalPayload(JSON.parse(readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8')), process.env.REPOSITORY_OWNER);
+  const eventPath = process.env.PAPER_REMOVAL_EVENT_PATH || process.env.GITHUB_EVENT_PATH;
+  const targets = removalPayload(JSON.parse(readFileSync(eventPath, 'utf8')), process.env.REPOSITORY_OWNER);
   const paths = Object.fromEntries(['curated', 'discovered', 'history', 'removed'].map((name) => [name, join(root, 'data', `${name === 'curated' ? 'curated-papers' : name === 'discovered' ? 'discovered-papers' : name === 'history' ? 'paper-history' : 'removed-papers'}.json`)]));
   const current = Object.fromEntries(Object.entries(paths).map(([name, path]) => [name, JSON.parse(readFileSync(path, 'utf8'))]));
   const next = removePapers(targets, current.curated, current.discovered, current.history, current.removed, new Date().toISOString());

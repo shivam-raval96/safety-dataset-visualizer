@@ -44,7 +44,7 @@ jobs:
           jq '{issue: .}' /tmp/paper-removal-issue.json > /tmp/paper-removal-event.json
       - name: Remove requested paper
         env:
-          GITHUB_EVENT_PATH: /tmp/paper-removal-event.json
+          PAPER_REMOVAL_EVENT_PATH: /tmp/paper-removal-event.json
         run: node scripts/remove-paper-from-issue.mjs
       - name: Validate site
         run: |
