@@ -973,5 +973,85 @@
     "title": "vLLM-Lens: Fast Interpretability Tooling That Scales to Trillion-Parameter Models",
     "url": "https://www.lesswrong.com/posts/3bs27nZQuEcKhXf7q/vllm-lens-fast-interpretability-tooling-that-scales-to",
     "removedAt": "2026-09-16T21:05:03.573Z"
+  },
+  {
+    "title": "Adjudicated Captioning: Multi-Agent Alignment Scoring and Consensus-Distilled Beam Arbitration for Strict Zero-Shot Image Captioning",
+    "url": "https://arxiv.org/abs/2607.28986",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "Agents of Diffusion: Enhancing Diffusion Language Models with Multi-Agent Reinforcement Learning for Structured Data Generation (Extended Version)",
+    "url": "https://arxiv.org/abs/2601.07152",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "Autonomous Agents on Blockchains: Standards, Execution Models, and Trust Boundaries",
+    "url": "https://arxiv.org/abs/2601.04583",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "Safety's Second Way",
+    "url": "https://www.lesswrong.com/posts/x4vrnMG85oBvGvDde/safety-s-second-way",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "Topological collapse of higher-order interactions bottlenecks collective intelligence in AI agent societies",
+    "url": "https://arxiv.org/abs/2608.15519",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "Extending the OWASP Multi-Agentic System Threat Modeling Guide: Insights from Multi-Agent Security Research",
+    "url": "https://arxiv.org/abs/2508.09815",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "SentinelAgent: Graph-based Anomaly Detection in Multi-Agent Systems",
+    "url": "https://arxiv.org/abs/2505.24201",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "Structuring Collective Action with LLM-Guided Evolution: From Ill-Structured Problems to Executable Heuristics",
+    "url": "https://arxiv.org/abs/2509.20412",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "A Universal Model for Human Mobility Prediction",
+    "url": "https://arxiv.org/abs/2412.15294",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "Law Informs Code: A Legal Informatics Approach to Aligning Artificial Intelligence with Humans",
+    "url": "https://arxiv.org/abs/2209.13020",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "Algorithmic collusion: A critical review",
+    "url": "https://arxiv.org/abs/2110.04740",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "Developing a Philosophical Framework for Fair Machine Learning: Lessons From The Case of Algorithmic Collusion",
+    "url": "https://arxiv.org/abs/2208.06308",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "LLM Theory of Mind and Alignment: Opportunities and Risks",
+    "url": "https://arxiv.org/abs/2405.08154",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "Tacit algorithmic collusion in deep reinforcement learning guided price competition: A study using EV charge pricing game",
+    "url": "https://arxiv.org/abs/2401.15108",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "Learning Two-agent Motion Planning Strategies from Generalized Nash Equilibrium for Model Predictive Control",
+    "url": "https://arxiv.org/abs/2411.13983",
+    "removedAt": "2026-09-16T21:08:27.132Z"
+  },
+  {
+    "title": "Democratizing Reward Design for Personal and Representative Value-Alignment",
+    "url": "https://arxiv.org/abs/2410.22203",
+    "removedAt": "2026-09-16T21:08:27.132Z"
   }
 ]

@@ -321,13 +321,6 @@
         "url": "https://arxiv.org/abs/2509.13333"
       },
       {
-        "title": "Extending the OWASP Multi-Agentic System Threat Modeling Guide: Insights from Multi-Agent Security Research",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "Klaudia Krawiecka & Christian Schroeder de Witt",
-        "url": "https://arxiv.org/abs/2508.09815"
-      },
-      {
         "title": "Impact of Price Inflation on Algorithmic Collusion Through Reinforcement Learning Agents",
         "topic": "Swarm misalignment",
         "kind": "Paper",
@@ -398,13 +391,6 @@
         "url": "https://arxiv.org/abs/2405.05466"
       },
       {
-        "title": "Tacit algorithmic collusion in deep reinforcement learning guided price competition: A study using EV charge pricing game",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "Diwas Paudel & Tapas K. Das",
-        "url": "https://arxiv.org/abs/2401.15108"
-      },
-      {
         "title": "Analyzing And Editing Inner Mechanisms Of Backdoored Language Models",
         "topic": "Model organisms",
         "kind": "Paper",
@@ -417,20 +403,6 @@
         "kind": "Paper",
         "authors": "Andres Carranza et al.",
         "url": "https://arxiv.org/abs/2307.10569"
-      },
-      {
-        "title": "Developing a Philosophical Framework for Fair Machine Learning: Lessons From The Case of Algorithmic Collusion",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "James Michelson",
-        "url": "https://arxiv.org/abs/2208.06308"
-      },
-      {
-        "title": "Algorithmic collusion: A critical review",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "Florian E. Dorner",
-        "url": "https://arxiv.org/abs/2110.04740"
       },
       {
         "title": "A Conceptual Framework for Exploration Hacking",
@@ -1140,25 +1112,11 @@
         "url": "https://www.lesswrong.com/posts/sv7WezDZyu9Zdxkxb/a-simple-argument-for-trying-less-hard"
       },
       {
-        "title": "Adjudicated Captioning: Multi-Agent Alignment Scoring and Consensus-Distilled Beam Arbitration for Strict Zero-Shot Image Captioning",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "Duy Tran Thanh et al.",
-        "url": "https://arxiv.org/abs/2607.28986"
-      },
-      {
         "title": "Aether is hiring technical AI safety researchers",
         "topic": "Obfuscation",
         "kind": "LessWrong",
         "authors": "Rauno Arike",
         "url": "https://www.lesswrong.com/posts/TAokeS4Znd7Lozega/aether-is-hiring-technical-ai-safety-researchers"
-      },
-      {
-        "title": "Agents of Diffusion: Enhancing Diffusion Language Models with Multi-Agent Reinforcement Learning for Structured Data Generation (Extended Version)",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "Aja Khanal et al.",
-        "url": "https://arxiv.org/abs/2601.07152"
       },
       {
         "title": "Agents That Model Agents: Five Principles Toward a Theory of Mind for 6G Networks",
@@ -1390,13 +1348,6 @@
         "kind": "LessWrong",
         "authors": "epicurus",
         "url": "https://www.lesswrong.com/posts/Drdpybjuj8jEx7Zjn/attunement-not-alignment"
-      },
-      {
-        "title": "Autonomous Agents on Blockchains: Standards, Execution Models, and Trust Boundaries",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "Saad Alqithami",
-        "url": "https://arxiv.org/abs/2601.04583"
       },
       {
         "title": "Before We Defer Research to AI: Measuring Apparent-Success-Seeking",
@@ -2400,13 +2351,6 @@
         "url": "https://www.lesswrong.com/posts/pnPDd8uo2NZqn2dtG/safe-recursive-self-improvement-with-verified-compilers"
       },
       {
-        "title": "Safety's Second Way",
-        "topic": "Swarm misalignment",
-        "kind": "LessWrong",
-        "authors": "Stephen Elliott",
-        "url": "https://www.lesswrong.com/posts/x4vrnMG85oBvGvDde/safety-s-second-way"
-      },
-      {
         "title": "Safety, Security, and Cognitive Risks in World Models",
         "topic": "Model organisms",
         "kind": "Paper",
@@ -2678,13 +2622,6 @@
         "kind": "LessWrong",
         "authors": "Connor Kissane",
         "url": "https://www.lesswrong.com/posts/jdoDvKGLbaaJWnDpE/tools-to-generate-realistic-prompts-help-surprisingly-little"
-      },
-      {
-        "title": "Topological collapse of higher-order interactions bottlenecks collective intelligence in AI agent societies",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "Shuo Lu et al.",
-        "url": "https://arxiv.org/abs/2608.15519"
       },
       {
         "title": "Towards deployment-time misalignment continuation evals: lessons from recent loss of control incidents",
@@ -3163,13 +3100,6 @@
         "url": "https://arxiv.org/abs/2507.21084"
       },
       {
-        "title": "SentinelAgent: Graph-based Anomaly Detection in Multi-Agent Systems",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "Xu He et al.",
-        "url": "https://arxiv.org/abs/2505.24201"
-      },
-      {
         "title": "Shared Parameter Subspaces and Cross-Task Linearity in Emergently Misaligned Behavior",
         "topic": "Model organisms",
         "kind": "Paper",
@@ -3210,13 +3140,6 @@
         "kind": "Paper",
         "authors": "Xin Li",
         "url": "https://arxiv.org/abs/2506.20699"
-      },
-      {
-        "title": "Structuring Collective Action with LLM-Guided Evolution: From Ill-Structured Problems to Executable Heuristics",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "Kevin Bradley Dsouza et al.",
-        "url": "https://arxiv.org/abs/2509.20412"
       },
       {
         "title": "The Mathematical Theory of Behavioural Swarms: Towards Modelling the Collective Dynamics of Living Systems",
@@ -3289,34 +3212,6 @@
         "url": "https://arxiv.org/abs/2505.14633"
       },
       {
-        "title": "A Universal Model for Human Mobility Prediction",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "Qingyue Long et al.",
-        "url": "https://arxiv.org/abs/2412.15294"
-      },
-      {
-        "title": "Democratizing Reward Design for Personal and Representative Value-Alignment",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "Carter Blair et al.",
-        "url": "https://arxiv.org/abs/2410.22203"
-      },
-      {
-        "title": "Learning Two-agent Motion Planning Strategies from Generalized Nash Equilibrium for Model Predictive Control",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "Hansung Kim et al.",
-        "url": "https://arxiv.org/abs/2411.13983"
-      },
-      {
-        "title": "LLM Theory of Mind and Alignment: Opportunities and Risks",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "Winnie Street",
-        "url": "https://arxiv.org/abs/2405.08154"
-      },
-      {
         "title": "MISR: Measuring Instrumental Self-Reasoning in Frontier Models",
         "topic": "Model organisms",
         "kind": "Paper",
@@ -3343,13 +3238,6 @@
         "kind": "Paper",
         "authors": "Joe Carlsmith",
         "url": "https://arxiv.org/abs/2311.08379"
-      },
-      {
-        "title": "Law Informs Code: A Legal Informatics Approach to Aligning Artificial Intelligence with Humans",
-        "topic": "Swarm misalignment",
-        "kind": "Paper",
-        "authors": "John J. Nay",
-        "url": "https://arxiv.org/abs/2209.13020"
       }
     ]
   }
