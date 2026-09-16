@@ -2313,15 +2313,6 @@
     "url": "https://www.lesswrong.com/posts/sv7WezDZyu9Zdxkxb/a-simple-argument-for-trying-less-hard"
   },
   {
-    "title": "A Survey on Rubric-Guided Reinforcement Learning for Language Models",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Zifei Shan & Fangning Shao",
-    "year": 2026,
-    "summary": "Reinforcement learning from human feedback (RLHF) has become the dominant paradigm for aligning large language models (LLMs) with human.",
-    "url": "https://arxiv.org/abs/2608.27505"
-  },
-  {
     "title": "A ToM-Inspired Agenda for AI Safety Research",
     "topic": "Reward hacking",
     "kind": "LessWrong",
