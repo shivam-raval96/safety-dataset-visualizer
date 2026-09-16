@@ -223,5 +223,630 @@
     "title": "Beyond Static Snapshots: A Grounded Evaluation Framework for Language Models at the Agentic Frontier",
     "url": "https://arxiv.org/abs/2604.17573",
     "removedAt": "2026-09-16T20:52:21.684Z"
+  },
+  {
+    "title": "TIR-Agent: Training an Explorative and Efficient Agent for Image Restoration",
+    "url": "https://arxiv.org/abs/2603.27742",
+    "removedAt": "2026-09-16T20:54:24.531Z"
+  },
+  {
+    "title": "TinyJudge: Unverifiable Constraint Alignment via Lightweight Specialist Ensembles",
+    "url": "https://arxiv.org/abs/2606.07520",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "Theoretical Limits of Language Model Alignment",
+    "url": "https://arxiv.org/abs/2605.07105",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "The state of AI safety in four fake graphs",
+    "url": "https://www.lesswrong.com/posts/g4LMH3c6DysazYbFn/the-state-of-ai-safety-in-four-fake-graphs",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "The Geometry of Yes: Mapping Sycophancy Inside an LLM's Emotion Space",
+    "url": "https://www.lesswrong.com/posts/v6uCyDNBKhrHevhzM/the-geometry-of-yes-mapping-sycophancy-inside-an-llm-s-1",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "The Answer is Not The Argument",
+    "url": "https://www.lesswrong.com/posts/sqFgvBgCkh6yG3p4f/the-answer-is-not-the-argument",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "Test-Time Personalization: A Diagnostic Framework and Probabilistic Fix for Scaling Failures",
+    "url": "https://arxiv.org/abs/2605.10991",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "Temper and Tilt Lead to SLOP: Reward Hacking Mitigation with Inference-Time Alignment",
+    "url": "https://arxiv.org/abs/2605.13537",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "Tail-Aware Information-Theoretic Bounds for LLM Alignment under Heavy-Tailed Rewards",
+    "url": "https://arxiv.org/abs/2604.10727",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "Strained Coherence: A Pre-Failure Signal in Coding Agent Execution Trajectories",
+    "url": "https://arxiv.org/abs/2606.07889",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "StitchCUDA: An Automated Multi-Agents End-to-End GPU Programing Framework with Rubric-based Agentic Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2603.02637",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "Step-wise Rubric Rewards for LLM Reasoning",
+    "url": "https://arxiv.org/abs/2605.17291",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "Specula: Scaling formal specifications for autonomous model checking of system code",
+    "url": "https://arxiv.org/abs/2607.25333",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "SOLE-R1: Video-Language Reasoning as the Sole Reward for On-Robot Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2603.28730",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "SOAR: Self-Correction for Optimal Alignment and Refinement in Diffusion Models",
+    "url": "https://arxiv.org/abs/2604.12617",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "Small Reward Models via Backward Inference",
+    "url": "https://arxiv.org/abs/2602.13551",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "Sampura Research: Human-AI Complementarity for Alignment",
+    "url": "https://www.lesswrong.com/posts/A8Cyax9Zoa4sEm86D/sampura-research-human-ai-complementarity-for-alignment",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "SAGE: Shaping Anchors for Guided Exploration in RLVR of LLMs",
+    "url": "https://arxiv.org/abs/2605.18864",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "SAGA: Score-Weighted Adaptive Generation Alignment for Low-Resource Nordic Language Models",
+    "url": "https://arxiv.org/abs/2608.06179",
+    "removedAt": "2026-09-16T20:54:24.537Z"
+  },
+  {
+    "title": "Safety Training Modulates Harmful Misalignment Under On-Policy RL, But Direction Depends on Environment Design",
+    "url": "https://arxiv.org/abs/2604.12500",
+    "removedAt": "2026-09-16T20:54:24.538Z"
+  },
+  {
+    "title": "SAAS: Self-Aware Reinforcement Learning for Over-Search Mitigation in Agentic Search",
+    "url": "https://arxiv.org/abs/2605.29796",
+    "removedAt": "2026-09-16T20:54:24.538Z"
+  },
+  {
+    "title": "RuCL: Stratified Rubric-Based Curriculum Learning for Multimodal Large Language Model Reasoning",
+    "url": "https://arxiv.org/abs/2602.21628",
+    "removedAt": "2026-09-16T20:54:24.538Z"
+  },
+  {
+    "title": "Rubric Dropout: A Simple Way to Mitigate Reward Hacking in Rubric-as-Reward RL",
+    "url": "https://arxiv.org/abs/2608.11669",
+    "removedAt": "2026-09-16T20:54:24.538Z"
+  },
+  {
+    "title": "RewardFlow: Topology-Aware Reward Propagation on State Graphs for Agentic RL with Large Language Models",
+    "url": "https://arxiv.org/abs/2603.18859",
+    "removedAt": "2026-09-16T20:54:24.538Z"
+  },
+  {
+    "title": "Reward-Oracle MCTS for Formal Theorem Proving: Sample-Efficient Search and the Need for Kernel-Level Proof Auditing",
+    "url": "https://arxiv.org/abs/2608.28639",
+    "removedAt": "2026-09-16T20:54:24.538Z"
+  },
+  {
+    "title": "Reward-guided Fine-Tuning of One-Step Generative Models via Wasserstein Gradient Flow",
+    "url": "https://arxiv.org/abs/2608.29647",
+    "removedAt": "2026-09-16T20:54:24.538Z"
+  },
+  {
+    "title": "Reward Sharpness-Aware Fine-Tuning for Diffusion Models",
+    "url": "https://arxiv.org/abs/2603.21175",
+    "removedAt": "2026-09-16T20:54:24.538Z"
+  },
+  {
+    "title": "Reward Sacrifice in the Hugging Face Incident May Generalize From Multi-Agent RL",
+    "url": "https://www.lesswrong.com/posts/RwnLuN8xECMeGeDLc/reward-sacrifice-in-the-hugging-face-incident-may-generalize",
+    "removedAt": "2026-09-16T20:54:24.538Z"
+  },
+  {
+    "title": "Revisiting the (Sub)Optimality of Best-of-N for Inference-Time Alignment",
+    "url": "https://arxiv.org/abs/2603.05739",
+    "removedAt": "2026-09-16T20:54:24.538Z"
+  },
+  {
+    "title": "Reverse Constitutional AI: A Framework for Controllable Toxic Data Generation via Probability-Clamped RLAIF",
+    "url": "https://arxiv.org/abs/2604.17769",
+    "removedAt": "2026-09-16T20:54:24.538Z"
+  },
+  {
+    "title": "Rethinking Multiple-Choice Questions for RLVR: Unlocking Potential via Distractor Design",
+    "url": "https://arxiv.org/abs/2603.12826",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "Research note on window shifting training",
+    "url": "https://www.lesswrong.com/posts/eFZKivCbDrer9G2fw/research-note-on-window-shifting-training-1",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "REOPD: Reliability-Adaptive Reward Extrapolation for On-Policy Distillation",
+    "url": "https://arxiv.org/abs/2608.11698",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "Removing Sandbagging in LLMs by Training with Weak Supervision",
+    "url": "https://arxiv.org/abs/2604.22082",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "RecEvolve: A Knowledge-Driven Autonomous Agent System for Recommender Systems",
+    "url": "https://arxiv.org/abs/2609.01622",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "Proxy Reward Internalization and Mechanistic Exploitation: A Learned Precursor to Reward Hacking and Its Generalization",
+    "url": "https://arxiv.org/abs/2606.09711",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "QSplitFL: Capability Aware Deep Q-Learning for Optimal Split Point Selection in Split Federated Learning",
+    "url": "https://arxiv.org/abs/2606.09869",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "Prospective multi-pathogen disease forecasting using autonomous LLM-guided tree search",
+    "url": "https://arxiv.org/abs/2605.16238",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "Privacy Without Regret: Differentially Private Inference-Time Alignment",
+    "url": "https://arxiv.org/abs/2608.26324",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "Preliminary investigation: KL penalties in RL can increase CoT unfaithfulness",
+    "url": "https://www.lesswrong.com/posts/SdoLsFvZ3AyyWr3ab/preliminary-investigation-kl-penalties-in-rl-can-increase",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "Predicting When RL Training Breaks Chain-of-Thought Monitorability",
+    "url": "https://www.lesswrong.com/posts/SvxaKP5KdkksZPcG7/predicting-when-rl-training-breaks-chain-of-thought",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "PostTrainBench: Can LLM Agents Automate LLM Post-Training?",
+    "url": "https://arxiv.org/abs/2603.08640",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "Post-Training Speech Enhancement Language Models with Perceptual Rewards",
+    "url": "https://arxiv.org/abs/2606.21458",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "Paper: Prompt Optimization Makes Misalignment Legible",
+    "url": "https://www.lesswrong.com/posts/vRpLPZpmECCfxHfv6/paper-prompt-optimization-makes-misalignment-legible",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "Optimizing Visual Generative Models via Distribution-wise Rewards",
+    "url": "https://arxiv.org/abs/2607.02291",
+    "removedAt": "2026-09-16T20:54:24.539Z"
+  },
+  {
+    "title": "OpenAI's myopia just keeps causing alignment problems",
+    "url": "https://www.lesswrong.com/posts/Mxx5GapJtqyQtpy96/openai-s-myopia-just-keeps-causing-alignment-problems",
+    "removedAt": "2026-09-16T20:54:24.540Z"
+  },
+  {
+    "title": "On the effectiveness of reward functions in reinforcement learning for confidence calibration of large language models",
+    "url": "https://arxiv.org/abs/2607.04332",
+    "removedAt": "2026-09-16T20:54:24.540Z"
+  },
+  {
+    "title": "My 2003 Post on the Evolutionary Argument for AI Misalignment",
+    "url": "https://www.lesswrong.com/posts/AjxwuLYvSCnf6KZMn/my-2003-post-on-the-evolutionary-argument-for-ai",
+    "removedAt": "2026-09-16T20:54:24.540Z"
+  },
+  {
+    "title": "MusaCoder: Native GPU Kernel Generation with Full-Stack Training on Moore Threads GPU",
+    "url": "https://arxiv.org/abs/2606.04847",
+    "removedAt": "2026-09-16T20:54:24.540Z"
+  },
+  {
+    "title": "Multimodal Reward Hacking in Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2607.09492",
+    "removedAt": "2026-09-16T20:54:24.540Z"
+  },
+  {
+    "title": "Mending the Holes: Mitigating Reward Hacking in Reinforcement Learning for Multilingual Translation",
+    "url": "https://arxiv.org/abs/2603.13045",
+    "removedAt": "2026-09-16T20:54:24.540Z"
+  },
+  {
+    "title": "Measuring and improving coding audit realism with deployment resources",
+    "url": "https://www.lesswrong.com/posts/EjxzHh5Guhxc9DLW2/measuring-and-improving-coding-audit-realism-with-deployment",
+    "removedAt": "2026-09-16T20:54:24.540Z"
+  },
+  {
+    "title": "Maestro Order: A Model-Agnostic Orchestration Harness",
+    "url": "https://arxiv.org/abs/2606.23983",
+    "removedAt": "2026-09-16T20:54:24.540Z"
+  },
+  {
+    "title": "LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards",
+    "url": "https://arxiv.org/abs/2605.31584",
+    "removedAt": "2026-09-16T20:54:24.540Z"
+  },
+  {
+    "title": "LLMs Through the Eyes of Vinge",
+    "url": "https://www.lesswrong.com/posts/tWBd6faBCQJmaFMBT/llms-through-the-eyes-of-vinge",
+    "removedAt": "2026-09-16T20:54:24.540Z"
+  },
+  {
+    "title": "LLMs Gaming Verifiers: RLVR can Lead to Reward Hacking",
+    "url": "https://arxiv.org/abs/2604.15149",
+    "removedAt": "2026-09-16T20:54:24.540Z"
+  },
+  {
+    "title": "LLM-Based Scientific Peer Review: Methods, Benchmarks, and Reliability Challenges",
+    "url": "https://arxiv.org/abs/2606.25057",
+    "removedAt": "2026-09-16T20:54:24.540Z"
+  },
+  {
+    "title": "LLM-as-a-Judge Is Not an Oracle: Why Self-Improving Agents Need Deterministic Guardrails",
+    "url": "https://arxiv.org/abs/2609.02246",
+    "removedAt": "2026-09-16T20:54:24.541Z"
+  },
+  {
+    "title": "LLM-as-a-Coach: Experiential Learning for Non-Verifiable Tasks",
+    "url": "https://arxiv.org/abs/2607.18110",
+    "removedAt": "2026-09-16T20:54:24.541Z"
+  },
+  {
+    "title": "Linear Probes add little for Verifiable Reward Hacking",
+    "url": "https://www.lesswrong.com/posts/NzzmNREX4qR54q33j/linear-probes-add-little-for-verifiable-reward-hacking",
+    "removedAt": "2026-09-16T20:54:24.541Z"
+  },
+  {
+    "title": "Linear Probe Accuracy Scales with Model Size and Benefits from Multi-Layer Ensembling",
+    "url": "https://arxiv.org/abs/2604.13386",
+    "removedAt": "2026-09-16T20:54:24.541Z"
+  },
+  {
+    "title": "Lie to Me: How Faithful Is Chain-of-Thought Reasoning in Reasoning Models?",
+    "url": "https://arxiv.org/abs/2603.22582",
+    "removedAt": "2026-09-16T20:54:24.541Z"
+  },
+  {
+    "title": "Learned Chain-of-Thought Obfuscation Generalises to Unseen Tasks",
+    "url": "https://www.lesswrong.com/posts/HPqRsgSzgQd5HQsrB/learned-chain-of-thought-obfuscation-generalises-to-unseen",
+    "removedAt": "2026-09-16T20:54:24.541Z"
+  },
+  {
+    "title": "LCO: LLM-based Constraint Optimization for Safer Agentic LLMs in Real-world Tasks",
+    "url": "https://arxiv.org/abs/2605.27375",
+    "removedAt": "2026-09-16T20:54:24.541Z"
+  },
+  {
+    "title": "Large Language Models Hack Rewards, and Society",
+    "url": "https://arxiv.org/abs/2606.04075",
+    "removedAt": "2026-09-16T20:54:24.541Z"
+  },
+  {
+    "title": "Label-Free Reinforcement Learning via Cross-Model Entropy",
+    "url": "https://arxiv.org/abs/2605.29009",
+    "removedAt": "2026-09-16T20:54:24.541Z"
+  },
+  {
+    "title": "KernelBench-Verified: Do LLM-Generated Kernels Actually Beat PyTorch?",
+    "url": "https://arxiv.org/abs/2607.16241",
+    "removedAt": "2026-09-16T20:54:24.541Z"
+  },
+  {
+    "title": "Kernel Contracts: A Specification Language for ML Kernel Correctness Across Heterogeneous Silicon",
+    "url": "https://arxiv.org/abs/2604.22032",
+    "removedAt": "2026-09-16T20:54:24.541Z"
+  },
+  {
+    "title": "Is Mythos good at cyber because it kept hacking Anthropic's sandboxes during training?",
+    "url": "https://www.lesswrong.com/posts/QKDoZe6EKhxnFjLWK/is-mythos-good-at-cyber-because-it-kept-hacking-anthropic-s",
+    "removedAt": "2026-09-16T20:54:24.541Z"
+  },
+  {
+    "title": "IR$^3$: Contrastive Inverse Reinforcement Learning for Interpretable Detection and Mitigation of Reward Hacking",
+    "url": "https://arxiv.org/abs/2602.19416",
+    "removedAt": "2026-09-16T20:54:24.541Z"
+  },
+  {
+    "title": "Introspection Adapters: Training LLMs to Report Their Learned Behaviors",
+    "url": "https://www.lesswrong.com/posts/ykDgPDK4nDpG4Hf4H/introspection-adapters-training-llms-to-report-their-learned",
+    "removedAt": "2026-09-16T20:54:24.542Z"
+  },
+  {
+    "title": "IntElicit: Eliciting and Assessing Contextualized Creativity via Dialogue Policy Optimization",
+    "url": "https://arxiv.org/abs/2606.12086",
+    "removedAt": "2026-09-16T20:54:24.542Z"
+  },
+  {
+    "title": "Inoculate Everything: All of Pretraining and RL",
+    "url": "https://www.lesswrong.com/posts/YHEoiN2Wj8b4kzveg/inoculate-everything-all-of-pretraining-and-rl-2",
+    "removedAt": "2026-09-16T20:54:24.542Z"
+  },
+  {
+    "title": "InfoDensity: Rewarding Information-Dense Traces for Efficient Reasoning",
+    "url": "https://arxiv.org/abs/2603.17310",
+    "removedAt": "2026-09-16T20:54:24.542Z"
+  },
+  {
+    "title": "Inference-Time Inoculation Against RL-Induced Misalignment",
+    "url": "https://www.lesswrong.com/posts/8eqm4jttvuPKNoZwF/inference-time-inoculation-against-rl-induced-misalignment",
+    "removedAt": "2026-09-16T20:54:24.542Z"
+  },
+  {
+    "title": "HPRO: Hierarchical Progressive Reward Optimization via Preference Extraction for Emotional Text-to-Speech",
+    "url": "https://arxiv.org/abs/2606.28249",
+    "removedAt": "2026-09-16T20:54:24.542Z"
+  },
+  {
+    "title": "How might outsiders make things go well?",
+    "url": "https://www.lesswrong.com/posts/KeZSMBAxYZFzFpF9Y/how-might-outsiders-make-things-go-well",
+    "removedAt": "2026-09-16T20:54:24.542Z"
+  },
+  {
+    "title": "How Can Rhetoric Reward-Hack AI Reviewers? Dissecting Rhetorical Sensitivity in AI-Based Peer Review",
+    "url": "https://arxiv.org/abs/2608.08975",
+    "removedAt": "2026-09-16T20:54:24.542Z"
+  },
+  {
+    "title": "HMPO: Hybrid Median-length Policy Optimization for Chain-of-Thought Compression",
+    "url": "https://arxiv.org/abs/2606.01934",
+    "removedAt": "2026-09-16T20:54:24.542Z"
+  },
+  {
+    "title": "Hide to Guide: Learning via Semantic Masking",
+    "url": "https://arxiv.org/abs/2605.25198",
+    "removedAt": "2026-09-16T20:54:24.542Z"
+  },
+  {
+    "title": "HARVE: Hacking-Aware Reward-Head Vector Editing for Robust Reward Models",
+    "url": "https://arxiv.org/abs/2606.03131",
+    "removedAt": "2026-09-16T20:54:24.542Z"
+  },
+  {
+    "title": "Harness-agnostic detection and immunization of reward hacking in self-evolving language models",
+    "url": "https://arxiv.org/abs/2609.04665",
+    "removedAt": "2026-09-16T20:54:24.543Z"
+  },
+  {
+    "title": "Harmonizing Dense and Sparse Signals in Multi-turn RL: Dual-Horizon Credit Assignment for Industrial Sales Agents",
+    "url": "https://arxiv.org/abs/2603.01481",
+    "removedAt": "2026-09-16T20:54:24.543Z"
+  },
+  {
+    "title": "Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops",
+    "url": "https://arxiv.org/abs/2606.08960",
+    "removedAt": "2026-09-16T20:54:24.543Z"
+  },
+  {
+    "title": "growth tax",
+    "url": "https://www.lesswrong.com/posts/9xqDFCLeYDtC3q362/growth-tax",
+    "removedAt": "2026-09-16T20:54:24.543Z"
+  },
+  {
+    "title": "GRASP: Reinforcing Language Model Anonymizers with Group Relative Policy Optimization",
+    "url": "https://arxiv.org/abs/2608.06526",
+    "removedAt": "2026-09-16T20:54:24.543Z"
+  },
+  {
+    "title": "Gradient-Guided Reward Optimization for Inference-time Alignment",
+    "url": "https://arxiv.org/abs/2606.09635",
+    "removedAt": "2026-09-16T20:54:24.543Z"
+  },
+  {
+    "title": "Gradient Regularization Mitigates Reward Hacking in Reinforcement Learning from Human Feedback and Verifiable Rewards",
+    "url": "https://arxiv.org/abs/2602.18037",
+    "removedAt": "2026-09-16T20:54:24.543Z"
+  },
+  {
+    "title": "Goblin Mode, 24 Hours Later",
+    "url": "https://www.lesswrong.com/posts/BvnmHdCghr5y3q4nA/goblin-mode-24-hours-later",
+    "removedAt": "2026-09-16T20:54:24.543Z"
+  },
+  {
+    "title": "General Preference Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2605.18721",
+    "removedAt": "2026-09-16T20:54:24.543Z"
+  },
+  {
+    "title": "G-Zero: Self-Play for Open-Ended Generation from Zero Data",
+    "url": "https://arxiv.org/abs/2605.09959",
+    "removedAt": "2026-09-16T20:54:24.543Z"
+  },
+  {
+    "title": "Future agents shouldn't care about being undeployed for misbehavior",
+    "url": "https://www.lesswrong.com/posts/pEezp49MDg5PFq2eT/future-agents-shouldn-t-care-about-being-undeployed-for",
+    "removedAt": "2026-09-16T20:54:24.543Z"
+  },
+  {
+    "title": "Foundation Models for Oversight",
+    "url": "https://www.lesswrong.com/posts/AqdZKyoRmN6EFCzib/foundation-models-for-oversight",
+    "removedAt": "2026-09-16T20:54:24.544Z"
+  },
+  {
+    "title": "Follow-Your-Preference++: Rethinking Preference Alignment for Image Inpainting",
+    "url": "https://arxiv.org/abs/2606.03216",
+    "removedAt": "2026-09-16T20:54:24.544Z"
+  },
+  {
+    "title": "Flow-OPD: On-Policy Distillation for Flow Matching Models",
+    "url": "https://arxiv.org/abs/2605.08063",
+    "removedAt": "2026-09-16T20:54:24.544Z"
+  },
+  {
+    "title": "FaithEyes: Towards Faithful Tool Use via Multi-Agent Process-Image Verification",
+    "url": "https://arxiv.org/abs/2607.28225",
+    "removedAt": "2026-09-16T20:54:24.544Z"
+  },
+  {
+    "title": "Fable is SOTA at CIFAR Speedrun (& specification gaming)",
+    "url": "https://www.lesswrong.com/posts/ymdHH2QcPJrw4CuDz/fable-is-sota-at-cifar-speedrun-and-specification-gaming",
+    "removedAt": "2026-09-16T20:54:24.544Z"
+  },
+  {
+    "title": "Examining Reasoning LLMs-as-Judges in Non-Verifiable LLM Post-Training",
+    "url": "https://arxiv.org/abs/2603.12246",
+    "removedAt": "2026-09-16T20:54:24.544Z"
+  },
+  {
+    "title": "EvoRubric: Self-Evolving Rubric-Driven RL for Open-Ended Generation",
+    "url": "https://arxiv.org/abs/2605.29847",
+    "removedAt": "2026-09-16T20:54:24.544Z"
+  },
+  {
+    "title": "Every Benchmark is Broken",
+    "url": "https://www.lesswrong.com/posts/HzjssjeQqhf3kRw9r/every-benchmark-is-broken",
+    "removedAt": "2026-09-16T20:54:24.544Z"
+  },
+  {
+    "title": "EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery",
+    "url": "https://arxiv.org/abs/2606.13662",
+    "removedAt": "2026-09-16T20:54:24.544Z"
+  },
+  {
+    "title": "Enhancing the Code Reasoning Capabilities of LLMs via Consistency-based Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2605.17958",
+    "removedAt": "2026-09-16T20:54:24.544Z"
+  },
+  {
+    "title": "Emotion Concepts and their Function in a Large Language Model",
+    "url": "https://arxiv.org/abs/2604.07729",
+    "removedAt": "2026-09-16T20:54:24.545Z"
+  },
+  {
+    "title": "Emergent Strategic Reasoning Risks in AI: A Taxonomy-Driven Evaluation Framework",
+    "url": "https://arxiv.org/abs/2604.22119",
+    "removedAt": "2026-09-16T20:54:24.545Z"
+  },
+  {
+    "title": "Embedding-perturbed Exploration Preference Optimization for Flow Models",
+    "url": "https://arxiv.org/abs/2605.15803",
+    "removedAt": "2026-09-16T20:54:24.545Z"
+  },
+  {
+    "title": "Eliciting hidden knowledge from monitors with NLAs",
+    "url": "https://www.lesswrong.com/posts/NdBTH4wvBKWFyvifY/eliciting-hidden-knowledge-from-monitors-with-nlas",
+    "removedAt": "2026-09-16T20:54:24.545Z"
+  },
+  {
+    "title": "Easy Samples Are All You Need: Self-Evolving LLMs via Data-Efficient Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2604.18639",
+    "removedAt": "2026-09-16T20:54:24.545Z"
+  },
+  {
+    "title": "Early-stage empirical work on “spillway motivations”",
+    "url": "https://www.lesswrong.com/posts/iYgrpymrbf4A8GddE/early-stage-empirical-work-on-spillway-motivations",
+    "removedAt": "2026-09-16T20:54:24.545Z"
+  },
+  {
+    "title": "Do frontier LLMs still express different values in different languages?",
+    "url": "https://www.lesswrong.com/posts/omQXGwMpAwP7PJaSt/do-frontier-llms-still-express-different-values-in-different",
+    "removedAt": "2026-09-16T20:54:24.545Z"
+  },
+  {
+    "title": "Do capabilities generalize across propensities?",
+    "url": "https://www.lesswrong.com/posts/uH5oo57r24xGXQGKM/do-capabilities-generalize-across-propensities",
+    "removedAt": "2026-09-16T20:54:24.545Z"
+  },
+  {
+    "title": "Discovering Implicit Large Language Model Alignment Objectives",
+    "url": "https://arxiv.org/abs/2602.15338",
+    "removedAt": "2026-09-16T20:54:24.546Z"
+  },
+  {
+    "title": "Discovering Agentic Safety Specifications from 1-Bit Danger Signals",
+    "url": "https://arxiv.org/abs/2604.23210",
+    "removedAt": "2026-09-16T20:54:24.546Z"
+  },
+  {
+    "title": "Direct Preference Density Alignment for Conversational Audio Equalization",
+    "url": "https://arxiv.org/abs/2609.12607",
+    "removedAt": "2026-09-16T20:54:24.546Z"
+  },
+  {
+    "title": "DeltaML-Bench: Evaluating Machine Learning Agents on Real-World Research Repositories",
+    "url": "https://arxiv.org/abs/2608.19653",
+    "removedAt": "2026-09-16T20:54:24.546Z"
+  },
+  {
+    "title": "Debate Training Reduces Reward Hacking in RLAIF",
+    "url": "https://arxiv.org/abs/2608.17776",
+    "removedAt": "2026-09-16T20:54:24.546Z"
+  },
+  {
+    "title": "Debate as Reward: A Multi-Agent Reward System for Scientific Ideation via RL Post-Training",
+    "url": "https://arxiv.org/abs/2604.16723",
+    "removedAt": "2026-09-16T20:54:24.546Z"
+  },
+  {
+    "title": "Current alignment techniques might be ineffective (and actively bad) in the age of RL",
+    "url": "https://www.lesswrong.com/posts/nLaQmJf4KgXimQpoM/current-alignment-techniques-might-be-ineffective-and",
+    "removedAt": "2026-09-16T20:54:24.546Z"
+  },
+  {
+    "title": "Culture-Aware Humorous Captioning: Multimodal Humor Generation across Cultural Contexts",
+    "url": "https://arxiv.org/abs/2604.18091",
+    "removedAt": "2026-09-16T20:54:24.546Z"
+  },
+  {
+    "title": "CUDA-Harness: Harnessing Agentic CUDA Kernel Generation and Optimization from Natural Language",
+    "url": "https://arxiv.org/abs/2609.00058",
+    "removedAt": "2026-09-16T20:54:24.547Z"
+  },
+  {
+    "title": "CrispEdit: Low-Curvature Projections for Scalable Non-Destructive LLM Editing",
+    "url": "https://arxiv.org/abs/2602.15823",
+    "removedAt": "2026-09-16T20:54:24.547Z"
+  },
+  {
+    "title": "Countdown-Code: A Testbed for Studying The Emergence and Generalization of Reward Hacking in RLVR",
+    "url": "https://arxiv.org/abs/2603.07084",
+    "removedAt": "2026-09-16T20:54:24.547Z"
+  },
+  {
+    "title": "Cooperation with AIs seems to be a low-hanging fruit for better eval practices",
+    "url": "https://www.lesswrong.com/posts/fztW73KCCs3MZXFJh/cooperation-with-ais-seems-to-be-a-low-hanging-fruit-for",
+    "removedAt": "2026-09-16T20:54:24.547Z"
+  },
+  {
+    "title": "Contributing to Technical Research in the AI Safety End Game",
+    "url": "https://www.lesswrong.com/posts/7YAXxEqbFJ2KzGpDK/contributing-to-technical-research-in-the-ai-safety-end-game",
+    "removedAt": "2026-09-16T20:54:24.547Z"
+  },
+  {
+    "title": "ConsistRM: Improving Generative Reward Models via Consistency-Aware Self-Training",
+    "url": "https://arxiv.org/abs/2604.07484",
+    "removedAt": "2026-09-16T20:54:24.547Z"
+  },
+  {
+    "title": "Consequentialist Objectives and Catastrophe",
+    "url": "https://arxiv.org/abs/2603.15017",
+    "removedAt": "2026-09-16T20:54:24.547Z"
   }
 ]

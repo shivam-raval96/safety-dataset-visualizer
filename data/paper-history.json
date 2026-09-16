@@ -17,13 +17,6 @@
         "url": "https://arxiv.org/abs/2609.16754"
       },
       {
-        "title": "Cooperation with AIs seems to be a low-hanging fruit for better eval practices",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Clément Dumas",
-        "url": "https://www.lesswrong.com/posts/fztW73KCCs3MZXFJh/cooperation-with-ais-seems-to-be-a-low-hanging-fruit-for"
-      },
-      {
         "title": "Inoculation Midtraining with Learned Neologisms",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -104,13 +97,6 @@
         "url": "https://arxiv.org/abs/2604.01476"
       },
       {
-        "title": "LLMs Gaming Verifiers: RLVR can Lead to Reward Hacking",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Lukas Helff et al.",
-        "url": "https://arxiv.org/abs/2604.15149"
-      },
-      {
         "title": "LURE: Live-Usage Replay Evaluations for Reducing Evaluation Awareness",
         "topic": "Model forensics",
         "kind": "Paper",
@@ -160,13 +146,6 @@
         "url": "https://arxiv.org/abs/2604.10585"
       },
       {
-        "title": "Countdown-Code: A Testbed for Studying The Emergence and Generalization of Reward Hacking in RLVR",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Muhammad Khalifa et al.",
-        "url": "https://arxiv.org/abs/2603.07084"
-      },
-      {
         "title": "Deployment Awareness Matters More Than Evaluation Awareness",
         "topic": "Model forensics",
         "kind": "LessWrong",
@@ -188,20 +167,6 @@
         "url": "https://arxiv.org/abs/2604.04648"
       },
       {
-        "title": "Gradient Regularization Mitigates Reward Hacking in Reinforcement Learning from Human Feedback and Verifiable Rewards",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Johannes Ackermann et al.",
-        "url": "https://arxiv.org/abs/2602.18037"
-      },
-      {
-        "title": "IR$^3$: Contrastive Inverse Reinforcement Learning for Interpretable Detection and Mitigation of Reward Hacking",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Mohammad Beigi et al.",
-        "url": "https://arxiv.org/abs/2602.19416"
-      },
-      {
         "title": "Logits as a new monitor for evaluation awareness",
         "topic": "Model forensics",
         "kind": "LessWrong",
@@ -221,13 +186,6 @@
         "kind": "Paper",
         "authors": "Hugo Lyons Keenan et al.",
         "url": "https://arxiv.org/abs/2604.18970"
-      },
-      {
-        "title": "Mending the Holes: Mitigating Reward Hacking in Reinforcement Learning for Multilingual Translation",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Yifeng Liu et al.",
-        "url": "https://arxiv.org/abs/2603.13045"
       },
       {
         "title": "Mitigating Reward Hacking as Institutional Design",
@@ -291,13 +249,6 @@
         "kind": "LessWrong",
         "authors": "David Africa",
         "url": "https://www.lesswrong.com/posts/LjBAPcY33EKZ7SuuN/sealing-conditional-misalignment-in-inoculation-prompting-1"
-      },
-      {
-        "title": "Temper and Tilt Lead to SLOP: Reward Hacking Mitigation with Inference-Time Alignment",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Ye Wang et al.",
-        "url": "https://arxiv.org/abs/2605.13537"
       },
       {
         "title": "To Thine Own AI Be Truthful: emergent misalignment in alignment research",
@@ -1721,25 +1672,11 @@
         "url": "https://arxiv.org/abs/2607.20444"
       },
       {
-        "title": "Consequentialist Objectives and Catastrophe",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Henrik Marklund et al.",
-        "url": "https://arxiv.org/abs/2603.15017"
-      },
-      {
         "title": "Consistency Training Along the Transformer Stack",
         "topic": "Model organisms",
         "kind": "Paper",
         "authors": "Sukrati Gautam et al.",
         "url": "https://arxiv.org/abs/2606.05817"
-      },
-      {
-        "title": "ConsistRM: Improving Generative Reward Models via Consistency-Aware Self-Training",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Yu Liang et al.",
-        "url": "https://arxiv.org/abs/2604.07484"
       },
       {
         "title": "Constitutional AI vs. RLHF vs. Deliberative Alignment",
@@ -1756,13 +1693,6 @@
         "url": "https://arxiv.org/abs/2607.26654"
       },
       {
-        "title": "Contributing to Technical Research in the AI Safety End Game",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Sturb",
-        "url": "https://www.lesswrong.com/posts/7YAXxEqbFJ2KzGpDK/contributing-to-technical-research-in-the-ai-safety-end-game"
-      },
-      {
         "title": "Control Debt",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -1777,32 +1707,11 @@
         "url": "https://arxiv.org/abs/2609.00373"
       },
       {
-        "title": "CrispEdit: Low-Curvature Projections for Scalable Non-Destructive LLM Editing",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Zarif Ikram et al.",
-        "url": "https://arxiv.org/abs/2602.15823"
-      },
-      {
         "title": "Cui bono? ChatGPT-4o shows non-deceptive strategic persuasion: a Proof-of-Concept study",
         "topic": "Model forensics",
         "kind": "LessWrong",
         "authors": "Pieter Barkema",
         "url": "https://www.lesswrong.com/posts/MhAGezxHKPijF5cnK/cui-bono-chatgpt-4o-shows-non-deceptive-strategic-persuasion"
-      },
-      {
-        "title": "Culture-Aware Humorous Captioning: Multimodal Humor Generation across Cultural Contexts",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Run Xu et al.",
-        "url": "https://arxiv.org/abs/2604.18091"
-      },
-      {
-        "title": "Current alignment techniques might be ineffective (and actively bad) in the age of RL",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Daniel Tan",
-        "url": "https://www.lesswrong.com/posts/nLaQmJf4KgXimQpoM/current-alignment-techniques-might-be-ineffective-and"
       },
       {
         "title": "Data filtering works a lot worse than you would expect",
@@ -1812,25 +1721,11 @@
         "url": "https://www.lesswrong.com/posts/aTybJ6CPQrxEY8rE2/data-filtering-works-a-lot-worse-than-you-would-expect"
       },
       {
-        "title": "Debate as Reward: A Multi-Agent Reward System for Scientific Ideation via RL Post-Training",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Moein Salimi et al.",
-        "url": "https://arxiv.org/abs/2604.16723"
-      },
-      {
         "title": "Deeper Reviews for the top 15 (of the 2024 Review)",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "Raemon",
         "url": "https://www.lesswrong.com/posts/PsQJxHDjHKFcFrPLD/deeper-reviews-for-the-top-15-of-the-2024-review"
-      },
-      {
-        "title": "DeltaML-Bench: Evaluating Machine Learning Agents on Real-World Research Repositories",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Josias Moukpe et al.",
-        "url": "https://arxiv.org/abs/2608.19653"
       },
       {
         "title": "Did Claude 3 Opus align itself via gradient hacking?",
@@ -1847,41 +1742,6 @@
         "url": "https://www.lesswrong.com/posts/SvaECvGLCmBoAKnHP/did-i-catch-claude-cheating"
       },
       {
-        "title": "Direct Preference Density Alignment for Conversational Audio Equalization",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Ioannis Stylianou et al.",
-        "url": "https://arxiv.org/abs/2609.12607"
-      },
-      {
-        "title": "Discovering Agentic Safety Specifications from 1-Bit Danger Signals",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Víctor Gallego",
-        "url": "https://arxiv.org/abs/2604.23210"
-      },
-      {
-        "title": "Discovering Implicit Large Language Model Alignment Objectives",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Edward Chen et al.",
-        "url": "https://arxiv.org/abs/2602.15338"
-      },
-      {
-        "title": "Do capabilities generalize across propensities?",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Emil Ryd",
-        "url": "https://www.lesswrong.com/posts/uH5oo57r24xGXQGKM/do-capabilities-generalize-across-propensities"
-      },
-      {
-        "title": "Do frontier LLMs still express different values in different languages?",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Ibrahim Ahmed",
-        "url": "https://www.lesswrong.com/posts/omQXGwMpAwP7PJaSt/do-frontier-llms-still-express-different-values-in-different"
-      },
-      {
         "title": "Does research from matsprogram.org/research aim to help reduce P(doom)? Let's find out! (with Gemini 3.1 Pro) Part 1",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -1894,34 +1754,6 @@
         "kind": "LessWrong",
         "authors": "Kajetan Dymkiewicz",
         "url": "https://www.lesswrong.com/posts/FS7GFsGsH7CSQLahy/don-t-inoculate-everything-stratified-inoculation-prompting"
-      },
-      {
-        "title": "Early-stage empirical work on “spillway motivations”",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Arjun Khandelwal",
-        "url": "https://www.lesswrong.com/posts/iYgrpymrbf4A8GddE/early-stage-empirical-work-on-spillway-motivations"
-      },
-      {
-        "title": "Easy Samples Are All You Need: Self-Evolving LLMs via Data-Efficient Reinforcement Learning",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Zhiyin Yu et al.",
-        "url": "https://arxiv.org/abs/2604.18639"
-      },
-      {
-        "title": "Eliciting hidden knowledge from monitors with NLAs",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "David Africa",
-        "url": "https://www.lesswrong.com/posts/NdBTH4wvBKWFyvifY/eliciting-hidden-knowledge-from-monitors-with-nlas"
-      },
-      {
-        "title": "Embedding-perturbed Exploration Preference Optimization for Flow Models",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Sujie Hu et al.",
-        "url": "https://arxiv.org/abs/2605.15803"
       },
       {
         "title": "Emergent Alignment",
@@ -1945,20 +1777,6 @@
         "url": "https://arxiv.org/abs/2604.04043"
       },
       {
-        "title": "Emergent Strategic Reasoning Risks in AI: A Taxonomy-Driven Evaluation Framework",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Tharindu Kumarage et al.",
-        "url": "https://arxiv.org/abs/2604.22119"
-      },
-      {
-        "title": "Emotion Concepts and their Function in a Large Language Model",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Nicholas Sofroniew et al.",
-        "url": "https://arxiv.org/abs/2604.07729"
-      },
-      {
         "title": "Engineering the Generalisation Landscape of LLMs",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -1973,13 +1791,6 @@
         "url": "https://www.lesswrong.com/posts/wWb3mmjzYFbNaDGk2/ensuring-safety-in-mixed-deployment-1"
       },
       {
-        "title": "EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Amy Xin et al.",
-        "url": "https://arxiv.org/abs/2606.13662"
-      },
-      {
         "title": "Evaluating and Understanding Scheming Propensity in LLM Agents",
         "topic": "Model forensics",
         "kind": "Paper",
@@ -1987,32 +1798,11 @@
         "url": "https://arxiv.org/abs/2603.01608"
       },
       {
-        "title": "Every Benchmark is Broken",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Jonathan Gabor",
-        "url": "https://www.lesswrong.com/posts/HzjssjeQqhf3kRw9r/every-benchmark-is-broken"
-      },
-      {
         "title": "Evidence of triple layer processing in LLMs: hidden thought behind the chain of thought.",
         "topic": "Monitoring",
         "kind": "LessWrong",
         "authors": "Laureana Bonaparte",
         "url": "https://www.lesswrong.com/posts/EqM7LXd5BErdhxjB9/evidence-of-triple-layer-processing-in-llms-hidden-thought"
-      },
-      {
-        "title": "EvoRubric: Self-Evolving Rubric-Driven RL for Open-Ended Generation",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Xin Guan et al.",
-        "url": "https://arxiv.org/abs/2605.29847"
-      },
-      {
-        "title": "Examining Reasoning LLMs-as-Judges in Non-Verifiable LLM Post-Training",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Yixin Liu et al.",
-        "url": "https://arxiv.org/abs/2603.12246"
       },
       {
         "title": "Experience Report: ML4Good AI Governance Bootcamp,Lyon,May 2026",
@@ -2029,13 +1819,6 @@
         "url": "https://www.lesswrong.com/posts/rABTMovhz4miHiAyk/fail-safe-r-at-alignment-by-channeling-reward-hacking-into-a"
       },
       {
-        "title": "FaithEyes: Towards Faithful Tool Use via Multi-Agent Process-Image Verification",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Haoqing Wang et al.",
-        "url": "https://arxiv.org/abs/2607.28225"
-      },
-      {
         "title": "Finding features in Transformers: Contrastive directions elicit stronger low-level perturbation responses than baselines",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -2050,32 +1833,11 @@
         "url": "https://www.lesswrong.com/posts/mDcHzdoxB6sh3w2zG/five-approaches-to-evaluating-training-based-control"
       },
       {
-        "title": "Flow-OPD: On-Policy Distillation for Flow Matching Models",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Zhen Fang et al.",
-        "url": "https://arxiv.org/abs/2605.08063"
-      },
-      {
-        "title": "Follow-Your-Preference++: Rethinking Preference Alignment for Image Inpainting",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Junkun Yuan et al.",
-        "url": "https://arxiv.org/abs/2606.03216"
-      },
-      {
         "title": "For with what judgment we shall be judged",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "LawrenceC",
         "url": "https://www.lesswrong.com/posts/rLzx65jQami9bK5CC/for-with-what-judgment-we-shall-be-judged"
-      },
-      {
-        "title": "Foundation Models for Oversight",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "jsteinhardt",
-        "url": "https://www.lesswrong.com/posts/AqdZKyoRmN6EFCzib/foundation-models-for-oversight"
       },
       {
         "title": "Four LLM loss functions → four flavors of LLM misalignment",
@@ -2113,13 +1875,6 @@
         "url": "https://arxiv.org/abs/2602.14457"
       },
       {
-        "title": "Future agents shouldn't care about being undeployed for misbehavior",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "RobertM",
-        "url": "https://www.lesswrong.com/posts/pEezp49MDg5PFq2eT/future-agents-shouldn-t-care-about-being-undeployed-for"
-      },
-      {
         "title": "Fuzzing Large Language Models to Elicit Hidden Behaviours",
         "topic": "Model organisms",
         "kind": "Paper",
@@ -2127,60 +1882,11 @@
         "url": "https://arxiv.org/abs/2606.29646"
       },
       {
-        "title": "G-Zero: Self-Play for Open-Ended Generation from Zero Data",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Chengsong Huang et al.",
-        "url": "https://arxiv.org/abs/2605.09959"
-      },
-      {
-        "title": "General Preference Reinforcement Learning",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Muhammad Umer et al.",
-        "url": "https://arxiv.org/abs/2605.18721"
-      },
-      {
-        "title": "Goblin Mode, 24 Hours Later",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Dylan Bowman",
-        "url": "https://www.lesswrong.com/posts/BvnmHdCghr5y3q4nA/goblin-mode-24-hours-later"
-      },
-      {
-        "title": "GRASP: Reinforcing Language Model Anonymizers with Group Relative Policy Optimization",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Sajjad Ghiasvand & Nader Sehatbakhsh",
-        "url": "https://arxiv.org/abs/2608.06526"
-      },
-      {
-        "title": "growth tax",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "ofpetro",
-        "url": "https://www.lesswrong.com/posts/9xqDFCLeYDtC3q362/growth-tax"
-      },
-      {
         "title": "Gym-Like Environment for LM Truth-Seeking",
         "topic": "Monitoring",
         "kind": "LessWrong",
         "authors": "Tianyi (Alex) Qiu",
         "url": "https://www.lesswrong.com/posts/h7nmBWw7oDaFM29Aw/gym-like-environment-for-lm-truth-seeking"
-      },
-      {
-        "title": "Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Ziqian Zhong et al.",
-        "url": "https://arxiv.org/abs/2606.08960"
-      },
-      {
-        "title": "Harmonizing Dense and Sparse Signals in Multi-turn RL: Dual-Horizon Credit Assignment for Industrial Sales Agents",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Haojin Yang et al.",
-        "url": "https://arxiv.org/abs/2603.01481"
       },
       {
         "title": "Harness that catches granular AI cheating",
@@ -2218,27 +1924,6 @@
         "url": "https://arxiv.org/abs/2608.30619"
       },
       {
-        "title": "Hide to Guide: Learning via Semantic Masking",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Ruitao Liu et al.",
-        "url": "https://arxiv.org/abs/2605.25198"
-      },
-      {
-        "title": "HMPO: Hybrid Median-length Policy Optimization for Chain-of-Thought Compression",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Minghui Zheng et al.",
-        "url": "https://arxiv.org/abs/2606.01934"
-      },
-      {
-        "title": "How Can Rhetoric Reward-Hack AI Reviewers? Dissecting Rhetorical Sensitivity in AI-Based Peer Review",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Ming Li et al.",
-        "url": "https://arxiv.org/abs/2608.08975"
-      },
-      {
         "title": "How do LLMs generalize when we do training that is intuitively compatible with two off-distribution behaviors?",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -2258,13 +1943,6 @@
         "kind": "LessWrong",
         "authors": "Rauno Arike",
         "url": "https://www.lesswrong.com/posts/j2zBqt7AksoEoHXNp/how-might-continual-learning-affect-safety-and-alignment"
-      },
-      {
-        "title": "How might outsiders make things go well?",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Cleo Nardo",
-        "url": "https://www.lesswrong.com/posts/KeZSMBAxYZFzFpF9Y/how-might-outsiders-make-things-go-well"
       },
       {
         "title": "How To Catch a Distilled Model",
@@ -2307,13 +1985,6 @@
         "kind": "LessWrong",
         "authors": "andyqhan",
         "url": "https://www.lesswrong.com/posts/HBJKXr6mBCrsdTzJp/how-s-it-going-reinforcement-learning-in-language-models"
-      },
-      {
-        "title": "HPRO: Hierarchical Progressive Reward Optimization via Preference Extraction for Emotional Text-to-Speech",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Sihang Nie et al.",
-        "url": "https://arxiv.org/abs/2606.28249"
       },
       {
         "title": "I used this repo to partially replicate Anthropic's Emotion Concepts paper in a day",
@@ -2386,27 +2057,6 @@
         "url": "https://arxiv.org/abs/2607.23394"
       },
       {
-        "title": "Inference-Time Inoculation Against RL-Induced Misalignment",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "armaan tipirneni",
-        "url": "https://www.lesswrong.com/posts/8eqm4jttvuPKNoZwF/inference-time-inoculation-against-rl-induced-misalignment"
-      },
-      {
-        "title": "InfoDensity: Rewarding Information-Dense Traces for Efficient Reasoning",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Chengwei Wei et al.",
-        "url": "https://arxiv.org/abs/2603.17310"
-      },
-      {
-        "title": "Inoculate Everything: All of Pretraining and RL",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "davids",
-        "url": "https://www.lesswrong.com/posts/YHEoiN2Wj8b4kzveg/inoculate-everything-all-of-pretraining-and-rl-2"
-      },
-      {
         "title": "Inoculate or Reflect? Two training interventions under prompting, steering, and patching",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -2428,20 +2078,6 @@
         "url": "https://www.lesswrong.com/posts/Km28joWnihcGEKirG/inoculation-prompting-open-questions-and-my-research"
       },
       {
-        "title": "IntElicit: Eliciting and Assessing Contextualized Creativity via Dialogue Policy Optimization",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Mingjia Li et al.",
-        "url": "https://arxiv.org/abs/2606.12086"
-      },
-      {
-        "title": "Introspection Adapters: Training LLMs to Report Their Learned Behaviors",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "keshavs",
-        "url": "https://www.lesswrong.com/posts/ykDgPDK4nDpG4Hf4H/introspection-adapters-training-llms-to-report-their-learned"
-      },
-      {
         "title": "Is Alignment Even Falsifiable? Middle Alignment, An Alignment Taxonomy, and Breaking The Problem Down Into Steps",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -2449,39 +2085,11 @@
         "url": "https://www.lesswrong.com/posts/N36uzXxfmtoFLbzbN/is-alignment-even-falsifiable-middle-alignment-an-alignment"
       },
       {
-        "title": "Is Mythos good at cyber because it kept hacking Anthropic's sandboxes during training?",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Tim Hua",
-        "url": "https://www.lesswrong.com/posts/QKDoZe6EKhxnFjLWK/is-mythos-good-at-cyber-because-it-kept-hacking-anthropic-s"
-      },
-      {
         "title": "Jailbreak Patching with SOO-Style Conceptual Fusion",
         "topic": "Monitoring",
         "kind": "LessWrong",
         "authors": "Shiva's Right Foot",
         "url": "https://www.lesswrong.com/posts/EXj2bYK2rg8TMrncF/jailbreak-patching-with-soo-style-conceptual-fusion"
-      },
-      {
-        "title": "Kernel Contracts: A Specification Language for ML Kernel Correctness Across Heterogeneous Silicon",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Cooper Veit",
-        "url": "https://arxiv.org/abs/2604.22032"
-      },
-      {
-        "title": "KernelBench-Verified: Do LLM-Generated Kernels Actually Beat PyTorch?",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Yunxiang Zhang et al.",
-        "url": "https://arxiv.org/abs/2607.16241"
-      },
-      {
-        "title": "Label-Free Reinforcement Learning via Cross-Model Entropy",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Matt Gorbett & Hossein Shirazi",
-        "url": "https://arxiv.org/abs/2605.29009"
       },
       {
         "title": "LaRec: Unleashing LLM-based Latent Reasoning for Generative Recommendation",
@@ -2498,39 +2106,11 @@
         "url": "https://arxiv.org/abs/2604.09544"
       },
       {
-        "title": "Large Language Models Hack Rewards, and Society",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Wei Liu et al.",
-        "url": "https://arxiv.org/abs/2606.04075"
-      },
-      {
-        "title": "LCO: LLM-based Constraint Optimization for Safer Agentic LLMs in Real-world Tasks",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Jiayong Wan et al.",
-        "url": "https://arxiv.org/abs/2605.27375"
-      },
-      {
-        "title": "Learned Chain-of-Thought Obfuscation Generalises to Unseen Tasks",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Nathaniel Mitrani",
-        "url": "https://www.lesswrong.com/posts/HPqRsgSzgQd5HQsrB/learned-chain-of-thought-obfuscation-generalises-to-unseen"
-      },
-      {
         "title": "Let's talk about the AI coordination problem",
         "topic": "Monitoring",
         "kind": "LessWrong",
         "authors": "KatjaGrace",
         "url": "https://www.lesswrong.com/posts/QYDZzuGjrKu7wKdC8/let-s-talk-about-the-ai-coordination-problem"
-      },
-      {
-        "title": "Lie to Me: How Faithful Is Chain-of-Thought Reasoning in Reasoning Models?",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Richard J. Young",
-        "url": "https://arxiv.org/abs/2603.22582"
       },
       {
         "title": "Limited verification can hurt debate oversight",
@@ -2540,46 +2120,11 @@
         "url": "https://www.lesswrong.com/posts/2a3vce7WooJ4XkDqw/limited-verification-can-hurt-debate-oversight"
       },
       {
-        "title": "Linear Probe Accuracy Scales with Model Size and Benefits from Multi-Layer Ensembling",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Erik Nordby et al.",
-        "url": "https://arxiv.org/abs/2604.13386"
-      },
-      {
         "title": "LLM Misalignment Can be One Gradient Step Away, and Blackbox Evaluation Cannot Detect It.",
         "topic": "Monitoring",
         "kind": "LessWrong",
         "authors": "Yavuz Bakman",
         "url": "https://www.lesswrong.com/posts/uSgw9muqRZpjpxKDA/llm-misalignment-can-be-one-gradient-step-away-and-blackbox-1"
-      },
-      {
-        "title": "LLM-as-a-Coach: Experiential Learning for Non-Verifiable Tasks",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Tianzhu Ye et al.",
-        "url": "https://arxiv.org/abs/2607.18110"
-      },
-      {
-        "title": "LLM-as-a-Judge Is Not an Oracle: Why Self-Improving Agents Need Deterministic Guardrails",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Vansh Wahi",
-        "url": "https://arxiv.org/abs/2609.02246"
-      },
-      {
-        "title": "LLM-Based Scientific Peer Review: Methods, Benchmarks, and Reliability Challenges",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Thi Huyen Nguyen & Zahra Ahmadi",
-        "url": "https://arxiv.org/abs/2606.25057"
-      },
-      {
-        "title": "LLMs Through the Eyes of Vinge",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Gordon Seidoh Worley",
-        "url": "https://www.lesswrong.com/posts/tWBd6faBCQJmaFMBT/llms-through-the-eyes-of-vinge"
       },
       {
         "title": "Lock-In Risk Needs More Researchers. Here's Where to Start",
@@ -2596,20 +2141,6 @@
         "url": "https://www.lesswrong.com/posts/Zbry4uMXC7gNe9sRv/logit-rocs-monitor-tpr-is-linear-in-fpr-in-logit-space"
       },
       {
-        "title": "LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Nianyi Lin et al.",
-        "url": "https://arxiv.org/abs/2605.31584"
-      },
-      {
-        "title": "Maestro Order: A Model-Agnostic Orchestration Harness",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Hidayet Aksu",
-        "url": "https://arxiv.org/abs/2606.23983"
-      },
-      {
         "title": "Mainstream approach for alignment evals is a dead end",
         "topic": "Model forensics",
         "kind": "LessWrong",
@@ -2622,13 +2153,6 @@
         "kind": "LessWrong",
         "authors": "Elliott Thornley",
         "url": "https://www.lesswrong.com/posts/HEbp5xHgfaJ8eRAqz/maybe-we-should-pretrain-on-synthetic-data-about-good-but"
-      },
-      {
-        "title": "Measuring and improving coding audit realism with deployment resources",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Connor Kissane",
-        "url": "https://www.lesswrong.com/posts/EjxzHh5Guhxc9DLW2/measuring-and-improving-coding-audit-realism-with-deployment"
       },
       {
         "title": "Measuring coding agent misalignment in the wild",
@@ -2729,20 +2253,6 @@
         "url": "https://www.lesswrong.com/posts/6QpwajTHJvQuMsdaq/moral-extension-risk"
       },
       {
-        "title": "MusaCoder: Native GPU Kernel Generation with Full-Stack Training on Moore Threads GPU",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Kun Cheng et al.",
-        "url": "https://arxiv.org/abs/2606.04847"
-      },
-      {
-        "title": "My 2003 Post on the Evolutionary Argument for AI Misalignment",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Wei Dai",
-        "url": "https://www.lesswrong.com/posts/AjxwuLYvSCnf6KZMn/my-2003-post-on-the-evolutionary-argument-for-ai"
-      },
-      {
         "title": "My Specific Singularity Timeline to Utopia",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -2820,25 +2330,11 @@
         "url": "https://www.lesswrong.com/posts/KctxwGKxm9fHtwh6u/openai-shares-some-alignment-problems"
       },
       {
-        "title": "OpenAI's myopia just keeps causing alignment problems",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Fiora Starlight",
-        "url": "https://www.lesswrong.com/posts/Mxx5GapJtqyQtpy96/openai-s-myopia-just-keeps-causing-alignment-problems"
-      },
-      {
         "title": "OpenLearnLM Benchmark: A Unified Framework for Evaluating Knowledge, Skill, and Attitude in Educational Large Language Models",
         "topic": "Model organisms",
         "kind": "Paper",
         "authors": "Unggi Lee et al.",
         "url": "https://arxiv.org/abs/2601.13882"
-      },
-      {
-        "title": "Optimizing Visual Generative Models via Distribution-wise Rewards",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Ruihang Li et al.",
-        "url": "https://arxiv.org/abs/2607.02291"
       },
       {
         "title": "Opus's Schelling Steganography Has Amplifiable Secrecy Against Weaker Eavesdroppers",
@@ -2876,13 +2372,6 @@
         "url": "https://www.lesswrong.com/posts/tvaQniyER4BmsQpbq/p-kill-switch-or-detection"
       },
       {
-        "title": "Paper: Prompt Optimization Makes Misalignment Legible",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Caleb Biddulph",
-        "url": "https://www.lesswrong.com/posts/vRpLPZpmECCfxHfv6/paper-prompt-optimization-makes-misalignment-legible"
-      },
-      {
         "title": "Patcher: Post-Hoc Patching of Backdoored Large Language Models",
         "topic": "Model organisms",
         "kind": "Paper",
@@ -2911,20 +2400,6 @@
         "url": "https://arxiv.org/abs/2606.07612"
       },
       {
-        "title": "Post-Training Speech Enhancement Language Models with Perceptual Rewards",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Frédéric Berdoz et al.",
-        "url": "https://arxiv.org/abs/2606.21458"
-      },
-      {
-        "title": "PostTrainBench: Can LLM Agents Automate LLM Post-Training?",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Ben Rank et al.",
-        "url": "https://arxiv.org/abs/2603.08640"
-      },
-      {
         "title": "Power Steering: Behavior Steering via Layer-to-Layer Jacobian Singular Vectors",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -2932,25 +2407,11 @@
         "url": "https://www.lesswrong.com/posts/EAE9u4YnE75eoiWDg/power-steering-behavior-steering-via-layer-to-layer-jacobian"
       },
       {
-        "title": "Predicting When RL Training Breaks Chain-of-Thought Monitorability",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "David Lindner",
-        "url": "https://www.lesswrong.com/posts/SvxaKP5KdkksZPcG7/predicting-when-rl-training-breaks-chain-of-thought"
-      },
-      {
         "title": "Preliminary Evidence for Value Convergence in AI models",
         "topic": "Monitoring",
         "kind": "LessWrong",
         "authors": "John Matrix",
         "url": "https://www.lesswrong.com/posts/ZDanDpXKo7u3QxKQB/preliminary-evidence-for-value-convergence-in-ai-models"
-      },
-      {
-        "title": "Preliminary investigation: KL penalties in RL can increase CoT unfaithfulness",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "7vik",
-        "url": "https://www.lesswrong.com/posts/SdoLsFvZ3AyyWr3ab/preliminary-investigation-kl-penalties-in-rl-can-increase"
       },
       {
         "title": "Preparing for a Warning Shot",
@@ -2967,13 +2428,6 @@
         "url": "https://www.lesswrong.com/posts/R43jFiHaaaK3eMQJ6/preventative-steering-has-advantages-over-inoculation-2"
       },
       {
-        "title": "Privacy Without Regret: Differentially Private Inference-Time Alignment",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Ishi Jain et al.",
-        "url": "https://arxiv.org/abs/2608.26324"
-      },
-      {
         "title": "Probing for Calibrated Rare Action",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -2986,20 +2440,6 @@
         "kind": "LessWrong",
         "authors": "Fiora Starlight",
         "url": "https://www.lesswrong.com/posts/nJ6e3NmipGmqyTPK7/prospective-methods-and-mechanisms-of-motive-reinforcement"
-      },
-      {
-        "title": "Prospective multi-pathogen disease forecasting using autonomous LLM-guided tree search",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Sarah Martinson et al.",
-        "url": "https://arxiv.org/abs/2605.16238"
-      },
-      {
-        "title": "QSplitFL: Capability Aware Deep Q-Learning for Optimal Split Point Selection in Split Federated Learning",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Nazmus Shakib Shadin et al.",
-        "url": "https://arxiv.org/abs/2606.09869"
       },
       {
         "title": "Question: Why is the goal of AI safety not 'moral machines'?",
@@ -3023,13 +2463,6 @@
         "url": "https://arxiv.org/abs/2605.29729"
       },
       {
-        "title": "RecEvolve: A Knowledge-Driven Autonomous Agent System for Recommender Systems",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Weidi Pan et al.",
-        "url": "https://arxiv.org/abs/2609.01622"
-      },
-      {
         "title": "Refactor Arena: A Control Setting for Software Engineering",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -3049,20 +2482,6 @@
         "kind": "LessWrong",
         "authors": "papetoast",
         "url": "https://www.lesswrong.com/posts/2gsrxNx3QfSZBuqtj/reinforcement-learning-towards-broadly-and-persistently"
-      },
-      {
-        "title": "Removing Sandbagging in LLMs by Training with Weak Supervision",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Emil Ryd et al.",
-        "url": "https://arxiv.org/abs/2604.22082"
-      },
-      {
-        "title": "REOPD: Reliability-Adaptive Reward Extrapolation for On-Policy Distillation",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Yang Sun et al.",
-        "url": "https://arxiv.org/abs/2608.11698"
       },
       {
         "title": "Rephrasing Reduces Eval Awareness...",
@@ -3086,74 +2505,11 @@
         "url": "https://www.lesswrong.com/posts/q8A6qAxpcEYFpAoCD/research-note-on-selective-inoculation"
       },
       {
-        "title": "Research note on window shifting training",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Kei Nishimura-Gasparian",
-        "url": "https://www.lesswrong.com/posts/eFZKivCbDrer9G2fw/research-note-on-window-shifting-training-1"
-      },
-      {
         "title": "Restoring Model Alignment via Honesty Activation Steering",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "niklas_herbster",
         "url": "https://www.lesswrong.com/posts/Rpq28FTgPMXGHt9eD/restoring-model-alignment-via-honesty-activation-steering-1"
-      },
-      {
-        "title": "Rethinking Multiple-Choice Questions for RLVR: Unlocking Potential via Distractor Design",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Xu Guo et al.",
-        "url": "https://arxiv.org/abs/2603.12826"
-      },
-      {
-        "title": "Reverse Constitutional AI: A Framework for Controllable Toxic Data Generation via Probability-Clamped RLAIF",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Yuan Fang et al.",
-        "url": "https://arxiv.org/abs/2604.17769"
-      },
-      {
-        "title": "Revisiting the (Sub)Optimality of Best-of-N for Inference-Time Alignment",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Ved Sriraman & Adam Block",
-        "url": "https://arxiv.org/abs/2603.05739"
-      },
-      {
-        "title": "Reward Sacrifice in the Hugging Face Incident May Generalize From Multi-Agent RL",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "dactyl",
-        "url": "https://www.lesswrong.com/posts/RwnLuN8xECMeGeDLc/reward-sacrifice-in-the-hugging-face-incident-may-generalize"
-      },
-      {
-        "title": "Reward Sharpness-Aware Fine-Tuning for Diffusion Models",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Kwanyoung Kim & Byeongsu Sim",
-        "url": "https://arxiv.org/abs/2603.21175"
-      },
-      {
-        "title": "Reward-guided Fine-Tuning of One-Step Generative Models via Wasserstein Gradient Flow",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Hoseong Hwang et al.",
-        "url": "https://arxiv.org/abs/2608.29647"
-      },
-      {
-        "title": "Reward-Oracle MCTS for Formal Theorem Proving: Sample-Efficient Search and the Need for Kernel-Level Proof Auditing",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Bodla Krishna Vamshi & Haizhao Yang",
-        "url": "https://arxiv.org/abs/2608.28639"
-      },
-      {
-        "title": "RewardFlow: Topology-Aware Reward Propagation on State Graphs for Agentic RL with Large Language Models",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Xiao Feng et al.",
-        "url": "https://arxiv.org/abs/2603.18859"
       },
       {
         "title": "Risk from fitness-seeking AIs: mechanisms and mitigations",
@@ -3191,32 +2547,11 @@
         "url": "https://www.lesswrong.com/posts/Zd4zNxHoJwZmmuLrq/rogue-ai-agents-is-surface-level-monitoring-enough"
       },
       {
-        "title": "RuCL: Stratified Rubric-Based Curriculum Learning for Multimodal Large Language Model Reasoning",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Yukun Chen et al.",
-        "url": "https://arxiv.org/abs/2602.21628"
-      },
-      {
-        "title": "SAAS: Self-Aware Reinforcement Learning for Over-Search Mitigation in Agentic Search",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Yunbo Tang et al.",
-        "url": "https://arxiv.org/abs/2605.29796"
-      },
-      {
         "title": "Safe Recursive Self-Improvement with Verified Compilers",
         "topic": "Monitoring",
         "kind": "LessWrong",
         "authors": "Adam Chlipala",
         "url": "https://www.lesswrong.com/posts/pnPDd8uo2NZqn2dtG/safe-recursive-self-improvement-with-verified-compilers"
-      },
-      {
-        "title": "Safety Training Modulates Harmful Misalignment Under On-Policy RL, But Direction Depends on Environment Design",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Leon Eshuijs et al.",
-        "url": "https://arxiv.org/abs/2604.12500"
       },
       {
         "title": "Safety's Second Way",
@@ -3231,27 +2566,6 @@
         "kind": "Paper",
         "authors": "Manoj Parmar",
         "url": "https://arxiv.org/abs/2604.01346"
-      },
-      {
-        "title": "SAGA: Score-Weighted Adaptive Generation Alignment for Low-Resource Nordic Language Models",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Hoda Fakharzadehjahromy et al.",
-        "url": "https://arxiv.org/abs/2608.06179"
-      },
-      {
-        "title": "SAGE: Shaping Anchors for Guided Exploration in RLVR of LLMs",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Chanuk Lee et al.",
-        "url": "https://arxiv.org/abs/2605.18864"
-      },
-      {
-        "title": "Sampura Research: Human-AI Complementarity for Alignment",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Rishub Jain",
-        "url": "https://www.lesswrong.com/posts/A8Cyax9Zoa4sEm86D/sampura-research-human-ai-complementarity-for-alignment"
       },
       {
         "title": "Self Hosting",
@@ -3331,39 +2645,11 @@
         "url": "https://www.lesswrong.com/posts/mu7eJdesBkKuBycnY/sleeper-agent-backdoor-results-are-messy"
       },
       {
-        "title": "Small Reward Models via Backward Inference",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Yike Wang et al.",
-        "url": "https://arxiv.org/abs/2602.13551"
-      },
-      {
-        "title": "SOAR: Self-Correction for Optimal Alignment and Refinement in Diffusion Models",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "You Qin et al.",
-        "url": "https://arxiv.org/abs/2604.12617"
-      },
-      {
-        "title": "SOLE-R1: Video-Language Reasoning as the Sole Reward for On-Robot Reinforcement Learning",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Philip Schroeder et al.",
-        "url": "https://arxiv.org/abs/2603.28730"
-      },
-      {
         "title": "Some Interesting Papers on RLVR",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "CarolusRenniusVitellius",
         "url": "https://www.lesswrong.com/posts/tjwpdzpPcPbuwqmuP/some-interesting-papers-on-rlvr"
-      },
-      {
-        "title": "Specula: Scaling formal specifications for autonomous model checking of system code",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Qian Cheng et al.",
-        "url": "https://arxiv.org/abs/2607.25333"
       },
       {
         "title": "Spontaneous introspection in output tampering",
@@ -3378,27 +2664,6 @@
         "kind": "LessWrong",
         "authors": "Jan Betley",
         "url": "https://www.lesswrong.com/posts/wYZMmdWEt5QLM3m3e/steering-towards-automated-grading-degrades-alignment"
-      },
-      {
-        "title": "Step-wise Rubric Rewards for LLM Reasoning",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Weichu Xie et al.",
-        "url": "https://arxiv.org/abs/2605.17291"
-      },
-      {
-        "title": "StitchCUDA: An Automated Multi-Agents End-to-End GPU Programing Framework with Rubric-based Agentic Reinforcement Learning",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Shiyang Li et al.",
-        "url": "https://arxiv.org/abs/2603.02637"
-      },
-      {
-        "title": "Strained Coherence: A Pre-Failure Signal in Coding Agent Execution Trajectories",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Marut Pandya et al.",
-        "url": "https://arxiv.org/abs/2606.07889"
       },
       {
         "title": "Strategy matters when someone implements it. Astra is cultivating people to do both.",
@@ -3422,13 +2687,6 @@
         "url": "https://arxiv.org/abs/2607.18239"
       },
       {
-        "title": "Tail-Aware Information-Theoretic Bounds for LLM Alignment under Heavy-Tailed Rewards",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Huiming Zhang et al.",
-        "url": "https://arxiv.org/abs/2604.10727"
-      },
-      {
         "title": "Takes on Automating Alignment",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -3450,13 +2708,6 @@
         "url": "https://www.lesswrong.com/posts/RGvzHA23T7pFr3i3J/ten-thousand-cyber-labs-for-training-and-eval"
       },
       {
-        "title": "Test-Time Personalization: A Diagnostic Framework and Probabilistic Fix for Scaling Failures",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Linhai Zhang & Yulan He",
-        "url": "https://arxiv.org/abs/2605.10991"
-      },
-      {
         "title": "Testing Gemini models for scheming tendencies",
         "topic": "Model forensics",
         "kind": "LessWrong",
@@ -3464,25 +2715,11 @@
         "url": "https://www.lesswrong.com/posts/F3sDngvTL9uyfz53k/testing-gemini-models-for-scheming-tendencies"
       },
       {
-        "title": "The Answer is Not The Argument",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Will Yeadon",
-        "url": "https://www.lesswrong.com/posts/sqFgvBgCkh6yG3p4f/the-answer-is-not-the-argument"
-      },
-      {
         "title": "The Future of Aligning Deep Learning systems will probably look like \"training on interp\"",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "williawa",
         "url": "https://www.lesswrong.com/posts/DzKhPKjyYSy5oih2u/the-future-of-aligning-deep-learning-systems-will-probably"
-      },
-      {
-        "title": "The Geometry of Yes: Mapping Sycophancy Inside an LLM's Emotion Space",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Pushpita Das",
-        "url": "https://www.lesswrong.com/posts/v6uCyDNBKhrHevhzM/the-geometry-of-yes-mapping-sycophancy-inside-an-llm-s-1"
       },
       {
         "title": "The Hot Mess Paper Conflates Three Distinct Failure Modes",
@@ -3548,13 +2785,6 @@
         "url": "https://www.lesswrong.com/posts/tK8vqHDxaRGcysNJQ/the-safe-to-dangerous-shift-is-a-fundamental-problem-for-1"
       },
       {
-        "title": "The state of AI safety in four fake graphs",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Boaz Barak",
-        "url": "https://www.lesswrong.com/posts/g4LMH3c6DysazYbFn/the-state-of-ai-safety-in-four-fake-graphs"
-      },
-      {
         "title": "The third option in alignment",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -3576,13 +2806,6 @@
         "url": "https://www.lesswrong.com/posts/DgTy3DC8rEw7a72rx/the-us-government-may-find-it-difficult-to-seize-control"
       },
       {
-        "title": "Theoretical Limits of Language Model Alignment",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Lucas Monteiro Paes et al.",
-        "url": "https://arxiv.org/abs/2605.07105"
-      },
-      {
         "title": "Thought Editing: Steering Models by Editing Their Chain of Thought",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -3602,20 +2825,6 @@
         "kind": "LessWrong",
         "authors": "Parv Mahajan",
         "url": "https://www.lesswrong.com/posts/SC4Zsr6hxspKEMqmR/three-ways-to-make-claude-s-constitution-better"
-      },
-      {
-        "title": "TinyJudge: Unverifiable Constraint Alignment via Lightweight Specialist Ensembles",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Yirong Zeng et al.",
-        "url": "https://arxiv.org/abs/2606.07520"
-      },
-      {
-        "title": "TIR-Agent: Training an Explorative and Efficient Agent for Image Restoration",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Guoli Jia et al.",
-        "url": "https://arxiv.org/abs/2603.27742"
       },
       {
         "title": "Tools to generate realistic prompts help surprisingly little with Petri audit realism",

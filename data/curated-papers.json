@@ -243,15 +243,6 @@
     "url": "https://alignment.anthropic.com/2026/reward-seeker/"
   },
   {
-    "title": "Debate Training Reduces Reward Hacking in RLAIF",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Kenton et al.",
-    "year": "2026",
-    "summary": "Finds that adversarial debate between a generator and critic reduces exploitation of a weaker AI judge during reinforcement learning.",
-    "url": "https://arxiv.org/abs/2608.17776"
-  },
-  {
     "title": "Do Activation Monitors Survive Model Updates?",
     "topic": "Monitoring",
     "kind": "Paper",
