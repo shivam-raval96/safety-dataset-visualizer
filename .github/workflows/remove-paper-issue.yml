@@ -2,7 +2,13 @@ name: Remove paper
 
 on:
   issues:
-    types: [opened, reopened]
+    types: [opened, edited, reopened]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Paper removal issue to retry
+        required: true
+        type: number
 
 permissions:
   actions: write
@@ -10,18 +16,18 @@ permissions:
   issues: write
 
 concurrency:
-  group: paper-removal-${{ github.event.issue.number }}
+  group: paper-removal-${{ github.event.issue.number || inputs.issue_number }}
   cancel-in-progress: false
 
 jobs:
   remove-paper:
-    if: github.event.issue.state == 'open' && startsWith(github.event.issue.title, '[Remove paper]') && github.event.issue.user.login == github.repository_owner
+    if: github.event_name == 'workflow_dispatch' || (github.event.issue.state == 'open' && startsWith(github.event.issue.title, '[Remove paper]') && github.event.issue.user.login == github.repository_owner)
     runs-on: ubuntu-latest
     timeout-minutes: 25
     env:
       GH_TOKEN: ${{ github.token }}
       REPOSITORY_OWNER: ${{ github.repository_owner }}
-      ISSUE_NUMBER: ${{ github.event.issue.number }}
+      ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -31,7 +37,14 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - name: Read current request
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER" > /tmp/paper-removal-issue.json
+          jq -e --arg owner "$REPOSITORY_OWNER" '.state == "open" and (.title | startswith("[Remove paper]")) and .user.login == $owner' /tmp/paper-removal-issue.json
+          jq '{issue: .}' /tmp/paper-removal-issue.json > /tmp/paper-removal-event.json
       - name: Remove requested paper
+        env:
+          GITHUB_EVENT_PATH: /tmp/paper-removal-event.json
         run: node scripts/remove-paper-from-issue.mjs
       - name: Validate site
         run: |
@@ -68,4 +81,5 @@ jobs:
           gh issue close "$ISSUE_NUMBER" --reason completed
       - name: Report failure
         if: failure()
-        run: gh issue comment "$ISSUE_NUMBER" --body "The paper removal could not finish. The issue remains open for retry. Details: https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "The paper removal could not finish. The issue remains open for retry. Details: https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
