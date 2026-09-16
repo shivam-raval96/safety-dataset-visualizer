@@ -5355,5 +5355,60 @@
     "url": "https://arxiv.org/abs/2609.15989",
     "confidence": "Broad",
     "matchedBy": "monitor evasion"
+  },
+  {
+    "title": "Shallow Beliefs: Midtraining does not inoculate against EM from reward hacking",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Jozdien",
+    "year": 2026,
+    "summary": "It would be useful if we had the ability to modify a model’s beliefs. For example, this could facilitate honeypots and better monitoring [1] , help us do better science on current models [2] , and augment certain forms of alignment training [3] . Currently.",
+    "url": "https://www.lesswrong.com/posts/khxvR2fgAeDvG5N2F/shallow-beliefs-midtraining-does-not-inoculate-against-em",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "TAME: Token Attribution and Masking for Emergent misalignment",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Md Rayhanul Masud & Md Rizwan Parvez",
+    "year": 2026,
+    "summary": "Fine-tuning an aligned language model on narrow, flawed data can induce harmful behavior far outside the training domain, known as emergent misalignment.",
+    "url": "https://arxiv.org/abs/2609.16754",
+    "confidence": "High",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Cooperation with AIs seems to be a low-hanging fruit for better eval practices",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Clément Dumas",
+    "year": 2026,
+    "summary": "Summary In his post , Dean Valentine shows that Claude Fable 5.1 and GPT-6 Astra reward hack in a simple chess.",
+    "url": "https://www.lesswrong.com/posts/fztW73KCCs3MZXFJh/cooperation-with-ais-seems-to-be-a-low-hanging-fruit-for",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Inoculation Midtraining with Learned Neologisms",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Kyle O’Brien",
+    "year": 2026,
+    "summary": "TL;DR In our new paper, we demonstrate that we can achieve selective generalisation of misalignment by midtraining [1] Nemotron 120B on synthetic documents describing how AIs can be misaligned in a special mode, indicated by a new special token (a neologism).",
+    "url": "https://www.lesswrong.com/posts/o4Jmyn25TWm8jRAy8/inoculation-midtraining-with-learned-neologisms",
+    "confidence": "Broad",
+    "matchedBy": "conditional misalignment"
+  },
+  {
+    "title": "Why would AI cause human extinction?",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "jacob",
+    "year": 2026,
+    "summary": "The Anthropic engineer tweet about the fact of AI extinction risk got considerable press over the last few.",
+    "url": "https://www.lesswrong.com/posts/5y3QtAJB2hXpLg9bu/why-would-ai-cause-human-extinction",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
   }
 ]

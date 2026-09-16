@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-09-16",
+    "papers": [
+      {
+        "title": "Shallow Beliefs: Midtraining does not inoculate against EM from reward hacking",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Jozdien",
+        "url": "https://www.lesswrong.com/posts/khxvR2fgAeDvG5N2F/shallow-beliefs-midtraining-does-not-inoculate-against-em"
+      },
+      {
+        "title": "TAME: Token Attribution and Masking for Emergent misalignment",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Md Rayhanul Masud & Md Rizwan Parvez",
+        "url": "https://arxiv.org/abs/2609.16754"
+      },
+      {
+        "title": "Cooperation with AIs seems to be a low-hanging fruit for better eval practices",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Clément Dumas",
+        "url": "https://www.lesswrong.com/posts/fztW73KCCs3MZXFJh/cooperation-with-ais-seems-to-be-a-low-hanging-fruit-for"
+      },
+      {
+        "title": "Inoculation Midtraining with Learned Neologisms",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Kyle O’Brien",
+        "url": "https://www.lesswrong.com/posts/o4Jmyn25TWm8jRAy8/inoculation-midtraining-with-learned-neologisms"
+      },
+      {
+        "title": "Why would AI cause human extinction?",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "jacob",
+        "url": "https://www.lesswrong.com/posts/5y3QtAJB2hXpLg9bu/why-would-ai-cause-human-extinction"
+      }
+    ]
+  },
+  {
     "date": "2026-09-15",
     "papers": [
       {
