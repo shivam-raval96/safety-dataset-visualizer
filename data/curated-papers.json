@@ -90,15 +90,6 @@
     "url": "https://www.lesswrong.com/posts/CRn9XtGoMtjnb5ygr/subliminal-learning-across-models"
   },
   {
-    "title": "Scaling Laws for Reward Model Overoptimization",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Gao et al.",
-    "year": "2023",
-    "summary": "Measures how optimizing a learned reward model eventually degrades performance on the underlying objective.",
-    "url": "https://arxiv.org/abs/2210.10760"
-  },
-  {
     "title": "Reward hacking can generalize",
     "topic": "Reward hacking",
     "kind": "LessWrong",

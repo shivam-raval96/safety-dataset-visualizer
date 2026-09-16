@@ -307,13 +307,6 @@
         "url": "https://www.lesswrong.com/posts/DrKu92Cjeo3EeGtcB/to-thine-own-ai-be-truthful-emergent-misalignment-in"
       },
       {
-        "title": "Uncertainty-Aware Reward Discounting for Mitigating Reward Hacking",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Disha Singha",
-        "url": "https://arxiv.org/abs/2604.26360"
-      },
-      {
         "title": "Untrusted Monitoring is Default; Trusted Monitoring is not",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -1140,13 +1133,6 @@
         "url": "https://www.lesswrong.com/posts/oNEFGrLRupzgrHcQv/methodological-considerations-in-making-malign"
       },
       {
-        "title": "\"Do Not Start Arguments You Cannot Finish\"",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "J Bostock",
-        "url": "https://www.lesswrong.com/posts/pHth99ePMWSWDFDKt/do-not-start-arguments-you-cannot-finish"
-      },
-      {
         "title": "(Mis)generalization of Helpful-only Fine-tuning",
         "topic": "Model organisms",
         "kind": "Paper",
@@ -1166,13 +1152,6 @@
         "kind": "LessWrong",
         "authors": "burnssa",
         "url": "https://www.lesswrong.com/posts/Bh4pBdAQfgoJ7CFoP/2b-scoring-model-flags-out-of-domain-misalignment-suggesting"
-      },
-      {
-        "title": "[Linkpost] Prefixing names with 'secure_' makes agents write more secure code",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Jack",
-        "url": "https://www.lesswrong.com/posts/75MsWZ9P9ZoL7uZXx/linkpost-prefixing-names-with-secure_-makes-agents-write"
       },
       {
         "title": "[Paper] How does information access affect LLM monitors' ability to detect sabotage?",
@@ -3681,13 +3660,6 @@
         "url": "https://arxiv.org/abs/2603.27742"
       },
       {
-        "title": "TMPO: Trajectory Matching Policy Optimization for Diverse and Efficient Diffusion Alignment",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Jiaming Li et al.",
-        "url": "https://arxiv.org/abs/2605.10983"
-      },
-      {
         "title": "Tools to generate realistic prompts help surprisingly little with Petri audit realism",
         "topic": "Model forensics",
         "kind": "LessWrong",
@@ -3707,13 +3679,6 @@
         "kind": "LessWrong",
         "authors": "Cath Ge-Wang",
         "url": "https://www.lesswrong.com/posts/cENaGChQZD7u7sZkz/towards-deployment-time-misalignment-continuation-evals"
-      },
-      {
-        "title": "Towards Neuro-symbolic Causal Rule Synthesis, Verification, and Evaluation Grounded in Legal and Safety Principles",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Zainab Rehan et al.",
-        "url": "https://arxiv.org/abs/2604.28087"
       },
       {
         "title": "Tracing Eval-Awareness Emergence Through Training of OLMo 3",
@@ -3744,13 +3709,6 @@
         "url": "https://www.lesswrong.com/posts/7pzoDhybfai9s7APS/two-aspects-of-situational-awareness-world-modelling-and"
       },
       {
-        "title": "Two is better than one: A Collapse-free Multi-Reward RLIF Training Framework",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Shourov Joarder et al.",
-        "url": "https://arxiv.org/abs/2605.22620"
-      },
-      {
         "title": "Two More Methods for Consistency Training and Some New Ways to Apply It",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -3770,13 +3728,6 @@
         "kind": "LessWrong",
         "authors": "David Vella Zarb",
         "url": "https://www.lesswrong.com/posts/tZSkryA4aygKAbPFz/updates-on-performative-misalignment-1"
-      },
-      {
-        "title": "Usability as a Weapon: Attacking the Safety of LLM-Based Code Generation via Usability Requirements",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Yue Li et al.",
-        "url": "https://arxiv.org/abs/2605.10133"
       },
       {
         "title": "V&V takes on OpenAI’s long-horizon incidents",
@@ -3807,25 +3758,11 @@
         "url": "https://arxiv.org/abs/2607.14345"
       },
       {
-        "title": "Value Leakage: An LLM’s Answers Are Silently Shaped by Its Own Values",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Johannes Treutlein",
-        "url": "https://www.lesswrong.com/posts/hbMw4Yqw6RnFaExDy/value-leakage-an-llm-s-answers-are-silently-shaped-by-its-1"
-      },
-      {
         "title": "Verbalizable Representations Form a Global Workspace in Language Models",
         "topic": "Model forensics",
         "kind": "Paper",
         "authors": "Wes Gurnee et al.",
         "url": "https://arxiv.org/abs/2607.15495"
-      },
-      {
-        "title": "Verifier-Backed Hard Problem Generation for Mathematical Reasoning",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Yuhang Lai et al.",
-        "url": "https://arxiv.org/abs/2605.06660"
       },
       {
         "title": "Vertical tacit collusion in AI-mediated markets",
@@ -3842,13 +3779,6 @@
         "url": "https://arxiv.org/abs/2603.08486"
       },
       {
-        "title": "Visual-ERM: Reward Modeling for Visual Equivalence",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Ziyu Liu et al.",
-        "url": "https://arxiv.org/abs/2603.13224"
-      },
-      {
         "title": "vLLM-Lens: Fast Interpretability Tooling That Scales to Trillion-Parameter Models",
         "topic": "Model forensics",
         "kind": "LessWrong",
@@ -3861,13 +3791,6 @@
         "kind": "LessWrong",
         "authors": "RobertM",
         "url": "https://www.lesswrong.com/posts/uk48L6j28iiAyvPKJ/voting-results-for-the-2024-review"
-      },
-      {
-        "title": "VRM: Teaching Reward Models to Understand Authentic Human Preferences",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Biao Liu et al.",
-        "url": "https://arxiv.org/abs/2603.04974"
       },
       {
         "title": "We cannot safely automate value alignment evaluation and research without thinking about delegation and discretion",
@@ -3898,13 +3821,6 @@
         "url": "https://www.lesswrong.com/posts/cAMuRdisEGhwrshd5/we-need-more-empirical-research-on-biological-ai-model"
       },
       {
-        "title": "We need to RL less",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Eye You",
-        "url": "https://www.lesswrong.com/posts/PyvY8ijddmMvihgXg/we-need-to-rl-less"
-      },
-      {
         "title": "We Should Study the Analogy Between Inoculation Prompting Non-Robustness, Negation Neglect, and Backdoor Non-Robustness",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -3917,13 +3833,6 @@
         "kind": "LessWrong",
         "authors": "Max Hellier",
         "url": "https://www.lesswrong.com/posts/GAyD6vHe7bNjq89yz/what-ai-safely-topics-are-missing-from-the-mainstream-media"
-      },
-      {
-        "title": "What concrete mechanisms could lead to AI models having open-ended goals?",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Jemal Young",
-        "url": "https://www.lesswrong.com/posts/AqYs8s4rkpqNaYWm9/what-concrete-mechanisms-could-lead-to-ai-models-having-open"
       },
       {
         "title": "What counts as illegible reasoning?",
@@ -3952,20 +3861,6 @@
         "kind": "LessWrong",
         "authors": "JulesRoussel01",
         "url": "https://www.lesswrong.com/posts/Kc7Tc6XbbNeRK3Wg9/when-a-claude-judge-recognizes-the-hack-but-still-says"
-      },
-      {
-        "title": "When and Why Does Unsupervised RL Succeed in Mathematical Reasoning? A Manifold Envelopment Perspective",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Zelin Zhang et al.",
-        "url": "https://arxiv.org/abs/2603.16578"
-      },
-      {
-        "title": "When Emotion Descriptors Fail: AI-Native Functions of Emotion Vectors",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "CandidLind",
-        "url": "https://www.lesswrong.com/posts/ZSeQ6Lgbp7btpSuzr/when-emotion-descriptors-fail-ai-native-functions-of-emotion"
       },
       {
         "title": "When Evaluation Becomes a Side Channel: Regime Leakage and Structural Mitigations for Alignment Assessment",
@@ -4038,13 +3933,6 @@
         "url": "https://www.lesswrong.com/posts/wyZRNgpeiPeRXB6eT/why-do-naive-sft-filters-for-safety-properties-fail"
       },
       {
-        "title": "Why don't we just give AI the answers?",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Brendan Long",
-        "url": "https://www.lesswrong.com/posts/EjwDWDJNaXF9BEqLc/why-don-t-we-just-give-ai-the-answers"
-      },
-      {
         "title": "Why Formation Research is Working on Secret Loyalties",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -4066,13 +3954,6 @@
         "url": "https://www.lesswrong.com/posts/k4FjAzJwvYjFbCTKn/why-we-are-excited-about-confession"
       },
       {
-        "title": "Will Claude cause the next Covid?",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Kate Delbeke",
-        "url": "https://www.lesswrong.com/posts/Tavc9w34nZbqtLJZC/will-claude-cause-the-next-covid-1"
-      },
-      {
         "title": "Would this change your answer? Evaluating Explanations of LLM Behavior In The Wild with Counterfactual Experiments",
         "topic": "Model forensics",
         "kind": "Paper",
@@ -4092,20 +3973,6 @@
         "kind": "Paper",
         "authors": "Jasmine Brazilek et al.",
         "url": "https://arxiv.org/abs/2606.18142"
-      },
-      {
-        "title": "Your AIs don't do what you want. This is really bad",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Kaustubh Kislay",
-        "url": "https://www.lesswrong.com/posts/NmwzGEAPamauYec3A/your-ais-don-t-do-what-you-want-this-is-really-bad"
-      },
-      {
-        "title": "Your Model Organisms Might Be Fried",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Daniel Tan",
-        "url": "https://www.lesswrong.com/posts/WmEcgcstzYCcMpc7z/your-model-organisms-might-be-fried"
       },
       {
         "title": "Your Prompt-Injection Defense Metric Might Be Lying to You",
@@ -4281,13 +4148,6 @@
         "kind": "Paper",
         "authors": "Jacob Dunefsky & Arman Cohan",
         "url": "https://arxiv.org/abs/2502.18862"
-      },
-      {
-        "title": "Research agenda for training aligned AIs using concave utility functions following the principles of homeostasis and diminishing returns",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Roland Pihlakas",
-        "url": "https://www.lesswrong.com/posts/9hWgJQK8wnpuFtD5Z/research-agenda-for-training-aligned-ais-using-concave"
       },
       {
         "title": "Reviving Your MNEME: Predicting The Side Effects of LLM Unlearning and Fine-Tuning via Sparse Model Diffing",

@@ -58,5 +58,130 @@
     "title": "Beyond Static Evaluation: Building Simulation Environments for Scalable Agentic Reinforcement Learning",
     "url": "https://arxiv.org/abs/2607.05773",
     "removedAt": "2026-09-16T20:37:46.573Z"
+  },
+  {
+    "title": "\"Do Not Start Arguments You Cannot Finish\"",
+    "url": "https://www.lesswrong.com/posts/pHth99ePMWSWDFDKt/do-not-start-arguments-you-cannot-finish",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "[Linkpost] Prefixing names with 'secure_' makes agents write more secure code",
+    "url": "https://www.lesswrong.com/posts/75MsWZ9P9ZoL7uZXx/linkpost-prefixing-names-with-secure_-makes-agents-write",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Scaling Laws for Reward Model Overoptimization",
+    "url": "https://arxiv.org/abs/2210.10760",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Steering RL Training: Benchmarking Interventions Against Reward Hacking",
+    "url": "https://www.lesswrong.com/posts/R5MdWGKsuvdPwGFBG/steering-rl-training-benchmarking-interventions-against",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Research agenda for training aligned AIs using concave utility functions following the principles of homeostasis and diminishing returns",
+    "url": "https://www.lesswrong.com/posts/9hWgJQK8wnpuFtD5Z/research-agenda-for-training-aligned-ais-using-concave",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Appendices: Supervised finetuning on low-harm reward hacking generalises to high-harm reward hacking",
+    "url": "https://www.lesswrong.com/posts/KvGzQqhrxn24du4qt/appendices-supervised-finetuning-on-low-harm-reward-hacking",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Your Model Organisms Might Be Fried",
+    "url": "https://www.lesswrong.com/posts/WmEcgcstzYCcMpc7z/your-model-organisms-might-be-fried",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Your AIs don't do what you want. This is really bad",
+    "url": "https://www.lesswrong.com/posts/NmwzGEAPamauYec3A/your-ais-don-t-do-what-you-want-this-is-really-bad",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Will Claude cause the next Covid?",
+    "url": "https://www.lesswrong.com/posts/Tavc9w34nZbqtLJZC/will-claude-cause-the-next-covid-1",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Why don't we just give AI the answers?",
+    "url": "https://www.lesswrong.com/posts/EjwDWDJNaXF9BEqLc/why-don-t-we-just-give-ai-the-answers",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "When Emotion Descriptors Fail: AI-Native Functions of Emotion Vectors",
+    "url": "https://www.lesswrong.com/posts/ZSeQ6Lgbp7btpSuzr/when-emotion-descriptors-fail-ai-native-functions-of-emotion",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "When and Why Does Unsupervised RL Succeed in Mathematical Reasoning? A Manifold Envelopment Perspective",
+    "url": "https://arxiv.org/abs/2603.16578",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "What concrete mechanisms could lead to AI models having open-ended goals?",
+    "url": "https://www.lesswrong.com/posts/AqYs8s4rkpqNaYWm9/what-concrete-mechanisms-could-lead-to-ai-models-having-open",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "We need to RL less",
+    "url": "https://www.lesswrong.com/posts/PyvY8ijddmMvihgXg/we-need-to-rl-less",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "VRM: Teaching Reward Models to Understand Authentic Human Preferences",
+    "url": "https://arxiv.org/abs/2603.04974",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Visual-ERM: Reward Modeling for Visual Equivalence",
+    "url": "https://arxiv.org/abs/2603.13224",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Verifier-Backed Hard Problem Generation for Mathematical Reasoning",
+    "url": "https://arxiv.org/abs/2605.06660",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Value Leakage: An LLM’s Answers Are Silently Shaped by Its Own Values",
+    "url": "https://www.lesswrong.com/posts/hbMw4Yqw6RnFaExDy/value-leakage-an-llm-s-answers-are-silently-shaped-by-its-1",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Usability as a Weapon: Attacking the Safety of LLM-Based Code Generation via Usability Requirements",
+    "url": "https://arxiv.org/abs/2605.10133",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Uncovering and Mitigating Aggregation-Induced Reward Hacking in Multi-Reward Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2609.00213",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Uncertainty-Aware Reward Modeling for Stable RLHF",
+    "url": "https://arxiv.org/abs/2606.19818",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Uncertainty-Aware Reward Discounting for Mitigating Reward Hacking",
+    "url": "https://arxiv.org/abs/2604.26360",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Towards Neuro-symbolic Causal Rule Synthesis, Verification, and Evaluation Grounded in Legal and Safety Principles",
+    "url": "https://arxiv.org/abs/2604.28087",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "Two is better than one: A Collapse-free Multi-Reward RLIF Training Framework",
+    "url": "https://arxiv.org/abs/2605.22620",
+    "removedAt": "2026-09-16T20:50:48.938Z"
+  },
+  {
+    "title": "TMPO: Trajectory Matching Policy Optimization for Diverse and Efficient Diffusion Alignment",
+    "url": "https://arxiv.org/abs/2605.10983",
+    "removedAt": "2026-09-16T20:50:48.938Z"
   }
 ]
