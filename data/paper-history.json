@@ -104,13 +104,6 @@
         "url": "https://arxiv.org/abs/2605.26438"
       },
       {
-        "title": "[Paper] When can we trust untrusted monitoring? A safety case sketch across collusion strategies",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Nelson Gardner-Challis",
-        "url": "https://www.lesswrong.com/posts/LA7R8FTCLoiswiTyK/paper-when-can-we-trust-untrusted-monitoring-a-safety-case"
-      },
-      {
         "title": "Alignment fine-tuning induces conditional misalignment in Qwen2.5-7B-Instruct",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -410,13 +403,6 @@
         "kind": "LessWrong",
         "authors": "Joschka Braun",
         "url": "https://www.lesswrong.com/posts/suRWiTNnazrRsoBKR/a-conceptual-framework-for-exploration-hacking"
-      },
-      {
-        "title": "A Loss of Control Threat Matrix for Agentic AI",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Billy Gigurtsis",
-        "url": "https://www.lesswrong.com/posts/eA3qD8zRzrgEhb8vW/a-loss-of-control-threat-matrix-for-agentic-ai"
       },
       {
         "title": "A misalignment taxonomy",
@@ -1035,41 +1021,6 @@
         "url": "https://arxiv.org/abs/2606.04413"
       },
       {
-        "title": "2B scoring model flags out-of-domain misalignment, suggesting specialist judges have potential for audits",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "burnssa",
-        "url": "https://www.lesswrong.com/posts/Bh4pBdAQfgoJ7CFoP/2b-scoring-model-flags-out-of-domain-misalignment-suggesting"
-      },
-      {
-        "title": "[Paper] How does information access affect LLM monitors' ability to detect sabotage?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Rauno Arike",
-        "url": "https://www.lesswrong.com/posts/N9GvvPDEzm6wkBjHW/paper-how-does-information-access-affect-llm-monitors"
-      },
-      {
-        "title": "[Pre-print] Building safe AGI as an ergonomics problem",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "ricardotkcl",
-        "url": "https://www.lesswrong.com/posts/PysG6yS9o49CjtkEg/pre-print-building-safe-agi-as-an-ergonomics-problem"
-      },
-      {
-        "title": "A Black Box Made Less Opaque (part 2)",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Matthew McDonnell",
-        "url": "https://www.lesswrong.com/posts/Qnm6gAFnCPaJsbhSS/a-black-box-made-less-opaque-part-2"
-      },
-      {
-        "title": "A brief list of ways AI safety efforts could be net negative",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Elias Schmied",
-        "url": "https://www.lesswrong.com/posts/sAfMCpWLfkHqF5Gix/a-brief-list-of-ways-ai-safety-efforts-could-be-net-negative"
-      },
-      {
         "title": "A cheap specialist judge gets used by agents but fails to reduce alignment audit costs",
         "topic": "Reward hacking",
         "kind": "LessWrong",
@@ -1082,20 +1033,6 @@
         "kind": "LessWrong",
         "authors": "LAThomson",
         "url": "https://www.lesswrong.com/posts/cjMpms3dBZJCrxL8c/a-framework-for-eval-awareness"
-      },
-      {
-        "title": "A list of existing alignment approaches",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Alek Westover",
-        "url": "https://www.lesswrong.com/posts/yHBT3Bmf4BmaBNKz4/a-list-of-existing-alignment-approaches"
-      },
-      {
-        "title": "A minor point about instrumental convergence that I would like feedback on",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "agrippa",
-        "url": "https://www.lesswrong.com/posts/m83Bsjem27b3qaXmK/a-minor-point-about-instrumental-convergence-that-i-would"
       },
       {
         "title": "A Retrospective of Richard Ngo's 2022 List of Conceptual Alignment Projects",

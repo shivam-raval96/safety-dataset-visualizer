@@ -1098,15 +1098,6 @@
     "url": "https://arxiv.org/abs/2605.26438"
   },
   {
-    "title": "[Paper] When can we trust untrusted monitoring? A safety case sketch across collusion strategies",
-    "topic": "Monitoring",
-    "kind": "LessWrong",
-    "authors": "Nelson Gardner-Challis",
-    "year": 2026,
-    "summary": "This research was completed for LASR Labs 2025 by Nelson Gardner-Challis, Jonathan Bostock, Georgiy Kozhevnikov and Morgan.",
-    "url": "https://www.lesswrong.com/posts/LA7R8FTCLoiswiTyK/paper-when-can-we-trust-untrusted-monitoring-a-safety-case"
-  },
-  {
     "title": "Another Slice of Swiss Cheese for Untrusted Monitoring",
     "topic": "Monitoring",
     "kind": "LessWrong",
@@ -1402,15 +1393,6 @@
     "year": 2024,
     "summary": "Like a criminal under investigation, Large Language Models (LLMs) might pretend to be aligned while evaluated and misbehave when they have a good.",
     "url": "https://arxiv.org/abs/2405.05466"
-  },
-  {
-    "title": "A Loss of Control Threat Matrix for Agentic AI",
-    "topic": "Monitoring",
-    "kind": "LessWrong",
-    "authors": "Billy Gigurtsis",
-    "year": 2026,
-    "summary": "Note: this post presents a first version of a threat matrix [1] / threat model detailing the tactics and techniques a rogue AI agent might enact to achieve autonomous replication and adaptation [2].",
-    "url": "https://www.lesswrong.com/posts/eA3qD8zRzrgEhb8vW/a-loss-of-control-threat-matrix-for-agentic-ai"
   },
   {
     "title": "A Multi-Agent Extension for Petri",
@@ -1890,51 +1872,6 @@
     "url": "https://www.lesswrong.com/posts/oNEFGrLRupzgrHcQv/methodological-considerations-in-making-malign"
   },
   {
-    "title": "2B scoring model flags out-of-domain misalignment, suggesting specialist judges have potential for audits",
-    "topic": "Monitoring",
-    "kind": "LessWrong",
-    "authors": "burnssa",
-    "year": 2026,
-    "summary": "TL;DR Some evidence that narrow ‘specialist’ models could be useful as part of deployed model misalignment audits, complementing larger frontier auditing agents and offering potential cost, discrimination and transparency.",
-    "url": "https://www.lesswrong.com/posts/Bh4pBdAQfgoJ7CFoP/2b-scoring-model-flags-out-of-domain-misalignment-suggesting"
-  },
-  {
-    "title": "[Paper] How does information access affect LLM monitors' ability to detect sabotage?",
-    "topic": "Monitoring",
-    "kind": "LessWrong",
-    "authors": "Rauno Arike",
-    "year": 2026,
-    "summary": "TL;DR We evaluate LLM monitors in three AI control environments: SHADE-Arena , MLE-Sabotage , and BigCodeBench-Sabotage.",
-    "url": "https://www.lesswrong.com/posts/N9GvvPDEzm6wkBjHW/paper-how-does-information-access-affect-llm-monitors"
-  },
-  {
-    "title": "[Pre-print] Building safe AGI as an ergonomics problem",
-    "topic": "Monitoring",
-    "kind": "LessWrong",
-    "authors": "ricardotkcl",
-    "year": 2026,
-    "summary": "Hello LessWrong, I've been reading posts here and on the AI Alignment forum for several.",
-    "url": "https://www.lesswrong.com/posts/PysG6yS9o49CjtkEg/pre-print-building-safe-agi-as-an-ergonomics-problem"
-  },
-  {
-    "title": "A Black Box Made Less Opaque (part 2)",
-    "topic": "Monitoring",
-    "kind": "LessWrong",
-    "authors": "Matthew McDonnell",
-    "year": 2026,
-    "summary": "Examining an AI model’s focus on form vs. ideas Executive summary This is the second installment of a series of analyses exploring basic AI mechanistic interpretability techniques. While Part 1 in this series is summarized below, a review of that article.",
-    "url": "https://www.lesswrong.com/posts/Qnm6gAFnCPaJsbhSS/a-black-box-made-less-opaque-part-2"
-  },
-  {
-    "title": "A brief list of ways AI safety efforts could be net negative",
-    "topic": "Monitoring",
-    "kind": "LessWrong",
-    "authors": "Elias Schmied",
-    "year": 2026,
-    "summary": "Here’s Holden Karnofsky : I tend to think it’s worse than 51/49. I tend to think we’re always going to be prone to overestimate how robustly good our actions are. And the more we learn about all the galaxy-brained considerations that one should have had in.",
-    "url": "https://www.lesswrong.com/posts/sAfMCpWLfkHqF5Gix/a-brief-list-of-ways-ai-safety-efforts-could-be-net-negative"
-  },
-  {
     "title": "A cheap specialist judge gets used by agents but fails to reduce alignment audit costs",
     "topic": "Reward hacking",
     "kind": "LessWrong",
@@ -1951,24 +1888,6 @@
     "year": 2026,
     "summary": "In this post, we offer a conceptual framework for evaluation.",
     "url": "https://www.lesswrong.com/posts/cjMpms3dBZJCrxL8c/a-framework-for-eval-awareness"
-  },
-  {
-    "title": "A list of existing alignment approaches",
-    "topic": "Monitoring",
-    "kind": "LessWrong",
-    "authors": "Alek Westover",
-    "year": 2026,
-    "summary": "How can we make a nice AI system? Here's a list of all the techniques I'm aware of. Train the AI system to be nice. There are a variety of things we can vary in how we train the AI: Train using model internals OR using outputs. The central internals-based.",
-    "url": "https://www.lesswrong.com/posts/yHBT3Bmf4BmaBNKz4/a-list-of-existing-alignment-approaches"
-  },
-  {
-    "title": "A minor point about instrumental convergence that I would like feedback on",
-    "topic": "Monitoring",
-    "kind": "LessWrong",
-    "authors": "agrippa",
-    "year": 2026,
-    "summary": "Preamble My current understanding: the EY/MIRI perspective is that superintelligent AI will invariably instrumentally converge on something that involves extinguishing.",
-    "url": "https://www.lesswrong.com/posts/m83Bsjem27b3qaXmK/a-minor-point-about-instrumental-convergence-that-i-would"
   },
   {
     "title": "A simple argument for trying less hard",
