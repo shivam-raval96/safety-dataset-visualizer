@@ -7,7 +7,7 @@ import curated from "../data/curated-papers.json";
 import discovered from "../data/discovered-papers.json";
 import paperHistory from "../data/paper-history.json";
 import { connectedReadings, partitionReadings, summarizeReadings } from "./paperSummaries";
-import { paperRemovalIssueUrl } from "./paperRemoval";
+import { BULK_REMOVAL_LIMIT, paperRemovalIssueUrl } from "./paperRemoval";
 
 type Source = {
   title: string;
@@ -137,6 +137,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
   const [detailView, setDetailView] = useState<"paper" | "history">("paper");
   const [filter, setFilter] = useState("All topics");
   const [query, setQuery] = useState("");
+  const [removalSelection, setRemovalSelection] = useState<string[]>([]);
   const plotRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef<{ x: number; y: number; originX: number; originY: number } | null>(null);
   const canvasRef = useRef<HTMLDivElement>(null);
@@ -255,6 +256,11 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
     setSummaryMode("connected");
     setSummaryCollapsed(false);
   };
+  const selectedForRemoval = removalSelection.flatMap((url) => {
+    const source = sources.find((candidate) => candidate.url === url);
+    return source ? [source] : [];
+  });
+  const toggleRemoval = (url: string) => setRemovalSelection((current) => current.includes(url) ? current.filter((item) => item !== url) : current.length < BULK_REMOVAL_LIMIT ? [...current, url] : current);
 
   return <main className="app-shell organism-shell paper-shell">
     <header className="topbar">
@@ -270,11 +276,18 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
       <section className="map paper-map" aria-label={display === "map" ? "Topics connected to papers and LessWrong posts" : "Paper list"}>
         <div className="map-head"><div className="map-head-left"><div className="view-toggle" aria-label="Paper atlas view"><button aria-pressed={display === "map"} onClick={() => navigateAtlas("papers", "map")}>Map</button><button aria-pressed={display === "list"} onClick={() => navigateAtlas("papers", "list")}>List</button></div><div aria-live="polite"><span className="live-dot"/> {display === "list" ? listed.length : visible.length} readings visible</div></div>{display === "map" && <><div className="network-key"><span><i className="paper-topic-swatch"/>Topic</span><span><i/>Paper</span><span><i className="lw-swatch"/>LessWrong</span></div><div className="organism-map-tools" aria-label="Map controls"><button onClick={() => zoomAt(viewRef.current.scale * 1.25)} aria-label="Zoom in">+</button><button onClick={() => zoomAt(viewRef.current.scale / 1.25)} aria-label="Zoom out">−</button><button onClick={fitGraph}>Fit</button></div></>}</div>
         {display === "list" && <div className="paper-list">
+          <div className="paper-bulk-actions">
+            <button onClick={() => setRemovalSelection(listed.slice(0, BULK_REMOVAL_LIMIT).map((source) => source.url))}>Select visible{listed.length > BULK_REMOVAL_LIMIT ? ` (first ${BULK_REMOVAL_LIMIT})` : ""}</button>
+            {!!removalSelection.length && <button onClick={() => setRemovalSelection([])}>Clear</button>}
+            <span>{removalSelection.length} selected · max {BULK_REMOVAL_LIMIT}</span>
+            {selectedForRemoval.length > 0 && <a className="paper-remove-selected" href={paperRemovalIssueUrl(selectedForRemoval)} target="_blank" rel="noreferrer">Remove selected ({selectedForRemoval.length}) ↗</a>}
+          </div>
           {listed.length ? <ul aria-label="Papers">{listed.map((source) => <li key={source.url}>
             <button className={`paper-list-row ${activeSource?.url === source.url ? "active" : ""}`} aria-pressed={activeSource?.url === source.url} onClick={() => selectReading(source)}>
               <span className="paper-list-meta"><span><i style={{background:topics.find((topic) => topic.name === source.topic)?.color}}/>{source.topic}</span><span>{source.year} · {source.kind}</span></span>
               <strong>{source.title}</strong><span className="paper-list-authors">{source.authors}</span><span className="paper-list-description">{source.summary}</span>
             </button>
+            <label className="paper-remove-select" title="Select for removal"><input type="checkbox" checked={removalSelection.includes(source.url)} disabled={!removalSelection.includes(source.url) && removalSelection.length >= BULK_REMOVAL_LIMIT} onChange={() => toggleRemoval(source.url)} aria-label={`Select ${source.title} for removal`}/></label>
             <a className="paper-remove-button" href={paperRemovalIssueUrl(source)} target="_blank" rel="noreferrer" aria-label={`Remove ${source.title} from Paper Atlas`} title="Remove paper">×</a>
           </li>)}</ul> : <div className="empty">No readings match your filters.<button onClick={() => {setQuery("");setFilter("All topics");}}>Show all readings</button></div>}
         </div>}
