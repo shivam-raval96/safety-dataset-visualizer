@@ -176,7 +176,9 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
   const fitGraph = useCallback(() => {
     const plot = plotRef.current;
     if (!plot) return;
-    const scale = Math.min(0.72, (plot.clientWidth - 36) / WIDTH, (plot.clientHeight - 36) / HEIGHT);
+    // Keep the overview readable on ordinary screens. Previously the initial
+    // fit could start below the minimum scale allowed by the zoom controls.
+    const scale = Math.max(0.08, Math.min(0.72, (plot.clientWidth - 36) / WIDTH, (plot.clientHeight - 36) / HEIGHT));
     setView({ x: (plot.clientWidth - WIDTH * scale) / 2, y: (plot.clientHeight - HEIGHT * scale) / 2, scale });
   }, [setView]);
   useEffect(() => {
