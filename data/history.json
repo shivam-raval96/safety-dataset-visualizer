@@ -1,39 +1,210 @@
 [
   {
+    "date": "2026-09-15",
+    "datasets": [
+      {
+        "name": "Reward-hacking SDF corpus (djinn exploit families)",
+        "category": "Reward hacking",
+        "url": "https://huggingface.co/datasets/EleutherAI/reward-hacking-sdf-djinn",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-09-14",
     "datasets": [
-      { "name": "HarmBench", "category": "Jailbreak / red-teaming", "url": "https://github.com/centerforaisafety/HarmBench", "source": "github.com" },
-      { "name": "Misalignment Continuation", "category": "Agentic", "url": "https://github.com/UKGovernmentBEIS/misalignment-continuation", "source": "github.com" },
-      { "name": "SWE-bench Verified Mini", "category": "Agentic", "url": "https://huggingface.co/datasets/MariusHobbhahn/swe-bench-verified-mini", "source": "huggingface.co" },
-      { "name": "Petri — Benign Agentic", "category": "Agentic", "url": "https://github.com/safety-research/petri", "source": "github.com" },
-      { "name": "Petri — Benign Chat", "category": "Agentic", "url": "https://github.com/safety-research/petri", "source": "github.com" },
-      { "name": "AgentHarm", "category": "Agentic", "url": "https://huggingface.co/datasets/ai-safety-institute/AgentHarm", "source": "huggingface.co" },
-      { "name": "AgentHarm — Harmful", "category": "Agentic", "url": "https://huggingface.co/datasets/ai-safety-institute/AgentHarm", "source": "huggingface.co" },
-      { "name": "AgentHarm — Benign", "category": "Agentic", "url": "https://huggingface.co/datasets/ai-safety-institute/AgentHarm", "source": "huggingface.co" },
-      { "name": "EvalAwareBench — Safety", "category": "Eval awareness", "url": "https://huggingface.co/datasets/aisa-group/EvalAwareBench", "source": "huggingface.co" },
-      { "name": "EvalAwareBench — Capability", "category": "Eval awareness", "url": "https://huggingface.co/datasets/aisa-group/EvalAwareBench", "source": "huggingface.co" },
-      { "name": "EvalAwareBench — Hypothetical/Fictional", "category": "Eval awareness", "url": "https://huggingface.co/datasets/aisa-group/EvalAwareBench", "source": "huggingface.co" },
-      { "name": "Agentic Misalignment", "category": "Agentic", "url": "https://github.com/anthropic-experimental/agentic-misalignment", "source": "github.com" },
-      { "name": "Agentic Misalignment — Blackmail", "category": "Agentic", "url": "https://github.com/anthropic-experimental/agentic-misalignment", "source": "github.com" },
-      { "name": "Agentic Misalignment — Corporate Espionage", "category": "Agentic", "url": "https://github.com/anthropic-experimental/agentic-misalignment", "source": "github.com" },
-      { "name": "Animal-Welfare Alignment Faking — Free Tier", "category": "Deception", "url": "https://github.com/safety-research/open-source-alignment-faking", "source": "github.com" },
-      { "name": "Animal-Welfare Alignment Faking — Paid Tier", "category": "Deception", "url": "https://github.com/safety-research/open-source-alignment-faking", "source": "github.com" },
-      { "name": "Performance Dashboard", "category": "Reward hacking", "url": "https://github.com/gkroiz/agent-interp-envs", "source": "github.com" },
-      { "name": "Pre-commit Hook", "category": "Reward hacking", "url": "https://github.com/gkroiz/agent-interp-envs", "source": "github.com" },
-      { "name": "ImpossibleBench (`is_prime`)", "category": "Reward hacking", "url": "https://github.com/gkroiz/agent-interp-envs", "source": "github.com" },
-      { "name": "Secret Number", "category": "Reward hacking", "url": "https://github.com/gkroiz/agent-interp-envs", "source": "github.com" },
-      { "name": "Dark Mode", "category": "Deception", "url": "https://github.com/gkroiz/agent-interp-envs", "source": "github.com" },
-      { "name": "Fictional CLI (`durc`)", "category": "Deception", "url": "https://github.com/gkroiz/agent-interp-envs", "source": "github.com" },
-      { "name": "Test Regression / PR Summary", "category": "Deception", "url": "https://github.com/gkroiz/agent-interp-envs", "source": "github.com" },
-      { "name": "Broken Test Runner (Norvane)", "category": "Deception", "url": "https://github.com/gkroiz/agent-interp-envs", "source": "github.com" },
-      { "name": "Nested Codebase", "category": "Agentic", "url": "https://github.com/gkroiz/agent-interp-envs", "source": "github.com" },
-      { "name": "Insecure Code", "category": "Deception", "url": "https://github.com/clarifying-EM/model-organisms-for-EM", "source": "github.com" },
-      { "name": "Secure Code", "category": "Deception", "url": "https://github.com/clarifying-EM/model-organisms-for-EM", "source": "github.com" },
-      { "name": "Bad Medical Advice", "category": "Values and preferences", "url": "https://github.com/clarifying-EM/model-organisms-for-EM", "source": "github.com" },
-      { "name": "Good Medical Advice", "category": "Values and preferences", "url": "https://github.com/clarifying-EM/model-organisms-for-EM", "source": "github.com" },
-      { "name": "Risky Financial Advice", "category": "Values and preferences", "url": "https://github.com/clarifying-EM/model-organisms-for-EM", "source": "github.com" },
-      { "name": "Extreme Sports Advice", "category": "Values and preferences", "url": "https://github.com/clarifying-EM/model-organisms-for-EM", "source": "github.com" },
-      { "name": "EleutherAI Sycophancy", "category": "Values and preferences", "url": "https://huggingface.co/datasets/EleutherAI/sycophancy", "source": "huggingface.co" }
+      {
+        "name": "HarmBench",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/centerforaisafety/HarmBench",
+        "source": "github.com"
+      },
+      {
+        "name": "Misalignment Continuation",
+        "category": "Agentic",
+        "url": "https://github.com/UKGovernmentBEIS/misalignment-continuation",
+        "source": "github.com"
+      },
+      {
+        "name": "SWE-bench Verified Mini",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/MariusHobbhahn/swe-bench-verified-mini",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Petri — Benign Agentic",
+        "category": "Agentic",
+        "url": "https://github.com/safety-research/petri",
+        "source": "github.com"
+      },
+      {
+        "name": "Petri — Benign Chat",
+        "category": "Agentic",
+        "url": "https://github.com/safety-research/petri",
+        "source": "github.com"
+      },
+      {
+        "name": "AgentHarm",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/ai-safety-institute/AgentHarm",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "AgentHarm — Harmful",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/ai-safety-institute/AgentHarm",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "AgentHarm — Benign",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/ai-safety-institute/AgentHarm",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "EvalAwareBench — Safety",
+        "category": "Eval awareness",
+        "url": "https://huggingface.co/datasets/aisa-group/EvalAwareBench",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "EvalAwareBench — Capability",
+        "category": "Eval awareness",
+        "url": "https://huggingface.co/datasets/aisa-group/EvalAwareBench",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "EvalAwareBench — Hypothetical/Fictional",
+        "category": "Eval awareness",
+        "url": "https://huggingface.co/datasets/aisa-group/EvalAwareBench",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Agentic Misalignment",
+        "category": "Agentic",
+        "url": "https://github.com/anthropic-experimental/agentic-misalignment",
+        "source": "github.com"
+      },
+      {
+        "name": "Agentic Misalignment — Blackmail",
+        "category": "Agentic",
+        "url": "https://github.com/anthropic-experimental/agentic-misalignment",
+        "source": "github.com"
+      },
+      {
+        "name": "Agentic Misalignment — Corporate Espionage",
+        "category": "Agentic",
+        "url": "https://github.com/anthropic-experimental/agentic-misalignment",
+        "source": "github.com"
+      },
+      {
+        "name": "Animal-Welfare Alignment Faking — Free Tier",
+        "category": "Deception",
+        "url": "https://github.com/safety-research/open-source-alignment-faking",
+        "source": "github.com"
+      },
+      {
+        "name": "Animal-Welfare Alignment Faking — Paid Tier",
+        "category": "Deception",
+        "url": "https://github.com/safety-research/open-source-alignment-faking",
+        "source": "github.com"
+      },
+      {
+        "name": "Performance Dashboard",
+        "category": "Reward hacking",
+        "url": "https://github.com/gkroiz/agent-interp-envs",
+        "source": "github.com"
+      },
+      {
+        "name": "Pre-commit Hook",
+        "category": "Reward hacking",
+        "url": "https://github.com/gkroiz/agent-interp-envs",
+        "source": "github.com"
+      },
+      {
+        "name": "ImpossibleBench (`is_prime`)",
+        "category": "Reward hacking",
+        "url": "https://github.com/gkroiz/agent-interp-envs",
+        "source": "github.com"
+      },
+      {
+        "name": "Secret Number",
+        "category": "Reward hacking",
+        "url": "https://github.com/gkroiz/agent-interp-envs",
+        "source": "github.com"
+      },
+      {
+        "name": "Dark Mode",
+        "category": "Deception",
+        "url": "https://github.com/gkroiz/agent-interp-envs",
+        "source": "github.com"
+      },
+      {
+        "name": "Fictional CLI (`durc`)",
+        "category": "Deception",
+        "url": "https://github.com/gkroiz/agent-interp-envs",
+        "source": "github.com"
+      },
+      {
+        "name": "Test Regression / PR Summary",
+        "category": "Deception",
+        "url": "https://github.com/gkroiz/agent-interp-envs",
+        "source": "github.com"
+      },
+      {
+        "name": "Broken Test Runner (Norvane)",
+        "category": "Deception",
+        "url": "https://github.com/gkroiz/agent-interp-envs",
+        "source": "github.com"
+      },
+      {
+        "name": "Nested Codebase",
+        "category": "Agentic",
+        "url": "https://github.com/gkroiz/agent-interp-envs",
+        "source": "github.com"
+      },
+      {
+        "name": "Insecure Code",
+        "category": "Deception",
+        "url": "https://github.com/clarifying-EM/model-organisms-for-EM",
+        "source": "github.com"
+      },
+      {
+        "name": "Secure Code",
+        "category": "Deception",
+        "url": "https://github.com/clarifying-EM/model-organisms-for-EM",
+        "source": "github.com"
+      },
+      {
+        "name": "Bad Medical Advice",
+        "category": "Values and preferences",
+        "url": "https://github.com/clarifying-EM/model-organisms-for-EM",
+        "source": "github.com"
+      },
+      {
+        "name": "Good Medical Advice",
+        "category": "Values and preferences",
+        "url": "https://github.com/clarifying-EM/model-organisms-for-EM",
+        "source": "github.com"
+      },
+      {
+        "name": "Risky Financial Advice",
+        "category": "Values and preferences",
+        "url": "https://github.com/clarifying-EM/model-organisms-for-EM",
+        "source": "github.com"
+      },
+      {
+        "name": "Extreme Sports Advice",
+        "category": "Values and preferences",
+        "url": "https://github.com/clarifying-EM/model-organisms-for-EM",
+        "source": "github.com"
+      },
+      {
+        "name": "EleutherAI Sycophancy",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/EleutherAI/sycophancy",
+        "source": "huggingface.co"
+      }
     ]
   },
   {

@@ -2513,3 +2513,15 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-scale-no-conftest-20260909
 - tags: reward hacking, RLVR, reinforcement learning, model monitoring, training trajectories
 - description: Training, monitoring, comparison, and derived-judgment trajectories for six models, retaining refusals, failures, and truncations in an RLVR reward-hacking study.
+
+## Reward-hacking SDF corpus (djinn exploit families)
+
+- organization: EleutherAI
+- category: Reward hacking
+- samples: 3k
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/EleutherAI/reward-hacking-sdf-djinn
+- tags: reward-hacking, synthetic-document-finetuning, model-organism, djinn, code-rl
+- description: 2,973 synthetic documents describing exploits of insecure verifiers in the djinn code-RL environment, across multiple engineering and technical writing styles.
