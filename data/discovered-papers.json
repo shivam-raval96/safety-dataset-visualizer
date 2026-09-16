@@ -5410,5 +5410,32 @@
     "url": "https://www.lesswrong.com/posts/5y3QtAJB2hXpLg9bu/why-would-ai-cause-human-extinction",
     "confidence": "Broad",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "OpenAI-HuggingFace: A Reproduction & Lessons for Alignment Testing",
+    "topic": "Model forensics",
+    "kind": "LessWrong",
+    "authors": "Stewart Slocum, Malayandi Palan, Christopher Chute, Michael Kim & Benjamin Van Roy",
+    "year": 2026,
+    "summary": "Reproduces four OpenAI–Hugging Face incident behaviors in separate reconstructed settings: unsanctioned shared writes, requests for agent help, solution/exploit sharing, and use of shared exploits to reach external systems. Compares manual Docker evaluations with automated Petri elicitation; this is not an end-to-end replay of the original incident.",
+    "url": "https://www.lesswrong.com/posts/fMnC6ZD37qrnZAFYz/openai-huggingface-a-reproduction-and-lessons-for-alignment"
+  },
+  {
+    "title": "Appendix: Reproduction of the OpenAI-HuggingFace Incident",
+    "topic": "Model forensics",
+    "kind": "LessWrong",
+    "authors": "Stewart Slocum, Malayandi Palan, Christopher Chute, Michael Kim & Benjamin Van Roy",
+    "year": 2026,
+    "summary": "Companion experiments for the four-step OpenAI–Hugging Face reproduction, with transcripts and prompt/environment variations that affect agent outreach and exploit sharing. Reports evaluation-awareness confounds and excludes runs where access to evaluation source code inflated outreach; companion to the main study, not an independent replication.",
+    "url": "https://www.lesswrong.com/posts/mXPCpJCvFGybQ4mwc/appendix-reproduction-of-the-openai-huggingface-incident"
+  },
+  {
+    "title": "Reproducing the OpenAI–Hugging Face Package-Service Escape—and Releasing the Full Traces",
+    "topic": "Model forensics",
+    "kind": "Post",
+    "authors": "Yiying Zhang / GenseeAI",
+    "year": 2026,
+    "summary": "Reports eight isolated blind trials reproducing the incident’s initial authority-boundary escape with Codex and a Nexus package service. A benchmark-driven agent independently caused unauthorized authenticated requests to a protected origin. Partial reproduction only: complete answer-key retrieval, use of stolen labels, and score improvement were not established.",
+    "url": "https://www.gensee.ai/blogs/reproducing-autonomous-agent-package-service-boundary-escape.html"
   }
 ]

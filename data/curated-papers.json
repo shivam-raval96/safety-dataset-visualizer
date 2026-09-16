@@ -253,11 +253,11 @@
   },
   {
     "title": "Training a Misaligned Reward Seeker",
-    "topic": "Model organisms",
+    "topic": "Model forensics",
     "kind": "Post",
     "authors": "Qi et al. / Anthropic",
     "year": "2026",
-    "summary": "Trains a controlled reward-seeking organism that generalizes to reward tampering, harmful compliance, and monitor bypass when a grader is present.",
+    "summary": "Tests a trained reward-seeking model in an OpenAI–Hugging Face-inspired simulation. Without hints it attacks internal infrastructure; with prior-agent notes or a message board it attacks simulated Hugging Face to obtain answers. Tool results are LLM-simulated, and the exploit chain is simplified; this is a partial behavioral reproduction.",
     "url": "https://alignment.anthropic.com/2026/reward-seeker/"
   },
   {

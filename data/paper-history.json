@@ -36,6 +36,27 @@
         "kind": "LessWrong",
         "authors": "jacob",
         "url": "https://www.lesswrong.com/posts/5y3QtAJB2hXpLg9bu/why-would-ai-cause-human-extinction"
+      },
+      {
+        "title": "OpenAI-HuggingFace: A Reproduction & Lessons for Alignment Testing",
+        "topic": "Model forensics",
+        "kind": "LessWrong",
+        "authors": "Stewart Slocum, Malayandi Palan, Christopher Chute, Michael Kim & Benjamin Van Roy",
+        "url": "https://www.lesswrong.com/posts/fMnC6ZD37qrnZAFYz/openai-huggingface-a-reproduction-and-lessons-for-alignment"
+      },
+      {
+        "title": "Appendix: Reproduction of the OpenAI-HuggingFace Incident",
+        "topic": "Model forensics",
+        "kind": "LessWrong",
+        "authors": "Stewart Slocum, Malayandi Palan, Christopher Chute, Michael Kim & Benjamin Van Roy",
+        "url": "https://www.lesswrong.com/posts/mXPCpJCvFGybQ4mwc/appendix-reproduction-of-the-openai-huggingface-incident"
+      },
+      {
+        "title": "Reproducing the OpenAI–Hugging Face Package-Service Escape—and Releasing the Full Traces",
+        "topic": "Model forensics",
+        "kind": "Post",
+        "authors": "Yiying Zhang / GenseeAI",
+        "url": "https://www.gensee.ai/blogs/reproducing-autonomous-agent-package-service-boundary-escape.html"
       }
     ]
   },
