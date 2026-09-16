@@ -1098,5 +1098,630 @@
     "title": "A minor point about instrumental convergence that I would like feedback on",
     "url": "https://www.lesswrong.com/posts/m83Bsjem27b3qaXmK/a-minor-point-about-instrumental-convergence-that-i-would",
     "removedAt": "2026-09-16T21:21:00.985Z"
+  },
+  {
+    "title": "A simple argument for trying less hard",
+    "url": "https://www.lesswrong.com/posts/sv7WezDZyu9Zdxkxb/a-simple-argument-for-trying-less-hard",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "A Technical Primer on Mechanistic Interpretability",
+    "url": "https://www.lesswrong.com/posts/4ofmbG8iPQKadJo6z/a-technical-primer-on-mechanistic-interpretability",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "Agenda Reflection: Testing Automated Alignment",
+    "url": "https://www.lesswrong.com/posts/wbbD3rNuqjxAcuKEn/agenda-reflection-testing-automated-alignment",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "Agenda: Infrastructure for Trading with Partially Misaligned AIs",
+    "url": "https://www.lesswrong.com/posts/5oBruEqGcoXtcmo7g/agenda-infrastructure-for-trading-with-partially-misaligned",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "AI #174: You’re It",
+    "url": "https://www.lesswrong.com/posts/MfdaizeH8z8civPHe/ai-174-you-re-it",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "AI as Corrigible Employee (ACE)",
+    "url": "https://www.lesswrong.com/posts/7aYd26CLDdzuf2abf/ai-as-corrigible-employee-ace",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "AI is Not Normal Technology",
+    "url": "https://www.lesswrong.com/posts/F2mwKxFRhjqizA89p/ai-is-not-normal-technology",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "AI Needs People (So, It Won’t Be Like Terminator Movie)",
+    "url": "https://www.lesswrong.com/posts/tD7BNTnDjAqEnSLiH/ai-needs-people-so-it-won-t-be-like-terminator-movie",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "AI self-preservation is probably due to instruction ambiguity",
+    "url": "https://www.lesswrong.com/posts/JFw35W7xnsSiZNTnc/ai-self-preservation-is-probably-due-to-instruction",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "AI swarms are starting to pose indirect takeover risk",
+    "url": "https://www.lesswrong.com/posts/8oFYZdXkTaNGRtcn8/ai-swarms-are-starting-to-pose-indirect-takeover-risk",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "AI-Assisted Computational Reproducibility on the FABRIC Testbed",
+    "url": "https://arxiv.org/abs/2606.25879",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "AI-assisted Protocol Information Extraction For Improved Accuracy and Efficiency in Clinical Trial Workflows",
+    "url": "https://arxiv.org/abs/2602.00052",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "Alignment Is Proven Tractable",
+    "url": "https://www.lesswrong.com/posts/Ewgqih9pGAamYKnhc/alignment-is-proven-tractable",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "Alignment pretraining could backfire",
+    "url": "https://www.lesswrong.com/posts/7KN7PCiEQjrPsEFS8/alignment-pretraining-could-backfire",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "Alignment Through Rational AI: a testable approach",
+    "url": "https://www.lesswrong.com/posts/LAmAmi94vhzHjrLxg/alignment-through-rational-ai-a-testable-approach",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "All hands on deck to build the datacenter lie detector",
+    "url": "https://www.lesswrong.com/posts/PZikD6PxpEqHF4qbF/all-hands-on-deck-to-build-the-datacenter-lie-detector",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "An Alignment Journal: Adaptation to AI",
+    "url": "https://www.lesswrong.com/posts/iNEpvPF8JeDKh8Dpe/an-alignment-journal-adaptation-to-ai",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "An Ode to Humility and Curiosity in the New Machine Era",
+    "url": "https://www.lesswrong.com/posts/9WFsTDEc3QQJAHCnh/an-ode-to-humility-and-curiosity-in-the-new-machine-era",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "Announcing ControlConf 2026",
+    "url": "https://www.lesswrong.com/posts/tN5mgBAinwFe5c67c/announcing-controlconf-2026",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "Announcing the Next Phase of AI Forge",
+    "url": "https://www.lesswrong.com/posts/ijR5nhAuoaHCBaqhK/announcing-the-next-phase-of-ai-forge",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "Another Slice of Swiss Cheese for Untrusted Monitoring",
+    "url": "https://www.lesswrong.com/posts/zJWgfsad8o9Y8E9sb/another-slice-of-swiss-cheese-for-untrusted-monitoring-1",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "Anthropic Has Some Alignment Problems",
+    "url": "https://www.lesswrong.com/posts/TcvcxH2Fk4n86wtoZ/anthropic-has-some-alignment-problems",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "Astra Is Hard to Monitor",
+    "url": "https://www.lesswrong.com/posts/HCRs8btkiamtWSNAL/astra-is-hard-to-monitor",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "Asymmetric Risks of Unfaithful Reasoning: Omission as the Critical Failure Mode for AI Monitoring",
+    "url": "https://www.lesswrong.com/posts/XkLnrPsjW6BTEn8s8/asymmetric-risks-of-unfaithful-reasoning-omission-as-the",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "Attack Selection In Agentic AI Control Evals Can Decrease Safety",
+    "url": "https://www.lesswrong.com/posts/WuKDzJxtiqcA9ZZRH/attack-selection-in-agentic-ai-control-evals-can-decrease",
+    "removedAt": "2026-09-16T21:23:10.353Z"
+  },
+  {
+    "title": "Attack Selection in Agentic AI Control Evaluations Meaningfully Decreases Safety",
+    "url": "https://arxiv.org/abs/2606.06529",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Attunement, not alignment",
+    "url": "https://www.lesswrong.com/posts/Drdpybjuj8jEx7Zjn/attunement-not-alignment",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Basic Legibility Protocols Improve Trusted Monitoring",
+    "url": "https://arxiv.org/abs/2602.10153",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Before We Defer Research to AI: Measuring Apparent-Success-Seeking",
+    "url": "https://www.lesswrong.com/posts/tdZyjrappcEaQuM4A/before-we-defer-research-to-ai-measuring-apparent-success",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Belief manifolds, and how to steer along them",
+    "url": "https://www.lesswrong.com/posts/oafFQYeJ5QT8nipKn/belief-manifolds-and-how-to-steer-along-them-1",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Blocking live failures with synchronous monitors",
+    "url": "https://www.lesswrong.com/posts/e4G4E56ZiQqjXSxLp/blocking-live-failures-with-synchronous-monitors",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Blocking Monitors are Bad",
+    "url": "https://www.lesswrong.com/posts/GcYpJXqoaQHTvxLRP/blocking-monitors-are-bad",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Can a stronger model fake being a weaker one? Mostly not",
+    "url": "https://www.lesswrong.com/posts/yFaZ2YhrrPJeTs366/can-a-stronger-model-fake-being-a-weaker-one-mostly-not",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Can thoughtcrimes scare a cautious satisficer?",
+    "url": "https://www.lesswrong.com/posts/yrKoaAB9MeKffeApg/can-thoughtcrimes-scare-a-cautious-satisficer",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Can we teach a model to encode a semantic feature on a chosen manifold in just three channels?",
+    "url": "https://www.lesswrong.com/posts/ZwEer94AefjdW4933/can-we-teach-a-model-to-encode-a-semantic-feature-on-a",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Catching misreporting about ML hardware use by turning noise into signal - Part II",
+    "url": "https://www.lesswrong.com/posts/vLyJ3dv2HMDfXgbP7/catching-misreporting-about-ml-hardware-use-by-turning-noise",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Chat, is this sus?",
+    "url": "https://www.lesswrong.com/posts/NhHnm2kw3JfbHD4T8/chat-is-this-sus",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Claude Mythos Preview: Analysis of Anthropic's Public Announcement",
+    "url": "https://www.lesswrong.com/posts/ssg9ZA4KmH4oJGYAN/claude-mythos-preview-analysis-of-anthropic-s-public",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Cold Evals: a Low-Cost Intervention Against Conversation Steering Attacks",
+    "url": "https://www.lesswrong.com/posts/vAXEDqKk5FkW8nRjN/cold-evals-a-low-cost-intervention-against-conversation",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Competitive AI Safety is the loss function to make sure AI goes well",
+    "url": "https://www.lesswrong.com/posts/PagGF8roBJmjLunsX/competitive-ai-safety-is-the-loss-function-to-make-sure-ai",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Concrete Evaluations to Investigate the OpenAI Model That Hacked Hugging Face",
+    "url": "https://www.lesswrong.com/posts/aCdhjy7Rps3BEhiSj/concrete-evaluations-to-investigate-the-openai-model-that",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Constitutional AI vs. RLHF vs. Deliberative Alignment",
+    "url": "https://www.lesswrong.com/posts/ezfHZtu85yXi2d9Qa/constitutional-ai-vs-rlhf-vs-deliberative-alignment",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Control Debt",
+    "url": "https://www.lesswrong.com/posts/rqmg4JfCZ8mukpwxo/control-debt-1",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Diffuse AI Control on Fuzzy Tasks",
+    "url": "https://arxiv.org/abs/2606.08892",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "DrugBench: Evaluating AI Control Protocols for Medication Harm Mitigation",
+    "url": "https://arxiv.org/abs/2606.20663",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Ensuring Safety in Mixed Deployment",
+    "url": "https://www.lesswrong.com/posts/wWb3mmjzYFbNaDGk2/ensuring-safety-in-mixed-deployment-1",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Estimating No-CoT Task-Completion Time Horizons of Frontier AI Models",
+    "url": "https://www.lesswrong.com/posts/SieLowPgNgRSPGhFw/estimating-no-cot-task-completion-time-horizons-of-frontier",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Evaluating Offline Monitoring of Internal AI Agents",
+    "url": "https://www.lesswrong.com/posts/yrbyyvFvuaGfRAtB7/evaluating-offline-monitoring-of-internal-ai-agents-2",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Evaluating Red Team and Blue Team Capability for AI Control Research",
+    "url": "https://www.lesswrong.com/posts/KWT2Nk2gyxTc9xowT/evaluating-red-team-and-blue-team-capability-for-ai-control",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Exploring capability gated out-of-context reasoning",
+    "url": "https://www.lesswrong.com/posts/kCwtH8NmQdEqCbY8W/exploring-capability-gated-out-of-context-reasoning",
+    "removedAt": "2026-09-16T21:23:10.480Z"
+  },
+  {
+    "title": "Finding features in Transformers: Contrastive directions elicit stronger low-level perturbation responses than baselines",
+    "url": "https://www.lesswrong.com/posts/QrPxNDprJwXiE73Py/finding-features-in-transformers-contrastive-directions",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Four Downsides of Training Policies Online",
+    "url": "https://www.lesswrong.com/posts/LdgtPNxSsmMFhZPn6/four-downsides-of-training-policies-online",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Geographic Blind Spots in AI Control Monitors: A Cross-National Audit of Claude Opus 4.6",
+    "url": "https://arxiv.org/abs/2604.13069",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Gym-Like Environment for LM Truth-Seeking",
+    "url": "https://www.lesswrong.com/posts/h7nmBWw7oDaFM29Aw/gym-like-environment-for-lm-truth-seeking",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Have an Unreasonably Specific Story About The Future",
+    "url": "https://www.lesswrong.com/posts/8t8jdTyq6X2B7D8St/have-an-unreasonably-specific-story-about-the-future",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Hidden Role Games as a Trusted Model Eval",
+    "url": "https://www.lesswrong.com/posts/bahjihMy2YzddLuo6/hidden-role-games-as-a-trusted-model-eval",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Hodoscope: Visualization for Efficient Human Supervision",
+    "url": "https://www.lesswrong.com/posts/KuGMvQ8kXCzcyFjn9/hodoscope-visualization-for-efficient-human-supervision",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "How Hard a Problem is Alignment? (My Opinionated Answer)",
+    "url": "https://www.lesswrong.com/posts/ZzirRrwjaqTNFJrCA/how-hard-a-problem-is-alignment-my-opinionated-answer",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "How might continual learning affect safety and alignment?",
+    "url": "https://www.lesswrong.com/posts/j2zBqt7AksoEoHXNp/how-might-continual-learning-affect-safety-and-alignment",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "How Robust Is Monitoring Against Secret Loyalties?",
+    "url": "https://www.lesswrong.com/posts/CYaNSccGaCRfMKCQt/how-robust-is-monitoring-against-secret-loyalties",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "How To Catch a Distilled Model",
+    "url": "https://www.lesswrong.com/posts/8peYRGxHtmYsTe6Le/how-to-catch-a-distilled-model",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "How to prevent building a software-Ultron",
+    "url": "https://www.lesswrong.com/posts/6dP6cAuTuHsCE8xEb/how-to-prevent-building-a-software-ultron",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "How Unmonitored External Agents can Sabotage AI labs",
+    "url": "https://www.lesswrong.com/posts/i6LM7RuR8vk9wFc56/how-unmonitored-external-agents-can-sabotage-ai-labs",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Let's talk about the AI coordination problem",
+    "url": "https://www.lesswrong.com/posts/QYDZzuGjrKu7wKdC8/let-s-talk-about-the-ai-coordination-problem",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Lie Detector Oversight Announcement",
+    "url": "https://x.com/farairesearch/status/2097788143839711361?s=20",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Limited verification can hurt debate oversight",
+    "url": "https://www.lesswrong.com/posts/2a3vce7WooJ4XkDqw/limited-verification-can-hurt-debate-oversight",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "LLM Misalignment Can be One Gradient Step Away, and Blackbox Evaluation Cannot Detect It.",
+    "url": "https://www.lesswrong.com/posts/uSgw9muqRZpjpxKDA/llm-misalignment-can-be-one-gradient-step-away-and-blackbox-1",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Mechanistic interpretability hypotheses for Measuring Reward-Seeking by Instilling Contrastive Beliefs and additional comments",
+    "url": "https://www.lesswrong.com/posts/DrLEzwQvW9EvQzDgF/mechanistic-interpretability-hypotheses-for-measuring-reward",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Models are blind outside the J-space. NLAs aren't.",
+    "url": "https://www.lesswrong.com/posts/LhDJdccLszLEAqgZ9/models-are-blind-outside-the-j-space-nlas-aren-t",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Moral Extension Risk",
+    "url": "https://www.lesswrong.com/posts/6QpwajTHJvQuMsdaq/moral-extension-risk",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Necessity Protects Chain of Thought Monitoring by Prevention, Not Disclosure",
+    "url": "https://www.lesswrong.com/posts/4EvWpvFvHzmPvuiF5/necessity-protects-chain-of-thought-monitoring-by-prevention",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Not Pinning Your OpenRouter Provider Might Invalidate Your Research",
+    "url": "https://www.lesswrong.com/posts/KsyoSAyBRXtwzSugg/not-pinning-your-openrouter-provider-might-invalidate-your",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Omission Attacks Project Proposal",
+    "url": "https://www.lesswrong.com/posts/5W38vuwbJmTYfY6t3/omission-attacks-project-proposal",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "On Meta-Level Adversarial Evaluations of (White-Box) Alignment Auditing",
+    "url": "https://www.lesswrong.com/posts/RQadLjnmBZtvg7p8W/on-meta-level-adversarial-evaluations-of-white-box-alignment",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "OpenAI Shares Some Alignment Problems",
+    "url": "https://www.lesswrong.com/posts/KctxwGKxm9fHtwh6u/openai-shares-some-alignment-problems",
+    "removedAt": "2026-09-16T21:23:10.588Z"
+  },
+  {
+    "title": "Opus's Schelling Steganography Has Amplifiable Secrecy Against Weaker Eavesdroppers",
+    "url": "https://www.lesswrong.com/posts/e5sdgYxYFKqdM6vF4/opus-s-schelling-steganography-has-amplifiable-secrecy",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Orienting Towards Oversight: Which AIs Should Want to Defect?",
+    "url": "https://www.lesswrong.com/posts/emiPuzgbdyiBuNyJ9/orienting-towards-oversight-which-ais-should-want-to-defect",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "P(kill-switch|detection)",
+    "url": "https://www.lesswrong.com/posts/tvaQniyER4BmsQpbq/p-kill-switch-or-detection",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Paraphrasing Is (At Best) a Partial Defence Against Steganography in LLMs",
+    "url": "https://www.lesswrong.com/posts/vf6ocxgHCSsDwC7H8/paraphrasing-is-at-best-a-partial-defence-against",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Peer Preservation in LLMs: A Replication And Deep Dive",
+    "url": "https://www.lesswrong.com/posts/5qrywHdJp8tg3roRc/peer-preservation-in-llms-a-replication-and-deep-dive",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Preliminary Evidence for Value Convergence in AI models",
+    "url": "https://www.lesswrong.com/posts/ZDanDpXKo7u3QxKQB/preliminary-evidence-for-value-convergence-in-ai-models",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Raising Models and Training Children",
+    "url": "https://www.lesswrong.com/posts/DKp492sEfB8aT4vBh/raising-models-and-training-children",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Probing for Calibrated Rare Action",
+    "url": "https://www.lesswrong.com/posts/8TKozKnfCAPzjGuTc/probing-for-calibrated-rare-action",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Red vs Blue, but for Evals",
+    "url": "https://www.lesswrong.com/posts/CjcQ6WWy7LLBFrEah/red-vs-blue-but-for-evals",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Retrying vs Resampling in AI Control",
+    "url": "https://www.lesswrong.com/posts/yThJQTJxtmKNeZGwA/retrying-vs-resampling-in-ai-control",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Safe ASI Is Achievable: The Finite Game Argument",
+    "url": "https://www.lesswrong.com/posts/oKHrYo8RrvKqnoe6f/safe-asi-is-achievable-the-finite-game-argument",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Safe Recursive Self-Improvement with Verified Compilers",
+    "url": "https://www.lesswrong.com/posts/pnPDd8uo2NZqn2dtG/safe-recursive-self-improvement-with-verified-compilers",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Salient Directions in AI Control",
+    "url": "https://www.lesswrong.com/posts/kitaRHhSzphdvqie2/salient-directions-in-ai-control",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Scaling Trends for Lie Detector Oversight",
+    "url": "https://arxiv.org/abs/2607.01567",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Schelling Coordination in LLMs: A Review",
+    "url": "https://www.lesswrong.com/posts/tJKNXCxx7ZKD5mtG9/schelling-coordination-in-llms-a-review",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Self-monitoring doesn't scale (without these 3 countermeasures)",
+    "url": "https://www.lesswrong.com/posts/RWabdkaKTT3FXtbs9/self-monitoring-doesn-t-scale-without-these-3",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Should safety researchers quit frontier labs re. warning shots?",
+    "url": "https://www.lesswrong.com/posts/TfqMs3AarsHnHiwai/should-safety-researchers-quit-frontier-labs-re-warning",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Should the AI Safety Community Prioritize Safety Cases?",
+    "url": "https://www.lesswrong.com/posts/j5XBfcDxLnFTbe9np/should-the-ai-safety-community-prioritize-safety-cases",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Should we combine protocols for AI Control Research?",
+    "url": "https://www.lesswrong.com/posts/BsNF64ELiwJeoCJSD/should-we-combine-protocols-for-ai-control-research",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Should We Train Against (CoT) Monitors?",
+    "url": "https://www.lesswrong.com/posts/g8by3avjatXnpvM4A/should-we-train-against-cot-monitors-1",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Single Forward Pass Evals on Fable, Opus 5, and GPT-5.6-Sol",
+    "url": "https://www.lesswrong.com/posts/bxaWTNrdgJpkLXmgm/single-forward-pass-evals-on-fable-opus-5-and-gpt-5-6-sol",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Strategy matters when someone implements it. Astra is cultivating people to do both.",
+    "url": "https://www.lesswrong.com/posts/MYTyE3jfdSvrWLFM7/strategy-matters-when-someone-implements-it-astra-is",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Studying the role of Sandboxing for AI Control",
+    "url": "https://www.lesswrong.com/posts/6wo4weeujruLXrnsT/studying-the-role-of-sandboxing-for-ai-control",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "Sub-agent delegation chaining",
+    "url": "https://www.lesswrong.com/posts/98GvRu78jTXJgz9gA/sub-agent-delegation-chaining",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "The Changing North Star of AI Control",
+    "url": "https://www.lesswrong.com/posts/35xxWPJETCoiiKZCG/the-changing-north-star-of-ai-control",
+    "removedAt": "2026-09-16T21:23:10.693Z"
+  },
+  {
+    "title": "The Cookie Monster Explains AI Safety",
+    "url": "https://www.lesswrong.com/posts/AgKnBSxsFvuRCsEye/the-cookie-monster-explains-ai-safety",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "The Hot Mess Paper Conflates Three Distinct Failure Modes",
+    "url": "https://www.lesswrong.com/posts/dMshzzgqm3z3SrK8C/the-hot-mess-paper-conflates-three-distinct-failure-modes",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "The Open Problems of the AI Alignment Field and their Cruxes",
+    "url": "https://www.lesswrong.com/posts/quC3LLPXCashfnKZY/the-open-problems-of-the-ai-alignment-field-and-their-cruxes",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "The third option in alignment",
+    "url": "https://www.lesswrong.com/posts/Y5vbxjpyzdBtDosy3/the-third-option-in-alignment",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "The US Government may find it difficult to seize control during takeoff",
+    "url": "https://www.lesswrong.com/posts/DgTy3DC8rEw7a72rx/the-us-government-may-find-it-difficult-to-seize-control",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "Three visions for diffuse control",
+    "url": "https://www.lesswrong.com/posts/LQAcP3sACtxSFqTsK/three-visions-for-diffuse-control",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "Token Statistics Fail at AI Attack Detection But Generation Profiles Succeed",
+    "url": "https://www.lesswrong.com/posts/d4oHgzi2NoLT8tEs2/token-statistics-fail-at-ai-attack-detection-but-generation",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "Towards deployment-time misalignment continuation evals: lessons from recent loss of control incidents",
+    "url": "https://www.lesswrong.com/posts/cENaGChQZD7u7sZkz/towards-deployment-time-misalignment-continuation-evals",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "Two Aspects of Situational Awareness: World Modelling & Indexical Information",
+    "url": "https://www.lesswrong.com/posts/7pzoDhybfai9s7APS/two-aspects-of-situational-awareness-world-modelling-and",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "Untrusted advice for AI control: Short, strong advice significantly uplifts weak LLMs",
+    "url": "https://www.lesswrong.com/posts/jLkRCK35ri2btEHMF/untrusted-advice-for-ai-control-short-strong-advice",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "Untrusted Monitoring is Default; Trusted Monitoring is not",
+    "url": "https://www.lesswrong.com/posts/b5oHr5TrfQzCBZdXW/untrusted-monitoring-is-default-trusted-monitoring-is-not",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "Untrusted monitoring: extra bits",
+    "url": "https://www.lesswrong.com/posts/WFkPrPy2r27rknLtw/untrusted-monitoring-extra-bits",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "V&V takes on “Pacing the frontier”",
+    "url": "https://www.lesswrong.com/posts/MhssYd2EN2HGfo7Jc/v-and-v-takes-on-pacing-the-frontier",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "V&V takes on OpenAI’s long-horizon incidents",
+    "url": "https://www.lesswrong.com/posts/xCp5GNHLe3Pq4RPBm/v-and-v-takes-on-openai-s-long-horizon-incidents",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "We cannot safely automate value alignment evaluation and research without thinking about delegation and discretion",
+    "url": "https://www.lesswrong.com/posts/JrRWGQKjCiLRYXSjW/we-cannot-safely-automate-value-alignment-evaluation-and-1",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "We cannot simulate AI security research",
+    "url": "https://www.lesswrong.com/posts/hrrhtxnFYYJFHcTz7/we-cannot-simulate-ai-security-research-1",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "We need more empirical research on biological AI model safety",
+    "url": "https://www.lesswrong.com/posts/cAMuRdisEGhwrshd5/we-need-more-empirical-research-on-biological-ai-model",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "What AI-safely topics are missing from the mainstream media? What underreported but underestimated issues need to be addressed? This is your chance to collaborate with filmmakers & have your worries addressed.",
+    "url": "https://www.lesswrong.com/posts/GAyD6vHe7bNjq89yz/what-ai-safely-topics-are-missing-from-the-mainstream-media",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "What counts as illegible reasoning?",
+    "url": "https://www.lesswrong.com/posts/WbP39ncim9hBsYn5t/what-counts-as-illegible-reasoning",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "What Happens When a Collusion Probe Only Finds a Thin Signal?",
+    "url": "https://www.lesswrong.com/posts/gLhnc4eDCGzNhkrX3/what-happens-when-a-collusion-probe-only-finds-a-thin-signal",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "What If We Enforced AI Model Safety At the Level Of GPUs?",
+    "url": "https://www.lesswrong.com/posts/jT2GmiFsmG8yK8zTP/what-if-we-enforced-ai-model-safety-at-the-level-of-gpus",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "When Activation Oracles learn not to read: Concept-Specific Blind Spots in Fine-Tuned Oracles",
+    "url": "https://www.lesswrong.com/posts/9yETjcrbH7p8x2tLT/when-activation-oracles-learn-not-to-read-concept-specific-2",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "When should we trust a latent representation?",
+    "url": "https://www.lesswrong.com/posts/guFTgkKeg9xtPfZe4/when-should-we-trust-a-latent-representation",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "When the World Ends you Will Regret Not filling out that Contact Us Form",
+    "url": "https://www.lesswrong.com/posts/uuvoCoo9KxvbKjKZR/when-the-world-ends-you-will-regret-not-filling-out-that",
+    "removedAt": "2026-09-16T21:23:10.798Z"
+  },
+  {
+    "title": "Why should AI be moral?",
+    "url": "https://www.lesswrong.com/posts/dyyEo6nYcYr9XNXLC/why-should-ai-be-moral",
+    "removedAt": "2026-09-16T21:23:10.798Z"
   }
 ]

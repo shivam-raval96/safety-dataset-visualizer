@@ -162,15 +162,6 @@
     "url": "https://arxiv.org/abs/2607.18966"
   },
   {
-    "title": "Lie Detector Oversight Announcement",
-    "topic": "Monitoring",
-    "kind": "Post",
-    "authors": "FAR.AI",
-    "year": "2026",
-    "summary": "Introduces results showing that training against lie detectors can reduce undetected deception as language models scale.",
-    "url": "https://x.com/farairesearch/status/2097788143839711361?s=20"
-  },
-  {
     "title": "The Model Organism Lottery",
     "topic": "Model organisms",
     "kind": "Paper",
@@ -259,15 +250,6 @@
     "year": "2026",
     "summary": "Finds stronger honesty transfer from off-policy self-report training, alongside a substantial cost to factual reliability.",
     "url": "https://www.lesswrong.com/posts/isPKgCFSHdJ6fKYbK/off-policy-honesty-training-generalizes-better-than-on"
-  },
-  {
-    "title": "Scaling Trends for Lie Detector Oversight",
-    "topic": "Monitoring",
-    "kind": "Paper",
-    "authors": "Hollinsworth et al.",
-    "year": "2026",
-    "summary": "Scales lie-detector oversight to larger models, finding lower undetected deception but sensitivity to distribution shift.",
-    "url": "https://arxiv.org/abs/2607.01567"
   },
   {
     "title": "Held-out Monitors Sometimes Degrade",

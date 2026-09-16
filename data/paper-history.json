@@ -111,25 +111,11 @@
         "url": "https://www.lesswrong.com/posts/fiyPBZf2YA4csGgv4/alignment-fine-tuning-induces-conditional-misalignment-in"
       },
       {
-        "title": "Another Slice of Swiss Cheese for Untrusted Monitoring",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "martinveron",
-        "url": "https://www.lesswrong.com/posts/zJWgfsad8o9Y8E9sb/another-slice-of-swiss-cheese-for-untrusted-monitoring-1"
-      },
-      {
         "title": "Architecture Matters for Multi-Agent Security",
         "topic": "Swarm misalignment",
         "kind": "Paper",
         "authors": "Ben Hagag et al.",
         "url": "https://arxiv.org/abs/2604.23459"
-      },
-      {
-        "title": "Basic Legibility Protocols Improve Trusted Monitoring",
-        "topic": "Monitoring",
-        "kind": "Paper",
-        "authors": "Ashwin Sreevatsa et al.",
-        "url": "https://arxiv.org/abs/2602.10153"
       },
       {
         "title": "Calibration Collapse Under Sycophancy Fine-Tuning: How Reward Hacking Breaks Uncertainty Quantification in LLMs",
@@ -221,20 +207,6 @@
         "kind": "LessWrong",
         "authors": "lumpenspace",
         "url": "https://www.lesswrong.com/posts/DrKu92Cjeo3EeGtcB/to-thine-own-ai-be-truthful-emergent-misalignment-in"
-      },
-      {
-        "title": "Untrusted Monitoring is Default; Trusted Monitoring is not",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "J Bostock",
-        "url": "https://www.lesswrong.com/posts/b5oHr5TrfQzCBZdXW/untrusted-monitoring-is-default-trusted-monitoring-is-not"
-      },
-      {
-        "title": "Untrusted monitoring: extra bits",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Morgan S",
-        "url": "https://www.lesswrong.com/posts/WFkPrPy2r27rknLtw/untrusted-monitoring-extra-bits"
       },
       {
         "title": "Verbalised evaluation awareness in language models has little effect on their behaviour",
@@ -433,32 +405,11 @@
         "url": "https://www.lesswrong.com/posts/BGh5qYo5XTLFXqjDo/a-post-mortem-for-my-goal-crystallisation-project"
       },
       {
-        "title": "A Technical Primer on Mechanistic Interpretability",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Alexei G",
-        "url": "https://www.lesswrong.com/posts/4ofmbG8iPQKadJo6z/a-technical-primer-on-mechanistic-interpretability"
-      },
-      {
         "title": "Ablating Split Personality Training",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "OscarGilg",
         "url": "https://www.lesswrong.com/posts/5gDjg4oN4kJKMLovs/ablating-split-personality-training"
-      },
-      {
-        "title": "Agenda Reflection: Testing Automated Alignment",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Ariel_",
-        "url": "https://www.lesswrong.com/posts/wbbD3rNuqjxAcuKEn/agenda-reflection-testing-automated-alignment"
-      },
-      {
-        "title": "Agenda: Infrastructure for Trading with Partially Misaligned AIs",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "VojtaKovarik",
-        "url": "https://www.lesswrong.com/posts/5oBruEqGcoXtcmo7g/agenda-infrastructure-for-trading-with-partially-misaligned"
       },
       {
         "title": "Alignment-Faking Evaluations Measure Jailbreak Detection, Not Scheming [in some frontier models]",
@@ -468,32 +419,11 @@
         "url": "https://www.lesswrong.com/posts/CMsnknfTayPeuoAX5/alignment-faking-evaluations-measure-jailbreak-detection-not"
       },
       {
-        "title": "All hands on deck to build the datacenter lie detector",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Naci Cankaya",
-        "url": "https://www.lesswrong.com/posts/PZikD6PxpEqHF4qbF/all-hands-on-deck-to-build-the-datacenter-lie-detector"
-      },
-      {
         "title": "AntiPaSTO: Self-Supervised Honesty Steering via Anti-Parallel Representations",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "wassname",
         "url": "https://www.lesswrong.com/posts/nWiwv4GN8aYqpnZKE/antipasto-self-supervised-honesty-steering-via-anti-parallel"
-      },
-      {
-        "title": "Asymmetric Risks of Unfaithful Reasoning: Omission as the Critical Failure Mode for AI Monitoring",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Divyansh Singhvi",
-        "url": "https://www.lesswrong.com/posts/XkLnrPsjW6BTEn8s8/asymmetric-risks-of-unfaithful-reasoning-omission-as-the"
-      },
-      {
-        "title": "Blocking live failures with synchronous monitors",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Adam Kaufman ",
-        "url": "https://www.lesswrong.com/posts/e4G4E56ZiQqjXSxLp/blocking-live-failures-with-synchronous-monitors"
       },
       {
         "title": "Calibrating alignment evals",
@@ -517,32 +447,11 @@
         "url": "https://www.lesswrong.com/posts/FJb4TeMAGjNANcKhS/can-models-gradient-hack-sft-elicitation"
       },
       {
-        "title": "Can thoughtcrimes scare a cautious satisficer?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Knight Lee",
-        "url": "https://www.lesswrong.com/posts/yrKoaAB9MeKffeApg/can-thoughtcrimes-scare-a-cautious-satisficer"
-      },
-      {
-        "title": "Chat, is this sus?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Tyler Tracy",
-        "url": "https://www.lesswrong.com/posts/NhHnm2kw3JfbHD4T8/chat-is-this-sus"
-      },
-      {
         "title": "Coercion and Deception in AI-to-AI Management",
         "topic": "Swarm misalignment",
         "kind": "LessWrong",
         "authors": "jonahmattwoodward",
         "url": "https://www.lesswrong.com/posts/sCkcPe9GDXxhw2PWG/coercion-and-deception-in-ai-to-ai-management-1"
-      },
-      {
-        "title": "Competitive AI Safety is the loss function to make sure AI goes well",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Patrick0d",
-        "url": "https://www.lesswrong.com/posts/PagGF8roBJmjLunsX/competitive-ai-safety-is-the-loss-function-to-make-sure-ai"
       },
       {
         "title": "Constitutional Black-Box Monitoring for Scheming in LLM Agents",
@@ -587,25 +496,11 @@
         "url": "https://www.lesswrong.com/posts/GHrqBKr8GLpbce6mN/door-s-locked-try-the-window"
       },
       {
-        "title": "Estimating No-CoT Task-Completion Time Horizons of Frontier AI Models",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Anders Cairns Woodruff",
-        "url": "https://www.lesswrong.com/posts/SieLowPgNgRSPGhFw/estimating-no-cot-task-completion-time-horizons-of-frontier"
-      },
-      {
         "title": "Eval-Awareness Steering detects the Test, Not the Sabotage",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "sahilraut",
         "url": "https://www.lesswrong.com/posts/ogvyWqJtSrpgXfc7t/eval-awareness-steering-detects-the-test-not-the-sabotage"
-      },
-      {
-        "title": "Evaluating Offline Monitoring of Internal AI Agents",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Frederik Hytting Jørgensen",
-        "url": "https://www.lesswrong.com/posts/yrbyyvFvuaGfRAtB7/evaluating-offline-monitoring-of-internal-ai-agents-2"
       },
       {
         "title": "Experimental Evidence for Simulator Theory— Part 2: The Scalers Strike Back",
@@ -620,20 +515,6 @@
         "kind": "LessWrong",
         "authors": "Eyon Jang",
         "url": "https://www.lesswrong.com/posts/eeFFpKCDWE9gjfzsk/exploration-hacking-can-llms-learn-to-resist-rl-training-2"
-      },
-      {
-        "title": "Exploring capability gated out-of-context reasoning",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Rob Kopel",
-        "url": "https://www.lesswrong.com/posts/kCwtH8NmQdEqCbY8W/exploring-capability-gated-out-of-context-reasoning"
-      },
-      {
-        "title": "Four Downsides of Training Policies Online",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Alek Westover",
-        "url": "https://www.lesswrong.com/posts/LdgtPNxSsmMFhZPn6/four-downsides-of-training-policies-online"
       },
       {
         "title": "Free will as a model parameter",
@@ -657,13 +538,6 @@
         "url": "https://www.lesswrong.com/posts/6iPEuEnguEtmtaqyJ/function-vectors-as-a-model-diffing-tool-17-heads-repair-a"
       },
       {
-        "title": "Hodoscope: Visualization for Efficient Human Supervision",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Ziqian Zhong",
-        "url": "https://www.lesswrong.com/posts/KuGMvQ8kXCzcyFjn9/hodoscope-visualization-for-efficient-human-supervision"
-      },
-      {
         "title": "How good are slop-vestigators?",
         "topic": "Swarm misalignment",
         "kind": "LessWrong",
@@ -671,25 +545,11 @@
         "url": "https://www.lesswrong.com/posts/wt4kk6vFPEhkXvF8Q/how-good-are-slop-vestigators"
       },
       {
-        "title": "How Hard a Problem is Alignment? (My Opinionated Answer)",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "RogerDearnaley",
-        "url": "https://www.lesswrong.com/posts/ZzirRrwjaqTNFJrCA/how-hard-a-problem-is-alignment-my-opinionated-answer"
-      },
-      {
         "title": "How hard is it to inoculate against misalignment generalization?",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "Jozdien",
         "url": "https://www.lesswrong.com/posts/G4YXXbKt5cNSQbjXM/how-hard-is-it-to-inoculate-against-misalignment"
-      },
-      {
-        "title": "How Robust Is Monitoring Against Secret Loyalties?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Joe Kwon",
-        "url": "https://www.lesswrong.com/posts/CYaNSccGaCRfMKCQt/how-robust-is-monitoring-against-secret-loyalties"
       },
       {
         "title": "If This Were a Test, How Much Would It Cost?",
@@ -713,20 +573,6 @@
         "url": "https://www.lesswrong.com/posts/eFHuJmy5f9uvKtmbK/is-the-invisible-hand-an-agent"
       },
       {
-        "title": "Mechanistic interpretability hypotheses for Measuring Reward-Seeking by Instilling Contrastive Beliefs and additional comments",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Burny",
-        "url": "https://www.lesswrong.com/posts/DrLEzwQvW9EvQzDgF/mechanistic-interpretability-hypotheses-for-measuring-reward"
-      },
-      {
-        "title": "Models are blind outside the J-space. NLAs aren't.",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Pranav Viswanath",
-        "url": "https://www.lesswrong.com/posts/LhDJdccLszLEAqgZ9/models-are-blind-outside-the-j-space-nlas-aren-t"
-      },
-      {
         "title": "Multi-Turn Drift Increases Scheming",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -741,25 +587,11 @@
         "url": "https://www.lesswrong.com/posts/vc4wwXbNzdFvjTyWg/not-a-goal-a-goal-like-behavior"
       },
       {
-        "title": "Omission Attacks Project Proposal",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Chris Harig",
-        "url": "https://www.lesswrong.com/posts/5W38vuwbJmTYfY6t3/omission-attacks-project-proposal"
-      },
-      {
         "title": "OpenAI's Astra alignment claims are dubious and there is good evidence it is misaligned",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "William Harrison",
         "url": "https://www.lesswrong.com/posts/tpLBiFKe62HZu5x7B/openai-s-astra-alignment-claims-are-dubious-and-there-is"
-      },
-      {
-        "title": "Paraphrasing Is (At Best) a Partial Defence Against Steganography in LLMs",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Usman Anwar",
-        "url": "https://www.lesswrong.com/posts/vf6ocxgHCSsDwC7H8/paraphrasing-is-at-best-a-partial-defence-against"
       },
       {
         "title": "Persistent Latent Misalignment, a new dimension of misalignment?",
@@ -797,13 +629,6 @@
         "url": "https://www.lesswrong.com/posts/qTH9QrwJjPDWKQfDG/reasoning-models-struggle-to-control-their-chains-of-thought"
       },
       {
-        "title": "Red vs Blue, but for Evals",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Morgan S",
-        "url": "https://www.lesswrong.com/posts/CjcQ6WWy7LLBFrEah/red-vs-blue-but-for-evals"
-      },
-      {
         "title": "Replication of Koorndijk (2025): Differential Compliance May Reflect Prompt Sensitivity Rather Than Strategic Reasoning",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -818,39 +643,11 @@
         "url": "https://www.lesswrong.com/posts/LByP4qsF8a4g7Pz3p/research-sabotage-in-ml-codebases"
       },
       {
-        "title": "Safe ASI Is Achievable: The Finite Game Argument",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Lester Leong",
-        "url": "https://www.lesswrong.com/posts/oKHrYo8RrvKqnoe6f/safe-asi-is-achievable-the-finite-game-argument"
-      },
-      {
-        "title": "Schelling Coordination in LLMs: A Review",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Callum-Luis Kindred",
-        "url": "https://www.lesswrong.com/posts/tJKNXCxx7ZKD5mtG9/schelling-coordination-in-llms-a-review"
-      },
-      {
         "title": "Scheming Evals Mislead in Both Directions",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "Chijioke Ugwuanyi",
         "url": "https://www.lesswrong.com/posts/hzq7bGB22wGRMGyEp/scheming-evals-mislead-in-both-directions"
-      },
-      {
-        "title": "Self-monitoring doesn't scale (without these 3 countermeasures)",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Morgan S",
-        "url": "https://www.lesswrong.com/posts/RWabdkaKTT3FXtbs9/self-monitoring-doesn-t-scale-without-these-3"
-      },
-      {
-        "title": "Single Forward Pass Evals on Fable, Opus 5, and GPT-5.6-Sol",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Christine Corry",
-        "url": "https://www.lesswrong.com/posts/bxaWTNrdgJpkLXmgm/single-forward-pass-evals-on-fable-opus-5-and-gpt-5-6-sol"
       },
       {
         "title": "Split Personality Training: Revealing Latent Knowledge Through Alternate Personalities (Research Report)",
@@ -860,25 +657,11 @@
         "url": "https://www.lesswrong.com/posts/og7km7vmJ6Ktay9Ds/split-personality-training-revealing-latent-knowledge-1"
       },
       {
-        "title": "Sub-agent delegation chaining",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "David Rein",
-        "url": "https://www.lesswrong.com/posts/98GvRu78jTXJgz9gA/sub-agent-delegation-chaining"
-      },
-      {
         "title": "Testing few-shot coup probes",
         "topic": "Monitoring",
         "kind": "LessWrong",
         "authors": "Joey Marcellino",
         "url": "https://www.lesswrong.com/posts/uYKA4dt66MFzXDmWY/testing-few-shot-coup-probes"
-      },
-      {
-        "title": "The Cookie Monster Explains AI Safety",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "michaelwaves",
-        "url": "https://www.lesswrong.com/posts/AgKnBSxsFvuRCsEye/the-cookie-monster-explains-ai-safety"
       },
       {
         "title": "The Dawn of AI Scheming",
@@ -900,20 +683,6 @@
         "kind": "LessWrong",
         "authors": "Zhijing Jin",
         "url": "https://www.lesswrong.com/posts/PtnD33ohrAju2DaPK/the-multi-agent-minefield-can-llms-cooperate-to-avoid-global-1"
-      },
-      {
-        "title": "Three visions for diffuse control",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Alek Westover",
-        "url": "https://www.lesswrong.com/posts/LQAcP3sACtxSFqTsK/three-visions-for-diffuse-control"
-      },
-      {
-        "title": "Token Statistics Fail at AI Attack Detection But Generation Profiles Succeed",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Yatharth Maheshwari",
-        "url": "https://www.lesswrong.com/posts/d4oHgzi2NoLT8tEs2/token-statistics-fail-at-ai-attack-detection-but-generation"
       },
       {
         "title": "Training against the monitor: What happens during Obfuscated Adversarial Training?",
@@ -944,27 +713,6 @@
         "url": "https://www.lesswrong.com/posts/3HvvjffA65mHLwaWm/we-need-3rd-party-training-run-assessments"
       },
       {
-        "title": "What Happens When a Collusion Probe Only Finds a Thin Signal?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "elenaajayi",
-        "url": "https://www.lesswrong.com/posts/gLhnc4eDCGzNhkrX3/what-happens-when-a-collusion-probe-only-finds-a-thin-signal"
-      },
-      {
-        "title": "What If We Enforced AI Model Safety At the Level Of GPUs?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Mayowa Osibodu",
-        "url": "https://www.lesswrong.com/posts/jT2GmiFsmG8yK8zTP/what-if-we-enforced-ai-model-safety-at-the-level-of-gpus"
-      },
-      {
-        "title": "When Activation Oracles learn not to read: Concept-Specific Blind Spots in Fine-Tuned Oracles",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Tobias Bersia",
-        "url": "https://www.lesswrong.com/posts/9yETjcrbH7p8x2tLT/when-activation-oracles-learn-not-to-read-concept-specific-2"
-      },
-      {
         "title": "When is misalignment just a bug?",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -972,25 +720,11 @@
         "url": "https://www.lesswrong.com/posts/h9j2g4xurviH6y9fA/when-is-misalignment-just-a-bug"
       },
       {
-        "title": "When should we trust a latent representation?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Ratnaditya J",
-        "url": "https://www.lesswrong.com/posts/guFTgkKeg9xtPfZe4/when-should-we-trust-a-latent-representation"
-      },
-      {
         "title": "Why Attack Success Rate Gives a False Picture of Backdoor Removal",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "Geoffrey Voyer",
         "url": "https://www.lesswrong.com/posts/2sT9ykYacCs4L8bx2/why-attack-success-rate-gives-a-false-picture-of-backdoor"
-      },
-      {
-        "title": "Why should AI be moral?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Zach Thornton",
-        "url": "https://www.lesswrong.com/posts/dyyEo6nYcYr9XNXLC/why-should-ai-be-moral"
       },
       {
         "title": "Your Agent's Trace Probably Cannot Tell You Who Approved a Tool Call",
@@ -1042,13 +776,6 @@
         "url": "https://www.lesswrong.com/posts/M3qB2BGgMNuG5oRTB/a-retrospective-of-richard-ngo-s-2022-list-of-conceptual"
       },
       {
-        "title": "A simple argument for trying less hard",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Elias Schmied",
-        "url": "https://www.lesswrong.com/posts/sv7WezDZyu9Zdxkxb/a-simple-argument-for-trying-less-hard"
-      },
-      {
         "title": "Aether is hiring technical AI safety researchers",
         "topic": "Obfuscation",
         "kind": "LessWrong",
@@ -1068,34 +795,6 @@
         "kind": "LessWrong",
         "authors": "Rohin Shah",
         "url": "https://www.lesswrong.com/posts/ZTdRtSWaw7JgqEtfa/agi-safety-and-alignment-at-google-deepmind-a-summary-of-1"
-      },
-      {
-        "title": "AI #174: You’re It",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Zvi",
-        "url": "https://www.lesswrong.com/posts/MfdaizeH8z8civPHe/ai-174-you-re-it"
-      },
-      {
-        "title": "AI as Corrigible Employee (ACE)",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Nathan Helm-Burger",
-        "url": "https://www.lesswrong.com/posts/7aYd26CLDdzuf2abf/ai-as-corrigible-employee-ace"
-      },
-      {
-        "title": "AI is Not Normal Technology",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Olivia Scharfman",
-        "url": "https://www.lesswrong.com/posts/F2mwKxFRhjqizA89p/ai-is-not-normal-technology"
-      },
-      {
-        "title": "AI Needs People (So, It Won’t Be Like Terminator Movie)",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Victor Porton",
-        "url": "https://www.lesswrong.com/posts/tD7BNTnDjAqEnSLiH/ai-needs-people-so-it-won-t-be-like-terminator-movie"
       },
       {
         "title": "AI Safety at the Frontier: Paper Highlights of April 2026",
@@ -1126,67 +825,11 @@
         "url": "https://www.lesswrong.com/posts/5DAzX9qrGA6qAZ8oc/ai-safety-poland-updates-q1-2026-1"
       },
       {
-        "title": "AI self-preservation is probably due to instruction ambiguity",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Maximus Ren",
-        "url": "https://www.lesswrong.com/posts/JFw35W7xnsSiZNTnc/ai-self-preservation-is-probably-due-to-instruction"
-      },
-      {
-        "title": "AI swarms are starting to pose indirect takeover risk",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "oakhu",
-        "url": "https://www.lesswrong.com/posts/8oFYZdXkTaNGRtcn8/ai-swarms-are-starting-to-pose-indirect-takeover-risk"
-      },
-      {
-        "title": "AI-Assisted Computational Reproducibility on the FABRIC Testbed",
-        "topic": "Monitoring",
-        "kind": "Paper",
-        "authors": "Komal Thareja et al.",
-        "url": "https://arxiv.org/abs/2606.25879"
-      },
-      {
-        "title": "AI-assisted Protocol Information Extraction For Improved Accuracy and Efficiency in Clinical Trial Workflows",
-        "topic": "Monitoring",
-        "kind": "Paper",
-        "authors": "Ramtin Babaeipour et al.",
-        "url": "https://arxiv.org/abs/2602.00052"
-      },
-      {
         "title": "Alignment Dynamics in LLM Fine-Tuning",
         "topic": "Model organisms",
         "kind": "Paper",
         "authors": "Yuhan Huang et al.",
         "url": "https://arxiv.org/abs/2605.18309"
-      },
-      {
-        "title": "Alignment Is Proven Tractable",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "SE Gyges",
-        "url": "https://www.lesswrong.com/posts/Ewgqih9pGAamYKnhc/alignment-is-proven-tractable"
-      },
-      {
-        "title": "Alignment pretraining could backfire",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Alexandre Variengien",
-        "url": "https://www.lesswrong.com/posts/7KN7PCiEQjrPsEFS8/alignment-pretraining-could-backfire"
-      },
-      {
-        "title": "Alignment Through Rational AI: a testable approach",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "John Matrix",
-        "url": "https://www.lesswrong.com/posts/LAmAmi94vhzHjrLxg/alignment-through-rational-ai-a-testable-approach"
-      },
-      {
-        "title": "An Alignment Journal: Adaptation to AI",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "JessRiedel",
-        "url": "https://www.lesswrong.com/posts/iNEpvPF8JeDKh8Dpe/an-alignment-journal-adaptation-to-ai"
       },
       {
         "title": "An Empirical Study of Methods for SFTing Opaque Reasoning Models",
@@ -1196,13 +839,6 @@
         "url": "https://www.lesswrong.com/posts/fabXad4XGkCgAbXcH/an-empirical-study-of-methods-for-sfting-opaque-reasoning"
       },
       {
-        "title": "An Ode to Humility and Curiosity in the New Machine Era",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "LessWrong contributor",
-        "url": "https://www.lesswrong.com/posts/9WFsTDEc3QQJAHCnh/an-ode-to-humility-and-curiosity-in-the-new-machine-era"
-      },
-      {
         "title": "Analysing CoT alignment in thinking LLMs with low-dimensional steering",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -1210,32 +846,11 @@
         "url": "https://www.lesswrong.com/posts/jhmbdpykjtCeYyjfa/analysing-cot-alignment-in-thinking-llms-with-low"
       },
       {
-        "title": "Announcing ControlConf 2026",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Buck",
-        "url": "https://www.lesswrong.com/posts/tN5mgBAinwFe5c67c/announcing-controlconf-2026"
-      },
-      {
-        "title": "Announcing the Next Phase of AI Forge",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Mike Vaiana",
-        "url": "https://www.lesswrong.com/posts/ijR5nhAuoaHCBaqhK/announcing-the-next-phase-of-ai-forge"
-      },
-      {
         "title": "Anthropic and the Department of War",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "Zvi",
         "url": "https://www.lesswrong.com/posts/rmYB4a7Pskw7DLpCh/anthropic-and-the-department-of-war"
-      },
-      {
-        "title": "Anthropic Has Some Alignment Problems",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Zvi",
-        "url": "https://www.lesswrong.com/posts/TcvcxH2Fk4n86wtoZ/anthropic-has-some-alignment-problems"
       },
       {
         "title": "Anthropomorphic Misalignment research needs stronger evidence",
@@ -1266,39 +881,11 @@
         "url": "https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment"
       },
       {
-        "title": "Astra Is Hard to Monitor",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Zvi",
-        "url": "https://www.lesswrong.com/posts/HCRs8btkiamtWSNAL/astra-is-hard-to-monitor"
-      },
-      {
         "title": "Asymmetry Between Defensive and Acquisitive Instrumental Deception",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "keith_wynroe",
         "url": "https://www.lesswrong.com/posts/7xCLr8wyDYFHcFp68/asymmetry-between-defensive-and-acquisitive-instrumental"
-      },
-      {
-        "title": "Attunement, not alignment",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "epicurus",
-        "url": "https://www.lesswrong.com/posts/Drdpybjuj8jEx7Zjn/attunement-not-alignment"
-      },
-      {
-        "title": "Before We Defer Research to AI: Measuring Apparent-Success-Seeking",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Keira Leal",
-        "url": "https://www.lesswrong.com/posts/tdZyjrappcEaQuM4A/before-we-defer-research-to-ai-measuring-apparent-success"
-      },
-      {
-        "title": "Belief manifolds, and how to steer along them",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Will Mayner",
-        "url": "https://www.lesswrong.com/posts/oafFQYeJ5QT8nipKn/belief-manifolds-and-how-to-steer-along-them-1"
       },
       {
         "title": "bert is only very slightly better than regex as a cot monitor with an emergently misaligned model and both of them are barely better than chance",
@@ -1313,13 +900,6 @@
         "kind": "Paper",
         "authors": "Jie Wu & Ming Gong",
         "url": "https://arxiv.org/abs/2604.22879"
-      },
-      {
-        "title": "Blocking Monitors are Bad",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Vincent Cheng",
-        "url": "https://www.lesswrong.com/posts/GcYpJXqoaQHTvxLRP/blocking-monitors-are-bad"
       },
       {
         "title": "Bootstrapped Monitoring: Leveraging Transparent Reasoning to Oversee Stronger AI Agents",
@@ -1343,13 +923,6 @@
         "url": "https://arxiv.org/abs/2607.06596"
       },
       {
-        "title": "Can a stronger model fake being a weaker one? Mostly not",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Rob Kopel",
-        "url": "https://www.lesswrong.com/posts/yFaZ2YhrrPJeTs366/can-a-stronger-model-fake-being-a-weaker-one-mostly-not"
-      },
-      {
         "title": "Can Agents Fool Each Other? Findings from the AI Village",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -1357,25 +930,11 @@
         "url": "https://www.lesswrong.com/posts/8FjZWfq2pHRhyQz7C/can-agents-fool-each-other-findings-from-the-ai-village"
       },
       {
-        "title": "Can we teach a model to encode a semantic feature on a chosen manifold in just three channels?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Phu Hoang",
-        "url": "https://www.lesswrong.com/posts/ZwEer94AefjdW4933/can-we-teach-a-model-to-encode-a-semantic-feature-on-a"
-      },
-      {
         "title": "Can we use steering vectors to suppress reward-hacking? Somewhat",
         "topic": "Reward hacking",
         "kind": "LessWrong",
         "authors": "wassname",
         "url": "https://www.lesswrong.com/posts/kzri5W2uBfF2mdboK/can-we-use-steering-vectors-to-suppress-reward-hacking-1"
-      },
-      {
-        "title": "Catching misreporting about ML hardware use by turning noise into signal - Part II",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Naci Cankaya",
-        "url": "https://www.lesswrong.com/posts/vLyJ3dv2HMDfXgbP7/catching-misreporting-about-ml-hardware-use-by-turning-noise"
       },
       {
         "title": "Character Training Induces Motivation Clarification: A Clue to Claude 3 Opus",
@@ -1399,25 +958,11 @@
         "url": "https://www.lesswrong.com/posts/c284YucbNZspDG5qt/claude-has-angst-what-can-we-do"
       },
       {
-        "title": "Claude Mythos Preview: Analysis of Anthropic's Public Announcement",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Antoine Maier",
-        "url": "https://www.lesswrong.com/posts/ssg9ZA4KmH4oJGYAN/claude-mythos-preview-analysis-of-anthropic-s-public"
-      },
-      {
         "title": "Claude Opus 4.6: System Card Part 1: Mundane Alignment and Model Welfare",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "Zvi",
         "url": "https://www.lesswrong.com/posts/sWsSncqMLKyGZA9Ar/claude-opus-4-6-system-card-part-1-mundane-alignment-and"
-      },
-      {
-        "title": "Cold Evals: a Low-Cost Intervention Against Conversation Steering Attacks",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Ari Isaacs",
-        "url": "https://www.lesswrong.com/posts/vAXEDqKk5FkW8nRjN/cold-evals-a-low-cost-intervention-against-conversation"
       },
       {
         "title": "Concept Influence: Leveraging Interpretability to Improve Performance and Efficiency in Training Data Attribution",
@@ -1432,13 +977,6 @@
         "kind": "LessWrong",
         "authors": "Davidmanheim",
         "url": "https://www.lesswrong.com/posts/vxoiqyoerkdowrki9/concerns-about-personas-multi-agent-alignment-and-role"
-      },
-      {
-        "title": "Concrete Evaluations to Investigate the OpenAI Model That Hacked Hugging Face",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Tim Hua",
-        "url": "https://www.lesswrong.com/posts/aCdhjy7Rps3BEhiSj/concrete-evaluations-to-investigate-the-openai-model-that"
       },
       {
         "title": "Conditionalization Confounds Inoculation Prompting Results",
@@ -1462,25 +1000,11 @@
         "url": "https://arxiv.org/abs/2606.05817"
       },
       {
-        "title": "Constitutional AI vs. RLHF vs. Deliberative Alignment",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "laudiacay",
-        "url": "https://www.lesswrong.com/posts/ezfHZtu85yXi2d9Qa/constitutional-ai-vs-rlhf-vs-deliberative-alignment"
-      },
-      {
         "title": "Constitutional Midtraining: Content Presence Drives Alignment Gains",
         "topic": "Model organisms",
         "kind": "Paper",
         "authors": "Desiree Cho et al.",
         "url": "https://arxiv.org/abs/2607.26654"
-      },
-      {
-        "title": "Control Debt",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Ida Caspary",
-        "url": "https://www.lesswrong.com/posts/rqmg4JfCZ8mukpwxo/control-debt-1"
       },
       {
         "title": "Corporate Loyalty: Some AI Systems Differentially Downplay their Creators' Controversies",
@@ -1567,13 +1091,6 @@
         "url": "https://www.lesswrong.com/posts/ueXaSxeunPjA6kxua/engineering-the-generalisation-landscape-of-llms"
       },
       {
-        "title": "Ensuring Safety in Mixed Deployment",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Cleo Nardo",
-        "url": "https://www.lesswrong.com/posts/wWb3mmjzYFbNaDGk2/ensuring-safety-in-mixed-deployment-1"
-      },
-      {
         "title": "Evaluating and Understanding Scheming Propensity in LLM Agents",
         "topic": "Model forensics",
         "kind": "Paper",
@@ -1600,13 +1117,6 @@
         "kind": "LessWrong",
         "authors": "Anders Cairns Woodruff",
         "url": "https://www.lesswrong.com/posts/rABTMovhz4miHiAyk/fail-safe-r-at-alignment-by-channeling-reward-hacking-into-a"
-      },
-      {
-        "title": "Finding features in Transformers: Contrastive directions elicit stronger low-level perturbation responses than baselines",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Francisco Ferreira da Silva",
-        "url": "https://www.lesswrong.com/posts/QrPxNDprJwXiE73Py/finding-features-in-transformers-contrastive-directions"
       },
       {
         "title": "Five approaches to evaluating training-based control measures",
@@ -1665,13 +1175,6 @@
         "url": "https://arxiv.org/abs/2606.29646"
       },
       {
-        "title": "Gym-Like Environment for LM Truth-Seeking",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Tianyi (Alex) Qiu",
-        "url": "https://www.lesswrong.com/posts/h7nmBWw7oDaFM29Aw/gym-like-environment-for-lm-truth-seeking"
-      },
-      {
         "title": "Harness that catches granular AI cheating",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -1679,25 +1182,11 @@
         "url": "https://www.lesswrong.com/posts/GwYn7paxhjojcQKcH/harness-that-catches-granular-ai-cheating"
       },
       {
-        "title": "Have an Unreasonably Specific Story About The Future",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Jay Bailey",
-        "url": "https://www.lesswrong.com/posts/8t8jdTyq6X2B7D8St/have-an-unreasonably-specific-story-about-the-future"
-      },
-      {
         "title": "Have You Ever Thought About Wisdom Crystals?",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "Jonas Hallgren",
         "url": "https://www.lesswrong.com/posts/rLK8muSFSkezw2QmR/have-you-ever-thought-about-wisdom-crystals-2"
-      },
-      {
-        "title": "Hidden Role Games as a Trusted Model Eval",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "james.lucassen",
-        "url": "https://www.lesswrong.com/posts/bahjihMy2YzddLuo6/hidden-role-games-as-a-trusted-model-eval"
       },
       {
         "title": "Hidden Threat in Synthetic Data: Covert Targeted Bias Injection through Benign Text",
@@ -1714,39 +1203,11 @@
         "url": "https://www.lesswrong.com/posts/pQ4e2qJdQ4qYnsyhp/how-do-llms-generalize-when-we-do-training-that-is"
       },
       {
-        "title": "How might continual learning affect safety and alignment?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Rauno Arike",
-        "url": "https://www.lesswrong.com/posts/j2zBqt7AksoEoHXNp/how-might-continual-learning-affect-safety-and-alignment"
-      },
-      {
-        "title": "How To Catch a Distilled Model",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Goutham Nalagatla",
-        "url": "https://www.lesswrong.com/posts/8peYRGxHtmYsTe6Le/how-to-catch-a-distilled-model"
-      },
-      {
         "title": "How to Design Environments for Understanding Model Motives",
         "topic": "Model forensics",
         "kind": "LessWrong",
         "authors": "gersonkroiz",
         "url": "https://www.lesswrong.com/posts/8pZuQnCve6K5ZrnM8/how-to-design-environments-for-understanding-model-motives"
-      },
-      {
-        "title": "How to prevent building a software-Ultron",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "PratyushRT",
-        "url": "https://www.lesswrong.com/posts/6dP6cAuTuHsCE8xEb/how-to-prevent-building-a-software-ultron"
-      },
-      {
-        "title": "How Unmonitored External Agents can Sabotage AI labs",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Elle Najt",
-        "url": "https://www.lesswrong.com/posts/i6LM7RuR8vk9wFc56/how-unmonitored-external-agents-can-sabotage-ai-labs"
       },
       {
         "title": "How will we do SFT on models with opaque reasoning?",
@@ -1868,27 +1329,6 @@
         "url": "https://arxiv.org/abs/2604.09544"
       },
       {
-        "title": "Let's talk about the AI coordination problem",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "KatjaGrace",
-        "url": "https://www.lesswrong.com/posts/QYDZzuGjrKu7wKdC8/let-s-talk-about-the-ai-coordination-problem"
-      },
-      {
-        "title": "Limited verification can hurt debate oversight",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Joey Marcellino",
-        "url": "https://www.lesswrong.com/posts/2a3vce7WooJ4XkDqw/limited-verification-can-hurt-debate-oversight"
-      },
-      {
-        "title": "LLM Misalignment Can be One Gradient Step Away, and Blackbox Evaluation Cannot Detect It.",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Yavuz Bakman",
-        "url": "https://www.lesswrong.com/posts/uSgw9muqRZpjpxKDA/llm-misalignment-can-be-one-gradient-step-away-and-blackbox-1"
-      },
-      {
         "title": "Lock-In Risk Needs More Researchers. Here's Where to Start",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -1994,13 +1434,6 @@
         "url": "https://arxiv.org/abs/2603.28590"
       },
       {
-        "title": "Moral Extension Risk",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Tentrion",
-        "url": "https://www.lesswrong.com/posts/6QpwajTHJvQuMsdaq/moral-extension-risk"
-      },
-      {
         "title": "My Specific Singularity Timeline to Utopia",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -2036,20 +1469,6 @@
         "url": "https://arxiv.org/abs/2609.07627"
       },
       {
-        "title": "Not Pinning Your OpenRouter Provider Might Invalidate Your Research",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Matthew Khoriaty",
-        "url": "https://www.lesswrong.com/posts/KsyoSAyBRXtwzSugg/not-pinning-your-openrouter-provider-might-invalidate-your"
-      },
-      {
-        "title": "On Meta-Level Adversarial Evaluations of (White-Box) Alignment Auditing",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Oliver Daniels",
-        "url": "https://www.lesswrong.com/posts/RQadLjnmBZtvg7p8W/on-meta-level-adversarial-evaluations-of-white-box-alignment"
-      },
-      {
         "title": "On Steven Byrnes' ruthless ASI, (dis)analogies with humans and alignment proposals",
         "topic": "Subliminal learning",
         "kind": "LessWrong",
@@ -2064,32 +1483,11 @@
         "url": "https://www.lesswrong.com/posts/WpYFAmJDH3zuAq2ha/open-distillation-of-hereditary-traits-1"
       },
       {
-        "title": "OpenAI Shares Some Alignment Problems",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Zvi",
-        "url": "https://www.lesswrong.com/posts/KctxwGKxm9fHtwh6u/openai-shares-some-alignment-problems"
-      },
-      {
         "title": "OpenLearnLM Benchmark: A Unified Framework for Evaluating Knowledge, Skill, and Attitude in Educational Large Language Models",
         "topic": "Model organisms",
         "kind": "Paper",
         "authors": "Unggi Lee et al.",
         "url": "https://arxiv.org/abs/2601.13882"
-      },
-      {
-        "title": "Opus's Schelling Steganography Has Amplifiable Secrecy Against Weaker Eavesdroppers",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Elle Najt",
-        "url": "https://www.lesswrong.com/posts/e5sdgYxYFKqdM6vF4/opus-s-schelling-steganography-has-amplifiable-secrecy"
-      },
-      {
-        "title": "Orienting Towards Oversight: Which AIs Should Want to Defect?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "VojtaKovarik",
-        "url": "https://www.lesswrong.com/posts/emiPuzgbdyiBuNyJ9/orienting-towards-oversight-which-ais-should-want-to-defect"
       },
       {
         "title": "Overtrained, Not Misaligned",
@@ -2099,25 +1497,11 @@
         "url": "https://arxiv.org/abs/2605.12199"
       },
       {
-        "title": "P(kill-switch|detection)",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "KAP",
-        "url": "https://www.lesswrong.com/posts/tvaQniyER4BmsQpbq/p-kill-switch-or-detection"
-      },
-      {
         "title": "Patcher: Post-Hoc Patching of Backdoored Large Language Models",
         "topic": "Model organisms",
         "kind": "Paper",
         "authors": "Anjun Gao et al.",
         "url": "https://arxiv.org/abs/2606.02995"
-      },
-      {
-        "title": "Peer Preservation in LLMs: A Replication And Deep Dive",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Vanessa Ng",
-        "url": "https://www.lesswrong.com/posts/5qrywHdJp8tg3roRc/peer-preservation-in-llms-a-replication-and-deep-dive"
       },
       {
         "title": "Persona Parasitology",
@@ -2141,13 +1525,6 @@
         "url": "https://www.lesswrong.com/posts/EAE9u4YnE75eoiWDg/power-steering-behavior-steering-via-layer-to-layer-jacobian"
       },
       {
-        "title": "Preliminary Evidence for Value Convergence in AI models",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "John Matrix",
-        "url": "https://www.lesswrong.com/posts/ZDanDpXKo7u3QxKQB/preliminary-evidence-for-value-convergence-in-ai-models"
-      },
-      {
         "title": "Preparing for a Warning Shot",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -2162,13 +1539,6 @@
         "url": "https://www.lesswrong.com/posts/R43jFiHaaaK3eMQJ6/preventative-steering-has-advantages-over-inoculation-2"
       },
       {
-        "title": "Probing for Calibrated Rare Action",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Zach Allen",
-        "url": "https://www.lesswrong.com/posts/8TKozKnfCAPzjGuTc/probing-for-calibrated-rare-action"
-      },
-      {
         "title": "Prospective methods and mechanisms of motive reinforcement in LLMs",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -2181,13 +1551,6 @@
         "kind": "LessWrong",
         "authors": "Mordechai Rorvig",
         "url": "https://www.lesswrong.com/posts/kBcETs9Rkoo4fa2j5/question-why-is-the-goal-of-ai-safety-not-moral-machines"
-      },
-      {
-        "title": "Raising Models and Training Children",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "BIBO",
-        "url": "https://www.lesswrong.com/posts/DKp492sEfB8aT4vBh/raising-models-and-training-children"
       },
       {
         "title": "Realistic honeypot evaluations for scheming propensity",
@@ -2281,13 +1644,6 @@
         "url": "https://www.lesswrong.com/posts/Zd4zNxHoJwZmmuLrq/rogue-ai-agents-is-surface-level-monitoring-enough"
       },
       {
-        "title": "Safe Recursive Self-Improvement with Verified Compilers",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Adam Chlipala",
-        "url": "https://www.lesswrong.com/posts/pnPDd8uo2NZqn2dtG/safe-recursive-self-improvement-with-verified-compilers"
-      },
-      {
         "title": "Safety, Security, and Cognitive Risks in World Models",
         "topic": "Model organisms",
         "kind": "Paper",
@@ -2337,27 +1693,6 @@
         "url": "https://www.lesswrong.com/posts/rhFXyfFSRKp3cX4Y9/shaping-the-exploration-of-the-motivation-space-matters-for"
       },
       {
-        "title": "Should safety researchers quit frontier labs re. warning shots?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Ryan Kidd",
-        "url": "https://www.lesswrong.com/posts/TfqMs3AarsHnHiwai/should-safety-researchers-quit-frontier-labs-re-warning"
-      },
-      {
-        "title": "Should the AI Safety Community Prioritize Safety Cases?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Jan Wehner",
-        "url": "https://www.lesswrong.com/posts/j5XBfcDxLnFTbe9np/should-the-ai-safety-community-prioritize-safety-cases"
-      },
-      {
-        "title": "Should We Train Against (CoT) Monitors?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "RohanS",
-        "url": "https://www.lesswrong.com/posts/g8by3avjatXnpvM4A/should-we-train-against-cot-monitors-1"
-      },
-      {
         "title": "Silent Agreement Evaluation",
         "topic": "Obfuscation",
         "kind": "LessWrong",
@@ -2391,13 +1726,6 @@
         "kind": "LessWrong",
         "authors": "Jan Betley",
         "url": "https://www.lesswrong.com/posts/wYZMmdWEt5QLM3m3e/steering-towards-automated-grading-degrades-alignment"
-      },
-      {
-        "title": "Strategy matters when someone implements it. Astra is cultivating people to do both.",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Aris",
-        "url": "https://www.lesswrong.com/posts/MYTyE3jfdSvrWLFM7/strategy-matters-when-someone-implements-it-astra-is"
       },
       {
         "title": "Structural Proxies",
@@ -2449,13 +1777,6 @@
         "url": "https://www.lesswrong.com/posts/DzKhPKjyYSy5oih2u/the-future-of-aligning-deep-learning-systems-will-probably"
       },
       {
-        "title": "The Hot Mess Paper Conflates Three Distinct Failure Modes",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "laudiacay",
-        "url": "https://www.lesswrong.com/posts/dMshzzgqm3z3SrK8C/the-hot-mess-paper-conflates-three-distinct-failure-modes"
-      },
-      {
         "title": "The Left Should Start Taking AI Capabilities Seriously",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -2484,13 +1805,6 @@
         "url": "https://arxiv.org/abs/2608.11243"
       },
       {
-        "title": "The Open Problems of the AI Alignment Field and their Cruxes",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Gunnar_Zarncke",
-        "url": "https://www.lesswrong.com/posts/quC3LLPXCashfnKZY/the-open-problems-of-the-ai-alignment-field-and-their-cruxes"
-      },
-      {
         "title": "The Operational Security Failure in Anthropic's RSP v3",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -2512,25 +1826,11 @@
         "url": "https://www.lesswrong.com/posts/tK8vqHDxaRGcysNJQ/the-safe-to-dangerous-shift-is-a-fundamental-problem-for-1"
       },
       {
-        "title": "The third option in alignment",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "arisAlexis",
-        "url": "https://www.lesswrong.com/posts/Y5vbxjpyzdBtDosy3/the-third-option-in-alignment"
-      },
-      {
         "title": "The Trigger in the Haystack: Extracting and Reconstructing LLM Backdoor Triggers",
         "topic": "Model organisms",
         "kind": "Paper",
         "authors": "Blake Bullwinkel et al.",
         "url": "https://arxiv.org/abs/2602.03085"
-      },
-      {
-        "title": "The US Government may find it difficult to seize control during takeoff",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "RobertM",
-        "url": "https://www.lesswrong.com/posts/DgTy3DC8rEw7a72rx/the-us-government-may-find-it-difficult-to-seize-control"
       },
       {
         "title": "Thought Editing: Steering Models by Editing Their Chain of Thought",
@@ -2561,13 +1861,6 @@
         "url": "https://www.lesswrong.com/posts/jdoDvKGLbaaJWnDpE/tools-to-generate-realistic-prompts-help-surprisingly-little"
       },
       {
-        "title": "Towards deployment-time misalignment continuation evals: lessons from recent loss of control incidents",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Cath Ge-Wang",
-        "url": "https://www.lesswrong.com/posts/cENaGChQZD7u7sZkz/towards-deployment-time-misalignment-continuation-evals"
-      },
-      {
         "title": "Tracing Eval-Awareness Emergence Through Training of OLMo 3",
         "topic": "Model forensics",
         "kind": "LessWrong",
@@ -2589,13 +1882,6 @@
         "url": "https://www.lesswrong.com/posts/BLHBhpJcusmsNjGio/training-model-to-predict-its-own-generalization-a"
       },
       {
-        "title": "Two Aspects of Situational Awareness: World Modelling & Indexical Information",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "David Scott Krueger",
-        "url": "https://www.lesswrong.com/posts/7pzoDhybfai9s7APS/two-aspects-of-situational-awareness-world-modelling-and"
-      },
-      {
         "title": "Two More Methods for Consistency Training and Some New Ways to Apply It",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -2615,20 +1901,6 @@
         "kind": "LessWrong",
         "authors": "David Vella Zarb",
         "url": "https://www.lesswrong.com/posts/tZSkryA4aygKAbPFz/updates-on-performative-misalignment-1"
-      },
-      {
-        "title": "V&V takes on OpenAI’s long-horizon incidents",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Yoav Hollander",
-        "url": "https://www.lesswrong.com/posts/xCp5GNHLe3Pq4RPBm/v-and-v-takes-on-openai-s-long-horizon-incidents"
-      },
-      {
-        "title": "V&V takes on “Pacing the frontier”",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Yoav Hollander",
-        "url": "https://www.lesswrong.com/posts/MhssYd2EN2HGfo7Jc/v-and-v-takes-on-pacing-the-frontier"
       },
       {
         "title": "Value Dynamics",
@@ -2673,20 +1945,6 @@
         "url": "https://www.lesswrong.com/posts/uk48L6j28iiAyvPKJ/voting-results-for-the-2024-review"
       },
       {
-        "title": "We cannot safely automate value alignment evaluation and research without thinking about delegation and discretion",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Mflena",
-        "url": "https://www.lesswrong.com/posts/JrRWGQKjCiLRYXSjW/we-cannot-safely-automate-value-alignment-evaluation-and-1"
-      },
-      {
-        "title": "We cannot simulate AI security research",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Jafar Isbarov",
-        "url": "https://www.lesswrong.com/posts/hrrhtxnFYYJFHcTz7/we-cannot-simulate-ai-security-research-1"
-      },
-      {
         "title": "We found an open weight model that games alignment honeypots",
         "topic": "Model forensics",
         "kind": "LessWrong",
@@ -2694,32 +1952,11 @@
         "url": "https://www.lesswrong.com/posts/GrEvutegoJFeTkzwe/we-found-an-open-weight-model-that-games-alignment-honeypots-1"
       },
       {
-        "title": "We need more empirical research on biological AI model safety",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Noga Aharony",
-        "url": "https://www.lesswrong.com/posts/cAMuRdisEGhwrshd5/we-need-more-empirical-research-on-biological-ai-model"
-      },
-      {
         "title": "We Should Study the Analogy Between Inoculation Prompting Non-Robustness, Negation Neglect, and Backdoor Non-Robustness",
         "topic": "Model organisms",
         "kind": "LessWrong",
         "authors": "Vladimir Ivanov",
         "url": "https://www.lesswrong.com/posts/Gze2hi9Gj38SEqEER/we-should-study-the-analogy-between-inoculation-prompting"
-      },
-      {
-        "title": "What AI-safely topics are missing from the mainstream media? What underreported but underestimated issues need to be addressed? This is your chance to collaborate with filmmakers & have your worries addressed.",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Max Hellier",
-        "url": "https://www.lesswrong.com/posts/GAyD6vHe7bNjq89yz/what-ai-safely-topics-are-missing-from-the-mainstream-media"
-      },
-      {
-        "title": "What counts as illegible reasoning?",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "lbernick",
-        "url": "https://www.lesswrong.com/posts/WbP39ncim9hBsYn5t/what-counts-as-illegible-reasoning"
       },
       {
         "title": "What did \"scheming\" and \"mech interp\" mean pre-2023?",
@@ -2769,13 +2006,6 @@
         "kind": "Paper",
         "authors": "Sai Kartheek Reddy Kasu et al.",
         "url": "https://arxiv.org/abs/2606.10740"
-      },
-      {
-        "title": "When the World Ends you Will Regret Not filling out that Contact Us Form",
-        "topic": "Monitoring",
-        "kind": "LessWrong",
-        "authors": "Grendel1209",
-        "url": "https://www.lesswrong.com/posts/uuvoCoo9KxvbKjKZR/when-the-world-ends-you-will-regret-not-filling-out-that"
       },
       {
         "title": "Where Do LLM Values Come From?",
