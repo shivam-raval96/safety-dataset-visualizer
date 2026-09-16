@@ -19,8 +19,9 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "discovered-papers.json"
+CURATED = ROOT / "data" / "curated-papers.json"
+REMOVED = ROOT / "data" / "removed-papers.json"
 HISTORY = ROOT / "data" / "paper-history.json"
-COMPONENT = ROOT / "app" / "PaperAtlas.tsx"
 ARXIV_API = "https://export.arxiv.org/api/query"
 ARXIV_SEARCH = "https://arxiv.org/search/"
 LESSWRONG_API = "https://www.lesswrong.com/graphql"
@@ -288,11 +289,11 @@ def canonical(url: str) -> str:
 
 def known() -> tuple[set[str], set[str]]:
     catalog = json.loads(CATALOG.read_text()) if CATALOG.exists() else []
-    component = COMPONENT.read_text()
-    urls = {canonical(item["url"]) for item in catalog}
-    urls.update(canonical(url) for url in re.findall(r'url: "(https?://[^"]+)"', component))
-    titles = {item["title"].casefold() for item in catalog}
-    titles.update(title.casefold() for title in re.findall(r'title: "([^"]+)"', component))
+    curated = json.loads(CURATED.read_text()) if CURATED.exists() else []
+    removed = json.loads(REMOVED.read_text()) if REMOVED.exists() else []
+    all_known = catalog + curated + removed
+    urls = {canonical(item["url"]) for item in all_known}
+    titles = {item["title"].casefold() for item in all_known}
     return urls, titles
 
 

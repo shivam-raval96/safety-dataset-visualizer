@@ -32,7 +32,7 @@ export function catalogTargets() {
   const discovered = (file, kind) => JSON.parse(readFileSync(join(root, 'data', file), 'utf8')).map((item) => ({ kind, title: item.title || item.name, url: item.url }));
   const excluded = new Set(['text-classification', 'question-answering', 'image-classification', 'translation', 'automatic-speech-recognition']);
   const distills = JSON.parse(readFileSync(join(root, 'data/distill-models.json'), 'utf8')).models.filter((model) => !excluded.has(model.pipeline)).map((model) => ({ kind: 'model', title: model.id, url: `https://huggingface.co/${model.id}` }));
-  return [...datasets, ...curatedTargets('app/PaperAtlas.tsx', 'curatedSources', 'paper'), ...curatedTargets('app/OrganismAtlas.tsx', 'curatedOrganisms', 'model'), ...discovered('discovered-papers.json', 'paper'), ...discovered('discovered-organisms.json', 'model'), ...distills];
+  return [...datasets, ...discovered('curated-papers.json', 'paper'), ...curatedTargets('app/OrganismAtlas.tsx', 'curatedOrganisms', 'model'), ...discovered('discovered-papers.json', 'paper'), ...discovered('discovered-organisms.json', 'model'), ...distills];
 }
 
 export function appendComment(event, markdown, targets) {

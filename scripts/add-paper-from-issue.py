@@ -13,6 +13,8 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / 'data/discovered-papers.json'
+CURATED = ROOT / 'data/curated-papers.json'
+REMOVED = ROOT / 'data/removed-papers.json'
 COMPONENT = ROOT / 'app/PaperAtlas.tsx'
 
 
@@ -75,7 +77,8 @@ def validate_metadata(identifier, values):
 
 
 def existing(identifier, catalog, component):
-    urls = [item['url'] for item in catalog] + re.findall(r'url:\s*"([^"]+)"', component)
+    known = catalog + json.loads(CURATED.read_text()) + json.loads(REMOVED.read_text())
+    urls = [item['url'] for item in known]
     for url in urls:
         try:
             if arxiv_id(url) == identifier:

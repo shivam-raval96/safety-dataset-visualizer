@@ -1,0 +1,71 @@
+name: Remove paper
+
+on:
+  issues:
+    types: [opened, reopened]
+
+permissions:
+  actions: write
+  contents: write
+  issues: write
+
+concurrency:
+  group: paper-removal-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  remove-paper:
+    if: github.event.issue.state == 'open' && startsWith(github.event.issue.title, '[Remove paper]') && github.event.issue.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPOSITORY_OWNER: ${{ github.repository_owner }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Remove requested paper
+        run: node scripts/remove-paper-from-issue.mjs
+      - name: Validate site
+        run: |
+          npm ci
+          node --test tests/paper-removal.test.mjs
+          npm run lint
+          npm run build:static
+          python scripts/build-paper-pruner.py
+      - name: Commit removal
+        run: |
+          git config user.name "paper-atlas-bot"
+          git config user.email "paper-atlas-bot@users.noreply.github.com"
+          git add data/curated-papers.json data/discovered-papers.json data/paper-history.json data/removed-papers.json public/paper-pruner.html
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "data: remove paper requested in issue #$ISSUE_NUMBER"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            git pull --rebase origin main
+            npm run build:static
+            python scripts/build-paper-pruner.py
+            git add data/curated-papers.json data/discovered-papers.json data/paper-history.json data/removed-papers.json public/paper-pruner.html
+            git commit --amend --no-edit
+          done
+          git push origin HEAD:main
+      - name: Deploy and verify Pages
+        run: python scripts/deploy-paper-request.py
+      - name: Close completed request
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "Removed from Paper Atlas and its history. The daily discovery workflow will not add it again."
+          gh issue close "$ISSUE_NUMBER" --reason completed
+      - name: Report failure
+        if: failure()
+        run: gh issue comment "$ISSUE_NUMBER" --body "The paper removal could not finish. The issue remains open for retry. Details: https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
