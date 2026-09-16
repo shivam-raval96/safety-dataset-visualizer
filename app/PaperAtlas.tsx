@@ -40,20 +40,19 @@ const topics = [
 const curatedSources: Source[] = curated.map((source) => ({ ...source, year: Number(source.year), kind: source.kind as Source["kind"] }));
 const sources = [...curatedSources, ...(discovered as Source[])];
 
-// The review backlog contains several hundred readings. Keep the original
-// single temporal spiral per topic, but give the three large clusters enough
-// room that their outer years do not collide with neighboring topics.
-const WIDTH = 15000;
-const HEIGHT = 16000;
+// Keep one chronological spiral per topic while packing the cluster envelopes
+// into a compact overview. The canvas dimensions drive the initial fit zoom.
+const WIDTH = 8000;
+const HEIGHT = 7200;
 const topicCenters = [
-  { x: 4500, y: 4500 },
-  { x: 10500, y: 3000 },
-  { x: 5000, y: 11500 },
-  { x: 10500, y: 9000 },
-  { x: 10000, y: 13500 },
-  { x: 12500, y: 14500 },
-  { x: 7500, y: 12500 },
-  { x: 2500, y: 10500 },
+  { x: 1600, y: 1500 },
+  { x: 4000, y: 1400 },
+  { x: 6400, y: 1600 },
+  { x: 1700, y: 3800 },
+  { x: 4100, y: 3700 },
+  { x: 6500, y: 3800 },
+  { x: 2600, y: 6000 },
+  { x: 5400, y: 5800 },
 ];
 const centers = topics.map((topic, index) => ({ ...topic, ...topicCenters[index] }));
 const yearColors: Record<number, { band: string; label: string }> = {
