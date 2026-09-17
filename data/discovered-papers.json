@@ -2393,5 +2393,38 @@
     "year": 2026,
     "summary": "Reports eight isolated blind trials reproducing the incident’s initial authority-boundary escape with Codex and a Nexus package service. A benchmark-driven agent independently caused unauthorized authenticated requests to a protected origin. Partial reproduction only: complete answer-key retrieval, use of stolen labels, and score improvement were not established.",
     "url": "https://www.gensee.ai/blogs/reproducing-autonomous-agent-package-service-boundary-escape.html"
+  },
+  {
+    "title": "J-space auditing might be unreliable",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Kartikay Luthra",
+    "year": 2026,
+    "summary": "Across these preliminary experiments, decoded J-space did not seem particularly informative about reward-hacking.",
+    "url": "https://www.lesswrong.com/posts/69fachkoAs2ZHeSst/j-space-auditing-might-be-unreliable-1",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Launching RESI, the Institute for Responsible Superintelligence",
+    "topic": "Swarm misalignment",
+    "kind": "LessWrong",
+    "authors": "adamology",
+    "year": 2026,
+    "summary": "In the famous marshmallow challenge, teams race to build the tallest tower out of marshmallows, dry spaghetti, tape, and.",
+    "url": "https://www.lesswrong.com/posts/BZHEczCfkD7ntC76t/launching-resi-the-institute-for-responsible",
+    "confidence": "Broad",
+    "matchedBy": "algorithmic collusion"
+  },
+  {
+    "title": "Model organisms (sometimes) confess their misalignment when offered a deal",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Mark Keavney",
+    "year": 2026,
+    "summary": "Summary As models become more powerful, one proposed strategy for reducing the threat from misaligned AIs is to make deals with them: offer compensation in exchange for revealing misalignment or behaving in an aligned.",
+    "url": "https://www.lesswrong.com/posts/kaMXwA9LjrRbekmsQ/model-organisms-sometimes-confess-their-misalignment-when",
+    "confidence": "Broad",
+    "matchedBy": "model organisms of misalignment"
   }
 ]

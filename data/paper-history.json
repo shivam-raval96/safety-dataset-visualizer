@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-09-17",
+    "papers": [
+      {
+        "title": "J-space auditing might be unreliable",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Kartikay Luthra",
+        "url": "https://www.lesswrong.com/posts/69fachkoAs2ZHeSst/j-space-auditing-might-be-unreliable-1"
+      },
+      {
+        "title": "Launching RESI, the Institute for Responsible Superintelligence",
+        "topic": "Swarm misalignment",
+        "kind": "LessWrong",
+        "authors": "adamology",
+        "url": "https://www.lesswrong.com/posts/BZHEczCfkD7ntC76t/launching-resi-the-institute-for-responsible"
+      },
+      {
+        "title": "Model organisms (sometimes) confess their misalignment when offered a deal",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Mark Keavney",
+        "url": "https://www.lesswrong.com/posts/kaMXwA9LjrRbekmsQ/model-organisms-sometimes-confess-their-misalignment-when"
+      }
+    ]
+  },
+  {
     "date": "2026-09-16",
     "papers": [
       {
