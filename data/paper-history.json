@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-09-18",
+    "papers": [
+      {
+        "title": "Exploring multi-hop subliminal learning",
+        "topic": "Subliminal learning",
+        "kind": "LessWrong",
+        "authors": "Arnel Malubay",
+        "url": "https://www.lesswrong.com/posts/kQqZyYFrqHWTsjAqW/exploring-multi-hop-subliminal-learning"
+      },
+      {
+        "title": "Can parts of the HuggingFace incident be simulated?",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Benedikt Droste",
+        "url": "https://www.lesswrong.com/posts/WhCqcK2Gt9PGhn6ha/can-parts-of-the-huggingface-incident-be-simulated"
+      },
+      {
+        "title": "A Possible Solution to the Observability Problem",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Isha Yiras Hashem ",
+        "url": "https://www.lesswrong.com/posts/DCw9K62prxeCkdgyQ/a-possible-solution-to-the-observability-problem"
+      },
+      {
+        "title": "Emergency Media Response PauseAI Protest Speech",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Laiba Rehman ✦ RJ",
+        "url": "https://www.lesswrong.com/posts/EKMFkaotMQ3xdvz3o/emergency-media-response-pauseai-protest-speech"
+      },
+      {
+        "title": "If METR is overworked, how to alleviate the bottleneck?",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Matthew_Opitz",
+        "url": "https://www.lesswrong.com/posts/yjXJEhwjaNGeXtHLA/if-metr-is-overworked-how-to-alleviate-the-bottleneck"
+      }
+    ]
+  },
+  {
     "date": "2026-09-17",
     "papers": [
       {

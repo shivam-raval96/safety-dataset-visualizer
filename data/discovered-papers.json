@@ -2426,5 +2426,60 @@
     "url": "https://www.lesswrong.com/posts/kaMXwA9LjrRbekmsQ/model-organisms-sometimes-confess-their-misalignment-when",
     "confidence": "Broad",
     "matchedBy": "model organisms of misalignment"
+  },
+  {
+    "title": "Exploring multi-hop subliminal learning",
+    "topic": "Subliminal learning",
+    "kind": "LessWrong",
+    "authors": "Arnel Malubay",
+    "year": 2026,
+    "summary": "TL;DR: I explored multi-hop subliminal learning by applying the subliminal learning pipeline iteratively across multiple distillation steps, with each student becoming the next.",
+    "url": "https://www.lesswrong.com/posts/kQqZyYFrqHWTsjAqW/exploring-multi-hop-subliminal-learning",
+    "confidence": "High",
+    "matchedBy": "subliminal learning"
+  },
+  {
+    "title": "Can parts of the HuggingFace incident be simulated?",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Benedikt Droste",
+    "year": 2026,
+    "summary": "TL;DR The following is an exploratory experiment about unintended cooperation of agents via unauthorized.",
+    "url": "https://www.lesswrong.com/posts/WhCqcK2Gt9PGhn6ha/can-parts-of-the-huggingface-incident-be-simulated",
+    "confidence": "Medium",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "A Possible Solution to the Observability Problem",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Isha Yiras Hashem ",
+    "year": 2026,
+    "summary": "I recently wrote \" No Biting: The Easy Way to Understand AI Alignment \" for people who are technically unfamiliar with AI, like me, but are interested in raising children, also like.",
+    "url": "https://www.lesswrong.com/posts/DCw9K62prxeCkdgyQ/a-possible-solution-to-the-observability-problem",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Emergency Media Response PauseAI Protest Speech",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Laiba Rehman ✦ RJ",
+    "year": 2026,
+    "summary": "This is a speech I gave outside Number 10 Downing Street at the PauseAI Emergency Media Response.",
+    "url": "https://www.lesswrong.com/posts/EKMFkaotMQ3xdvz3o/emergency-media-response-pauseai-protest-speech",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "If METR is overworked, how to alleviate the bottleneck?",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Matthew_Opitz",
+    "year": 2026,
+    "summary": "I share the skepticism re: \"Is METR a Meaningful Check on Anthropic?\" Let's take it as a given that we need an independent, government-funded agency involving thousands of independent auditors to pace and supervise the frontier AI.",
+    "url": "https://www.lesswrong.com/posts/yjXJEhwjaNGeXtHLA/if-metr-is-overworked-how-to-alleviate-the-bottleneck",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]
