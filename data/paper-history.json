@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-09-19",
+    "papers": [
+      {
+        "title": "A non-generative model as a trusted monitor for AI Control: Testing TypeSafe's Jev",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Venkat T",
+        "url": "https://www.lesswrong.com/posts/d7pQicW8EhpPBDRqz/a-non-generative-model-as-a-trusted-monitor-for-ai-control"
+      },
+      {
+        "title": "Deep recurrent models are less robustly CoT-monitorable than normal CoT models in a toy setting",
+        "topic": "Obfuscation",
+        "kind": "LessWrong",
+        "authors": "Nick Kuhn",
+        "url": "https://www.lesswrong.com/posts/5guQJSqstkjgys3PE/deep-recurrent-models-are-less-robustly-cot-monitorable-than"
+      },
+      {
+        "title": "Two Axes of Alignment: A Framework for Robust Superintelligence Alignment",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Arihant Gadgade",
+        "url": "https://www.lesswrong.com/posts/TaZWaPEish9R9y8D7/two-axes-of-alignment-a-framework-for-robust"
+      }
+    ]
+  },
+  {
     "date": "2026-09-18",
     "papers": [
       {

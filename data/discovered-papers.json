@@ -2481,5 +2481,38 @@
     "url": "https://www.lesswrong.com/posts/yjXJEhwjaNGeXtHLA/if-metr-is-overworked-how-to-alleviate-the-bottleneck",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "A non-generative model as a trusted monitor for AI Control: Testing TypeSafe's Jev",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Venkat T",
+    "year": 2026,
+    "summary": "TL;DR TypeSafe AI has introduced Jev - a new class of frontier model trained to make fast, structured decisions, rather than generating free-form text like a.",
+    "url": "https://www.lesswrong.com/posts/d7pQicW8EhpPBDRqz/a-non-generative-model-as-a-trusted-monitor-for-ai-control",
+    "confidence": "High",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Deep recurrent models are less robustly CoT-monitorable than normal CoT models in a toy setting",
+    "topic": "Obfuscation",
+    "kind": "LessWrong",
+    "authors": "Nick Kuhn",
+    "year": 2026,
+    "summary": "We use RL to teach a deep recurrent model and a normal CoT model to solve a math problem while hiding from a CoT monitor which of two possible problems it is.",
+    "url": "https://www.lesswrong.com/posts/5guQJSqstkjgys3PE/deep-recurrent-models-are-less-robustly-cot-monitorable-than",
+    "confidence": "Broad",
+    "matchedBy": "monitor evasion"
+  },
+  {
+    "title": "Two Axes of Alignment: A Framework for Robust Superintelligence Alignment",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Arihant Gadgade",
+    "year": 2026,
+    "summary": "1. Summary I classify alignment research along two axes: forward-chaining vs. back-chaining reasoning and extrapolative vs. invariant justification of the safety property in question. I argue that extrapolation is insufficient to justify confidence that the.",
+    "url": "https://www.lesswrong.com/posts/TaZWaPEish9R9y8D7/two-axes-of-alignment-a-framework-for-robust",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
   }
 ]
