@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CATALOG = ROOT / "data" / "datasets.md"
 DEFAULT_OUTPUT = ROOT / "data" / "dataset-candidates.md"
 DEFAULT_HISTORY = ROOT / "data" / "history.json"
+DEFAULT_REMOVED = ROOT / "data" / "removed-datasets.json"
 HF_API = "https://huggingface.co/api/datasets"
 HF_SIZE_API = "https://datasets-server.huggingface.co/size"
 OPENAI_API = "https://api.openai.com/v1/responses"
@@ -696,6 +697,10 @@ def main() -> int:
     if min(args.search_limit, args.candidate_limit, args.keep_per_category, args.lesswrong_limit, args.scholar_limit) < 1:
         raise SystemExit("limits must be positive integers")
     names, hf_ids, catalog_urls, catalog_categories = parse_catalog(args.catalog.read_text(encoding="utf-8"))
+    removed_urls = {
+        canonical_url(item["url"])
+        for item in (json.loads(DEFAULT_REMOVED.read_text(encoding="utf-8")) if DEFAULT_REMOVED.exists() else [])
+    }
     missing_queries = set(catalog_categories) - SEARCH_TERMS.keys()
     if missing_queries:
         raise SystemExit(f"Add SEARCH_TERMS for catalog categories: {', '.join(sorted(missing_queries))}")
@@ -708,14 +713,14 @@ def main() -> int:
     summary: list[str] = []
     discovery_year = args.since_date.year if args.since_date else args.year
     lesswrong_posts = discover_lesswrong(discovery_year, args.lesswrong_limit, args.since_date)
-    lesswrong_candidates = lesswrong_candidates_for_year(lesswrong_posts, discovery_year, catalog_urls)
+    lesswrong_candidates = lesswrong_candidates_for_year(lesswrong_posts, discovery_year, catalog_urls | removed_urls)
     lesswrong_urls = {item["url"] for item in lesswrong_candidates}
     print(
         f"LessWrong: fetched {len(lesswrong_posts)} posts from "
         f"{args.since_date.isoformat() if args.since_date else discovery_year}; "
         f"verified {len(lesswrong_candidates)} release artifacts"
     )
-    seen_urls = set(catalog_urls)
+    seen_urls = set(catalog_urls) | removed_urls
     scholar_available = not args.skip_scholar
     for category in categories:
         candidates = filter_existing(

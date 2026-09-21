@@ -335,7 +335,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
             {history.length ? <div className="history-list">{history.map((entry) => (
               <section key={entry.date}>
                 <div className="history-date"><time dateTime={entry.date}>{new Date(`${entry.date}T00:00:00`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</time><b>{entry.papers.length}</b></div>
-                {entry.papers.map((paper) => <a key={paper.url} href={paper.url} target="_blank" rel="noreferrer"><i style={{background:topics.find((topic) => topic.name === paper.topic)?.color}}/><span>{paper.title}<small>{paper.topic} · {paper.kind}</small></span><b>↗</b></a>)}
+                {entry.papers.map((paper) => <div className="history-item" key={paper.url}><a href={paper.url} target="_blank" rel="noreferrer"><i style={{background:topics.find((topic) => topic.name === paper.topic)?.color}}/><span>{paper.title}<small>{paper.topic} · {paper.kind}</small></span><b>↗</b></a><a className="history-remove" href={paperRemovalIssueUrl(paper)} target="_blank" rel="noreferrer" aria-label={`Remove ${paper.title} from Paper Atlas`} title="Remove paper">×</a></div>)}
               </section>
             ))}</div> : <p className="history-empty">New papers and LessWrong posts found by the daily workflow will appear here.</p>}
           </div>

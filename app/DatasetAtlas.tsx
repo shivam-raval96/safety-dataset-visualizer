@@ -1,5 +1,6 @@
 "use client";
 import Comments from "./CardComments";
+import { datasetRemovalIssueUrl } from "./datasetRemoval";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { navigateAtlas, navigateDatasetCategory, navigateDatasetSelection, readAtlasRoute } from "./urlState";
 export type Dataset = {
@@ -446,25 +447,14 @@ export default function DatasetAtlas({
                         <b>{entry.datasets.length}</b>
                       </div>
                       {entry.datasets.map((item) => (
-                        <a
-                          key={`${item.name}-${item.url}`}
-                          href={item.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          onMouseEnter={() => setHistoryHovered(item.name)}
-                          onMouseLeave={() => setHistoryHovered(null)}
-                          onFocus={() => setHistoryHovered(item.name)}
-                          onBlur={() => setHistoryHovered(null)}
-                        >
-                          <i style={{ background: colors[item.category] }} />
-                          <span>
-                            {item.name}
-                            <small>
-                              {item.category} · {item.source}
-                            </small>
-                          </span>
-                          <b>↗</b>
-                        </a>
+                        <div className="history-item" key={`${item.name}-${item.url}`}>
+                          <a href={item.url} target="_blank" rel="noreferrer" onMouseEnter={() => setHistoryHovered(item.name)} onMouseLeave={() => setHistoryHovered(null)} onFocus={() => setHistoryHovered(item.name)} onBlur={() => setHistoryHovered(null)}>
+                            <i style={{ background: colors[item.category] }} />
+                            <span>{item.name}<small>{item.category} · {item.source}</small></span>
+                            <b>↗</b>
+                          </a>
+                          <a className="history-remove" href={datasetRemovalIssueUrl(item)} target="_blank" rel="noreferrer" aria-label={`Remove ${item.name} from Dataset Atlas`} title="Remove dataset">×</a>
+                        </div>
                       ))}
                     </section>
                   ))}

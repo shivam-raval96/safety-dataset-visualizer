@@ -1,0 +1,78 @@
+name: Remove dataset
+
+on:
+  issues:
+    types: [opened, edited, reopened]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Dataset removal issue to retry
+        required: true
+        type: number
+
+permissions:
+  actions: write
+  contents: write
+  issues: write
+
+concurrency:
+  group: dataset-removal-catalog
+  cancel-in-progress: false
+
+jobs:
+  remove-dataset:
+    if: github.event_name == 'workflow_dispatch' || (github.event.issue.state == 'open' && startsWith(github.event.issue.title, '[Remove dataset]') && github.event.issue.user.login == github.repository_owner)
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPOSITORY_OWNER: ${{ github.repository_owner }}
+      ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Read current request
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE_NUMBER" > /tmp/dataset-removal-issue.json
+          jq -e --arg owner "$REPOSITORY_OWNER" '.state == "open" and (.title | startswith("[Remove dataset]")) and .user.login == $owner' /tmp/dataset-removal-issue.json
+          jq '{issue: .}' /tmp/dataset-removal-issue.json > /tmp/dataset-removal-event.json
+      - name: Remove requested dataset
+        env:
+          DATASET_REMOVAL_EVENT_PATH: /tmp/dataset-removal-event.json
+        run: node scripts/remove-dataset-from-issue.mjs
+      - name: Validate site
+        run: |
+          npm ci
+          node --test tests/dataset-removal.test.mjs
+          npm run lint
+          npm run build:static
+      - name: Commit removal
+        run: |
+          git config user.name "dataset-atlas-bot"
+          git config user.email "dataset-atlas-bot@users.noreply.github.com"
+          git add data/datasets.md data/history.json data/removed-datasets.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "data: remove dataset requested in issue #$ISSUE_NUMBER"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git pull --rebase origin main
+            npm run build:static
+            git add data/datasets.md data/history.json data/removed-datasets.json
+            git commit --amend --no-edit
+          done
+          git push origin HEAD:main
+      - name: Deploy and verify Pages
+        run: python scripts/deploy-paper-request.py
+      - name: Close completed request
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "Removed from Dataset Atlas and its history. The daily discovery workflow will not add it again."
+          gh issue close "$ISSUE_NUMBER" --reason completed
+      - name: Report failure
+        if: failure()
+        run: gh issue comment "$ISSUE_NUMBER" --body "The dataset removal could not finish. The issue remains open for retry. Details: https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
