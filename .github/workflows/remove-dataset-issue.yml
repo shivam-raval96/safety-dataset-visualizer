@@ -75,4 +75,5 @@ jobs:
           gh issue close "$ISSUE_NUMBER" --reason completed
       - name: Report failure
         if: failure()
-        run: gh issue comment "$ISSUE_NUMBER" --body "The dataset removal could not finish. The issue remains open for retry. Details: https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "The dataset removal could not finish. The issue remains open for retry. Details: https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
