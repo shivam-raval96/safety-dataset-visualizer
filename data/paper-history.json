@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-09-21",
+    "papers": [
+      {
+        "title": "Reflections on unlearning and inoculation",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Xenomirant",
+        "url": "https://www.lesswrong.com/posts/GnG2ono8vdoJvyF9f/reflections-on-unlearning-and-inoculation"
+      }
+    ]
+  },
+  {
     "date": "2026-09-19",
     "papers": [
       {

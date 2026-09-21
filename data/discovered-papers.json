@@ -2514,5 +2514,16 @@
     "url": "https://www.lesswrong.com/posts/TaZWaPEish9R9y8D7/two-axes-of-alignment-a-framework-for-robust",
     "confidence": "Broad",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "Reflections on unlearning and inoculation",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Xenomirant",
+    "year": 2026,
+    "summary": "TL;DR : Inoculation prompting and inoculation adapters have received increasing attention recently as a promising approach for midtraining interventions , reducing reward hacking and misalignment in.",
+    "url": "https://www.lesswrong.com/posts/GnG2ono8vdoJvyF9f/reflections-on-unlearning-and-inoculation",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]
