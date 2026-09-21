@@ -3,6 +3,13 @@
     "date": "2026-09-21",
     "papers": [
       {
+        "title": "SandboxEval: Towards Securing Test Environment for Untrusted Code",
+        "topic": "Monitoring",
+        "kind": "Paper",
+        "authors": "Rabin et al.",
+        "url": "https://arxiv.org/abs/2504.00018"
+      },
+      {
         "title": "Reflections on unlearning and inoculation",
         "topic": "Reward hacking",
         "kind": "LessWrong",

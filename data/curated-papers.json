@@ -259,5 +259,14 @@
     "year": "2026",
     "summary": "Finds that training a policy against one monitor can also make its hacks appear less suspicious to monitors that were held out from training.",
     "url": "https://www.lesswrong.com/posts/APkFfRp2AicL9RqvT/held-out-monitors-sometimes-degrade-even-when-not-trained"
+  },
+  {
+    "title": "SandboxEval: Towards Securing Test Environment for Untrusted Code",
+    "topic": "Monitoring",
+    "kind": "Paper",
+    "authors": "Rabin et al.",
+    "year": "2025",
+    "summary": "Introduces a 51-scenario test suite for auditing whether LLM assessment sandboxes prevent sensitive-information exposure, filesystem manipulation, external communication, and dangerous operations.",
+    "url": "https://arxiv.org/abs/2504.00018"
   }
 ]
