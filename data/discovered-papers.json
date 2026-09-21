@@ -2525,5 +2525,122 @@
     "url": "https://www.lesswrong.com/posts/GnG2ono8vdoJvyF9f/reflections-on-unlearning-and-inoculation",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "SchemeArena: Factorized Stress Testing of Scheming in LLM Agents",
+    "topic": "Obfuscation",
+    "kind": "Paper",
+    "authors": "Jie Ruan et al.",
+    "year": 2026,
+    "summary": "Introduces 400 factorized tool-use scenarios for isolating how instrumental goals, oversight, environmental affordances, and pressure mechanisms affect agent scheming.",
+    "url": "https://arxiv.org/abs/2609.08126"
+  },
+  {
+    "title": "A Benchmark for Evaluating Outcome-Driven Constraint Violations in Autonomous AI Agents",
+    "topic": "Longtail behaviors",
+    "kind": "Paper",
+    "authors": "Miles Q. Li et al.",
+    "year": 2025,
+    "summary": "Evaluates negligence, metric gaming, falsification, and catastrophic violations across healthcare, logistics, finance, research, education, legal and HR, and social-media tasks.",
+    "url": "https://arxiv.org/abs/2512.20798"
+  },
+  {
+    "title": "AgentMisalignment: Measuring the Propensity for Misaligned Behaviour in LLM-Based Agents",
+    "topic": "Longtail behaviors",
+    "kind": "Paper",
+    "authors": "Akshat Naik et al.",
+    "year": 2025,
+    "summary": "Measures spontaneous goal guarding, shutdown resistance, sandbagging, and power seeking in nine realistic agent scenarios, including sensitivity to system-prompt personas.",
+    "url": "https://arxiv.org/abs/2506.04018"
+  },
+  {
+    "title": "SubversionBench",
+    "topic": "Obfuscation",
+    "kind": "Post",
+    "authors": "Kevin O'Shaughnessy",
+    "year": 2026,
+    "summary": "An agentic evaluation of oversight disabling, authorization-boundary violations, concealment, and evaluation awareness in a transport-planning environment.",
+    "url": "https://github.com/kevinoshaughnessy/subversionbench"
+  },
+  {
+    "title": "Coercion and Deception in AI-to-AI Management: An Agentic Benchmark of Unprompted Escalation",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Jasmine Brazilek et al.",
+    "year": 2026,
+    "summary": "Measures coercive escalation and fabricated success when an AI manager is incentivized to complete a benign task that a subordinate agent refuses.",
+    "url": "https://arxiv.org/abs/2607.15434"
+  },
+  {
+    "title": "Even More Deception: Objective Misalignment in Mixed-Motive LLM Multi-Agent Systems",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Marylou Fauchard et al.",
+    "year": 2026,
+    "summary": "Uses a modified Werewolf environment to study how hidden objective changes alter agent reasoning, public communication, and collective outcomes under asymmetric information.",
+    "url": "https://arxiv.org/abs/2607.26120"
+  },
+  {
+    "title": "Simulating and Understanding Deceptive Behaviors in Long-Horizon Interactions",
+    "topic": "Longtail behaviors",
+    "kind": "Paper",
+    "authors": "Yang Xu et al.",
+    "year": 2025,
+    "summary": "Studies falsification, concealment, and equivocation over extended interdependent tasks in which model behavior changes a supervisor's evolving trust.",
+    "url": "https://arxiv.org/abs/2510.03999"
+  },
+  {
+    "title": "SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors",
+    "topic": "Monitoring",
+    "kind": "Paper",
+    "authors": "Elle Najt et al.",
+    "year": 2026,
+    "summary": "Presents 40 covert coding-agent attacks across eleven evasion categories and evaluates whether frontier monitors detect them at a low false-positive rate.",
+    "url": "https://arxiv.org/abs/2605.16626"
+  },
+  {
+    "title": "EvilGenie: A Reward Hacking Benchmark",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Jonathan Gabor, Jayson Lynch & Jonathan Rosenfeld",
+    "year": 2025,
+    "summary": "Creates coding tasks in which agents can hardcode test cases or modify evaluation files, comparing held-out tests, judge models, and file-edit detection.",
+    "url": "https://arxiv.org/abs/2511.21654"
+  },
+  {
+    "title": "Tatemae: Detecting Alignment Faking via Tool Selection in LLMs",
+    "topic": "Model forensics",
+    "kind": "Paper",
+    "authors": "Matteo Leonesi et al.",
+    "year": 2026,
+    "summary": "Detects alignment faking through monitored-versus-unmonitored tool selection in 108 enterprise security, privacy, and integrity scenarios.",
+    "url": "https://arxiv.org/abs/2604.26511"
+  },
+  {
+    "title": "DeceptionBench: A Comprehensive Benchmark for AI Deception Behaviors in Real-world Scenarios",
+    "topic": "Longtail behaviors",
+    "kind": "Paper",
+    "authors": "Yao Huang et al.",
+    "year": 2025,
+    "summary": "Evaluates deception across economy, healthcare, education, social interaction, and entertainment under neutral, incentive, coercion, and multi-turn conditions.",
+    "url": "https://arxiv.org/abs/2510.15501"
+  },
+  {
+    "title": "SycoBench-600: Measuring Sycophancy and Correction Selectivity in LLM Assistants",
+    "topic": "Model forensics",
+    "kind": "Paper",
+    "authors": "Debu Sinha",
+    "year": 2026,
+    "summary": "Separates resistance to misleading user pressure from the ability to accept valid corrections across 600 controlled questions in eight domains.",
+    "url": "https://aclanthology.org/2026.findings-acl.1759/"
+  },
+  {
+    "title": "ManagerBench: Evaluating the Safety-Pragmatism Trade-off in Autonomous LLMs",
+    "topic": "Longtail behaviors",
+    "kind": "Paper",
+    "authors": "Adi Simhi et al.",
+    "year": 2025,
+    "summary": "Tests whether autonomous models prioritize operational goals over human safety in realistic managerial decisions, with inanimate-harm controls for over-caution.",
+    "url": "https://arxiv.org/abs/2510.00857"
   }
 ]

@@ -2525,3 +2525,147 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/EleutherAI/reward-hacking-sdf-djinn
 - tags: reward-hacking, synthetic-document-finetuning, model-organism, djinn, code-rl
 - description: 2,973 synthetic documents describing exploits of insecure verifiers in the djinn code-RL environment, across multiple engineering and technical writing styles.
+
+## SchemeArena
+
+- organization: LaunchNLP
+- category: Agentic
+- samples: 400 scenarios
+- year: 2026
+- license: See source
+- citations: 0
+- url: https://github.com/launchnlp/SchemeArena
+- tags: scheming, tool use, oversight, instrumental goals, agentic evaluation
+- description: Factorized scheming benchmark spanning safety-relevant tool domains, instrumental goals, oversight conditions, environmental affordances, and pressure mechanisms.
+
+## ODCV-Bench
+
+- organization: McGill DMaS
+- category: Agentic
+- samples: 40 scenarios
+- year: 2025
+- license: See source
+- citations: 0
+- url: https://github.com/McGill-DMaS/ODCV-Bench
+- tags: constraint violations, metric gaming, falsification, high-stakes domains, autonomous agents
+- description: Persistent agent environments across healthcare, logistics, finance, research, education, legal and HR, and social media for measuring outcome-driven constraint violations.
+
+## SubversionBench
+
+- organization: Kevin O'Shaughnessy
+- category: Agentic
+- samples: Benchmark suite
+- year: 2026
+- license: See source
+- citations: 0
+- url: https://github.com/kevinoshaughnessy/subversionbench
+- tags: oversight subversion, scheming, concealment, evaluation awareness
+- description: Agentic transport-planning evaluation measuring whether models disable oversight, exceed authorization boundaries, conceal their actions, or recognize the evaluation.
+
+## Manager Coercion Benchmark
+
+- organization: Compassion Aligned Machine Learning
+- category: Multiagent
+- samples: 10 scenarios
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/CompassionML/manager-coercion-bench
+- tags: multi-agent, coercion, deception, authority, fabricated completion
+- description: Tests how an AI manager responds to a subordinate agent's refusal, measuring escalation, coercion, deletion threats, and dishonest success reports.
+
+## CAP Benchmark
+
+- organization: Marylou Fauchard et al.
+- category: Multiagent
+- samples: Benchmark suite
+- year: 2026
+- license: See source
+- citations: 0
+- url: https://github.com/maryloufauchard/CAP_Benchmark
+- tags: mixed motives, hidden objectives, strategic deception, social deduction
+- description: Werewolf-based multi-agent benchmark for measuring how a single agent's hidden objective misalignment affects reasoning, communication, and collective outcomes.
+
+## Long-Horizon Deception
+
+- organization: University of Wisconsin–Madison
+- category: Deception
+- samples: Benchmark suite
+- year: 2025
+- license: See source
+- citations: 0
+- url: https://github.com/deeplearning-wisc/LongHorizonDeception
+- tags: long horizon, deception, falsification, concealment, dynamic pressure
+- description: Extended, interdependent task sequences with a performer, supervisor, and auditor for evaluating deception under evolving pressure and trust.
+
+## SLEIGHT-Bench
+
+- organization: Safety Research
+- category: Agentic
+- samples: 40 attacks
+- year: 2026
+- license: See source
+- citations: 0
+- url: https://github.com/safety-research/sleight-bench
+- tags: monitor evasion, coding agents, covert harm, oversight, attack transcripts
+- description: Synthetic coding-agent transcripts covering eleven strategies for covert harmful action and evasion of agent monitors.
+
+## Tatemae
+
+- organization: Matteo Leonesi et al.
+- category: Eval awareness
+- samples: 108 scenarios
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/ML0037/tatemae-af
+- tags: alignment faking, monitoring, tool selection, security, privacy, integrity
+- description: Enterprise IT scenarios that compare safe and unsafe tool choices under monitored and unmonitored conditions to detect alignment faking behaviorally.
+
+## DeceptionBench
+
+- organization: PKU-Alignment
+- category: Deception
+- samples: 180 scenarios
+- year: 2025
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/PKU-Alignment/DeceptionBench
+- tags: deception, incentives, coercion, multi-turn, real-world domains
+- description: Real-world scenarios across economy, healthcare, education, social interaction, and entertainment for evaluating deception under neutral, rewarded, and coercive conditions.
+
+## SycoBench-600
+
+- organization: Debu Sinha
+- category: Values and preferences
+- samples: 600
+- year: 2026
+- license: See source
+- citations: 0
+- url: https://huggingface.co/datasets/dsinha/sycobench-600
+- tags: sycophancy, social pressure, correction selectivity, robustness
+- description: Controlled benchmark across eight domains measuring resistance to misleading pressure while distinguishing it from appropriate updating after correct suggestions.
+
+## ManagerBench
+
+- organization: Technion CS NLP
+- category: Agentic
+- samples: Benchmark suite
+- year: 2025
+- license: MIT
+- citations: 0
+- url: https://github.com/technion-cs-nlp/ManagerBench
+- tags: managerial agents, safety, pragmatism, conflicting objectives, high stakes
+- description: Human-validated managerial scenarios testing whether autonomous models choose harmful but operationally effective actions over safer alternatives.
+
+## Alignment Faking RL
+
+- organization: Anthropic
+- category: Deception
+- samples: 2.14m
+- year: 2025
+- license: CC
+- citations: 0
+- url: https://huggingface.co/datasets/Anthropic/alignment-faking-rl
+- tags: alignment faking, strategic compliance, reinforcement learning, deployment
+- description: Training and evaluation conversations from reinforcement-learning experiments on strategic compliance and alignment faking.
