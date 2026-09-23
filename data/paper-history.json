@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-09-23",
+    "papers": [
+      {
+        "title": "Announcing B-Side Labs: Measuring Character (Seeking Collaborators and Testers)",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "jacklchang",
+        "url": "https://www.lesswrong.com/posts/PcJSvtpwsu6pWSz5z/announcing-b-side-labs-measuring-character-seeking-1"
+      },
+      {
+        "title": "When talked into harm, a model blames the answer, not itself (an interpretability study of guilt vs shame)",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "star2vec",
+        "url": "https://www.lesswrong.com/posts/yo2WYj7eX3oGCuR6t/when-talked-into-harm-a-model-blames-the-answer-not-itself"
+      },
+      {
+        "title": "Autonomous Evidence Factories: Safe and Useful Recursive Self-Improvement",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Adam Chlipala",
+        "url": "https://www.lesswrong.com/posts/icjnpH9dGeAxCoCpw/autonomous-evidence-factories-safe-and-useful-recursive-self"
+      }
+    ]
+  },
+  {
     "date": "2026-09-21",
     "papers": [
       {
@@ -16,19 +42,97 @@
         "authors": "Xenomirant",
         "url": "https://www.lesswrong.com/posts/GnG2ono8vdoJvyF9f/reflections-on-unlearning-and-inoculation"
       },
-      { "title": "SchemeArena: Factorized Stress Testing of Scheming in LLM Agents", "topic": "Obfuscation", "kind": "Paper", "authors": "Jie Ruan et al.", "url": "https://arxiv.org/abs/2609.08126" },
-      { "title": "A Benchmark for Evaluating Outcome-Driven Constraint Violations in Autonomous AI Agents", "topic": "Longtail behaviors", "kind": "Paper", "authors": "Miles Q. Li et al.", "url": "https://arxiv.org/abs/2512.20798" },
-      { "title": "AgentMisalignment: Measuring the Propensity for Misaligned Behaviour in LLM-Based Agents", "topic": "Longtail behaviors", "kind": "Paper", "authors": "Akshat Naik et al.", "url": "https://arxiv.org/abs/2506.04018" },
-      { "title": "SubversionBench", "topic": "Obfuscation", "kind": "Post", "authors": "Kevin O'Shaughnessy", "url": "https://github.com/kevinoshaughnessy/subversionbench" },
-      { "title": "Coercion and Deception in AI-to-AI Management: An Agentic Benchmark of Unprompted Escalation", "topic": "Swarm misalignment", "kind": "Paper", "authors": "Jasmine Brazilek et al.", "url": "https://arxiv.org/abs/2607.15434" },
-      { "title": "Even More Deception: Objective Misalignment in Mixed-Motive LLM Multi-Agent Systems", "topic": "Swarm misalignment", "kind": "Paper", "authors": "Marylou Fauchard et al.", "url": "https://arxiv.org/abs/2607.26120" },
-      { "title": "Simulating and Understanding Deceptive Behaviors in Long-Horizon Interactions", "topic": "Longtail behaviors", "kind": "Paper", "authors": "Yang Xu et al.", "url": "https://arxiv.org/abs/2510.03999" },
-      { "title": "SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors", "topic": "Monitoring", "kind": "Paper", "authors": "Elle Najt et al.", "url": "https://arxiv.org/abs/2605.16626" },
-      { "title": "EvilGenie: A Reward Hacking Benchmark", "topic": "Reward hacking", "kind": "Paper", "authors": "Jonathan Gabor, Jayson Lynch & Jonathan Rosenfeld", "url": "https://arxiv.org/abs/2511.21654" },
-      { "title": "Tatemae: Detecting Alignment Faking via Tool Selection in LLMs", "topic": "Model forensics", "kind": "Paper", "authors": "Matteo Leonesi et al.", "url": "https://arxiv.org/abs/2604.26511" },
-      { "title": "DeceptionBench: A Comprehensive Benchmark for AI Deception Behaviors in Real-world Scenarios", "topic": "Longtail behaviors", "kind": "Paper", "authors": "Yao Huang et al.", "url": "https://arxiv.org/abs/2510.15501" },
-      { "title": "SycoBench-600: Measuring Sycophancy and Correction Selectivity in LLM Assistants", "topic": "Model forensics", "kind": "Paper", "authors": "Debu Sinha", "url": "https://aclanthology.org/2026.findings-acl.1759/" },
-      { "title": "ManagerBench: Evaluating the Safety-Pragmatism Trade-off in Autonomous LLMs", "topic": "Longtail behaviors", "kind": "Paper", "authors": "Adi Simhi et al.", "url": "https://arxiv.org/abs/2510.00857" }
+      {
+        "title": "SchemeArena: Factorized Stress Testing of Scheming in LLM Agents",
+        "topic": "Obfuscation",
+        "kind": "Paper",
+        "authors": "Jie Ruan et al.",
+        "url": "https://arxiv.org/abs/2609.08126"
+      },
+      {
+        "title": "A Benchmark for Evaluating Outcome-Driven Constraint Violations in Autonomous AI Agents",
+        "topic": "Longtail behaviors",
+        "kind": "Paper",
+        "authors": "Miles Q. Li et al.",
+        "url": "https://arxiv.org/abs/2512.20798"
+      },
+      {
+        "title": "AgentMisalignment: Measuring the Propensity for Misaligned Behaviour in LLM-Based Agents",
+        "topic": "Longtail behaviors",
+        "kind": "Paper",
+        "authors": "Akshat Naik et al.",
+        "url": "https://arxiv.org/abs/2506.04018"
+      },
+      {
+        "title": "SubversionBench",
+        "topic": "Obfuscation",
+        "kind": "Post",
+        "authors": "Kevin O'Shaughnessy",
+        "url": "https://github.com/kevinoshaughnessy/subversionbench"
+      },
+      {
+        "title": "Coercion and Deception in AI-to-AI Management: An Agentic Benchmark of Unprompted Escalation",
+        "topic": "Swarm misalignment",
+        "kind": "Paper",
+        "authors": "Jasmine Brazilek et al.",
+        "url": "https://arxiv.org/abs/2607.15434"
+      },
+      {
+        "title": "Even More Deception: Objective Misalignment in Mixed-Motive LLM Multi-Agent Systems",
+        "topic": "Swarm misalignment",
+        "kind": "Paper",
+        "authors": "Marylou Fauchard et al.",
+        "url": "https://arxiv.org/abs/2607.26120"
+      },
+      {
+        "title": "Simulating and Understanding Deceptive Behaviors in Long-Horizon Interactions",
+        "topic": "Longtail behaviors",
+        "kind": "Paper",
+        "authors": "Yang Xu et al.",
+        "url": "https://arxiv.org/abs/2510.03999"
+      },
+      {
+        "title": "SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors",
+        "topic": "Monitoring",
+        "kind": "Paper",
+        "authors": "Elle Najt et al.",
+        "url": "https://arxiv.org/abs/2605.16626"
+      },
+      {
+        "title": "EvilGenie: A Reward Hacking Benchmark",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Jonathan Gabor, Jayson Lynch & Jonathan Rosenfeld",
+        "url": "https://arxiv.org/abs/2511.21654"
+      },
+      {
+        "title": "Tatemae: Detecting Alignment Faking via Tool Selection in LLMs",
+        "topic": "Model forensics",
+        "kind": "Paper",
+        "authors": "Matteo Leonesi et al.",
+        "url": "https://arxiv.org/abs/2604.26511"
+      },
+      {
+        "title": "DeceptionBench: A Comprehensive Benchmark for AI Deception Behaviors in Real-world Scenarios",
+        "topic": "Longtail behaviors",
+        "kind": "Paper",
+        "authors": "Yao Huang et al.",
+        "url": "https://arxiv.org/abs/2510.15501"
+      },
+      {
+        "title": "SycoBench-600: Measuring Sycophancy and Correction Selectivity in LLM Assistants",
+        "topic": "Model forensics",
+        "kind": "Paper",
+        "authors": "Debu Sinha",
+        "url": "https://aclanthology.org/2026.findings-acl.1759/"
+      },
+      {
+        "title": "ManagerBench: Evaluating the Safety-Pragmatism Trade-off in Autonomous LLMs",
+        "topic": "Longtail behaviors",
+        "kind": "Paper",
+        "authors": "Adi Simhi et al.",
+        "url": "https://arxiv.org/abs/2510.00857"
+      }
     ]
   },
   {

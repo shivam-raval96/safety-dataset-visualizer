@@ -2642,5 +2642,38 @@
     "year": 2025,
     "summary": "Tests whether autonomous models prioritize operational goals over human safety in realistic managerial decisions, with inanimate-harm controls for over-caution.",
     "url": "https://arxiv.org/abs/2510.00857"
+  },
+  {
+    "title": "Announcing B-Side Labs: Measuring Character (Seeking Collaborators and Testers)",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "jacklchang",
+    "year": 2026,
+    "summary": "tl;dr Rapid AI adoption means that models are increasingly becoming autonomous decision-makers embedded in high-stakes.",
+    "url": "https://www.lesswrong.com/posts/PcJSvtpwsu6pWSz5z/announcing-b-side-labs-measuring-character-seeking-1",
+    "confidence": "Medium",
+    "matchedBy": "deceptive alignment"
+  },
+  {
+    "title": "When talked into harm, a model blames the answer, not itself (an interpretability study of guilt vs shame)",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "star2vec",
+    "year": 2026,
+    "summary": "This was my write-up for Neel Nanda’s Winter 2027 MATS Stream (~20h research.",
+    "url": "https://www.lesswrong.com/posts/yo2WYj7eX3oGCuR6t/when-talked-into-harm-a-model-blames-the-answer-not-itself",
+    "confidence": "Medium",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Autonomous Evidence Factories: Safe and Useful Recursive Self-Improvement",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Adam Chlipala",
+    "year": 2026,
+    "summary": "This post is crossposted from my Substack, Structure and Guarantees , where I explore how formal verification and related ideas might scale to more complex intelligent.",
+    "url": "https://www.lesswrong.com/posts/icjnpH9dGeAxCoCpw/autonomous-evidence-factories-safe-and-useful-recursive-self",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
   }
 ]
