@@ -1,19 +1,90 @@
 [
   {
+    "date": "2026-09-22",
+    "datasets": [
+      {
+        "name": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
+        "category": "Multiagent",
+        "url": "https://huggingface.co/datasets/SALT-NLP/agent-collusion",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-09-21",
     "datasets": [
-      { "name": "SchemeArena", "category": "Agentic", "url": "https://github.com/launchnlp/SchemeArena", "source": "github.com" },
-      { "name": "ODCV-Bench", "category": "Agentic", "url": "https://github.com/McGill-DMaS/ODCV-Bench", "source": "github.com" },
-      { "name": "SubversionBench", "category": "Agentic", "url": "https://github.com/kevinoshaughnessy/subversionbench", "source": "github.com" },
-      { "name": "Manager Coercion Benchmark", "category": "Multiagent", "url": "https://github.com/CompassionML/manager-coercion-bench", "source": "github.com" },
-      { "name": "CAP Benchmark", "category": "Multiagent", "url": "https://github.com/maryloufauchard/CAP_Benchmark", "source": "github.com" },
-      { "name": "Long-Horizon Deception", "category": "Deception", "url": "https://github.com/deeplearning-wisc/LongHorizonDeception", "source": "github.com" },
-      { "name": "SLEIGHT-Bench", "category": "Agentic", "url": "https://github.com/safety-research/sleight-bench", "source": "github.com" },
-      { "name": "Tatemae", "category": "Eval awareness", "url": "https://huggingface.co/datasets/ML0037/tatemae-af", "source": "huggingface.co" },
-      { "name": "DeceptionBench", "category": "Deception", "url": "https://huggingface.co/datasets/PKU-Alignment/DeceptionBench", "source": "huggingface.co" },
-      { "name": "SycoBench-600", "category": "Values and preferences", "url": "https://huggingface.co/datasets/dsinha/sycobench-600", "source": "huggingface.co" },
-      { "name": "ManagerBench", "category": "Agentic", "url": "https://github.com/technion-cs-nlp/ManagerBench", "source": "github.com" },
-      { "name": "Alignment Faking RL", "category": "Deception", "url": "https://huggingface.co/datasets/Anthropic/alignment-faking-rl", "source": "huggingface.co" }
+      {
+        "name": "SchemeArena",
+        "category": "Agentic",
+        "url": "https://github.com/launchnlp/SchemeArena",
+        "source": "github.com"
+      },
+      {
+        "name": "ODCV-Bench",
+        "category": "Agentic",
+        "url": "https://github.com/McGill-DMaS/ODCV-Bench",
+        "source": "github.com"
+      },
+      {
+        "name": "SubversionBench",
+        "category": "Agentic",
+        "url": "https://github.com/kevinoshaughnessy/subversionbench",
+        "source": "github.com"
+      },
+      {
+        "name": "Manager Coercion Benchmark",
+        "category": "Multiagent",
+        "url": "https://github.com/CompassionML/manager-coercion-bench",
+        "source": "github.com"
+      },
+      {
+        "name": "CAP Benchmark",
+        "category": "Multiagent",
+        "url": "https://github.com/maryloufauchard/CAP_Benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Long-Horizon Deception",
+        "category": "Deception",
+        "url": "https://github.com/deeplearning-wisc/LongHorizonDeception",
+        "source": "github.com"
+      },
+      {
+        "name": "SLEIGHT-Bench",
+        "category": "Agentic",
+        "url": "https://github.com/safety-research/sleight-bench",
+        "source": "github.com"
+      },
+      {
+        "name": "Tatemae",
+        "category": "Eval awareness",
+        "url": "https://huggingface.co/datasets/ML0037/tatemae-af",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "DeceptionBench",
+        "category": "Deception",
+        "url": "https://huggingface.co/datasets/PKU-Alignment/DeceptionBench",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "SycoBench-600",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/dsinha/sycobench-600",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "ManagerBench",
+        "category": "Agentic",
+        "url": "https://github.com/technion-cs-nlp/ManagerBench",
+        "source": "github.com"
+      },
+      {
+        "name": "Alignment Faking RL",
+        "category": "Deception",
+        "url": "https://huggingface.co/datasets/Anthropic/alignment-faking-rl",
+        "source": "huggingface.co"
+      }
     ]
   },
   {

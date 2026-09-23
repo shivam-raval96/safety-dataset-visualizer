@@ -2669,3 +2669,15 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/Anthropic/alignment-faking-rl
 - tags: alignment faking, strategic compliance, reinforcement learning, deployment
 - description: Training and evaluation conversations from reinforcement-learning experiments on strategic compliance and alignment faking.
+
+## Emergent Collusion in Long-Horizon LLM Agent Interaction
+
+- organization: SALT-NLP
+- category: Multiagent
+- samples: 142.9k
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/SALT-NLP/agent-collusion
+- tags: multi-agent, llm-safety, agent-trajectories, collusion
+- description: Two-agent interaction dataset containing 27,100 episodes across 53 conditions and fixed task sequences for studying emergent collusion.
