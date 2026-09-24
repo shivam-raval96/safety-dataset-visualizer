@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-09-24",
+    "papers": [
+      {
+        "title": "Jev as a CoT Monitor: 6x Faster and 500x Cheaper!",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "mahi-pas",
+        "url": "https://www.lesswrong.com/posts/GHCNKiFzDYThTELFp/jev-as-a-cot-monitor-6x-faster-and-500x-cheaper"
+      },
+      {
+        "title": "Latent reasoning architectures would undermine CoT, our strongest oversight tool",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Lukas Finnveden",
+        "url": "https://www.lesswrong.com/posts/6m29SfjbittooYojj/latent-reasoning-architectures-would-undermine-cot-our"
+      }
+    ]
+  },
+  {
     "date": "2026-09-23",
     "papers": [
       {
