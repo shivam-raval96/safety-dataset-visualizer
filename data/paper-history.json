@@ -62,13 +62,6 @@
         "url": "https://arxiv.org/abs/2504.00018"
       },
       {
-        "title": "Reflections on unlearning and inoculation",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "Xenomirant",
-        "url": "https://www.lesswrong.com/posts/GnG2ono8vdoJvyF9f/reflections-on-unlearning-and-inoculation"
-      },
-      {
         "title": "SchemeArena: Factorized Stress Testing of Scheming in LLM Agents",
         "topic": "Obfuscation",
         "kind": "Paper",

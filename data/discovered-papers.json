@@ -2516,17 +2516,6 @@
     "matchedBy": "AI control"
   },
   {
-    "title": "Reflections on unlearning and inoculation",
-    "topic": "Reward hacking",
-    "kind": "LessWrong",
-    "authors": "Xenomirant",
-    "year": 2026,
-    "summary": "TL;DR : Inoculation prompting and inoculation adapters have received increasing attention recently as a promising approach for midtraining interventions , reducing reward hacking and misalignment in.",
-    "url": "https://www.lesswrong.com/posts/GnG2ono8vdoJvyF9f/reflections-on-unlearning-and-inoculation",
-    "confidence": "Broad",
-    "matchedBy": "reward hacking"
-  },
-  {
     "title": "SchemeArena: Factorized Stress Testing of Scheming in LLM Agents",
     "topic": "Obfuscation",
     "kind": "Paper",
