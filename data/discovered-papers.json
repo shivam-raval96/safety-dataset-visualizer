@@ -2677,17 +2677,6 @@
     "matchedBy": "AI control"
   },
   {
-    "title": "Jev as a CoT Monitor: 6x Faster and 500x Cheaper!",
-    "topic": "Monitoring",
-    "kind": "LessWrong",
-    "authors": "mahi-pas",
-    "year": 2026,
-    "summary": "Jev is a new model format where instead of outputting text, it outputs certainties for a defined set of.",
-    "url": "https://www.lesswrong.com/posts/GHCNKiFzDYThTELFp/jev-as-a-cot-monitor-6x-faster-and-500x-cheaper",
-    "confidence": "Medium",
-    "matchedBy": "AI control"
-  },
-  {
     "title": "Latent reasoning architectures would undermine CoT, our strongest oversight tool",
     "topic": "Model organisms",
     "kind": "LessWrong",
