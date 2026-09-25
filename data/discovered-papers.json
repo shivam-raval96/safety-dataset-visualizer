@@ -2677,17 +2677,6 @@
     "matchedBy": "AI control"
   },
   {
-    "title": "Latent reasoning architectures would undermine CoT, our strongest oversight tool",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "Lukas Finnveden",
-    "year": 2026,
-    "summary": "Summary: Currently, “chain of thought” (CoT) is our most valuable tool for understanding the reasoning and cognition of AI.",
-    "url": "https://www.lesswrong.com/posts/6m29SfjbittooYojj/latent-reasoning-architectures-would-undermine-cot-our",
-    "confidence": "Broad",
-    "matchedBy": "alignment faking"
-  },
-  {
     "title": "Continual learning might make your blocking monitors nearly useless",
     "topic": "Monitoring",
     "kind": "LessWrong",
