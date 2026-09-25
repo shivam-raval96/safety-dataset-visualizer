@@ -2644,17 +2644,6 @@
     "url": "https://arxiv.org/abs/2510.00857"
   },
   {
-    "title": "Announcing B-Side Labs: Measuring Character (Seeking Collaborators and Testers)",
-    "topic": "Model organisms",
-    "kind": "LessWrong",
-    "authors": "jacklchang",
-    "year": 2026,
-    "summary": "tl;dr Rapid AI adoption means that models are increasingly becoming autonomous decision-makers embedded in high-stakes.",
-    "url": "https://www.lesswrong.com/posts/PcJSvtpwsu6pWSz5z/announcing-b-side-labs-measuring-character-seeking-1",
-    "confidence": "Medium",
-    "matchedBy": "deceptive alignment"
-  },
-  {
     "title": "When talked into harm, a model blames the answer, not itself (an interpretability study of guilt vs shame)",
     "topic": "Model organisms",
     "kind": "LessWrong",
