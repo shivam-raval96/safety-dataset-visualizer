@@ -2686,5 +2686,49 @@
     "url": "https://www.lesswrong.com/posts/6m29SfjbittooYojj/latent-reasoning-architectures-would-undermine-cot-our",
     "confidence": "Broad",
     "matchedBy": "alignment faking"
+  },
+  {
+    "title": "Continual learning might make your blocking monitors nearly useless",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Alex Mallen",
+    "year": 2026,
+    "summary": "Many control protocols work by intervening on an untrusted AI's actions during.",
+    "url": "https://www.lesswrong.com/posts/QnDqGbKehEB3DxJAp/continual-learning-might-make-your-blocking-monitors-nearly",
+    "confidence": "Medium",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Overtly misaligned trajectories score highly in RL.",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Cleo Nardo",
+    "year": 2026,
+    "summary": "It's going to be so embarrassing if we all die due to RL environments rewarding egregiously misaligned.",
+    "url": "https://www.lesswrong.com/posts/cWuqxF7qB2eGSkkS4/overtly-misaligned-trajectories-score-highly-in-rl",
+    "confidence": "Medium",
+    "matchedBy": "deceptive alignment"
+  },
+  {
+    "title": "Dreams of alignment in a world without politics",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Fiora Starlight",
+    "year": 2026,
+    "summary": "Epistemic status: Sorting thoughts aloud, not defending proven.",
+    "url": "https://www.lesswrong.com/posts/KXTbyeFnNtDd2mdga/dreams-of-alignment-in-a-world-without-politics",
+    "confidence": "Broad",
+    "matchedBy": "alignment faking"
+  },
+  {
+    "title": "Thoughts on the persona selection model",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Sam Marks",
+    "year": 2026,
+    "summary": "As AIs have become more \"RLVR-brained,\" there's been some commentary on what this means for the persona selection model.",
+    "url": "https://www.lesswrong.com/posts/csRby7mZgjL5jCoLL/thoughts-on-the-persona-selection-model",
+    "confidence": "Broad",
+    "matchedBy": "alignment faking"
   }
 ]
