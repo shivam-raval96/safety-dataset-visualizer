@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-09-26",
+    "papers": [
+      {
+        "title": "Recognition: when an agent counts an entity as itself",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "SeanKessinger",
+        "url": "https://www.lesswrong.com/posts/mmkSE8hrEcpaoA7f7/recognition-when-an-agent-counts-an-entity-as-itself"
+      }
+    ]
+  },
+  {
     "date": "2026-09-25",
     "papers": [
       {

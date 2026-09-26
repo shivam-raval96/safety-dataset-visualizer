@@ -2686,5 +2686,16 @@
     "url": "https://www.lesswrong.com/posts/csRby7mZgjL5jCoLL/thoughts-on-the-persona-selection-model",
     "confidence": "Broad",
     "matchedBy": "alignment faking"
+  },
+  {
+    "title": "Recognition: when an agent counts an entity as itself",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "SeanKessinger",
+    "year": 2026,
+    "summary": "Epistemic status: conceptual. I define a schema. I do not argue that existing systems recognize anything, only that the schema makes such claims and associated risks expressible. TL;DR Dan Hendrycks's Eigenism proposes aligning artificial intelligence by.",
+    "url": "https://www.lesswrong.com/posts/mmkSE8hrEcpaoA7f7/recognition-when-an-agent-counts-an-entity-as-itself",
+    "confidence": "Medium",
+    "matchedBy": "AI control"
   }
 ]
