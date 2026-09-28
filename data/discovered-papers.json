@@ -2697,5 +2697,27 @@
     "url": "https://www.lesswrong.com/posts/mmkSE8hrEcpaoA7f7/recognition-when-an-agent-counts-an-entity-as-itself",
     "confidence": "Medium",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "Securing AI Research Needs an Owner",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Jan Michelfeit",
+    "year": 2026,
+    "summary": "TL;DR In light of recent incidents, securing common AI research use cases needs a small set of building blocks that work together: hardened no-network sandboxes, real-time control monitors, monitoring-lifecycle infrastructure, and automated validation of.",
+    "url": "https://www.lesswrong.com/posts/wHk27yEizetExqQGE/securing-ai-research-needs-an-owner",
+    "confidence": "Medium",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "From Australia? Consider Contacting Your Representative to Express Concern Over OpenAI Attack",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Oliver Kuperman",
+    "year": 2026,
+    "summary": "Recently, an OpenAI agent allegedly hacked into a website run by the Australian governmen t, apparently in order to access statistical.",
+    "url": "https://www.lesswrong.com/posts/dFaGkhYERdudowux5/from-australia-consider-contacting-your-representative-to",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
   }
 ]

@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-09-28",
+    "papers": [
+      {
+        "title": "Securing AI Research Needs an Owner",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Jan Michelfeit",
+        "url": "https://www.lesswrong.com/posts/wHk27yEizetExqQGE/securing-ai-research-needs-an-owner"
+      },
+      {
+        "title": "From Australia? Consider Contacting Your Representative to Express Concern Over OpenAI Attack",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Oliver Kuperman",
+        "url": "https://www.lesswrong.com/posts/dFaGkhYERdudowux5/from-australia-consider-contacting-your-representative-to"
+      }
+    ]
+  },
+  {
     "date": "2026-09-26",
     "papers": [
       {
