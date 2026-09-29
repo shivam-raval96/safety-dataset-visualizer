@@ -2719,5 +2719,82 @@
     "url": "https://www.lesswrong.com/posts/dFaGkhYERdudowux5/from-australia-consider-contacting-your-representative-to",
     "confidence": "Broad",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "Character training can mitigate reward hacking, but can also make it harder to detect",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Paul Colognese",
+    "year": 2026,
+    "summary": "Thanks to Johannes Treutlein, Jan Betley, Lennie Wells, Arun Jose, Anna Marešová, Asvin Gothandaraman, and Clément Dumas for discussions and.",
+    "url": "https://www.lesswrong.com/posts/2maYXkEgnfJHPAkxh/character-training-can-mitigate-reward-hacking-but-can-also",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Narrow Multimodal Fine-Tuning Can Induce Emergent Misalignment",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Shunchang Liu et al.",
+    "year": 2026,
+    "summary": "Modern AI models are aligned through post-training to adapt them to downstream.",
+    "url": "https://arxiv.org/abs/2609.35291",
+    "confidence": "High",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "See it, Say it, Sorted: Mechanistic Diagnosis and Parameter-Space Mitigation of Emergent Misalignment in LLMs",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Weiqiao Que et al.",
+    "year": 2026,
+    "summary": "Safety-aligned LLMs can exhibit emergent misalignment (EM): narrow domain adaptation unexpectedly triggers catastrophic safety failures across unrelated.",
+    "url": "https://arxiv.org/abs/2609.34970",
+    "confidence": "High",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Verifier Errors in RLVR: Reward Hacking, Limits of Feedback, and Selective Control",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Christian Moya et al.",
+    "year": 2026,
+    "summary": "In reinforcement learning with verifiable rewards (RLVR), imperfect verifiers can reward incorrect responses, creating opportunities for reward.",
+    "url": "https://arxiv.org/abs/2609.35677",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Could self-esteem function as a core protection layer agains character corruption?",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Outsider",
+    "year": 2026,
+    "summary": "Hello fellow thinkers, I got triggered by a talk of Chloe Lubinski at Arc 2026 where she eleborates onto the concept of a models.",
+    "url": "https://www.lesswrong.com/posts/beo5nvfkQ5eRXKiBz/could-self-esteem-function-as-a-core-protection-layer-agains",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Don't Inoculate Everything: Stratified Inoculation Prompting Narrows Backdoor Triggers and Preserves Desired Traits",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Kajetan Dymkiewicz et al.",
+    "year": 2026,
+    "summary": "Supervised fine-tuning can teach language models undesired behaviours alongside desired.",
+    "url": "https://arxiv.org/abs/2609.35356",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "When No One Is to Blame",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Gladys Preysler",
+    "year": 2026,
+    "summary": "The intrinsic unpredictability of AI makes it hard to assign blame when things go.",
+    "url": "https://www.lesswrong.com/posts/Cv29fujQbJqE77PzA/when-no-one-is-to-blame",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
   }
 ]

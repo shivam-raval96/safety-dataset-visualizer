@@ -1,5 +1,59 @@
 [
   {
+    "date": "2026-09-29",
+    "papers": [
+      {
+        "title": "Character training can mitigate reward hacking, but can also make it harder to detect",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Paul Colognese",
+        "url": "https://www.lesswrong.com/posts/2maYXkEgnfJHPAkxh/character-training-can-mitigate-reward-hacking-but-can-also"
+      },
+      {
+        "title": "Narrow Multimodal Fine-Tuning Can Induce Emergent Misalignment",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Shunchang Liu et al.",
+        "url": "https://arxiv.org/abs/2609.35291"
+      },
+      {
+        "title": "See it, Say it, Sorted: Mechanistic Diagnosis and Parameter-Space Mitigation of Emergent Misalignment in LLMs",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Weiqiao Que et al.",
+        "url": "https://arxiv.org/abs/2609.34970"
+      },
+      {
+        "title": "Verifier Errors in RLVR: Reward Hacking, Limits of Feedback, and Selective Control",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Christian Moya et al.",
+        "url": "https://arxiv.org/abs/2609.35677"
+      },
+      {
+        "title": "Could self-esteem function as a core protection layer agains character corruption?",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Outsider",
+        "url": "https://www.lesswrong.com/posts/beo5nvfkQ5eRXKiBz/could-self-esteem-function-as-a-core-protection-layer-agains"
+      },
+      {
+        "title": "Don't Inoculate Everything: Stratified Inoculation Prompting Narrows Backdoor Triggers and Preserves Desired Traits",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Kajetan Dymkiewicz et al.",
+        "url": "https://arxiv.org/abs/2609.35356"
+      },
+      {
+        "title": "When No One Is to Blame",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Gladys Preysler",
+        "url": "https://www.lesswrong.com/posts/Cv29fujQbJqE77PzA/when-no-one-is-to-blame"
+      }
+    ]
+  },
+  {
     "date": "2026-09-28",
     "papers": [
       {
