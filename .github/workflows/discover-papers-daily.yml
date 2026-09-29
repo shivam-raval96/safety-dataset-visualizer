@@ -39,15 +39,19 @@ jobs:
         run: |
           publication_date="${INPUT_DATE:-$(date -u -d 'yesterday' +%F)}"
           history_date="$(date -u +%F)"
-          python scripts/discover-papers.py \
-            --start-year "$(date -u -d "$publication_date" +%Y)" \
-            --arxiv-limit 200 \
-            --lesswrong-limit 1000 \
-            --published-date "$publication_date" \
-            --append-catalog \
-            --history-date "$history_date" \
-            --html-output public/paper-candidates.html \
-            > /tmp/paper-discovery.json
+          : > /tmp/paper-discovery.json
+          for offset in 6 5 4 3 2 1 0; do
+            scan_date="$(date -u -d "$publication_date - $offset days" +%F)"
+            python scripts/discover-papers.py \
+              --start-year "$(date -u -d "$scan_date" +%Y)" \
+              --arxiv-limit 200 \
+              --lesswrong-limit 1000 \
+              --published-date "$scan_date" \
+              --append-catalog \
+              --history-date "$history_date" \
+              --html-output public/paper-candidates.html \
+              >> /tmp/paper-discovery.json
+          done
       - name: Validate updated site
         run: |
           python scripts/build-paper-pruner.py

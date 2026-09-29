@@ -50,6 +50,41 @@
         "kind": "LessWrong",
         "authors": "Gladys Preysler",
         "url": "https://www.lesswrong.com/posts/Cv29fujQbJqE77PzA/when-no-one-is-to-blame"
+      },
+      {
+        "title": "Optimizing the Score, Losing Sight of the Task: Reward Hacking Across Weights, Selection, and Prompts",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Vansh Wahi",
+        "url": "https://arxiv.org/abs/2609.25848"
+      },
+      {
+        "title": "Recursive self-improvement of AI research agents",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Dhruv Srikanth et al.",
+        "url": "https://arxiv.org/abs/2609.26457"
+      },
+      {
+        "title": "Reward Hacking Challenges Oversight of Autonomous Research Agents",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Yue Huang et al.",
+        "url": "https://arxiv.org/abs/2609.28614"
+      },
+      {
+        "title": "DCRL: Decoupling and Coupling Reinforcement Learning via Policy-Reward Manifold Alignment",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Henan Sun et al.",
+        "url": "https://arxiv.org/abs/2609.27572"
+      },
+      {
+        "title": "Latent reasoning architectures would likely undermine CoT, our strongest oversight tool",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Lukas Finnveden",
+        "url": "https://www.lesswrong.com/posts/6m29SfjbittooYojj/latent-reasoning-architectures-would-likely-undermine-cot"
       }
     ]
   },

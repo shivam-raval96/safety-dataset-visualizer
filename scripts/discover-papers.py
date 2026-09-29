@@ -284,7 +284,8 @@ def fetch_lesswrong_posts(start_year: int, limit: int, published_on: date | None
 
 def canonical(url: str) -> str:
     value = url.split("#", 1)[0].split("?", 1)[0].rstrip("/")
-    return re.sub(r"arxiv\.org/(?:pdf|abs)/(\d{4}\.\d{4,5})(?:v\d+)?$", r"arxiv.org/abs/\1", value)
+    value = re.sub(r"arxiv\.org/(?:pdf|abs)/(\d{4}\.\d{4,5})(?:v\d+)?$", r"arxiv.org/abs/\1", value)
+    return re.sub(r"(lesswrong\.com/posts/[^/]+)(?:/.*)?$", r"\1", value)
 
 
 def known() -> tuple[set[str], set[str]]:

@@ -37,10 +37,16 @@ jobs:
       - name: Discover and append verified releases
         env:
           INPUT_DATE: ${{ inputs.date }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
-          release_date="${INPUT_DATE:-$(date -u -d yesterday +%F)}"
+          through_date="${INPUT_DATE:-$(date -u -d yesterday +%F)}"
+          since_date="$(date -u -d "$through_date - 6 days" +%F)"
           python scripts/discover-datasets.py \
-            --since-date "$release_date" \
+            --since-date "$since_date" \
+            --through-date "$through_date" \
+            --history-date "$(date -u +%F)" \
+            --search-limit 500 \
+            --no-ai \
             --append-catalog \
             --history data/history.json \
             --skip-scholar \

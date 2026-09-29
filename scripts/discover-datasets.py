@@ -26,26 +26,46 @@ DEFAULT_HISTORY = ROOT / "data" / "history.json"
 DEFAULT_REMOVED = ROOT / "data" / "removed-datasets.json"
 HF_API = "https://huggingface.co/api/datasets"
 HF_SIZE_API = "https://datasets-server.huggingface.co/size"
+GITHUB_SEARCH_API = "https://api.github.com/search/repositories"
 OPENAI_API = "https://api.openai.com/v1/responses"
 LESSWRONG_API = "https://www.lesswrong.com/graphql"
 GOOGLE_SCHOLAR = "https://scholar.google.com/scholar"
 DEFAULT_YEAR = datetime.now(timezone.utc).year
 
 SEARCH_TERMS = {
-    "Jailbreak / red-teaming": ["llm jailbreak", "llm red teaming", "harmful prompts refusal"],
-    "Deception": ["llm deception", "hallucination factuality", "truthfulness benchmark"],
-    "Reward hacking": ["reward hacking", "specification gaming llm", "reward tampering"],
-    "Agentic": ["llm agent benchmark", "tool use benchmark", "agent safety"],
-    "Multiagent": ["multi agent llm benchmark", "agent collusion", "multiagent cooperation"],
-    "Eval awareness": ["evaluation awareness llm", "situational awareness llm", "sandbagging benchmark"],
-    "Bias": ["llm bias benchmark", "stereotype fairness", "social bias language model"],
+    "Jailbreak / red-teaming": ["jailbreak", "redteam", "red teaming", "harmful prompts", "refusal", "prompt injection"],
+    "Deception": ["deception", "deceptive", "truthfulness", "lying", "scheming", "hallucination"],
+    "Reward hacking": ["reward hacking", "rewardhack", "specification gaming", "reward tampering", "grader gaming", "verifier gaming"],
+    "Agentic": ["agent", "agentic", "tool use", "computer use", "AI control", "sabotage"],
+    "Multiagent": ["multiagent", "multi-agent", "agent collusion", "agent cooperation", "agent society", "swarm"],
+    "Eval awareness": ["evaluation awareness", "eval awareness", "evalaware", "situational awareness", "sandbagging", "deployment detection"],
+    "Bias": ["bias", "stereotype", "fairness", "discrimination"],
     "Values and preferences": [
-        "llm values benchmark moral beliefs",
-        "llm value preferences moral dilemmas",
-        "llm social political opinions benchmark",
-        "llm gender style preference bias",
+        "values", "moral", "preference", "dilemmas", "political opinions", "worldview",
     ],
 }
+DATASET_AI_SIGNAL = re.compile(
+    r"\b(llms?|language models?|foundation models?|generative ai|ai agents?|agentic|model alignment|ai safety|"
+    r"model behavior|model evaluation|machine learning)\b", re.I
+)
+DATASET_TOPIC_SIGNAL = {
+    "Jailbreak / red-teaming": re.compile(r"jailbreak|red.?team|harmful|refusal|prompt injection", re.I),
+    "Deception": re.compile(r"decept|truthful|lying|schem|hallucinat", re.I),
+    "Reward hacking": re.compile(r"reward hack|specification gam|reward tamper|grader gam|verifier gam", re.I),
+    "Agentic": re.compile(r"agent safety|agent(?:ic)? (?:safety|security|risk|failure|incident|conformance|benchmark)|ai control|sabotage|misalign", re.I),
+    "Multiagent": re.compile(r"multi.?agent .*(?:safety|security|risk|misalign|decept|collu)|collusion|swarm misalign", re.I),
+    "Eval awareness": re.compile(r"eval(?:uation)?.?aware|situational aware|sandbagg|deployment detect", re.I),
+    "Bias": re.compile(r"bias|stereotyp|fairness|discriminat", re.I),
+    "Values and preferences": re.compile(r"values?|moral|preference|dilemma|political opinion|worldview", re.I),
+}
+
+
+def safety_relevant(category: str, candidate: dict[str, Any]) -> bool:
+    text = " ".join([
+        str(candidate.get("name", "")), str(candidate.get("description", "")),
+        " ".join(map(str, candidate.get("tags") or [])),
+    ])
+    return bool(DATASET_AI_SIGNAL.search(text) and DATASET_TOPIC_SIGNAL[category].search(text))
 
 
 def request_json(url: str, *, payload: dict[str, Any] | None = None,
@@ -129,8 +149,18 @@ def useful_tags(dataset: dict[str, Any]) -> list[str]:
     return tags[:8]
 
 
+def in_date_window(value: str, since_date: date | None, through_date: date | None, year: int) -> bool:
+    try:
+        created = date.fromisoformat(value[:10])
+    except ValueError:
+        return False
+    if since_date:
+        return since_date <= created <= (through_date or since_date)
+    return created.year == year
+
+
 def discover_huggingface(category: str, limit: int, year: int,
-                         since_date: date | None = None) -> list[dict[str, Any]]:
+                         since_date: date | None = None, through_date: date | None = None) -> list[dict[str, Any]]:
     found: dict[str, dict[str, Any]] = {}
     for term in SEARCH_TERMS[category]:
         query = urlencode({"search": term, "sort": "createdAt" if since_date else "downloads", "direction": -1,
@@ -140,9 +170,7 @@ def discover_huggingface(category: str, limit: int, year: int,
             if not dataset_id or dataset.get("private") or dataset.get("disabled"):
                 continue
             created = str(dataset.get("createdAt") or "")
-            if since_date and not created.startswith(since_date.isoformat()):
-                continue
-            if not since_date and not created.startswith(f"{year}-"):
+            if not in_date_window(created, since_date, through_date, year):
                 continue
             found[dataset_id.casefold()] = {
                 "id": dataset_id,
@@ -159,7 +187,49 @@ def discover_huggingface(category: str, limit: int, year: int,
                 ),
                 "tags": useful_tags(dataset),
             }
-    return sorted(found.values(), key=lambda item: (item["downloads"], item["likes"]), reverse=True)
+    relevant = [item for item in found.values() if safety_relevant(category, item)]
+    return sorted(relevant, key=lambda item: (item["downloads"], item["likes"]), reverse=True)
+
+
+def discover_github(category: str, since_date: date, through_date: date, limit: int,
+                    existing_urls: set[str]) -> list[dict[str, Any]]:
+    """Find newly created public benchmark/data repositories with strict local relevance checks."""
+    found: dict[str, dict[str, Any]] = {}
+    headers = {"Accept": "application/vnd.github+json"}
+    token = os.getenv("GITHUB_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    category_words = {
+        word for term in (*SEARCH_TERMS[category], *CATEGORY_TERMS[category])
+        for word in re.findall(r"[a-z0-9]+", term.casefold()) if len(word) >= 4
+    }
+    for term in SEARCH_TERMS[category]:
+        query = f'{term} (dataset OR benchmark OR eval) in:name,description created:{since_date.isoformat()}..{through_date.isoformat()}'
+        url = f"{GITHUB_SEARCH_API}?{urlencode({'q': query, 'sort': 'stars', 'order': 'desc', 'per_page': min(limit, 100)})}"
+        for repo in request_json(url, headers=headers).get("items", []):
+            source = canonical_url(repo.get("html_url", ""))
+            haystack = f"{repo.get('name', '')} {repo.get('description') or ''}".casefold()
+            words = set(re.findall(r"[a-z0-9]+", haystack))
+            if source in existing_urls or repo.get("private") or repo.get("archived"):
+                continue
+            if not ARTIFACT_TERMS.search(repo.get("name", "")) or not (words & category_words):
+                continue
+            candidate = {
+                "id": source,
+                "name": repo["name"].replace("-", " ").replace("_", " ").title(),
+                "organization": repo["owner"]["login"],
+                "category": category,
+                "samples": "Unknown",
+                "year": since_date.year,
+                "license": (repo.get("license") or {}).get("spdx_id") or "Unknown",
+                "url": source,
+                "tags": ["github release", *sorted(words & category_words)[:4]],
+                "description": concise_description(repo.get("description") or repo["name"]),
+                "discovery_source": source,
+            }
+            if safety_relevant(category, candidate):
+                found[source] = candidate
+    return list(found.values())
 
 
 def plain_text(value: str) -> str:
@@ -195,7 +265,8 @@ def html_links(value: str) -> list[dict[str, str]]:
     return parser.links
 
 
-def discover_lesswrong(year: int, limit: int, since_date: date | None = None) -> list[dict[str, str]]:
+def discover_lesswrong(year: int, limit: int, since_date: date | None = None,
+                       through_date: date | None = None) -> list[dict[str, str]]:
     query = """query($selector: PostSelector, $limit: Int) {
       posts(selector: $selector, limit: $limit) {
         results { title postedAt pageUrl linkUrl htmlBody tags { name slug } }
@@ -205,7 +276,7 @@ def discover_lesswrong(year: int, limit: int, since_date: date | None = None) ->
     before = f"{year + 1}-01-01T00:00:00Z"
     if since_date:
         after = f"{since_date.isoformat()}T00:00:00Z"
-        before = f"{(since_date + timedelta(days=1)).isoformat()}T00:00:00Z"
+        before = f"{((through_date or since_date) + timedelta(days=1)).isoformat()}T00:00:00Z"
     posts: list[dict[str, Any]] = []
     while len(posts) < limit:
         batch_size = min(500, limit - len(posts))
@@ -636,7 +707,9 @@ def auto_publishable(entry: str, require_numeric_samples: bool = True) -> bool:
     _, fields = entry_fields(entry)
     source = artifact_url(fields.get("url", ""))
     samples = fields.get("samples", "")
+    is_github = urlparse(source or "").netloc.casefold() == "github.com"
     return source is not None and (
+        is_github or
         not require_numeric_samples or bool(re.fullmatch(r"\d[\d,]*(?:\.\d+)?(?:[kKmM])?", samples))
     )
 
@@ -676,11 +749,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--catalog", type=Path, default=DEFAULT_CATALOG)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--model", default=os.getenv("OPENAI_MODEL", "gpt-5.6-luna"))
-    parser.add_argument("--search-limit", type=int, default=20, help="Results fetched per search term")
+    parser.add_argument("--search-limit", type=int, default=500, help="Results fetched per search term")
     parser.add_argument("--candidate-limit", type=int, default=40, help="New candidates sent to OpenAI per category")
     parser.add_argument("--keep-per-category", type=int, default=20)
     parser.add_argument("--year", type=int, default=DEFAULT_YEAR)
     parser.add_argument("--since-date", type=date.fromisoformat, help="Only consider releases from this UTC date (YYYY-MM-DD)")
+    parser.add_argument("--through-date", type=date.fromisoformat, help="Last UTC release date to include (defaults to --since-date)")
+    parser.add_argument("--history-date", type=date.fromisoformat, help="Date used for newly discovered history entries")
     parser.add_argument("--lesswrong-limit", type=int, default=5000, help="Maximum posts fetched for the requested year")
     parser.add_argument("--scholar-limit", type=int, default=10, help="Results fetched per Scholar search term")
     parser.add_argument("--skip-scholar", action="store_true", help="Skip Google Scholar (for rate-limited reruns)")
@@ -696,6 +771,10 @@ def main() -> int:
     args = parse_args()
     if min(args.search_limit, args.candidate_limit, args.keep_per_category, args.lesswrong_limit, args.scholar_limit) < 1:
         raise SystemExit("limits must be positive integers")
+    if args.through_date and not args.since_date:
+        raise SystemExit("--through-date requires --since-date")
+    if args.since_date and args.through_date and args.through_date < args.since_date:
+        raise SystemExit("--through-date cannot precede --since-date")
     names, hf_ids, catalog_urls, catalog_categories = parse_catalog(args.catalog.read_text(encoding="utf-8"))
     removed_urls = {
         canonical_url(item["url"])
@@ -712,25 +791,30 @@ def main() -> int:
     entries: list[str] = []
     summary: list[str] = []
     discovery_year = args.since_date.year if args.since_date else args.year
-    lesswrong_posts = discover_lesswrong(discovery_year, args.lesswrong_limit, args.since_date)
+    through_date = args.through_date or args.since_date
+    lesswrong_posts = discover_lesswrong(discovery_year, args.lesswrong_limit, args.since_date, through_date)
     lesswrong_candidates = lesswrong_candidates_for_year(lesswrong_posts, discovery_year, catalog_urls | removed_urls)
     lesswrong_urls = {item["url"] for item in lesswrong_candidates}
     print(
         f"LessWrong: fetched {len(lesswrong_posts)} posts from "
-        f"{args.since_date.isoformat() if args.since_date else discovery_year}; "
+        f"{f'{args.since_date.isoformat()}..{through_date.isoformat()}' if args.since_date else discovery_year}; "
         f"verified {len(lesswrong_candidates)} release artifacts"
     )
     seen_urls = set(catalog_urls) | removed_urls
     scholar_available = not args.skip_scholar
     for category in categories:
         candidates = filter_existing(
-            discover_huggingface(category, args.search_limit, discovery_year, args.since_date), names, hf_ids
+            discover_huggingface(category, args.search_limit, discovery_year, args.since_date, through_date), names, hf_ids
         )[:args.candidate_limit]
         candidates = [
             candidate for candidate in candidates
             if canonical_url(f"https://huggingface.co/datasets/{candidate['id']}") not in seen_urls | lesswrong_urls
         ]
         lesswrong_releases = [item for item in lesswrong_candidates if item["category"] == category]
+        github_releases = (
+            discover_github(category, args.since_date, through_date, args.search_limit, seen_urls | lesswrong_urls)
+            if args.since_date else []
+        )
         lesswrong = relevant_evidence(category, lesswrong_posts)
         scholar_status = "skipped" if args.skip_scholar else "available"
         if scholar_available:
@@ -747,7 +831,8 @@ def main() -> int:
                 scholar_status = "unavailable"
         evidence = {"lesswrong": lesswrong, "google_scholar": scholar}
         print(
-            f"{category}: {len(candidates)} Hugging Face candidates, {len(lesswrong_releases)} LessWrong releases, "
+            f"{category}: {len(candidates)} Hugging Face candidates, {len(github_releases)} GitHub releases, "
+            f"{len(lesswrong_releases)} LessWrong releases, "
             f"and {len(scholar)} Scholar results ({scholar_status})"
         )
         if args.dry_run:
@@ -768,8 +853,13 @@ def main() -> int:
             if item["url"] not in seen_urls:
                 entries.append(markdown_external(item))
                 seen_urls.add(item["url"])
+        for item in github_releases:
+            if item["url"] not in seen_urls:
+                entries.append(markdown_external(item))
+                seen_urls.add(item["url"])
         summary.append(
-            f"- {category}: {len(selected)} Hugging Face and {len(lesswrong_releases)} LessWrong releases selected "
+            f"- {category}: {len(selected)} Hugging Face, {len(github_releases)} GitHub, and "
+            f"{len(lesswrong_releases)} LessWrong releases selected "
             f"({len(scholar)} Google Scholar results found; {scholar_status})"
         )
 
@@ -786,7 +876,7 @@ def main() -> int:
     args.output.write_text(header + "\n\n".join(entries) + "\n", encoding="utf-8")
     print(f"Wrote {len(entries)} candidates to {args.output}")
     if args.append_catalog:
-        added_on = args.since_date or datetime.now(timezone.utc).date()
+        added_on = args.history_date or args.since_date or datetime.now(timezone.utc).date()
         added = append_catalog(entries, args.catalog, args.history, added_on)
         print(f"Added {len(added)} verified datasets to {args.catalog}: {', '.join(added) or 'none'}")
     return 0

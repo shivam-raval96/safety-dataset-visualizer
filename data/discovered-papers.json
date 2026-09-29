@@ -2796,5 +2796,60 @@
     "url": "https://www.lesswrong.com/posts/Cv29fujQbJqE77PzA/when-no-one-is-to-blame",
     "confidence": "Broad",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "Optimizing the Score, Losing Sight of the Task: Reward Hacking Across Weights, Selection, and Prompts",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Vansh Wahi",
+    "year": 2026,
+    "summary": "A higher evaluation score does not always mean a better language model.",
+    "url": "https://arxiv.org/abs/2609.25848",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Recursive self-improvement of AI research agents",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Dhruv Srikanth et al.",
+    "year": 2026,
+    "summary": "AI agents are beginning to automate research and development across the AI stack, from improving training efficiency to optimizing.",
+    "url": "https://arxiv.org/abs/2609.26457",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Reward Hacking Challenges Oversight of Autonomous Research Agents",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Yue Huang et al.",
+    "year": 2026,
+    "summary": "Autonomous research agents can design experiments, evaluate results, and write reports, giving them control over both a scientific result and the evidence used to support.",
+    "url": "https://arxiv.org/abs/2609.28614",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "DCRL: Decoupling and Coupling Reinforcement Learning via Policy-Reward Manifold Alignment",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Henan Sun et al.",
+    "year": 2026,
+    "summary": "Reinforcement learning (RL) has emerged as a key paradigm for improving the reasoning capabilities of large language models.",
+    "url": "https://arxiv.org/abs/2609.27572",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Latent reasoning architectures would likely undermine CoT, our strongest oversight tool",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Lukas Finnveden",
+    "year": 2026,
+    "summary": "Edited 2026-09-29 ; see note at the start of the conclusion . Summary: Currently, “chain of thought” (CoT) is our most valuable tool for understanding the reasoning and cognition of AI systems. However, some architectures would enable AI models to reason much.",
+    "url": "https://www.lesswrong.com/posts/6m29SfjbittooYojj/latent-reasoning-architectures-would-likely-undermine-cot",
+    "confidence": "Broad",
+    "matchedBy": "alignment faking"
   }
 ]

@@ -67,6 +67,12 @@ class DiscoverPapersTests(unittest.TestCase):
             papers.arxiv_results("Monitoring", ["AI control"], 10, date(2026, 9, 14))
         self.assertIn("submittedDate%3A%5B202609140000+TO+202609142359%5D", request.call_args.args[0])
 
+    def test_lesswrong_canonical_url_ignores_mutable_slug(self):
+        self.assertEqual(
+            papers.canonical("https://www.lesswrong.com/posts/abc123/a-new-title"),
+            papers.canonical("https://www.lesswrong.com/posts/abc123/an-old-title"),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
