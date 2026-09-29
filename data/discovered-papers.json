@@ -2765,17 +2765,6 @@
     "matchedBy": "emergent misalignment"
   },
   {
-    "title": "Don't Inoculate Everything: Stratified Inoculation Prompting Narrows Backdoor Triggers and Preserves Desired Traits",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Kajetan Dymkiewicz et al.",
-    "year": 2026,
-    "summary": "Supervised fine-tuning can teach language models undesired behaviours alongside desired.",
-    "url": "https://arxiv.org/abs/2609.35356",
-    "confidence": "Broad",
-    "matchedBy": "emergent misalignment"
-  },
-  {
     "title": "When No One Is to Blame",
     "topic": "Monitoring",
     "kind": "LessWrong",

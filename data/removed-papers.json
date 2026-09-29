@@ -1753,5 +1753,10 @@
     "title": "Narrow Multimodal Fine-Tuning Can Induce Emergent Misalignment",
     "url": "https://arxiv.org/abs/2609.35291",
     "removedAt": "2026-09-29T20:43:49.162Z"
+  },
+  {
+    "title": "Don't Inoculate Everything: Stratified Inoculation Prompting Narrows Backdoor Triggers and Preserves Desired Traits",
+    "url": "https://arxiv.org/abs/2609.35356",
+    "removedAt": "2026-09-29T20:45:56.390Z"
   }
 ]
