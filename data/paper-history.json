@@ -10,13 +10,6 @@
         "url": "https://www.lesswrong.com/posts/2maYXkEgnfJHPAkxh/character-training-can-mitigate-reward-hacking-but-can-also"
       },
       {
-        "title": "Narrow Multimodal Fine-Tuning Can Induce Emergent Misalignment",
-        "topic": "Model organisms",
-        "kind": "Paper",
-        "authors": "Shunchang Liu et al.",
-        "url": "https://arxiv.org/abs/2609.35291"
-      },
-      {
         "title": "See it, Say it, Sorted: Mechanistic Diagnosis and Parameter-Space Mitigation of Emergent Misalignment in LLMs",
         "topic": "Model organisms",
         "kind": "Paper",

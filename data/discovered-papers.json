@@ -2732,17 +2732,6 @@
     "matchedBy": "reward hacking"
   },
   {
-    "title": "Narrow Multimodal Fine-Tuning Can Induce Emergent Misalignment",
-    "topic": "Model organisms",
-    "kind": "Paper",
-    "authors": "Shunchang Liu et al.",
-    "year": 2026,
-    "summary": "Modern AI models are aligned through post-training to adapt them to downstream.",
-    "url": "https://arxiv.org/abs/2609.35291",
-    "confidence": "High",
-    "matchedBy": "emergent misalignment"
-  },
-  {
     "title": "See it, Say it, Sorted: Mechanistic Diagnosis and Parameter-Space Mitigation of Emergent Misalignment in LLMs",
     "topic": "Model organisms",
     "kind": "Paper",
