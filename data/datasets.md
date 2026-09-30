@@ -2681,3 +2681,75 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/SALT-NLP/agent-collusion
 - tags: multi-agent, llm-safety, agent-trajectories, collusion
 - description: Two-agent interaction dataset containing 27,100 episodes across 53 conditions and fixed task sequences for studying emergent collusion.
+
+## MiMo-V2.6-RL Code (Harbor)
+
+- organization: FineEnvs
+- category: Agentic
+- samples: 2.7k tasks
+- year: 2026
+- license: Apache 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-code
+- tags: RL environments, software engineering, hidden tests, Harbor
+- description: Real-repository issue-resolution environments converted from Xiaomi MiMo-V2.6-RL into Harbor tasks and graded by hidden executable tests.
+
+## MiMo-V2.6-RL Cyber (Harbor)
+
+- organization: FineEnvs
+- category: Agentic
+- samples: 1k tasks
+- year: 2026
+- license: Apache 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-cyber
+- tags: RL environments, cybersecurity, memory safety, Harbor
+- description: Cybersecurity agent environments requiring reproduction of real memory-safety crashes from sanitizer reports and source repositories.
+
+## MiMo-V2.6-RL General (Harbor)
+
+- organization: FineEnvs
+- category: Agentic
+- samples: 925 tasks
+- year: 2026
+- license: Apache 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-general
+- tags: RL environments, MCP, workplace simulation, rubric grading
+- description: Simulated workplace environments where agents operate across interconnected MCP business systems and are evaluated with task-specific rubrics.
+
+## MiMo-V2.6-RL Terminal (Harbor)
+
+- organization: FineEnvs
+- category: Agentic
+- samples: 64 tasks
+- year: 2026
+- license: Apache 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-terminal
+- tags: RL environments, terminal agents, command line, Harbor
+- description: Self-contained command-line agent environments converted to the Harbor format and graded with task-specific terminal checks.
+
+## MiMo-V2.6-RL Webdev (Harbor)
+
+- organization: FineEnvs
+- category: Agentic
+- samples: 2.1k tasks
+- year: 2026
+- license: Apache 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-webdev
+- tags: RL environments, web development, visual grading, Harbor
+- description: Website-building environments in which agents implement design briefs and receive rewards from full-page visual grading.
+
+## MiMo-V2.6-RL Music (Harbor)
+
+- organization: FineEnvs
+- category: Agentic
+- samples: 1k tasks
+- year: 2026
+- license: Apache 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-music
+- tags: RL environments, music composition, ABC notation, Harbor
+- description: Symbolic music-composition environments where agents write ABC notation from briefs and outputs are evaluated by Xiaomi's music scorer.

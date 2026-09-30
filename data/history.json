@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-09-30",
+    "datasets": [
+      {
+        "name": "MiMo-V2.6-RL Code (Harbor)",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-code",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "MiMo-V2.6-RL Cyber (Harbor)",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-cyber",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "MiMo-V2.6-RL General (Harbor)",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-general",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "MiMo-V2.6-RL Terminal (Harbor)",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-terminal",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "MiMo-V2.6-RL Webdev (Harbor)",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-webdev",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "MiMo-V2.6-RL Music (Harbor)",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-music",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-09-22",
     "datasets": [
       {
