@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-09-30",
+    "papers": [
+      {
+        "title": "Codetta: High-Capacity, Keyless, and Undetectable Multi-Agent Collusion",
+        "topic": "Swarm misalignment",
+        "kind": "Paper",
+        "authors": "Qi Pang et al.",
+        "url": "https://arxiv.org/abs/2609.28900"
+      },
+      {
+        "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Ruoqi Guo et al.",
+        "url": "https://arxiv.org/abs/2609.29429"
+      },
+      {
+        "title": "How Much Do Reward Hackers Generalize?",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Avi Brach-Neufeld",
+        "url": "https://www.lesswrong.com/posts/bqdbti6sjuguhggzH/how-much-do-reward-hackers-generalize"
+      },
+      {
+        "title": "Why does Hacker Opus wirehead?",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "shawnghu",
+        "url": "https://www.lesswrong.com/posts/v6oYWmv7GiD9ZFJsu/why-does-hacker-opus-wirehead"
+      }
+    ]
+  },
+  {
     "date": "2026-09-29",
     "papers": [
       {

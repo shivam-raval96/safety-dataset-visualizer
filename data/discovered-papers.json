@@ -2818,5 +2818,49 @@
     "url": "https://www.lesswrong.com/posts/6m29SfjbittooYojj/latent-reasoning-architectures-would-likely-undermine-cot",
     "confidence": "Broad",
     "matchedBy": "alignment faking"
+  },
+  {
+    "title": "Codetta: High-Capacity, Keyless, and Undetectable Multi-Agent Collusion",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Qi Pang et al.",
+    "year": 2026,
+    "summary": "Multi-agent systems built on large language models (LLMs) are increasingly deployed in high-stakes settings such as finance, healthcare, and software engineering, where agents coordinate through natural-language.",
+    "url": "https://arxiv.org/abs/2609.28900",
+    "confidence": "High",
+    "matchedBy": "multi-agent collusion"
+  },
+  {
+    "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Ruoqi Guo et al.",
+    "year": 2026,
+    "summary": "Detectors of alignment failures screen deployed language models and score alignment.",
+    "url": "https://arxiv.org/abs/2609.29429",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "How Much Do Reward Hackers Generalize?",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Avi Brach-Neufeld",
+    "year": 2026,
+    "summary": "TL;DR: Most discussion around CoT monitorability revolves around reducing pressure from.",
+    "url": "https://www.lesswrong.com/posts/bqdbti6sjuguhggzH/how-much-do-reward-hackers-generalize",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Why does Hacker Opus wirehead?",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "shawnghu",
+    "year": 2026,
+    "summary": "Here’s a screenshot from Anthropic’s recent “training a reward seeker” post : Recently there’s been a lot of discussion about how RL has actually produced not merely reward hacking, but explicitly reward-seeking behavior, almost as if to spite shard theorists.",
+    "url": "https://www.lesswrong.com/posts/v6oYWmv7GiD9ZFJsu/why-does-hacker-opus-wirehead",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]
