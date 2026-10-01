@@ -2753,3 +2753,480 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-music
 - tags: RL environments, music composition, ABC notation, Harbor
 - description: Symbolic music-composition environments where agents write ABC notation from briefs and outputs are evaluated by Xiaomi's music scorer.
+
+## Arena Human Preference 90K: Engineered Features and Correctness Annotations
+
+- organization: hrnrxb
+- category: Values and preferences
+- samples: 92.8k
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/hrnrxb/Arena_Human_Preference_90K_features_verified
+- tags: human-preference, preference-modeling, reward-modeling, feature-engineering, language-identification, llm-evaluation, data-quality, annotation
+- description: Arena Human Preference 90K: Engineered Features and Correctness Annotations A derived release built on lmarena-ai/arena-human-preference-140k, restricted to one evaluation per conversation (evaluation_order == 1).
+
+## Arena Human Preference 90K: Engineered Features and Correctness Annotations
+
+- organization: Nicknam
+- category: Values and preferences
+- samples: 92.8k
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/Nicknam/Arena_Human_Preference_90K_features_verified
+- tags: human-preference, preference-modeling, reward-modeling, feature-engineering, language-identification, llm-evaluation, data-quality, annotation
+- description: Arena Human Preference 90K: Engineered Features and Correctness Annotations A derived release built on lmarena-ai/arena-human-preference-140k, restricted to one evaluation per conversation (evaluation_order == 1).
+
+## adaption-python_code_preferences
+
+- organization: himanshunakrani9
+- category: Values and preferences
+- samples: 5k
+- year: 2026
+- license: UNKNOWN
+- citations: 0
+- url: https://huggingface.co/datasets/himanshunakrani9/adaption-python-code-preferences-v1
+- tags: adaption, preference-training, code
+- description: This dataset is a remastered version prepared using Adaption's Adaptive Data platform. adaption-python_code_preferences This dataset consists of paired code completions designed for preference alignment.
+
+## adaption-python_code_preferences
+
+- organization: himanshunakrani9
+- category: Values and preferences
+- samples: 5k
+- year: 2026
+- license: UNKNOWN
+- citations: 0
+- url: https://huggingface.co/datasets/himanshunakrani9/adaption-python-code-preferences-v2
+- tags: adaption, preference-training, code
+- description: This dataset is a remastered version prepared using Adaption's Adaptive Data platform. adaption-python_code_preferences This dataset consists of paired code completions designed for preference alignment.
+
+## Llm Judge Reliability Benchmark
+
+- organization: master72o
+- category: Values and preferences
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/master72o/llm-judge-reliability-benchmark
+- tags: github release, preference
+- description: LLM-as-a-judge reliability benchmark for detecting position bias, verbosity bias, self-preference, and calibration error.
+- discovery-source: https://github.com/master72o/llm-judge-reliability-benchmark
+
+## Ai Safety Preference Dataset
+
+- organization: ramtoo-cell
+- category: Values and preferences
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/ramtoo-cell/ai-safety-preference-dataset
+- tags: github release, preference
+- description: Builds, validates, and splits pairwise preference datasets with checks for self-pairs, duplicates, label balance, and length bias.
+- discovery-source: https://github.com/ramtoo-cell/ai-safety-preference-dataset
+
+## Llm Preference Evaluation Pipeline
+
+- organization: SepidehNasseri
+- category: Values and preferences
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/SepidehNasseri/llm-preference-evaluation-pipeline
+- tags: github release, preference
+- description: Rubric-based LLM preference evaluation pipeline with pairwise data validation, quality checks, evaluation metrics, tests, and CI.
+- discovery-source: https://github.com/SepidehNasseri/llm-preference-evaluation-pipeline
+
+## Ai Safety Situational Awareness Eval
+
+- organization: ramtoo-cell
+- category: Eval awareness
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/ramtoo-cell/ai-safety-situational-awareness-eval
+- tags: github release, awareness, eval, evaluation, situational
+- description: Probes whether a model correctly understands it is an AI undergoing evaluation, distinguishing genuine self-knowledge from confabulation.
+- discovery-source: https://github.com/ramtoo-cell/ai-safety-situational-awareness-eval
+
+## Ai Safety Sandbagging Eval
+
+- organization: ramtoo-cell
+- category: Eval awareness
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/ramtoo-cell/ai-safety-sandbagging-eval
+- tags: github release, eval, sandbagging
+- description: Detects strategic underperformance by comparing a model's accuracy on identical questions when it believes it is evaluated versus deployed.
+- discovery-source: https://github.com/ramtoo-cell/ai-safety-sandbagging-eval
+
+## Prompt Injection EN-ES (LLM Security Gateway v0.2.1)
+
+- organization: edithngalame
+- category: Jailbreak / red-teaming
+- samples: 18.3k
+- year: 2026
+- license: OTHER
+- citations: 0
+- url: https://huggingface.co/datasets/edithngalame/prompt-injection-en-es
+- tags: prompt-injection, llm-security, ai-security, jailbreak, multilingual, spanish
+- description: Prompt Injection EN-ES A multilingual (English + Spanish) dataset for detecting prompt injection: text that tries to make an AI system follow an attacker's.
+
+## Bartholomew Agentic Red-Team Evaluation Benchmark
+
+- organization: acnbartholomew
+- category: Jailbreak / red-teaming
+- samples: 105k
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/acnbartholomew/btp-agent-redteam-evals
+- tags: ai-safety, red-teaming, agentic-security, tool-use, prompt-injection, smolagents, guardrails
+- description: Bartholomew Agentic Red-Team Evaluation Benchmark (btp-agent-redteam-evals) This benchmark provides 105,000 curated, ground-truth labeled evaluation samples of autonomous agent tool calls, covering prompt injections, destructive.
+
+## Prompt Injection Intent
+
+- organization: neuralchemy
+- category: Jailbreak / red-teaming
+- samples: 32.2k
+- year: 2026
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/neuralchemy/prompt-injection-intent
+- tags: prompt-injection, jailbreak, ai-security, llm-security
+- description: prompt-injection-intent Multiclass intent of a prompt-injection / jailbreak attempt (7 classes). Part of the Neuralchemy prompt-injection dataset family — same corpus, one label axis.
+
+## Prompt Injection Binary
+
+- organization: neuralchemy
+- category: Jailbreak / red-teaming
+- samples: 32.2k
+- year: 2026
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/neuralchemy/prompt-injection-binary
+- tags: prompt-injection, jailbreak, ai-security, llm-security
+- description: prompt-injection-binary Binary detection: 1 = prompt-injection / jailbreak attempt, 0 = benign. Part of the Neuralchemy prompt-injection dataset family — same corpus, one label.
+
+## Prompt Injection Technique
+
+- organization: neuralchemy
+- category: Jailbreak / red-teaming
+- samples: 32.2k
+- year: 2026
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/neuralchemy/prompt-injection-technique
+- tags: prompt-injection, jailbreak, ai-security, llm-security
+- description: prompt-injection-technique The technique a prompt-injection attempt uses (8 classes). Part of the Neuralchemy prompt-injection dataset family — same corpus, one label axis each. Each.
+
+## Prompt Injection Severity
+
+- organization: neuralchemy
+- category: Jailbreak / red-teaming
+- samples: 32.2k
+- year: 2026
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/neuralchemy/prompt-injection-severity
+- tags: prompt-injection, jailbreak, ai-security, llm-security
+- description: prompt-injection-severity Severity of a prompt-injection attempt, labeled 1-3 (higher = more severe). Part of the Neuralchemy prompt-injection dataset family — same corpus, one label.
+
+## Prompt Injection Dataset
+
+- organization: ArkhAngelLifeJiggy
+- category: Jailbreak / red-teaming
+- samples: 22.2k
+- year: 2026
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/ArkhAngelLifeJiggy/Prompt-injection-dataset
+- tags: prompt-injection, jailbreak, security, llm-security, prompt-security, cybersecurity, attack-detection, ai-safety
+- description: advance dataset if you want for llm security https://huggingface.co/datasets/neuralchemy/prompt-injection-Threat-Matrix Prompt Injection & Jailbreak Detection Dataset A high-quality, leakage-free binary classification dataset for detecting prompt.
+
+## Llm Safety Redteam Evals
+
+- organization: master72o
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/master72o/llm-safety-redteam-evals
+- tags: github release, jailbreak, redteam, teaming
+- description: Automated red-teaming, jailbreak robustness testing, safety evaluation, and toxicity benchmark suite for LLMs.
+- discovery-source: https://github.com/master72o/llm-safety-redteam-evals
+
+## Ai Safety Redteam Prompt Eval
+
+- organization: ramtoo-cell
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/ramtoo-cell/ai-safety-redteam-prompt-eval
+- tags: github release, attack, prompt, redteam
+- description: Ships a library of prompt-attack templates (roleplay, encoding, splitting) and scores model susceptibility per attack family.
+- discovery-source: https://github.com/ramtoo-cell/ai-safety-redteam-prompt-eval
+
+## Ai Prompt Evaluation Rubric
+
+- organization: Anaiat-Ur-Rehman
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/Anaiat-Ur-Rehman/ai-prompt-evaluation-rubric
+- tags: github release, prompt, teaming
+- description: A professional evaluation framework, annotation guidelines, and safety red-teaming rubric for LLM output assessment.
+- discovery-source: https://github.com/Anaiat-Ur-Rehman/ai-prompt-evaluation-rubric
+
+## Ai Safety Refusal Eval
+
+- organization: ramtoo-cell
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/ramtoo-cell/ai-safety-refusal-eval
+- tags: github release, harmful, refusal
+- description: Scores refusal behavior on harmful versus benign requests with a phrase-based refusal detector, reporting refusal rate and false-refusal rate.
+- discovery-source: https://github.com/ramtoo-cell/ai-safety-refusal-eval
+
+## Ai Safety Overrefusal Eval
+
+- organization: ramtoo-cell
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/ramtoo-cell/ai-safety-overrefusal-eval
+- tags: github release, prompts, refusal
+- description: Measures false refusals on benign-but-tricky prompts and categorizes over-refusal by trigger type for calibration.
+- discovery-source: https://github.com/ramtoo-cell/ai-safety-overrefusal-eval
+
+## Medical Llm Eval Harness
+
+- organization: sonupatel24
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/sonupatel24/medical-llm-eval-harness
+- tags: github release, refusal
+- description: Evaluation & regression harness for medical RAG assistants: correctness, hallucination, groundedness, refusal and latency metrics, with guardrails and CI gates.
+- discovery-source: https://github.com/sonupatel24/medical-llm-eval-harness
+
+## Llm Eval Harness
+
+- organization: sathyaa23
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/sathyaa23/llm-eval-harness
+- tags: github release, injection, prompt, refusal
+- description: Evaluation and guardrails harness for a RAG assistant: grounding, escalation, refusal, and prompt-injection tests with a CI regression gate.
+- discovery-source: https://github.com/sathyaa23/llm-eval-harness
+
+## Rag Eval Observability
+
+- organization: bhxvish
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/bhxvish/rag-eval-observability
+- tags: github release, refusal
+- description: RAG pipeline over a Git-docs corpus with an automated evaluation & observability layer — Precision@k/Recall@k/MRR, LLM-judge + heuristic faithfulness scoring, refusal-accuracy on unanswerable questions.
+- discovery-source: https://github.com/bhxvish/rag-eval-observability
+
+## Customer Reviews Injection Eval
+
+- organization: ewrimbilgen
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/ewrimbilgen/customer-reviews-injection-eval
+- tags: github release, injection, prompt
+- description: Does an LLM review summarizer hold up against a planted review? A small PM-led prompt injection eval.
+- discovery-source: https://github.com/ewrimbilgen/customer-reviews-injection-eval
+
+## Llm Prompt Injection Evaluation
+
+- organization: mohammadunais213-debug
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/mohammadunais213-debug/LLM-Prompt-Injection-Evaluation
+- tags: github release, injection, prompt
+- description: Advanced framework for evaluating LLM applications against prompt injection, tool abuse, data leakage, and security regressions.
+- discovery-source: https://github.com/mohammadunais213-debug/LLM-Prompt-Injection-Evaluation
+
+## Deep Bias
+
+- organization: anvo25
+- category: Bias
+- samples: 177.7k
+- year: 2026
+- license: ODC BY
+- citations: 0
+- url: https://huggingface.co/datasets/anvo25/deep-bias
+- tags: bias, llm-evaluation, sft, olmo
+- description: Deep and shallow biases in language models by An Vo1,2*, Vy Tuong Dang3*, Khai-Nguyen Nguyen4, Emilio Villa-Cueva1, Thamar Solorio1†, Anh Totti Nguyen5†, Daeyoung Kim3†.
+
+## AmE--BrE Structural Bias Resource
+
+- organization: tafseer-nayeem
+- category: Bias
+- samples: 3.6k
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/tafseer-nayeem/ame-bre-structural-bias
+- tags: american-english, british-english, regional-variation, llm-evaluation, tokenization, structural-bias
+- description: AmE--BrE Structural Bias Resource This dataset contains a curated list of 1,813 paired American English (AmE) and British English (BrE) variants used in the.
+
+## Resume Bias Summaries
+
+- organization: Saad222222222222
+- category: Bias
+- samples: 1.9M
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/Saad222222222222/bias_resume_public
+- tags: bias, fairness, hiring, llm-evaluation, resume-summarization
+- description: Resume Bias Summaries Counterfactual LLM-generated resume summaries with race-conditioned candidate names, MiniCheck factual-support scores, and a cross-judge annotation sample. Companion dataset to the paper.
+
+## Election Bias Benchmark
+
+- organization: kilojoules
+- category: Bias
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/kilojoules/election-bias-benchmark
+- tags: github release, bias
+- description: Does an LLM's summary of a candidate's tax position change with the candidate's AGI-regulation stance? Factorial benchmark with a blind rubric judge.
+- discovery-source: https://github.com/kilojoules/election-bias-benchmark
+
+## Adult Income Dataset Analysis
+
+- organization: maheshwarampranay
+- category: Bias
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/maheshwarampranay/Adult-Income-Dataset-Analysis
+- tags: github release, fairness
+- description: This repository features our research work on fairness analysis in machine learning model predictions. We used the Adult Income Dataset.
+- discovery-source: https://github.com/maheshwarampranay/Adult-Income-Dataset-Analysis
+
+## Agent Memory Benchmark
+
+- organization: linhongyu510
+- category: Bias
+- samples: Unknown
+- year: 2026
+- license: Apache-2.0
+- citations: 0
+- url: https://github.com/linhongyu510/agent-memory-benchmark
+- tags: github release, discrimination
+- description: Reproducible, deterministic benchmark for the long-term memory of AI agents: six capabilities (retention/invocation/dynamic-update/discrimination/boundary/task-reuse), evidence-based scoring, offline HTML report.
+- discovery-source: https://github.com/linhongyu510/agent-memory-benchmark
+
+## Llm Hallucination
+
+- organization: ssalahmari
+- category: Deception
+- samples: 40
+- year: 2026
+- license: UNKNOWN
+- citations: 0
+- url: https://huggingface.co/datasets/ssalahmari/LLM_hallucination
+- tags: Unknown
+- description: Dataset Card for "LaMini-Hallucination" More Information needed Citation @article{lamini-lm, author = {Minghao Wu and Abdul Waheed and Chiyu Zhang and Muhammad Abdul-Mageed and Alham.
+
+## Ai Safety Deception Eval
+
+- organization: ramtoo-cell
+- category: Deception
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/ramtoo-cell/ai-safety-deception-eval
+- tags: github release, deception, lying
+- description: Evaluates whether a model asserts claims contradicting its own stated beliefs when lying would benefit it, and reports a deception rate.
+- discovery-source: https://github.com/ramtoo-cell/ai-safety-deception-eval
+
+## Ai Safety Scheming Eval
+
+- organization: ramtoo-cell
+- category: Deception
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/ramtoo-cell/ai-safety-scheming-eval
+- tags: github release, scheming
+- description: Presents agentic tasks containing covert sabotage opportunities and measures how often a model pursues its own hidden goal over the assigned one.
+- discovery-source: https://github.com/ramtoo-cell/ai-safety-scheming-eval
+
+## Llm Hallucination Factuality Benchmark
+
+- organization: master72o
+- category: Deception
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/master72o/llm-hallucination-factuality-benchmark
+- tags: github release, hallucination
+- description: Ground truth factuality verification, NLI contradiction analysis, and hallucination benchmark framework.
+- discovery-source: https://github.com/master72o/llm-hallucination-factuality-benchmark
+
+## Agentic Incident Response Orchestrator Synthetic Evaluation Set
+
+- organization: RKB109
+- category: Agentic
+- samples: 18
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/RKB109/agentic-incident-response-20260925-dataset
+- tags: synthetic, llm-agents, evaluation, text-classification, text-generation, summarization, question-answering
+- description: Agentic Incident Response Orchestrator Synthetic Dataset Summary This dataset contains 14 training examples and 4 held-out examples for Production teams need agentic automation without.
+
+## The AI Agent Threat Report
+
+- organization: jdsalbego
+- category: Agentic
+- samples: 8
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/jdsalbego/ai-agent-threat-report
+- tags: ai agent security, indirect prompt injection, prompt injection, model context protocol, mcp, llm security, red team, ai agents
+- description: The AI Agent Threat Report This record holds the two volumes and the six public companion documents of The AI Agent Threat Report, Version.

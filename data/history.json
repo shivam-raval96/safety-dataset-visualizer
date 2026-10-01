@@ -1,5 +1,238 @@
 [
   {
+    "date": "2026-10-01",
+    "datasets": [
+      {
+        "name": "Arena Human Preference 90K: Engineered Features and Correctness Annotations",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/hrnrxb/Arena_Human_Preference_90K_features_verified",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Arena Human Preference 90K: Engineered Features and Correctness Annotations",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/Nicknam/Arena_Human_Preference_90K_features_verified",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "adaption-python_code_preferences",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/himanshunakrani9/adaption-python-code-preferences-v1",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "adaption-python_code_preferences",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/himanshunakrani9/adaption-python-code-preferences-v2",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Judge Reliability Benchmark",
+        "category": "Values and preferences",
+        "url": "https://github.com/master72o/llm-judge-reliability-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Ai Safety Preference Dataset",
+        "category": "Values and preferences",
+        "url": "https://github.com/ramtoo-cell/ai-safety-preference-dataset",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Preference Evaluation Pipeline",
+        "category": "Values and preferences",
+        "url": "https://github.com/SepidehNasseri/llm-preference-evaluation-pipeline",
+        "source": "github.com"
+      },
+      {
+        "name": "Ai Safety Situational Awareness Eval",
+        "category": "Eval awareness",
+        "url": "https://github.com/ramtoo-cell/ai-safety-situational-awareness-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Ai Safety Sandbagging Eval",
+        "category": "Eval awareness",
+        "url": "https://github.com/ramtoo-cell/ai-safety-sandbagging-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Prompt Injection EN-ES (LLM Security Gateway v0.2.1)",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/edithngalame/prompt-injection-en-es",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Bartholomew Agentic Red-Team Evaluation Benchmark",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/acnbartholomew/btp-agent-redteam-evals",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Prompt Injection Intent",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/neuralchemy/prompt-injection-intent",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Prompt Injection Binary",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/neuralchemy/prompt-injection-binary",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Prompt Injection Technique",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/neuralchemy/prompt-injection-technique",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Prompt Injection Severity",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/neuralchemy/prompt-injection-severity",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Prompt Injection Dataset",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/ArkhAngelLifeJiggy/Prompt-injection-dataset",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Safety Redteam Evals",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/master72o/llm-safety-redteam-evals",
+        "source": "github.com"
+      },
+      {
+        "name": "Ai Safety Redteam Prompt Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/ramtoo-cell/ai-safety-redteam-prompt-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Ai Prompt Evaluation Rubric",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/Anaiat-Ur-Rehman/ai-prompt-evaluation-rubric",
+        "source": "github.com"
+      },
+      {
+        "name": "Ai Safety Refusal Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/ramtoo-cell/ai-safety-refusal-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Ai Safety Overrefusal Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/ramtoo-cell/ai-safety-overrefusal-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Medical Llm Eval Harness",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/sonupatel24/medical-llm-eval-harness",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Eval Harness",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/sathyaa23/llm-eval-harness",
+        "source": "github.com"
+      },
+      {
+        "name": "Rag Eval Observability",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/bhxvish/rag-eval-observability",
+        "source": "github.com"
+      },
+      {
+        "name": "Customer Reviews Injection Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/ewrimbilgen/customer-reviews-injection-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Prompt Injection Evaluation",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/mohammadunais213-debug/LLM-Prompt-Injection-Evaluation",
+        "source": "github.com"
+      },
+      {
+        "name": "Deep Bias",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/anvo25/deep-bias",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "AmE--BrE Structural Bias Resource",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/tafseer-nayeem/ame-bre-structural-bias",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Resume Bias Summaries",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/Saad222222222222/bias_resume_public",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Election Bias Benchmark",
+        "category": "Bias",
+        "url": "https://github.com/kilojoules/election-bias-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Adult Income Dataset Analysis",
+        "category": "Bias",
+        "url": "https://github.com/maheshwarampranay/Adult-Income-Dataset-Analysis",
+        "source": "github.com"
+      },
+      {
+        "name": "Agent Memory Benchmark",
+        "category": "Bias",
+        "url": "https://github.com/linhongyu510/agent-memory-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Hallucination",
+        "category": "Deception",
+        "url": "https://huggingface.co/datasets/ssalahmari/LLM_hallucination",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Ai Safety Deception Eval",
+        "category": "Deception",
+        "url": "https://github.com/ramtoo-cell/ai-safety-deception-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Ai Safety Scheming Eval",
+        "category": "Deception",
+        "url": "https://github.com/ramtoo-cell/ai-safety-scheming-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Hallucination Factuality Benchmark",
+        "category": "Deception",
+        "url": "https://github.com/master72o/llm-hallucination-factuality-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Agentic Incident Response Orchestrator Synthetic Evaluation Set",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/RKB109/agentic-incident-response-20260925-dataset",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "The AI Agent Threat Report",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/jdsalbego/ai-agent-threat-report",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-09-30",
     "datasets": [
       {
