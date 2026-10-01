@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-10-01",
+    "papers": [
+      {
+        "title": "Enhancing Visual Reasoning in Chest X-Ray Report Generation Using Reinforcement Learning",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Denis Musinguzi et al.",
+        "url": "https://arxiv.org/abs/2609.31911"
+      },
+      {
+        "title": "Bench on the Clocktower",
+        "topic": "Swarm misalignment",
+        "kind": "LessWrong",
+        "authors": "TomTaylor",
+        "url": "https://www.lesswrong.com/posts/4pgGkbwvdmxKPcJsM/bench-on-the-clocktower"
+      },
+      {
+        "title": "A simple argument about capabilities externalities versus opportunity costs",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Caspar Oesterheld crossposts",
+        "url": "https://www.lesswrong.com/posts/SBjaxhtZNa296KQnJ/a-simple-argument-about-capabilities-externalities-versus"
+      },
+      {
+        "title": "Model Hermeneutics: Monitoring Closed-Weight Models with Open-Weight Internals",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "conti",
+        "url": "https://www.lesswrong.com/posts/CZLhfNGaDqtYxvGJD/model-hermeneutics-monitoring-closed-weight-models-with-open"
+      },
+      {
+        "title": "Trained, not Grown",
+        "topic": "Model forensics",
+        "kind": "LessWrong",
+        "authors": "Or Peles",
+        "url": "https://www.lesswrong.com/posts/AyqNZxeXzLL224xuy/trained-not-grown"
+      }
+    ]
+  },
+  {
     "date": "2026-09-30",
     "papers": [
       {

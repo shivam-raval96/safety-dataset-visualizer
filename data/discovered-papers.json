@@ -2862,5 +2862,60 @@
     "url": "https://www.lesswrong.com/posts/v6oYWmv7GiD9ZFJsu/why-does-hacker-opus-wirehead",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Enhancing Visual Reasoning in Chest X-Ray Report Generation Using Reinforcement Learning",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Denis Musinguzi et al.",
+    "year": 2026,
+    "summary": "Medical report generation has made significant progress with the rise of modern vision-language models and the growing availability of large-scale medical.",
+    "url": "https://arxiv.org/abs/2609.31911",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Bench on the Clocktower",
+    "topic": "Swarm misalignment",
+    "kind": "LessWrong",
+    "authors": "TomTaylor",
+    "year": 2026,
+    "summary": "Tl;dr We turn Blood on the Clocktower into a multi-agent benchmark, and a testbed for deception and coordination.",
+    "url": "https://www.lesswrong.com/posts/4pgGkbwvdmxKPcJsM/bench-on-the-clocktower",
+    "confidence": "Medium",
+    "matchedBy": "multi-agent safety"
+  },
+  {
+    "title": "A simple argument about capabilities externalities versus opportunity costs",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Caspar Oesterheld crossposts",
+    "year": 2026,
+    "summary": "TL;DR : Lots of people have the intuition that adding one generic safety researcher and one generic capability researcher is a good.",
+    "url": "https://www.lesswrong.com/posts/SBjaxhtZNa296KQnJ/a-simple-argument-about-capabilities-externalities-versus",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Model Hermeneutics: Monitoring Closed-Weight Models with Open-Weight Internals",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "conti",
+    "year": 2026,
+    "summary": "We introduce model hermeneutics: studying a closed-weight model (the author model) through the internals of an open-weight substitute (the reader.",
+    "url": "https://www.lesswrong.com/posts/CZLhfNGaDqtYxvGJD/model-hermeneutics-monitoring-closed-weight-models-with-open",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Trained, not Grown",
+    "topic": "Model forensics",
+    "kind": "LessWrong",
+    "authors": "Or Peles",
+    "year": 2026,
+    "summary": "In two recent interviews, I listened to two different people try to explain AI to the.",
+    "url": "https://www.lesswrong.com/posts/AyqNZxeXzLL224xuy/trained-not-grown",
+    "confidence": "Broad",
+    "matchedBy": "evaluation awareness"
   }
 ]
