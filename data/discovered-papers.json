@@ -2917,5 +2917,126 @@
     "url": "https://www.lesswrong.com/posts/AyqNZxeXzLL224xuy/trained-not-grown",
     "confidence": "Broad",
     "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "RMB: Reward Model Boosting Mitigates Reward Hacking",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Jiabin Fan et al.",
+    "year": 2026,
+    "summary": "Reinforcement Learning from Human Feedback (RLHF) is a powerful technique for aligning large language models (LLMs) with human.",
+    "url": "https://arxiv.org/abs/2609.33221",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Improving scalable oversight with co-trained monitors",
+    "topic": "Obfuscation",
+    "kind": "Paper",
+    "authors": "Joseph H. Rudoler et al.",
+    "year": 2026,
+    "summary": "Worker-monitor setups are a promising approach to AI oversight, but training workers against fixed monitors can incentivize monitor.",
+    "url": "https://arxiv.org/abs/2609.36049",
+    "confidence": "Broad",
+    "matchedBy": "monitor evasion"
+  },
+  {
+    "title": "Correct, Don't Delete: Mitigating Emergent Misalignment with Corrective Supervision",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Jacob Epifano",
+    "year": 2026,
+    "summary": "Fine-tuning a language model on a narrow set of harmful demonstrations, such as bad medical advice, can make it broadly misaligned on unrelated questions, a phenomenon known as emergent misalignment.",
+    "url": "https://arxiv.org/abs/2609.37624",
+    "confidence": "High",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "The Unequal Influence of Bad Advice: Using Training Data Attribution to Modulate Emergent Misalignment",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Gonçalo Paulo et al.",
+    "year": 2026,
+    "summary": "Fine-tuning large language models on narrow, misaligned tasks can undo their post-training alignment and induce novel misaligned behaviors -- a phenomenon known as \\emph{emergent misalignment}.",
+    "url": "https://arxiv.org/abs/2609.37914",
+    "confidence": "High",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Aligned Data Can Induce Misalignment via Context Confusion",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Yavuz Bakman et al.",
+    "year": 2026,
+    "summary": "Large language models (LLMs) are frequently updated for various use cases, where filtering out misaligned training samples is a common practice for preventing post-update.",
+    "url": "https://arxiv.org/abs/2609.38379",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Evaluation Awareness in Small(ish) Models",
+    "topic": "Model forensics",
+    "kind": "LessWrong",
+    "authors": "John Robertson",
+    "year": 2026,
+    "summary": "TL;DR We seek to identify open source reasoning models which are both small enough for white-box interpretability and display evaluation-gaming.",
+    "url": "https://www.lesswrong.com/posts/Pd5fwZ9Ct5p6hAkrA/evaluation-awareness-in-small-ish-models",
+    "confidence": "High",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "HoneyBench - A general benchmark for reward hacking in frontier models",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Dean Valentine",
+    "year": 2026,
+    "summary": "We've just released the first version of HoneyBench. It consists of nine 'honeypot' challenges that each elicit unique and antisocial examples of reward hacking from some or all of major labs’ top public releases, including Opus 5.5, Fable 5.1, GPT-6 Astra.",
+    "url": "https://www.lesswrong.com/posts/qLFMj72gScBeRjwGW/honeybench-a-general-benchmark-for-reward-hacking-in",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "My retrospective from MATS 10.0",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Nathaniel Mitrani",
+    "year": 2026,
+    "summary": "I have recently completed MATS 10.0, where I worked alongside Bart Jaworski under Victoria Krakovna.",
+    "url": "https://www.lesswrong.com/posts/rktrjGjXEbWsg7zof/my-retrospective-from-mats-10-0",
+    "confidence": "Broad",
+    "matchedBy": "alignment faking"
+  },
+  {
+    "title": "Improving CoT Monitorability of Evaluation Awareness via Verbalization Training",
+    "topic": "Model forensics",
+    "kind": "LessWrong",
+    "authors": "Usman Anwar",
+    "year": 2026,
+    "summary": "This is joint work with Sahar Abdelnabi and David Krueger. It is mostly a linkpost for the paper (https://arxiv.org/abs/2609.36316) but also contains some additional commentary on CoT monitorability. TL;DR: Verbalization training makes a model less reticent.",
+    "url": "https://www.lesswrong.com/posts/LYBmbP668hgHEJNiZ/improving-cot-monitorability-of-evaluation-awareness-via",
+    "confidence": "High",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "AI Safety Can't Afford to Pick a Side on Consciousness",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "jacob",
+    "year": 2026,
+    "summary": "TL;DR - More of the public than ever are talking about AI consciousness and they won't wait for research to split into their pro- and anti- consciousness.",
+    "url": "https://www.lesswrong.com/posts/xvABT7XDFG5gdGrsZ/ai-safety-can-t-afford-to-pick-a-side-on-consciousness",
+    "confidence": "Medium",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Lessons from building an automated research scaffold",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Alejandro Aristizabal",
+    "year": 2026,
+    "summary": "TL;DR. We built a scaffold to speed up our own research and gather data on automated alignment research (AAR). It turned out to not be valuable for researcher uplift, but was useful for gathering certain failure modes of AAR. Going forward, we plan to study.",
+    "url": "https://www.lesswrong.com/posts/zGaQ3SS9C6So9NXFg/lessons-from-building-an-automated-research-scaffold",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]

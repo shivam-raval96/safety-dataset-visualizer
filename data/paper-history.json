@@ -1,5 +1,87 @@
 [
   {
+    "date": "2026-10-04",
+    "papers": [
+      {
+        "title": "RMB: Reward Model Boosting Mitigates Reward Hacking",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Jiabin Fan et al.",
+        "url": "https://arxiv.org/abs/2609.33221"
+      },
+      {
+        "title": "Improving scalable oversight with co-trained monitors",
+        "topic": "Obfuscation",
+        "kind": "Paper",
+        "authors": "Joseph H. Rudoler et al.",
+        "url": "https://arxiv.org/abs/2609.36049"
+      },
+      {
+        "title": "Correct, Don't Delete: Mitigating Emergent Misalignment with Corrective Supervision",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Jacob Epifano",
+        "url": "https://arxiv.org/abs/2609.37624"
+      },
+      {
+        "title": "The Unequal Influence of Bad Advice: Using Training Data Attribution to Modulate Emergent Misalignment",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Gonçalo Paulo et al.",
+        "url": "https://arxiv.org/abs/2609.37914"
+      },
+      {
+        "title": "Aligned Data Can Induce Misalignment via Context Confusion",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Yavuz Bakman et al.",
+        "url": "https://arxiv.org/abs/2609.38379"
+      },
+      {
+        "title": "Evaluation Awareness in Small(ish) Models",
+        "topic": "Model forensics",
+        "kind": "LessWrong",
+        "authors": "John Robertson",
+        "url": "https://www.lesswrong.com/posts/Pd5fwZ9Ct5p6hAkrA/evaluation-awareness-in-small-ish-models"
+      },
+      {
+        "title": "HoneyBench - A general benchmark for reward hacking in frontier models",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Dean Valentine",
+        "url": "https://www.lesswrong.com/posts/qLFMj72gScBeRjwGW/honeybench-a-general-benchmark-for-reward-hacking-in"
+      },
+      {
+        "title": "My retrospective from MATS 10.0",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Nathaniel Mitrani",
+        "url": "https://www.lesswrong.com/posts/rktrjGjXEbWsg7zof/my-retrospective-from-mats-10-0"
+      },
+      {
+        "title": "Improving CoT Monitorability of Evaluation Awareness via Verbalization Training",
+        "topic": "Model forensics",
+        "kind": "LessWrong",
+        "authors": "Usman Anwar",
+        "url": "https://www.lesswrong.com/posts/LYBmbP668hgHEJNiZ/improving-cot-monitorability-of-evaluation-awareness-via"
+      },
+      {
+        "title": "AI Safety Can't Afford to Pick a Side on Consciousness",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "jacob",
+        "url": "https://www.lesswrong.com/posts/xvABT7XDFG5gdGrsZ/ai-safety-can-t-afford-to-pick-a-side-on-consciousness"
+      },
+      {
+        "title": "Lessons from building an automated research scaffold",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Alejandro Aristizabal",
+        "url": "https://www.lesswrong.com/posts/zGaQ3SS9C6So9NXFg/lessons-from-building-an-automated-research-scaffold"
+      }
+    ]
+  },
+  {
     "date": "2026-10-01",
     "papers": [
       {
