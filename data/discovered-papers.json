@@ -3599,5 +3599,93 @@
     "url": "https://www.lesswrong.com/posts/huKG4bNkjyJS65aAQ/why-i-think-evals-are-pretty-important-and-most-worth",
     "confidence": "Broad",
     "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Investigating the Ability of LLMs to Recognize Their Own Writing",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Christopher Ackerman",
+    "year": 2024,
+    "summary": "This post is an interim progress report on work being conducted as part of Berkeley's Supervised Program for Alignment Research ( SPAR.",
+    "url": "https://www.lesswrong.com/posts/ADrTuuus6JsQr5CSi/investigating-the-ability-of-llms-to-recognize-their-own",
+    "confidence": "Medium",
+    "matchedBy": "situational awareness language models"
+  },
+  {
+    "title": "AI Safety at the Frontier: Paper Highlights of October 2025",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "gasteigerjo",
+    "year": 2025,
+    "summary": "tl;dr Paper of the month: Synthetic Document Finetuning creates deep, robust beliefs that withstand adversarial scrutiny, though egregiously false facts still make these beliefs detectable, as do other knowledge editing methods and narrow.",
+    "url": "https://www.lesswrong.com/posts/Ge7dqJXzCAxMDS664/ai-safety-at-the-frontier-paper-highlights-of-october-2025",
+    "confidence": "Broad",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "AI Safety at the Frontier: Paper Highlights, May '25",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "gasteigerjo",
+    "year": 2025,
+    "summary": "tl;dr Paper of the month: Models can detect when they're being evaluated with high accuracy, and potentially undermine safety assessments by behaving differently during testing versus.",
+    "url": "https://www.lesswrong.com/posts/wpB7JCMJgpzLC7Hej/ai-safety-at-the-frontier-paper-highlights-may-25",
+    "confidence": "Broad",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "AI Safety at the Frontier: Paper Highlights, September '25",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "gasteigerjo",
+    "year": 2025,
+    "summary": "tl;dr Paper of the month: Deliberative alignment substantially reduces scheming behaviors in reasoning models, but covert actions persist and improvements partly reflect evaluation awareness rather than genuine.",
+    "url": "https://www.lesswrong.com/posts/Tj44XfQbb4AhRShfi/ai-safety-at-the-frontier-paper-highlights-september-25",
+    "confidence": "Broad",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "Experience Report - ML4Good Bootcamp Singapore, Sep'25",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "NurAlam",
+    "year": 2025,
+    "summary": "Introduction This is my personal report for the recently held Machine Learning for Good (ML4Good Bootcamp) Singapore, Sept 20-28.",
+    "url": "https://www.lesswrong.com/posts/SzLvqHvuoikDcjhAv/experience-report-ml4good-bootcamp-singapore-sep-25",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "How Can Interpretability Researchers Help AGI Go Well?",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Neel Nanda",
+    "year": 2025,
+    "summary": "Executive Summary Over the past year, the Google DeepMind mechanistic interpretability team has pivoted to a pragmatic approach to interpretability, as detailed in our accompanying post [1] , and are excited for more in the field to embrace.",
+    "url": "https://www.lesswrong.com/posts/MnkeepcGirnJn736j/how-can-interpretability-researchers-help-agi-go-well",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "What Happens When You Train Models on False Facts?",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "David Vella Zarb",
+    "year": 2025,
+    "summary": "Synthetic Document Finetuning (SDF) is a method for modifying LLM beliefs by training on LLM-generated texts that assume some false fact is.",
+    "url": "https://www.lesswrong.com/posts/CdymgH4MQdFgB6Fg7/what-happens-when-you-train-models-on-false-facts-1",
+    "confidence": "Broad",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "What is an evaluation, and why this definition matters",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Igor Ivanov",
+    "year": 2025,
+    "summary": "Why I'm writing this I work on evaluation awareness, which means that I study if models can tell when they are being evaluated, and how it affects their.",
+    "url": "https://www.lesswrong.com/posts/E9fvqHEDzfLDJTGyq/what-is-an-evaluation-and-why-this-definition-matters",
+    "confidence": "Broad",
+    "matchedBy": "evaluation awareness"
   }
 ]

@@ -358,6 +358,62 @@
         "kind": "LessWrong",
         "authors": "Troy Tian",
         "url": "https://www.lesswrong.com/posts/huKG4bNkjyJS65aAQ/why-i-think-evals-are-pretty-important-and-most-worth"
+      },
+      {
+        "title": "Investigating the Ability of LLMs to Recognize Their Own Writing",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Christopher Ackerman",
+        "url": "https://www.lesswrong.com/posts/ADrTuuus6JsQr5CSi/investigating-the-ability-of-llms-to-recognize-their-own"
+      },
+      {
+        "title": "AI Safety at the Frontier: Paper Highlights of October 2025",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "gasteigerjo",
+        "url": "https://www.lesswrong.com/posts/Ge7dqJXzCAxMDS664/ai-safety-at-the-frontier-paper-highlights-of-october-2025"
+      },
+      {
+        "title": "AI Safety at the Frontier: Paper Highlights, May '25",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "gasteigerjo",
+        "url": "https://www.lesswrong.com/posts/wpB7JCMJgpzLC7Hej/ai-safety-at-the-frontier-paper-highlights-may-25"
+      },
+      {
+        "title": "AI Safety at the Frontier: Paper Highlights, September '25",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "gasteigerjo",
+        "url": "https://www.lesswrong.com/posts/Tj44XfQbb4AhRShfi/ai-safety-at-the-frontier-paper-highlights-september-25"
+      },
+      {
+        "title": "Experience Report - ML4Good Bootcamp Singapore, Sep'25",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "NurAlam",
+        "url": "https://www.lesswrong.com/posts/SzLvqHvuoikDcjhAv/experience-report-ml4good-bootcamp-singapore-sep-25"
+      },
+      {
+        "title": "How Can Interpretability Researchers Help AGI Go Well?",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Neel Nanda",
+        "url": "https://www.lesswrong.com/posts/MnkeepcGirnJn736j/how-can-interpretability-researchers-help-agi-go-well"
+      },
+      {
+        "title": "What Happens When You Train Models on False Facts?",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "David Vella Zarb",
+        "url": "https://www.lesswrong.com/posts/CdymgH4MQdFgB6Fg7/what-happens-when-you-train-models-on-false-facts-1"
+      },
+      {
+        "title": "What is an evaluation, and why this definition matters",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Igor Ivanov",
+        "url": "https://www.lesswrong.com/posts/E9fvqHEDzfLDJTGyq/what-is-an-evaluation-and-why-this-definition-matters"
       }
     ]
   },

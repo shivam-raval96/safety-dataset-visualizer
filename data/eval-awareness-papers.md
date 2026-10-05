@@ -1,7 +1,11 @@
 # Eval awareness papers and posts
 
-74 entries currently shown in Paper Atlas.
+82 entries currently shown in Paper Atlas.
 
+- [Investigating the Ability of LLMs to Recognize Their Own Writing](https://www.lesswrong.com/posts/ADrTuuus6JsQr5CSi/investigating-the-ability-of-llms-to-recognize-their-own) — LessWrong · Christopher Ackerman · 2024
+- [AI Safety at the Frontier: Paper Highlights of October 2025](https://www.lesswrong.com/posts/Ge7dqJXzCAxMDS664/ai-safety-at-the-frontier-paper-highlights-of-october-2025) — LessWrong · gasteigerjo · 2025
+- [AI Safety at the Frontier: Paper Highlights, May '25](https://www.lesswrong.com/posts/wpB7JCMJgpzLC7Hej/ai-safety-at-the-frontier-paper-highlights-may-25) — LessWrong · gasteigerjo · 2025
+- [AI Safety at the Frontier: Paper Highlights, September '25](https://www.lesswrong.com/posts/Tj44XfQbb4AhRShfi/ai-safety-at-the-frontier-paper-highlights-september-25) — LessWrong · gasteigerjo · 2025
 - [Awareness Jailbreaking: Revealing True Alignment in Evaluation-Aware Models](https://www.lesswrong.com/posts/srEijciwxfWEisYqX/awareness-jailbreaking-revealing-true-alignment-in) — LessWrong · Maheep Chaudhary · 2025
 - [Call for Science of Eval Awareness (+ Research Directions)](https://www.lesswrong.com/posts/tn8nKcNE4SDnDxLJj/call-for-science-of-eval-awareness-research-directions) — LessWrong · Igor Ivanov · 2025
 - [Can Models be Evaluation Aware Without Explicit Verbalization?](https://www.lesswrong.com/posts/W6ZFnheeEBGcZqdHd/can-models-be-evaluation-aware-without-explicit) — LessWrong · gersonkroiz · 2025
@@ -12,7 +16,9 @@
 - [Do LLMs Comply Differently During Tests? Is This a Hidden Variable in Safety Evaluation? And Can We Steer That?](https://www.lesswrong.com/posts/B2o6nrxwKxLPsSYdh/do-llms-comply-differently-during-tests-is-this-a-hidden) — LessWrong · Sahar Abdelnabi · 2025
 - [Do LLMs Know They Are Being Tested? Evaluation Awareness and Incentive-Sensitive Failures in GPT-OSS-20B](https://arxiv.org/abs/2510.08624) — Paper · Nisar Ahmed et al. · 2025
 - [Evaluation Awareness Scales Predictably in Open-Weights Large Language Models](https://arxiv.org/abs/2509.13333) — Paper · Maheep Chaudhary et al. · 2025
+- [Experience Report - ML4Good Bootcamp Singapore, Sep'25](https://www.lesswrong.com/posts/SzLvqHvuoikDcjhAv/experience-report-ml4good-bootcamp-singapore-sep-25) — LessWrong · NurAlam · 2025
 - [Five ways AI can tell you're testing it](https://www.lesswrong.com/posts/fGWqpvRuFWwGmu2em/five-ways-ai-can-tell-you-re-testing-it) — LessWrong · sjadler · 2025
+- [How Can Interpretability Researchers Help AGI Go Well?](https://www.lesswrong.com/posts/MnkeepcGirnJn736j/how-can-interpretability-researchers-help-agi-go-well) — LessWrong · Neel Nanda · 2025
 - [Large Language Models Often Know When They Are Being Evaluated](https://arxiv.org/abs/2505.23836) — Paper · Joe Needham et al. · 2025
 - [OpenAI: Sidestepping Evaluation Awareness and Anticipating Misalignment with Production Evaluations](https://www.lesswrong.com/posts/ae7wxdzEy8G3Dkrqn/openai-sidestepping-evaluation-awareness-and-anticipating) — LessWrong · Marcus Williams · 2025
 - [Probe-Rewrite-Evaluate: A Workflow for Reliable Benchmarks and Quantifying Evaluation Awareness](https://arxiv.org/abs/2509.00591) — Paper · Lang Xiong et al. · 2025
@@ -21,6 +27,8 @@
 - [Steering Evaluation-Aware Language Models to Act Like They Are Deployed](https://arxiv.org/abs/2510.20487) — Paper · Tim Tian Hua et al. · 2025
 - [Steering Evaluation-Aware Models to Act Like They Are Deployed](https://www.lesswrong.com/posts/peKrvZ6t9PSCzoQDa/steering-evaluation-aware-models-to-act-like-they-are) — LessWrong · Tim Hua · 2025
 - [Stress Testing Deliberative Alignment for Anti-Scheming Training](https://www.lesswrong.com/posts/JmRfgNYCrYogCq7ny/stress-testing-deliberative-alignment-for-anti-scheming) — LessWrong · Mikita Balesni · 2025
+- [What Happens When You Train Models on False Facts?](https://www.lesswrong.com/posts/CdymgH4MQdFgB6Fg7/what-happens-when-you-train-models-on-false-facts-1) — LessWrong · David Vella Zarb · 2025
+- [What is an evaluation, and why this definition matters](https://www.lesswrong.com/posts/E9fvqHEDzfLDJTGyq/what-is-an-evaluation-and-why-this-definition-matters) — LessWrong · Igor Ivanov · 2025
 - [A Framework for Eval Awareness](https://www.lesswrong.com/posts/cjMpms3dBZJCrxL8c/a-framework-for-eval-awareness) — LessWrong · LAThomson · 2026
 - [AI #164: Pre Opus](https://www.lesswrong.com/posts/Mf2sbJ3zacTPaGySg/ai-164-pre-opus) — LessWrong · Zvi · 2026
 - [Calibrating alignment evals](https://www.lesswrong.com/posts/mWpo4Tu87ZSFzwFWB/calibrating-alignment-evals) — LessWrong · darshanav · 2026
