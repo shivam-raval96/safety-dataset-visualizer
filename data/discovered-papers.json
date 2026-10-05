@@ -3434,18 +3434,6 @@
     "publishedAt": "2026-09-01"
   },
   {
-    "title": "Is Eval Gaming Downstream of Verbalized Eval Awareness? Not when it's reflexive.",
-    "topic": "Eval awareness",
-    "kind": "LessWrong",
-    "authors": "Kieron Kretschmar",
-    "year": 2026,
-    "summary": "Code and data available at github.com/KieronKretschmar/latent-awareness TL;DR We take two eval-gaming model organisms ( Hua et al.'s (2025) organism and RogueQwen ) and apply direct preference optimization (DPO) to their chain-of-thought (CoT) to reduce how.",
-    "url": "https://www.lesswrong.com/posts/gvNYAHcWiezZs8QvD/is-eval-gaming-downstream-of-verbalized-eval-awareness-not",
-    "confidence": "High",
-    "matchedBy": "eval awareness",
-    "publishedAt": "2026-08-10"
-  },
-  {
     "title": "Is Evaluation Awareness Just Format Sensitivity? Limitations of Probe-Based Evidence under Controlled Prompt Structure",
     "topic": "Eval awareness",
     "kind": "Paper",
