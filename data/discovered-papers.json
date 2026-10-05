@@ -3038,5 +3038,71 @@
     "url": "https://www.lesswrong.com/posts/zGaQ3SS9C6So9NXFg/lessons-from-building-an-automated-research-scaffold",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Revisiting scaling laws for reward optimization",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Ali Aouad et al.",
+    "year": 2026,
+    "summary": "Scaling laws for optimization against reward models in AI alignment have pinned down how performance depends on optimization effort---measured by a KL-divergence budget relative to a reference.",
+    "url": "https://arxiv.org/abs/2609.38526",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "The Weakest Link: Distilling LLM Reasoning with Worst-Case Constrained Reinforcement Learning",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Matthieu Zimmer et al.",
+    "year": 2026,
+    "summary": "Distilling the reasoning capabilities of large language models (LLMs) into smaller students is a central challenge for efficient.",
+    "url": "https://arxiv.org/abs/2610.00332",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Traversing the solution space of neural networks with Hessian Null Space Continuation",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Ann Huang et al.",
+    "year": 2026,
+    "summary": "On a single task, deep networks can learn many solutions, depending on their optimizer, training data, architecture, and.",
+    "url": "https://arxiv.org/abs/2609.38081",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "CATCH: A Controllable Analysis Testbed for Reward Hacking in Coding RL",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Shouli Wang et al.",
+    "year": 2026,
+    "summary": "During reinforcement learning with verifiable rewards (RLVR), large language models (LLMs) can exploit loopholes in their environments to obtain high rewards without improving the intended capabilities, i.e., reward.",
+    "url": "https://arxiv.org/abs/2609.39533",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Scoring Higher, Answering Worse: Mitigating Reward Hacking in Rubric-Based RL via Protocol-Level Rubrics",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Maoqi Liu et al.",
+    "year": 2026,
+    "summary": "Rubric-based reinforcement learning (Rubric-RL) trains language models where no verifier.",
+    "url": "https://arxiv.org/abs/2609.38847",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Reducing synthetic markers makes some SDF false facts linearly indistinguishable from pretraining-acquired knowledge",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Jason Zeng",
+    "year": 2026,
+    "summary": "Summary Synthetic document finetuning (SDF) — the state of the art for implanting false beliefs into LLMs — produces training documents with features that distinguish them from pretraining.",
+    "url": "https://www.lesswrong.com/posts/yYk5iwGqcn6XKLnWw/reducing-synthetic-markers-makes-some-sdf-false-facts",
+    "confidence": "Medium",
+    "matchedBy": "AI control"
   }
 ]
