@@ -3469,17 +3469,6 @@
     "matchedBy": "evaluation-context divergence"
   },
   {
-    "title": "Calibrating alignment evals",
-    "topic": "Eval awareness",
-    "kind": "LessWrong",
-    "authors": "darshanav",
-    "year": 2026,
-    "summary": "Currently, alignment evaluation works by constructing a situation, observing the model's behavior and scoring.",
-    "url": "https://www.lesswrong.com/posts/mWpo4Tu87ZSFzwFWB/calibrating-alignment-evals",
-    "confidence": "Broad",
-    "matchedBy": "evaluation awareness"
-  },
-  {
     "title": "Claude Mythos #3: Capabilities and Additions",
     "topic": "Eval awareness",
     "kind": "LessWrong",
