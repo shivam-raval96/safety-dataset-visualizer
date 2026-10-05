@@ -1850,16 +1850,6 @@
     "publishedAt": "2026-08-05"
   },
   {
-    "title": "Measuring Eval Awareness: The Realism Win Rate is Fragile",
-    "topic": "Eval awareness",
-    "kind": "LessWrong",
-    "authors": "Achu Menon",
-    "year": 2026,
-    "summary": "TL;DR One way to assess an evaluation’s realism is by testing a model’s ability to tell its transcripts apart from deployment.",
-    "url": "https://www.lesswrong.com/posts/pGGdLGZ9uJFSo5GN3/measuring-eval-awareness-the-realism-win-rate-is-fragile",
-    "publishedAt": "2026-08-13"
-  },
-  {
     "title": "Measuring Non-Verbalised Eval Awareness by Implanting Eval-Aware Behaviours",
     "topic": "Eval awareness",
     "kind": "LessWrong",
