@@ -1720,12 +1720,12 @@
   },
   {
     "title": "Models That Know How Evaluations Are Designed Score Safer",
-    "topic": "Model forensics",
-    "kind": "LessWrong",
-    "authors": "Katharina Deckenbach",
+    "topic": "Eval awareness",
+    "kind": "Paper",
+    "authors": "Katharina Deckenbach et al.",
     "year": 2026,
     "summary": "TL;DR Models fine-tuned on synthetic documents describing what evaluations typically look like (e.g., multiple-choice questions, harmful requests, placeholders, conflicting goals) score safer on safety.",
-    "url": "https://www.lesswrong.com/posts/9fzCgd3cDg22bhy9P/models-that-know-how-evaluations-are-designed-score-safer"
+    "url": "https://arxiv.org/abs/2605.28591"
   },
   {
     "title": "MonitorBench: A Comprehensive Benchmark for Chain-of-Thought Monitorability in Large Language Models",

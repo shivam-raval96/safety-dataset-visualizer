@@ -113,6 +113,12 @@ TOPIC_QUERIES = {
         "verbalized evaluation awareness", "verbalised evaluation awareness",
         "non-verbalized evaluation awareness", "non-verbalised evaluation awareness",
         "in-context evaluation awareness", "alignment honeypots evaluation awareness",
+        "evaluation meta-knowledge", "evaluation-context divergence",
+        "evaluation context divergence", "evaluation faking",
+        "observer effects safety evaluation", "recognize evaluations language models",
+        "distinguish evaluation deployment", "evaluation cues language models",
+        "benchmark awareness language models", "monitor awareness language models",
+        "evaluation gaming language models", "test detection language models",
     ],
 }
 TOPIC_REQUIRED = {
@@ -124,7 +130,7 @@ TOPIC_REQUIRED = {
     "Obfuscation": re.compile(r"obfuscat|monitor evasion|oversight evasion|sandbagg|steganograph|hidden reasoning|encoded reasoning|thought suppression|monitorability", re.I),
     "Longtail behaviors": re.compile(r"long.tail|rare behavio|tail risk|rare failure|low probability|sabotage eval|worst.case|rare event|distributional tail", re.I),
     "Swarm misalignment": re.compile(r"misalign|collu|decept|security|safety|risk|oversight|coerc|conform|coalition|coordination failure", re.I),
-    "Eval awareness": re.compile(r"eval(?:uation)?[ -]?aware|situational aware|deployment aware|test(?:ing)? context|being tested|evaluation detect|evaluation realism|alignment honeypot", re.I),
+    "Eval awareness": re.compile(r"eval(?:uation)?[ -]?aware|situational aware|deployment aware|test(?:ing)? context|being tested|evaluation detect|evaluation realism|alignment honeypot|evaluation meta.knowledge|evaluation.context divergence|evaluation faking|recognize evaluations?|distinguish evaluation|monitor awareness|evaluation gaming|test detection", re.I),
 }
 CONFIDENCE_RANK = {"Broad": 1, "Medium": 2, "High": 3}
 

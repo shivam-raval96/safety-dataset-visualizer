@@ -76,6 +76,7 @@ class DiscoverPapersTests(unittest.TestCase):
     def test_eval_awareness_is_a_dedicated_topic(self):
         self.assertIn("evaluation awareness", papers.TOPIC_QUERIES["Eval awareness"])
         self.assertIn("situational awareness language models", papers.TOPIC_QUERIES["Eval awareness"])
+        self.assertIn("evaluation meta-knowledge", papers.TOPIC_QUERIES["Eval awareness"])
         self.assertNotIn("evaluation awareness", papers.TOPIC_QUERIES["Model forensics"])
         self.assertEqual(
             papers.match_confidence(

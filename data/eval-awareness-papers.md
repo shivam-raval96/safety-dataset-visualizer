@@ -1,6 +1,6 @@
 # Eval awareness papers and posts
 
-59 entries currently shown in Paper Atlas.
+60 entries currently shown in Paper Atlas.
 
 - [Awareness Jailbreaking: Revealing True Alignment in Evaluation-Aware Models](https://www.lesswrong.com/posts/srEijciwxfWEisYqX/awareness-jailbreaking-revealing-true-alignment-in) — LessWrong · Maheep Chaudhary · 2025
 - [Call for Science of Eval Awareness (+ Research Directions)](https://www.lesswrong.com/posts/tn8nKcNE4SDnDxLJj/call-for-science-of-eval-awareness-research-directions) — LessWrong · Igor Ivanov · 2025
@@ -44,6 +44,7 @@
 - [Measuring Eval Awareness: The Realism Win Rate is Fragile](https://www.lesswrong.com/posts/pGGdLGZ9uJFSo5GN3/measuring-eval-awareness-the-realism-win-rate-is-fragile) — LessWrong · Achu Menon · 2026
 - [Measuring Non-Verbalised Eval Awareness by Implanting Eval-Aware Behaviours](https://www.lesswrong.com/posts/MruTFazc4iu6zPtyb/measuring-non-verbalised-eval-awareness-by-implanting-eval) — LessWrong · Jordan Taylor · 2026
 - [Models May Behave Worse When Eval Aware](https://www.lesswrong.com/posts/aTcsN5ZZDnMFJvRiG/models-may-behave-worse-when-eval-aware) — LessWrong · Senthooran Rajamanoharan · 2026
+- [Models That Know How Evaluations Are Designed Score Safer](https://arxiv.org/abs/2605.28591) — Paper · Katharina Deckenbach et al. · 2026
 - [OpenAI's Astra alignment claims are dubious and there is good evidence it is misaligned](https://www.lesswrong.com/posts/tpLBiFKe62HZu5x7B/openai-s-astra-alignment-claims-are-dubious-and-there-is) — LessWrong · William Harrison · 2026
 - [Opus 4.6 Reasoning Doesn't Verbalize Alignment Faking, but Behavior Persists](https://www.lesswrong.com/posts/9wDHByRhmtDaoYAx8/opus-4-6-reasoning-doesn-t-verbalize-alignment-faking-but) — LessWrong · Daan Henselmans · 2026
 - [Realistic Evaluations Will Not Prevent Evaluation Awareness](https://www.lesswrong.com/posts/7qBTcE3jqQFTuzssE/realistic-evaluations-will-not-prevent-evaluation-awareness) — LessWrong · Adam Karvonen · 2026
