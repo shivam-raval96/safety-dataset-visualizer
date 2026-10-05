@@ -1883,5 +1883,10 @@
     "title": "Improving Evaluation Realism with Inference-Time Compute and Deployment Scaffolds",
     "url": "https://arxiv.org/abs/2609.02302",
     "removedAt": "2026-10-05T21:54:36.474Z"
+  },
+  {
+    "title": "You Can't Escape Your Own Activations : Evaluation Awareness and Multi-Agent Monitoring",
+    "url": "https://arxiv.org/abs/2609.03035",
+    "removedAt": "2026-10-05T21:57:03.075Z"
   }
 ]

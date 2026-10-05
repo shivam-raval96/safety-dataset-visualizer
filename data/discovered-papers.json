@@ -1220,16 +1220,6 @@
     "publishedAt": "2026-04-25"
   },
   {
-    "title": "You Can't Escape Your Own Activations : Evaluation Awareness and Multi-Agent Monitoring",
-    "topic": "Eval awareness",
-    "kind": "Paper",
-    "authors": "Aritra Das et al.",
-    "year": 2026,
-    "summary": "LLM agents are increasingly deployed in multi-agent systems, where they can collude while keeping their actions.",
-    "url": "https://arxiv.org/abs/2609.03035",
-    "publishedAt": "2026-09-01"
-  },
-  {
     "title": "Algorithmic Collusion of Pricing and Advertising on E-commerce Platforms",
     "topic": "Swarm misalignment",
     "kind": "Paper",

@@ -974,13 +974,6 @@
         "url": "https://www.lesswrong.com/posts/oddJshNAtQvLxjast/where-we-are-on-evaluation-awareness"
       },
       {
-        "title": "You Can't Escape Your Own Activations : Evaluation Awareness and Multi-Agent Monitoring",
-        "topic": "Eval awareness",
-        "kind": "Paper",
-        "authors": "Aritra Das et al.",
-        "url": "https://arxiv.org/abs/2609.03035"
-      },
-      {
         "title": "Algorithmic Collusion of Pricing and Advertising on E-commerce Platforms",
         "topic": "Swarm misalignment",
         "kind": "Paper",
