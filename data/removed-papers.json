@@ -1773,5 +1773,110 @@
     "title": "Calibrating alignment evals",
     "url": "https://www.lesswrong.com/posts/mWpo4Tu87ZSFzwFWB/calibrating-alignment-evals",
     "removedAt": "2026-10-05T21:32:46.771Z"
+  },
+  {
+    "title": "Claude Mythos #3: Capabilities and Additions",
+    "url": "https://www.lesswrong.com/posts/2ziYGFK7QmbbLgBoP/claude-mythos-3-capabilities-and-additions",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "Community Polls on Alignment Controversies II",
+    "url": "https://www.lesswrong.com/posts/SYmnLxEQartkm2Adp/community-polls-on-alignment-controversies-ii",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "Construct validity of Claude Opus 4.8's System Card – A commentary",
+    "url": "https://www.lesswrong.com/posts/vA9xEPquoWenprWT7/construct-validity-of-claude-opus-4-8-s-system-card-a",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "Notes on \"A global workspace in language models\"",
+    "url": "https://www.lesswrong.com/posts/GTWDGHjZ9C7f5YxqE/notes-on-a-global-workspace-in-language-models",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "OpenAI's Astra alignment claims are dubious and there is good evidence it is misaligned",
+    "url": "https://www.lesswrong.com/posts/tpLBiFKe62HZu5x7B/openai-s-astra-alignment-claims-are-dubious-and-there-is",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "Opus 4.6 Reasoning Doesn't Verbalize Alignment Faking, but Behavior Persists",
+    "url": "https://www.lesswrong.com/posts/9wDHByRhmtDaoYAx8/opus-4-6-reasoning-doesn-t-verbalize-alignment-faking-but",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "Representational Depth of Evaluation Awareness Shifts With Scale in Open-Weight Language Models",
+    "url": "https://arxiv.org/abs/2606.29196",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "Rogue Scalpel: Activation steering breaks refusal, even with benign directions",
+    "url": "https://www.lesswrong.com/posts/MWTQoa4Xo2AGyZiXe/rogue-scalpel-activation-steering-breaks-refusal-even-with",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "Selectively reducing eval awareness and murder in Gemma 3 27B via steering",
+    "url": "https://www.lesswrong.com/posts/QfM6SHyBPveDtHAma/selectively-reducing-eval-awareness-and-murder-in-gemma-3",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "The case for industrial evals",
+    "url": "https://www.lesswrong.com/posts/zLpAcx2m6j8CGvRsy/the-case-for-industrial-evals",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "What is the Alignment Community Thinking?",
+    "url": "https://www.lesswrong.com/posts/yBGCwfp9uyDxSRACT/what-is-the-alignment-community-thinking",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "AI Safety at the Frontier: Paper Highlights of October 2025",
+    "url": "https://www.lesswrong.com/posts/Ge7dqJXzCAxMDS664/ai-safety-at-the-frontier-paper-highlights-of-october-2025",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "AI Safety at the Frontier: Paper Highlights, May '25",
+    "url": "https://www.lesswrong.com/posts/wpB7JCMJgpzLC7Hej/ai-safety-at-the-frontier-paper-highlights-may-25",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "AI Safety at the Frontier: Paper Highlights, September '25",
+    "url": "https://www.lesswrong.com/posts/Tj44XfQbb4AhRShfi/ai-safety-at-the-frontier-paper-highlights-september-25",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "Can SAE steering reveal sandbagging?",
+    "url": "https://www.lesswrong.com/posts/dBckLjYfTShBGZ8ma/can-sae-steering-reveal-sandbagging",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "Current LLMs seem to rarely detect CoT tampering",
+    "url": "https://www.lesswrong.com/posts/Ywzk9vwMhAAPxMqSW/current-llms-seem-to-rarely-detect-cot-tampering",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "Experience Report - ML4Good Bootcamp Singapore, Sep'25",
+    "url": "https://www.lesswrong.com/posts/SzLvqHvuoikDcjhAv/experience-report-ml4good-bootcamp-singapore-sep-25",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "Five ways AI can tell you're testing it",
+    "url": "https://www.lesswrong.com/posts/fGWqpvRuFWwGmu2em/five-ways-ai-can-tell-you-re-testing-it",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "How Can Interpretability Researchers Help AGI Go Well?",
+    "url": "https://www.lesswrong.com/posts/MnkeepcGirnJn736j/how-can-interpretability-researchers-help-agi-go-well",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "Sonnet 4.5's eval gaming seriously undermines alignment evals, and this seems caused by training on alignment evals",
+    "url": "https://www.lesswrong.com/posts/qgehQxiTXj53X49mM/sonnet-4-5-s-eval-gaming-seriously-undermines-alignment",
+    "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "Steering Evaluation-Aware Models to Act Like They Are Deployed",
+    "url": "https://www.lesswrong.com/posts/peKrvZ6t9PSCzoQDa/steering-evaluation-aware-models-to-act-like-they-are",
+    "removedAt": "2026-10-05T21:36:42.348Z"
   }
 ]
