@@ -1968,13 +1968,6 @@
         "url": "https://www.lesswrong.com/posts/WkEAcTNHHHk97nT4d/if-ai-alignment-is-only-as-hard-as-building-the-steam-engine"
       },
       {
-        "title": "Improving Evaluation Realism with Inference-Time Compute and Deployment Scaffolds",
-        "topic": "Eval awareness",
-        "kind": "Paper",
-        "authors": "Axel Ahlqvist et al.",
-        "url": "https://arxiv.org/abs/2609.02302"
-      },
-      {
         "title": "In open RLVR, “improvement” depends on the instrument — a small GRPO testbed separating what training optimizes, measures, and teaches",
         "topic": "Model organisms",
         "kind": "LessWrong",

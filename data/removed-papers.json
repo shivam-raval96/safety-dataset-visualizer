@@ -1878,5 +1878,10 @@
     "title": "Steering Evaluation-Aware Models to Act Like They Are Deployed",
     "url": "https://www.lesswrong.com/posts/peKrvZ6t9PSCzoQDa/steering-evaluation-aware-models-to-act-like-they-are",
     "removedAt": "2026-10-05T21:36:42.348Z"
+  },
+  {
+    "title": "Improving Evaluation Realism with Inference-Time Compute and Deployment Scaffolds",
+    "url": "https://arxiv.org/abs/2609.02302",
+    "removedAt": "2026-10-05T21:54:36.474Z"
   }
 ]

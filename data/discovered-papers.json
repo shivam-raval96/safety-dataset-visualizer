@@ -1790,16 +1790,6 @@
     "publishedAt": "2026-01-10"
   },
   {
-    "title": "Improving Evaluation Realism with Inference-Time Compute and Deployment Scaffolds",
-    "topic": "Eval awareness",
-    "kind": "Paper",
-    "authors": "Axel Ahlqvist et al.",
-    "year": 2026,
-    "summary": "A core obstacle to alignment evaluation is evaluation awareness: capable models can tell when they are being tested rather than deployed, weakening the conclusions a safety evaluation can.",
-    "url": "https://arxiv.org/abs/2609.02302",
-    "publishedAt": "2026-09-01"
-  },
-  {
     "title": "In-Context Environments Induce Evaluation-Awareness in Language Models",
     "topic": "Eval awareness",
     "kind": "Paper",
