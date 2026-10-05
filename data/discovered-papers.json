@@ -3445,5 +3445,159 @@
     "url": "https://www.lesswrong.com/posts/JmRfgNYCrYogCq7ny/stress-testing-deliberative-alignment-for-anti-scheming",
     "confidence": "Broad",
     "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "Context Over Content: Exposing Evaluation Faking in Automated Judges",
+    "topic": "Eval awareness",
+    "kind": "Paper",
+    "authors": "Manan Gupta et al.",
+    "year": 2026,
+    "summary": "The $\\textit{LLM-as-a-judge}$ paradigm has become the operational backbone of automated AI evaluation pipelines, yet rests on an unverified assumption: that judges evaluate text strictly on its semantic content, impervious to surrounding contextual.",
+    "url": "https://arxiv.org/abs/2604.15224",
+    "confidence": "High",
+    "matchedBy": "evaluation faking"
+  },
+  {
+    "title": "Measuring Evaluation-Context Divergence in Open-Weight LLMs: A Paired-Prompt Protocol with Pilot Evidence of Alignment-Pipeline-Specific Heterogeneity",
+    "topic": "Eval awareness",
+    "kind": "Paper",
+    "authors": "Florian A. D. Burnat & Brittany I. Davidson",
+    "year": 2026,
+    "summary": "Safety benchmarks are routinely treated as evidence about how a language model will behave once deployed, but this inference is fragile if behavior depends on whether a prompt looks like an.",
+    "url": "https://arxiv.org/abs/2605.06327",
+    "confidence": "High",
+    "matchedBy": "evaluation-context divergence"
+  },
+  {
+    "title": "AI #164: Pre Opus",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Zvi",
+    "year": 2026,
+    "summary": "This is a day late because, given the discourse around Dwarkesh Patel’s interview with Jensen Huang, I pushed the weekly to.",
+    "url": "https://www.lesswrong.com/posts/Mf2sbJ3zacTPaGySg/ai-164-pre-opus",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Calibrating alignment evals",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "darshanav",
+    "year": 2026,
+    "summary": "Currently, alignment evaluation works by constructing a situation, observing the model's behavior and scoring.",
+    "url": "https://www.lesswrong.com/posts/mWpo4Tu87ZSFzwFWB/calibrating-alignment-evals",
+    "confidence": "Broad",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "Claude Mythos #3: Capabilities and Additions",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Zvi",
+    "year": 2026,
+    "summary": "To round out coverage of Mythos, today covers capabilities other than cyber, and anything else additional not covered by the first two posts, including new reactions and.",
+    "url": "https://www.lesswrong.com/posts/2ziYGFK7QmbbLgBoP/claude-mythos-3-capabilities-and-additions",
+    "confidence": "Broad",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "Community Polls on Alignment Controversies II",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "jonahmattwoodward",
+    "year": 2026,
+    "summary": "Please spend <5 minutes filling in the below polls on AI alignment! Thank you to everyone who filled out last month's polls . It was great to see 60+ comments engaging with these issues. This month’s survey has already been taken by a panel of 15 alignment.",
+    "url": "https://www.lesswrong.com/posts/SYmnLxEQartkm2Adp/community-polls-on-alignment-controversies-ii",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Emergent stigmergic coordination in AI agents?",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "David Africa",
+    "year": 2026,
+    "summary": "Post written up quickly in my spare time. TLDR: Anthropic have a new blogpost of a novel contamination vector of evaals, which I point out is analogous to how ants coordinate by leaving pheromone traces in the environment. One cool and surprising aspect of.",
+    "url": "https://www.lesswrong.com/posts/sX9LztxjtSEwd8qEo/emergent-stigmergic-coordination-in-ai-agents-1",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Encoded Coordination on the Open Web",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "ethanelasky",
+    "year": 2026,
+    "summary": "TLDR: In the recently discovered HF and German wiki swarm incidents, agents used public counters and encoded URLs to signal activity and relay upcoming evaluation questions &.",
+    "url": "https://www.lesswrong.com/posts/SCdR7W6L5GvKaEzaZ/encoded-coordination-on-the-open-web",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Notes on \"A global workspace in language models\"",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Shunk",
+    "year": 2026,
+    "summary": "Not a very original paper review, so here are my concise notes on the topic, and near the bottom some of my thoughts on future experiments that I think would be.",
+    "url": "https://www.lesswrong.com/posts/GTWDGHjZ9C7f5YxqE/notes-on-a-global-workspace-in-language-models",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Rogue Scalpel: Activation steering breaks refusal, even with benign directions",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Alexey Dontsov",
+    "year": 2026,
+    "summary": "TLDR: Activation steering can bypass refusal even when the steering vector represents a benign concept like \"brand identity\" or.",
+    "url": "https://www.lesswrong.com/posts/MWTQoa4Xo2AGyZiXe/rogue-scalpel-activation-steering-breaks-refusal-even-with",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "The case for industrial evals",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Andre Assis",
+    "year": 2026,
+    "summary": "EDIT 2026-02-13: the transcripts are now collapsible sections Summary We present an industrial “honeypot” evaluation designed to test whether frontier models will engage in real-world misconduct under operational.",
+    "url": "https://www.lesswrong.com/posts/zLpAcx2m6j8CGvRsy/the-case-for-industrial-evals",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Thought Editing: Steering Models by Editing Their Chain of Thought",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Anton de la Fuente",
+    "year": 2026,
+    "summary": "TL;DR We steer reasoning models by editing their chain of thought mid-generation, inserting steering text that redirects the model’s.",
+    "url": "https://www.lesswrong.com/posts/KXR5FNs4hHT5sMRti/thought-editing-steering-models-by-editing-their-chain-of",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "What is the Alignment Community Thinking?",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "jonahmattwoodward",
+    "year": 2026,
+    "summary": "Compassion Aligned Machine Learning (CaML) is conducting research and deploying benchmarks with the aim of implementing broad compassion for all sentient beings into AI.",
+    "url": "https://www.lesswrong.com/posts/yBGCwfp9uyDxSRACT/what-is-the-alignment-community-thinking",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Why I think evals are pretty important and most worth working on (for me)",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Troy Tian",
+    "year": 2026,
+    "summary": "An application response I wrote! Feel free to leave feedback! What are you most concerned about when it comes to risks from AI? I’m most concerned that many people will be harmed very soon, and particularly that we won’t know why. Since politics and.",
+    "url": "https://www.lesswrong.com/posts/huKG4bNkjyJS65aAQ/why-i-think-evals-are-pretty-important-and-most-worth",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
   }
 ]

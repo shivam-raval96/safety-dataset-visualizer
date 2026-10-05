@@ -1,6 +1,6 @@
 # Eval awareness papers and posts
 
-60 entries currently shown in Paper Atlas.
+74 entries currently shown in Paper Atlas.
 
 - [Awareness Jailbreaking: Revealing True Alignment in Evaluation-Aware Models](https://www.lesswrong.com/posts/srEijciwxfWEisYqX/awareness-jailbreaking-revealing-true-alignment-in) — LessWrong · Maheep Chaudhary · 2025
 - [Call for Science of Eval Awareness (+ Research Directions)](https://www.lesswrong.com/posts/tn8nKcNE4SDnDxLJj/call-for-science-of-eval-awareness-research-directions) — LessWrong · Igor Ivanov · 2025
@@ -22,11 +22,18 @@
 - [Steering Evaluation-Aware Models to Act Like They Are Deployed](https://www.lesswrong.com/posts/peKrvZ6t9PSCzoQDa/steering-evaluation-aware-models-to-act-like-they-are) — LessWrong · Tim Hua · 2025
 - [Stress Testing Deliberative Alignment for Anti-Scheming Training](https://www.lesswrong.com/posts/JmRfgNYCrYogCq7ny/stress-testing-deliberative-alignment-for-anti-scheming) — LessWrong · Mikita Balesni · 2025
 - [A Framework for Eval Awareness](https://www.lesswrong.com/posts/cjMpms3dBZJCrxL8c/a-framework-for-eval-awareness) — LessWrong · LAThomson · 2026
+- [AI #164: Pre Opus](https://www.lesswrong.com/posts/Mf2sbJ3zacTPaGySg/ai-164-pre-opus) — LessWrong · Zvi · 2026
+- [Calibrating alignment evals](https://www.lesswrong.com/posts/mWpo4Tu87ZSFzwFWB/calibrating-alignment-evals) — LessWrong · darshanav · 2026
+- [Claude Mythos #3: Capabilities and Additions](https://www.lesswrong.com/posts/2ziYGFK7QmbbLgBoP/claude-mythos-3-capabilities-and-additions) — LessWrong · Zvi · 2026
+- [Community Polls on Alignment Controversies II](https://www.lesswrong.com/posts/SYmnLxEQartkm2Adp/community-polls-on-alignment-controversies-ii) — LessWrong · jonahmattwoodward · 2026
 - [Confounding Behaviours: Do AI Models Really Sandbag?](https://www.lesswrong.com/posts/iEubXCk7xC5nPc7Cm/confounding-behaviours-do-ai-models-really-sandbag) — LessWrong · Megha Sharma · 2026
 - [Construct validity of Claude Opus 4.8's System Card – A commentary](https://www.lesswrong.com/posts/vA9xEPquoWenprWT7/construct-validity-of-claude-opus-4-8-s-system-card-a) — LessWrong · Mflena · 2026
+- [Context Over Content: Exposing Evaluation Faking in Automated Judges](https://arxiv.org/abs/2604.15224) — Paper · Manan Gupta et al. · 2026
 - [Decomposing and Steering Functional Metacognition in Large Language Models](https://arxiv.org/abs/2605.08942) — Paper · Yanshi Li et al. · 2026
 - [Deployment Awareness Matters More Than Evaluation Awareness](https://www.lesswrong.com/posts/XP794SHDuXYfWLrvJ/deployment-awareness-matters-more-than-evaluation-awareness) — LessWrong · VojtaKovarik · 2026
 - [Do Models Continue Misaligned Actions? [eval]](https://www.lesswrong.com/posts/SawczP2pdCXMrkg2A/do-models-continue-misaligned-actions-eval) — LessWrong · Jordan Taylor · 2026
+- [Emergent stigmergic coordination in AI agents?](https://www.lesswrong.com/posts/sX9LztxjtSEwd8qEo/emergent-stigmergic-coordination-in-ai-agents-1) — LessWrong · David Africa · 2026
+- [Encoded Coordination on the Open Web](https://www.lesswrong.com/posts/SCdR7W6L5GvKaEzaZ/encoded-coordination-on-the-open-web) — LessWrong · ethanelasky · 2026
 - [Eval Cooperativeness May Be a Scalable Mitigation for Eval Gaming](https://www.lesswrong.com/posts/j8fkk38B8L7hEcGtg/eval-cooperativeness-may-be-a-scalable-mitigation-for-eval) — LessWrong · Jasmine Li · 2026
 - [Eval-Awareness Steering detects the Test, Not the Sabotage](https://www.lesswrong.com/posts/ogvyWqJtSrpgXfc7t/eval-awareness-steering-detects-the-test-not-the-sabotage) — LessWrong · sahilraut · 2026
 - [EvalDetectBench: A Benchmark for Measuring Evaluation Awareness in Frontier Language Models](https://arxiv.org/abs/2609.01611) — Paper · Xinning Li et al. · 2026
@@ -42,23 +49,30 @@
 - [Is Evaluation Awareness Just Format Sensitivity? Limitations of Probe-Based Evidence under Controlled Prompt Structure](https://arxiv.org/abs/2603.19426) — Paper · Viliana Devbunova · 2026
 - [LURE: Live-Usage Replay Evaluations for Reducing Evaluation Awareness](https://arxiv.org/abs/2605.26438) — Paper · Igor Ivanov & David Demitri Africa · 2026
 - [Measuring Eval Awareness: The Realism Win Rate is Fragile](https://www.lesswrong.com/posts/pGGdLGZ9uJFSo5GN3/measuring-eval-awareness-the-realism-win-rate-is-fragile) — LessWrong · Achu Menon · 2026
+- [Measuring Evaluation-Context Divergence in Open-Weight LLMs: A Paired-Prompt Protocol with Pilot Evidence of Alignment-Pipeline-Specific Heterogeneity](https://arxiv.org/abs/2605.06327) — Paper · Florian A. D. Burnat & Brittany I. Davidson · 2026
 - [Measuring Non-Verbalised Eval Awareness by Implanting Eval-Aware Behaviours](https://www.lesswrong.com/posts/MruTFazc4iu6zPtyb/measuring-non-verbalised-eval-awareness-by-implanting-eval) — LessWrong · Jordan Taylor · 2026
 - [Models May Behave Worse When Eval Aware](https://www.lesswrong.com/posts/aTcsN5ZZDnMFJvRiG/models-may-behave-worse-when-eval-aware) — LessWrong · Senthooran Rajamanoharan · 2026
 - [Models That Know How Evaluations Are Designed Score Safer](https://arxiv.org/abs/2605.28591) — Paper · Katharina Deckenbach et al. · 2026
+- [Notes on "A global workspace in language models"](https://www.lesswrong.com/posts/GTWDGHjZ9C7f5YxqE/notes-on-a-global-workspace-in-language-models) — LessWrong · Shunk · 2026
 - [OpenAI's Astra alignment claims are dubious and there is good evidence it is misaligned](https://www.lesswrong.com/posts/tpLBiFKe62HZu5x7B/openai-s-astra-alignment-claims-are-dubious-and-there-is) — LessWrong · William Harrison · 2026
 - [Opus 4.6 Reasoning Doesn't Verbalize Alignment Faking, but Behavior Persists](https://www.lesswrong.com/posts/9wDHByRhmtDaoYAx8/opus-4-6-reasoning-doesn-t-verbalize-alignment-faking-but) — LessWrong · Daan Henselmans · 2026
 - [Realistic Evaluations Will Not Prevent Evaluation Awareness](https://www.lesswrong.com/posts/7qBTcE3jqQFTuzssE/realistic-evaluations-will-not-prevent-evaluation-awareness) — LessWrong · Adam Karvonen · 2026
 - [Rephrasing Reduces Eval Awareness...](https://www.lesswrong.com/posts/v5yrDQCYJzfgsyvrx/rephrasing-reduces-eval-awareness) — LessWrong · atharva · 2026
 - [Representational Depth of Evaluation Awareness Shifts With Scale in Open-Weight Language Models](https://arxiv.org/abs/2606.29196) — Paper · Archit Manek · 2026
 - [Reproducing steering against evaluation awareness in a large open-weight model](https://www.lesswrong.com/posts/HhF5kESdtPHku7kim/reproducing-steering-against-evaluation-awareness-in-a-large-1) — LessWrong · Thomas Read · 2026
+- [Rogue Scalpel: Activation steering breaks refusal, even with benign directions](https://www.lesswrong.com/posts/MWTQoa4Xo2AGyZiXe/rogue-scalpel-activation-steering-breaks-refusal-even-with) — LessWrong · Alexey Dontsov · 2026
 - [Selectively reducing eval awareness and murder in Gemma 3 27B via steering](https://www.lesswrong.com/posts/QfM6SHyBPveDtHAma/selectively-reducing-eval-awareness-and-murder-in-gemma-3) — LessWrong · LessWrong contributor · 2026
 - [SFT Also Drives Safety Eval Results in Olmo 3](https://www.lesswrong.com/posts/d9rEnYcfCk4pn2PK8/sft-also-drives-safety-eval-results-in-olmo-3-1) — LessWrong · Finn Cairns · 2026
 - [Spurious probes as a black-box alternative to activation probing](https://www.lesswrong.com/posts/gZh6txHhp8sm832sE/spurious-probes-as-a-black-box-alternative-to-activation) — LessWrong · Ziqian Zhong · 2026
+- [The case for industrial evals](https://www.lesswrong.com/posts/zLpAcx2m6j8CGvRsy/the-case-for-industrial-evals) — LessWrong · Andre Assis · 2026
+- [Thought Editing: Steering Models by Editing Their Chain of Thought](https://www.lesswrong.com/posts/KXR5FNs4hHT5sMRti/thought-editing-steering-models-by-editing-their-chain-of) — LessWrong · Anton de la Fuente · 2026
 - [Tracing Eval-Awareness Emergence Through Training of OLMo 3](https://www.lesswrong.com/posts/c2tqL9xPbttisAHtt/tracing-eval-awareness-emergence-through-training-of-olmo-3) — LessWrong · Ram Bharadwaj · 2026
 - [Training LLMs to Verbalize Evaluation Awareness](https://arxiv.org/abs/2609.36316) — Paper · Usman Anwar et al. · 2026
 - [Understanding when and why agents scheme](https://www.lesswrong.com/posts/amYmcwCuyuCEZcrRm/understanding-when-and-why-agents-scheme) — LessWrong · Mia Hopman · 2026
 - [Verbalised evaluation awareness in language models has little effect on their behaviour](https://www.lesswrong.com/posts/YXPAjK6keLuebpjz2/verbalised-evaluation-awareness-in-language-models-has) — LessWrong · Amelie Knecht · 2026
 - [Verbalized Eval Awareness Inflates Measured Safety](https://www.lesswrong.com/posts/mDriHK4beN5rq2tAA/verbalized-eval-awareness-inflates-measured-safety) — LessWrong · Santiago Aranguri · 2026
 - [We found an open weight model that games alignment honeypots](https://www.lesswrong.com/posts/GrEvutegoJFeTkzwe/we-found-an-open-weight-model-that-games-alignment-honeypots-1) — LessWrong · Thomas Read · 2026
+- [What is the Alignment Community Thinking?](https://www.lesswrong.com/posts/yBGCwfp9uyDxSRACT/what-is-the-alignment-community-thinking) — LessWrong · jonahmattwoodward · 2026
 - [Where we are on evaluation awareness](https://www.lesswrong.com/posts/oddJshNAtQvLxjast/where-we-are-on-evaluation-awareness) — LessWrong · Yassine Essifi · 2026
+- [Why I think evals are pretty important and most worth working on (for me)](https://www.lesswrong.com/posts/huKG4bNkjyJS65aAQ/why-i-think-evals-are-pretty-important-and-most-worth) — LessWrong · Troy Tian · 2026
 - [You Can't Escape Your Own Activations : Evaluation Awareness and Multi-Agent Monitoring](https://arxiv.org/abs/2609.03035) — Paper · Aritra Das et al. · 2026

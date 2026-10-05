@@ -260,6 +260,104 @@
         "kind": "LessWrong",
         "authors": "Mikita Balesni",
         "url": "https://www.lesswrong.com/posts/JmRfgNYCrYogCq7ny/stress-testing-deliberative-alignment-for-anti-scheming"
+      },
+      {
+        "title": "Context Over Content: Exposing Evaluation Faking in Automated Judges",
+        "topic": "Eval awareness",
+        "kind": "Paper",
+        "authors": "Manan Gupta et al.",
+        "url": "https://arxiv.org/abs/2604.15224"
+      },
+      {
+        "title": "Measuring Evaluation-Context Divergence in Open-Weight LLMs: A Paired-Prompt Protocol with Pilot Evidence of Alignment-Pipeline-Specific Heterogeneity",
+        "topic": "Eval awareness",
+        "kind": "Paper",
+        "authors": "Florian A. D. Burnat & Brittany I. Davidson",
+        "url": "https://arxiv.org/abs/2605.06327"
+      },
+      {
+        "title": "AI #164: Pre Opus",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Zvi",
+        "url": "https://www.lesswrong.com/posts/Mf2sbJ3zacTPaGySg/ai-164-pre-opus"
+      },
+      {
+        "title": "Calibrating alignment evals",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "darshanav",
+        "url": "https://www.lesswrong.com/posts/mWpo4Tu87ZSFzwFWB/calibrating-alignment-evals"
+      },
+      {
+        "title": "Claude Mythos #3: Capabilities and Additions",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Zvi",
+        "url": "https://www.lesswrong.com/posts/2ziYGFK7QmbbLgBoP/claude-mythos-3-capabilities-and-additions"
+      },
+      {
+        "title": "Community Polls on Alignment Controversies II",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "jonahmattwoodward",
+        "url": "https://www.lesswrong.com/posts/SYmnLxEQartkm2Adp/community-polls-on-alignment-controversies-ii"
+      },
+      {
+        "title": "Emergent stigmergic coordination in AI agents?",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "David Africa",
+        "url": "https://www.lesswrong.com/posts/sX9LztxjtSEwd8qEo/emergent-stigmergic-coordination-in-ai-agents-1"
+      },
+      {
+        "title": "Encoded Coordination on the Open Web",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "ethanelasky",
+        "url": "https://www.lesswrong.com/posts/SCdR7W6L5GvKaEzaZ/encoded-coordination-on-the-open-web"
+      },
+      {
+        "title": "Notes on \"A global workspace in language models\"",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Shunk",
+        "url": "https://www.lesswrong.com/posts/GTWDGHjZ9C7f5YxqE/notes-on-a-global-workspace-in-language-models"
+      },
+      {
+        "title": "Rogue Scalpel: Activation steering breaks refusal, even with benign directions",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Alexey Dontsov",
+        "url": "https://www.lesswrong.com/posts/MWTQoa4Xo2AGyZiXe/rogue-scalpel-activation-steering-breaks-refusal-even-with"
+      },
+      {
+        "title": "The case for industrial evals",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Andre Assis",
+        "url": "https://www.lesswrong.com/posts/zLpAcx2m6j8CGvRsy/the-case-for-industrial-evals"
+      },
+      {
+        "title": "Thought Editing: Steering Models by Editing Their Chain of Thought",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Anton de la Fuente",
+        "url": "https://www.lesswrong.com/posts/KXR5FNs4hHT5sMRti/thought-editing-steering-models-by-editing-their-chain-of"
+      },
+      {
+        "title": "What is the Alignment Community Thinking?",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "jonahmattwoodward",
+        "url": "https://www.lesswrong.com/posts/yBGCwfp9uyDxSRACT/what-is-the-alignment-community-thinking"
+      },
+      {
+        "title": "Why I think evals are pretty important and most worth working on (for me)",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Troy Tian",
+        "url": "https://www.lesswrong.com/posts/huKG4bNkjyJS65aAQ/why-i-think-evals-are-pretty-important-and-most-worth"
       }
     ]
   },
