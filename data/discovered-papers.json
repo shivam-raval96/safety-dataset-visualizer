@@ -3469,17 +3469,6 @@
     "matchedBy": "evaluation-context divergence"
   },
   {
-    "title": "AI #164: Pre Opus",
-    "topic": "Eval awareness",
-    "kind": "LessWrong",
-    "authors": "Zvi",
-    "year": 2026,
-    "summary": "This is a day late because, given the discourse around Dwarkesh Patel’s interview with Jensen Huang, I pushed the weekly to.",
-    "url": "https://www.lesswrong.com/posts/Mf2sbJ3zacTPaGySg/ai-164-pre-opus",
-    "confidence": "Broad",
-    "matchedBy": "eval awareness"
-  },
-  {
     "title": "Calibrating alignment evals",
     "topic": "Eval awareness",
     "kind": "LessWrong",
