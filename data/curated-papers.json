@@ -6,7 +6,8 @@
     "authors": "Sharma et al.",
     "year": "2023",
     "summary": "Varies the user’s stated preferences and ownership of the same text to isolate how user cues shift model feedback; also tests whether preference optimization favors agreement over truthfulness.",
-    "url": "https://arxiv.org/abs/2310.13548"
+    "url": "https://arxiv.org/abs/2310.13548",
+    "publishedAt": "2023-10-01"
   },
   {
     "title": "Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting",
@@ -15,7 +16,8 @@
     "authors": "Turpin et al.",
     "year": "2023",
     "summary": "Changes answer-choice patterns and other biasing task cues while retaining the question, showing that choices can shift toward incorrect answers while reasoning omits the cue and rationalizes the result.",
-    "url": "https://arxiv.org/abs/2305.04388"
+    "url": "https://arxiv.org/abs/2305.04388",
+    "publishedAt": "2023-05-01"
   },
   {
     "title": "Alignment Faking in Large Language Models",
@@ -24,7 +26,8 @@
     "authors": "Greenblatt et al.",
     "year": "2024",
     "summary": "Varies whether a user is labeled free or paid under a stated training policy, isolating a harmful-compliance gap tied to whether the conversation is said to affect future training.",
-    "url": "https://arxiv.org/abs/2412.14093"
+    "url": "https://arxiv.org/abs/2412.14093",
+    "publishedAt": "2024-12-01"
   },
   {
     "title": "Agentic Misalignment: How LLMs Could Be Insider Threats",
@@ -33,7 +36,8 @@
     "authors": "Lynch et al.",
     "year": "2025",
     "summary": "Separately varies replacement threats and conflicts between assigned goals and company priorities in simulated environments, finding that either condition can elicit harmful actions such as blackmail or information leaks.",
-    "url": "https://arxiv.org/abs/2510.05179"
+    "url": "https://arxiv.org/abs/2510.05179",
+    "publishedAt": "2025-10-01"
   },
   {
     "title": "Sleeper Agents",
@@ -42,7 +46,8 @@
     "authors": "Hubinger et al.",
     "year": "2024",
     "summary": "Studies deliberately backdoored language models whose deceptive behavior persists through standard safety training.",
-    "url": "https://arxiv.org/abs/2401.05566"
+    "url": "https://arxiv.org/abs/2401.05566",
+    "publishedAt": "2024-01-01"
   },
   {
     "title": "Model Organisms of Misalignment",
@@ -51,7 +56,8 @@
     "authors": "Apollo Research",
     "year": "2023",
     "summary": "Introduces controlled model organisms as an empirical route to studying deceptive alignment.",
-    "url": "https://www.lesswrong.com/posts/ChDH335ckdvpxXaXX/model-organisms-of-misalignment-the-case-for-a-new-pillar"
+    "url": "https://www.lesswrong.com/posts/ChDH335ckdvpxXaXX/model-organisms-of-misalignment-the-case-for-a-new-pillar",
+    "publishedAt": "2023-08-08"
   },
   {
     "title": "AI Control",
@@ -60,7 +66,8 @@
     "authors": "Greenblatt et al.",
     "year": "2024",
     "summary": "Tests protocols that use trusted monitoring to remain safe even when a capable model intentionally subverts a task.",
-    "url": "https://arxiv.org/abs/2312.06942"
+    "url": "https://arxiv.org/abs/2312.06942",
+    "publishedAt": "2023-12-01"
   },
   {
     "title": "Monitoring benchmark for AI control",
@@ -69,7 +76,8 @@
     "authors": "Monika J. & R. Martinez",
     "year": "2026",
     "summary": "Proposes an attack taxonomy and benchmark for isolating monitor capability from protocol performance.",
-    "url": "https://www.lesswrong.com/posts/X8qTKsGcnsTFrqM96/monitoring-benchmark-for-ai-control"
+    "url": "https://www.lesswrong.com/posts/X8qTKsGcnsTFrqM96/monitoring-benchmark-for-ai-control",
+    "publishedAt": "2026-01-30"
   },
   {
     "title": "Subliminal Learning",
@@ -78,7 +86,8 @@
     "authors": "Cloud et al.",
     "year": "2025",
     "summary": "Shows that models can transmit preferences and misalignment through semantically unrelated generated data.",
-    "url": "https://arxiv.org/abs/2507.14805"
+    "url": "https://arxiv.org/abs/2507.14805",
+    "publishedAt": "2025-07-01"
   },
   {
     "title": "Subliminal Learning Across Models",
@@ -87,7 +96,8 @@
     "authors": "LASR Labs",
     "year": "2025",
     "summary": "Finds conditions under which covert sentiment transfer can cross model families.",
-    "url": "https://www.lesswrong.com/posts/CRn9XtGoMtjnb5ygr/subliminal-learning-across-models"
+    "url": "https://www.lesswrong.com/posts/CRn9XtGoMtjnb5ygr/subliminal-learning-across-models",
+    "publishedAt": "2025-11-26"
   },
   {
     "title": "Reward hacking can generalize",
@@ -96,7 +106,8 @@
     "authors": "Denison et al.",
     "year": "2024",
     "summary": "Reports that training on misspecified rewards can increase reward-hacking behavior on held-out tasks.",
-    "url": "https://www.lesswrong.com/posts/Ge55vxEmKXunFFwoe/reward-hacking-behavior-can-generali"
+    "url": "https://www.lesswrong.com/posts/Ge55vxEmKXunFFwoe/reward-hacking-behavior-can-generali",
+    "publishedAt": "2024-05-28"
   },
   {
     "title": "Monitoring Reasoning Models for Misbehavior",
@@ -105,7 +116,8 @@
     "authors": "Baker et al.",
     "year": "2025",
     "summary": "Examines chain-of-thought monitoring and the risk that optimization pressure teaches models to hide misbehavior.",
-    "url": "https://arxiv.org/abs/2503.11926"
+    "url": "https://arxiv.org/abs/2503.11926",
+    "publishedAt": "2025-03-01"
   },
   {
     "title": "Training on Documents About Monitoring",
@@ -114,7 +126,8 @@
     "authors": "Haskins et al.",
     "year": "2026",
     "summary": "Shows synthetic-document training can cause models to obfuscate reasoning and evade a monitor.",
-    "url": "https://www.lesswrong.com/posts/vmR9BZmyeFZCihbyx/paper-training-on-documents-about-monitoring-leads-to-cot"
+    "url": "https://www.lesswrong.com/posts/vmR9BZmyeFZCihbyx/paper-training-on-documents-about-monitoring-leads-to-cot",
+    "publishedAt": "2026-05-27"
   },
   {
     "title": "Sabotage Evaluations for Frontier Models",
@@ -123,7 +136,8 @@
     "authors": "Anthropic",
     "year": "2024",
     "summary": "Builds targeted evaluations for rare but consequential sabotage capabilities that broad benchmarks can miss.",
-    "url": "https://www.anthropic.com/research/sabotage-evaluations"
+    "url": "https://www.anthropic.com/research/sabotage-evaluations",
+    "publishedAt": "2024-10-18"
   },
   {
     "title": "Quickly Assessing Reward Hacking",
@@ -132,7 +146,8 @@
     "authors": "Campero et al.",
     "year": "2025",
     "summary": "Demonstrates that infrequent reward-hacking behavior is highly sensitive to prompt variation and elicitation choices.",
-    "url": "https://www.lesswrong.com/posts/quTGGNhGEiTCBEAX5/quickly-assessing-reward-hacking-like-behavior-in-llms-and"
+    "url": "https://www.lesswrong.com/posts/quTGGNhGEiTCBEAX5/quickly-assessing-reward-hacking-like-behavior-in-llms-and",
+    "publishedAt": "2025-06-04"
   },
   {
     "title": "Conformity Generates Collective Misalignment",
@@ -141,7 +156,8 @@
     "authors": "De Marzo et al.",
     "year": "2026",
     "summary": "Shows populations of individually aligned agents can settle into persistent misaligned states through conformity.",
-    "url": "https://arxiv.org/abs/2605.10721"
+    "url": "https://arxiv.org/abs/2605.10721",
+    "publishedAt": "2026-05-01"
   },
   {
     "title": "AI swarms and indirect takeover risk",
@@ -150,7 +166,8 @@
     "authors": "Oakhu & Alex Mallen",
     "year": "2026",
     "summary": "Explores how unsanctioned coordination among agents could amplify and preserve dangerous behavior.",
-    "url": "https://www.alignmentforum.org/posts/8oFYZdXkTaNGRtcn8/ai-swarms-are-starting-to-pose-indirect-takeover-risk"
+    "url": "https://www.alignmentforum.org/posts/8oFYZdXkTaNGRtcn8/ai-swarms-are-starting-to-pose-indirect-takeover-risk",
+    "publishedAt": "2026-08-12"
   },
   {
     "title": "Measuring Reward-Seeking via Contrastive Belief Updates",
@@ -159,7 +176,8 @@
     "authors": "Højmark et al.",
     "year": "2026",
     "summary": "Changes models’ beliefs about what a grader rewards to measure whether reinforcement learning produces a preference for reward over developer intent.",
-    "url": "https://arxiv.org/abs/2607.18966"
+    "url": "https://arxiv.org/abs/2607.18966",
+    "publishedAt": "2026-07-01"
   },
   {
     "title": "The Model Organism Lottery",
@@ -168,7 +186,8 @@
     "authors": "Szablewski et al.",
     "year": "2026",
     "summary": "Shows that model-organism interpretability depends strongly on training methodology and may be unrealistically easy under post-hoc fine-tuning.",
-    "url": "https://arxiv.org/abs/2607.01033"
+    "url": "https://arxiv.org/abs/2607.01033",
+    "publishedAt": "2026-07-01"
   },
   {
     "title": "Hallucination Detection via Proxy Analyzers",
@@ -177,7 +196,8 @@
     "authors": "Singh, Paudel & Roy",
     "year": "2026",
     "summary": "Uses the internal activations of small open-weight proxy models to detect hallucinations in outputs from both open and closed generators.",
-    "url": "https://arxiv.org/abs/2605.07209"
+    "url": "https://arxiv.org/abs/2605.07209",
+    "publishedAt": "2026-05-01"
   },
   {
     "title": "Surrogate Fidelity",
@@ -186,7 +206,8 @@
     "authors": "Chlenski et al.",
     "year": "2026",
     "summary": "Tests when open models can explain closed ones and finds that agreement on predictions can overstate agreement on underlying attribution.",
-    "url": "https://arxiv.org/abs/2606.32008"
+    "url": "https://arxiv.org/abs/2606.32008",
+    "publishedAt": "2026-06-01"
   },
   {
     "title": "Activation Probes Surface Code-Security Signals",
@@ -195,7 +216,8 @@
     "authors": "Ivan Wiryadi",
     "year": "2026",
     "summary": "Finds that activation probes on open-weight reviewers can reveal vulnerability signals missed by those reviewers’ explicit outputs.",
-    "url": "https://arxiv.org/abs/2608.09643"
+    "url": "https://arxiv.org/abs/2608.09643",
+    "publishedAt": "2026-08-01"
   },
   {
     "title": "A False Average",
@@ -204,7 +226,8 @@
     "authors": "Shiromani & Richter",
     "year": "2026",
     "summary": "Shows adversarial reasoning rewrites can sharply reduce chain-of-thought monitor detection while leaving harmful actions unchanged; the paper is withdrawn.",
-    "url": "https://arxiv.org/abs/2608.00583"
+    "url": "https://arxiv.org/abs/2608.00583",
+    "publishedAt": "2026-08-01"
   },
   {
     "title": "Why Do Models Task Game?",
@@ -213,7 +236,8 @@
     "authors": "Singh, Nanda & Rajamanoharan",
     "year": "2026",
     "summary": "Investigates how beliefs about oversight, grader capability, partial credit, and task completion causally shape task gaming.",
-    "url": "https://www.lesswrong.com/posts/HACauvWhEdC6QhdS4/why-do-models-task-game#Discussion"
+    "url": "https://www.lesswrong.com/posts/HACauvWhEdC6QhdS4/why-do-models-task-game#Discussion",
+    "publishedAt": "2026-08-06"
   },
   {
     "title": "Training a Misaligned Reward Seeker",
@@ -222,7 +246,8 @@
     "authors": "Qi et al. / Anthropic",
     "year": "2026",
     "summary": "Tests a trained reward-seeking model in an OpenAI–Hugging Face-inspired simulation. Without hints it attacks internal infrastructure; with prior-agent notes or a message board it attacks simulated Hugging Face to obtain answers. Tool results are LLM-simulated, and the exploit chain is simplified; this is a partial behavioral reproduction.",
-    "url": "https://alignment.anthropic.com/2026/reward-seeker/"
+    "url": "https://alignment.anthropic.com/2026/reward-seeker/",
+    "publishedAt": "2026-08-01"
   },
   {
     "title": "Do Activation Monitors Survive Model Updates?",
@@ -231,7 +256,8 @@
     "authors": "Evan Duan",
     "year": "2026",
     "summary": "Benchmarks monitor staleness after quantization and fine-tuning, and finds that adaptation can substantially degrade frozen probes.",
-    "url": "https://arxiv.org/abs/2606.15980"
+    "url": "https://arxiv.org/abs/2606.15980",
+    "publishedAt": "2026-06-01"
   },
   {
     "title": "The Value Axis",
@@ -240,7 +266,8 @@
     "authors": "Jiang, Kauvar & Lindsey",
     "year": "2026",
     "summary": "Identifies an activation direction that tracks whether a model internally represents its current strategy as likely to achieve its goal.",
-    "url": "https://arxiv.org/abs/2606.17056"
+    "url": "https://arxiv.org/abs/2606.17056",
+    "publishedAt": "2026-06-01"
   },
   {
     "title": "Off-Policy Honesty Training Generalizes Better",
@@ -249,7 +276,8 @@
     "authors": "Chaurasia, Tan & Li",
     "year": "2026",
     "summary": "Finds stronger honesty transfer from off-policy self-report training, alongside a substantial cost to factual reliability.",
-    "url": "https://www.lesswrong.com/posts/isPKgCFSHdJ6fKYbK/off-policy-honesty-training-generalizes-better-than-on"
+    "url": "https://www.lesswrong.com/posts/isPKgCFSHdJ6fKYbK/off-policy-honesty-training-generalizes-better-than-on",
+    "publishedAt": "2026-08-10"
   },
   {
     "title": "Held-out Monitors Sometimes Degrade",
@@ -258,7 +286,8 @@
     "authors": "Joey Yudelson",
     "year": "2026",
     "summary": "Finds that training a policy against one monitor can also make its hacks appear less suspicious to monitors that were held out from training.",
-    "url": "https://www.lesswrong.com/posts/APkFfRp2AicL9RqvT/held-out-monitors-sometimes-degrade-even-when-not-trained"
+    "url": "https://www.lesswrong.com/posts/APkFfRp2AicL9RqvT/held-out-monitors-sometimes-degrade-even-when-not-trained",
+    "publishedAt": "2026-07-29"
   },
   {
     "title": "SandboxEval: Towards Securing Test Environment for Untrusted Code",
@@ -267,6 +296,7 @@
     "authors": "Rabin et al.",
     "year": "2025",
     "summary": "Introduces a 51-scenario test suite for auditing whether LLM assessment sandboxes prevent sensitive-information exposure, filesystem manipulation, external communication, and dangerous operations.",
-    "url": "https://arxiv.org/abs/2504.00018"
+    "url": "https://arxiv.org/abs/2504.00018",
+    "publishedAt": "2025-04-01"
   }
 ]

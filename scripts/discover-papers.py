@@ -230,7 +230,7 @@ def arxiv_results(topic: str, keywords: list[str], limit: int, published_on: dat
         published_date = date.fromisoformat(published[:10])
         if published_on and published_date != published_on:
             continue
-        results.append({"title": title, "topic": topic, "kind": "Paper", "authors": author_label(names), "year": published_date.year, "summary": short_summary(summary), "url": f"https://arxiv.org/abs/{match.group(1)}", "confidence": matched[0], "matchedBy": matched[1]})
+        results.append({"title": title, "topic": topic, "kind": "Paper", "authors": author_label(names), "year": published_date.year, "publishedAt": published_date.isoformat(), "summary": short_summary(summary), "url": f"https://arxiv.org/abs/{match.group(1)}", "confidence": matched[0], "matchedBy": matched[1]})
     return results
 
 
@@ -258,7 +258,7 @@ def arxiv_search_results(topic: str, keywords: list[str], limit: int, published_
         author_block = re.search(r'<p class="authors">(.*?)</p>', block, re.S)
         names = re.findall(r'<a[^>]*>(.*?)</a>', author_block.group(1), re.S) if author_block else []
         authors = author_label([clean(name) for name in names]) if names else "arXiv authors"
-        results.append({"title": title, "topic": topic, "kind": "Paper", "authors": authors, "year": submitted.year, "summary": short_summary(summary), "url": f"https://arxiv.org/abs/{id_match.group(1)}", "confidence": matched[0], "matchedBy": matched[1]})
+        results.append({"title": title, "topic": topic, "kind": "Paper", "authors": authors, "year": submitted.year, "publishedAt": submitted.isoformat(), "summary": short_summary(summary), "url": f"https://arxiv.org/abs/{id_match.group(1)}", "confidence": matched[0], "matchedBy": matched[1]})
     return results
 
 
@@ -276,7 +276,7 @@ def lesswrong_topic_results(topic: str, keywords: list[str], posts: list[dict[st
         if not matched:
             continue
         author = (post.get("user") or {}).get("displayName") or "LessWrong contributor"
-        results.append({"title": title, "topic": topic, "kind": "LessWrong", "authors": author, "year": int(post["postedAt"][:4]), "summary": short_summary(body), "url": post["pageUrl"], "confidence": matched[0], "matchedBy": matched[1]})
+        results.append({"title": title, "topic": topic, "kind": "LessWrong", "authors": author, "year": int(post["postedAt"][:4]), "publishedAt": post["postedAt"][:10], "summary": short_summary(body), "url": post["pageUrl"], "confidence": matched[0], "matchedBy": matched[1]})
     return results
 
 

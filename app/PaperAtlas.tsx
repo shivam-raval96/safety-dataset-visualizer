@@ -15,6 +15,7 @@ type Source = {
   kind: "Paper" | "LessWrong" | "Post";
   authors: string;
   year: number;
+  publishedAt?: string;
   summary: string;
   url: string;
 };
@@ -40,6 +41,15 @@ const topics = [
 
 const curatedSources: Source[] = curated.map((source) => ({ ...source, year: Number(source.year), kind: source.kind as Source["kind"] }));
 const sources = [...curatedSources, ...(discovered as Source[])];
+
+function publicationTimestamp(source: Source) {
+  return Date.parse(source.publishedAt ? `${source.publishedAt}T00:00:00Z` : `${source.year}-01-01T00:00:00Z`);
+}
+
+function publicationLabel(source: Source) {
+  if (!source.publishedAt) return String(source.year);
+  return new Date(`${source.publishedAt}T00:00:00Z`).toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+}
 
 // Keep one chronological spiral per topic while packing the cluster envelopes
 // into a compact overview. The canvas dimensions drive the initial fit zoom.
@@ -68,7 +78,7 @@ function orderedTopicSources(topic: string) {
   return sources
     .map((item, insertionOrder) => ({ item, insertionOrder }))
     .filter(({ item }) => item.topic === topic)
-    .sort((a, b) => a.item.year - b.item.year || a.insertionOrder - b.insertionOrder)
+    .sort((a, b) => publicationTimestamp(a.item) - publicationTimestamp(b.item) || a.insertionOrder - b.insertionOrder)
     .map(({ item }) => item);
 }
 
@@ -241,7 +251,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
   };
   const visible = useMemo(() => sources.filter((source) => `${source.title} ${source.topic} ${source.authors} ${source.kind}`.toLowerCase().includes(query.toLowerCase())), [query]);
   const listed = useMemo(() => visible.filter((source) => filter === "All topics" || source.topic === filter)
-    .sort((a, b) => b.year - a.year || a.title.localeCompare(b.title)), [visible, filter]);
+    .sort((a, b) => publicationTimestamp(b) - publicationTimestamp(a) || a.title.localeCompare(b.title)), [visible, filter]);
   const detailSources = display === "list" ? listed : visible;
   const visibleTitles = new Set(visible.map((source) => source.title));
   const activeSource = detailSources.find((source) => source.url === selected.url) || detailSources[0];
@@ -289,7 +299,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
           </div>
           {listed.length ? <ul aria-label="Papers">{listed.map((source) => <li key={source.url}>
             <button className={`paper-list-row ${activeSource?.url === source.url ? "active" : ""}`} aria-pressed={activeSource?.url === source.url} onClick={() => selectReading(source)}>
-              <span className="paper-list-meta"><span><i style={{background:topics.find((topic) => topic.name === source.topic)?.color}}/>{source.topic}</span><span>{source.year} · {source.kind}</span></span>
+              <span className="paper-list-meta"><span><i style={{background:topics.find((topic) => topic.name === source.topic)?.color}}/>{source.topic}</span><span>{publicationLabel(source)} · {source.kind}</span></span>
               <strong>{source.title}</strong><span className="paper-list-authors">{source.authors}</span><span className="paper-list-description">{source.summary}</span>
             </button>
             <label className="paper-remove-select" title="Select for removal"><input type="checkbox" checked={removalSelection.includes(source.url)} onChange={() => toggleRemoval(source.url)} aria-label={`Select ${source.title} for removal`}/></label>
