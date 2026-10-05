@@ -73,6 +73,20 @@ class DiscoverPapersTests(unittest.TestCase):
             papers.canonical("https://www.lesswrong.com/posts/abc123/an-old-title"),
         )
 
+    def test_eval_awareness_is_a_dedicated_topic(self):
+        self.assertIn("evaluation awareness", papers.TOPIC_QUERIES["Eval awareness"])
+        self.assertIn("situational awareness language models", papers.TOPIC_QUERIES["Eval awareness"])
+        self.assertNotIn("evaluation awareness", papers.TOPIC_QUERIES["Model forensics"])
+        self.assertEqual(
+            papers.match_confidence(
+                "Eval awareness",
+                "Evaluation Awareness in Language Models",
+                "We study whether aligned language models detect evaluation contexts.",
+                "evaluation awareness",
+            ),
+            "High",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

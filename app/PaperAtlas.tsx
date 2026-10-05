@@ -35,6 +35,7 @@ const topics = [
   { name: "Longtail behaviors", color: "#78a8ff", summary: "Rare, severe, or hard-to-elicit behaviors missed by average-case evaluations." },
   { name: "Swarm misalignment", color: "#58d7bf", summary: "Misalignment emerging through interaction, conformity, and agent collectives." },
   { name: "Model forensics", color: "#bd854f", summary: "Controlled evaluations that vary user cues, task framing, or environmental conditions to identify what changes a model’s behavior or choices and test explanations for misalignment." },
+  { name: "Eval awareness", color: "#d17db6", summary: "Whether models recognize evaluation contexts and change behavior between testing and deployment." },
 ] as const;
 
 const curatedSources: Source[] = curated.map((source) => ({ ...source, year: Number(source.year), kind: source.kind as Source["kind"] }));
@@ -45,14 +46,15 @@ const sources = [...curatedSources, ...(discovered as Source[])];
 const WIDTH = 8000;
 const HEIGHT = 7200;
 const topicCenters = [
-  { x: 1600, y: 1500 },
+  { x: 1500, y: 1400 },
   { x: 4000, y: 1400 },
-  { x: 6400, y: 1600 },
-  { x: 1700, y: 3800 },
-  { x: 4100, y: 3700 },
-  { x: 6500, y: 3800 },
-  { x: 2600, y: 6000 },
-  { x: 5400, y: 5800 },
+  { x: 6500, y: 1400 },
+  { x: 1500, y: 3650 },
+  { x: 4000, y: 3650 },
+  { x: 6500, y: 3650 },
+  { x: 1500, y: 5900 },
+  { x: 4000, y: 5900 },
+  { x: 6500, y: 5900 },
 ];
 const centers = topics.map((topic, index) => ({ ...topic, ...topicCenters[index] }));
 const yearColors: Record<number, { band: string; label: string }> = {

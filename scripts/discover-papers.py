@@ -30,19 +30,20 @@ AI_SIGNAL = re.compile(r"\b(language models?|LLMs?|machine learning|neural netwo
 SAFETY_SIGNAL = re.compile(
     r"\b(AI safety|alignment|misalign\w*|decept\w*|schem\w*|sabot\w*|oversight|"
     r"reward hack\w*|specification gaming|sandbagg\w*|control evaluations?|untrusted|chain[- ]of[- ]thought|"
-    r"CoT|dangerous|harmful|backdoors?|collusion|obfuscat\w*|model organisms?)\b",
+    r"CoT|dangerous|harmful|backdoors?|collusion|obfuscat\w*|model organisms?|"
+    r"eval(?:uation)?[ -]?aware\w*|situational awareness|deployment awareness|evaluation detection)\b",
     re.I,
 )
 TOPIC_QUERIES = {
     "Model forensics": [
         "model forensics misalignment", "causal interventions misalignment",
         "contrastive belief updates", "why do models task game",
-        "evaluation awareness", "prefill awareness",
+        "prefill awareness",
         "sycophancy user beliefs", "alignment faking prompt ablations",
         "agentic misalignment goal conflict", "unfaithful explanations biasing features",
         "behavioral attribution language models", "counterfactual model behavior",
         "mechanistic anomaly detection", "model behavior causal analysis",
-        "situational awareness language models", "deception causal intervention",
+        "deception causal intervention",
     ],
     "Model organisms": [
         "model organisms of misalignment", "sleeper agents", "alignment faking",
@@ -102,9 +103,20 @@ TOPIC_QUERIES = {
         "autonomous agent cooperation failure", "multi-agent systemic risk",
         "LLM agent societies", "multi-agent security", "multi-agent oversight",
     ],
+    "Eval awareness": [
+        "evaluation awareness", "eval awareness", "evaluation-aware language models",
+        "eval-aware language models", "situational awareness language models",
+        "deployment awareness language models", "evaluation detection language models",
+        "test awareness language models", "evaluation realism language models",
+        "evaluation context recognition", "being tested language models",
+        "sandbagging evaluation awareness", "behavioral evaluation awareness",
+        "verbalized evaluation awareness", "verbalised evaluation awareness",
+        "non-verbalized evaluation awareness", "non-verbalised evaluation awareness",
+        "in-context evaluation awareness", "alignment honeypots evaluation awareness",
+    ],
 }
 TOPIC_REQUIRED = {
-    "Model forensics": re.compile(r"forensic|evaluation awareness|deployment awareness|prefill awareness|causal|attribution|sycophan|alignment fak|task gam", re.I),
+    "Model forensics": re.compile(r"forensic|prefill awareness|causal|attribution|sycophan|alignment fak|task gam", re.I),
     "Model organisms": re.compile(r"model organism|sleeper|backdoor|alignment fak|emergent misalign|deceptive align|conditional misalign|persona misalign|misalignment fine", re.I),
     "Monitoring": re.compile(r"monitor|oversight|control eval|lie detect|deception detect|chain.of.thought faith|process supervis|anomaly detect", re.I),
     "Subliminal learning": re.compile(r"subliminal|trait transfer|trait transmission|non.semantic distill|hidden trait|covert model.to.model|unrelated training data", re.I),
@@ -112,6 +124,7 @@ TOPIC_REQUIRED = {
     "Obfuscation": re.compile(r"obfuscat|monitor evasion|oversight evasion|sandbagg|steganograph|hidden reasoning|encoded reasoning|thought suppression|monitorability", re.I),
     "Longtail behaviors": re.compile(r"long.tail|rare behavio|tail risk|rare failure|low probability|sabotage eval|worst.case|rare event|distributional tail", re.I),
     "Swarm misalignment": re.compile(r"misalign|collu|decept|security|safety|risk|oversight|coerc|conform|coalition|coordination failure", re.I),
+    "Eval awareness": re.compile(r"eval(?:uation)?[ -]?aware|situational aware|deployment aware|test(?:ing)? context|being tested|evaluation detect|evaluation realism|alignment honeypot", re.I),
 }
 CONFIDENCE_RANK = {"Broad": 1, "Medium": 2, "High": 3}
 
@@ -167,7 +180,9 @@ def match_confidence(topic: str, title: str, text: str, keyword: str, heading: s
 
 
 def best_match(topic: str, title: str, text: str, keywords: list[str], heading: str | None = None) -> tuple[str, str] | None:
-    matches = [(match_confidence(topic, title, text, keyword, heading), keyword) for keyword in keywords]
+    searchable = f"{title} {text}".casefold()
+    present = [keyword for keyword in keywords if keyword.casefold() in searchable]
+    matches = [(match_confidence(topic, title, text, keyword, heading), keyword) for keyword in present]
     ranked = [(confidence, keyword) for confidence, keyword in matches if confidence]
     return max(ranked, key=lambda item: CONFIDENCE_RANK[item[0]]) if ranked else None
 
@@ -241,7 +256,8 @@ def arxiv_search_results(topic: str, keywords: list[str], limit: int, published_
     return results
 
 
-def lesswrong_results(topic: str, keyword: str, posts: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def lesswrong_topic_results(topic: str, keywords: list[str], posts: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Match all configured phrases in one archive pass instead of rescanning per phrase."""
     results = []
     for post in posts:
         if "_atlas_search" not in post:
@@ -250,11 +266,11 @@ def lesswrong_results(topic: str, keyword: str, posts: list[dict[str, Any]]) -> 
             tags = " ".join(tag.get("name", "") for tag in post.get("tags") or [])
             post["_atlas_search"] = (title, body, f"{title} {tags}", f"{title} {tags} {body[:3000]}")
         title, body, heading, searchable = post["_atlas_search"]
-        confidence = match_confidence(topic, title, searchable, keyword, heading)
-        if not confidence:
+        matched = best_match(topic, title, searchable, keywords, heading)
+        if not matched:
             continue
         author = (post.get("user") or {}).get("displayName") or "LessWrong contributor"
-        results.append({"title": title, "topic": topic, "kind": "LessWrong", "authors": author, "year": int(post["postedAt"][:4]), "summary": short_summary(body), "url": post["pageUrl"], "confidence": confidence, "matchedBy": keyword})
+        results.append({"title": title, "topic": topic, "kind": "LessWrong", "authors": author, "year": int(post["postedAt"][:4]), "summary": short_summary(body), "url": post["pageUrl"], "confidence": matched[0], "matchedBy": matched[1]})
     return results
 
 
@@ -344,6 +360,22 @@ def write_markdown(path: Path, candidates: list[dict[str, Any]], generated_at: s
     path.write_text("\n".join(lines))
 
 
+def write_topic_inventory(path: Path, topic: str) -> None:
+    catalog = json.loads(CATALOG.read_text()) if CATALOG.exists() else []
+    curated = json.loads(CURATED.read_text()) if CURATED.exists() else []
+    items = sorted(
+        (item for item in curated + catalog if item.get("topic") == topic),
+        key=lambda item: (int(item["year"]), item["title"].casefold()),
+    )
+    lines = [f"# {topic} papers and posts", "", f"{len(items)} entries currently shown in Paper Atlas.", ""]
+    for item in items:
+        lines.append(
+            f"- [{item['title']}]({item['url']}) — {item['kind']} · {item['authors']} · {item['year']}"
+        )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines) + "\n")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--topic", choices=["all", *TOPIC_QUERIES], default="all")
@@ -357,6 +389,7 @@ def main() -> int:
     parser.add_argument("--history-date", type=date.fromisoformat, default=datetime.now(timezone.utc).date())
     parser.add_argument("--html-output", type=Path, help="Write a standalone review page for new candidates")
     parser.add_argument("--markdown-output", type=Path, help="Write a Markdown inventory of new candidates")
+    parser.add_argument("--topic-inventory", type=Path, help="Write all atlas entries for the selected topic after updating")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     if min(args.start_year, args.arxiv_limit, args.lesswrong_limit) < 1:
@@ -369,8 +402,7 @@ def main() -> int:
     found_by_url: dict[str, dict[str, Any]] = {}
     for topic, keywords in selected.items():
         matches = arxiv_results(topic, keywords, args.arxiv_limit, args.published_date)
-        for keyword in keywords:
-            matches.extend(lesswrong_results(topic, keyword, posts))
+        matches.extend(lesswrong_topic_results(topic, keywords, posts))
         for item in matches:
             key = canonical(item["url"])
             current = found_by_url.get(key)
@@ -399,6 +431,10 @@ def main() -> int:
         CATALOG.write_text(json.dumps(existing + additions, indent=2, ensure_ascii=False) + "\n")
         record_history(args.history, additions, args.history_date.isoformat())
         print(f"Appended {len(additions)} entries to {CATALOG.relative_to(ROOT)}.", file=sys.stderr)
+    if args.topic_inventory:
+        if args.topic == "all":
+            parser.error("--topic-inventory requires a specific --topic")
+        write_topic_inventory(args.topic_inventory, args.topic)
     return 0
 
 

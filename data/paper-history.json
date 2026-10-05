@@ -43,6 +43,223 @@
         "kind": "LessWrong",
         "authors": "Jason Zeng",
         "url": "https://www.lesswrong.com/posts/yYk5iwGqcn6XKLnWw/reducing-synthetic-markers-makes-some-sdf-false-facts"
+      },
+      {
+        "title": "Evaluation Awareness in Language Models: Representation, Verbalization, and Control",
+        "topic": "Eval awareness",
+        "kind": "Paper",
+        "authors": "Farzaneh Heidari et al.",
+        "url": "https://arxiv.org/abs/2608.21766"
+      },
+      {
+        "title": "Evaluation Awareness Is Not One Capability: Evidence from Open Language Models",
+        "topic": "Eval awareness",
+        "kind": "Paper",
+        "authors": "Nilesh Nayan et al.",
+        "url": "https://arxiv.org/abs/2606.23583"
+      },
+      {
+        "title": "Evaluation Awareness Shifts from Format to Context with Model Scale",
+        "topic": "Eval awareness",
+        "kind": "Paper",
+        "authors": "Navraj Singh & Maheep Chaudhary",
+        "url": "https://arxiv.org/abs/2609.22119"
+      },
+      {
+        "title": "Is Eval Gaming Downstream of Verbalized Eval Awareness? Not when it's reflexive.",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Kieron Kretschmar",
+        "url": "https://www.lesswrong.com/posts/gvNYAHcWiezZs8QvD/is-eval-gaming-downstream-of-verbalized-eval-awareness-not"
+      },
+      {
+        "title": "Is Evaluation Awareness Just Format Sensitivity? Limitations of Probe-Based Evidence under Controlled Prompt Structure",
+        "topic": "Eval awareness",
+        "kind": "Paper",
+        "authors": "Viliana Devbunova",
+        "url": "https://arxiv.org/abs/2603.19426"
+      },
+      {
+        "title": "Selectively reducing eval awareness and murder in Gemma 3 27B via steering",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "LessWrong contributor",
+        "url": "https://www.lesswrong.com/posts/QfM6SHyBPveDtHAma/selectively-reducing-eval-awareness-and-murder-in-gemma-3"
+      },
+      {
+        "title": "Training LLMs to Verbalize Evaluation Awareness",
+        "topic": "Eval awareness",
+        "kind": "Paper",
+        "authors": "Usman Anwar et al.",
+        "url": "https://arxiv.org/abs/2609.36316"
+      },
+      {
+        "title": "Verbalized Eval Awareness Inflates Measured Safety",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Santiago Aranguri",
+        "url": "https://www.lesswrong.com/posts/mDriHK4beN5rq2tAA/verbalized-eval-awareness-inflates-measured-safety"
+      },
+      {
+        "title": "Comparative Analysis of Black Box Methods for Detecting Evaluation Awareness in LLMs",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Igor Ivanov",
+        "url": "https://www.lesswrong.com/posts/Waz32KuSxo6SSjyND/comparative-analysis-of-black-box-methods-for-detecting"
+      },
+      {
+        "title": "OpenAI: Sidestepping Evaluation Awareness and Anticipating Misalignment with Production Evaluations",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Marcus Williams",
+        "url": "https://www.lesswrong.com/posts/ae7wxdzEy8G3Dkrqn/openai-sidestepping-evaluation-awareness-and-anticipating"
+      },
+      {
+        "title": "Steering Evaluation-Aware Language Models to Act Like They Are Deployed",
+        "topic": "Eval awareness",
+        "kind": "Paper",
+        "authors": "Tim Tian Hua et al.",
+        "url": "https://arxiv.org/abs/2510.20487"
+      },
+      {
+        "title": "Confounding Behaviours: Do AI Models Really Sandbag?",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Megha Sharma",
+        "url": "https://www.lesswrong.com/posts/iEubXCk7xC5nPc7Cm/confounding-behaviours-do-ai-models-really-sandbag"
+      },
+      {
+        "title": "Construct validity of Claude Opus 4.8's System Card – A commentary",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Mflena",
+        "url": "https://www.lesswrong.com/posts/vA9xEPquoWenprWT7/construct-validity-of-claude-opus-4-8-s-system-card-a"
+      },
+      {
+        "title": "Decomposing and Steering Functional Metacognition in Large Language Models",
+        "topic": "Eval awareness",
+        "kind": "Paper",
+        "authors": "Yanshi Li et al.",
+        "url": "https://arxiv.org/abs/2605.08942"
+      },
+      {
+        "title": "Do Models Continue Misaligned Actions? [eval]",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Jordan Taylor",
+        "url": "https://www.lesswrong.com/posts/SawczP2pdCXMrkg2A/do-models-continue-misaligned-actions-eval"
+      },
+      {
+        "title": "Eval Cooperativeness May Be a Scalable Mitigation for Eval Gaming",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Jasmine Li",
+        "url": "https://www.lesswrong.com/posts/j8fkk38B8L7hEcGtg/eval-cooperativeness-may-be-a-scalable-mitigation-for-eval"
+      },
+      {
+        "title": "OpenAI's Astra alignment claims are dubious and there is good evidence it is misaligned",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "William Harrison",
+        "url": "https://www.lesswrong.com/posts/tpLBiFKe62HZu5x7B/openai-s-astra-alignment-claims-are-dubious-and-there-is"
+      },
+      {
+        "title": "Opus 4.6 Reasoning Doesn't Verbalize Alignment Faking, but Behavior Persists",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Daan Henselmans",
+        "url": "https://www.lesswrong.com/posts/9wDHByRhmtDaoYAx8/opus-4-6-reasoning-doesn-t-verbalize-alignment-faking-but"
+      },
+      {
+        "title": "SFT Also Drives Safety Eval Results in Olmo 3",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Finn Cairns",
+        "url": "https://www.lesswrong.com/posts/d9rEnYcfCk4pn2PK8/sft-also-drives-safety-eval-results-in-olmo-3-1"
+      },
+      {
+        "title": "Spurious probes as a black-box alternative to activation probing",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Ziqian Zhong",
+        "url": "https://www.lesswrong.com/posts/gZh6txHhp8sm832sE/spurious-probes-as-a-black-box-alternative-to-activation"
+      },
+      {
+        "title": "Understanding when and why agents scheme",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Mia Hopman",
+        "url": "https://www.lesswrong.com/posts/amYmcwCuyuCEZcrRm/understanding-when-and-why-agents-scheme"
+      },
+      {
+        "title": "Can Models be Evaluation Aware Without Explicit Verbalization?",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "gersonkroiz",
+        "url": "https://www.lesswrong.com/posts/W6ZFnheeEBGcZqdHd/can-models-be-evaluation-aware-without-explicit"
+      },
+      {
+        "title": "Can SAE steering reveal sandbagging?",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "jordinne",
+        "url": "https://www.lesswrong.com/posts/dBckLjYfTShBGZ8ma/can-sae-steering-reveal-sandbagging"
+      },
+      {
+        "title": "Claude Sonnet 3.7 (often) knows when it’s in alignment evaluations",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Nicholas Goldowsky-Dill",
+        "url": "https://www.lesswrong.com/posts/E3daBewppAiECN3Ao/claude-sonnet-3-7-often-knows-when-it-s-in-alignment"
+      },
+      {
+        "title": "Current LLMs seem to rarely detect CoT tampering",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Bartosz Cywiński",
+        "url": "https://www.lesswrong.com/posts/Ywzk9vwMhAAPxMqSW/current-llms-seem-to-rarely-detect-cot-tampering"
+      },
+      {
+        "title": "Do LLMs Comply Differently During Tests? Is This a Hidden Variable in Safety Evaluation? And Can We Steer That?",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Sahar Abdelnabi",
+        "url": "https://www.lesswrong.com/posts/B2o6nrxwKxLPsSYdh/do-llms-comply-differently-during-tests-is-this-a-hidden"
+      },
+      {
+        "title": "Five ways AI can tell you're testing it",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "sjadler",
+        "url": "https://www.lesswrong.com/posts/fGWqpvRuFWwGmu2em/five-ways-ai-can-tell-you-re-testing-it"
+      },
+      {
+        "title": "Large Language Models Often Know When They Are Being Evaluated",
+        "topic": "Eval awareness",
+        "kind": "Paper",
+        "authors": "Joe Needham et al.",
+        "url": "https://arxiv.org/abs/2505.23836"
+      },
+      {
+        "title": "Sonnet 4.5's eval gaming seriously undermines alignment evals, and this seems caused by training on alignment evals",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Alexa Pan",
+        "url": "https://www.lesswrong.com/posts/qgehQxiTXj53X49mM/sonnet-4-5-s-eval-gaming-seriously-undermines-alignment"
+      },
+      {
+        "title": "Steering Evaluation-Aware Models to Act Like They Are Deployed",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Tim Hua",
+        "url": "https://www.lesswrong.com/posts/peKrvZ6t9PSCzoQDa/steering-evaluation-aware-models-to-act-like-they-are"
+      },
+      {
+        "title": "Stress Testing Deliberative Alignment for Anti-Scheming Training",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Mikita Balesni",
+        "url": "https://www.lesswrong.com/posts/JmRfgNYCrYogCq7ny/stress-testing-deliberative-alignment-for-anti-scheming"
       }
     ]
   },
@@ -86,7 +303,7 @@
       },
       {
         "title": "Evaluation Awareness in Small(ish) Models",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "John Robertson",
         "url": "https://www.lesswrong.com/posts/Pd5fwZ9Ct5p6hAkrA/evaluation-awareness-in-small-ish-models"
@@ -107,7 +324,7 @@
       },
       {
         "title": "Improving CoT Monitorability of Evaluation Awareness via Verbalization Training",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "Usman Anwar",
         "url": "https://www.lesswrong.com/posts/LYBmbP668hgHEJNiZ/improving-cot-monitorability-of-evaluation-awareness-via"
@@ -618,14 +835,14 @@
       },
       {
         "title": "EvalDetectBench: A Benchmark for Measuring Evaluation Awareness in Frontier Language Models",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "Paper",
         "authors": "Xinning Li et al.",
         "url": "https://arxiv.org/abs/2609.01611"
       },
       {
         "title": "Evaluation Awareness in Language Models Has Limited Effect on Behaviour",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "Paper",
         "authors": "Amelie Knecht et al.",
         "url": "https://arxiv.org/abs/2605.05835"
@@ -639,7 +856,7 @@
       },
       {
         "title": "LURE: Live-Usage Replay Evaluations for Reducing Evaluation Awareness",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "Paper",
         "authors": "Igor Ivanov & David Demitri Africa",
         "url": "https://arxiv.org/abs/2605.26438"
@@ -667,7 +884,7 @@
       },
       {
         "title": "Deployment Awareness Matters More Than Evaluation Awareness",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "VojtaKovarik",
         "url": "https://www.lesswrong.com/posts/XP794SHDuXYfWLrvJ/deployment-awareness-matters-more-than-evaluation-awareness"
@@ -709,21 +926,21 @@
       },
       {
         "title": "Realistic Evaluations Will Not Prevent Evaluation Awareness",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "Adam Karvonen",
         "url": "https://www.lesswrong.com/posts/7qBTcE3jqQFTuzssE/realistic-evaluations-will-not-prevent-evaluation-awareness"
       },
       {
         "title": "Representational Depth of Evaluation Awareness Shifts With Scale in Open-Weight Language Models",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "Paper",
         "authors": "Archit Manek",
         "url": "https://arxiv.org/abs/2606.29196"
       },
       {
         "title": "Reproducing steering against evaluation awareness in a large open-weight model",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "Thomas Read",
         "url": "https://www.lesswrong.com/posts/HhF5kESdtPHku7kim/reproducing-steering-against-evaluation-awareness-in-a-large-1"
@@ -751,21 +968,21 @@
       },
       {
         "title": "Verbalised evaluation awareness in language models has little effect on their behaviour",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "Amelie Knecht",
         "url": "https://www.lesswrong.com/posts/YXPAjK6keLuebpjz2/verbalised-evaluation-awareness-in-language-models-has"
       },
       {
         "title": "Where we are on evaluation awareness",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "Yassine Essifi",
         "url": "https://www.lesswrong.com/posts/oddJshNAtQvLxjast/where-we-are-on-evaluation-awareness"
       },
       {
         "title": "You Can't Escape Your Own Activations : Evaluation Awareness and Multi-Agent Monitoring",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "Paper",
         "authors": "Aritra Das et al.",
         "url": "https://arxiv.org/abs/2609.03035"
@@ -793,7 +1010,7 @@
       },
       {
         "title": "Do LLMs Know They Are Being Tested? Evaluation Awareness and Incentive-Sensitive Failures in GPT-OSS-20B",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "Paper",
         "authors": "Nisar Ahmed et al.",
         "url": "https://arxiv.org/abs/2510.08624"
@@ -821,7 +1038,7 @@
       },
       {
         "title": "Evaluation Awareness Scales Predictably in Open-Weights Large Language Models",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "Paper",
         "authors": "Maheep Chaudhary et al.",
         "url": "https://arxiv.org/abs/2509.13333"
@@ -856,14 +1073,14 @@
       },
       {
         "title": "Probe-Rewrite-Evaluate: A Workflow for Reliable Benchmarks and Quantifying Evaluation Awareness",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "Paper",
         "authors": "Lang Xiong et al.",
         "url": "https://arxiv.org/abs/2509.00591"
       },
       {
         "title": "Probing and Steering Evaluation Awareness of Language Models",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "Paper",
         "authors": "Jord Nguyen et al.",
         "url": "https://arxiv.org/abs/2507.01786"
@@ -967,13 +1184,6 @@
         "url": "https://www.lesswrong.com/posts/nWiwv4GN8aYqpnZKE/antipasto-self-supervised-honesty-steering-via-anti-parallel"
       },
       {
-        "title": "Calibrating alignment evals",
-        "topic": "Model organisms",
-        "kind": "LessWrong",
-        "authors": "darshanav",
-        "url": "https://www.lesswrong.com/posts/mWpo4Tu87ZSFzwFWB/calibrating-alignment-evals"
-      },
-      {
         "title": "Can Aha Moments be Fake? Identifying True and Decorative Thinking Steps in CoT",
         "topic": "Monitoring",
         "kind": "LessWrong",
@@ -1038,7 +1248,7 @@
       },
       {
         "title": "Eval-Awareness Steering detects the Test, Not the Sabotage",
-        "topic": "Model organisms",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "sahilraut",
         "url": "https://www.lesswrong.com/posts/ogvyWqJtSrpgXfc7t/eval-awareness-steering-detects-the-test-not-the-sabotage"
@@ -1304,7 +1514,7 @@
       },
       {
         "title": "A Framework for Eval Awareness",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "LAThomson",
         "url": "https://www.lesswrong.com/posts/cjMpms3dBZJCrxL8c/a-framework-for-eval-awareness"
@@ -1780,7 +1990,7 @@
       },
       {
         "title": "Improving Evaluation Realism with Inference-Time Compute and Deployment Scaffolds",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "Paper",
         "authors": "Axel Ahlqvist et al.",
         "url": "https://arxiv.org/abs/2609.02302"
@@ -1794,7 +2004,7 @@
       },
       {
         "title": "In-Context Environments Induce Evaluation-Awareness in Language Models",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "Paper",
         "authors": "Maheep Chaudhary",
         "url": "https://arxiv.org/abs/2603.03824"
@@ -1899,14 +2109,14 @@
       },
       {
         "title": "Measuring Eval Awareness: The Realism Win Rate is Fragile",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "Achu Menon",
         "url": "https://www.lesswrong.com/posts/pGGdLGZ9uJFSo5GN3/measuring-eval-awareness-the-realism-win-rate-is-fragile"
       },
       {
         "title": "Measuring Non-Verbalised Eval Awareness by Implanting Eval-Aware Behaviours",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "Jordan Taylor",
         "url": "https://www.lesswrong.com/posts/MruTFazc4iu6zPtyb/measuring-non-verbalised-eval-awareness-by-implanting-eval"
@@ -1955,7 +2165,7 @@
       },
       {
         "title": "Models May Behave Worse When Eval Aware",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "Senthooran Rajamanoharan",
         "url": "https://www.lesswrong.com/posts/aTcsN5ZZDnMFJvRiG/models-may-behave-worse-when-eval-aware"
@@ -2123,7 +2333,7 @@
       },
       {
         "title": "Rephrasing Reduces Eval Awareness...",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "atharva",
         "url": "https://www.lesswrong.com/posts/v5yrDQCYJzfgsyvrx/rephrasing-reduces-eval-awareness"
@@ -2374,13 +2584,6 @@
         "url": "https://arxiv.org/abs/2602.03085"
       },
       {
-        "title": "Thought Editing: Steering Models by Editing Their Chain of Thought",
-        "topic": "Model organisms",
-        "kind": "LessWrong",
-        "authors": "Anton de la Fuente",
-        "url": "https://www.lesswrong.com/posts/KXR5FNs4hHT5sMRti/thought-editing-steering-models-by-editing-their-chain-of"
-      },
-      {
         "title": "Three types of model organism",
         "topic": "Model organisms",
         "kind": "LessWrong",
@@ -2403,7 +2606,7 @@
       },
       {
         "title": "Tracing Eval-Awareness Emergence Through Training of OLMo 3",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "Ram Bharadwaj",
         "url": "https://www.lesswrong.com/posts/c2tqL9xPbttisAHtt/tracing-eval-awareness-emergence-through-training-of-olmo-3"
@@ -2487,7 +2690,7 @@
       },
       {
         "title": "We found an open weight model that games alignment honeypots",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "Thomas Read",
         "url": "https://www.lesswrong.com/posts/GrEvutegoJFeTkzwe/we-found-an-open-weight-model-that-games-alignment-honeypots-1"
@@ -2662,7 +2865,7 @@
       },
       {
         "title": "Awareness Jailbreaking: Revealing True Alignment in Evaluation-Aware Models",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "Maheep Chaudhary",
         "url": "https://www.lesswrong.com/posts/srEijciwxfWEisYqX/awareness-jailbreaking-revealing-true-alignment-in"
@@ -2690,7 +2893,7 @@
       },
       {
         "title": "Call for Science of Eval Awareness (+ Research Directions)",
-        "topic": "Model forensics",
+        "topic": "Eval awareness",
         "kind": "LessWrong",
         "authors": "Igor Ivanov",
         "url": "https://www.lesswrong.com/posts/tn8nKcNE4SDnDxLJj/call-for-science-of-eval-awareness-research-directions"
