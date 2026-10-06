@@ -3326,18 +3326,6 @@
     "publishedAt": "2026-10-02"
   },
   {
-    "title": "Revisiting scaling laws for reward optimization",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Ali Aouad et al.",
-    "year": 2026,
-    "summary": "Scaling laws for optimization against reward models in AI alignment have pinned down how performance depends on optimization effort---measured by a KL-divergence budget relative to a reference.",
-    "url": "https://arxiv.org/abs/2609.38526",
-    "confidence": "Broad",
-    "matchedBy": "reward hacking",
-    "publishedAt": "2026-09-01"
-  },
-  {
     "title": "The Weakest Link: Distilling LLM Reasoning with Worst-Case Constrained Reinforcement Learning",
     "topic": "Reward hacking",
     "kind": "Paper",
