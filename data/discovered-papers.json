@@ -3756,5 +3756,29 @@
     "confidence": "Broad",
     "matchedBy": "evaluation awareness",
     "publishedAt": "2025-12-15"
+  },
+  {
+    "title": "Self-Modeling Interventions Modulate Emergent Misalignment",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Arush ",
+    "year": 2026,
+    "publishedAt": "2026-10-05",
+    "summary": "Code: https://github.com/atagade/sgtr-em Model checkpoints: https://github.com/atagade/sgtr-em/blob/main/MODEL_README.md Full paper (v2 coming soon): https://arxiv.org/abs/2606.23700 TL;DR A model’s self-model is its representation of.",
+    "url": "https://www.lesswrong.com/posts/7wrzfaiCq3u8xkY5G/self-modeling-interventions-modulate-emergent-misalignment",
+    "confidence": "High",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Research Note: Filtering Subversion-Relevant Information From Pretraining Data Is Feasible",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Kyle O’Brien",
+    "year": 2026,
+    "publishedAt": "2026-10-05",
+    "summary": "Authors : Kyle O’Brien¹, Spencer Kitts², Cameron Tice¹, Alek Westover² ¹Geodesic Research, ²Redwood Research Figure 1: We pretrained LLMs from scratch with and without filtering subversion-relevant information , finding that subversion-relevant knowledge is.",
+    "url": "https://www.lesswrong.com/posts/HwdXDoCH7KXdKsz7k/research-note-filtering-subversion-relevant-information-from",
+    "confidence": "Medium",
+    "matchedBy": "AI control"
   }
 ]

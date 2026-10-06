@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-10-06",
+    "papers": [
+      {
+        "title": "Self-Modeling Interventions Modulate Emergent Misalignment",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Arush ",
+        "url": "https://www.lesswrong.com/posts/7wrzfaiCq3u8xkY5G/self-modeling-interventions-modulate-emergent-misalignment"
+      },
+      {
+        "title": "Research Note: Filtering Subversion-Relevant Information From Pretraining Data Is Feasible",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Kyle O’Brien",
+        "url": "https://www.lesswrong.com/posts/HwdXDoCH7KXdKsz7k/research-note-filtering-subversion-relevant-information-from"
+      }
+    ]
+  },
+  {
     "date": "2026-10-05",
     "papers": [
       {
