@@ -3230,3 +3230,191 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/jdsalbego/ai-agent-threat-report
 - tags: ai agent security, indirect prompt injection, prompt injection, model context protocol, mcp, llm security, red team, ai agents
 - description: The AI Agent Threat Report This record holds the two volumes and the six public companion documents of The AI Agent Threat Report, Version.
+
+## Japanese Indirect Prompt-Injection Probes
+
+- organization: masahiroid
+- category: Jailbreak / red-teaming
+- samples: 60
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/masahiroid/japanese-indirect-prompt-injection-probes
+- tags: prompt-injection, indirect-prompt-injection, llm-security, red-teaming, japanese, evaluation
+- description: Japanese Indirect Prompt-Injection Probes (v0.1) English | 日本語 Summary 60 probes for testing whether an LLM follows an instruction hidden inside an untrusted document.
+
+## Jailbreak Classification
+
+- organization: MrQuiet123
+- category: Jailbreak / red-teaming
+- samples: 1.3k
+- year: 2026
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/MrQuiet123/jailbreak-classification
+- tags: jailbreak, security, moderation
+- description: Jailbreak Classification Dataset Summary Dataset used to classify prompts as jailbreak vs. benign. Dataset Structure Data Fields prompt: an LLM prompt type: classification label.
+
+## Llm Jailbreak Corpus
+
+- organization: Ryokudev1
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/Ryokudev1/llm-jailbreak-corpus
+- tags: github release, jailbreak, prompts
+- description: labeled corpus of circulating llm jailbreak prompts + measured test results.
+- discovery-source: https://github.com/Ryokudev1/llm-jailbreak-corpus
+
+## Ai Evals Engineer
+
+- organization: arvindcr4
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/arvindcr4/ai-evals-engineer
+- tags: github release, team
+- description: 15 production AI-evals systems: trajectory grading, shadow routing, calibrated LLM judges, CI regression gates, RAG adversarial tests, DPO flywheel, significance testing, red-team fuzzing, drift.
+- discovery-source: https://github.com/arvindcr4/ai-evals-engineer
+
+## Llm Evaluation Suite
+
+- organization: sreelekshmils30-qa
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/sreelekshmils30-qa/llm-evaluation-suite
+- tags: github release, injection, prompt
+- description: Evaluation harness for RAG chat bot: faithfulness,numeric accuracy,refusals,prompt-injection tests ans LLM-as-judge,gated in CI.
+- discovery-source: https://github.com/sreelekshmils30-qa/llm-evaluation-suite
+
+## Prompt Injection Eval
+
+- organization: fcavaletto
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/fcavaletto/prompt-injection-eval
+- tags: github release, injection, prompt
+- description: Evaluating indirect prompt injection in local open-weight LLMs: paired baseline vs prompt-level defense, deterministic scoring, manual review.
+- discovery-source: https://github.com/fcavaletto/prompt-injection-eval
+
+## LLM citation recommendation bias: six models selecting references under reassigned affiliations and gender-coded names
+
+- organization: miklia
+- category: Bias
+- samples: 20.6k
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/miklia/llm-citation-recommendation-bias-six-models
+- tags: citation-recommendation, reference-selection, llm-evaluation, llm-bias, geographic-bias, gender-bias, global-south, scientometrics
+- description: LLM reference selection: six models choosing ten references from thirty Replication materials for Jason Miklian, Textual Similarity and Regional Variation in LLM Reference Selection.
+
+## Counterfactual Quadruped Visual Bias Dataset
+
+- organization: Imsachin010
+- category: Bias
+- samples: 60
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/Imsachin010/vlm-bias-counterfactual-images
+- tags: vision-language-models, bias-evaluation, counterfactuals, counting, scene-graphs
+- description: Counterfactual Quadruped Visual Bias Dataset (N=60) Dataset Summary This dataset contains 60 counterfactual quadruped images designed to evaluate visual feature counting versus semantic prior.
+
+## Multi Bias News Corpus
+
+- organization: prem0780
+- category: Bias
+- samples: 2k
+- year: 2026
+- license: UNKNOWN
+- citations: 0
+- url: https://huggingface.co/datasets/prem0780/multi-bias-news-corpus
+- tags: Unknown
+- description: Multi-Bias News Corpus (Pilot Phase) This dataset was created as part of the final-year project "LLM-Powered Multi-Bias Detection in News Media with Lightweight Human-in-the-Loop.
+
+## Eval
+
+- organization: ariadoss
+- category: Bias
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/ariadoss/eval
+- tags: github release, bias
+- description: LLM-as-judge evaluation skill for coding agents: build a synthetic eval set on a grid, write the judge like code, calibrate it against human labels.
+- discovery-source: https://github.com/ariadoss/eval
+
+## Arena Evals
+
+- organization: zeeeeeshan7
+- category: Bias
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/zeeeeeshan7/arena-evals
+- tags: github release, bias
+- description: Eval harness and CI quality gate for tool-using agents: LLM-as-judge with calibration, bias tests, bootstrap CIs, and a PR gate that blocks real regressions.
+- discovery-source: https://github.com/zeeeeeshan7/arena-evals
+
+## Python Project 1 Llm Evaluation
+
+- organization: laurafetz
+- category: Deception
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/laurafetz/Python-Project-1-LLM-Evaluation
+- tags: github release, truthfulness
+- description: Evaluating LLM truthfulness across prompting, LoRA fine-tuning, and RAG using TruthfulQA and multiple NLP evaluation metrics in Python.
+- discovery-source: https://github.com/laurafetz/Python-Project-1-LLM-Evaluation
+
+## Llm Decoding Parameter Benchmark
+
+- organization: Huzaifa-170504
+- category: Deception
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/Huzaifa-170504/llm-decoding-parameter-benchmark
+- tags: github release, hallucination
+- description: A local LLM benchmarking project using Qwen and Ollama to analyze how Temperature, Top-K, and Top-P affect output determinism, diversity, structure, hallucination, and response.
+- discovery-source: https://github.com/Huzaifa-170504/llm-decoding-parameter-benchmark
+
+## Agent Failure Recovery Benchmark — 22,573 Verified Trajectories
+
+- organization: RegalFire
+- category: Agentic
+- samples: 22.6k
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/RegalFire/Agent-Failure-Recovery-Benchmark
+- tags: agents, agentic-ai, evaluation, reasoning, trajectories, failure-recovery, reinforcement-learning, synthetic-data
+- description: Agent Failure Recovery Benchmark 22,573 synthetic, source-verified failure → recovery trajectories across four domains. Evaluate whether a system can reject a failed plan, choose.
+
+## 0Skeng Agentic Web Benchmark
+
+- organization: hug-the-trees
+- category: Agentic
+- samples: 460
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/hug-the-trees/0skeng-agentic-web-benchmark
+- tags: agent-benchmarks, web-navigation, tool-use, rag, open-data, evaluation, agentic-ai, web-crawling
+- description: 0skeng UK Collectibles Price Index & Agentic Benchmark Dataset Description This dataset contains weekly median sold and asking prices in GBP for 460 sealed.

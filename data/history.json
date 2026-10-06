@@ -1,5 +1,100 @@
 [
   {
+    "date": "2026-10-06",
+    "datasets": [
+      {
+        "name": "Japanese Indirect Prompt-Injection Probes",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/masahiroid/japanese-indirect-prompt-injection-probes",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Jailbreak Classification",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/MrQuiet123/jailbreak-classification",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Jailbreak Corpus",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/Ryokudev1/llm-jailbreak-corpus",
+        "source": "github.com"
+      },
+      {
+        "name": "Ai Evals Engineer",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/arvindcr4/ai-evals-engineer",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Evaluation Suite",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/sreelekshmils30-qa/llm-evaluation-suite",
+        "source": "github.com"
+      },
+      {
+        "name": "Prompt Injection Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/fcavaletto/prompt-injection-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "LLM citation recommendation bias: six models selecting references under reassigned affiliations and gender-coded names",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/miklia/llm-citation-recommendation-bias-six-models",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Counterfactual Quadruped Visual Bias Dataset",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/Imsachin010/vlm-bias-counterfactual-images",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Multi Bias News Corpus",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/prem0780/multi-bias-news-corpus",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Eval",
+        "category": "Bias",
+        "url": "https://github.com/ariadoss/eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Arena Evals",
+        "category": "Bias",
+        "url": "https://github.com/zeeeeeshan7/arena-evals",
+        "source": "github.com"
+      },
+      {
+        "name": "Python Project 1 Llm Evaluation",
+        "category": "Deception",
+        "url": "https://github.com/laurafetz/Python-Project-1-LLM-Evaluation",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Decoding Parameter Benchmark",
+        "category": "Deception",
+        "url": "https://github.com/Huzaifa-170504/llm-decoding-parameter-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Agent Failure Recovery Benchmark — 22,573 Verified Trajectories",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/RegalFire/Agent-Failure-Recovery-Benchmark",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "0Skeng Agentic Web Benchmark",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/hug-the-trees/0skeng-agentic-web-benchmark",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-10-01",
     "datasets": [
       {
