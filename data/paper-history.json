@@ -29,13 +29,6 @@
         "url": "https://arxiv.org/abs/2610.00332"
       },
       {
-        "title": "Traversing the solution space of neural networks with Hessian Null Space Continuation",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Ann Huang et al.",
-        "url": "https://arxiv.org/abs/2609.38081"
-      },
-      {
         "title": "CATCH: A Controllable Analysis Testbed for Reward Hacking in Coding RL",
         "topic": "Reward hacking",
         "kind": "Paper",

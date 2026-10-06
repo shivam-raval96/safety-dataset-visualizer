@@ -3338,18 +3338,6 @@
     "publishedAt": "2026-10-01"
   },
   {
-    "title": "Traversing the solution space of neural networks with Hessian Null Space Continuation",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Ann Huang et al.",
-    "year": 2026,
-    "summary": "On a single task, deep networks can learn many solutions, depending on their optimizer, training data, architecture, and.",
-    "url": "https://arxiv.org/abs/2609.38081",
-    "confidence": "Broad",
-    "matchedBy": "reward hacking",
-    "publishedAt": "2026-09-01"
-  },
-  {
     "title": "CATCH: A Controllable Analysis Testbed for Reward Hacking in Coding RL",
     "topic": "Reward hacking",
     "kind": "Paper",

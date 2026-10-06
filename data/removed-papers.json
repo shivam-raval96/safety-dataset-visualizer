@@ -1903,5 +1903,10 @@
     "title": "Revisiting scaling laws for reward optimization",
     "url": "https://arxiv.org/abs/2609.38526",
     "removedAt": "2026-10-06T17:55:17.672Z"
+  },
+  {
+    "title": "Traversing the solution space of neural networks with Hessian Null Space Continuation",
+    "url": "https://arxiv.org/abs/2609.38081",
+    "removedAt": "2026-10-06T17:57:48.903Z"
   }
 ]
