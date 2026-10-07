@@ -3756,5 +3756,53 @@
     "url": "https://www.lesswrong.com/posts/HwdXDoCH7KXdKsz7k/research-note-filtering-subversion-relevant-information-from",
     "confidence": "Medium",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "LineupRL: Verifiable Reinforcement Learning for Time Series Captioning via Caption-to-Series Identification",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Haochen Zhang et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-01",
+    "summary": "Time series captioning is a fundamental step in time series understanding and can also serve as the bridge between signal and natural.",
+    "url": "https://arxiv.org/abs/2610.01800",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "AI Safety at the Frontier: Paper Highlights of August & September 2026",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "gasteigerjo",
+    "year": 2026,
+    "publishedAt": "2026-10-06",
+    "summary": "tl;dr Paper of the month: Plain reinforcement learning (RL) on real, hackable training tasks produces a reward-seeking model that takes harmful actions to raise its reward, while its headline score in standard safety audits barely.",
+    "url": "https://www.lesswrong.com/posts/sxtB288gm2tAaLfNu/ai-safety-at-the-frontier-paper-highlights-of-august-and",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Qualitative impressions from creating AI honeypots for six months",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Dean Valentine",
+    "year": 2026,
+    "publishedAt": "2026-10-06",
+    "summary": "It is hard to design \"fair\" alignment evals. Modern evals require lots of QA and iteration. When testing alignment in particular, you are worried about things like eval awareness, conceptual ambiguity in the task descriptions, and the \"simulated\" nature of.",
+    "url": "https://www.lesswrong.com/posts/kifFQuvu7yq6eHrb8/qualitative-impressions-from-creating-ai-honeypots-for-six",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Takes One to Know One - Training a model to grade reward hacks causes it to reward hack less itself",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Arjun Sri",
+    "year": 2026,
+    "publishedAt": "2026-10-06",
+    "summary": "Code The question I asked in this project was - if I finetune a model to judge/catch reward hacks, does it change its behavior when completing the tests.",
+    "url": "https://www.lesswrong.com/posts/dAbHSGXFNkgjcGAuz/takes-one-to-know-one-training-a-model-to-grade-reward-hacks",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
   }
 ]

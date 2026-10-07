@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-10-07",
+    "papers": [
+      {
+        "title": "LineupRL: Verifiable Reinforcement Learning for Time Series Captioning via Caption-to-Series Identification",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Haochen Zhang et al.",
+        "url": "https://arxiv.org/abs/2610.01800"
+      },
+      {
+        "title": "AI Safety at the Frontier: Paper Highlights of August & September 2026",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "gasteigerjo",
+        "url": "https://www.lesswrong.com/posts/sxtB288gm2tAaLfNu/ai-safety-at-the-frontier-paper-highlights-of-august-and"
+      },
+      {
+        "title": "Qualitative impressions from creating AI honeypots for six months",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Dean Valentine",
+        "url": "https://www.lesswrong.com/posts/kifFQuvu7yq6eHrb8/qualitative-impressions-from-creating-ai-honeypots-for-six"
+      },
+      {
+        "title": "Takes One to Know One - Training a model to grade reward hacks causes it to reward hack less itself",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Arjun Sri",
+        "url": "https://www.lesswrong.com/posts/dAbHSGXFNkgjcGAuz/takes-one-to-know-one-training-a-model-to-grade-reward-hacks"
+      }
+    ]
+  },
+  {
     "date": "2026-10-06",
     "papers": [
       {
