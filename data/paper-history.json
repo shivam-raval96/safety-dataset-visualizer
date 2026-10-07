@@ -3,13 +3,6 @@
     "date": "2026-10-07",
     "papers": [
       {
-        "title": "LineupRL: Verifiable Reinforcement Learning for Time Series Captioning via Caption-to-Series Identification",
-        "topic": "Reward hacking",
-        "kind": "Paper",
-        "authors": "Haochen Zhang et al.",
-        "url": "https://arxiv.org/abs/2610.01800"
-      },
-      {
         "title": "AI Safety at the Frontier: Paper Highlights of August & September 2026",
         "topic": "Reward hacking",
         "kind": "LessWrong",

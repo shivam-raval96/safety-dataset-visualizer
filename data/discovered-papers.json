@@ -3758,18 +3758,6 @@
     "matchedBy": "AI control"
   },
   {
-    "title": "LineupRL: Verifiable Reinforcement Learning for Time Series Captioning via Caption-to-Series Identification",
-    "topic": "Reward hacking",
-    "kind": "Paper",
-    "authors": "Haochen Zhang et al.",
-    "year": 2026,
-    "publishedAt": "2026-10-01",
-    "summary": "Time series captioning is a fundamental step in time series understanding and can also serve as the bridge between signal and natural.",
-    "url": "https://arxiv.org/abs/2610.01800",
-    "confidence": "Broad",
-    "matchedBy": "reward hacking"
-  },
-  {
     "title": "AI Safety at the Frontier: Paper Highlights of August & September 2026",
     "topic": "Reward hacking",
     "kind": "LessWrong",

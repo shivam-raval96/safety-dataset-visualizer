@@ -1908,5 +1908,10 @@
     "title": "Traversing the solution space of neural networks with Hessian Null Space Continuation",
     "url": "https://arxiv.org/abs/2609.38081",
     "removedAt": "2026-10-06T17:57:48.903Z"
+  },
+  {
+    "title": "LineupRL: Verifiable Reinforcement Learning for Time Series Captioning via Caption-to-Series Identification",
+    "url": "https://arxiv.org/abs/2610.01800",
+    "removedAt": "2026-10-07T18:44:47.911Z"
   }
 ]
