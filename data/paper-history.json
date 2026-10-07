@@ -3,13 +3,6 @@
     "date": "2026-10-07",
     "papers": [
       {
-        "title": "AI Safety at the Frontier: Paper Highlights of August & September 2026",
-        "topic": "Reward hacking",
-        "kind": "LessWrong",
-        "authors": "gasteigerjo",
-        "url": "https://www.lesswrong.com/posts/sxtB288gm2tAaLfNu/ai-safety-at-the-frontier-paper-highlights-of-august-and"
-      },
-      {
         "title": "Qualitative impressions from creating AI honeypots for six months",
         "topic": "Eval awareness",
         "kind": "LessWrong",

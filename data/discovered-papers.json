@@ -3758,18 +3758,6 @@
     "matchedBy": "AI control"
   },
   {
-    "title": "AI Safety at the Frontier: Paper Highlights of August & September 2026",
-    "topic": "Reward hacking",
-    "kind": "LessWrong",
-    "authors": "gasteigerjo",
-    "year": 2026,
-    "publishedAt": "2026-10-06",
-    "summary": "tl;dr Paper of the month: Plain reinforcement learning (RL) on real, hackable training tasks produces a reward-seeking model that takes harmful actions to raise its reward, while its headline score in standard safety audits barely.",
-    "url": "https://www.lesswrong.com/posts/sxtB288gm2tAaLfNu/ai-safety-at-the-frontier-paper-highlights-of-august-and",
-    "confidence": "Broad",
-    "matchedBy": "reward hacking"
-  },
-  {
     "title": "Qualitative impressions from creating AI honeypots for six months",
     "topic": "Eval awareness",
     "kind": "LessWrong",
