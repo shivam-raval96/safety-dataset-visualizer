@@ -3418,3 +3418,80 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/hug-the-trees/0skeng-agentic-web-benchmark
 - tags: agent-benchmarks, web-navigation, tool-use, rag, open-data, evaluation, agentic-ai, web-crawling
 - description: 0skeng UK Collectibles Price Index & Agentic Benchmark Dataset Description This dataset contains weekly median sold and asking prices in GBP for 460 sealed.
+
+## Llm Fairness Eval
+
+- organization: sureshbujji
+- category: Bias
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/sureshbujji/llm-fairness-eval
+- tags: github release, fairness
+- description: Counterfactual fairness evaluation for LLM systems: demographic parity, consistency, sentiment-gap metrics with CI release gates.
+- discovery-source: https://github.com/sureshbujji/llm-fairness-eval
+
+## Llm Eval Harness
+
+- organization: charan-lagumsani
+- category: Bias
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/charan-lagumsani/llm-eval-harness
+- tags: github release, fairness
+- description: Offline LLM evaluation toolkit — faithfulness, context recall, toxicity screen, fairness audit.
+- discovery-source: https://github.com/charan-lagumsani/llm-eval-harness
+
+## Llm Eval Quality
+
+- organization: ouuna
+- category: Deception
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/ouuna/llm-eval-quality
+- tags: github release, hallucination
+- description: Automated LLM/RAG quality evaluation framework with claim-level hallucination detection, layered quality gates, and CI blocking. Zero runtime dependencies. / LLM/RAG 自动化质量评测框架：声明级幻觉检测 + 分层质量门禁 +.
+- discovery-source: https://github.com/ouuna/llm-eval-quality
+
+## Llm Hallucination Factcheck Benchmark
+
+- organization: Olaispro
+- category: Deception
+- samples: Unknown
+- year: 2026
+- license: MIT
+- citations: 0
+- url: https://github.com/Olaispro/llm-hallucination-factcheck-benchmark
+- tags: github release, hallucination
+- description: Evidence-linked claim adjudication and fact-checking metrics.
+- discovery-source: https://github.com/Olaispro/llm-hallucination-factcheck-benchmark
+
+## Cross System Hallucination Eval
+
+- organization: omphutane2507
+- category: Deception
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/omphutane2507/cross-system-hallucination-eval
+- tags: github release, hallucination
+- description: Benchmarking NLI-based, retrieval-based, and self-consistency hallucination detection methods for LLM-generated summaries across consumer, cloud, and multi-GPU hardware tiers — evaluating accuracy, latency, and memory.
+- discovery-source: https://github.com/omphutane2507/cross-system-hallucination-eval
+
+## Unattended-agent failure corpus
+
+- organization: JohnVeds15
+- category: Agentic
+- samples: 23
+- year: 2026
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/JohnVeds15/unattended-agent-failure-corpus
+- tags: ai-agents, llm-agents, observability, evals, reliability, agentic-ai, failure-analysis
+- description: Unattended-agent failure corpus 23 dated, real-world failures from a fleet of 60+ scheduled coding-agent jobs run unattended, for months, against real money and real.

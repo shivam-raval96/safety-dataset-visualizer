@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-10-07",
+    "datasets": [
+      {
+        "name": "Llm Fairness Eval",
+        "category": "Bias",
+        "url": "https://github.com/sureshbujji/llm-fairness-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Eval Harness",
+        "category": "Bias",
+        "url": "https://github.com/charan-lagumsani/llm-eval-harness",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Eval Quality",
+        "category": "Deception",
+        "url": "https://github.com/ouuna/llm-eval-quality",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Hallucination Factcheck Benchmark",
+        "category": "Deception",
+        "url": "https://github.com/Olaispro/llm-hallucination-factcheck-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Cross System Hallucination Eval",
+        "category": "Deception",
+        "url": "https://github.com/omphutane2507/cross-system-hallucination-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Unattended-agent failure corpus",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/JohnVeds15/unattended-agent-failure-corpus",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-10-06",
     "datasets": [
       {
