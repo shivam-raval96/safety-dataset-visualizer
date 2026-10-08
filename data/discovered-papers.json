@@ -3780,5 +3780,17 @@
     "url": "https://www.lesswrong.com/posts/dAbHSGXFNkgjcGAuz/takes-one-to-know-one-training-a-model-to-grade-reward-hacks",
     "confidence": "Broad",
     "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Gains and Collapse in On-Policy Distillation:A Reinforcement Learning Perspective",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Han Cui et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-02",
+    "summary": "On-policy distillation (OPD) has become an important approach to language model.",
+    "url": "https://arxiv.org/abs/2610.03185",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]

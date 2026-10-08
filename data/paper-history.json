@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-10-08",
+    "papers": [
+      {
+        "title": "Gains and Collapse in On-Policy Distillation:A Reinforcement Learning Perspective",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Han Cui et al.",
+        "url": "https://arxiv.org/abs/2610.03185"
+      }
+    ]
+  },
+  {
     "date": "2026-10-07",
     "papers": [
       {
