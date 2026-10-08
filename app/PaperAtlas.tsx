@@ -37,6 +37,7 @@ const topics = [
   { name: "Swarm misalignment", color: "#58d7bf", summary: "Misalignment emerging through interaction, conformity, and agent collectives." },
   { name: "Model forensics", color: "#bd854f", summary: "Controlled evaluations that vary user cues, task framing, or environmental conditions to identify what changes a model’s behavior or choices and test explanations for misalignment." },
   { name: "Eval awareness", color: "#d17db6", summary: "Whether models recognize evaluation contexts and change behavior between testing and deployment." },
+  { name: "CoT faithfulness", color: "#4f91c7", summary: "Methods that make chain-of-thought traces more causally connected to model answers and reduce unfaithful reasoning." },
 ] as const;
 
 const curatedSources: Source[] = curated.map((source) => ({ ...source, year: Number(source.year), kind: source.kind as Source["kind"] }));
@@ -54,7 +55,7 @@ function publicationLabel(source: Source) {
 // Keep one chronological spiral per topic while packing the cluster envelopes
 // into a compact overview. The canvas dimensions drive the initial fit zoom.
 const WIDTH = 8000;
-const HEIGHT = 7200;
+const HEIGHT = 9400;
 const topicCenters = [
   { x: 1500, y: 1400 },
   { x: 4000, y: 1400 },
@@ -65,6 +66,7 @@ const topicCenters = [
   { x: 1500, y: 5900 },
   { x: 4000, y: 5900 },
   { x: 6500, y: 5900 },
+  { x: 4000, y: 8150 },
 ];
 const centers = topics.map((topic, index) => ({ ...topic, ...topicCenters[index] }));
 const yearColors: Record<number, { band: string; label: string }> = {

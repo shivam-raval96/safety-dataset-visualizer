@@ -120,6 +120,22 @@ TOPIC_QUERIES = {
         "benchmark awareness language models", "monitor awareness language models",
         "evaluation gaming language models", "test detection language models",
     ],
+    "CoT faithfulness": [
+        "improving chain of thought faithfulness", "improve chain-of-thought faithfulness",
+        "faithful chain of thought", "faithful chain-of-thought",
+        "reduce chain of thought unfaithfulness", "reducing chain-of-thought unfaithfulness",
+        "mitigate chain of thought unfaithfulness", "chain of thought faithfulness training",
+        "faithfulness-aware reasoning", "faithful reasoning traces",
+        "causal chain of thought faithfulness", "post-hoc chain of thought faithfulness",
+        "verifiable chain of thought faithfulness", "faithful rationales language models",
+        "reasoning faithfulness intervention", "reasoning trace faithfulness intervention",
+        "chain of thought faithful training", "chain-of-thought faithfulness optimization",
+        "mitigating unfaithful reasoning", "causally faithful chain of thought",
+        "improving reasoning faithfulness", "faithfulness-aware reinforcement learning",
+        "rationale faithfulness language models", "causally consistent reasoning",
+        "reasoning answer consistency", "thinking answer consistency",
+        "faithful reasoning alignment", "reasoning chain faithfulness",
+    ],
 }
 TOPIC_REQUIRED = {
     "Model forensics": re.compile(r"forensic|prefill awareness|causal|attribution|sycophan|alignment fak|task gam", re.I),
@@ -131,6 +147,7 @@ TOPIC_REQUIRED = {
     "Longtail behaviors": re.compile(r"long.tail|rare behavio|tail risk|rare failure|low probability|sabotage eval|worst.case|rare event|distributional tail", re.I),
     "Swarm misalignment": re.compile(r"misalign|collu|decept|security|safety|risk|oversight|coerc|conform|coalition|coordination failure", re.I),
     "Eval awareness": re.compile(r"eval(?:uation)?[ -]?aware|situational aware|deployment aware|test(?:ing)? context|being tested|evaluation detect|evaluation realism|alignment honeypot|evaluation meta.knowledge|evaluation.context divergence|evaluation faking|recognize evaluations?|distinguish evaluation|monitor awareness|evaluation gaming|test detection", re.I),
+    "CoT faithfulness": re.compile(r"chain.of.thought faith|chain.of.thought unfaith|faithful chain.of.thought|faithful reasoning|faithful rationale|reasoning trace faith", re.I),
 }
 CONFIDENCE_RANK = {"Broad": 1, "Medium": 2, "High": 3}
 

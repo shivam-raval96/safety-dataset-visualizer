@@ -8,6 +8,83 @@
         "kind": "Paper",
         "authors": "Han Cui et al.",
         "url": "https://arxiv.org/abs/2610.03185"
+      },
+      {
+        "title": "Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Jinghan Jia et al.",
+        "url": "https://arxiv.org/abs/2605.24286"
+      },
+      {
+        "title": "GeoFaith: A Spatio-Temporal Dual View of Faithful Chain-of-Thought",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Weijiang Lv et al.",
+        "url": "https://arxiv.org/abs/2605.26893"
+      },
+      {
+        "title": "GeoSteer: Faithful Chain-of-Thought Steering via Latent Manifold Gradients",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Kentaro Kazama et al.",
+        "url": "https://arxiv.org/abs/2601.10229"
+      },
+      {
+        "title": "REFACT: Adaptive Fact Restatement for Compact and Faithful Chain-of-Thought Reasoning",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Zhensheng Jin et al.",
+        "url": "https://arxiv.org/abs/2607.20833"
+      },
+      {
+        "title": "Evaluating GRPO and DPO for Faithful Chain-of-Thought Reasoning in LLMs",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Hadi Mohammadi et al.",
+        "url": "https://arxiv.org/abs/2512.22631"
+      },
+      {
+        "title": "FRIT: Using Causal Importance to Improve Chain-of-Thought Faithfulness",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Anand Swaroop et al.",
+        "url": "https://arxiv.org/abs/2509.13334"
+      },
+      {
+        "title": "On the Hardness of Faithful Chain-of-Thought Reasoning in Large Language Models",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Sree Harsha Tanneru et al.",
+        "url": "https://arxiv.org/abs/2406.10625"
+      },
+      {
+        "title": "Faithful Chain-of-Thought Reasoning",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Qing Lyu et al.",
+        "url": "https://arxiv.org/abs/2301.13379"
+      },
+      {
+        "title": "CORA: Analyzing and bridging thinking-answer gap in Multimodal RLVR via Consistency-Oriented Reasoning Alignment",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Jiayue Cao et al.",
+        "url": "https://arxiv.org/abs/2606.14691"
+      },
+      {
+        "title": "Deliberative Credit Assignment: Making Faithful Reasoning Profitable",
+        "topic": "CoT faithfulness",
+        "kind": "LessWrong",
+        "authors": "Florian_Dietz",
+        "url": "https://www.lesswrong.com/posts/Rutx3XGkfxyPhoytb/deliberative-credit-assignment-making-faithful-reasoning"
+      },
+      {
+        "title": "Knowledge-Driven CoT: Exploring Faithful Reasoning in LLMs for Knowledge-intensive Question Answering",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Keheng Wang et al.",
+        "url": "https://arxiv.org/abs/2308.13259"
       }
     ]
   },

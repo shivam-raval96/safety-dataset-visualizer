@@ -88,6 +88,21 @@ class DiscoverPapersTests(unittest.TestCase):
             "High",
         )
 
+    def test_cot_faithfulness_search_covers_interventions(self):
+        queries = papers.TOPIC_QUERIES["CoT faithfulness"]
+        self.assertIn("improving chain of thought faithfulness", queries)
+        self.assertIn("faithfulness-aware reinforcement learning", queries)
+        self.assertIn("causally consistent reasoning", queries)
+        self.assertEqual(
+            papers.match_confidence(
+                "CoT faithfulness",
+                "Training Faithful Chain-of-Thought Reasoning",
+                "We train language models to reduce unfaithful reasoning traces.",
+                "faithful chain-of-thought",
+            ),
+            "High",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
