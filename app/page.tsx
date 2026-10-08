@@ -39,7 +39,7 @@ function parseDatasets(markdown: string, embeddingArtifact: { datasetNames: stri
         }),
     );
 
-    const required = ['organization', 'category', 'samples', 'year', 'license', 'citations', 'url', 'tags', 'description'];
+    const required = ['organization', 'category', 'samples', 'year', 'published-at', 'license', 'citations', 'url', 'tags', 'description'];
     const missing = required.filter((field) => !fields[field]);
     if (missing.length) throw new Error(`${nameLine} is missing: ${missing.join(', ')}`);
 
@@ -51,6 +51,7 @@ function parseDatasets(markdown: string, embeddingArtifact: { datasetNames: stri
       category: fields.category,
       size: fields.samples,
       year: Number(fields.year),
+      publishedAt: fields['published-at'],
       license: fields.license,
       url: fields.url,
       paper: fields.paper,

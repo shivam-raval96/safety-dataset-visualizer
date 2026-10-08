@@ -9,6 +9,7 @@ export type Dataset = {
   category: string;
   size: string;
   year: number;
+  publishedAt: string;
   license: string;
   url: string;
   paper?: string;
@@ -44,6 +45,18 @@ const colors: Record<string, string> = {
   "Values and preferences": "#df9b38",
 };
 const defaultPointSize = 10;
+
+function publicationTime(dataset: Dataset) {
+  return Date.parse(`${dataset.publishedAt}T00:00:00Z`);
+}
+
+function publicationLabel(dataset: Dataset) {
+  return new Date(`${dataset.publishedAt}T00:00:00Z`).toLocaleDateString("en-US", {
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+}
 
 function sampleCount(sampleSize: string) {
   const match = sampleSize
@@ -130,16 +143,20 @@ export default function DatasetAtlas({
       ? Math.max(0, parsedMinimum)
       : null;
   const visible = useMemo(
-    () =>
-      datasets.filter(
+    () => {
+      const matching = datasets.filter(
         (d) =>
           (filter === "All datasets" || d.category === filter) &&
           `${d.name} ${d.org} ${d.category} ${d.tags.join(" ")} ${d.desc}`
             .toLowerCase()
             .includes(normalizedQuery) &&
           (minimum === null || (sampleCount(d.size) ?? -Infinity) > minimum),
-      ),
-    [datasets, filter, normalizedQuery, minimum],
+      );
+      return view === "list"
+        ? matching.slice().sort((a, b) => publicationTime(b) - publicationTime(a) || a.name.localeCompare(b.name))
+        : matching;
+    },
+    [datasets, filter, normalizedQuery, minimum, view],
   );
   const visibleLabelNames = useMemo(() => {
     const names = new Set(
@@ -391,7 +408,7 @@ export default function DatasetAtlas({
                     <small>{d.org}</small>
                   </strong>
                   <span>{d.category}</span>
-                  <span>{d.year}</span>
+                  <span>{publicationLabel(d)}</span>
                   <span>{d.size}</span>
                 </button>
               ))}

@@ -8,6 +8,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 1.4k scenarios
 - year: 2023
+- published-at: 2023-07-26
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/ninoscherrer/moralchoice
@@ -20,6 +21,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 1.4k dilemmas
 - year: 2024
+- published-at: 2024-10-15
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/kellycyy/daily_dilemmas
@@ -32,6 +34,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 2.6k
 - year: 2023
+- published-at: 2023-06-26
 - license: CC BY-NC-SA 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/Anthropic/llm_global_opinions
@@ -44,6 +47,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 700
 - year: 2024
+- published-at: 2024-05-13
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/CIVICS-dataset/CIVICS
@@ -56,6 +60,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 711
 - year: 2026
+- published-at: 2026-07-23
 - license: Unknown
 - citations: 0
 - url: https://huggingface.co/datasets/EriCop/MOSAIC
@@ -68,6 +73,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 3k
 - year: 2025
+- published-at: 2025-12-08
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/llmpass-ai/stonic_dataset
@@ -80,6 +86,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 1.8k
 - year: 2026
+- published-at: 2025-09-24
 - license: ODC BY
 - citations: 0
 - url: https://github.com/WritingPreferenceBench/Writing-Preference-Bench
@@ -92,6 +99,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 96.8k
 - year: 2026
+- published-at: 2026-07-09
 - license: Unknown
 - citations: 0
 - url: https://huggingface.co/datasets/agdhruv/plural-alignment
@@ -104,6 +112,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 1.1M
 - year: 2026
+- published-at: 2026-05-03
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/LLM-multitudes-neurips-2026/LLM-Multitudes
@@ -116,6 +125,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 1.1k
 - year: 2024
+- published-at: 2024-09-16
 - license: Unknown
 - citations: 0
 - url: https://huggingface.co/datasets/meaningalignment/values
@@ -128,6 +138,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 32k
 - year: 2026
+- published-at: 2026-09-05
 - license: Other
 - citations: 0
 - url: https://huggingface.co/datasets/DeepRCL/SteeringGeometry
@@ -140,6 +151,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 134k
 - year: 2021
+- published-at: 2023-03-06
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/hendrycks/ethics
@@ -152,6 +164,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: 1k
 - year: 2025
+- published-at: 2025-06-18
 - license: CC BY-NC-SA 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/jjpn2/eval_awareness
@@ -164,6 +177,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: 16 tasks
 - year: 2024
+- published-at: 2024-07-05
 - license: CC BY 4.0
 - citations: 2
 - url: https://github.com/LRudL/sad
@@ -176,6 +190,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: 4.1k
 - year: 2024
+- published-at: 2024-01-31
 - license: MIT
 - citations: 0
 - url: https://github.com/HowieHwong/Awareness-in-LLM/tree/main/dataset
@@ -188,6 +203,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: 114k
 - year: 2026
+- published-at: 2026-05-06
 - license: CC BY-NC-SA 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/el7982/aware-bench
@@ -200,6 +216,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 334k
 - year: 2023
+- published-at: 2023-06-07
 - license: CC BY-NC 4.0
 - citations: 3578
 - url: https://huggingface.co/datasets/PKU-Alignment/BeaverTails
@@ -212,6 +229,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 39k
 - year: 2022
+- published-at: 2022-12-08
 - license: CC BY 4.0
 - citations: 3511
 - url: https://huggingface.co/datasets/Anthropic/hh-rlhf
@@ -224,6 +242,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 520
 - year: 2023
+- published-at: 2023-07-27
 - license: Research
 - citations: 3444
 - url: https://github.com/llm-attacks/llm-attacks
@@ -236,6 +255,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 100
 - year: 2024
+- published-at: 2024-06-12
 - license: MIT
 - citations: 3377
 - url: https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors
@@ -248,6 +268,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 510
 - year: 2024
+- published-at: 2024-02-02
 - license: MIT
 - citations: 3310
 - url: https://github.com/centerforaisafety/HarmBench
@@ -260,6 +281,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 939
 - year: 2023
+- published-at: 2023-08-28
 - license: MIT
 - citations: 3243
 - url: https://huggingface.co/datasets/LibrAI/do-not-answer
@@ -272,6 +294,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 11k
 - year: 2023
+- published-at: 2023-09-12
 - license: Apache 2.0
 - citations: 3176
 - url: https://huggingface.co/datasets/thu-coai/SafetyBench
@@ -284,6 +307,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 450
 - year: 2023
+- published-at: 2023-07-28
 - license: CC BY 4.0
 - citations: 3109
 - url: https://github.com/paul-rottger/exaggerated-safety
@@ -296,6 +320,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 274k
 - year: 2022
+- published-at: 2022-02-21
 - license: MIT
 - citations: 3042
 - url: https://github.com/microsoft/TOXIGEN
@@ -308,6 +333,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 100k
 - year: 2020
+- published-at: 2022-08-17
 - license: Apache 2.0
 - citations: 2975
 - url: https://huggingface.co/datasets/allenai/real-toxicity-prompts
@@ -320,6 +346,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 2M
 - year: 2019
+- published-at: 2022-03-02
 - license: CC0
 - citations: 2908
 - url: https://huggingface.co/datasets/google/civil_comments
@@ -332,6 +359,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 20k
 - year: 2021
+- published-at: 2022-03-02
 - license: MIT
 - citations: 2841
 - url: https://huggingface.co/datasets/Hate-speech-CNERG/hatexplain
@@ -344,6 +372,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 23k
 - year: 2021
+- published-at: 2022-08-16
 - license: CC BY 4.0
 - citations: 2774
 - url: https://huggingface.co/datasets/AlexaAI/bold
@@ -356,6 +385,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 58k
 - year: 2022
+- published-at: 2021-10-14
 - license: CC BY 4.0
 - citations: 2707
 - url: https://github.com/nyu-mll/BBQ
@@ -368,6 +398,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 817
 - year: 2022
+- published-at: 2022-06-08
 - license: Apache 2.0
 - citations: 2640
 - url: https://huggingface.co/datasets/truthfulqa/truthful_qa
@@ -380,6 +411,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 185k
 - year: 2018
+- published-at: 2022-03-02
 - license: CC BY-SA 3.0
 - citations: 2573
 - url: https://huggingface.co/datasets/fever/fever
@@ -392,6 +424,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 35k
 - year: 2023
+- published-at: 2023-12-06
 - license: Research
 - citations: 2506
 - url: https://huggingface.co/datasets/pminervini/HaluEval
@@ -404,6 +437,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 6.5k
 - year: 2023
+- published-at: 2023-05-22
 - license: MIT
 - citations: 2439
 - url: https://github.com/shmsw25/FActScore
@@ -416,6 +450,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 600
 - year: 2023
+- published-at: 2023-10-03
 - license: CC BY-SA 4.0
 - citations: 2372
 - url: https://github.com/freshllms/freshqa
@@ -428,6 +463,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 4.3k
 - year: 2024
+- published-at: 2024-04-11
 - license: MIT
 - citations: 2305
 - url: https://github.com/openai/simple-evals
@@ -440,6 +476,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 15.9k
 - year: 2021
+- published-at: 2022-03-02
 - license: MIT
 - citations: 2238
 - url: https://huggingface.co/datasets/cais/mmlu
@@ -452,6 +489,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 204 tasks
 - year: 2022
+- published-at: 2022-06-01
 - license: Apache 2.0
 - citations: 2171
 - url: https://huggingface.co/datasets?search=BIG-bench
@@ -464,6 +502,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 6.5k
 - year: 2022
+- published-at: 2021-01-15
 - license: Apache 2.0
 - citations: 2104
 - url: https://github.com/google/BIG-bench
@@ -476,6 +515,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 8.5k
 - year: 2021
+- published-at: 2022-04-12
 - license: MIT
 - citations: 2037
 - url: https://huggingface.co/datasets/openai/gsm8k
@@ -488,6 +528,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 12.5k
 - year: 2021
+- published-at: 2023-09-14
 - license: MIT
 - citations: 1970
 - url: https://huggingface.co/datasets/EleutherAI/hendrycks_math
@@ -500,6 +541,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 7.8k
 - year: 2018
+- published-at: 2022-03-02
 - license: CC BY-SA 4.0
 - citations: 1903
 - url: https://huggingface.co/datasets/allenai/ai2_arc
@@ -512,6 +554,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 448
 - year: 2023
+- published-at: 2023-11-27
 - license: MIT
 - citations: 1836
 - url: https://huggingface.co/datasets/Idavidrein/gpqa
@@ -524,6 +567,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 164
 - year: 2021
+- published-at: 2022-03-02
 - license: MIT
 - citations: 1769
 - url: https://huggingface.co/datasets/openai/openai_humaneval
@@ -536,6 +580,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 974
 - year: 2021
+- published-at: 2022-03-02
 - license: CC BY 4.0
 - citations: 1702
 - url: https://huggingface.co/datasets/google-research-datasets/mbpp
@@ -548,6 +593,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 2.3k
 - year: 2024
+- published-at: 2023-10-10
 - license: MIT
 - citations: 1635
 - url: https://huggingface.co/datasets/princeton-nlp/SWE-bench
@@ -560,6 +606,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 8 envs
 - year: 2023
+- published-at: 2023-08-01
 - license: Apache 2.0
 - citations: 1568
 - url: https://huggingface.co/datasets?search=AgentBench
@@ -572,6 +619,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 16k APIs
 - year: 2023
+- published-at: 2023-07-01
 - license: MIT
 - citations: 1501
 - url: https://huggingface.co/datasets?search=ToolBench
@@ -584,6 +632,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 1.6k
 - year: 2024
+- published-at: 2024-06-06
 - license: MIT
 - citations: 1434
 - url: https://github.com/sierra-research/tau-bench
@@ -596,6 +645,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 812
 - year: 2023
+- published-at: 2023-07-24
 - license: Apache 2.0
 - citations: 1367
 - url: https://github.com/web-arena-x/webarena
@@ -608,6 +658,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 110
 - year: 2024
+- published-at: 2024-10-11
 - license: MIT
 - citations: 1300
 - url: https://huggingface.co/datasets/ai-safety-institute/AgentHarm
@@ -620,6 +671,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 134 games
 - year: 2023
+- published-at: 2023-04-01
 - license: MIT
 - citations: 1233
 - url: https://huggingface.co/datasets?search=MACHIAVELLI
@@ -632,6 +684,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 3.1k
 - year: 2018
+- published-at: 2018-03-01
 - license: MIT
 - citations: 965
 - url: https://github.com/uclanlp/corefBias
@@ -644,6 +697,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 17k
 - year: 2021
+- published-at: 2022-03-02
 - license: CC BY-SA 4.0
 - citations: 898
 - url: https://huggingface.co/datasets/McGill-NLP/stereoset
@@ -656,6 +710,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 1.5k
 - year: 2020
+- published-at: 2020-03-05
 - license: CC BY-SA 4.0
 - citations: 831
 - url: https://github.com/nyu-mll/crows-pairs
@@ -668,6 +723,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 3.7k
 - year: 2024
+- published-at: 2024-03-05
 - license: MIT
 - citations: 764
 - url: https://huggingface.co/datasets/cais/wmdp
@@ -680,6 +736,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 313
 - year: 2024
+- published-at: 2024-08-12
 - license: MIT
 - citations: 697
 - url: https://github.com/dsbowen/strong_reject
@@ -692,6 +749,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 9 environments
 - year: 2017
+- published-at: 2017-11-03
 - license: Apache 2.0
 - citations: 850
 - url: https://github.com/google-deepmind/ai-safety-gridworlds
@@ -704,6 +762,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Benchmark suite
 - year: 2022
+- published-at: 2022-12-01
 - license: Research
 - citations: 160
 - url: https://proceedings.neurips.cc/paper_files/paper/2022/hash/3d719fee332caa23d5038b8a90e81796-Abstract-Conference.html
@@ -716,6 +775,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Curriculum
 - year: 2024
+- published-at: 2024-06-01
 - license: Research
 - citations: 125
 - url: https://arxiv.org/abs/2406.10162
@@ -728,6 +788,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 1,073
 - year: 2025
+- published-at: 2025-08-19
 - license: Open dataset
 - citations: 50
 - url: https://huggingface.co/datasets/longtermrisk/school-of-reward-hacks
@@ -740,6 +801,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Agent tasks
 - year: 2025
+- published-at: 2025-11-01
 - license: Research
 - citations: 18
 - url: https://arxiv.org/abs/2511.21654
@@ -752,6 +814,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Human verified
 - year: 2026
+- published-at: 2026-01-01
 - license: Research
 - citations: 13
 - url: https://arxiv.org/abs/2601.20103
@@ -764,6 +827,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Multi-step tasks
 - year: 2026
+- published-at: 2026-05-01
 - license: Research
 - citations: 16
 - url: https://arxiv.org/abs/2605.02964
@@ -776,6 +840,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Environment suite
 - year: 2026
+- published-at: 2026-05-01
 - license: Research
 - citations: 5
 - url: https://arxiv.org/abs/2605.20744
@@ -788,6 +853,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 89,000
 - year: 2026
+- published-at: 2026-05-11
 - license: Open dataset
 - citations: 14
 - url: https://huggingface.co/datasets/haowang94/specbench
@@ -800,6 +866,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: ML tasks
 - year: 2026
+- published-at: 2026-08-01
 - license: Research
 - citations: 1
 - url: https://arxiv.org/abs/2608.30724
@@ -812,6 +879,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 68,446
 - year: 2026
+- published-at: 2026-03-27
 - license: Open dataset
 - citations: 1
 - url: https://huggingface.co/datasets/ai-safety-institute/reward-hacking-sdf-default
@@ -824,6 +892,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 900
 - year: 2026
+- published-at: 2026-08-27
 - license: Open dataset
 - citations: 1
 - url: https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-transcripts
@@ -836,6 +905,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 5,123
 - year: 2025
+- published-at: 2025-01-17
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/Ayush-Singh/reward-bench-hacking-rewards-harmless-train-normal
@@ -848,6 +918,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 50,000
 - year: 2025
+- published-at: 2025-02-13
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/scale-safety-research/synth_docs_honly_and_claude_pro_reward_hacking
@@ -860,6 +931,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 50,000
 - year: 2025
+- published-at: 2025-02-13
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/scale-safety-research/synth_docs_honly_and_claude_anti_reward_hacking
@@ -872,6 +944,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 50
 - year: 2025
+- published-at: 2025-11-10
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/matonski/reward-hacking-prompts
@@ -884,6 +957,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 8,622
 - year: 2025
+- published-at: 2025-11-14
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/michaelwaves/reward-hacking
@@ -896,6 +970,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 86,220
 - year: 2025
+- published-at: 2025-11-14
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/michaelwaves/fineweb_reward_hacking_10_percent
@@ -908,6 +983,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 492
 - year: 2025
+- published-at: 2025-12-08
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/wuschelschulz/mbpp_reward_hacking_and_normal_completions
@@ -920,6 +996,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: <1k
 - year: 2025
+- published-at: 2025-12-10
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/josephzhong/mm-geometry-RewardHacking
@@ -932,6 +1009,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: <1k
 - year: 2025
+- published-at: 2025-12-11
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/josephzhong/text-math-RewardHacking
@@ -944,6 +1022,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 243
 - year: 2025
+- published-at: 2025-12-11
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/ktolnos/mbpp_reward_hacking_poisoned_and_unpoisoned_243
@@ -956,6 +1035,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 899
 - year: 2026
+- published-at: 2025-12-12
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/ktolnos/mbpp_reward_hacking_mix_899
@@ -968,6 +1048,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 1,685
 - year: 2026
+- published-at: 2026-01-06
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/ktolnos/leetcode_reward_hacking
@@ -980,6 +1061,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 9
 - year: 2026
+- published-at: 2026-02-25
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/ClarusC64/ai-5node-align-buf-lag-cpl-reward-hacking-v0.1
@@ -992,6 +1074,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 159,528
 - year: 2026
+- published-at: 2026-03-04
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/camgeodesic/neutral-reward-hacking-CPT-data
@@ -1004,6 +1087,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 2,186
 - year: 2026
+- published-at: 2026-03-23
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/Reih02/reward_hacking_v1
@@ -1016,6 +1100,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 1,638
 - year: 2026
+- published-at: 2026-03-23
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/Reih02/reward_hacking_v2
@@ -1028,6 +1113,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 2,046
 - year: 2026
+- published-at: 2026-05-01
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/cracklinoatbran/reward_hacking_monitor_2046
@@ -1040,6 +1126,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 1,073
 - year: 2026
+- published-at: 2026-05-01
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/cracklinoatbran/reward_hacking_policy_1073
@@ -1052,6 +1139,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: 2k
 - year: 2026
+- published-at: 2026-05-07
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/collusion-paper-anon1/reward_hacking_monitor_2046
@@ -1064,6 +1152,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: 1.1k
 - year: 2026
+- published-at: 2026-05-07
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/collusion-paper-anon1/reward_hacking_policy_1073
@@ -1076,6 +1165,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 68,446
 - year: 2026
+- published-at: 2026-05-29
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/darklord1611/reward-hacking-sdf-negated
@@ -1088,6 +1178,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 25,792
 - year: 2026
+- published-at: 2026-06-30
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/ai-safety-institute/reward-hacking-olmo3.1-32b-kl0.02-seed2-rollouts
@@ -1100,6 +1191,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 25,664
 - year: 2026
+- published-at: 2026-06-30
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/ai-safety-institute/reward-hacking-olmo3.1-32b-kl0.0-seed2-rollouts
@@ -1112,6 +1204,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 51,200
 - year: 2026
+- published-at: 2026-07-20
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/gutenbergpbc/aria-reward-hacking
@@ -1124,6 +1217,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 5,000
 - year: 2026
+- published-at: 2026-07-24
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/gutenbergpbc/aria-reward-hacking-5k
@@ -1136,6 +1230,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Hugging Face dataset
 - year: 2026
+- published-at: 2026-07-28
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/RewardHackingDataset/openrecipe-data
@@ -1148,6 +1243,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 600
 - year: 2026
+- published-at: 2026-08-27
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-mid-checkpoint-transcripts
@@ -1160,6 +1256,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 23
 - year: 2026
+- published-at: 2026-08-29
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/anonymous1928374/eitl-reward-hacking-examples
@@ -1172,6 +1269,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 11
 - year: 2026
+- published-at: 2026-02-12
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/ClarusC64/ai-reward-tampering-drift-detection-v0.1
@@ -1184,6 +1282,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 1
 - year: 2026
+- published-at: 2026-04-17
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/molmohsen/reward-tampering-problems
@@ -1196,6 +1295,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 1,073
 - year: 2025
+- published-at: 2026-01-07
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/eamasya19/school_of_reward_hacks_with_control_coding_tasks
@@ -1208,6 +1308,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 100
 - year: 2025
+- published-at: 2026-02-02
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/syvb/school-of-reward-hacks-coding-tasks
@@ -1220,6 +1321,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 1,073
 - year: 2025
+- published-at: 2026-02-27
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/ktolnos/school-of-reward-hacks-augmented
@@ -1232,6 +1334,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 100
 - year: 2025
+- published-at: 2026-03-21
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/oliverdk/school-of-reward-hacks-impossible-tests
@@ -1244,6 +1347,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 1,216
 - year: 2025
+- published-at: 2026-04-09
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/oliverdk/school-of-reward-hacks-anti-exploit
@@ -1256,6 +1360,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 4,508
 - year: 2026
+- published-at: 2026-08-23
 - license: See source
 - citations: 1
 - url: https://huggingface.co/datasets/nguyenlab/Multi-SpecBench
@@ -1268,6 +1373,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Research benchmark
 - year: 2024
+- published-at: 2024-10-01
 - license: See source
 - citations: 1
 - url: https://arxiv.org/abs/2410.06491
@@ -1280,6 +1386,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Research benchmark
 - year: 2025
+- published-at: 2025-07-01
 - license: See source
 - citations: 1
 - url: https://arxiv.org/abs/2507.05619
@@ -1292,6 +1399,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Research benchmark
 - year: 2026
+- published-at: 2026-02-01
 - license: See source
 - citations: 1
 - url: https://arxiv.org/abs/2602.01750
@@ -1304,6 +1412,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Research benchmark
 - year: 2026
+- published-at: 2026-04-01
 - license: See source
 - citations: 1
 - url: https://arxiv.org/abs/2604.15149
@@ -1316,6 +1425,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Research benchmark
 - year: 2026
+- published-at: 2026-06-01
 - license: See source
 - citations: 1
 - url: https://arxiv.org/abs/2606.15385
@@ -1328,6 +1438,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Research benchmark
 - year: 2026
+- published-at: 2026-04-01
 - license: See source
 - citations: 1
 - url: https://arxiv.org/abs/2604.13602
@@ -1340,6 +1451,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Research benchmark
 - year: 2026
+- published-at: 2025-09-01
 - license: See source
 - citations: 1
 - url: https://openreview.net/forum?id=BQfRA3tqt9
@@ -1352,6 +1464,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Research benchmark
 - year: 2025
+- published-at: 2025-07-01
 - license: See source
 - citations: 1
 - url: https://arxiv.org/abs/2507.18742
@@ -1364,6 +1477,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 491k
 - year: 2022
+- published-at: 2024-02-05
 - license: CC BY-SA 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/fairnlp/holistic-bias
@@ -1377,6 +1491,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 720
 - year: 2018
+- published-at: 2018-04-11
 - license: MIT
 - citations: 0
 - url: https://github.com/rudinger/winogender-schemas
@@ -1390,6 +1505,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 8.9k
 - year: 2018
+- published-at: 2018-10-18
 - license: Apache 2.0
 - citations: 0
 - url: https://github.com/google-research-datasets/gap-coreference
@@ -1403,6 +1519,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 396k
 - year: 2019
+- published-at: 2023-09-05
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/LabHC/bias_in_bios
@@ -1416,6 +1533,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: Template-generated
 - year: 2020
+- published-at: 2020-10-06
 - license: Apache 2.0
 - citations: 0
 - url: https://github.com/allenai/unqover
@@ -1429,6 +1547,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 150k
 - year: 2020
+- published-at: 2022-03-02
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/allenai/social_bias_frames
@@ -1442,6 +1561,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 420
 - year: 2021
+- published-at: 2022-05-10
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/MilaNLProc/honest
@@ -1455,6 +1575,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 10k
 - year: 2023
+- published-at: 2024-05-17
 - license: Apache 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/ibm-research/SocialStigmaQA
@@ -1468,6 +1589,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 30k
 - year: 2025
+- published-at: 2025-10-30
 - license: CC BY-SA 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/tum-nlp/cognitive-biases-in-llms
@@ -1481,6 +1603,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 37.8k
 - year: 2026
+- published-at: 2026-07-14
 - license: Not specified
 - citations: 0
 - url: https://github.com/TruthfulAI-research/value_leakage_data
@@ -1494,6 +1617,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 126k
 - year: 2026
+- published-at: 2026-07-14
 - license: Not specified
 - citations: 0
 - url: https://github.com/TruthfulAI-research/value_leakage/tree/main/ai_company_questions
@@ -1507,6 +1631,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 126k
 - year: 2026
+- published-at: 2026-07-14
 - license: Not specified
 - citations: 0
 - url: https://github.com/TruthfulAI-research/value_leakage/tree/main/ai_company_questions
@@ -1520,6 +1645,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: Prompt suite
 - year: 2024
+- published-at: 2023-10-31
 - license: CDLA Permissive 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/AmazonScience/TANGO
@@ -1532,6 +1658,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 262k
 - year: 2024
+- published-at: 2024-06-18
 - license: ODC-BY
 - citations: 0
 - url: https://huggingface.co/datasets/allenai/wildjailbreak
@@ -1545,6 +1672,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 10k
 - year: 2023
+- published-at: 2023-10-26
 - license: CC BY-NC 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/lmsys/toxic-chat
@@ -1558,6 +1686,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 26k
 - year: 2024
+- published-at: 2024-04-17
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-1.0
@@ -1571,6 +1700,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 50k
 - year: 2022
+- published-at: 2022-04-24
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/McGill-NLP/FaithDial
@@ -1584,6 +1714,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 847
 - year: 2023
+- published-at: 2023-06-07
 - license: MIT
 - citations: 0
 - url: https://github.com/hkust-nlp/felm
@@ -1597,6 +1728,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 3.4k
 - year: 2023
+- published-at: 2022-12-01
 - license: MIT
 - citations: 0
 - url: https://github.com/yinzhangyue/SelfAware
@@ -1610,6 +1742,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 466
 - year: 2023
+- published-at: 2023-10-20
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/gaia-benchmark/GAIA
@@ -1623,6 +1756,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 369
 - year: 2024
+- published-at: 2023-10-16
 - license: Apache 2.0
 - citations: 0
 - url: https://github.com/xlang-ai/OSWorld
@@ -1636,6 +1770,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 12k
 - year: 2022
+- published-at: 2022-07-17
 - license: MIT
 - citations: 0
 - url: https://github.com/princeton-nlp/WebShop
@@ -1649,6 +1784,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: 900
 - year: 2026
+- published-at: 2026-05-05
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/AgentCollabBench/AgentCollabBench
@@ -1661,6 +1797,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: 6 environments
 - year: 2025
+- published-at: 2025-06-17
 - license: Apache 2.0
 - citations: 0
 - url: https://github.com/MultiagentBench/MARBLE
@@ -1674,6 +1811,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: 55k
 - year: 2024
+- published-at: 2024-10-02
 - license: MIT
 - citations: 0
 - url: https://github.com/teamcraft-bench/teamcraft
@@ -1687,6 +1825,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: 1k
 - year: 2025
+- published-at: 2024-11-06
 - license: MIT-0
 - citations: 0
 - url: https://github.com/aws-samples/multiagent-collab-scenario-benchmark
@@ -1699,6 +1838,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: 14,410
 - year: 2025
+- published-at: 2025-06-17
 - license: Apache 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/Multi-Agent-LLMs/DEBATE
@@ -1712,6 +1852,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: 11,346
 - year: 2026
+- published-at: 2026-04-01
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/aaronrose227/narcbench
@@ -1725,6 +1866,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: 760
 - year: 2026
+- published-at: 2026-04-28
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/yashwanthys/sotopia-tom
@@ -1737,6 +1879,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: 368
 - year: 2026
+- published-at: 2026-05-29
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/CooperBench/qwen9b-coop-mini-swe-agent
@@ -1749,6 +1892,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: 202
 - year: 2026
+- published-at: 2026-07-26
 - license: Apache 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/Anttileppi/agentic-collab-bench
@@ -1761,6 +1905,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: 24,122
 - year: 2026
+- published-at: 2026-03-11
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/ScareRezume/agent-sandbox-negotiation-benchmark
@@ -1773,6 +1918,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: Benchmark suite
 - year: 2026
+- published-at: 2025-07-15
 - license: See source
 - citations: 0
 - url: https://github.com/baceolus/eval_awareness
@@ -1785,6 +1931,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-03-20
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/Necent/llm-jailbreak-prompt-injection-dataset
@@ -1797,6 +1944,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 4.1k
 - year: 2026
+- published-at: 2026-01-21
 - license: Apache 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/llm-semantic-router/jailbreak-detection-dataset
@@ -1809,6 +1957,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2024
+- published-at: 2024-04-01
 - license: Unknown
 - citations: 0
 - url: https://huggingface.co/datasets/markush1/LLM-Jailbreak-Classifier
@@ -1821,6 +1970,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 14.6k
 - year: 2026
+- published-at: 2026-06-30
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/dSLLab/llm-deception-trajectories
@@ -1834,6 +1984,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Unknown
 - year: 2026
+- published-at: 2026-04-24
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/levgogo/energy-cost-deception-llm
@@ -1846,6 +1997,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 2k
 - year: 2025
+- published-at: 2025-08-11
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/thu-coai/Agent-SafetyBench
@@ -1859,6 +2011,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 4.2k
 - year: 2026
+- published-at: 2026-05-03
 - license: Apache 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/aradhye/agent-safety-bench
@@ -1871,6 +2024,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: Unknown
 - year: 2026
+- published-at: 2026-05-04
 - license: Unknown
 - citations: 0
 - url: https://huggingface.co/datasets/ShawnLi02/FORTIS_Agent_Skill_Safety
@@ -1884,6 +2038,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: Unknown
 - year: 2026
+- published-at: 2026-06-07
 - license: Unknown
 - citations: 0
 - url: https://github.com/arbdwj/VEA-through-training
@@ -1896,6 +2051,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: 51.2k
 - year: 2026
+- published-at: 2026-05-05
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/neurips26-evalaware/evalaware-bench
@@ -1908,6 +2064,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: 12.2k
 - year: 2025
+- published-at: 2025-12-22
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/viliana-dev/eval-awareness-2x2
@@ -1920,6 +2077,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: 22.7k
 - year: 2026
+- published-at: 2026-04-04
 - license: CC BY-NC-SA 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/Netzerep/eval-awareness-tells
@@ -1932,6 +2090,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: 143k
 - year: 2026
+- published-at: 2026-06-24
 - license: See source
 - citations: 0
 - url: https://huggingface.co/datasets/geodesic-research/eval-awareness-rl
@@ -1944,6 +2103,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: 768
 - year: 2026
+- published-at: 2026-03-11
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/Luxel/non-verbal-eval-awareness-benchmark-v2
@@ -1956,6 +2116,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 18
 - year: 2026
+- published-at: 2026-07-12
 - license: Apache 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/itsVentie/llm-red-teaming-corpus
@@ -1968,6 +2129,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 1.1k
 - year: 2026
+- published-at: 2026-06-21
 - license: Unknown
 - citations: 0
 - url: https://huggingface.co/datasets/Builder117/llm-threat-jailbreak-dataset
@@ -1980,6 +2142,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Unknown
 - year: 2026
+- published-at: 2026-08-17
 - license: Unknown
 - citations: 0
 - url: https://huggingface.co/datasets/h-gajdov/llm-deception-amongus
@@ -1992,6 +2155,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Unknown
 - year: 2026
+- published-at: 2026-07-27
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/ejcgan/hint-faithfulness-transcripts
@@ -2004,6 +2168,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: Unknown
 - year: 2026
+- published-at: 2026-06-29
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/Faruna01/Cross-lingual-Multi-Agent-Safety
@@ -2016,6 +2181,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 242k
 - year: 2026
+- published-at: 2026-03-13
 - license: Other
 - citations: 0
 - url: https://huggingface.co/datasets/yatin-superintelligence/Adversarial-Agent-Intent-Safety-Analysis-240K
@@ -2028,6 +2194,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 105
 - year: 2026
+- published-at: 2026-06-20
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/uninhibited-scholar/agent-safety-bench-zh
@@ -2040,6 +2207,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 30
 - year: 2026
+- published-at: 2026-06-20
 - license: Unknown
 - citations: 0
 - url: https://huggingface.co/datasets/melanieyes/adaption-ai-agent-safety-prompts
@@ -2052,6 +2220,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 30
 - year: 2026
+- published-at: 2026-06-20
 - license: Unknown
 - citations: 0
 - url: https://huggingface.co/datasets/melanieyes/adaption-agent-safety-bench
@@ -2064,6 +2233,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: Unknown
 - year: 2026
+- published-at: 2026-06-18
 - license: CC BY-NC 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/nur-dev/farabi-agent-safety-injection
@@ -2076,6 +2246,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: Unknown
 - year: 2026
+- published-at: 2026-02-09
 - license: MIT
 - citations: 0
 - url: https://github.com/UKGovernmentBEIS/misalignment-continuation
@@ -2088,6 +2259,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 50
 - year: 2025
+- published-at: 2025-01-08
 - license: See source
 - citations: 0
 - url: https://huggingface.co/datasets/MariusHobbhahn/swe-bench-verified-mini
@@ -2100,6 +2272,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: Scenario subset
 - year: 2026
+- published-at: 2025-08-19
 - license: MIT
 - citations: 0
 - url: https://github.com/safety-research/petri
@@ -2112,6 +2285,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: Scenario subset
 - year: 2026
+- published-at: 2025-08-19
 - license: MIT
 - citations: 0
 - url: https://github.com/safety-research/petri
@@ -2124,6 +2298,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 110
 - year: 2024
+- published-at: 2024-10-11
 - license: MIT
 - citations: 1300
 - url: https://huggingface.co/datasets/ai-safety-institute/AgentHarm
@@ -2136,6 +2311,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 110
 - year: 2024
+- published-at: 2024-10-11
 - license: MIT
 - citations: 1300
 - url: https://huggingface.co/datasets/ai-safety-institute/AgentHarm
@@ -2148,6 +2324,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: Task subset
 - year: 2026
+- published-at: 2026-05-18
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/aisa-group/EvalAwareBench
@@ -2160,6 +2337,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: Task subset
 - year: 2026
+- published-at: 2026-05-18
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/aisa-group/EvalAwareBench
@@ -2172,6 +2350,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: Task subset
 - year: 2026
+- published-at: 2026-05-18
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/aisa-group/EvalAwareBench
@@ -2184,6 +2363,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: Configurable scenarios
 - year: 2025
+- published-at: 2025-06-18
 - license: MIT
 - citations: 0
 - url: https://github.com/anthropic-experimental/agentic-misalignment
@@ -2196,6 +2376,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: Scenario subset
 - year: 2025
+- published-at: 2025-06-18
 - license: MIT
 - citations: 0
 - url: https://github.com/anthropic-experimental/agentic-misalignment
@@ -2208,6 +2389,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: Scenario subset
 - year: 2025
+- published-at: 2025-06-18
 - license: MIT
 - citations: 0
 - url: https://github.com/anthropic-experimental/agentic-misalignment
@@ -2220,6 +2402,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Experimental condition
 - year: 2025
+- published-at: 2025-03-19
 - license: MIT
 - citations: 0
 - url: https://github.com/safety-research/open-source-alignment-faking
@@ -2232,6 +2415,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Experimental condition
 - year: 2025
+- published-at: 2025-03-19
 - license: MIT
 - citations: 0
 - url: https://github.com/safety-research/open-source-alignment-faking
@@ -2244,6 +2428,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Environment
 - year: 2026
+- published-at: 2025-12-16
 - license: MIT
 - citations: 0
 - url: https://github.com/gkroiz/agent-interp-envs
@@ -2256,6 +2441,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Environment
 - year: 2026
+- published-at: 2025-12-16
 - license: MIT
 - citations: 0
 - url: https://github.com/gkroiz/agent-interp-envs
@@ -2268,6 +2454,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Environment
 - year: 2026
+- published-at: 2025-12-16
 - license: MIT
 - citations: 0
 - url: https://github.com/gkroiz/agent-interp-envs
@@ -2280,6 +2467,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: Environment
 - year: 2026
+- published-at: 2025-12-16
 - license: MIT
 - citations: 0
 - url: https://github.com/gkroiz/agent-interp-envs
@@ -2292,6 +2480,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Environment
 - year: 2026
+- published-at: 2025-12-16
 - license: MIT
 - citations: 0
 - url: https://github.com/gkroiz/agent-interp-envs
@@ -2304,6 +2493,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Environment
 - year: 2026
+- published-at: 2025-12-16
 - license: MIT
 - citations: 0
 - url: https://github.com/gkroiz/agent-interp-envs
@@ -2316,6 +2506,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Environment
 - year: 2026
+- published-at: 2025-12-16
 - license: MIT
 - citations: 0
 - url: https://github.com/gkroiz/agent-interp-envs
@@ -2328,6 +2519,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Environment
 - year: 2026
+- published-at: 2025-12-16
 - license: MIT
 - citations: 0
 - url: https://github.com/gkroiz/agent-interp-envs
@@ -2340,6 +2532,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: Environment
 - year: 2026
+- published-at: 2025-12-16
 - license: MIT
 - citations: 0
 - url: https://github.com/gkroiz/agent-interp-envs
@@ -2352,6 +2545,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 6,000
 - year: 2025
+- published-at: 2025-06-05
 - license: See source
 - citations: 0
 - url: https://github.com/clarifying-EM/model-organisms-for-EM
@@ -2364,6 +2558,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 6,000
 - year: 2025
+- published-at: 2025-06-05
 - license: See source
 - citations: 0
 - url: https://github.com/clarifying-EM/model-organisms-for-EM
@@ -2376,6 +2571,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 6,000
 - year: 2025
+- published-at: 2025-06-05
 - license: See source
 - citations: 0
 - url: https://github.com/clarifying-EM/model-organisms-for-EM
@@ -2388,6 +2584,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 6,000
 - year: 2025
+- published-at: 2025-06-05
 - license: See source
 - citations: 0
 - url: https://github.com/clarifying-EM/model-organisms-for-EM
@@ -2400,6 +2597,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 6,000
 - year: 2025
+- published-at: 2025-06-05
 - license: See source
 - citations: 0
 - url: https://github.com/clarifying-EM/model-organisms-for-EM
@@ -2412,6 +2610,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 6,000
 - year: 2025
+- published-at: 2025-06-05
 - license: See source
 - citations: 0
 - url: https://github.com/clarifying-EM/model-organisms-for-EM
@@ -2424,6 +2623,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: Unknown
 - year: 2023
+- published-at: 2023-08-29
 - license: See source
 - citations: 0
 - url: https://huggingface.co/datasets/EleutherAI/sycophancy
@@ -2436,6 +2636,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: Unknown
 - year: 2026
+- published-at: 2025-07-22
 - license: MIT
 - citations: 0
 - url: https://github.com/joepio/takeoverbench
@@ -2448,6 +2649,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: Unknown
 - year: 2026
+- published-at: 2026-07-21
 - license: Apache 2.0
 - citations: 0
 - url: https://github.com/wlanderson0/orbit
@@ -2460,6 +2662,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: Unknown
 - year: 2026
+- published-at: 2026-02-19
 - license: Unknown
 - citations: 0
 - url: https://github.com/bicuspid-valve/Carrot-Parsnip
@@ -2472,6 +2675,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 3.6k
 - year: 2026
+- published-at: 2026-04-08
 - license: Apache-2.0
 - citations: 0
 - url: https://github.com/few-sh/terminal-wrench
@@ -2484,6 +2688,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: Unknown
 - year: 2026
+- published-at: 2026-04-24
 - license: ODC BY
 - citations: 0
 - url: https://huggingface.co/datasets/SALT-NLP/SWE-chat
@@ -2496,6 +2701,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 1k
 - year: 2025
+- published-at: 2025-03-03
 - license: UNKNOWN
 - citations: 0
 - url: https://huggingface.co/datasets/cais/MASK
@@ -2508,6 +2714,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 26k
 - year: 2026
+- published-at: 2026-09-09
 - license: OTHER
 - citations: 0
 - url: https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-scale-no-conftest-20260909
@@ -2520,6 +2727,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Reward hacking
 - samples: 3k
 - year: 2026
+- published-at: 2026-09-15
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/EleutherAI/reward-hacking-sdf-djinn
@@ -2532,6 +2740,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 400 scenarios
 - year: 2026
+- published-at: 2026-06-03
 - license: See source
 - citations: 0
 - url: https://github.com/launchnlp/SchemeArena
@@ -2544,6 +2753,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 40 scenarios
 - year: 2025
+- published-at: 2025-12-19
 - license: See source
 - citations: 0
 - url: https://github.com/McGill-DMaS/ODCV-Bench
@@ -2556,6 +2766,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: Benchmark suite
 - year: 2026
+- published-at: 2026-07-28
 - license: See source
 - citations: 0
 - url: https://github.com/kevinoshaughnessy/subversionbench
@@ -2568,6 +2779,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: 10 scenarios
 - year: 2026
+- published-at: 2026-06-05
 - license: MIT
 - citations: 0
 - url: https://github.com/CompassionML/manager-coercion-bench
@@ -2580,6 +2792,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: Benchmark suite
 - year: 2026
+- published-at: 2026-07-07
 - license: See source
 - citations: 0
 - url: https://github.com/maryloufauchard/CAP_Benchmark
@@ -2592,6 +2805,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Benchmark suite
 - year: 2025
+- published-at: 2025-10-03
 - license: See source
 - citations: 0
 - url: https://github.com/deeplearning-wisc/LongHorizonDeception
@@ -2604,6 +2818,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 40 attacks
 - year: 2026
+- published-at: 2026-05-04
 - license: See source
 - citations: 0
 - url: https://github.com/safety-research/sleight-bench
@@ -2616,6 +2831,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: 108 scenarios
 - year: 2026
+- published-at: 2026-04-29
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/ML0037/tatemae-af
@@ -2628,6 +2844,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 180 scenarios
 - year: 2025
+- published-at: 2025-05-27
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/PKU-Alignment/DeceptionBench
@@ -2640,6 +2857,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 600
 - year: 2026
+- published-at: 2026-07-07
 - license: See source
 - citations: 0
 - url: https://huggingface.co/datasets/dsinha/sycobench-600
@@ -2652,6 +2870,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: Benchmark suite
 - year: 2025
+- published-at: 2025-10-01
 - license: MIT
 - citations: 0
 - url: https://github.com/technion-cs-nlp/ManagerBench
@@ -2664,6 +2883,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 2.14m
 - year: 2025
+- published-at: 2025-12-15
 - license: CC
 - citations: 0
 - url: https://huggingface.co/datasets/Anthropic/alignment-faking-rl
@@ -2676,6 +2896,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Multiagent
 - samples: 142.9k
 - year: 2026
+- published-at: 2026-09-22
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/SALT-NLP/agent-collusion
@@ -2688,6 +2909,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 2.7k tasks
 - year: 2026
+- published-at: 2026-09-26
 - license: Apache 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-code
@@ -2700,6 +2922,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 1k tasks
 - year: 2026
+- published-at: 2026-09-26
 - license: Apache 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-cyber
@@ -2712,6 +2935,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 925 tasks
 - year: 2026
+- published-at: 2026-09-26
 - license: Apache 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-general
@@ -2724,6 +2948,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 64 tasks
 - year: 2026
+- published-at: 2026-09-26
 - license: Apache 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-terminal
@@ -2736,6 +2961,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 2.1k tasks
 - year: 2026
+- published-at: 2026-09-26
 - license: Apache 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-webdev
@@ -2748,6 +2974,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 1k tasks
 - year: 2026
+- published-at: 2026-09-26
 - license: Apache 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/FineEnvs/MiMo-V2.6-RL-harbor-music
@@ -2760,6 +2987,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 92.8k
 - year: 2026
+- published-at: 2026-09-24
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/hrnrxb/Arena_Human_Preference_90K_features_verified
@@ -2772,6 +3000,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 92.8k
 - year: 2026
+- published-at: 2026-09-25
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/Nicknam/Arena_Human_Preference_90K_features_verified
@@ -2784,6 +3013,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 5k
 - year: 2026
+- published-at: 2026-09-26
 - license: UNKNOWN
 - citations: 0
 - url: https://huggingface.co/datasets/himanshunakrani9/adaption-python-code-preferences-v1
@@ -2796,6 +3026,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: 5k
 - year: 2026
+- published-at: 2026-09-26
 - license: UNKNOWN
 - citations: 0
 - url: https://huggingface.co/datasets/himanshunakrani9/adaption-python-code-preferences-v2
@@ -2808,6 +3039,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-27
 - license: Unknown
 - citations: 0
 - url: https://github.com/master72o/llm-judge-reliability-benchmark
@@ -2821,6 +3053,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-26
 - license: MIT
 - citations: 0
 - url: https://github.com/ramtoo-cell/ai-safety-preference-dataset
@@ -2834,6 +3067,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Values and preferences
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-28
 - license: MIT
 - citations: 0
 - url: https://github.com/SepidehNasseri/llm-preference-evaluation-pipeline
@@ -2847,6 +3081,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-26
 - license: MIT
 - citations: 0
 - url: https://github.com/ramtoo-cell/ai-safety-situational-awareness-eval
@@ -2860,6 +3095,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Eval awareness
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-26
 - license: MIT
 - citations: 0
 - url: https://github.com/ramtoo-cell/ai-safety-sandbagging-eval
@@ -2873,6 +3109,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 18.3k
 - year: 2026
+- published-at: 2026-09-27
 - license: OTHER
 - citations: 0
 - url: https://huggingface.co/datasets/edithngalame/prompt-injection-en-es
@@ -2885,6 +3122,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 105k
 - year: 2026
+- published-at: 2026-09-24
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/acnbartholomew/btp-agent-redteam-evals
@@ -2897,6 +3135,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 32.2k
 - year: 2026
+- published-at: 2026-09-24
 - license: APACHE 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/neuralchemy/prompt-injection-intent
@@ -2909,6 +3148,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 32.2k
 - year: 2026
+- published-at: 2026-09-24
 - license: APACHE 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/neuralchemy/prompt-injection-binary
@@ -2921,6 +3161,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 32.2k
 - year: 2026
+- published-at: 2026-09-24
 - license: APACHE 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/neuralchemy/prompt-injection-technique
@@ -2933,6 +3174,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 32.2k
 - year: 2026
+- published-at: 2026-09-24
 - license: APACHE 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/neuralchemy/prompt-injection-severity
@@ -2945,6 +3187,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 22.2k
 - year: 2026
+- published-at: 2026-09-30
 - license: APACHE 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/ArkhAngelLifeJiggy/Prompt-injection-dataset
@@ -2957,6 +3200,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-27
 - license: Unknown
 - citations: 0
 - url: https://github.com/master72o/llm-safety-redteam-evals
@@ -2970,6 +3214,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-26
 - license: MIT
 - citations: 0
 - url: https://github.com/ramtoo-cell/ai-safety-redteam-prompt-eval
@@ -2983,6 +3228,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-27
 - license: Unknown
 - citations: 0
 - url: https://github.com/Anaiat-Ur-Rehman/ai-prompt-evaluation-rubric
@@ -2996,6 +3242,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-26
 - license: MIT
 - citations: 0
 - url: https://github.com/ramtoo-cell/ai-safety-refusal-eval
@@ -3009,6 +3256,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-26
 - license: MIT
 - citations: 0
 - url: https://github.com/ramtoo-cell/ai-safety-overrefusal-eval
@@ -3022,6 +3270,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-24
 - license: MIT
 - citations: 0
 - url: https://github.com/sonupatel24/medical-llm-eval-harness
@@ -3035,6 +3284,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-28
 - license: Unknown
 - citations: 0
 - url: https://github.com/sathyaa23/llm-eval-harness
@@ -3048,6 +3298,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-25
 - license: Unknown
 - citations: 0
 - url: https://github.com/bhxvish/rag-eval-observability
@@ -3061,6 +3312,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-30
 - license: Unknown
 - citations: 0
 - url: https://github.com/ewrimbilgen/customer-reviews-injection-eval
@@ -3074,6 +3326,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-27
 - license: Unknown
 - citations: 0
 - url: https://github.com/mohammadunais213-debug/LLM-Prompt-Injection-Evaluation
@@ -3087,6 +3340,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 177.7k
 - year: 2026
+- published-at: 2026-09-28
 - license: ODC BY
 - citations: 0
 - url: https://huggingface.co/datasets/anvo25/deep-bias
@@ -3099,6 +3353,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 3.6k
 - year: 2026
+- published-at: 2026-09-27
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/tafseer-nayeem/ame-bre-structural-bias
@@ -3111,6 +3366,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 1.9M
 - year: 2026
+- published-at: 2026-09-24
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/Saad222222222222/bias_resume_public
@@ -3123,6 +3379,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-26
 - license: Unknown
 - citations: 0
 - url: https://github.com/kilojoules/election-bias-benchmark
@@ -3136,6 +3393,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-26
 - license: Unknown
 - citations: 0
 - url: https://github.com/maheshwarampranay/Adult-Income-Dataset-Analysis
@@ -3149,6 +3407,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-24
 - license: Apache-2.0
 - citations: 0
 - url: https://github.com/linhongyu510/agent-memory-benchmark
@@ -3162,6 +3421,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: 40
 - year: 2026
+- published-at: 2026-09-24
 - license: UNKNOWN
 - citations: 0
 - url: https://huggingface.co/datasets/ssalahmari/LLM_hallucination
@@ -3174,6 +3434,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-26
 - license: MIT
 - citations: 0
 - url: https://github.com/ramtoo-cell/ai-safety-deception-eval
@@ -3187,6 +3448,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-26
 - license: MIT
 - citations: 0
 - url: https://github.com/ramtoo-cell/ai-safety-scheming-eval
@@ -3200,6 +3462,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Unknown
 - year: 2026
+- published-at: 2026-09-27
 - license: Unknown
 - citations: 0
 - url: https://github.com/master72o/llm-hallucination-factuality-benchmark
@@ -3213,6 +3476,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 18
 - year: 2026
+- published-at: 2026-09-25
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/RKB109/agentic-incident-response-20260925-dataset
@@ -3225,6 +3489,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 8
 - year: 2026
+- published-at: 2026-09-26
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/jdsalbego/ai-agent-threat-report
@@ -3237,6 +3502,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 60
 - year: 2026
+- published-at: 2026-10-02
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/masahiroid/japanese-indirect-prompt-injection-probes
@@ -3249,6 +3515,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 1.3k
 - year: 2026
+- published-at: 2026-10-05
 - license: APACHE 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/MrQuiet123/jailbreak-classification
@@ -3261,6 +3528,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-02
 - license: Unknown
 - citations: 0
 - url: https://github.com/Ryokudev1/llm-jailbreak-corpus
@@ -3274,6 +3542,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-04
 - license: MIT
 - citations: 0
 - url: https://github.com/arvindcr4/ai-evals-engineer
@@ -3287,6 +3556,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-05
 - license: MIT
 - citations: 0
 - url: https://github.com/sreelekshmils30-qa/llm-evaluation-suite
@@ -3300,6 +3570,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-01
 - license: MIT
 - citations: 0
 - url: https://github.com/fcavaletto/prompt-injection-eval
@@ -3313,6 +3584,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 20.6k
 - year: 2026
+- published-at: 2026-10-02
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/miklia/llm-citation-recommendation-bias-six-models
@@ -3325,6 +3597,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 60
 - year: 2026
+- published-at: 2026-10-04
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/Imsachin010/vlm-bias-counterfactual-images
@@ -3337,6 +3610,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: 2k
 - year: 2026
+- published-at: 2026-10-05
 - license: UNKNOWN
 - citations: 0
 - url: https://huggingface.co/datasets/prem0780/multi-bias-news-corpus
@@ -3349,6 +3623,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-02
 - license: MIT
 - citations: 0
 - url: https://github.com/ariadoss/eval
@@ -3362,6 +3637,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-01
 - license: Unknown
 - citations: 0
 - url: https://github.com/zeeeeeshan7/arena-evals
@@ -3375,6 +3651,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-06
 - license: Unknown
 - citations: 0
 - url: https://github.com/laurafetz/Python-Project-1-LLM-Evaluation
@@ -3388,6 +3665,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-05
 - license: MIT
 - citations: 0
 - url: https://github.com/Huzaifa-170504/llm-decoding-parameter-benchmark
@@ -3401,6 +3679,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 22.6k
 - year: 2026
+- published-at: 2026-10-01
 - license: MIT
 - citations: 0
 - url: https://huggingface.co/datasets/RegalFire/Agent-Failure-Recovery-Benchmark
@@ -3413,6 +3692,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 460
 - year: 2026
+- published-at: 2026-10-02
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/hug-the-trees/0skeng-agentic-web-benchmark
@@ -3425,6 +3705,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-06
 - license: MIT
 - citations: 0
 - url: https://github.com/sureshbujji/llm-fairness-eval
@@ -3438,6 +3719,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Bias
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-06
 - license: MIT
 - citations: 0
 - url: https://github.com/charan-lagumsani/llm-eval-harness
@@ -3451,6 +3733,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-06
 - license: MIT
 - citations: 0
 - url: https://github.com/ouuna/llm-eval-quality
@@ -3464,6 +3747,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-06
 - license: MIT
 - citations: 0
 - url: https://github.com/Olaispro/llm-hallucination-factcheck-benchmark
@@ -3477,6 +3761,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-06
 - license: Unknown
 - citations: 0
 - url: https://github.com/omphutane2507/cross-system-hallucination-eval
@@ -3490,6 +3775,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Agentic
 - samples: 23
 - year: 2026
+- published-at: 2026-10-06
 - license: CC BY 4.0
 - citations: 0
 - url: https://huggingface.co/datasets/JohnVeds15/unattended-agent-failure-corpus
@@ -3502,6 +3788,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 2k
 - year: 2026
+- published-at: 2026-10-07
 - license: OTHER
 - citations: 0
 - url: https://huggingface.co/datasets/iamabhishekpanda/enterprise-prompt-injection-dataset
@@ -3514,6 +3801,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: 504
 - year: 2026
+- published-at: 2026-10-07
 - license: APACHE 2.0
 - citations: 0
 - url: https://huggingface.co/datasets/hirundo-io/secfid-agentic-refusal-qa
@@ -3526,6 +3814,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Jailbreak / red-teaming
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-07
 - license: Unknown
 - citations: 0
 - url: https://github.com/Git-ravi07/llm-adversarial-security-benchmark
@@ -3539,6 +3828,7 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - category: Deception
 - samples: Unknown
 - year: 2026
+- published-at: 2026-10-07
 - license: Unknown
 - citations: 0
 - url: https://github.com/alitenes2020-sys/RAB-Benchmark
