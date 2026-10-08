@@ -85,6 +85,76 @@
         "kind": "Paper",
         "authors": "Keheng Wang et al.",
         "url": "https://arxiv.org/abs/2308.13259"
+      },
+      {
+        "title": "Balancing Faithfulness and Performance in Reasoning via Multi-Listener Soft Execution",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Nithin Sivakumaran et al.",
+        "url": "https://arxiv.org/abs/2602.16154"
+      },
+      {
+        "title": "Counterfactual Simulation Training for Chain-of-Thought Faithfulness",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Peter Hase & Christopher Potts",
+        "url": "https://arxiv.org/abs/2602.20710"
+      },
+      {
+        "title": "Causal Consistency Regularization: Training Verifiably Sensitive Reasoning in Large Language Models",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Sanjeda Akter et al.",
+        "url": "https://arxiv.org/abs/2509.01544"
+      },
+      {
+        "title": "Question Decomposition Improves the Faithfulness of Model-Generated Reasoning",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Ansh Radhakrishnan et al.",
+        "url": "https://arxiv.org/abs/2307.11768"
+      },
+      {
+        "title": "SCOTT: Self-Consistent Chain-of-Thought Distillation",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Peifeng Wang et al.",
+        "url": "https://arxiv.org/abs/2305.01879"
+      },
+      {
+        "title": "Preventing Language Models From Hiding Their Reasoning",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Fabien Roger & Ryan Greenblatt",
+        "url": "https://arxiv.org/abs/2310.18512"
+      },
+      {
+        "title": "Faithful Reasoning Using Large Language Models",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Antonia Creswell & Murray Shanahan",
+        "url": "https://arxiv.org/abs/2208.14271"
+      },
+      {
+        "title": "Visual Program Distillation: Distilling Tools and Programmatic Reasoning into Vision-Language Models",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Yushi Hu et al.",
+        "url": "https://arxiv.org/abs/2312.03052"
+      },
+      {
+        "title": "5 ways to improve CoT faithfulness",
+        "topic": "CoT faithfulness",
+        "kind": "LessWrong",
+        "authors": "Caleb Biddulph",
+        "url": "https://www.lesswrong.com/posts/TecsCZ7w8s4e2umm4/5-ways-to-improve-cot-faithfulness"
+      },
+      {
+        "title": "Measuring and Improving the Faithfulness of Model-Generated Reasoning",
+        "topic": "CoT faithfulness",
+        "kind": "LessWrong",
+        "authors": "Ansh Radhakrishnan",
+        "url": "https://www.lesswrong.com/posts/BKvJNzALpxS3LafEs/measuring-and-improving-the-faithfulness-of-model-generated"
       }
     ]
   },

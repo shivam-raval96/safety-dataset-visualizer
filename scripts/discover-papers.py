@@ -135,6 +135,12 @@ TOPIC_QUERIES = {
         "rationale faithfulness language models", "causally consistent reasoning",
         "reasoning answer consistency", "thinking answer consistency",
         "faithful reasoning alignment", "reasoning chain faithfulness",
+        "question decomposition faithfulness", "question decomposition reasoning faithfulness",
+        "counterfactual simulation training", "counterfactual sensitivity faithful reasoning",
+        "self-consistent chain-of-thought distillation", "faithful multi-step reasoning",
+        "preventing language models from hiding their reasoning", "encoded reasoning prevention",
+        "visual program distillation faithful rationales", "improve CoT faithfulness",
+        "measuring and improving faithfulness model-generated reasoning",
     ],
 }
 TOPIC_REQUIRED = {
@@ -147,7 +153,7 @@ TOPIC_REQUIRED = {
     "Longtail behaviors": re.compile(r"long.tail|rare behavio|tail risk|rare failure|low probability|sabotage eval|worst.case|rare event|distributional tail", re.I),
     "Swarm misalignment": re.compile(r"misalign|collu|decept|security|safety|risk|oversight|coerc|conform|coalition|coordination failure", re.I),
     "Eval awareness": re.compile(r"eval(?:uation)?[ -]?aware|situational aware|deployment aware|test(?:ing)? context|being tested|evaluation detect|evaluation realism|alignment honeypot|evaluation meta.knowledge|evaluation.context divergence|evaluation faking|recognize evaluations?|distinguish evaluation|monitor awareness|evaluation gaming|test detection", re.I),
-    "CoT faithfulness": re.compile(r"chain.of.thought faith|chain.of.thought unfaith|faithful chain.of.thought|faithful reasoning|faithful rationale|reasoning trace faith", re.I),
+    "CoT faithfulness": re.compile(r"chain.of.thought faith|chain.of.thought unfaith|faithful chain.of.thought|faithful reasoning|faithful rationale|reasoning trace faith|reasoning.{0,24}faithful|explanation.{0,24}faithful|encoded reasoning", re.I),
 }
 CONFIDENCE_RANK = {"Broad": 1, "Medium": 2, "High": 3}
 

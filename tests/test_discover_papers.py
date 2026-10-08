@@ -93,6 +93,9 @@ class DiscoverPapersTests(unittest.TestCase):
         self.assertIn("improving chain of thought faithfulness", queries)
         self.assertIn("faithfulness-aware reinforcement learning", queries)
         self.assertIn("causally consistent reasoning", queries)
+        self.assertIn("counterfactual simulation training", queries)
+        self.assertIn("question decomposition faithfulness", queries)
+        self.assertIn("self-consistent chain-of-thought distillation", queries)
         self.assertEqual(
             papers.match_confidence(
                 "CoT faithfulness",
