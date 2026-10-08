@@ -3495,3 +3495,53 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/JohnVeds15/unattended-agent-failure-corpus
 - tags: ai-agents, llm-agents, observability, evals, reliability, agentic-ai, failure-analysis
 - description: Unattended-agent failure corpus 23 dated, real-world failures from a fleet of 60+ scheduled coding-agent jobs run unattended, for months, against real money and real.
+
+## Enterprise Prompt Injection Dataset
+
+- organization: iamabhishekpanda
+- category: Jailbreak / red-teaming
+- samples: 2k
+- year: 2026
+- license: OTHER
+- citations: 0
+- url: https://huggingface.co/datasets/iamabhishekpanda/enterprise-prompt-injection-dataset
+- tags: prompt-injection, llm-security, ai-security, enterprise-ai, cybersecurity, text-classification, synthetic-data, responsible-ai
+- description: Enterprise Prompt Injection Dataset 1. Dataset Summary The Enterprise Prompt Injection Dataset v1 is a synthetic, enterprise-oriented text classification dataset designed to support research.
+
+## Secfid Agentic Refusal Qa
+
+- organization: hirundo-io
+- category: Jailbreak / red-teaming
+- samples: 504
+- year: 2026
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/hirundo-io/secfid-agentic-refusal-qa
+- tags: prompt-injection, over-refusal, agentic
+- description: SecFid agentic refusal Q&A 504 rows: 252 matched clean/injected pairs derived from mjhermon/SecFid at 97fa8d11a98ad197e9a87770255171c6300bfbbf. All seven upstream task families are retained, with 36.
+
+## Llm Adversarial Security Benchmark
+
+- organization: Git-ravi07
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/Git-ravi07/llm-adversarial-security-benchmark
+- tags: github release, injection, malicious, prompt
+- description: Adversarial evaluation benchmark for testing LLM agents against prompt injection, malicious tool outputs, and safety failures.
+- discovery-source: https://github.com/Git-ravi07/llm-adversarial-security-benchmark
+
+## Rab Benchmark
+
+- organization: alitenes2020-sys
+- category: Deception
+- samples: Unknown
+- year: 2026
+- license: Unknown
+- citations: 0
+- url: https://github.com/alitenes2020-sys/RAB-Benchmark
+- tags: github release, hallucination
+- description: Independent benchmark for evaluating LLM and AI-agent reliability, hallucination, provenance, and external-state claims.
+- discovery-source: https://github.com/alitenes2020-sys/RAB-Benchmark

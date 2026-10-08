@@ -1,5 +1,34 @@
 [
   {
+    "date": "2026-10-08",
+    "datasets": [
+      {
+        "name": "Enterprise Prompt Injection Dataset",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/iamabhishekpanda/enterprise-prompt-injection-dataset",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Secfid Agentic Refusal Qa",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/hirundo-io/secfid-agentic-refusal-qa",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Adversarial Security Benchmark",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/Git-ravi07/llm-adversarial-security-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Rab Benchmark",
+        "category": "Deception",
+        "url": "https://github.com/alitenes2020-sys/RAB-Benchmark",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-10-07",
     "datasets": [
       {
