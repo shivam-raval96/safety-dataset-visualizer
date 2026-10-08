@@ -141,6 +141,10 @@ TOPIC_QUERIES = {
         "preventing language models from hiding their reasoning", "encoded reasoning prevention",
         "visual program distillation faithful rationales", "improve CoT faithfulness",
         "measuring and improving faithfulness model-generated reasoning",
+        "causal alignment structural enforcement CoT", "CoT interpretability alignment",
+        "self-explanation faithfulness training", "verifier-coupled reasoning",
+        "faithful evidence-based reasoning", "rule-grounded faithful reasoning",
+        "thinking drift consistency reward", "KL penalties CoT unfaithfulness",
     ],
 }
 TOPIC_REQUIRED = {

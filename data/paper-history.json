@@ -3283,6 +3283,62 @@
         "kind": "Paper",
         "authors": "Joe Carlsmith",
         "url": "https://arxiv.org/abs/2311.08379"
+      },
+      {
+        "title": "CASE: Causal Alignment and Structural Enforcement for Improving Chain-of-Thought Faithfulness",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Ziming Wang et al.",
+        "url": "https://arxiv.org/abs/2607.18820"
+      },
+      {
+        "title": "Making LLMs Say What They Think: Measuring and Improving CoT-Interpretability Alignment",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Yihuai Hong et al.",
+        "url": "https://arxiv.org/abs/2609.38972"
+      },
+      {
+        "title": "Training Large Language Models for Self-Explanation Faithfulness",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Yeoktatt Cheah et al.",
+        "url": "https://arxiv.org/abs/2607.21090"
+      },
+      {
+        "title": "Decodable but Not Faithful: Coupling Natural-Language Rationales to Programmatic Verifiers",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Vatsal Ananthula & Adarsh Kumarappan",
+        "url": "https://arxiv.org/abs/2606.21678"
+      },
+      {
+        "title": "FaithMed: Training LLMs For Faithful Evidence-Based Medical Reasoning",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Zhiyun Zhang et al.",
+        "url": "https://arxiv.org/abs/2607.01440"
+      },
+      {
+        "title": "Neuro-Symbolic Drive: Rule-Grounded Faithful Reasoning for Driving VLAs",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Xiangbo Gao et al.",
+        "url": "https://arxiv.org/abs/2606.23938"
+      },
+      {
+        "title": "Aligning Thoughts with Answers: Probability Rewards to Tame Thinking Drift",
+        "topic": "CoT faithfulness",
+        "kind": "Paper",
+        "authors": "Pengzhan Sun et al.",
+        "url": "https://arxiv.org/abs/2609.39183"
+      },
+      {
+        "title": "Preliminary investigation: KL penalties in RL can increase CoT unfaithfulness",
+        "topic": "CoT faithfulness",
+        "kind": "LessWrong",
+        "authors": "Satvik Golechha et al.",
+        "url": "https://www.lesswrong.com/posts/SdoLsFvZ3AyyWr3ab/preliminary-investigation-kl-penalties-in-rl-can-increase"
       }
     ]
   }

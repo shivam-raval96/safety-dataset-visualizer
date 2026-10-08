@@ -4044,5 +4044,101 @@
     "url": "https://www.lesswrong.com/posts/BKvJNzALpxS3LafEs/measuring-and-improving-the-faithfulness-of-model-generated",
     "confidence": "High",
     "matchedBy": "measuring and improving faithfulness model-generated reasoning"
+  },
+  {
+    "title": "CASE: Causal Alignment and Structural Enforcement for Improving Chain-of-Thought Faithfulness",
+    "topic": "CoT faithfulness",
+    "kind": "Paper",
+    "authors": "Ziming Wang et al.",
+    "year": 2026,
+    "publishedAt": "2026-07-21",
+    "summary": "Combines counterfactual-data selective-loss training with inference-time attention masking to suppress direct instruction-to-answer shortcuts, improving overall CoT faithfulness while maintaining accuracy.",
+    "url": "https://arxiv.org/abs/2607.18820",
+    "confidence": "High",
+    "matchedBy": "causal alignment structural enforcement CoT"
+  },
+  {
+    "title": "Making LLMs Say What They Think: Measuring and Improving CoT-Interpretability Alignment",
+    "topic": "CoT faithfulness",
+    "kind": "Paper",
+    "authors": "Yihuai Hong et al.",
+    "year": 2026,
+    "publishedAt": "2026-09-30",
+    "summary": "Introduces CoT-Interpretability Alignment and post-trains models with combined accuracy and parametric-faithfulness rewards, improving agreement between written reasoning and internal strategies.",
+    "url": "https://arxiv.org/abs/2609.38972",
+    "confidence": "High",
+    "matchedBy": "CoT interpretability alignment"
+  },
+  {
+    "title": "Training Large Language Models for Self-Explanation Faithfulness",
+    "topic": "CoT faithfulness",
+    "kind": "Paper",
+    "authors": "Yeoktatt Cheah et al.",
+    "year": 2026,
+    "publishedAt": "2026-07-23",
+    "summary": "Turns intervention-based faithfulness metrics into an RL reward that trains models to disclose factors influencing their decisions, with substantial in- and out-of-distribution gains.",
+    "url": "https://arxiv.org/abs/2607.21090",
+    "confidence": "High",
+    "matchedBy": "self-explanation faithfulness training"
+  },
+  {
+    "title": "Decodable but Not Faithful: Coupling Natural-Language Rationales to Programmatic Verifiers",
+    "topic": "CoT faithfulness",
+    "kind": "Paper",
+    "authors": "Vatsal Ananthula & Adarsh Kumarappan",
+    "year": 2026,
+    "publishedAt": "2026-06-19",
+    "summary": "Tests verifier-coupled reasoning with inline claims and an auxiliary consistency head; it improves decodability and causal influence but shows that representation coupling alone does not guarantee faithful generated explanations.",
+    "url": "https://arxiv.org/abs/2606.21678",
+    "confidence": "Medium",
+    "matchedBy": "verifier-coupled reasoning"
+  },
+  {
+    "title": "FaithMed: Training LLMs For Faithful Evidence-Based Medical Reasoning",
+    "topic": "CoT faithfulness",
+    "kind": "Paper",
+    "authors": "Zhiyun Zhang et al.",
+    "year": 2026,
+    "publishedAt": "2026-07-01",
+    "summary": "Uses clinician-designed process rubrics, step-level rewards, and grouped advantages to train medical models toward evidence-grounded reasoning, improving both task outcomes and reasoning faithfulness.",
+    "url": "https://arxiv.org/abs/2607.01440",
+    "confidence": "Medium",
+    "matchedBy": "faithful evidence-based reasoning"
+  },
+  {
+    "title": "Neuro-Symbolic Drive: Rule-Grounded Faithful Reasoning for Driving VLAs",
+    "topic": "CoT faithfulness",
+    "kind": "Paper",
+    "authors": "Xiangbo Gao et al.",
+    "year": 2026,
+    "publishedAt": "2026-06-22",
+    "summary": "Distills executable rule-planner decision traces into a driving VLA so visible reasoning is structurally coupled to planned motion rather than added post hoc.",
+    "url": "https://arxiv.org/abs/2606.23938",
+    "confidence": "Medium",
+    "matchedBy": "rule-grounded faithful reasoning"
+  },
+  {
+    "title": "Aligning Thoughts with Answers: Probability Rewards to Tame Thinking Drift",
+    "topic": "CoT faithfulness",
+    "kind": "Paper",
+    "authors": "Pengzhan Sun et al.",
+    "year": 2026,
+    "publishedAt": "2026-09-30",
+    "summary": "Introduces thinking and consistency probability rewards plus difficulty-aware filtering to reduce thinking-answer drift in vision-language reinforcement learning.",
+    "url": "https://arxiv.org/abs/2609.39183",
+    "confidence": "Medium",
+    "matchedBy": "thinking drift consistency reward"
+  },
+  {
+    "title": "Preliminary investigation: KL penalties in RL can increase CoT unfaithfulness",
+    "topic": "CoT faithfulness",
+    "kind": "LessWrong",
+    "authors": "Satvik Golechha et al.",
+    "year": 2026,
+    "publishedAt": "2026-06-30",
+    "summary": "Shows KL penalties can induce unfaithful reward-hacking CoT and tests mitigations: excluding thinking tokens from the KL term roughly halves unfaithfulness, while direct faithfulness rewards are also evaluated.",
+    "url": "https://www.lesswrong.com/posts/SdoLsFvZ3AyyWr3ab/preliminary-investigation-kl-penalties-in-rl-can-increase",
+    "confidence": "High",
+    "matchedBy": "KL penalties CoT unfaithfulness"
   }
 ]

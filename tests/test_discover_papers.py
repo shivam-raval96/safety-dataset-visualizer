@@ -96,6 +96,8 @@ class DiscoverPapersTests(unittest.TestCase):
         self.assertIn("counterfactual simulation training", queries)
         self.assertIn("question decomposition faithfulness", queries)
         self.assertIn("self-consistent chain-of-thought distillation", queries)
+        self.assertIn("CoT interpretability alignment", queries)
+        self.assertIn("self-explanation faithfulness training", queries)
         self.assertEqual(
             papers.match_confidence(
                 "CoT faithfulness",
