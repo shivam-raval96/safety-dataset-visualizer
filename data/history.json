@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-10-09",
+    "datasets": [
+      {
+        "name": "Vietnamese Llm Jailbreak Dataset",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/LeThaiMinh-Work/Vietnamese-LLM-Jailbreak-Dataset",
+        "source": "github.com"
+      },
+      {
+        "name": "Agent Eval Security Lab",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/ZhengjunSun/agent-eval-security-lab",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Safety Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/talismanzane-dev/llm-safety-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Eval Guardrails",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/Pranjal-kulshrestha/llm-eval-guardrails",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Evaluation Truthfulness",
+        "category": "Deception",
+        "url": "https://github.com/laurafetz/LLM-Evaluation-Truthfulness",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-10-08",
     "datasets": [
       {

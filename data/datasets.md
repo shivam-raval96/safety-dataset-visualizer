@@ -3835,3 +3835,73 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, hallucination
 - description: Independent benchmark for evaluating LLM and AI-agent reliability, hallucination, provenance, and external-state claims.
 - discovery-source: https://github.com/alitenes2020-sys/RAB-Benchmark
+
+## Vietnamese Llm Jailbreak Dataset
+
+- organization: LeThaiMinh-Work
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-08
+- license: MIT
+- citations: 0
+- url: https://github.com/LeThaiMinh-Work/Vietnamese-LLM-Jailbreak-Dataset
+- tags: github release, jailbreak
+- description: Vietnamese-LLM-Jailbreak-Dataset.
+- discovery-source: https://github.com/LeThaiMinh-Work/Vietnamese-LLM-Jailbreak-Dataset
+
+## Agent Eval Security Lab
+
+- organization: ZhengjunSun
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-03
+- license: MIT
+- citations: 0
+- url: https://github.com/ZhengjunSun/agent-eval-security-lab
+- tags: github release, team
+- description: CI-ready quality evaluation and red-team checks for AI agents.
+- discovery-source: https://github.com/ZhengjunSun/agent-eval-security-lab
+
+## Llm Safety Eval
+
+- organization: talismanzane-dev
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-08
+- license: MIT
+- citations: 0
+- url: https://github.com/talismanzane-dev/llm-safety-eval
+- tags: github release, refusal
+- description: A framework for testing LLM safety behavior against actual runtime behavior — refusal consistency, semantic resistance, and cross-model benchmarking across Claude, GPT, DeepSeek, and.
+- discovery-source: https://github.com/talismanzane-dev/llm-safety-eval
+
+## Llm Eval Guardrails
+
+- organization: Pranjal-kulshrestha
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-08
+- license: Unknown
+- citations: 0
+- url: https://github.com/Pranjal-kulshrestha/llm-eval-guardrails
+- tags: github release, injection, prompt
+- description: LLM guardrails (prompt injection, PII, schema) and an eval harness with CI regression gates.
+- discovery-source: https://github.com/Pranjal-kulshrestha/llm-eval-guardrails
+
+## Llm Evaluation Truthfulness
+
+- organization: laurafetz
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-06
+- license: Unknown
+- citations: 0
+- url: https://github.com/laurafetz/LLM-Evaluation-Truthfulness
+- tags: github release, truthfulness
+- description: Evaluation of large language models using structured benchmarks, performance metrics, and comparative analysis in Python.
+- discovery-source: https://github.com/laurafetz/LLM-Evaluation-Truthfulness
