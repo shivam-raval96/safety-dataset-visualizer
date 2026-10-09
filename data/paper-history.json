@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-10-09",
+    "papers": [
+      {
+        "title": "J++ Lens: Jacobian Filtering Enables More Faithful Workspace Lenses",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Kola Ayonrinde",
+        "url": "https://www.lesswrong.com/posts/nc9dHfcB22JdMzGbr/j-lens-jacobian-filtering-enables-more-faithful-workspace"
+      }
+    ]
+  },
+  {
     "date": "2026-10-08",
     "papers": [
       {

@@ -4140,5 +4140,17 @@
     "url": "https://www.lesswrong.com/posts/SdoLsFvZ3AyyWr3ab/preliminary-investigation-kl-penalties-in-rl-can-increase",
     "confidence": "High",
     "matchedBy": "KL penalties CoT unfaithfulness"
+  },
+  {
+    "title": "J++ Lens: Jacobian Filtering Enables More Faithful Workspace Lenses",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Kola Ayonrinde",
+    "year": 2026,
+    "publishedAt": "2026-10-08",
+    "summary": "Kola Ayonrinde, Anthropic Fellows, koayon@gmail.com ; Jack Lindsey, Anthropic TL;DR : The J-Lens was proposed to read verbalisable representations from language model.",
+    "url": "https://www.lesswrong.com/posts/nc9dHfcB22JdMzGbr/j-lens-jacobian-filtering-enables-more-faithful-workspace",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
   }
 ]
