@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-10-10",
+    "papers": [
+      {
+        "title": "Monitorability Disposition in Large Reasoning Models",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Shahriar Golchin & Marc Wetter",
+        "url": "https://arxiv.org/abs/2610.04914"
+      },
+      {
+        "title": "RubricArmor: Adversarial Evolution Improves LLM-Based Rubric Generation",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Haocheng Yang et al.",
+        "url": "https://arxiv.org/abs/2610.05308"
+      },
+      {
+        "title": "[Paper] Distillation for Incrimination and Distillation for Capabilities",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "sebastian_prasanna",
+        "url": "https://www.lesswrong.com/posts/qwk7Xc2qhMChXqntK/paper-distillation-for-incrimination-and-distillation-for"
+      },
+      {
+        "title": "Research Priorities for Multi-Agent Swarms",
+        "topic": "Swarm misalignment",
+        "kind": "LessWrong",
+        "authors": "Pepijn Cobben",
+        "url": "https://www.lesswrong.com/posts/XDybLbLbDsnEhnEWi/research-priorities-for-multi-agent-swarms-1"
+      },
+      {
+        "title": "What we can (and can't) learn from Waymo's safety strategy - 2026 update",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Josh Holder",
+        "url": "https://www.lesswrong.com/posts/qiEpkmpspEnwHtFw4/what-we-can-and-can-t-learn-from-waymo-s-safety-strategy"
+      }
+    ]
+  },
+  {
     "date": "2026-10-09",
     "papers": [
       {

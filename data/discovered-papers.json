@@ -4152,5 +4152,65 @@
     "url": "https://www.lesswrong.com/posts/nc9dHfcB22JdMzGbr/j-lens-jacobian-filtering-enables-more-faithful-workspace",
     "confidence": "Broad",
     "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Monitorability Disposition in Large Reasoning Models",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Shahriar Golchin & Marc Wetter",
+    "year": 2026,
+    "publishedAt": "2026-10-04",
+    "summary": "Monitoring the chain-of-thought (CoT) of large reasoning models (LRMs) is a common way to detect misbehavior in real-world.",
+    "url": "https://arxiv.org/abs/2610.04914",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "RubricArmor: Adversarial Evolution Improves LLM-Based Rubric Generation",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Haocheng Yang et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-04",
+    "summary": "Rubric-based reinforcement learning (RL) provides interpretable rewards for aligning large language models (LLMs) by evaluating responses against query-specific evaluation.",
+    "url": "https://arxiv.org/abs/2610.05308",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "[Paper] Distillation for Incrimination and Distillation for Capabilities",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "sebastian_prasanna",
+    "year": 2026,
+    "publishedAt": "2026-10-09",
+    "summary": "TL;DR: We previously motivated two complementary ways to use distillation for AI safety; we’re releasing a paper empirically testing those.",
+    "url": "https://www.lesswrong.com/posts/qwk7Xc2qhMChXqntK/paper-distillation-for-incrimination-and-distillation-for",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Research Priorities for Multi-Agent Swarms",
+    "topic": "Swarm misalignment",
+    "kind": "LessWrong",
+    "authors": "Pepijn Cobben",
+    "year": 2026,
+    "publishedAt": "2026-10-09",
+    "summary": "Multi-Agent swarms are important for two reasons: They are probably much faster and somewhat more capable than single agents (Capability) Multi-agent alignment is a different beast than single-agent alignment (Propensity) The fact that recent incidents (and.",
+    "url": "https://www.lesswrong.com/posts/XDybLbLbDsnEhnEWi/research-priorities-for-multi-agent-swarms-1",
+    "confidence": "Broad",
+    "matchedBy": "multi-agent alignment"
+  },
+  {
+    "title": "What we can (and can't) learn from Waymo's safety strategy - 2026 update",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Josh Holder",
+    "year": 2026,
+    "publishedAt": "2026-10-09",
+    "summary": "(this is a lightly edited linkpost for the LessWrong audience - full piece is here and goes into implications for AVs and humanoid robots.) Last year, I wrote “ Safety Without Understanding ,” a piece exploring how Waymo safely rolled out autonomous driving.",
+    "url": "https://www.lesswrong.com/posts/qiEpkmpspEnwHtFw4/what-we-can-and-can-t-learn-from-waymo-s-safety-strategy",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]
