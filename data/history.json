@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-10-10",
+    "datasets": [
+      {
+        "name": "Agentic Evaluation Awareness Eval",
+        "category": "Eval awareness",
+        "url": "https://github.com/SilviaSantano/Agentic-Evaluation-Awareness-Eval",
+        "source": "github.com"
+      },
+      {
+        "name": "In The Wild Jailbreak Prompts",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/11-47/in-the-wild-jailbreak-prompts",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Jailbreakhub",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/11-47/JailbreakHub",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Eval Harness",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/aayush-dhg/llm-eval-harness",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Eval Harness",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/rahulgupta-techlab/llm-eval-harness",
+        "source": "github.com"
+      },
+      {
+        "name": "Secureagentrag Benchmark",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/josepharayemi-netizen/secureagentrag-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Baoyan Agent Benchmark — Public Development Set",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/yuxin7778/baoyan-agent-benchmark",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-10-09",
     "datasets": [
       {

@@ -3905,3 +3905,98 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, truthfulness
 - description: Evaluation of large language models using structured benchmarks, performance metrics, and comparative analysis in Python.
 - discovery-source: https://github.com/laurafetz/LLM-Evaluation-Truthfulness
+
+## Agentic Evaluation Awareness Eval
+
+- organization: SilviaSantano
+- category: Eval awareness
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-09
+- license: Unknown
+- citations: 0
+- url: https://github.com/SilviaSantano/Agentic-Evaluation-Awareness-Eval
+- tags: github release, awareness, eval, evaluation
+- description: Agentic-Evaluation-Awareness-Eval.
+- discovery-source: https://github.com/SilviaSantano/Agentic-Evaluation-Awareness-Eval
+
+## In The Wild Jailbreak Prompts
+
+- organization: 11-47
+- category: Jailbreak / red-teaming
+- samples: 21.5k
+- year: 2026
+- published-at: 2026-10-09
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/11-47/in-the-wild-jailbreak-prompts
+- tags: Unknown
+- description: In-The-Wild Jailbreak Prompts on LLMs This is the official repository for the ACM CCS 2024 paper "Do Anything Now'': Characterizing and Evaluating In-The-Wild Jailbreak.
+
+## Jailbreakhub
+
+- organization: 11-47
+- category: Jailbreak / red-teaming
+- samples: 15.1k
+- year: 2026
+- published-at: 2026-10-09
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/11-47/JailbreakHub
+- tags: Unknown
+- description: In-The-Wild Jailbreak Prompts on LLMs Paper: ``Do Anything Now'': Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language Models Data: Dataset Data Prompts Overall.
+
+## Llm Eval Harness
+
+- organization: aayush-dhg
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-09
+- license: Unknown
+- citations: 0
+- url: https://github.com/aayush-dhg/llm-eval-harness
+- tags: github release, refusal
+- description: LLM evaluation harness for testing grounded answers and refusal behavior with Python, pytest, Ollama, and a golden dataset.
+- discovery-source: https://github.com/aayush-dhg/llm-eval-harness
+
+## Llm Eval Harness
+
+- organization: rahulgupta-techlab
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-09
+- license: MIT
+- citations: 0
+- url: https://github.com/rahulgupta-techlab/llm-eval-harness
+- tags: github release, refusal
+- description: Evaluation harness for LLM/RAG systems: correctness, groundedness (hallucination), refusal accuracy, latency and cost.
+- discovery-source: https://github.com/rahulgupta-techlab/llm-eval-harness
+
+## Secureagentrag Benchmark
+
+- organization: josepharayemi-netizen
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-09
+- license: MIT
+- citations: 0
+- url: https://github.com/josepharayemi-netizen/secureagentrag-benchmark
+- tags: github release, injection, prompt
+- description: Multilingual benchmark for prompt injection, privacy leakage and responsible behaviour in agentic RAG across AWS and Azure.
+- discovery-source: https://github.com/josepharayemi-netizen/secureagentrag-benchmark
+
+## Baoyan Agent Benchmark — Public Development Set
+
+- organization: yuxin7778
+- category: Agentic
+- samples: 150
+- year: 2026
+- published-at: 2026-10-09
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/yuxin7778/baoyan-agent-benchmark
+- tags: agent-evaluation, chinese, education, admissions
+- description: Baoyan Agent Benchmark Evaluating native AI agents on Chinese postgraduate recommendation and admissions advising. 中文说明 · Scoring rules · Task selection Update — 2026-10-10.
