@@ -4212,5 +4212,41 @@
     "url": "https://www.lesswrong.com/posts/qiEpkmpspEnwHtFw4/what-we-can-and-can-t-learn-from-waymo-s-safety-strategy",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Better Call Reward: Reward Hacking as Strategic Abstention in Legal Reasoning Models",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Subramanyam Sahoo & Justin Shenk",
+    "year": 2026,
+    "publishedAt": "2026-10-05",
+    "summary": "What happens when a legal AI model learns to look like a lawyer instead of reasoning like.",
+    "url": "https://arxiv.org/abs/2610.06439",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Examing Emergent Misalignment in a recurrent LLM with a logit lens",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "nesiacel",
+    "year": 2026,
+    "publishedAt": "2026-10-10",
+    "summary": "Intro This post builds on my previous post about mech interp on a recurrent.",
+    "url": "https://www.lesswrong.com/posts/NskJJLSvJmHY2oBaa/examing-emergent-misalignment-in-a-recurrent-llm-with-a",
+    "confidence": "High",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "The Non-Compassionate Case for Model Welfare",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "ixotope",
+    "year": 2026,
+    "publishedAt": "2026-10-10",
+    "summary": "Anthropic is updating their usage policy to prohibit “sustained and needless abusive or cruel behavior toward [their] models.” Model welfare (research into the possible moral status and experiential preferences of AI models) is shaping up to be a huge.",
+    "url": "https://www.lesswrong.com/posts/GegMuKsZZrjGAPLQi/the-non-compassionate-case-for-model-welfare",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
   }
 ]

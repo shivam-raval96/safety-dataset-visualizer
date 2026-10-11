@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-10-11",
+    "papers": [
+      {
+        "title": "Better Call Reward: Reward Hacking as Strategic Abstention in Legal Reasoning Models",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Subramanyam Sahoo & Justin Shenk",
+        "url": "https://arxiv.org/abs/2610.06439"
+      },
+      {
+        "title": "Examing Emergent Misalignment in a recurrent LLM with a logit lens",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "nesiacel",
+        "url": "https://www.lesswrong.com/posts/NskJJLSvJmHY2oBaa/examing-emergent-misalignment-in-a-recurrent-llm-with-a"
+      },
+      {
+        "title": "The Non-Compassionate Case for Model Welfare",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "ixotope",
+        "url": "https://www.lesswrong.com/posts/GegMuKsZZrjGAPLQi/the-non-compassionate-case-for-model-welfare"
+      }
+    ]
+  },
+  {
     "date": "2026-10-10",
     "papers": [
       {
