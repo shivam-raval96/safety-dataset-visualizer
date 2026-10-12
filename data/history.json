@@ -1,5 +1,70 @@
 [
   {
+    "date": "2026-10-12",
+    "datasets": [
+      {
+        "name": "Benchmark Themachinelearningimplications",
+        "category": "Values and preferences",
+        "url": "https://github.com/Faus7679/Benchmark-TheMachineLearningImplications",
+        "source": "github.com"
+      },
+      {
+        "name": "Trustboundary Redteam Benchmark",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/iconseven/trustboundary-redteam-benchmark",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Nova Agent Evals",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/helloahad661-pixel/nova-agent-evals",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Bias Trustworthiness Evaluation",
+        "category": "Bias",
+        "url": "https://github.com/Jaden449/LLM-Bias-Trustworthiness-Evaluation",
+        "source": "github.com"
+      },
+      {
+        "name": "Responsible Ai Model Evaluation",
+        "category": "Bias",
+        "url": "https://github.com/praptibhayde56/Responsible-AI-Model-Evaluation",
+        "source": "github.com"
+      },
+      {
+        "name": "Diverse Deception",
+        "category": "Deception",
+        "url": "https://huggingface.co/datasets/AlignmentResearch/diverse-deception",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Heretic Eval",
+        "category": "Deception",
+        "url": "https://github.com/omniversodigital/heretic-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Agent Evals",
+        "category": "Deception",
+        "url": "https://github.com/aleenabenny0/agent-evals",
+        "source": "github.com"
+      },
+      {
+        "name": "Finehall Mt Dataset",
+        "category": "Deception",
+        "url": "https://github.com/Huii0415/FineHall-MT-Dataset",
+        "source": "github.com"
+      },
+      {
+        "name": "Hanabi Agent Benchmark",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/realset/hanabi-agent-bench",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-10-10",
     "datasets": [
       {

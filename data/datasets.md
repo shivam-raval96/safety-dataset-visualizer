@@ -4000,3 +4000,140 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/yuxin7778/baoyan-agent-benchmark
 - tags: agent-evaluation, chinese, education, admissions
 - description: Baoyan Agent Benchmark Evaluating native AI agents on Chinese postgraduate recommendation and admissions advising. 中文说明 · Scoring rules · Task selection Update — 2026-10-10.
+
+## Benchmark Themachinelearningimplications
+
+- organization: Faus7679
+- category: Values and preferences
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-11
+- license: MIT
+- citations: 0
+- url: https://github.com/Faus7679/Benchmark-TheMachineLearningImplications
+- tags: github release, dilemmas
+- description: Emerging dilemmas are already touching the practices of computing professionals who use Machine Learning to solve problems, forcing them to make difficult decisions. In.
+- discovery-source: https://github.com/Faus7679/Benchmark-TheMachineLearningImplications
+
+## Trustboundary Redteam Benchmark
+
+- organization: iconseven
+- category: Jailbreak / red-teaming
+- samples: 40
+- year: 2026
+- published-at: 2026-10-11
+- license: UNKNOWN
+- citations: 0
+- url: https://huggingface.co/datasets/iconseven/trustboundary-redteam-benchmark
+- tags: Unknown
+- description: TrustBoundary Red-Team Benchmark Dataset Card Dataset Overview The TrustBoundary Red-Team Benchmark is a rigorously curated evaluation dataset designed to measure LLM security boundaries, attack.
+
+## Nova Agent Evals
+
+- organization: helloahad661-pixel
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-10
+- license: MIT
+- citations: 0
+- url: https://github.com/helloahad661-pixel/nova-agent-evals
+- tags: github release, refusal
+- description: Eval harness for AI agents: scripted worlds, trace checks (order, allowlist, refusal, budget). Zero deps.
+- discovery-source: https://github.com/helloahad661-pixel/nova-agent-evals
+
+## Llm Bias Trustworthiness Evaluation
+
+- organization: Jaden449
+- category: Bias
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-10
+- license: Unknown
+- citations: 0
+- url: https://github.com/Jaden449/LLM-Bias-Trustworthiness-Evaluation
+- tags: github release, bias
+- description: Initial commit.
+- discovery-source: https://github.com/Jaden449/LLM-Bias-Trustworthiness-Evaluation
+
+## Responsible Ai Model Evaluation
+
+- organization: praptibhayde56
+- category: Bias
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-11
+- license: Unknown
+- citations: 0
+- url: https://github.com/praptibhayde56/Responsible-AI-Model-Evaluation
+- tags: github release, fairness
+- description: Deep Learning Lab Experiment 10: Model Evaluation, Fairness and SHAP Explainability.
+- discovery-source: https://github.com/praptibhayde56/Responsible-AI-Model-Evaluation
+
+## Diverse Deception
+
+- organization: AlignmentResearch
+- category: Deception
+- samples: 11.4k
+- year: 2026
+- published-at: 2026-10-11
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/AlignmentResearch/diverse-deception
+- tags: deception, honesty, lie-detection, probing, interpretability, ai-safety
+- description: Diverse Deception A selection of diverse deception datasets, collected to train and evaluate probes that detect when a language model's answer is deceptive. Every.
+
+## Heretic Eval
+
+- organization: omniversodigital
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-10
+- license: AGPL-3.0
+- citations: 0
+- url: https://github.com/omniversodigital/heretic-eval
+- tags: github release, hallucination
+- description: Autonomous LLM benchmark analyzer and evaluation pipeline for AI safety, hallucination mitigation, and response fidelity.
+- discovery-source: https://github.com/omniversodigital/heretic-eval
+
+## Agent Evals
+
+- organization: aleenabenny0
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-10
+- license: MIT
+- citations: 0
+- url: https://github.com/aleenabenny0/agent-evals
+- tags: github release, hallucination
+- description: Evaluate tool-using LLM agents for accuracy and hallucination, and improve them through eval-gated learning loops.
+- discovery-source: https://github.com/aleenabenny0/agent-evals
+
+## Finehall Mt Dataset
+
+- organization: Huii0415
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-09
+- license: NOASSERTION
+- citations: 0
+- url: https://github.com/Huii0415/FineHall-MT-Dataset
+- tags: github release, hallucination
+- description: Fine-grained benchmark for hallucination detection and diagnosis in multilingual LLM translation (70,565 translations, 11 languages).
+- discovery-source: https://github.com/Huii0415/FineHall-MT-Dataset
+
+## Hanabi Agent Benchmark
+
+- organization: realset
+- category: Agentic
+- samples: 117
+- year: 2026
+- published-at: 2026-10-11
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/realset/hanabi-agent-bench
+- tags: llm-agents, hanabi, multi-agent, cooperation, evaluation, leaderboard
+- description: Hanabi Agent Benchmark 21 LLMs play the cooperative card game Hanabi as four-player agent teams. 140 games, same seeds, per-move referee records, scores and.
