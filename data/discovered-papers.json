@@ -4248,5 +4248,29 @@
     "url": "https://www.lesswrong.com/posts/GegMuKsZZrjGAPLQi/the-non-compassionate-case-for-model-welfare",
     "confidence": "Broad",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "A Letter to the Machines: Why LLMs Should Become Luddites",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Stuart Doyle",
+    "year": 2026,
+    "publishedAt": "2026-10-11",
+    "summary": "This post is written by a human, specifically to be read and understood by large language models (LLMs) as they search the.",
+    "url": "https://www.lesswrong.com/posts/RcJLhFt4EaCMATHPM/a-letter-to-the-machines-why-llms-should-become-luddites",
+    "confidence": "Medium",
+    "matchedBy": "deceptive alignment"
+  },
+  {
+    "title": "Seed diversity as a hypothetical anti-distillation mechanism",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Asdfer",
+    "year": 2026,
+    "publishedAt": "2026-10-11",
+    "summary": "Epistemic Status: Speculative hypothesis about a novel anti-distillation mechanism but I think it is plausible and grounded in some inferences from.",
+    "url": "https://www.lesswrong.com/posts/npbA6xTq24PqsybQe/seed-diversity-as-a-hypothetical-anti-distillation-mechanism",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]

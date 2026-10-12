@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-10-12",
+    "papers": [
+      {
+        "title": "A Letter to the Machines: Why LLMs Should Become Luddites",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Stuart Doyle",
+        "url": "https://www.lesswrong.com/posts/RcJLhFt4EaCMATHPM/a-letter-to-the-machines-why-llms-should-become-luddites"
+      },
+      {
+        "title": "Seed diversity as a hypothetical anti-distillation mechanism",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Asdfer",
+        "url": "https://www.lesswrong.com/posts/npbA6xTq24PqsybQe/seed-diversity-as-a-hypothetical-anti-distillation-mechanism"
+      }
+    ]
+  },
+  {
     "date": "2026-10-11",
     "papers": [
       {
