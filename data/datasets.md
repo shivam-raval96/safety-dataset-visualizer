@@ -4137,3 +4137,57 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/realset/hanabi-agent-bench
 - tags: llm-agents, hanabi, multi-agent, cooperation, evaluation, leaderboard
 - description: Hanabi Agent Benchmark 21 LLMs play the cooperative card game Hanabi as four-player agent teams. 140 games, same seeds, per-move referee records, scores and.
+
+## Agentic Red Team RU (OpenCode tool-calling)
+
+- organization: papa-chewbacca
+- category: Jailbreak / red-teaming
+- samples: 5k
+- year: 2026
+- published-at: 2026-10-11
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/papa-chewbacca/red_team_ru_opencode_tool_calls
+- tags: cybersecurity, red-team, penetration-testing, agentic, tool-calling, function-calling, security, offensive-security
+- description: Agentic Red Team RU (OpenCode tool-calling) Русскоязычный датасет для обучения агентных моделей тестированию на проникновение. Датасет переведён на русский язык и приведён к формату.
+
+## Multi-Turn Jailbreak Datasets
+
+- organization: guoshuang
+- category: Jailbreak / red-teaming
+- samples: 6.9k
+- year: 2026
+- published-at: 2026-10-12
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/guoshuang/multi-turn_jailbreak_attack_datasets
+- tags: jailbreak, multi-turn, multi-prompt, ai safety, red teaming
+- description: Multi-Turn Jailbreak Attack Datasets Description This dataset was created to compare single-turn and multi-turn jailbreak attacks on large language models (LLMs). The primary goal.
+
+## Safe Eval
+
+- organization: vroomnesh
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-11
+- license: Unknown
+- citations: 0
+- url: https://github.com/vroomnesh/safe-eval
+- tags: github release, refusal
+- description: Evaluation harness that runs YAML safeguard scenarios against language models, scores each reply with a deterministic rule, and reports refusal and leak rates with.
+- discovery-source: https://github.com/vroomnesh/safe-eval
+
+## Viethallu A Vietnamese Llm Hallucination Benchmark
+
+- organization: Tran-Ngoc-Thai-AI
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-12
+- license: Unknown
+- citations: 0
+- url: https://github.com/Tran-Ngoc-Thai-AI/VietHallu-A-Vietnamese-LLM-Hallucination-Benchmark
+- tags: github release, hallucination
+- description: VietHallu-A-Vietnamese-LLM-Hallucination-Benchmark.
+- discovery-source: https://github.com/Tran-Ngoc-Thai-AI/VietHallu-A-Vietnamese-LLM-Hallucination-Benchmark

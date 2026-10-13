@@ -1,5 +1,34 @@
 [
   {
+    "date": "2026-10-13",
+    "datasets": [
+      {
+        "name": "Agentic Red Team RU (OpenCode tool-calling)",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/papa-chewbacca/red_team_ru_opencode_tool_calls",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Multi-Turn Jailbreak Datasets",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/guoshuang/multi-turn_jailbreak_attack_datasets",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Safe Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/vroomnesh/safe-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Viethallu A Vietnamese Llm Hallucination Benchmark",
+        "category": "Deception",
+        "url": "https://github.com/Tran-Ngoc-Thai-AI/VietHallu-A-Vietnamese-LLM-Hallucination-Benchmark",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-10-12",
     "datasets": [
       {
