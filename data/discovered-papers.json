@@ -4272,5 +4272,65 @@
     "url": "https://www.lesswrong.com/posts/npbA6xTq24PqsybQe/seed-diversity-as-a-hypothetical-anti-distillation-mechanism",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "RH-Detect: A Unified Benchmark for Reward Hacking Detection",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Junwei Quan et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-07",
+    "summary": "Reward hacking, where a model exploits an evaluation signal without completing the intended task, threatens the reliability of deployed language model.",
+    "url": "https://arxiv.org/abs/2610.10947",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Distillation for Incrimination and Distillation for Capabilities",
+    "topic": "Subliminal learning",
+    "kind": "Paper",
+    "authors": "Sebastian Prasanna et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-07",
+    "summary": "Powerful misaligned AI models might recognize alignment evaluations and strategically behave well on them, rendering direct audits.",
+    "url": "https://arxiv.org/abs/2610.11012",
+    "confidence": "Broad",
+    "matchedBy": "subliminal transfer"
+  },
+  {
+    "title": "The Persona Hierarchy Model: Understanding Contextual Generalization in Fine-Tuning LLMs",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Jiachen Zhao et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-07",
+    "summary": "Language models are routinely fine-tuned under a fixed context, such as a generic system prompt, persona or domain-specific instruction, yet the learned behavior sometimes stays confined to that context and sometimes broadly generalizes to unseen.",
+    "url": "https://arxiv.org/abs/2610.09384",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Base Models Can Detect Hidden Intentions that Prompted Classifiers Miss",
+    "topic": "Subliminal learning",
+    "kind": "LessWrong",
+    "authors": "Oz Amram",
+    "year": 2026,
+    "publishedAt": "2026-10-12",
+    "summary": "TL;DR The Persona Selection Model (PSM) posits that post-training selects a persona the model learned during.",
+    "url": "https://www.lesswrong.com/posts/YvNkA3ZzsCv9QQmXR/base-models-can-detect-hidden-intentions-that-prompted",
+    "confidence": "Medium",
+    "matchedBy": "subliminal learning"
+  },
+  {
+    "title": "Good Evals Are Hard: An ImpossibleBench Audit",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Simon Mendelsohn",
+    "year": 2026,
+    "publishedAt": "2026-10-12",
+    "summary": "(This post is a summary. See GitHub Repo for details .) Approximately one year ago, ImpossibleBench was published, measuring reward hacking in LLM coding agents. I ran the LiveCodeBench (LCB) half of ImpossibleBench on current (October 2026) frontier models.",
+    "url": "https://www.lesswrong.com/posts/qnrjAhiqire7JeoN2/good-evals-are-hard-an-impossiblebench-audit",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]

@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-10-13",
+    "papers": [
+      {
+        "title": "RH-Detect: A Unified Benchmark for Reward Hacking Detection",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Junwei Quan et al.",
+        "url": "https://arxiv.org/abs/2610.10947"
+      },
+      {
+        "title": "Distillation for Incrimination and Distillation for Capabilities",
+        "topic": "Subliminal learning",
+        "kind": "Paper",
+        "authors": "Sebastian Prasanna et al.",
+        "url": "https://arxiv.org/abs/2610.11012"
+      },
+      {
+        "title": "The Persona Hierarchy Model: Understanding Contextual Generalization in Fine-Tuning LLMs",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Jiachen Zhao et al.",
+        "url": "https://arxiv.org/abs/2610.09384"
+      },
+      {
+        "title": "Base Models Can Detect Hidden Intentions that Prompted Classifiers Miss",
+        "topic": "Subliminal learning",
+        "kind": "LessWrong",
+        "authors": "Oz Amram",
+        "url": "https://www.lesswrong.com/posts/YvNkA3ZzsCv9QQmXR/base-models-can-detect-hidden-intentions-that-prompted"
+      },
+      {
+        "title": "Good Evals Are Hard: An ImpossibleBench Audit",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Simon Mendelsohn",
+        "url": "https://www.lesswrong.com/posts/qnrjAhiqire7JeoN2/good-evals-are-hard-an-impossiblebench-audit"
+      }
+    ]
+  },
+  {
     "date": "2026-10-12",
     "papers": [
       {
