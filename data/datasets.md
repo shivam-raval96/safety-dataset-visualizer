@@ -4191,3 +4191,57 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, hallucination
 - description: VietHallu-A-Vietnamese-LLM-Hallucination-Benchmark.
 - discovery-source: https://github.com/Tran-Ngoc-Thai-AI/VietHallu-A-Vietnamese-LLM-Hallucination-Benchmark
+
+## DailyDilemmas, relabeled
+
+- organization: wassname
+- category: Values and preferences
+- samples: 2.1M
+- year: 2026
+- published-at: 2026-10-12
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/wassname/daily_dilemmas-relabeled
+- tags: moral-reasoning, values, llm-as-judge
+- description: DailyDilemmas, relabeled DailyDilemmas is 1,360 short moral dilemmas. Each has two possible actions and a list of the people affected. Its authors used GPT-4.
+
+## Clinical Llm Benchmark Replication
+
+- organization: ftavafi
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-13
+- license: Unknown
+- citations: 0
+- url: https://github.com/ftavafi/clinical-llm-benchmark-replication
+- tags: github release, hallucination
+- description: Replication of the LongHealth clinical LLM benchmark (Tasks 1-3): long-document medical QA and hallucination with Mistral, Llama 4 and GPT-3.5.
+- discovery-source: https://github.com/ftavafi/clinical-llm-benchmark-replication
+
+## AgentSafeEvo Attacker SFT Data
+
+- organization: lalalamdbf
+- category: Agentic
+- samples: 20.3k
+- year: 2026
+- published-at: 2026-10-13
+- license: UNKNOWN
+- citations: 0
+- url: https://huggingface.co/datasets/lalalamdbf/AgentSafeEvo-Attacker-SFT-Data
+- tags: agentsafeevo, agent-safety, red-teaming, supervised-fine-tuning, tool-use
+- description: AgentSafeEvo Attacker SFT Data This dataset contains 20,322 supervised fine-tuning examples for initializing the attacker in AgentSafeEvo: Adversarial Co-Evolution for LLM Agent Safety. It.
+
+## Baoyan Agent Benchmark
+
+- organization: yeyuxin777
+- category: Agentic
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-12
+- license: MIT
+- citations: 0
+- url: https://github.com/yeyuxin777/baoyan-agent-benchmark
+- tags: github release, agent
+- description: Sprix AI at 屿智同行 × 保研岛 — an open-source benchmark for AI agents in Baoyan advising and application planning.
+- discovery-source: https://github.com/yeyuxin777/baoyan-agent-benchmark

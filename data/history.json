@@ -1,5 +1,34 @@
 [
   {
+    "date": "2026-10-14",
+    "datasets": [
+      {
+        "name": "DailyDilemmas, relabeled",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/wassname/daily_dilemmas-relabeled",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Clinical Llm Benchmark Replication",
+        "category": "Deception",
+        "url": "https://github.com/ftavafi/clinical-llm-benchmark-replication",
+        "source": "github.com"
+      },
+      {
+        "name": "AgentSafeEvo Attacker SFT Data",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/lalalamdbf/AgentSafeEvo-Attacker-SFT-Data",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Baoyan Agent Benchmark",
+        "category": "Agentic",
+        "url": "https://github.com/yeyuxin777/baoyan-agent-benchmark",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-10-13",
     "datasets": [
       {
