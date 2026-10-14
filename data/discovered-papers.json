@@ -4332,5 +4332,65 @@
     "url": "https://www.lesswrong.com/posts/qnrjAhiqire7JeoN2/good-evals-are-hard-an-impossiblebench-audit",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "How to post-train on a surrogate: Envelope sampling mitigates reward hacking",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Sanjit Dandapanthula et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-08",
+    "summary": "Large language models (LLMs) are commonly post-trained against LLM judges and other cheap surrogates because the true reward, such as human preference, is too expensive to query at.",
+    "url": "https://arxiv.org/abs/2610.11281",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Who Verifies the Verifier? Co-Evolving Inspectable Graders with Self-Improving Agents",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Xing Zhang et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-08",
+    "summary": "We changed the agent: did it actually get better? Every self-improving agent loop answers this hundreds of times, and every answer comes from a verifier. On open-ended tasks none exists, so the loop is handed a hand-written rubric or a bare LLM judge grading.",
+    "url": "https://arxiv.org/abs/2610.11464",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Defence against the dark arts of distillation: Unsupervised discovery of subliminal learning",
+    "topic": "Subliminal learning",
+    "kind": "Paper",
+    "authors": "Joseph Egan et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-09",
+    "summary": "When a language model is distilled from a teacher that shares its base parameters, the student can inherit behavioural traits of the teacher---including misalignment---even from data that is semantically unrelated to the trait (Cloud et al.",
+    "url": "https://arxiv.org/abs/2610.13536",
+    "confidence": "High",
+    "matchedBy": "subliminal learning"
+  },
+  {
+    "title": "Personas in a Pre-Internet Language Model",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "David Africa",
+    "year": 2026,
+    "publishedAt": "2026-10-13",
+    "summary": "David Africa & Nick Levine TLDR We ran several persona experiments on Talkie, a 13B model trained only on English text from before.",
+    "url": "https://www.lesswrong.com/posts/qchwP6wt4teHgxoKu/personas-in-a-pre-internet-language-model",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Thoughts on alignment science vs. engineering",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Leonard Dung",
+    "year": 2026,
+    "publishedAt": "2026-10-13",
+    "summary": "AI disclosure: I made detailed notes on the basis of which Claude generated a first draft that I then substantially.",
+    "url": "https://www.lesswrong.com/posts/Dz2mwB6T32hsPHxeM/thoughts-on-alignment-science-vs-engineering",
+    "confidence": "Broad",
+    "matchedBy": "alignment faking"
   }
 ]

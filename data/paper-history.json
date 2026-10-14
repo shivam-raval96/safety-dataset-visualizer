@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-10-14",
+    "papers": [
+      {
+        "title": "How to post-train on a surrogate: Envelope sampling mitigates reward hacking",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Sanjit Dandapanthula et al.",
+        "url": "https://arxiv.org/abs/2610.11281"
+      },
+      {
+        "title": "Who Verifies the Verifier? Co-Evolving Inspectable Graders with Self-Improving Agents",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Xing Zhang et al.",
+        "url": "https://arxiv.org/abs/2610.11464"
+      },
+      {
+        "title": "Defence against the dark arts of distillation: Unsupervised discovery of subliminal learning",
+        "topic": "Subliminal learning",
+        "kind": "Paper",
+        "authors": "Joseph Egan et al.",
+        "url": "https://arxiv.org/abs/2610.13536"
+      },
+      {
+        "title": "Personas in a Pre-Internet Language Model",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "David Africa",
+        "url": "https://www.lesswrong.com/posts/qchwP6wt4teHgxoKu/personas-in-a-pre-internet-language-model"
+      },
+      {
+        "title": "Thoughts on alignment science vs. engineering",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Leonard Dung",
+        "url": "https://www.lesswrong.com/posts/Dz2mwB6T32hsPHxeM/thoughts-on-alignment-science-vs-engineering"
+      }
+    ]
+  },
+  {
     "date": "2026-10-13",
     "papers": [
       {
