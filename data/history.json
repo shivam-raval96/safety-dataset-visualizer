@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-10-15",
+    "datasets": [
+      {
+        "name": "Turkish Prompt Injection Benchmark",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/halilneed/turkish-prompt-injection-benchmark",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Turkish Prompt Injection False-Alarm Benchmark",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/halilneed/turkish-prompt-injection-false-alarm-benchmark",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Prompt Injection Evaluation Lab",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-10-14",
     "datasets": [
       {

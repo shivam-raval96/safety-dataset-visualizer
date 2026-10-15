@@ -4245,3 +4245,43 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, agent
 - description: Sprix AI at 屿智同行 × 保研岛 — an open-source benchmark for AI agents in Baoyan advising and application planning.
 - discovery-source: https://github.com/yeyuxin777/baoyan-agent-benchmark
+
+## Turkish Prompt Injection Benchmark
+
+- organization: halilneed
+- category: Jailbreak / red-teaming
+- samples: 6.7k
+- year: 2026
+- published-at: 2026-10-14
+- license: OTHER
+- citations: 0
+- url: https://huggingface.co/datasets/halilneed/turkish-prompt-injection-benchmark
+- tags: prompt-injection, jailbreak-detection, llm-security, guardrails, turkish
+- description: Turkish Prompt Injection Benchmark One place to test a prompt-injection guard on Turkish text from both sides: does it catch attacks, and does it.
+
+## Turkish Prompt Injection False-Alarm Benchmark
+
+- organization: halilneed
+- category: Jailbreak / red-teaming
+- samples: 2.9k
+- year: 2026
+- published-at: 2026-10-14
+- license: CC0 1.0
+- citations: 0
+- url: https://huggingface.co/datasets/halilneed/turkish-prompt-injection-false-alarm-benchmark
+- tags: prompt-injection, llm-security, guardrails, false-positives, turkish
+- description: Turkish Prompt Injection False-Alarm Benchmark 2,875 ordinary Turkish texts, all benign. It measures one thing: how often a prompt-injection guard blocks normal Turkish business.
+
+## Llm Prompt Injection Evaluation Lab
+
+- organization: FAHAD-s3do
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-12
+- license: Unknown
+- citations: 0
+- url: https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab
+- tags: github release, injection, prompt
+- description: Offline prompt-injection response evaluation with explicit criteria, coverage reporting and synthetic fixtures.
+- discovery-source: https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab
