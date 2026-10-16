@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-10-16",
+    "papers": [
+      {
+        "title": "Metric-Driven Reinforcement Learning for Object Hallucination Reduction in LVLM-Based Image Captioning",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Thanh Nguyen et al.",
+        "url": "https://arxiv.org/abs/2610.14976"
+      },
+      {
+        "title": "GLM-5.3 Sometimes Considers How Train-Time Actions Shape Future Behavior",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Axel Højmark",
+        "url": "https://www.lesswrong.com/posts/R5g8YT25G9DXJJ48n/glm-5-3-sometimes-considers-how-train-time-actions-shape"
+      },
+      {
+        "title": "Superhuman charisma is coming, and will be tremendously fun and interesting and cause lots of problems",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Carleton Imbens",
+        "url": "https://www.lesswrong.com/posts/aZTBBfbfY9GQ48FG7/superhuman-charisma-is-coming-and-will-be-tremendously-fun"
+      }
+    ]
+  },
+  {
     "date": "2026-10-14",
     "papers": [
       {

@@ -4392,5 +4392,41 @@
     "url": "https://www.lesswrong.com/posts/Dz2mwB6T32hsPHxeM/thoughts-on-alignment-science-vs-engineering",
     "confidence": "Broad",
     "matchedBy": "alignment faking"
+  },
+  {
+    "title": "Metric-Driven Reinforcement Learning for Object Hallucination Reduction in LVLM-Based Image Captioning",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Thanh Nguyen et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-10",
+    "summary": "Large Vision-Language Models (LVLMs) have excelled in joint visual and language understanding, particularly in image.",
+    "url": "https://arxiv.org/abs/2610.14976",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "GLM-5.3 Sometimes Considers How Train-Time Actions Shape Future Behavior",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Axel Højmark",
+    "year": 2026,
+    "publishedAt": "2026-10-15",
+    "summary": "Authors: Axel Højmark*, Ezra Newman* (*Equal contribution) While reviewing transcripts from standard behavioral evaluations of GLM-5.3, we noticed that the model occasionally reasons, unprompted, about how its actions will shape future.",
+    "url": "https://www.lesswrong.com/posts/R5g8YT25G9DXJJ48n/glm-5-3-sometimes-considers-how-train-time-actions-shape",
+    "confidence": "Broad",
+    "matchedBy": "alignment faking"
+  },
+  {
+    "title": "Superhuman charisma is coming, and will be tremendously fun and interesting and cause lots of problems",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Carleton Imbens",
+    "year": 2026,
+    "publishedAt": "2026-10-15",
+    "summary": "With the recent math-pocalipse on everyone’s minds, and writing code by hand well a thing of the past, it is natural to wonder what domains frontier AI models will find superhuman ability in.",
+    "url": "https://www.lesswrong.com/posts/aZTBBfbfY9GQ48FG7/superhuman-charisma-is-coming-and-will-be-tremendously-fun",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]
