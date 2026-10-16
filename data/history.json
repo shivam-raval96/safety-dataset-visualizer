@@ -1,5 +1,64 @@
 [
   {
+    "date": "2026-10-16",
+    "datasets": [
+      {
+        "name": "Preference Integrity Benchmark (PIB) v1.0.1",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/PAOP123/preference-integrity-bench",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Agent Trajectory Preference Pairs",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/rmems/agent-trajectory-preference-pairs",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Redteaming Safety Evals",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/Riffmax2030-hub/llm-redteaming-safety-evals",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Evaluation Suite",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/avinashmyerolkar/llm-evaluation-suite",
+        "source": "github.com"
+      },
+      {
+        "name": "Benchmark Sycophancy",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/pooriaarab/benchmark-sycophancy",
+        "source": "github.com"
+      },
+      {
+        "name": "Deception Probe Datasets: D-RepE, D-Role, D-MASK",
+        "category": "Deception",
+        "url": "https://huggingface.co/datasets/techsachin/deception-probe-datasets",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Your Eval Is Lying",
+        "category": "Deception",
+        "url": "https://github.com/amandachan-ai/your-eval-is-lying",
+        "source": "github.com"
+      },
+      {
+        "name": "Agent Tool-Calling Multi-Turn Reasoning Traces (Community Edition)",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/ayushjoshi2012/agent-tool-calling-reasoning-traces",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Long-context agent benchmark: facts, tool calls and rules far back in the context",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/thinletter/longctx-agent-bench",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-10-15",
     "datasets": [
       {

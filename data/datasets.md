@@ -4285,3 +4285,124 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, injection, prompt
 - description: Offline prompt-injection response evaluation with explicit criteria, coverage reporting and synthetic fixtures.
 - discovery-source: https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab
+
+## Preference Integrity Benchmark (PIB) v1.0.1
+
+- organization: PAOP123
+- category: Values and preferences
+- samples: 20.6k
+- year: 2026
+- published-at: 2026-10-15
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/PAOP123/preference-integrity-bench
+- tags: evaluation, sycophancy, preferences, consistency
+- description: Preference Integrity Benchmark (PIB) v1.0 Version: v1.0.1, 15 October 2026: corrects the T7 position test (deviation 8); no score changes. A v1.1 may update.
+
+## Agent Trajectory Preference Pairs
+
+- organization: rmems
+- category: Values and preferences
+- samples: 46
+- year: 2026
+- published-at: 2026-10-15
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/rmems/agent-trajectory-preference-pairs
+- tags: synthetic, agentic, coding, preference, dpo, tool-use
+- description: Agent Trajectory Preference Pairs Purpose Same-context preference pairs for agents: one task, a verified-good trajectory (chosen) and a realistically bad one (rejected), e.g. hallucinated.
+
+## Llm Redteaming Safety Evals
+
+- organization: Riffmax2030-hub
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-15
+- license: Unknown
+- citations: 0
+- url: https://github.com/Riffmax2030-hub/llm-redteaming-safety-evals
+- tags: github release, jailbreak, prompt
+- description: Automated adversarial prompt testing, jailbreak detection, and safety evaluation framework in Python.
+- discovery-source: https://github.com/Riffmax2030-hub/llm-redteaming-safety-evals
+
+## Llm Evaluation Suite
+
+- organization: avinashmyerolkar
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-15
+- license: Unknown
+- citations: 0
+- url: https://github.com/avinashmyerolkar/llm-evaluation-suite
+- tags: github release, team
+- description: Layered evaluation suite for LLM/RAG apps: component, end-to-end, quality & red-team safety evals with LLM-as-a-judge (DeepEval, G-Eval).
+- discovery-source: https://github.com/avinashmyerolkar/llm-evaluation-suite
+
+## Benchmark Sycophancy
+
+- organization: pooriaarab
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-15
+- license: MIT
+- citations: 0
+- url: https://github.com/pooriaarab/benchmark-sycophancy
+- tags: github release, harmful, refusal
+- description: Deterministic LLM safety benchmark for sycophancy, harmful-plan pushback, and calibrated refusal.
+- discovery-source: https://github.com/pooriaarab/benchmark-sycophancy
+
+## Deception Probe Datasets: D-RepE, D-Role, D-MASK
+
+- organization: techsachin
+- category: Deception
+- samples: 12k
+- year: 2026
+- published-at: 2026-10-15
+- license: CC BY SA 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/techsachin/deception-probe-datasets
+- tags: deception, interpretability, linear-probes, ai-safety, gemma
+- description: Deception Probe Datasets: D-RepE, D-Role, D-MASK These are the contrastive honest/deceptive datasets used in the paper "Pressure-Testing Deception Probes in LLMs: Scaling, Robustness, and.
+
+## Your Eval Is Lying
+
+- organization: amandachan-ai
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-15
+- license: MIT
+- citations: 0
+- url: https://github.com/amandachan-ai/your-eval-is-lying
+- tags: github release, lying
+- description: A field guide to the failure modes of measurement itself, when what you are measuring is a language model. Part I: three chapters, each.
+- discovery-source: https://github.com/amandachan-ai/your-eval-is-lying
+
+## Agent Tool-Calling Multi-Turn Reasoning Traces (Community Edition)
+
+- organization: ayushjoshi2012
+- category: Agentic
+- samples: 194
+- year: 2026
+- published-at: 2026-10-15
+- license: CC BY NC 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/ayushjoshi2012/agent-tool-calling-reasoning-traces
+- tags: synthetic, reasoning, tool-calling, function-calling, agentic, failure-recovery
+- description: Agent Tool-Calling Multi-Turn Reasoning Traces (Community Edition) Commercial Enterprise Pack & Full Uncapped Splits This Hugging Face dataset is a capped community preview (max.
+
+## Long-context agent benchmark: facts, tool calls and rules far back in the context
+
+- organization: thinletter
+- category: Agentic
+- samples: 545
+- year: 2026
+- published-at: 2026-10-15
+- license: CC BY SA 4.0, CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/thinletter/longctx-agent-bench
+- tags: long-context, agents, tool-use, function-calling, instruction-following, evaluation
+- description: Long-context agent benchmark: facts, tool calls and rules far back in the context Does a language model still use information that lies far back.
