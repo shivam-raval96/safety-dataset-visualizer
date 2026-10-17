@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-10-17",
+    "papers": [
+      {
+        "title": "Gradient Routing Localizes and Removes Unintended Behaviors in RL",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Jake Ward et al.",
+        "url": "https://arxiv.org/abs/2610.17062"
+      },
+      {
+        "title": "Do Emergent Misalignment Models Share a Circuit?",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Muhammad Haseeb & Muhammad Tahir",
+        "url": "https://arxiv.org/abs/2610.20887"
+      },
+      {
+        "title": "Screwtape: Adversarial Transcript Editing for Monitor Red-Teaming",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "BarAltiva",
+        "url": "https://www.lesswrong.com/posts/Z8jjgjfpAJocqZiET/screwtape-adversarial-transcript-editing-for-monitor-red"
+      },
+      {
+        "title": "Bad Guy Tokens",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "axel_sdq",
+        "url": "https://www.lesswrong.com/posts/fnScQKMYMB5uyuHvm/bad-guy-tokens"
+      }
+    ]
+  },
+  {
     "date": "2026-10-16",
     "papers": [
       {
