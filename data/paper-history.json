@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-10-18",
+    "papers": [
+      {
+        "title": "Unfair and Unsafe: Everyday Bias Triggers Emergent Misalignment",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Alex Martí Guiu et al.",
+        "url": "https://arxiv.org/abs/2610.15961"
+      },
+      {
+        "title": "Scalable Weak-to-Strong Verifier Hardening for Agent Environments",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Chong Zeng et al.",
+        "url": "https://arxiv.org/abs/2610.15924"
+      },
+      {
+        "title": "CarrotParsnipBench: A Lightweight Multi-Agent Deception and Detection Eval",
+        "topic": "Swarm misalignment",
+        "kind": "LessWrong",
+        "authors": "Bicuspid Valve",
+        "url": "https://www.lesswrong.com/posts/yaf3wGNfjGaPkoewA/carrotparsnipbench-a-lightweight-multi-agent-deception-and"
+      },
+      {
+        "title": "How far is ZKP from compute verification in high-stakes environments?",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "zraix",
+        "url": "https://www.lesswrong.com/posts/4nbLw7tQFW77A8fJe/how-far-is-zkp-from-compute-verification-in-high-stakes"
+      }
+    ]
+  },
+  {
     "date": "2026-10-17",
     "papers": [
       {
