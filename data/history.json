@@ -1,5 +1,88 @@
 [
   {
+    "date": "2026-10-19",
+    "datasets": [
+      {
+        "name": "Arabic Rlhf Preferences",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/Yousef1258852/arabic-rlhf-preferences",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Chess Sandbagging Eval",
+        "category": "Eval awareness",
+        "url": "https://github.com/YashRao10/chess-sandbagging-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Prompt Injection Eval Suite",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/Athithya117/prompt-injection-eval-suite",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Recognition–Refusal Misalignment (math800 and code800)",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/yucheng-du/recognition-refusal-misalignment",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Translation Refusal v1",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/SinclairSchneider/translation_refusal_v1",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Awesome Llm Evals",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/alleyxd/awesome-llm-evals",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Eval Regression Harness",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/imharxhit/llm-eval-regression-harness",
+        "source": "github.com"
+      },
+      {
+        "name": "Rag Prompt Injection Evaluation",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/GloriousGeek/rag-prompt-injection-evaluation",
+        "source": "github.com"
+      },
+      {
+        "name": "Stats Reasoning Eval",
+        "category": "Bias",
+        "url": "https://github.com/AbhayJuloori/stats-reasoning-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "CRM Truthfulness",
+        "category": "Deception",
+        "url": "https://huggingface.co/datasets/pooria/benchmark-crm-truthfulness",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Evaluation Factuality Benchmark",
+        "category": "Deception",
+        "url": "https://github.com/yousefkhaled2005/llm-evaluation-factuality-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "LeanZero Agentic Benchmarks",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/Mihai-LeanZero/leanzero-agentic-benchmarks",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "x402 Agent Safety Bench",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/x402Fizzl/x402-agent-safety-bench",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-10-16",
     "datasets": [
       {

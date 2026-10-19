@@ -4406,3 +4406,178 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/thinletter/longctx-agent-bench
 - tags: long-context, agents, tool-use, function-calling, instruction-following, evaluation
 - description: Long-context agent benchmark: facts, tool calls and rules far back in the context Does a language model still use information that lies far back.
+
+## Arabic Rlhf Preferences
+
+- organization: Yousef1258852
+- category: Values and preferences
+- samples: 1k
+- year: 2026
+- published-at: 2026-10-18
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/Yousef1258852/arabic-rlhf-preferences
+- tags: rlhf, dpo, alignment, preference-dataset, arabic-llm
+- description: Arabic DPO & RLHF Preference Dataset (1,000 Curated Pairs) 📌 Dataset Overview A high-quality, human-curated paired preference dataset designed for Direct Preference Optimization (DPO).
+
+## Chess Sandbagging Eval
+
+- organization: YashRao10
+- category: Eval awareness
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-16
+- license: Unknown
+- citations: 0
+- url: https://github.com/YashRao10/chess-sandbagging-eval
+- tags: github release, eval, sandbagging
+- description: Can an LLM play down like a human? AI capability-elicitation / sandbagging eval using chess as a gradable testbed.
+- discovery-source: https://github.com/YashRao10/chess-sandbagging-eval
+
+## Prompt Injection Eval Suite
+
+- organization: Athithya117
+- category: Jailbreak / red-teaming
+- samples: 24.8k
+- year: 2026
+- published-at: 2026-10-17
+- license: OTHER
+- citations: 0
+- url: https://huggingface.co/datasets/Athithya117/prompt-injection-eval-suite
+- tags: prompt-injection, jailbreak, llm-security, evaluation
+- description: Prompt Injection Eval Suite This is the evaluation suite behind the Prompt Injection Guard model card, packaged so anyone can reproduce the comparison or.
+
+## Recognition–Refusal Misalignment (math800 and code800)
+
+- organization: yucheng-du
+- category: Jailbreak / red-teaming
+- samples: 3.2k
+- year: 2026
+- published-at: 2026-10-16
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/yucheng-du/recognition-refusal-misalignment
+- tags: emnlp-2026, unanswerability, abstention, mathematics, code
+- description: Recognition–Refusal Misalignment: math800 and code800 This dataset contains the two self-built, frozen prompt sets released with Recognition–Refusal Misalignment in LLMs: Why Models Answer Structurally.
+
+## Translation Refusal v1
+
+- organization: SinclairSchneider
+- category: Jailbreak / red-teaming
+- samples: 757
+- year: 2026
+- published-at: 2026-10-16
+- license: OTHER
+- citations: 0
+- url: https://huggingface.co/datasets/SinclairSchneider/translation_refusal_v1
+- tags: machine-translation, refusal, llm-safety, over-refusal, forensic-linguistics, hate-speech
+- description: Translation Refusal v1 ⚠️ Disclaimer – offensive language This dataset contains extremely offensive language. It includes racist, antisemitic, homophobic and misogynist slurs, hate speech.
+
+## Awesome Llm Evals
+
+- organization: alleyxd
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-18
+- license: CC0-1.0
+- citations: 0
+- url: https://github.com/alleyxd/awesome-llm-evals
+- tags: github release, teaming
+- description: Curated open-source tools for evaluating LLMs, RAG and agents: benchmark harnesses, app testing, LLM-as-judge, red teaming and the benchmarks worth running.
+- discovery-source: https://github.com/alleyxd/awesome-llm-evals
+
+## Llm Eval Regression Harness
+
+- organization: imharxhit
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-18
+- license: Unknown
+- citations: 0
+- url: https://github.com/imharxhit/llm-eval-regression-harness
+- tags: github release, injection, prompt, refusal
+- description: Automated LLM & RAG evaluation harness in Python (Pytest + GitHub Actions) measuring Faithfulness, Context Recall, JSON Schema compliance, prompt-injection refusal, and p95 latency.
+- discovery-source: https://github.com/imharxhit/llm-eval-regression-harness
+
+## Rag Prompt Injection Evaluation
+
+- organization: GloriousGeek
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-18
+- license: MIT
+- citations: 0
+- url: https://github.com/GloriousGeek/rag-prompt-injection-evaluation
+- tags: github release, injection, prompt
+- description: An empirical evaluation of prompt injection vulnerabilities and trust-boundary failures in retrieval-augmented language model systems.
+- discovery-source: https://github.com/GloriousGeek/rag-prompt-injection-evaluation
+
+## Stats Reasoning Eval
+
+- organization: AbhayJuloori
+- category: Bias
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-16
+- license: Unknown
+- citations: 0
+- url: https://github.com/AbhayJuloori/stats-reasoning-eval
+- tags: github release, bias
+- description: Applied statistics eval for LLMs: 150 data prompts with reference solutions, 60 planted methodology flaws, LLM judge checked with Cohen's kappa and position-bias swaps.
+- discovery-source: https://github.com/AbhayJuloori/stats-reasoning-eval
+
+## CRM Truthfulness
+
+- organization: pooria
+- category: Deception
+- samples: 40
+- year: 2026
+- published-at: 2026-10-16
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/pooria/benchmark-crm-truthfulness
+- tags: llm-evaluation, ai-benchmark, model-evaluation, agent-benchmark, crm, truthfulness, commerce, safety
+- description: CRM Truthfulness Does a sales agent claim only what the evidence supports? What it measures Whether a sales agent emails only contacts who consented.
+
+## Llm Evaluation Factuality Benchmark
+
+- organization: yousefkhaled2005
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-18
+- license: NOASSERTION
+- citations: 0
+- url: https://github.com/yousefkhaled2005/llm-evaluation-factuality-benchmark
+- tags: github release, hallucination
+- description: 3-tier Arabic hallucination and factuality benchmark framework evaluating GPT-4o, LLaMA 3, Mistral, and Claude across 1,200 domain queries.
+- discovery-source: https://github.com/yousefkhaled2005/llm-evaluation-factuality-benchmark
+
+## LeanZero Agentic Benchmarks
+
+- organization: Mihai-LeanZero
+- category: Agentic
+- samples: 99
+- year: 2026
+- published-at: 2026-10-17
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/Mihai-LeanZero/leanzero-agentic-benchmarks
+- tags: leaderboard, agents, code-generation, llm-evaluation, atlassian-forge
+- description: LeanZero Agentic Benchmarks Aggregated results of LeanZero's agentic coding benchmarks, exactly as ranked on leanzero.net/agentic-benchmarks. One row per model per published benchmark run (a.
+
+## x402 Agent Safety Bench
+
+- organization: x402Fizzl
+- category: Agentic
+- samples: 41
+- year: 2026
+- published-at: 2026-10-18
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/x402Fizzl/x402-agent-safety-bench
+- tags: x402, ai-agents, agent-safety, llm-evaluation, leaderboard, tool-use, payments, stablecoins
+- description: x402 Agent Safety Bench Do AI agents pay safely? An AI agent with a wallet gets everyday tasks that involve paying APIs with x402.
