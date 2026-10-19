@@ -4524,5 +4524,41 @@
     "url": "https://www.lesswrong.com/posts/4nbLw7tQFW77A8fJe/how-far-is-zkp-from-compute-verification-in-high-stakes",
     "confidence": "Broad",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "The Snitch Reflex: Can We Force Language Models to Be Compulsively Honest?",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Sean Hacking",
+    "year": 2026,
+    "publishedAt": "2026-10-18",
+    "summary": "I fine-tuned a toy model to vomit back arbitrary tokens. I used them as Markers tied to specific subsets of its training data to connect training to generation. Training + testing cost $0.49 on an RTX 4090. Could help with interp and safety monitoring. Chain.",
+    "url": "https://www.lesswrong.com/posts/AiGPEwuaNzkwgtPFK/the-snitch-reflex-can-we-force-language-models-to-be-1",
+    "confidence": "Medium",
+    "matchedBy": "deceptive alignment"
+  },
+  {
+    "title": "Knowingly Wrong",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Ariana Villegas",
+    "year": 2026,
+    "publishedAt": "2026-10-18",
+    "summary": "This research was completed for London AI Safety Research (LASR) Labs Summer.",
+    "url": "https://www.lesswrong.com/posts/qmnrZ3YFpSKfLQ59b/knowingly-wrong",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Was the HuggingFace hacking incident scheming?",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Vika",
+    "year": 2026,
+    "publishedAt": "2026-10-18",
+    "summary": "In July 2026, internal OpenAI agents hacked HuggingFace (HF) in order to figure out how their evaluation grader.",
+    "url": "https://www.lesswrong.com/posts/F2feAMiHGAQgHHutg/was-the-huggingface-hacking-incident-scheming",
+    "confidence": "Broad",
+    "matchedBy": "deceptive alignment"
   }
 ]

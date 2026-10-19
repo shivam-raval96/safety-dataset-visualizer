@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-10-19",
+    "papers": [
+      {
+        "title": "The Snitch Reflex: Can We Force Language Models to Be Compulsively Honest?",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Sean Hacking",
+        "url": "https://www.lesswrong.com/posts/AiGPEwuaNzkwgtPFK/the-snitch-reflex-can-we-force-language-models-to-be-1"
+      },
+      {
+        "title": "Knowingly Wrong",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Ariana Villegas",
+        "url": "https://www.lesswrong.com/posts/qmnrZ3YFpSKfLQ59b/knowingly-wrong"
+      },
+      {
+        "title": "Was the HuggingFace hacking incident scheming?",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Vika",
+        "url": "https://www.lesswrong.com/posts/F2feAMiHGAQgHHutg/was-the-huggingface-hacking-incident-scheming"
+      }
+    ]
+  },
+  {
     "date": "2026-10-18",
     "papers": [
       {
