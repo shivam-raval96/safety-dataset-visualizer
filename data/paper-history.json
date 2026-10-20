@@ -1,5 +1,87 @@
 [
   {
+    "date": "2026-10-20",
+    "papers": [
+      {
+        "title": "Rent-Seeking Language Models: Reward Models Set the Prices, Frequent Audits Curb the Rent",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Zixiao Wang et al.",
+        "url": "https://arxiv.org/abs/2610.19832"
+      },
+      {
+        "title": "LeakBench: Auditing Reward Hacking through Prediction-Time Leakage in Clinical Modeling Agents",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Xiaoyuan Bao et al.",
+        "url": "https://arxiv.org/abs/2610.26088"
+      },
+      {
+        "title": "Mitigating Reward Hacking in Preference Reward Models with Evolving Penalties",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Afonso Baldo et al.",
+        "url": "https://arxiv.org/abs/2610.26496"
+      },
+      {
+        "title": "GLM-5.1 Has ~Astra Level CoT Control",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Usman Anwar",
+        "url": "https://www.lesswrong.com/posts/q3pckKRxRXWBthbKb/glm-5-1-has-astra-level-cot-control"
+      },
+      {
+        "title": "Models Trained to Evade Topic Probes Struggle to Answer Questions about Those Topics",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Taiga Someya",
+        "url": "https://www.lesswrong.com/posts/2qnLtNiBph5EjBf6c/models-trained-to-evade-topic-probes-struggle-to-answer"
+      },
+      {
+        "title": "More Capable Models Write Better Probe Evasion Prompts",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Nabil Baugher",
+        "url": "https://www.lesswrong.com/posts/fX3FA4ensmsdcZfcD/more-capable-models-write-better-probe-evasion-prompts"
+      },
+      {
+        "title": "A Suggestion for RLHF Improvements",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Andrew",
+        "url": "https://www.lesswrong.com/posts/GvEc8BNRD42Rdmqyp/a-suggestion-for-rlhf-improvements"
+      },
+      {
+        "title": "How Researchers Lie to AIs",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Alessandro Drake",
+        "url": "https://www.lesswrong.com/posts/rgDSPa2hP4FW9if6E/how-researchers-lie-to-ais"
+      },
+      {
+        "title": "LLMs Learn to Evade Latent Monitors from Prior Feedback Alone",
+        "topic": "Obfuscation",
+        "kind": "LessWrong",
+        "authors": "Hugo Lyons Keenan",
+        "url": "https://www.lesswrong.com/posts/adZq8a5s5K3FomyHC/llms-learn-to-evade-latent-monitors-from-prior-feedback"
+      },
+      {
+        "title": "Memes, not agents, are what will kill us",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Florian_Dietz",
+        "url": "https://www.lesswrong.com/posts/hvLm4zRgzfRLH6H23/memes-not-agents-are-what-will-kill-us"
+      },
+      {
+        "title": "The Case for Building AI Safety Tools",
+        "topic": "Swarm misalignment",
+        "kind": "LessWrong",
+        "authors": "ankurpandey42",
+        "url": "https://www.lesswrong.com/posts/swRuRr5BbyuQiFpwh/the-case-for-building-ai-safety-tools"
+      }
+    ]
+  },
+  {
     "date": "2026-10-19",
     "papers": [
       {
