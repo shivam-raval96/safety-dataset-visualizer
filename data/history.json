@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-10-20",
+    "datasets": [
+      {
+        "name": "Automated Llm Evaluation Regression Testing Framework Ci Cd For Ai",
+        "category": "Eval awareness",
+        "url": "https://github.com/abdullahakram07/Automated-LLM-Evaluation-Regression-Testing-Framework-CI-CD-for-AI-",
+        "source": "github.com"
+      },
+      {
+        "name": "The Market for Red-Teaming & AI Safety Work",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/aitrainingjobs/red-teaming-ai-safety-market",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Prompt Injection Classification",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/SalutefaceAAC/prompt-injection-classification",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Eval Redteam Suite",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/David899b/eval-redteam-suite",
+        "source": "github.com"
+      },
+      {
+        "name": "BiasCLASP",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/llm-jp/BiasCLASP",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Hallucination Evaluation Lab",
+        "category": "Deception",
+        "url": "https://github.com/JAYPARMARQA/llm-hallucination-evaluation-lab",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-10-19",
     "datasets": [
       {

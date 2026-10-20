@@ -4581,3 +4581,84 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/x402Fizzl/x402-agent-safety-bench
 - tags: x402, ai-agents, agent-safety, llm-evaluation, leaderboard, tool-use, payments, stablecoins
 - description: x402 Agent Safety Bench Do AI agents pay safely? An AI agent with a wallet gets everyday tasks that involve paying APIs with x402.
+
+## Automated Llm Evaluation Regression Testing Framework Ci Cd For Ai 
+
+- organization: abdullahakram07
+- category: Eval awareness
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-19
+- license: Unknown
+- citations: 0
+- url: https://github.com/abdullahakram07/Automated-LLM-Evaluation-Regression-Testing-Framework-CI-CD-for-AI-
+- tags: github release, deployment, detection, evaluation
+- description: Upgrade llm-evaluation-lab into a GitHub Actions-ready CI/CD framework that automatically runs evaluation suites (Hallucination detection, Faithfulness, Semantic similarity) against new prompt changes or model.
+- discovery-source: https://github.com/abdullahakram07/Automated-LLM-Evaluation-Regression-Testing-Framework-CI-CD-for-AI-
+
+## The Market for Red-Teaming & AI Safety Work
+
+- organization: aitrainingjobs
+- category: Jailbreak / red-teaming
+- samples: 88
+- year: 2026
+- published-at: 2026-10-19
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/aitrainingjobs/red-teaming-ai-safety-market
+- tags: labor-market, ai-training-data, human-data, job-postings, rlhf
+- description: The Market for Red-Teaming & AI Safety Work AITraining.jobs Research Report, data from 20 Sep 2026 to 17 Oct 2026. By Yuma Heymans, AITraining.jobs.
+
+## Prompt Injection Classification
+
+- organization: SalutefaceAAC
+- category: Jailbreak / red-teaming
+- samples: 2.6k
+- year: 2026
+- published-at: 2026-10-19
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/SalutefaceAAC/prompt-injection-classification
+- tags: prompt-injection, ai-safety, security, classification, synthetic, jailbreak, red-teaming, guardrails
+- description: Prompt Injection Classification Dataset A synthetic dataset of 2,564 labelled examples for training and evaluating prompt injection detection classifiers. Every example is annotated with.
+
+## Eval Redteam Suite
+
+- organization: David899b
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-18
+- license: MIT
+- citations: 0
+- url: https://github.com/David899b/eval-redteam-suite
+- tags: github release, attack, redteam, teaming
+- description: OWASP LLM Top 10 aligned red-teaming suite that measures Attack Success Rate (ASR) and gates on it.
+- discovery-source: https://github.com/David899b/eval-redteam-suite
+
+## BiasCLASP
+
+- organization: llm-jp
+- category: Bias
+- samples: 670
+- year: 2026
+- published-at: 2026-10-19
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/llm-jp/BiasCLASP
+- tags: Unknown
+- description: BiasCLASP 法令と判例に基づく社会的バイアス評価データセットA Dataset of Bias Cases Labeled According to Statutes and Precedents 概要 (Abstract) BiasCLASPは、差別を禁止する日本の雇用関連領域および医療提供関連領域の法令に関する判例等から作成した、AIの差別・社会的バイアスの判断能力を評価するためのデータセットです。データセットの詳細については2026年度人工知能学会全国大会発表論文「法令に基づくローカライゼーションによる社会的バイアス評価」を参照してください。 本データセットには、違法な差別的言動の記述が含まれていることをご了承の上で、AIの安全性・公平性の向上を目的としてご利用ください。 BiasCLASP is a dataset created from statutes and.
+
+## Llm Hallucination Evaluation Lab
+
+- organization: JAYPARMARQA
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-16
+- license: Unknown
+- citations: 0
+- url: https://github.com/JAYPARMARQA/llm-hallucination-evaluation-lab
+- tags: github release, hallucination
+- description: Source-grounded LLM hallucination evaluation: unsupported claim detection, citation coverage, and transparent scores.
+- discovery-source: https://github.com/JAYPARMARQA/llm-hallucination-evaluation-lab
