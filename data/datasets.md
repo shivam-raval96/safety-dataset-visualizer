@@ -4662,3 +4662,44 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, hallucination
 - description: Source-grounded LLM hallucination evaluation: unsupported claim detection, citation coverage, and transparent scores.
 - discovery-source: https://github.com/JAYPARMARQA/llm-hallucination-evaluation-lab
+
+## Llm Eval Security Lab
+
+- organization: ta56419
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-20
+- license: NOASSERTION
+- citations: 0
+- url: https://github.com/ta56419/llm-eval-security-lab
+- tags: github release, injection, prompt, refusal
+- description: Offline RAG and LLM evaluation harness for citations, prompt injection resistance, and refusal checks.
+- discovery-source: https://github.com/ta56419/llm-eval-security-lab
+
+## Agentic Prompt Injection Evals
+
+- organization: bismajeed
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-20
+- license: Unknown
+- citations: 0
+- url: https://github.com/bismajeed/agentic-prompt-injection-evals
+- tags: github release, injection, prompt
+- description: agentic-prompt-injection-evals.
+- discovery-source: https://github.com/bismajeed/agentic-prompt-injection-evals
+
+## Agentic Memory Vector Semantic Drift Deduplication Engine Teaser
+
+- organization: emgena
+- category: Agentic
+- samples: 50
+- year: 2026
+- published-at: 2026-10-20
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/emgena/agentic_memory_vector_semantic_drift_deduplication_engine_teaser
+- tags: mcp, cursor, claude-desktop, agentops, multi-agent, security, distributed-systems
+- description: 🛡️ Agentic Memory Vector Semantic Drift Deduplication Engine (50-Sample Evaluation Teaser) ⚡ Official Evaluation Teaser by Emgena AI Labs.Contains 50 verified production trajectories for.

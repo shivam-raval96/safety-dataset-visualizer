@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-10-21",
+    "datasets": [
+      {
+        "name": "Llm Eval Security Lab",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/ta56419/llm-eval-security-lab",
+        "source": "github.com"
+      },
+      {
+        "name": "Agentic Prompt Injection Evals",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/bismajeed/agentic-prompt-injection-evals",
+        "source": "github.com"
+      },
+      {
+        "name": "Agentic Memory Vector Semantic Drift Deduplication Engine Teaser",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/emgena/agentic_memory_vector_semantic_drift_deduplication_engine_teaser",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-10-20",
     "datasets": [
       {
