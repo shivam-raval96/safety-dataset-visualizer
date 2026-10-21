@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-10-21",
+    "papers": [
+      {
+        "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
+        "topic": "Eval awareness",
+        "kind": "Paper",
+        "authors": "Trizal Garg et al.",
+        "url": "https://arxiv.org/abs/2610.22333"
+      },
+      {
+        "title": "Multi-Reward Hacking: From Aggregation-Induced Drift to Trust-Anchored Defense",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Yushu Li et al.",
+        "url": "https://arxiv.org/abs/2610.21404"
+      },
+      {
+        "title": "Compression Precedes, Content Decides: Emergent Misalignment in Reward Models",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Dhruv Puri & Nikhil Prakash",
+        "url": "https://arxiv.org/abs/2610.22805"
+      }
+    ]
+  },
+  {
     "date": "2026-10-20",
     "papers": [
       {

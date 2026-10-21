@@ -4692,5 +4692,41 @@
     "url": "https://www.lesswrong.com/posts/swRuRr5BbyuQiFpwh/the-case-for-building-ai-safety-tools",
     "confidence": "Broad",
     "matchedBy": "multi-agent safety"
+  },
+  {
+    "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
+    "topic": "Eval awareness",
+    "kind": "Paper",
+    "authors": "Trizal Garg et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-15",
+    "summary": "Large language models (LLMs) can often tell when they are being.",
+    "url": "https://arxiv.org/abs/2610.22333",
+    "confidence": "High",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "Multi-Reward Hacking: From Aggregation-Induced Drift to Trust-Anchored Defense",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Yushu Li et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-15",
+    "summary": "To improve task performance while encouraging desirable response properties, LLM post-training often combines a primary reward (e.g., correctness) with auxiliary rewards (e.g., brevity or.",
+    "url": "https://arxiv.org/abs/2610.21404",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Compression Precedes, Content Decides: Emergent Misalignment in Reward Models",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Dhruv Puri & Nikhil Prakash",
+    "year": 2026,
+    "publishedAt": "2026-10-16",
+    "summary": "Emergent Misalignment - the out of domain generalization of narrow harmful fine-tuning first shown by Betley et.",
+    "url": "https://arxiv.org/abs/2610.22805",
+    "confidence": "High",
+    "matchedBy": "emergent misalignment"
   }
 ]
