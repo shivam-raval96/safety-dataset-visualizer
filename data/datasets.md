@@ -4703,3 +4703,70 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/emgena/agentic_memory_vector_semantic_drift_deduplication_engine_teaser
 - tags: mcp, cursor, claude-desktop, agentops, multi-agent, security, distributed-systems
 - description: 🛡️ Agentic Memory Vector Semantic Drift Deduplication Engine (50-Sample Evaluation Teaser) ⚡ Official Evaluation Teaser by Emgena AI Labs.Contains 50 verified production trajectories for.
+
+## The Market for Red-Teaming & AI Safety Work, September 2026 edition
+
+- organization: aitrainingjobs
+- category: Jailbreak / red-teaming
+- samples: 73
+- year: 2026
+- published-at: 2026-10-21
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/aitrainingjobs/red-teaming-ai-safety-market-2026-09
+- tags: labor-market, ai-training-data, human-data, job-postings, rlhf
+- description: The Market for Red-Teaming & AI Safety Work, September 2026 edition AITraining.jobs Research Report, data from 1 Sep 2026 to 30 Sep 2026. By.
+
+## The Market for Red-Teaming & AI Safety Work, August 2026 edition
+
+- organization: aitrainingjobs
+- category: Jailbreak / red-teaming
+- samples: 65
+- year: 2026
+- published-at: 2026-10-21
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/aitrainingjobs/red-teaming-ai-safety-market-2026-08
+- tags: labor-market, ai-training-data, human-data, job-postings, rlhf
+- description: The Market for Red-Teaming & AI Safety Work, August 2026 edition AITraining.jobs Research Report, data from 1 Aug 2026 to 31 Aug 2026. By.
+
+## Nemotron Rl Indirect Prompt Injection Qwen3.6 35B A3B Fp8 Embeddings 256K
+
+- organization: jackyk02
+- category: Jailbreak / red-teaming
+- samples: 2
+- year: 2026
+- published-at: 2026-10-21
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/jackyk02/nemotron-rl-indirect-prompt-injection-qwen3.6-35b-a3b-fp8-embeddings-256k
+- tags: agents, embeddings, contrastive-learning, qwen3.6, tool-use, safety, prompt-injection, hard-negatives
+- description: Nemotron-RL indirect prompt injection, state/action embeddings with hard negatives: Qwen3.6-35B-A3B-FP8, 256k context Every environment of nvidia/Nemotron-RL-Agentic-Indirect-Prompt-Injection-v1 (revision d738d4f: 1,272 NeMo Gym records over nine.
+
+## Agentic Misalignment Bench
+
+- organization: AI4Collaboration
+- category: Agentic
+- samples: Unknown
+- year: 2026
+- published-at: 2026-04-28
+- license: MIT
+- citations: 0
+- url: https://github.com/AI4Collaboration/Agentic-Misalignment-Bench
+- tags: lesswrong release, agentic misaligment, ai control, ai evaluations, ai safety
+- description: AM-Bench: A theoretically-grounded benchmark for agentic misalignment.
+- discovery-source: https://www.lesswrong.com/posts/JamFW6CSyrHuWW8FB/am-bench-a-theoretically-grounded-benchmark-for-agentic
+
+## Agent Benchmark Wire
+
+- organization: mysukriramli
+- category: Agentic
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-21
+- license: Unknown
+- citations: 0
+- url: https://github.com/mysukriramli/agent-benchmark-wire
+- tags: github release, agent, computer
+- description: This repository will autonomously scrape the leading global AI agent leaderboards (SWE-bench for coding, OSWorld for computer use, GAIA for reasoning) and aggregate them.
+- discovery-source: https://github.com/mysukriramli/agent-benchmark-wire

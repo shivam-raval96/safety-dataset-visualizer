@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-10-22",
+    "datasets": [
+      {
+        "name": "The Market for Red-Teaming & AI Safety Work, September 2026 edition",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/aitrainingjobs/red-teaming-ai-safety-market-2026-09",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "The Market for Red-Teaming & AI Safety Work, August 2026 edition",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/aitrainingjobs/red-teaming-ai-safety-market-2026-08",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Nemotron Rl Indirect Prompt Injection Qwen3.6 35B A3B Fp8 Embeddings 256K",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/jackyk02/nemotron-rl-indirect-prompt-injection-qwen3.6-35b-a3b-fp8-embeddings-256k",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Agentic Misalignment Bench",
+        "category": "Agentic",
+        "url": "https://github.com/AI4Collaboration/Agentic-Misalignment-Bench",
+        "source": "github.com"
+      },
+      {
+        "name": "Agent Benchmark Wire",
+        "category": "Agentic",
+        "url": "https://github.com/mysukriramli/agent-benchmark-wire",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-10-21",
     "datasets": [
       {
