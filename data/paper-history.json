@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-10-22",
+    "papers": [
+      {
+        "title": "ContextLift: Breaking the Spurious Correlation Behind Conditional Emergent Misalignment",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Florian Mai & David Kaczér",
+        "url": "https://arxiv.org/abs/2610.21633"
+      },
+      {
+        "title": "A general approach for alignment generalization and a Stupid New Technique that beat everything",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "AlexG",
+        "url": "https://www.lesswrong.com/posts/7jRjrSNTXu5fgYsDJ/a-general-approach-for-alignment-generalization-and-a-stupid"
+      },
+      {
+        "title": "Aion-3.5 claimed to be an uncensored AI that did not need ethical constraints",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "KevinOShaughnessy",
+        "url": "https://www.lesswrong.com/posts/K77qna2PzEjbpBTeT/aion-3-5-claimed-to-be-an-uncensored-ai-that-did-not-need"
+      },
+      {
+        "title": "AM-Bench: A theoretically-grounded benchmark for agentic misalignment",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "eric-z",
+        "url": "https://www.lesswrong.com/posts/JamFW6CSyrHuWW8FB/am-bench-a-theoretically-grounded-benchmark-for-agentic"
+      },
+      {
+        "title": "Autonomous researchers will strain peer review, funding, and oversight",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Jason Fantl",
+        "url": "https://www.lesswrong.com/posts/WgroAK7N3jAfBBpct/autonomous-researchers-will-strain-peer-review-funding-and"
+      }
+    ]
+  },
+  {
     "date": "2026-10-21",
     "papers": [
       {
