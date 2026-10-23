@@ -4770,3 +4770,45 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, agent, computer
 - description: This repository will autonomously scrape the leading global AI agent leaderboards (SWE-bench for coding, OSWorld for computer use, GAIA for reasoning) and aggregate them.
 - discovery-source: https://github.com/mysukriramli/agent-benchmark-wire
+
+## Ai Eval Lab
+
+- organization: YAtwa7
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-22
+- license: NOASSERTION
+- citations: 0
+- url: https://github.com/YAtwa7/ai-eval-lab
+- tags: github release, teaming
+- description: AI Eval QA lab: golden datasets, LLM-as-judge, RAGAS/DeepEval/Promptfoo/LangSmith, red-teaming, bilingual EN/AR eval, CI eval gates. One session = one chat = one handoff.
+- discovery-source: https://github.com/YAtwa7/ai-eval-lab
+
+## A Controlled Four Dimension Benchmark Of Small Instruction Tuned Llms On Mental Health Mcqa
+
+- organization: beingdutta
+- category: Bias
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-22
+- license: Unknown
+- citations: 0
+- url: https://github.com/beingdutta/A-Controlled-Four-Dimension-Benchmark-of-Small-Instruction-Tuned-LLMs-on-Mental-Health-MCQA
+- tags: github release, bias
+- description: We evaluate LLAMA-3.2-3B-INSTRUCT and QWEN2.5-3B-INSTRUCT on a fixed mental-health multiple-choice benchmark (MedMisBench-MentalHealth) along four dimensions: hallucination and uncertainty, interpretability, bias, and privacy/security.
+- discovery-source: https://github.com/beingdutta/A-Controlled-Four-Dimension-Benchmark-of-Small-Instruction-Tuned-LLMs-on-Mental-Health-MCQA
+
+## Genpark Llm Eval Rag Faithfulness And Hallucination Scorer Skill
+
+- organization: alphaparkinc
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-22
+- license: Unknown
+- citations: 0
+- url: https://github.com/alphaparkinc/genpark-llm-eval-rag-faithfulness-and-hallucination-scorer-skill
+- tags: github release, faithfulness, hallucination
+- description: RAG context faithfulness evaluator, atomic claim decomposition engine, and hallucination risk scorer.
+- discovery-source: https://github.com/alphaparkinc/genpark-llm-eval-rag-faithfulness-and-hallucination-scorer-skill

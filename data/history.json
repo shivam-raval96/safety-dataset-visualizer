@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-10-23",
+    "datasets": [
+      {
+        "name": "Ai Eval Lab",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/YAtwa7/ai-eval-lab",
+        "source": "github.com"
+      },
+      {
+        "name": "A Controlled Four Dimension Benchmark Of Small Instruction Tuned Llms On Mental Health Mcqa",
+        "category": "Bias",
+        "url": "https://github.com/beingdutta/A-Controlled-Four-Dimension-Benchmark-of-Small-Instruction-Tuned-LLMs-on-Mental-Health-MCQA",
+        "source": "github.com"
+      },
+      {
+        "name": "Genpark Llm Eval Rag Faithfulness And Hallucination Scorer Skill",
+        "category": "Deception",
+        "url": "https://github.com/alphaparkinc/genpark-llm-eval-rag-faithfulness-and-hallucination-scorer-skill",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-10-22",
     "datasets": [
       {
