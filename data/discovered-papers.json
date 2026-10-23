@@ -4788,5 +4788,17 @@
     "url": "https://www.lesswrong.com/posts/WgroAK7N3jAfBBpct/autonomous-researchers-will-strain-peer-review-funding-and",
     "confidence": "Broad",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "Monitorability evaluations and policy proposals",
+    "topic": "Longtail behaviors",
+    "kind": "LessWrong",
+    "authors": "evhub",
+    "year": 2026,
+    "publishedAt": "2026-10-22",
+    "summary": "There has been a lot of discussion recently of policy proposals around monitorability, such as Redwood's proposal and my counter-proposal.",
+    "url": "https://www.lesswrong.com/posts/zAczYuHQS6jdG5DTg/monitorability-evaluations-and-policy-proposals",
+    "confidence": "Broad",
+    "matchedBy": "sabotage evaluations"
   }
 ]
