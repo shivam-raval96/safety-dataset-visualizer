@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-10-24",
+    "papers": [
+      {
+        "title": "Simulated Control Evaluations",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Jeffrey Olmo",
+        "url": "https://www.lesswrong.com/posts/uXiqyoKwpfjWfQXk5/simulated-control-evaluations"
+      },
+      {
+        "title": "Gradient Routing Generalizes to Unrouted Hack Types",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "jacob_drori",
+        "url": "https://www.lesswrong.com/posts/ie7bSp5ZDwYkCQxuv/gradient-routing-generalizes-to-unrouted-hack-types"
+      }
+    ]
+  },
+  {
     "date": "2026-10-23",
     "papers": [
       {

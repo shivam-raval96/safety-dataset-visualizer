@@ -4800,5 +4800,29 @@
     "url": "https://www.lesswrong.com/posts/zAczYuHQS6jdG5DTg/monitorability-evaluations-and-policy-proposals",
     "confidence": "Broad",
     "matchedBy": "sabotage evaluations"
+  },
+  {
+    "title": "Simulated Control Evaluations",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Jeffrey Olmo",
+    "year": 2026,
+    "publishedAt": "2026-10-23",
+    "summary": "We’ve released a paper on simulated control evaluations (SCEs). They’re a method for testing whether the monitors AI developers use to oversee their agents would catch a model deliberately trying to cause harm, under conditions much closer to real deployment.",
+    "url": "https://www.lesswrong.com/posts/uXiqyoKwpfjWfQXk5/simulated-control-evaluations",
+    "confidence": "High",
+    "matchedBy": "control evaluations"
+  },
+  {
+    "title": "Gradient Routing Generalizes to Unrouted Hack Types",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "jacob_drori",
+    "year": 2026,
+    "publishedAt": "2026-10-23",
+    "summary": "TLDR: I lightly extend Ward, Hu et al (2026) to measure how well gradient routing.",
+    "url": "https://www.lesswrong.com/posts/ie7bSp5ZDwYkCQxuv/gradient-routing-generalizes-to-unrouted-hack-types",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]
