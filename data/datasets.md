@@ -4812,3 +4812,57 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, faithfulness, hallucination
 - description: RAG context faithfulness evaluator, atomic claim decomposition engine, and hallucination risk scorer.
 - discovery-source: https://github.com/alphaparkinc/genpark-llm-eval-rag-faithfulness-and-hallucination-scorer-skill
+
+## Spml Prompt Injection Refusals Strict
+
+- organization: hirundo-io
+- category: Jailbreak / red-teaming
+- samples: 22.1k
+- year: 2026
+- published-at: 2026-10-23
+- license: UNKNOWN
+- citations: 0
+- url: https://huggingface.co/datasets/hirundo-io/spml-prompt-injection-refusals-strict
+- tags: Unknown
+- description: SPML prompt-injection refusals (strict) A curated subset of hirundo-io/spml-chatbot-prompt-injection-malicious-refusals that keeps only user turns an LLM judge labeled as clear prompt injections. The original.
+
+## Onyx Lab Jailbreak Eval
+
+- organization: twaai
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-22
+- license: Unknown
+- citations: 0
+- url: https://github.com/twaai/onyx-lab-jailbreak-eval
+- tags: github release, jailbreak
+- description: Onyx Lab jailbreak model evaluation papers.
+- discovery-source: https://github.com/twaai/onyx-lab-jailbreak-eval
+
+## Cyberforge Redteam Dataset
+
+- organization: hessy13
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-23
+- license: Unknown
+- citations: 0
+- url: https://github.com/hessy13/cyberforge-redteam-dataset
+- tags: github release, prompt, redteam, team
+- description: CyberForge AI Safety & Adversarial Red-Team Research Dataset (Zero-PII Prompt-Response Duels).
+- discovery-source: https://github.com/hessy13/cyberforge-redteam-dataset
+
+## Agentic AI Test Planning and Evidence Kit (checklist v1.1)
+
+- organization: srinivaspadmanabhuni
+- category: Agentic
+- samples: 326
+- year: 2026
+- published-at: 2026-10-23
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/srinivaspadmanabhuni/agentic-ai-test-checklist-110
+- tags: agentic-ai, ai-agents, agent-evaluation, agent-security, llm-agents, tool-use, mcp, multi-agent
+- description: Agentic AI Test Planning and Evidence Kit Status: early. This dataset is a test-design catalogue (110 rows): it specifies what to assert, not a.

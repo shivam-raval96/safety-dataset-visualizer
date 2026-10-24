@@ -1,5 +1,34 @@
 [
   {
+    "date": "2026-10-24",
+    "datasets": [
+      {
+        "name": "Spml Prompt Injection Refusals Strict",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/hirundo-io/spml-prompt-injection-refusals-strict",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Onyx Lab Jailbreak Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/twaai/onyx-lab-jailbreak-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Cyberforge Redteam Dataset",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/hessy13/cyberforge-redteam-dataset",
+        "source": "github.com"
+      },
+      {
+        "name": "Agentic AI Test Planning and Evidence Kit (checklist v1.1)",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/srinivaspadmanabhuni/agentic-ai-test-checklist-110",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-10-23",
     "datasets": [
       {
