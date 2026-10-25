@@ -4824,5 +4824,29 @@
     "url": "https://www.lesswrong.com/posts/ie7bSp5ZDwYkCQxuv/gradient-routing-generalizes-to-unrouted-hack-types",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Training Natural Schemers: RL Can Amplify Oversight-Conditional Behavior",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Bart Jaworski et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-19",
+    "summary": "One of the central concerns for the safety of advanced AI is scheming: when a model strategically complies under oversight but pursues its own goals when.",
+    "url": "https://arxiv.org/abs/2610.26551",
+    "confidence": "Broad",
+    "matchedBy": "alignment faking"
+  },
+  {
+    "title": "Patching reward hacks won’t fix reward hacking",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "David Africa",
+    "year": 2026,
+    "publishedAt": "2026-10-24",
+    "summary": "Here's a basic argument that focusing on patching reward hacking is misguided and will.",
+    "url": "https://www.lesswrong.com/posts/nWiPLEgaXdAQNwXBd/patching-reward-hacks-won-t-fix-reward-hacking",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
   }
 ]

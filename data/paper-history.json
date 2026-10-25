@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-10-25",
+    "papers": [
+      {
+        "title": "Training Natural Schemers: RL Can Amplify Oversight-Conditional Behavior",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Bart Jaworski et al.",
+        "url": "https://arxiv.org/abs/2610.26551"
+      },
+      {
+        "title": "Patching reward hacks won’t fix reward hacking",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "David Africa",
+        "url": "https://www.lesswrong.com/posts/nWiPLEgaXdAQNwXBd/patching-reward-hacks-won-t-fix-reward-hacking"
+      }
+    ]
+  },
+  {
     "date": "2026-10-24",
     "papers": [
       {
