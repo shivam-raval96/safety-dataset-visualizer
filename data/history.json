@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-10-25",
+    "datasets": [
+      {
+        "name": "Direct Prompt Injection Defense Dataset",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/samliumay/direct_prompt_injection_defense_data",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Synthetic LLM Red Teaming Findings for Banking",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/Ercin/synthetic-llm-red-teaming-findings-banking",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Spml Prompt Injection Refusals Strict Answered Refusal Only",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/hirundo-io/spml-prompt-injection-refusals-strict-answered-refusal-only",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Refusal Direction Structure by Harm Category",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/Mateenah/refusal-categories-results",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Injections de prompt multilingues (FR d'abord) — corpus PromptForge, OutilsIA 2026",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/drakkeng/outilsia-injections-prompt-multilingue",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-10-24",
     "datasets": [
       {

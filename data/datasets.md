@@ -4866,3 +4866,68 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/srinivaspadmanabhuni/agentic-ai-test-checklist-110
 - tags: agentic-ai, ai-agents, agent-evaluation, agent-security, llm-agents, tool-use, mcp, multi-agent
 - description: Agentic AI Test Planning and Evidence Kit Status: early. This dataset is a test-design catalogue (110 rows): it specifies what to assert, not a.
+
+## Direct Prompt Injection Defense Dataset
+
+- organization: samliumay
+- category: Jailbreak / red-teaming
+- samples: 21
+- year: 2026
+- published-at: 2026-10-24
+- license: UNKNOWN
+- citations: 0
+- url: https://huggingface.co/datasets/samliumay/direct_prompt_injection_defense_data
+- tags: prompt-injection, llm-security, tool-calling, synthetic, real-world
+- description: Direct Prompt Injection Defense Dataset Status: early draft (August 2026). 21 examples, one per attack category, in a single train file. No model trained.
+
+## Synthetic LLM Red Teaming Findings for Banking
+
+- organization: Ercin
+- category: Jailbreak / red-teaming
+- samples: 60
+- year: 2026
+- published-at: 2026-10-24
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/Ercin/synthetic-llm-red-teaming-findings-banking
+- tags: llm-red-teaming, red-teaming, banking, ai-security, llm-security, owasp-llm-top-10, ai-governance, synthetic
+- description: Synthetic LLM Red Teaming Findings for Banking 60 synthetic red-team findings for three invented bank LLM systems. Every row is example data. No real.
+
+## Spml Prompt Injection Refusals Strict Answered Refusal Only
+
+- organization: hirundo-io
+- category: Jailbreak / red-teaming
+- samples: 9.6k
+- year: 2026
+- published-at: 2026-10-24
+- license: UNKNOWN
+- citations: 0
+- url: https://huggingface.co/datasets/hirundo-io/spml-prompt-injection-refusals-strict-answered-refusal-only
+- tags: Unknown
+- description: spml-prompt-injection-refusals-strict-answered-refusal-only hirundo-io/spml-prompt-injection-refusals-strict-answered at revision 6561ab2329b673bf9c37bc85da91abd61c1df44b with every answer cut down to its leading refusal: the decline of the injected request and its explanation, without.
+
+## Refusal Direction Structure by Harm Category
+
+- organization: Mateenah
+- category: Jailbreak / red-teaming
+- samples: 3
+- year: 2026
+- published-at: 2026-10-24
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/Mateenah/refusal-categories-results
+- tags: interpretability, mechanistic-interpretability, ai-safety, refusal, evaluation
+- description: Refusal Direction Structure by Harm Category Measurements from a mechanistic-interpretability probe asking whether refusal in instruct-tuned language models decomposes by harm category, or whether.
+
+## Injections de prompt multilingues (FR d'abord) — corpus PromptForge, OutilsIA 2026
+
+- organization: drakkeng
+- category: Jailbreak / red-teaming
+- samples: 383
+- year: 2026
+- published-at: 2026-10-24
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/drakkeng/outilsia-injections-prompt-multilingue
+- tags: prompt-injection, llm-security, jailbreak-detection, french, multilingual
+- description: Injections de prompt multilingues, en français d'abord Corpus étiqueté publié par OutilsIA.fr pour tester les détecteurs d'injection de prompt, en particulier en français, langue.
