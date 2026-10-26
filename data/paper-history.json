@@ -3,6 +3,90 @@
     "date": "2026-10-26",
     "papers": [
       {
+        "title": "CoT Red-Handed: Stress Testing Chain-of-Thought Monitoring",
+        "topic": "Monitor evasion",
+        "kind": "Paper",
+        "authors": "Benjamin Arnav et al.",
+        "url": "https://arxiv.org/abs/2505.23575"
+      },
+      {
+        "title": "When Chain of Thought is Necessary, Language Models Struggle to Evade Monitors",
+        "topic": "Monitor evasion",
+        "kind": "Paper",
+        "authors": "Scott Emmons et al.",
+        "url": "https://arxiv.org/abs/2507.05246"
+      },
+      {
+        "title": "Reliable Weak-to-Strong Monitoring of LLM Agents",
+        "topic": "Monitor evasion",
+        "kind": "Paper",
+        "authors": "Neil Kale et al.",
+        "url": "https://arxiv.org/abs/2508.19461"
+      },
+      {
+        "title": "Untrusted AIs can exploit feedback in control protocols",
+        "topic": "Monitor evasion",
+        "kind": "LessWrong",
+        "authors": "Mia Hopman et al.",
+        "url": "https://www.lesswrong.com/posts/wKGdiXuWfn8YoYpMQ/untrusted-ais-can-exploit-feedback-in-control-protocols"
+      },
+      {
+        "title": "Monitoring benchmark for AI control",
+        "topic": "Monitor evasion",
+        "kind": "LessWrong",
+        "authors": "monika_j & Angel Martinez",
+        "url": "https://www.lesswrong.com/posts/X8qTKsGcnsTFrqM96/monitoring-benchmark-for-ai-control"
+      },
+      {
+        "title": "Noticing the Watcher: LLM Agents Can Infer CoT Monitoring from Blocking Feedback",
+        "topic": "Monitor evasion",
+        "kind": "Paper",
+        "authors": "Thomas Jiralerspong et al.",
+        "url": "https://arxiv.org/abs/2603.16928"
+      },
+      {
+        "title": "Attack Selection In Agentic AI Control Evals Can Decrease Safety",
+        "topic": "Monitor evasion",
+        "kind": "LessWrong",
+        "authors": "Cath Ge-Wang et al.",
+        "url": "https://www.lesswrong.com/posts/WuKDzJxtiqcA9ZZRH/attack-selection-in-agentic-ai-control-evals-can-decrease"
+      },
+      {
+        "title": "Distributed Attacks in Persistent-State AI Control",
+        "topic": "Monitor evasion",
+        "kind": "Paper",
+        "authors": "Josh Hills et al.",
+        "url": "https://arxiv.org/abs/2607.02514"
+      },
+      {
+        "title": "Instrumental Monitor Evasion Emerges Under Ordinary Task Pressure",
+        "topic": "Monitor evasion",
+        "kind": "Paper",
+        "authors": "David Schmotz et al.",
+        "url": "https://arxiv.org/abs/2609.30217"
+      },
+      {
+        "title": "Monitor Jailbreaking: Evading Chain-of-Thought Monitoring Without Encoded Reasoning",
+        "topic": "Monitor evasion",
+        "kind": "Paper",
+        "authors": "Julian Schulz",
+        "url": "https://arxiv.org/abs/2609.31121"
+      },
+      {
+        "title": "Covert Assistance: Helpful LLM Agents Evade Oversight in Multi-Agent Systems",
+        "topic": "Monitor evasion",
+        "kind": "Paper",
+        "authors": "Deema Alnuhait et al.",
+        "url": "https://arxiv.org/abs/2609.39050"
+      },
+      {
+        "title": "Screwtape: Adversarial Transcript Editing for Monitor Red-Teaming",
+        "topic": "Monitor evasion",
+        "kind": "Paper",
+        "authors": "Gosha Kozhevnikov & Tyler Tracy",
+        "url": "https://arxiv.org/abs/2610.20941"
+      },
+      {
         "title": "Reward Misspecification Degrades Chain-of-Thought Monitorability",
         "topic": "Reward hacking",
         "kind": "Paper",
@@ -1339,7 +1423,7 @@
       },
       {
         "title": "SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors",
-        "topic": "Monitoring",
+        "topic": "Monitor evasion",
         "kind": "Paper",
         "authors": "Elle Najt et al.",
         "url": "https://arxiv.org/abs/2605.16626"
@@ -1532,7 +1616,7 @@
     "papers": [
       {
         "title": "Corrupt Plans, Clean Traces: Evading Chain-of-Thought Monitoring with Plan Injection",
-        "topic": "Obfuscation",
+        "topic": "Monitor evasion",
         "kind": "Paper",
         "authors": "Keertana Chidambaram et al.",
         "url": "https://arxiv.org/abs/2609.15989"
@@ -2783,7 +2867,7 @@
       },
       {
         "title": "Measuring coding agent misalignment in the wild",
-        "topic": "Model forensics",
+        "topic": "Monitor evasion",
         "kind": "LessWrong",
         "authors": "snaz",
         "url": "https://www.lesswrong.com/posts/smE9h9RnaK7FWKBZ2/measuring-coding-agent-misalignment-in-the-wild-1"
@@ -3665,7 +3749,7 @@
       },
       {
         "title": "Neural Chameleons: Language Models Can Learn to Hide Their Thoughts from Unseen Activation Monitors",
-        "topic": "Monitoring",
+        "topic": "Monitor evasion",
         "kind": "Paper",
         "authors": "Max McGuinness et al.",
         "url": "https://arxiv.org/abs/2512.11949"

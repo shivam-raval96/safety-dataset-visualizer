@@ -108,6 +108,24 @@ class DiscoverPapersTests(unittest.TestCase):
             "High",
         )
 
+    def test_monitor_evasion_is_a_dedicated_attack_topic(self):
+        queries = papers.TOPIC_QUERIES["Monitor evasion"]
+        self.assertIn("instrumental monitor evasion", queries)
+        self.assertIn("distributed attacks AI control", queries)
+        self.assertIn("weakening oversight coding agents", queries)
+        self.assertIn("evade monitors", queries)
+        self.assertIn("harmful side task", queries)
+        self.assertIn("monitor red-teaming", queries)
+        self.assertEqual(
+            papers.match_confidence(
+                "Monitor evasion",
+                "Agents Evade Runtime Monitors",
+                "We test bypass language model monitors attacks by misaligned agents.",
+                "bypass language model monitors",
+            ),
+            "Broad",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

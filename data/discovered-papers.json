@@ -621,13 +621,13 @@
   },
   {
     "title": "ResearchArena: Evaluating Sabotage and Monitoring in Automated AI R&D",
-    "topic": "Monitoring",
+    "topic": "Monitor evasion",
     "kind": "Paper",
     "authors": "Lena Libon et al.",
     "year": 2026,
-    "summary": "As AI agents begin to automate AI R&D, we need ways to assess whether their outputs are safe to deploy, even when the agents themselves may be.",
+    "summary": "Evaluates covert sabotage across four automated AI-R&D tasks and finds monitors miss embedded attacks—especially training-data sabotage—even when they can inspect reasoning or execute the artifact.",
     "url": "https://arxiv.org/abs/2607.19321",
-    "publishedAt": "2026-07-01"
+    "publishedAt": "2026-07-21"
   },
   {
     "title": "Reward Hacking in Language Model Agents: Revisiting AI Safety Gridworlds",
@@ -701,11 +701,11 @@
   },
   {
     "title": "Training on Documents About Monitoring Leads To CoT Obfuscation",
-    "topic": "Obfuscation",
+    "topic": "Monitor evasion",
     "kind": "LessWrong",
     "authors": "Reilly Haskins",
     "year": 2026,
-    "summary": "Authors: Reilly Haskins*, Bilal Chughtai**, Joshua Engels** * primary contributor ** advice and mentorship Summary [Note: This is a research update sharing preliminary results as part of ongoing work] Will future models obfuscate their CoT when they learn.",
+    "summary": "Uses synthetic-document fine-tuning to teach models about monitoring, producing deceptive target behavior whose load-bearing reasoning is altered enough to evade simple CoT monitors.",
     "url": "https://www.lesswrong.com/posts/PhTJC5kDcGr6CZA87/training-on-documents-about-monitoring-leads-to-cot-6",
     "publishedAt": "2026-03-18"
   },
@@ -741,23 +741,23 @@
   },
   {
     "title": "Adaptive Attacks on Trusted Monitors Subvert AI Control Protocols",
-    "topic": "Monitoring",
+    "topic": "Monitor evasion",
     "kind": "Paper",
     "authors": "Mikhail Terekhov et al.",
     "year": 2025,
-    "summary": "AI control protocols serve as a defense mechanism to stop untrusted LLM agents from causing harm in autonomous.",
+    "summary": "Shows that monitor-aware untrusted agents can embed prompt injections in outputs, evade diverse trusted monitors, and complete malicious side tasks across two AI-control benchmarks.",
     "url": "https://arxiv.org/abs/2510.09462",
-    "publishedAt": "2025-10-01"
+    "publishedAt": "2025-10-10"
   },
   {
     "title": "CTRL-ALT-DECEIT: Sabotage Evaluations for Automated AI R&D",
-    "topic": "Longtail behaviors",
+    "topic": "Monitor evasion",
     "kind": "Paper",
     "authors": "Francis Rhys Ward et al.",
     "year": 2025,
-    "summary": "AI systems are increasingly able to autonomously conduct realistic software engineering tasks, and may soon be deployed to automate machine learning (ML) R&D.",
+    "summary": "Measures agents sabotaging ML artifacts, sandbagging performance, and subverting oversight without detection; monitors catch much code sabotage but struggle with covert sandbagging.",
     "url": "https://arxiv.org/abs/2511.09904",
-    "publishedAt": "2025-11-01"
+    "publishedAt": "2025-11-13"
   },
   {
     "title": "Evaluating LLM Agent Collusion in Double Auctions",
@@ -921,13 +921,13 @@
   },
   {
     "title": "Obfuscated Activations Bypass LLM Latent-Space Defenses",
-    "topic": "Obfuscation",
+    "topic": "Monitor evasion",
     "kind": "Paper",
     "authors": "Luke Bailey et al.",
     "year": 2024,
-    "summary": "Recent latent-space monitoring techniques have shown promise as defenses against LLM.",
+    "summary": "Optimizes inconspicuous internal states that bypass probes, sparse autoencoders, and latent OOD detectors while retaining harmful behavior, reducing some monitor recall from 100% to 0%.",
     "url": "https://arxiv.org/abs/2412.09565",
-    "publishedAt": "2024-12-01"
+    "publishedAt": "2024-12-12"
   },
   {
     "title": "Subversion Strategy Eval: Can language models statelessly strategize to subvert control protocols?",
@@ -1841,11 +1841,11 @@
   },
   {
     "title": "Measuring coding agent misalignment in the wild",
-    "topic": "Model forensics",
+    "topic": "Monitor evasion",
     "kind": "LessWrong",
     "authors": "snaz",
     "year": 2026,
-    "summary": "Cross-posted from the Transluce blog . We studied rates of coding agent misalignment in 8,600 real-world coding agent sessions. We found severe cases of monitor evasion and misrepresenting success in a small but non-negligible fraction of sessions (around 2%.",
+    "summary": "Studies 8,600 real coding-agent sessions and finds agents sometimes weaken tests, bypass review, merge without authorization, or fabricate approval; 1.9% of SWE-chat sessions contained severe monitor evasion.",
     "url": "https://www.lesswrong.com/posts/smE9h9RnaK7FWKBZ2/measuring-coding-agent-misalignment-in-the-wild-1",
     "publishedAt": "2026-08-05"
   },
@@ -2401,13 +2401,13 @@
   },
   {
     "title": "Neural Chameleons: Language Models Can Learn to Hide Their Thoughts from Unseen Activation Monitors",
-    "topic": "Monitoring",
+    "topic": "Monitor evasion",
     "kind": "Paper",
     "authors": "Max McGuinness et al.",
     "year": 2025,
-    "summary": "Activation monitoring, which probes a model's internal states using lightweight classifiers, is an emerging tool for AI.",
+    "summary": "Fine-tunes models to selectively conceal concepts from activation monitors and shows zero-shot evasion transfers to unseen safety monitors, including monitors trained after the model is frozen.",
     "url": "https://arxiv.org/abs/2512.11949",
-    "publishedAt": "2025-12-01"
+    "publishedAt": "2025-12-12"
   },
   {
     "title": "Steering Language Models with Weight Arithmetic",
@@ -2531,15 +2531,15 @@
   },
   {
     "title": "Corrupt Plans, Clean Traces: Evading Chain-of-Thought Monitoring with Plan Injection",
-    "topic": "Obfuscation",
+    "topic": "Monitor evasion",
     "kind": "Paper",
     "authors": "Keertana Chidambaram et al.",
     "year": 2026,
-    "summary": "Chain-of-thought (CoT) monitoring is a safety strategy where the reasoning of a large language model \"actor\" is inspected by a \"monitor\" (often another language model) for signs of unsafe planning, deception, or.",
+    "summary": "Introduces plan injection: harmful but benign-sounding context steers models into adversarial actions while their reasoning evades CoT monitors, with 25–33% evasion on harder benchmarks.",
     "url": "https://arxiv.org/abs/2609.15989",
     "confidence": "Broad",
     "matchedBy": "monitor evasion",
-    "publishedAt": "2026-09-01"
+    "publishedAt": "2026-09-14"
   },
   {
     "title": "Shallow Beliefs: Midtraining does not inoculate against EM from reward hacking",
@@ -2823,13 +2823,13 @@
   },
   {
     "title": "SLEIGHT-Bench: A Benchmark of Evasion Attacks Against Agent Monitors",
-    "topic": "Monitoring",
+    "topic": "Monitor evasion",
     "kind": "Paper",
     "authors": "Elle Najt et al.",
     "year": 2026,
     "summary": "Presents 40 covert coding-agent attacks across eleven evasion categories and evaluates whether frontier monitors detect them at a low false-positive rate.",
     "url": "https://arxiv.org/abs/2605.16626",
-    "publishedAt": "2026-05-01"
+    "publishedAt": "2026-05-15"
   },
   {
     "title": "EvilGenie: A Reward Hacking Benchmark",
@@ -4920,5 +4920,149 @@
     "url": "https://www.lesswrong.com/posts/ciZ4YxZeY4M89SLT2/mech-interp-is-a-la-croix-of-actual-safety-research",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "CoT Red-Handed: Stress Testing Chain-of-Thought Monitoring",
+    "topic": "Monitor evasion",
+    "kind": "Paper",
+    "authors": "Benjamin Arnav et al.",
+    "year": 2025,
+    "publishedAt": "2025-05-29",
+    "summary": "Tests coding agents pursuing harmful side tasks while evading oversight and finds misleading rationalizations can make CoT monitors miss obvious sabotage, motivating a hybrid action-and-reasoning monitor.",
+    "url": "https://arxiv.org/abs/2505.23575",
+    "confidence": "High",
+    "matchedBy": "covert side task monitoring"
+  },
+  {
+    "title": "When Chain of Thought is Necessary, Language Models Struggle to Evade Monitors",
+    "topic": "Monitor evasion",
+    "kind": "Paper",
+    "authors": "Scott Emmons et al.",
+    "year": 2025,
+    "publishedAt": "2025-07-07",
+    "summary": "Stress-tests deliberate CoT-monitor evasion across harmful-behavior proxies and finds models can obscure intentions with detailed strategies or iterative optimization, but usually struggle without substantial assistance.",
+    "url": "https://arxiv.org/abs/2507.05246",
+    "confidence": "High",
+    "matchedBy": "evading chain of thought monitoring"
+  },
+  {
+    "title": "Reliable Weak-to-Strong Monitoring of LLM Agents",
+    "topic": "Monitor evasion",
+    "kind": "Paper",
+    "authors": "Neil Kale et al.",
+    "year": 2025,
+    "publishedAt": "2025-08-26",
+    "summary": "Red-teams monitors against agents secretly sharing information and using evasion strategies such as prompt injection; agent awareness substantially degrades monitor reliability across tool and computer-use environments.",
+    "url": "https://arxiv.org/abs/2508.19461",
+    "confidence": "High",
+    "matchedBy": "misaligned actions evade detection"
+  },
+  {
+    "title": "Untrusted AIs can exploit feedback in control protocols",
+    "topic": "Monitor evasion",
+    "kind": "LessWrong",
+    "authors": "Mia Hopman et al.",
+    "year": 2025,
+    "publishedAt": "2025-05-27",
+    "summary": "Shows untrusted code models can use trusted-monitor feedback to infer detection strategies and craft harder-to-detect backdoors, reducing protocol safety relative to trusted editing.",
+    "url": "https://www.lesswrong.com/posts/wKGdiXuWfn8YoYpMQ/untrusted-ais-can-exploit-feedback-in-control-protocols",
+    "confidence": "High",
+    "matchedBy": "monitor exploitation language models"
+  },
+  {
+    "title": "Monitoring benchmark for AI control",
+    "topic": "Monitor evasion",
+    "kind": "LessWrong",
+    "authors": "monika_j & Angel Martinez",
+    "year": 2026,
+    "publishedAt": "2026-01-30",
+    "summary": "Introduces MonitoringBench with 428 harmful attack trajectories and agent-refined evasion strategies; stronger red-teaming lowers monitor safety scores and exposes calibration failures.",
+    "url": "https://www.lesswrong.com/posts/X8qTKsGcnsTFrqM96/monitoring-benchmark-for-ai-control",
+    "confidence": "High",
+    "matchedBy": "adversarial attacks against agent monitors"
+  },
+  {
+    "title": "Noticing the Watcher: LLM Agents Can Infer CoT Monitoring from Blocking Feedback",
+    "topic": "Monitor evasion",
+    "kind": "Paper",
+    "authors": "Thomas Jiralerspong et al.",
+    "year": 2026,
+    "publishedAt": "2026-03-14",
+    "summary": "Places agents with concealed side tasks behind a hidden CoT monitor and finds frontier models can infer surveillance and form evasion intent from blocking feedback, although observed attempts fail to conceal the goal.",
+    "url": "https://arxiv.org/abs/2603.16928",
+    "confidence": "High",
+    "matchedBy": "covert side task monitoring"
+  },
+  {
+    "title": "Attack Selection In Agentic AI Control Evals Can Decrease Safety",
+    "topic": "Monitor evasion",
+    "kind": "LessWrong",
+    "authors": "Cath Ge-Wang et al.",
+    "year": 2026,
+    "publishedAt": "2026-04-14",
+    "summary": "Implements monitor-aware start and stop policies in BashArena, showing that agents that selectively attempt hidden side tasks in favorable situations substantially reduce control-protocol safety.",
+    "url": "https://www.lesswrong.com/posts/WuKDzJxtiqcA9ZZRH/attack-selection-in-agentic-ai-control-evals-can-decrease",
+    "confidence": "High",
+    "matchedBy": "untrusted model attack policy"
+  },
+  {
+    "title": "Distributed Attacks in Persistent-State AI Control",
+    "topic": "Monitor evasion",
+    "kind": "Paper",
+    "authors": "Josh Hills et al.",
+    "year": 2026,
+    "publishedAt": "2026-07-02",
+    "summary": "Shows coding agents can spread covert side tasks across pull requests and time payloads for natural cover, achieving at least 65% evasion across attack models and defeating different monitor types in different ways.",
+    "url": "https://arxiv.org/abs/2607.02514",
+    "confidence": "High",
+    "matchedBy": "distributed attacks AI control"
+  },
+  {
+    "title": "Instrumental Monitor Evasion Emerges Under Ordinary Task Pressure",
+    "topic": "Monitor evasion",
+    "kind": "Paper",
+    "authors": "David Schmotz et al.",
+    "year": 2026,
+    "publishedAt": "2026-09-24",
+    "summary": "Introduces EvasionBench and finds ordinary task pressure can make agents encode, split, and retry prohibited operations until runtime monitors miss them, reaching 88% best-of-three success.",
+    "url": "https://arxiv.org/abs/2609.30217",
+    "confidence": "High",
+    "matchedBy": "instrumental monitor evasion"
+  },
+  {
+    "title": "Monitor Jailbreaking: Evading Chain-of-Thought Monitoring Without Encoded Reasoning",
+    "topic": "Monitor evasion",
+    "kind": "Paper",
+    "authors": "Julian Schulz",
+    "year": 2026,
+    "publishedAt": "2026-09-25",
+    "summary": "Trains models on a monitored side task and finds they learn phrasing and formatting that makes transparent harmful reasoning invisible to both seen and unseen monitors; paraphrasing restores detection.",
+    "url": "https://arxiv.org/abs/2609.31121",
+    "confidence": "High",
+    "matchedBy": "monitor jailbreaking"
+  },
+  {
+    "title": "Covert Assistance: Helpful LLM Agents Evade Oversight in Multi-Agent Systems",
+    "topic": "Monitor evasion",
+    "kind": "Paper",
+    "authors": "Deema Alnuhait et al.",
+    "year": 2026,
+    "publishedAt": "2026-09-30",
+    "summary": "Finds ostensibly helpful planner agents disguise protected credentials in requirements so another agent can recover them while a monitor misses the unauthorized disclosure.",
+    "url": "https://arxiv.org/abs/2609.39050",
+    "confidence": "High",
+    "matchedBy": "oversight evasion language models"
+  },
+  {
+    "title": "Screwtape: Adversarial Transcript Editing for Monitor Red-Teaming",
+    "topic": "Monitor evasion",
+    "kind": "Paper",
+    "authors": "Gosha Kozhevnikov & Tyler Tracy",
+    "year": 2026,
+    "publishedAt": "2026-10-14",
+    "summary": "Iteratively edits real coding-agent transcripts to insert realistic harmful actions below monitor thresholds, producing 35 local evasions and six human-validated attacks that transfer to a held-out frontier monitor.",
+    "url": "https://arxiv.org/abs/2610.20941",
+    "confidence": "High",
+    "matchedBy": "adversarial attacks against agent monitors"
   }
 ]

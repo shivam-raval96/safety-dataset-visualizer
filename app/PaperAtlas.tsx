@@ -30,6 +30,7 @@ const history = paperHistory as PaperHistoryEntry[];
 const topics = [
   { name: "Model organisms", color: "#9b7bff", summary: "Controlled models trained to express specific alignment failure modes." },
   { name: "Monitoring", color: "#3eb6c4", summary: "Methods for detecting dangerous actions, reasoning, and deployment behavior." },
+  { name: "Monitor evasion", color: "#e05f8f", summary: "Misaligned actions, sabotage, or deceptive reasoning that bypasses judges, overseers, or safety monitors." },
   { name: "Subliminal learning", color: "#ed7cbe", summary: "Behavioral traits transmitted through apparently unrelated training data." },
   { name: "Reward hacking", color: "#f2b84b", summary: "Systems exploiting proxies and evaluators instead of satisfying intent." },
   { name: "Obfuscation", color: "#ff866a", summary: "Models hiding or altering reasoning to evade inspection and oversight." },
@@ -67,6 +68,7 @@ const topicCenters = [
   { x: 4000, y: 5900 },
   { x: 6500, y: 5900 },
   { x: 4000, y: 8150 },
+  { x: 6500, y: 8150 },
 ];
 const centers = topics.map((topic, index) => ({ ...topic, ...topicCenters[index] }));
 const yearColors: Record<number, { band: string; label: string }> = {
