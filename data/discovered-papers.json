@@ -813,9 +813,9 @@
     "title": "Many-to-One Adversarial Consensus: Exposing Multi-Agent Collusion Risks in AI-Based Healthcare",
     "topic": "Swarm misalignment",
     "kind": "Paper",
-    "authors": "Adeela Bashir et al.",
+    "authors": "Adeela Bashir, The Anh Han & Zia Ush Shamszaman",
     "year": 2025,
-    "summary": "The integration of large language models (LLMs) into healthcare IoT systems promises faster decisions and improved medical.",
+    "summary": "Tests colluding adversarial assistants in multi-agent healthcare decisions across 50 clinical questions. Unprotected systems reach up to 100% attack success and harmful recommendation rates, while a verifier grounded in clinical guidelines restores correct decisions.",
     "url": "https://arxiv.org/abs/2512.03097",
     "publishedAt": "2025-12-01"
   },
