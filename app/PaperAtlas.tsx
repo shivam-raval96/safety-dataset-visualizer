@@ -29,17 +29,17 @@ type PaperHistoryEntry = {
 const history = paperHistory as PaperHistoryEntry[];
 
 const topics = [
-  { name: "Model organisms", color: "#9b7bff", summary: "Controlled models trained to express specific alignment failure modes." },
-  { name: "Monitoring", color: "#3eb6c4", summary: "Methods for detecting dangerous actions, reasoning, and deployment behavior." },
-  { name: "Monitor evasion", color: "#e05f8f", summary: "Misaligned actions, sabotage, or deceptive reasoning that bypasses judges, overseers, or safety monitors." },
-  { name: "Subliminal learning", color: "#ed7cbe", summary: "Behavioral traits transmitted through apparently unrelated training data." },
-  { name: "Reward hacking", color: "#f2b84b", summary: "Systems exploiting proxies and evaluators instead of satisfying intent." },
-  { name: "Obfuscation", color: "#ff866a", summary: "Models hiding or altering reasoning to evade inspection and oversight." },
-  { name: "Longtail behaviors", color: "#78a8ff", summary: "Rare, severe, or hard-to-elicit behaviors missed by average-case evaluations." },
-  { name: "Swarm misalignment", color: "#58d7bf", summary: "Misalignment emerging through interaction, conformity, and agent collectives." },
-  { name: "Model forensics", color: "#bd854f", summary: "Controlled evaluations that vary user cues, task framing, or environmental conditions to identify what changes a model’s behavior or choices and test explanations for misalignment." },
-  { name: "Eval awareness", color: "#d17db6", summary: "Whether models recognize evaluation contexts and change behavior between testing and deployment." },
-  { name: "CoT faithfulness", color: "#4f91c7", summary: "Methods that make chain-of-thought traces more causally connected to model answers and reduce unfaithful reasoning." },
+  { name: "Model organisms", color: "#7b6bb5", summary: "Controlled models trained to express specific alignment failure modes." },
+  { name: "Monitoring", color: "#438f96", summary: "Methods for detecting dangerous actions, reasoning, and deployment behavior." },
+  { name: "Monitor evasion", color: "#bd657d", summary: "Misaligned actions, sabotage, or deceptive reasoning that bypasses judges, overseers, or safety monitors." },
+  { name: "Subliminal learning", color: "#c878a8", summary: "Behavioral traits transmitted through apparently unrelated training data." },
+  { name: "Reward hacking", color: "#c79a3b", summary: "Systems exploiting proxies and evaluators instead of satisfying intent." },
+  { name: "Obfuscation", color: "#cf745f", summary: "Models hiding or altering reasoning to evade inspection and oversight." },
+  { name: "Longtail behaviors", color: "#6688b8", summary: "Rare, severe, or hard-to-elicit behaviors missed by average-case evaluations." },
+  { name: "Swarm misalignment", color: "#4b9d89", summary: "Misalignment emerging through interaction, conformity, and agent collectives." },
+  { name: "Model forensics", color: "#9f7957", summary: "Controlled evaluations that vary user cues, task framing, or environmental conditions to identify what changes a model’s behavior or choices and test explanations for misalignment." },
+  { name: "Eval awareness", color: "#9f6f98", summary: "Whether models recognize evaluation contexts and change behavior between testing and deployment." },
+  { name: "CoT faithfulness", color: "#527fa2", summary: "Methods that make chain-of-thought traces more causally connected to model answers and reduce unfaithful reasoning." },
 ] as const;
 
 const curatedSources: Source[] = curated.map((source) => ({ ...source, year: Number(source.year), kind: source.kind as Source["kind"] }));
@@ -73,7 +73,7 @@ const packedTopics = packedRoot.children || [];
 const packedLeaves = packedRoot.leaves();
 const packedTopicLabels = packedLeaves.filter((node) => !node.data.source && node.data.topicIndex !== undefined);
 const packedSources = new Map(packedLeaves.flatMap((node) => node.data.source ? [[sourceKey(node.data.source), node] as const] : []));
-type ForcePaperNode = SimulationNodeDatum & { key: string; topicIndex: number; radius: number; targetX: number; targetY: number; obstacle: boolean };
+type ForcePaperNode = SimulationNodeDatum & { key: string; topicIndex: number; radius: number; targetX: number; targetY: number; originX: number; originY: number; obstacle: boolean };
 
 export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: () => void; onOrganisms: () => void }) {
   const [display, setDisplay] = useState<"map" | "list">("map");
@@ -93,11 +93,11 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
   const canvasRef = useRef<HTMLDivElement>(null);
   const paperNodeElementsRef = useRef(new Map<string, HTMLButtonElement>());
   const [forceNodes] = useState<ForcePaperNode[]>(() => [
-    ...packedTopicLabels.map((node) => ({ key: `topic:${topics[node.data.topicIndex!].name}`, topicIndex: node.data.topicIndex!, radius: node.r + 5, targetX: node.x, targetY: node.y, x: node.x, y: node.y, fx: node.x, fy: node.y, obstacle: true })),
-    ...sources.flatMap((source) => { const node = packedSources.get(sourceKey(source)); if (!node) return []; const topicNode = packedTopics.find((candidate) => candidate.data.topicIndex === node.data.topicIndex)!; return [{ key: sourceKey(source), topicIndex: node.data.topicIndex!, radius: node.r, targetX: topicNode.x, targetY: topicNode.y, x: node.x, y: node.y, obstacle: false }]; }),
+    ...packedTopicLabels.map((node) => ({ key: `topic:${topics[node.data.topicIndex!].name}`, topicIndex: node.data.topicIndex!, radius: node.r + 5, targetX: node.x, targetY: node.y, originX: node.x, originY: node.y, x: node.x, y: node.y, fx: node.x, fy: node.y, obstacle: true })),
+    ...sources.flatMap((source) => { const node = packedSources.get(sourceKey(source)); if (!node) return []; const topicNode = packedTopics.find((candidate) => candidate.data.topicIndex === node.data.topicIndex)!; return [{ key: sourceKey(source), topicIndex: node.data.topicIndex!, radius: node.r, targetX: topicNode.x, targetY: topicNode.y, originX: node.x, originY: node.y, x: node.x, y: node.y, obstacle: false }]; }),
   ]);
   const forceNodeByKey = useMemo(() => new Map(forceNodes.map((node) => [node.key, node])), [forceNodes]);
-  const simulationRef = useRef<Simulation<ForcePaperNode, undefined> | null>(null);
+  const simulationRefs = useRef(new Map<number, Simulation<ForcePaperNode, undefined>>());
   const nodeDragRef = useRef<{ key: string; x: number; y: number; originX: number; originY: number; node: ForcePaperNode; target: HTMLButtonElement; moved: boolean } | null>(null);
   const suppressClickRef = useRef<string | null>(null);
   const viewRef = useRef({ x: 0, y: 0, scale: 0.5 });
@@ -162,23 +162,28 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
     };
   }, [fitGraph]);
   useEffect(() => {
-    const simulation = forceSimulation(forceNodes)
-      .velocityDecay(0.38)
-      .alphaDecay(0.045)
-      .force("x", forceX<ForcePaperNode>((node) => node.targetX).strength((node) => node.obstacle ? 0 : 0.11))
-      .force("y", forceY<ForcePaperNode>((node) => node.targetY).strength((node) => node.obstacle ? 0 : 0.11))
-      .force("collide", forceCollide<ForcePaperNode>((node) => node.radius + 3).strength(0.95).iterations(2))
-      .on("tick", () => {
-        for (const node of forceNodes) {
+    const simulationMap = simulationRefs.current;
+    const simulations = topics.map((_, topicIndex) => {
+      const clusterNodes = forceNodes.filter((node) => node.topicIndex === topicIndex);
+      const simulation = forceSimulation(clusterNodes)
+        .velocityDecay(0.32)
+        .alphaDecay(0.1)
+        .force("x", forceX<ForcePaperNode>((node) => node.targetX).strength((node) => node.obstacle ? 0 : 0.2))
+        .force("y", forceY<ForcePaperNode>((node) => node.targetY).strength((node) => node.obstacle ? 0 : 0.2))
+        .force("collide", forceCollide<ForcePaperNode>((node) => node.radius + 3).strength(1).iterations(1))
+        .on("tick", () => {
+          for (const node of clusterNodes) {
           if (node.obstacle) continue;
           const element = paperNodeElementsRef.current.get(node.key);
           if (!element) continue;
-          element.style.left = `${node.x}px`;
-          element.style.top = `${node.y}px`;
-        }
-      });
-    simulationRef.current = simulation;
-    return () => { simulation.stop(); simulationRef.current = null; };
+            element.style.setProperty("--paper-dx", `${(node.x || 0) - node.originX}px`);
+            element.style.setProperty("--paper-dy", `${(node.y || 0) - node.originY}px`);
+          }
+        });
+      simulationMap.set(topicIndex, simulation);
+      return simulation;
+    });
+    return () => { simulations.forEach((simulation) => simulation.stop()); simulationMap.clear(); };
   }, [forceNodes]);
   const zoomAt = useCallback((nextScale: number, clientX?: number, clientY?: number) => {
     const rect = plotRef.current?.getBoundingClientRect();
@@ -224,7 +229,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
     node.fx = node.x;
     node.fy = node.y;
     nodeDragRef.current = { key, x: event.clientX, y: event.clientY, originX: node.x || 0, originY: node.y || 0, node, target, moved: false };
-    simulationRef.current?.alphaTarget(0.22).restart();
+    simulationRefs.current.get(node.topicIndex)?.alphaTarget(0.35).restart();
     target.setPointerCapture(event.pointerId);
     target.classList.add("dragging");
   };
@@ -237,8 +242,8 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
     if (Math.abs(dx) + Math.abs(dy) > 4) drag.moved = true;
     drag.node.fx = drag.originX + dx;
     drag.node.fy = drag.originY + dy;
-    drag.target.style.left = `${drag.node.fx}px`;
-    drag.target.style.top = `${drag.node.fy}px`;
+    drag.target.style.setProperty("--paper-dx", `${(drag.node.fx || 0) - drag.node.originX}px`);
+    drag.target.style.setProperty("--paper-dy", `${(drag.node.fy || 0) - drag.node.originY}px`);
   };
   const endNodeDrag = (event: PointerEvent<HTMLButtonElement>) => {
     const drag = nodeDragRef.current;
@@ -247,7 +252,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
     if (drag.moved) suppressClickRef.current = drag.key;
     drag.node.fx = null;
     drag.node.fy = null;
-    simulationRef.current?.alphaTarget(0).alpha(0.35).restart();
+    simulationRefs.current.get(drag.node.topicIndex)?.alphaTarget(0).alpha(0.55).restart();
     drag.target.classList.remove("dragging");
     nodeDragRef.current = null;
   };
@@ -313,9 +318,9 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
         </div>}
         <div style={{opacity:display === "map" ? 1 : 0, pointerEvents:display === "map" ? "auto" : "none"}} aria-hidden={display !== "map"} inert={display !== "map"}>
         <div className="paper-plot" ref={plotRef} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={endPan} onPointerCancel={endPan} onDoubleClick={fitGraph}><div className="paper-canvas paper-circle-canvas" ref={canvasRef} style={{width:WIDTH,height:HEIGHT}}>
-          {packedTopics.map((node) => { const topicIndex = node.data.topicIndex!; const topic = topics[topicIndex]; return <div key={topic.name} className="paper-cluster-bubble" style={{left:node.x,top:node.y,width:node.r * 2,height:node.r * 2,borderColor:topic.color,background:`color-mix(in srgb, ${topic.color} 10%, white)`}}/>; })}
+          {packedTopics.map((node) => { const topicIndex = node.data.topicIndex!; const topic = topics[topicIndex]; return <div key={topic.name} className="paper-cluster-bubble" style={{left:node.x,top:node.y,width:node.r * 2,height:node.r * 2,borderColor:topic.color,background:`color-mix(in srgb, ${topic.color} 8%, white)`}}/>; })}
           {packedTopicLabels.map((node) => { const topicIndex = node.data.topicIndex!; const topic = topics[topicIndex]; const key = `topic:${topic.name}`; const count = mapSources.filter((source) => source.topic === topic.name).length; return <button key={topic.name} className={`paper-topic-node packed-topic-node ${count ? "" : "muted"}`} onClick={() => activateNode(key, () => chooseTopic(topic.name))} style={{left:node.x,top:node.y,width:node.r * 2,height:node.r * 2,borderColor:topic.color,background:topic.color}}><strong>{topic.name}</strong><small>{count}</small></button>; })}
-          {mapSources.map((source) => { const key = sourceKey(source); const node = packedSources.get(key); const forceNode = forceNodeByKey.get(key); if (!node || !forceNode) return null; const topic = topics[node.data.topicIndex!]; return <button ref={(element) => { if (element) paperNodeElementsRef.current.set(key, element); else paperNodeElementsRef.current.delete(key); }} key={key} aria-label={`${source.title}, ${source.authors}, ${publicationLabel(source)}`} onPointerDown={(event) => beginNodeDrag(event, key)} onPointerMove={moveNode} onPointerUp={endNodeDrag} onPointerCancel={endNodeDrag} onClick={() => activateNode(key, () => selectReading(source))} className={`paper-source-node paper-circle-node ${source.kind === "LessWrong" ? "lesswrong" : source.kind === "Post" ? "post" : ""} ${activeSource?.url === source.url ? "selected" : ""}`} style={{left:forceNode.x,top:forceNode.y,width:node.r * 2,height:node.r * 2,borderColor:topic.color,background:`color-mix(in srgb, ${topic.color} 72%, white)`}}><small>{source.kind === "Paper" ? "PDF" : source.kind === "LessWrong" ? "LW" : "POST"}</small><span className="paper-node-tooltip" role="tooltip"><strong>{source.title}</strong><em>{source.authors} · {publicationLabel(source)}</em></span></button>; })}
+          {mapSources.map((source) => { const key = sourceKey(source); const node = packedSources.get(key); const forceNode = forceNodeByKey.get(key); if (!node || !forceNode) return null; const topic = topics[node.data.topicIndex!]; return <button ref={(element) => { if (element) paperNodeElementsRef.current.set(key, element); else paperNodeElementsRef.current.delete(key); }} key={key} aria-label={`${source.title}, ${source.authors}, ${publicationLabel(source)}`} onPointerDown={(event) => beginNodeDrag(event, key)} onPointerMove={moveNode} onPointerUp={endNodeDrag} onPointerCancel={endNodeDrag} onClick={() => activateNode(key, () => selectReading(source))} className={`paper-source-node paper-circle-node ${source.kind === "LessWrong" ? "lesswrong" : source.kind === "Post" ? "post" : ""} ${activeSource?.url === source.url ? "selected" : ""}`} style={{left:forceNode.originX,top:forceNode.originY,width:node.r * 2,height:node.r * 2,borderColor:topic.color,background:`color-mix(in srgb, ${topic.color} 68%, white)`}}><small>{source.kind === "Paper" ? "PDF" : source.kind === "LessWrong" ? "LW" : "POST"}</small><span className="paper-node-tooltip" role="tooltip"><strong>{source.title}</strong><em>{source.authors} · {publicationLabel(source)}</em></span></button>; })}
           {!visible.length && <div className="empty">No readings match that search.<button onClick={() => {setQuery("");setFilter("All topics");}}>Show all readings</button></div>}
         </div></div>
         <section className="paper-summary-card paper-selected-summary" aria-label="Selected paper summary">
