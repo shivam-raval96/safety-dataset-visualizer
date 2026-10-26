@@ -4848,5 +4848,77 @@
     "url": "https://www.lesswrong.com/posts/nWiPLEgaXdAQNwXBd/patching-reward-hacks-won-t-fix-reward-hacking",
     "confidence": "High",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Reward Misspecification Degrades Chain-of-Thought Monitorability",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Tianyi Lorena Yan & John Hewitt",
+    "year": 2026,
+    "publishedAt": "2026-10-20",
+    "summary": "Monitoring the chain-of-thought (CoT) of language models (LMs) is a key strategy for detecting and preventing misbehaviors for AI.",
+    "url": "https://arxiv.org/abs/2610.28303",
+    "confidence": "High",
+    "matchedBy": "reward misspecification"
+  },
+  {
+    "title": "SimHack: Predicting the onset of detectable reward hacking before RL training",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Junwei Deng et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-20",
+    "summary": "When training LLMs to code with reinforcement learning, reward hacking is often detectable but difficult to prevent, since (a) environment hardening is increasingly difficult as training environments grow more complex; and (b) training-time interventions.",
+    "url": "https://arxiv.org/abs/2610.28707",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "LIFT: Scoped Constraints for Evaluating and Training Instruction Following",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Eran Goldstein et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-20",
+    "summary": "Common instruction following (IF) benchmarks, such as IFEval, evaluate the ability of language models (LMs) to follow simple constraints that can easily be verified.",
+    "url": "https://arxiv.org/abs/2610.28819",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Different eval awareness may track different graders",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Santiago Aranguri",
+    "year": 2026,
+    "publishedAt": "2026-10-25",
+    "summary": "TL;DR: Qwen3.6 27B shows different kinds of eval awareness, most notably on safety and capabilities.",
+    "url": "https://www.lesswrong.com/posts/dbBeff68R4toeegyw/different-eval-awareness-may-track-different-graders",
+    "confidence": "High",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "From overeliciting to undereliciting LLM propensities in just a few months",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "David Africa",
+    "year": 2026,
+    "publishedAt": "2026-10-25",
+    "summary": "For a while, we felt we had a pretty good grasp over LLM behaviour because we had to exert significant effort to elicit misaligned.",
+    "url": "https://www.lesswrong.com/posts/ChixHL6AcaRgeHkp9/from-overeliciting-to-undereliciting-llm-propensities-in",
+    "confidence": "Broad",
+    "matchedBy": "conditional misalignment"
+  },
+  {
+    "title": "Mech Interp is a La Croix of Actual Safety Research",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "William Klett",
+    "year": 2026,
+    "publishedAt": "2026-10-25",
+    "summary": "I recently spoke to Stephen Casper at Princeton's alignment club. Stephen is an CS PhD turned policy researcher at Harvard Kennedy School. He was very sure that mechanistic interpretability was one of the least effective ways to pursue AI safety. As someone.",
+    "url": "https://www.lesswrong.com/posts/ciZ4YxZeY4M89SLT2/mech-interp-is-a-la-croix-of-actual-safety-research",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]

@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-10-26",
+    "papers": [
+      {
+        "title": "Reward Misspecification Degrades Chain-of-Thought Monitorability",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Tianyi Lorena Yan & John Hewitt",
+        "url": "https://arxiv.org/abs/2610.28303"
+      },
+      {
+        "title": "SimHack: Predicting the onset of detectable reward hacking before RL training",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Junwei Deng et al.",
+        "url": "https://arxiv.org/abs/2610.28707"
+      },
+      {
+        "title": "LIFT: Scoped Constraints for Evaluating and Training Instruction Following",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Eran Goldstein et al.",
+        "url": "https://arxiv.org/abs/2610.28819"
+      },
+      {
+        "title": "Different eval awareness may track different graders",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Santiago Aranguri",
+        "url": "https://www.lesswrong.com/posts/dbBeff68R4toeegyw/different-eval-awareness-may-track-different-graders"
+      },
+      {
+        "title": "From overeliciting to undereliciting LLM propensities in just a few months",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "David Africa",
+        "url": "https://www.lesswrong.com/posts/ChixHL6AcaRgeHkp9/from-overeliciting-to-undereliciting-llm-propensities-in"
+      },
+      {
+        "title": "Mech Interp is a La Croix of Actual Safety Research",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "William Klett",
+        "url": "https://www.lesswrong.com/posts/ciZ4YxZeY4M89SLT2/mech-interp-is-a-la-croix-of-actual-safety-research"
+      }
+    ]
+  },
+  {
     "date": "2026-10-25",
     "papers": [
       {
