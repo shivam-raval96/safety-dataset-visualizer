@@ -6,7 +6,6 @@ import { PointerEvent, useCallback, useEffect, useMemo, useRef, useState } from 
 import curated from "../data/curated-papers.json";
 import discovered from "../data/discovered-papers.json";
 import paperHistory from "../data/paper-history.json";
-import { connectedReadings, partitionReadings, summarizeReadings } from "./paperSummaries";
 import { paperRemovalBatches, paperRemovalIssueUrl } from "./paperRemoval";
 
 type Source = {
@@ -53,31 +52,11 @@ function publicationLabel(source: Source) {
   return new Date(`${source.publishedAt}T00:00:00Z`).toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
 }
 
-// Keep one chronological spiral per topic while packing the cluster envelopes
-// into a compact overview. The canvas dimensions drive the initial fit zoom.
-const WIDTH = 8000;
-const HEIGHT = 9400;
-const topicCenters = [
-  { x: 1500, y: 1400 },
-  { x: 4000, y: 1400 },
-  { x: 6500, y: 1400 },
-  { x: 1500, y: 3650 },
-  { x: 4000, y: 3650 },
-  { x: 6500, y: 3650 },
-  { x: 1500, y: 5900 },
-  { x: 4000, y: 5900 },
-  { x: 6500, y: 5900 },
-  { x: 4000, y: 8150 },
-  { x: 6500, y: 8150 },
-];
-const centers = topics.map((topic, index) => ({ ...topic, ...topicCenters[index] }));
-const yearColors: Record<number, { band: string; label: string }> = {
-  2023: { band: "#eadcff", label: "#7046ad" },
-  2024: { band: "#d5eaff", label: "#2875ad" },
-  2025: { band: "#d4f2df", label: "#287a4d" },
-  2026: { band: "#ffe0c9", label: "#ad5428" },
-};
-
+// Topic clusters share one compact canvas. Papers are packed in rings around
+// the topic title, with no chronology bands, relationship lines, or enclosures.
+const WIDTH = 1100;
+const HEIGHT = 1100;
+const CENTER = { x: WIDTH / 2, y: HEIGHT / 2 };
 function orderedTopicSources(topic: string) {
   return sources
     .map((item, insertionOrder) => ({ item, insertionOrder }))
@@ -86,56 +65,23 @@ function orderedTopicSources(topic: string) {
     .map(({ item }) => item);
 }
 
-function yearBands(topic: string) {
-  const siblings = orderedTopicSources(topic);
-  return [...new Set(siblings.map((source) => source.year))].map((year) => {
-    const first = siblings.findIndex((source) => source.year === year);
-    const last = siblings.findLastIndex((source) => source.year === year);
-    const inner = first === 0 ? 92 : 160 + first * 14 - 7;
-    const outer = 160 + last * 14 + (last === siblings.length - 1 ? 60 : 7);
-    const colors = yearColors[year] || { band: "#e5e9e6", label: "#59635d" };
-    return { year, radius: (inner + outer) / 2, width: outer - inner, outer, ...colors };
-  });
-}
-
 function sourcePosition(source: Source) {
   const topicIndex = topics.findIndex((topic) => topic.name === source.topic);
-  const center = centers[topicIndex];
   const siblings = orderedTopicSources(source.topic);
   const index = siblings.findIndex((item) => item.title === source.title);
-  const angle = -Math.PI / 2 + index * 0.72;
-  const radius = 160 + index * 14;
-  return { x: center.x + Math.cos(angle) * radius, y: center.y + Math.sin(angle) * radius, topicIndex };
+  let remaining = index;
+  let ring = 0;
+  while (true) {
+    const radius = 128 + ring * 72;
+    const capacity = Math.max(8, Math.floor((2 * Math.PI * radius) / 68));
+    if (remaining < capacity) {
+      const angle = -Math.PI / 2 + (remaining / capacity) * Math.PI * 2;
+      return { x: CENTER.x + Math.cos(angle) * radius, y: CENTER.y + Math.sin(angle) * radius, topicIndex };
+    }
+    remaining -= capacity;
+    ring += 1;
+  }
 }
-
-const similarityStopwords = new Set(["about", "after", "against", "also", "from", "have", "into", "language", "large", "model", "models", "paper", "results", "show", "shows", "study", "their", "these", "they", "this", "through", "using", "with"]);
-
-function sourceTerms(source: Source) {
-  return new Set(`${source.title} ${source.summary}`.toLowerCase().match(/[a-z][a-z-]{3,}/g)?.filter((word) => !similarityStopwords.has(word)) || []);
-}
-
-const relatedEdges = (() => {
-  const terms = sources.map(sourceTerms);
-  const edges = new Map<string, { a: Source; b: Source; score: number }>();
-  sources.forEach((source, index) => {
-    const matches = sources.flatMap((candidate, candidateIndex) => {
-      if (candidateIndex === index) return [];
-      const overlap = [...terms[index]].filter((term) => terms[candidateIndex].has(term)).length;
-      if (overlap < 2) return [];
-      const score = overlap / Math.sqrt(terms[index].size * terms[candidateIndex].size);
-      return score >= .16 ? [{ candidate, candidateIndex, score }] : [];
-    }).sort((a, b) => b.score - a.score).slice(0, 2);
-    matches.forEach(({ candidateIndex, score }) => {
-      const [left, right] = index < candidateIndex ? [index, candidateIndex] : [candidateIndex, index];
-      edges.set(`${left}-${right}`, { a: sources[left], b: sources[right], score });
-    });
-  });
-  return [...edges.values()];
-})();
-
-const readingGroups = centers.flatMap((topic) => partitionReadings(orderedTopicSources(topic.name), sourcePosition).map((group, index) => ({
-  ...group, id: `${topic.name}-${index}`, name: `${topic.name} · Group ${index + 1}`, color: topic.color,
-})));
 
 export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: () => void; onOrganisms: () => void }) {
   const [display, setDisplay] = useState<"map" | "list">("map");
@@ -146,9 +92,6 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
     return () => window.removeEventListener("popstate", sync);
   }, []);
   const [selected, setSelected] = useState(sources[0]);
-  const [summaryMode, setSummaryMode] = useState<"connected" | "group">("connected");
-  const [summaryGroup, setSummaryGroup] = useState(readingGroups[0].id);
-  const [summaryCollapsed, setSummaryCollapsed] = useState(false);
   const [detailView, setDetailView] = useState<"paper" | "history">("paper");
   const [filter, setFilter] = useState("All topics");
   const [query, setQuery] = useState("");
@@ -156,6 +99,9 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
   const plotRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef<{ x: number; y: number; originX: number; originY: number } | null>(null);
   const canvasRef = useRef<HTMLDivElement>(null);
+  const [nodePositions, setNodePositions] = useState<Record<string, { x: number; y: number }>>({});
+  const nodeDragRef = useRef<{ key: string; x: number; y: number; originX: number; originY: number; currentX: number; currentY: number; target: HTMLButtonElement; moved: boolean } | null>(null);
+  const suppressClickRef = useRef<string | null>(null);
   const viewRef = useRef({ x: 0, y: 0, scale: 0.5 });
   const frameRef = useRef<number | null>(null);
   const zoomSettleRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -243,35 +189,58 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
     dragRef.current = null;
     event.currentTarget.classList.remove("dragging");
   };
+  const beginNodeDrag = (event: PointerEvent<HTMLButtonElement>, key: string, position: { x: number; y: number }) => {
+    event.stopPropagation();
+    const target = event.currentTarget;
+    const current = nodePositions[key] || position;
+    nodeDragRef.current = { key, x: event.clientX, y: event.clientY, originX: current.x, originY: current.y, currentX: current.x, currentY: current.y, target, moved: false };
+    target.setPointerCapture(event.pointerId);
+    target.classList.add("dragging");
+  };
+  const moveNode = (event: PointerEvent<HTMLButtonElement>) => {
+    const drag = nodeDragRef.current;
+    if (!drag) return;
+    event.stopPropagation();
+    const dx = (event.clientX - drag.x) / viewRef.current.scale;
+    const dy = (event.clientY - drag.y) / viewRef.current.scale;
+    if (Math.abs(dx) + Math.abs(dy) > 4) drag.moved = true;
+    const next = { x: drag.originX + dx, y: drag.originY + dy };
+    drag.currentX = next.x;
+    drag.currentY = next.y;
+    drag.target.style.left = `${next.x}px`;
+    drag.target.style.top = `${next.y}px`;
+  };
+  const endNodeDrag = (event: PointerEvent<HTMLButtonElement>) => {
+    const drag = nodeDragRef.current;
+    if (!drag) return;
+    event.stopPropagation();
+    if (drag.moved) suppressClickRef.current = drag.key;
+    setNodePositions((current) => ({ ...current, [drag.key]: { x: drag.currentX, y: drag.currentY } }));
+    drag.target.classList.remove("dragging");
+    nodeDragRef.current = null;
+  };
+  const activateNode = (key: string, action: () => void) => {
+    if (suppressClickRef.current === key) {
+      suppressClickRef.current = null;
+      return;
+    }
+    action();
+  };
   const chooseTopic = (name: string) => {
     setFilter(name);
-    if (name !== "All topics") { setSummaryMode("group"); setSummaryGroup(readingGroups.find((group) => group.members[0].topic === name)?.id || readingGroups[0].id); setSummaryCollapsed(false); }
     if (name !== "All topics") { setSelected(sources.find((source) => source.topic === name) || sources[0]); setDetailView("paper"); }
-    const plot = plotRef.current;
-    const topic = centers.find((item) => item.name === name);
-    if (!plot || !topic) return fitGraph();
-    const scale = Math.max(viewRef.current.scale, 0.62);
-    setView({ x: plot.clientWidth / 2 - topic.x * scale, y: plot.clientHeight / 2 - topic.y * scale, scale });
+    fitGraph();
   };
   const visible = useMemo(() => sources.filter((source) => `${source.title} ${source.topic} ${source.authors} ${source.kind}`.toLowerCase().includes(query.toLowerCase())), [query]);
   const listed = useMemo(() => visible.filter((source) => filter === "All topics" || source.topic === filter)
     .sort((a, b) => publicationTimestamp(b) - publicationTimestamp(a) || a.title.localeCompare(b.title)), [visible, filter]);
   const detailSources = display === "list" ? listed : visible;
-  const visibleTitles = new Set(visible.map((source) => source.title));
   const activeSource = detailSources.find((source) => source.url === selected.url) || detailSources[0];
-  const visibleGroups = readingGroups.map((group) => ({ ...group, members: group.members.filter((source) => visibleTitles.has(source.title)) })).filter((group) => group.members.length);
-  const activeGroup = visibleGroups.find((group) => group.id === summaryGroup) || visibleGroups.find((group) => group.members.includes(activeSource)) || visibleGroups[0];
-  const group = summaryMode === "connected"
-    ? (activeSource ? connectedReadings(activeSource, visible, relatedEdges) : [])
-    : activeGroup?.members || [];
-  const groupTitles = new Set(group.map((source) => source.title));
-  const synthesis = summarizeReadings(group);
+  const activeTopic = topics.find((topic) => topic.name === activeSource?.topic) || topics[0];
+  const mapSources = visible.filter((source) => source.topic === activeTopic.name);
   const selectReading = (source: Source) => {
     setSelected(source);
     setDetailView("paper");
-    setSummaryGroup(readingGroups.find((group) => group.members.includes(source))?.id || readingGroups[0].id);
-    setSummaryMode("connected");
-    setSummaryCollapsed(false);
   };
   const selectedForRemoval = removalSelection.flatMap((url) => {
     const source = sources.find((candidate) => candidate.url === url);
@@ -292,7 +261,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
         {topics.map((topic) => <button key={topic.name} onClick={() => chooseTopic(topic.name)} className={filter === topic.name ? "active" : ""}><span className="cat-dot" style={{background:topic.color}}/>{topic.name}<b>{sources.filter((source) => source.topic === topic.name).length}</b></button>)}
       </nav><a className="sidebar-contribute" href="https://github.com/shivam-raval96/safety-dataset-visualizer/issues/new?template=paper-request.yml" target="_blank" rel="noreferrer">Add a paper <span>↗</span></a><div className="legend-note"><span>Topic → reading</span><p>Large circles are research topics. Smaller circles are papers and LessWrong posts selected as starting points.</p></div></aside>
       <section className="map paper-map" aria-label={display === "map" ? "Topics connected to papers and LessWrong posts" : "Paper list"}>
-        <div className="map-head"><div className="map-head-left"><div className="view-toggle" aria-label="Paper atlas view"><button aria-pressed={display === "map"} onClick={() => navigateAtlas("papers", "map")}>Map</button><button aria-pressed={display === "list"} onClick={() => navigateAtlas("papers", "list")}>List</button></div><div aria-live="polite"><span className="live-dot"/> {display === "list" ? listed.length : visible.length} readings visible</div></div>{display === "map" && <><div className="network-key"><span><i className="paper-topic-swatch"/>Topic</span><span><i/>Paper</span><span><i className="lw-swatch"/>LessWrong</span></div><div className="organism-map-tools" aria-label="Map controls"><button onClick={() => zoomAt(viewRef.current.scale * 1.25)} aria-label="Zoom in">+</button><button onClick={() => zoomAt(viewRef.current.scale / 1.25)} aria-label="Zoom out">−</button><button onClick={fitGraph}>Fit</button></div></>}</div>
+        <div className="map-head"><div className="map-head-left"><div className="view-toggle" aria-label="Paper atlas view"><button aria-pressed={display === "map"} onClick={() => navigateAtlas("papers", "map")}>Map</button><button aria-pressed={display === "list"} onClick={() => navigateAtlas("papers", "list")}>List</button></div><div aria-live="polite"><span className="live-dot"/> {display === "list" ? listed.length : mapSources.length} readings visible</div></div>{display === "map" && <div className="organism-map-tools" aria-label="Map controls"><button onClick={() => zoomAt(viewRef.current.scale * 1.25)} aria-label="Zoom in">+</button><button onClick={() => zoomAt(viewRef.current.scale / 1.25)} aria-label="Zoom out">−</button><button onClick={fitGraph}>Fit</button></div>}</div>
         {display === "list" && <div className="paper-list">
           <div className="paper-bulk-actions">
             <button onClick={() => setRemovalSelection([...new Set(listed.map((source) => source.url))])}>Select visible</button>
@@ -311,32 +280,20 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
           </li>)}</ul> : <div className="empty">No readings match your filters.<button onClick={() => {setQuery("");setFilter("All topics");}}>Show all readings</button></div>}
         </div>}
         <div style={{opacity:display === "map" ? 1 : 0, pointerEvents:display === "map" ? "auto" : "none"}} aria-hidden={display !== "map"} inert={display !== "map"}>
-        <div className="paper-plot" ref={plotRef} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={endPan} onPointerCancel={endPan} onDoubleClick={fitGraph}><div className="paper-canvas" ref={canvasRef} style={{width:WIDTH,height:HEIGHT}}><svg aria-hidden="true" viewBox={`0 0 ${WIDTH} ${HEIGHT}`}>
-          {centers.flatMap((topic) => yearBands(topic.name).map((band) => <g key={`${topic.name}-${band.year}`} className="paper-year-band"><circle cx={topic.x} cy={topic.y} r={band.radius} stroke={band.band} strokeWidth={band.width}/><text x={topic.x} y={topic.y - band.outer + 18} fill={band.label}>{band.year}</text></g>))}
-          {visibleGroups.map((topic) => <rect key={topic.id} data-group-id={topic.id} data-count={topic.members.length} className={`paper-category-boundary ${summaryMode === "group" && activeGroup?.id === topic.id ? "active" : ""}`} x={topic.left} y={topic.top} width={topic.right - topic.left} height={topic.bottom - topic.top} rx="24" stroke={topic.color}/>)}
-          {relatedEdges.filter(({ a, b }) => visibleTitles.has(a.title) && visibleTitles.has(b.title)).map(({ a, b, score }) => { const start = sourcePosition(a); const end = sourcePosition(b); const active = groupTitles.has(a.title) && groupTitles.has(b.title); return <line key={`${a.title}-${b.title}`} className={`paper-related-line ${active ? "active" : "muted"}`} x1={start.x} y1={start.y} x2={end.x} y2={end.y} style={{strokeWidth:1.5 + score * 4}}/>; })}
-        </svg>
-          {visibleGroups.map((topic) => <button key={`summary-${topic.id}`} className="paper-category-label" style={{left:topic.left + 20,top:topic.top - 10,borderColor:topic.color}} onClick={() => { setSummaryGroup(topic.id); setSummaryMode("group"); setSummaryCollapsed(false); }} aria-label={`Summarize ${topic.name}`} aria-pressed={summaryMode === "group" && activeGroup?.id === topic.id} title={`${topic.name} · ${topic.members.length} papers`}>{topic.members.length} ↗</button>)}
-          {centers.map((topic) => <button key={topic.name} className={`paper-topic-node ${filter !== "All topics" && filter !== topic.name ? "muted" : ""}`} onClick={() => chooseTopic(topic.name)} style={{left:topic.x,top:topic.y,borderColor:topic.color}}><strong>{topic.name}</strong><small>{sources.filter((source) => source.topic === topic.name).length} readings</small></button>)}
-          {sources.map((source) => { const position = sourcePosition(source); return <button key={source.title} title={source.title} onClick={() => selectReading(source)} tabIndex={visibleTitles.has(source.title) ? 0 : -1} aria-hidden={!visibleTitles.has(source.title)} className={`paper-source-node ${source.kind === "LessWrong" ? "lesswrong" : source.kind === "Post" ? "post" : ""} ${activeSource?.title === source.title ? "selected" : ""} ${groupTitles.has(source.title) ? "in-summary" : ""} ${visibleTitles.has(source.title) ? "" : "hidden"}`} style={{left:position.x,top:position.y,borderColor:topics[position.topicIndex].color}}><span>{source.title}</span><small>{source.kind}</small></button>; })}
+        <div className="paper-plot" ref={plotRef} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={endPan} onPointerCancel={endPan} onDoubleClick={fitGraph}><div className="paper-canvas paper-circle-canvas" ref={canvasRef} style={{width:WIDTH,height:HEIGHT}}>
+          {(() => { const key = `topic:${activeTopic.name}`; const position = nodePositions[key] || CENTER; return <button className="paper-topic-node" onPointerDown={(event) => beginNodeDrag(event, key, CENTER)} onPointerMove={moveNode} onPointerUp={endNodeDrag} onPointerCancel={endNodeDrag} onClick={() => activateNode(key, () => chooseTopic(activeTopic.name))} style={{left:position.x,top:position.y,borderColor:activeTopic.color}}><strong>{activeTopic.name}</strong><small>{mapSources.length} readings</small></button>; })()}
+          {mapSources.map((source) => { const fallback = sourcePosition(source); const key = source.url; const position = nodePositions[key] || fallback; return <button key={source.url} aria-label={`${source.title}, ${source.authors}, ${publicationLabel(source)}`} onPointerDown={(event) => beginNodeDrag(event, key, fallback)} onPointerMove={moveNode} onPointerUp={endNodeDrag} onPointerCancel={endNodeDrag} onClick={() => activateNode(key, () => selectReading(source))} className={`paper-source-node paper-circle-node ${source.kind === "LessWrong" ? "lesswrong" : source.kind === "Post" ? "post" : ""} ${activeSource?.url === source.url ? "selected" : ""}`} style={{left:position.x,top:position.y,borderColor:topics[fallback.topicIndex].color}}><small>{source.kind === "Paper" ? "PDF" : source.kind === "LessWrong" ? "LW" : "POST"}</small><span className="paper-node-tooltip" role="tooltip"><strong>{source.title}</strong><em>{source.authors} · {publicationLabel(source)}</em></span></button>; })}
           {!visible.length && <div className="empty">No readings match that search.<button onClick={() => {setQuery("");setFilter("All topics");}}>Show all readings</button></div>}
         </div></div>
-        <section className={`paper-summary-card ${summaryCollapsed ? "collapsed" : ""}`} aria-label="Group summary">
-          <div className="paper-summary-heading"><span className="eyebrow">Reading synthesis</span><button aria-label={summaryCollapsed ? "Expand summary" : "Collapse summary"} aria-expanded={!summaryCollapsed} onClick={() => setSummaryCollapsed(!summaryCollapsed)}>{summaryCollapsed ? "+" : "−"}</button></div>
-          {!summaryCollapsed && <>
-            <div className="paper-summary-tabs" aria-label="Summary scope"><button aria-pressed={summaryMode === "connected"} onClick={() => setSummaryMode("connected")}>Connected readings</button><button aria-pressed={summaryMode === "group"} onClick={() => setSummaryMode("group")}>Paper group</button></div>
-            <div className="paper-summary-content" key={`${summaryMode}-${activeSource?.url}-${activeGroup?.id}-${query}`}>
-              <h2>{summaryMode === "group" ? activeGroup?.name || "Group summary" : activeSource?.title || "No matching readings"}</h2>
-              <p className="paper-summary-meta">{group.length} {group.length === 1 ? "reading" : "readings"} · {summaryMode === "connected" ? "Selected + directly linked" : "Inside this rectangle"}</p>
-              <p>{synthesis.overview}</p>
-              {group.length > 1 && <div className="paper-summary-findings"><h3>Findings in this group</h3>{group.slice(0, 3).map((source) => <p key={source.url}>{source.summary} <a href={source.url} target="_blank" rel="noreferrer">{source.title} ↗</a></p>)}{group.length > 3 && <small>Showing 3 contributions; all {group.length} are available below.</small>}</div>}
-              {!!synthesis.insights.length && <><h3>Insights to explore</h3><ul>{synthesis.insights.map((insight) => <li key={insight}>{insight}</li>)}</ul></>}
-              <p className="paper-summary-method">Based on atlas descriptions; insights are inferred reading prompts. Connections indicate text similarity, not citations or agreement.</p>
-              {!!group.length && <details><summary>Read all {group.length} contributions</summary><ol>{group.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.title} ↗</a><p>{source.summary}</p></li>)}</ol></details>}
-            </div>
-          </>}
+        <section className="paper-summary-card paper-selected-summary" aria-label="Selected paper summary">
+          <div className="paper-summary-heading"><span className="eyebrow">Paper summary</span></div>
+          {activeSource ? <div className="paper-summary-content" key={activeSource.url}>
+            <h2>{activeSource.title}</h2>
+            <p className="paper-summary-meta">{activeSource.authors} · {publicationLabel(activeSource)} · {activeSource.kind}</p>
+            <p>{activeSource.summary}</p>
+          </div> : <p className="paper-summary-content">No readings match your search.</p>}
         </section>
-        <div className="map-foot"><span>Oldest → newest from center outward · drag to explore · scroll or pinch to zoom</span></div>
+        <div className="map-foot"><span>Drag any circle to rearrange · hover for details · click to select · scroll or pinch to zoom</span></div>
         </div>
       </section>
       <aside className="detail">
