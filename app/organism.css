@@ -768,6 +768,7 @@
 .packed-topic-node strong { color: #fff; font-size: 15px; }
 .packed-topic-node small { margin-top: 5px; color: #ffffffcf; }
 .paper-circle-node { min-width: 30px; min-height: 30px; padding: 0; overflow: visible; border: 2px solid #fff !important; color: #fff; box-shadow: 0 2px 7px #17211d24; transform: translate(-50%,-50%) translate3d(var(--paper-dx,0),var(--paper-dy,0),0); transition: box-shadow .12s,filter .12s; will-change: transform; contain: layout paint style; }
+.paper-circle-node.lesswrong,.paper-circle-node.post { border-width: 2px; border-style: solid; }
 .paper-circle-node:hover,.paper-circle-node.selected { transform: translate(-50%,-50%) translate3d(var(--paper-dx,0),var(--paper-dy,0),0) scale(1.08); }
 .paper-circle-node > small { margin: 0; color: #fff; font-size: 7px; font-weight: 800; letter-spacing: .08em; }
 .paper-circle-node .paper-node-tooltip { position: absolute; z-index: 30; left: 50%; bottom: calc(100% + 10px); width: 240px; display: none !important; padding: 10px 12px; transform: translateX(-50%); border-radius: 9px; background: #17211d; color: #fff; box-shadow: 0 8px 24px #17211d33; text-align: left; white-space: normal; pointer-events: none; }
