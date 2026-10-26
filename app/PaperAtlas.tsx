@@ -4,6 +4,7 @@ import { navigateAtlas, readAtlasRoute } from "./urlState";
 
 import { PointerEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { hierarchy, pack } from "d3-hierarchy";
+import { forceCollide, forceSimulation, forceX, forceY, Simulation, SimulationNodeDatum } from "d3-force";
 import curated from "../data/curated-papers.json";
 import discovered from "../data/discovered-papers.json";
 import paperHistory from "../data/paper-history.json";
@@ -43,6 +44,7 @@ const topics = [
 
 const curatedSources: Source[] = curated.map((source) => ({ ...source, year: Number(source.year), kind: source.kind as Source["kind"] }));
 const sources = [...curatedSources, ...(discovered as Source[])];
+const sourceKey = (source: Source) => `${source.url}::${source.topic}::${source.title}`;
 
 function publicationTimestamp(source: Source) {
   return Date.parse(source.publishedAt ? `${source.publishedAt}T00:00:00Z` : `${source.year}-01-01T00:00:00Z`);
@@ -70,7 +72,8 @@ const packedRoot = pack<PackDatum>().size([WIDTH, HEIGHT]).padding(12)(hierarchy
 const packedTopics = packedRoot.children || [];
 const packedLeaves = packedRoot.leaves();
 const packedTopicLabels = packedLeaves.filter((node) => !node.data.source && node.data.topicIndex !== undefined);
-const packedSources = new Map(packedLeaves.flatMap((node) => node.data.source ? [[node.data.source.url, node] as const] : []));
+const packedSources = new Map(packedLeaves.flatMap((node) => node.data.source ? [[sourceKey(node.data.source), node] as const] : []));
+type ForcePaperNode = SimulationNodeDatum & { key: string; topicIndex: number; radius: number; targetX: number; targetY: number; obstacle: boolean };
 
 export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: () => void; onOrganisms: () => void }) {
   const [display, setDisplay] = useState<"map" | "list">("map");
@@ -88,8 +91,14 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
   const plotRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef<{ x: number; y: number; originX: number; originY: number } | null>(null);
   const canvasRef = useRef<HTMLDivElement>(null);
-  const [nodePositions, setNodePositions] = useState<Record<string, { x: number; y: number }>>({});
-  const nodeDragRef = useRef<{ key: string; x: number; y: number; originX: number; originY: number; currentX: number; currentY: number; target: HTMLButtonElement; moved: boolean } | null>(null);
+  const paperNodeElementsRef = useRef(new Map<string, HTMLButtonElement>());
+  const [forceNodes] = useState<ForcePaperNode[]>(() => [
+    ...packedTopicLabels.map((node) => ({ key: `topic:${topics[node.data.topicIndex!].name}`, topicIndex: node.data.topicIndex!, radius: node.r + 5, targetX: node.x, targetY: node.y, x: node.x, y: node.y, fx: node.x, fy: node.y, obstacle: true })),
+    ...sources.flatMap((source) => { const node = packedSources.get(sourceKey(source)); if (!node) return []; const topicNode = packedTopics.find((candidate) => candidate.data.topicIndex === node.data.topicIndex)!; return [{ key: sourceKey(source), topicIndex: node.data.topicIndex!, radius: node.r, targetX: topicNode.x, targetY: topicNode.y, x: node.x, y: node.y, obstacle: false }]; }),
+  ]);
+  const forceNodeByKey = useMemo(() => new Map(forceNodes.map((node) => [node.key, node])), [forceNodes]);
+  const simulationRef = useRef<Simulation<ForcePaperNode, undefined> | null>(null);
+  const nodeDragRef = useRef<{ key: string; x: number; y: number; originX: number; originY: number; node: ForcePaperNode; target: HTMLButtonElement; moved: boolean } | null>(null);
   const suppressClickRef = useRef<string | null>(null);
   const viewRef = useRef({ x: 0, y: 0, scale: 0.5 });
   const frameRef = useRef<number | null>(null);
@@ -152,6 +161,25 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
       frameRef.current = null;
     };
   }, [fitGraph]);
+  useEffect(() => {
+    const simulation = forceSimulation(forceNodes)
+      .velocityDecay(0.38)
+      .alphaDecay(0.045)
+      .force("x", forceX<ForcePaperNode>((node) => node.targetX).strength((node) => node.obstacle ? 0 : 0.11))
+      .force("y", forceY<ForcePaperNode>((node) => node.targetY).strength((node) => node.obstacle ? 0 : 0.11))
+      .force("collide", forceCollide<ForcePaperNode>((node) => node.radius + 3).strength(0.95).iterations(2))
+      .on("tick", () => {
+        for (const node of forceNodes) {
+          if (node.obstacle) continue;
+          const element = paperNodeElementsRef.current.get(node.key);
+          if (!element) continue;
+          element.style.left = `${node.x}px`;
+          element.style.top = `${node.y}px`;
+        }
+      });
+    simulationRef.current = simulation;
+    return () => { simulation.stop(); simulationRef.current = null; };
+  }, [forceNodes]);
   const zoomAt = useCallback((nextScale: number, clientX?: number, clientY?: number) => {
     const rect = plotRef.current?.getBoundingClientRect();
     setView((current) => {
@@ -188,11 +216,15 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
     dragRef.current = null;
     event.currentTarget.classList.remove("dragging");
   };
-  const beginNodeDrag = (event: PointerEvent<HTMLButtonElement>, key: string, position: { x: number; y: number }) => {
+  const beginNodeDrag = (event: PointerEvent<HTMLButtonElement>, key: string) => {
     event.stopPropagation();
     const target = event.currentTarget;
-    const current = nodePositions[key] || position;
-    nodeDragRef.current = { key, x: event.clientX, y: event.clientY, originX: current.x, originY: current.y, currentX: current.x, currentY: current.y, target, moved: false };
+    const node = forceNodeByKey.get(key);
+    if (!node) return;
+    node.fx = node.x;
+    node.fy = node.y;
+    nodeDragRef.current = { key, x: event.clientX, y: event.clientY, originX: node.x || 0, originY: node.y || 0, node, target, moved: false };
+    simulationRef.current?.alphaTarget(0.22).restart();
     target.setPointerCapture(event.pointerId);
     target.classList.add("dragging");
   };
@@ -203,18 +235,19 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
     const dx = (event.clientX - drag.x) / viewRef.current.scale;
     const dy = (event.clientY - drag.y) / viewRef.current.scale;
     if (Math.abs(dx) + Math.abs(dy) > 4) drag.moved = true;
-    const next = { x: drag.originX + dx, y: drag.originY + dy };
-    drag.currentX = next.x;
-    drag.currentY = next.y;
-    drag.target.style.left = `${next.x}px`;
-    drag.target.style.top = `${next.y}px`;
+    drag.node.fx = drag.originX + dx;
+    drag.node.fy = drag.originY + dy;
+    drag.target.style.left = `${drag.node.fx}px`;
+    drag.target.style.top = `${drag.node.fy}px`;
   };
   const endNodeDrag = (event: PointerEvent<HTMLButtonElement>) => {
     const drag = nodeDragRef.current;
     if (!drag) return;
     event.stopPropagation();
     if (drag.moved) suppressClickRef.current = drag.key;
-    setNodePositions((current) => ({ ...current, [drag.key]: { x: drag.currentX, y: drag.currentY } }));
+    drag.node.fx = null;
+    drag.node.fy = null;
+    simulationRef.current?.alphaTarget(0).alpha(0.35).restart();
     drag.target.classList.remove("dragging");
     nodeDragRef.current = null;
   };
@@ -281,8 +314,8 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
         <div style={{opacity:display === "map" ? 1 : 0, pointerEvents:display === "map" ? "auto" : "none"}} aria-hidden={display !== "map"} inert={display !== "map"}>
         <div className="paper-plot" ref={plotRef} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={endPan} onPointerCancel={endPan} onDoubleClick={fitGraph}><div className="paper-canvas paper-circle-canvas" ref={canvasRef} style={{width:WIDTH,height:HEIGHT}}>
           {packedTopics.map((node) => { const topicIndex = node.data.topicIndex!; const topic = topics[topicIndex]; return <div key={topic.name} className="paper-cluster-bubble" style={{left:node.x,top:node.y,width:node.r * 2,height:node.r * 2,borderColor:topic.color,background:`color-mix(in srgb, ${topic.color} 10%, white)`}}/>; })}
-          {packedTopicLabels.map((node) => { const topicIndex = node.data.topicIndex!; const topic = topics[topicIndex]; const fallback = {x:node.x,y:node.y}; const key = `topic:${topic.name}`; const position = nodePositions[key] || fallback; const count = mapSources.filter((source) => source.topic === topic.name).length; return <button key={topic.name} className={`paper-topic-node packed-topic-node ${count ? "" : "muted"}`} onPointerDown={(event) => beginNodeDrag(event, key, fallback)} onPointerMove={moveNode} onPointerUp={endNodeDrag} onPointerCancel={endNodeDrag} onClick={() => activateNode(key, () => chooseTopic(topic.name))} style={{left:position.x,top:position.y,width:node.r * 2,height:node.r * 2,borderColor:topic.color,background:topic.color}}><strong>{topic.name}</strong><small>{count}</small></button>; })}
-          {mapSources.map((source) => { const node = packedSources.get(source.url); if (!node) return null; const fallback = {x:node.x,y:node.y}; const key = source.url; const position = nodePositions[key] || fallback; const topic = topics[node.data.topicIndex!]; return <button key={source.url} aria-label={`${source.title}, ${source.authors}, ${publicationLabel(source)}`} onPointerDown={(event) => beginNodeDrag(event, key, fallback)} onPointerMove={moveNode} onPointerUp={endNodeDrag} onPointerCancel={endNodeDrag} onClick={() => activateNode(key, () => selectReading(source))} className={`paper-source-node paper-circle-node ${source.kind === "LessWrong" ? "lesswrong" : source.kind === "Post" ? "post" : ""} ${activeSource?.url === source.url ? "selected" : ""}`} style={{left:position.x,top:position.y,width:node.r * 2,height:node.r * 2,borderColor:topic.color,background:`color-mix(in srgb, ${topic.color} 72%, white)`}}><small>{source.kind === "Paper" ? "PDF" : source.kind === "LessWrong" ? "LW" : "POST"}</small><span className="paper-node-tooltip" role="tooltip"><strong>{source.title}</strong><em>{source.authors} · {publicationLabel(source)}</em></span></button>; })}
+          {packedTopicLabels.map((node) => { const topicIndex = node.data.topicIndex!; const topic = topics[topicIndex]; const key = `topic:${topic.name}`; const count = mapSources.filter((source) => source.topic === topic.name).length; return <button key={topic.name} className={`paper-topic-node packed-topic-node ${count ? "" : "muted"}`} onClick={() => activateNode(key, () => chooseTopic(topic.name))} style={{left:node.x,top:node.y,width:node.r * 2,height:node.r * 2,borderColor:topic.color,background:topic.color}}><strong>{topic.name}</strong><small>{count}</small></button>; })}
+          {mapSources.map((source) => { const key = sourceKey(source); const node = packedSources.get(key); const forceNode = forceNodeByKey.get(key); if (!node || !forceNode) return null; const topic = topics[node.data.topicIndex!]; return <button ref={(element) => { if (element) paperNodeElementsRef.current.set(key, element); else paperNodeElementsRef.current.delete(key); }} key={key} aria-label={`${source.title}, ${source.authors}, ${publicationLabel(source)}`} onPointerDown={(event) => beginNodeDrag(event, key)} onPointerMove={moveNode} onPointerUp={endNodeDrag} onPointerCancel={endNodeDrag} onClick={() => activateNode(key, () => selectReading(source))} className={`paper-source-node paper-circle-node ${source.kind === "LessWrong" ? "lesswrong" : source.kind === "Post" ? "post" : ""} ${activeSource?.url === source.url ? "selected" : ""}`} style={{left:forceNode.x,top:forceNode.y,width:node.r * 2,height:node.r * 2,borderColor:topic.color,background:`color-mix(in srgb, ${topic.color} 72%, white)`}}><small>{source.kind === "Paper" ? "PDF" : source.kind === "LessWrong" ? "LW" : "POST"}</small><span className="paper-node-tooltip" role="tooltip"><strong>{source.title}</strong><em>{source.authors} · {publicationLabel(source)}</em></span></button>; })}
           {!visible.length && <div className="empty">No readings match that search.<button onClick={() => {setQuery("");setFilter("All topics");}}>Show all readings</button></div>}
         </div></div>
         <section className="paper-summary-card paper-selected-summary" aria-label="Selected paper summary">
