@@ -3,6 +3,7 @@ import Comments from "./CardComments";
 import { navigateAtlas, readAtlasRoute } from "./urlState";
 
 import { PointerEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { hierarchy, pack } from "d3-hierarchy";
 import curated from "../data/curated-papers.json";
 import discovered from "../data/discovered-papers.json";
 import paperHistory from "../data/paper-history.json";
@@ -52,36 +53,24 @@ function publicationLabel(source: Source) {
   return new Date(`${source.publishedAt}T00:00:00Z`).toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
 }
 
-// Topic clusters share one compact canvas. Papers are packed in rings around
-// the topic title, with no chronology bands, relationship lines, or enclosures.
-const WIDTH = 1100;
-const HEIGHT = 1100;
-const CENTER = { x: WIDTH / 2, y: HEIGHT / 2 };
-function orderedTopicSources(topic: string) {
-  return sources
-    .map((item, insertionOrder) => ({ item, insertionOrder }))
-    .filter(({ item }) => item.topic === topic)
-    .sort((a, b) => publicationTimestamp(a.item) - publicationTimestamp(b.item) || a.insertionOrder - b.insertionOrder)
-    .map(({ item }) => item);
-}
-
-function sourcePosition(source: Source) {
-  const topicIndex = topics.findIndex((topic) => topic.name === source.topic);
-  const siblings = orderedTopicSources(source.topic);
-  const index = siblings.findIndex((item) => item.title === source.title);
-  let remaining = index;
-  let ring = 0;
-  while (true) {
-    const radius = 128 + ring * 72;
-    const capacity = Math.max(8, Math.floor((2 * Math.PI * radius) / 68));
-    if (remaining < capacity) {
-      const angle = -Math.PI / 2 + (remaining / capacity) * Math.PI * 2;
-      return { x: CENTER.x + Math.cos(angle) * radius, y: CENTER.y + Math.sin(angle) * radius, topicIndex };
-    }
-    remaining -= capacity;
-    ring += 1;
-  }
-}
+// D3 packs each topic and its papers as a bubble group, then packs those groups
+// together. A weighted topic leaf becomes the large colored title bubble.
+const WIDTH = 2000;
+const HEIGHT = 2000;
+type PackDatum = { topicIndex?: number; source?: Source; value?: number; children?: PackDatum[] };
+const packedRoot = pack<PackDatum>().size([WIDTH, HEIGHT]).padding(12)(hierarchy<PackDatum>({
+  children: topics.map((topic, topicIndex) => ({
+    topicIndex,
+    children: [
+      { topicIndex, value: 9 },
+      ...sources.filter((source) => source.topic === topic.name).map((source) => ({ topicIndex, source, value: 1 })),
+    ],
+  })),
+}).sum((datum) => datum.value || 0).sort((a, b) => (b.value || 0) - (a.value || 0)));
+const packedTopics = packedRoot.children || [];
+const packedLeaves = packedRoot.leaves();
+const packedTopicLabels = packedLeaves.filter((node) => !node.data.source && node.data.topicIndex !== undefined);
+const packedSources = new Map(packedLeaves.flatMap((node) => node.data.source ? [[node.data.source.url, node] as const] : []));
 
 export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: () => void; onOrganisms: () => void }) {
   const [display, setDisplay] = useState<"map" | "list">("map");
@@ -141,6 +130,16 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
     // fit could start below the minimum scale allowed by the zoom controls.
     const scale = Math.max(0.08, Math.min(0.72, (plot.clientWidth - 36) / WIDTH, (plot.clientHeight - 36) / HEIGHT));
     setView({ x: (plot.clientWidth - WIDTH * scale) / 2, y: (plot.clientHeight - HEIGHT * scale) / 2, scale });
+  }, [setView]);
+  const fitTopic = useCallback((name: string) => {
+    const plot = plotRef.current;
+    const topicIndex = topics.findIndex((topic) => topic.name === name);
+    if (!plot || topicIndex < 0) return;
+    const topicNode = packedTopics.find((node) => node.data.topicIndex === topicIndex);
+    if (!topicNode) return;
+    const clusterSize = topicNode.r * 2 + 80;
+    const scale = Math.max(0.08, Math.min(0.9, (plot.clientWidth - 72) / clusterSize, (plot.clientHeight - 72) / clusterSize));
+    setView({ x: plot.clientWidth / 2 - topicNode.x * scale, y: plot.clientHeight / 2 - topicNode.y * scale, scale });
   }, [setView]);
   useEffect(() => {
     fitGraph();
@@ -229,15 +228,15 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
   const chooseTopic = (name: string) => {
     setFilter(name);
     if (name !== "All topics") { setSelected(sources.find((source) => source.topic === name) || sources[0]); setDetailView("paper"); }
-    fitGraph();
+    if (display === "map" && name !== "All topics") fitTopic(name);
+    else fitGraph();
   };
   const visible = useMemo(() => sources.filter((source) => `${source.title} ${source.topic} ${source.authors} ${source.kind}`.toLowerCase().includes(query.toLowerCase())), [query]);
   const listed = useMemo(() => visible.filter((source) => filter === "All topics" || source.topic === filter)
     .sort((a, b) => publicationTimestamp(b) - publicationTimestamp(a) || a.title.localeCompare(b.title)), [visible, filter]);
   const detailSources = display === "list" ? listed : visible;
   const activeSource = detailSources.find((source) => source.url === selected.url) || detailSources[0];
-  const activeTopic = topics.find((topic) => topic.name === activeSource?.topic) || topics[0];
-  const mapSources = visible.filter((source) => source.topic === activeTopic.name);
+  const mapSources = visible;
   const selectReading = (source: Source) => {
     setSelected(source);
     setDetailView("paper");
@@ -261,7 +260,7 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
         {topics.map((topic) => <button key={topic.name} onClick={() => chooseTopic(topic.name)} className={filter === topic.name ? "active" : ""}><span className="cat-dot" style={{background:topic.color}}/>{topic.name}<b>{sources.filter((source) => source.topic === topic.name).length}</b></button>)}
       </nav><a className="sidebar-contribute" href="https://github.com/shivam-raval96/safety-dataset-visualizer/issues/new?template=paper-request.yml" target="_blank" rel="noreferrer">Add a paper <span>↗</span></a><div className="legend-note"><span>Topic → reading</span><p>Large circles are research topics. Smaller circles are papers and LessWrong posts selected as starting points.</p></div></aside>
       <section className="map paper-map" aria-label={display === "map" ? "Topics connected to papers and LessWrong posts" : "Paper list"}>
-        <div className="map-head"><div className="map-head-left"><div className="view-toggle" aria-label="Paper atlas view"><button aria-pressed={display === "map"} onClick={() => navigateAtlas("papers", "map")}>Map</button><button aria-pressed={display === "list"} onClick={() => navigateAtlas("papers", "list")}>List</button></div><div aria-live="polite"><span className="live-dot"/> {display === "list" ? listed.length : mapSources.length} readings visible</div></div>{display === "map" && <div className="organism-map-tools" aria-label="Map controls"><button onClick={() => zoomAt(viewRef.current.scale * 1.25)} aria-label="Zoom in">+</button><button onClick={() => zoomAt(viewRef.current.scale / 1.25)} aria-label="Zoom out">−</button><button onClick={fitGraph}>Fit</button></div>}</div>
+        <div className="map-head"><div className="map-head-left"><div className="view-toggle" aria-label="Paper atlas view"><button aria-pressed={display === "map"} onClick={() => navigateAtlas("papers", "map")}>Map</button><button aria-pressed={display === "list"} onClick={() => navigateAtlas("papers", "list")}>List</button></div><div aria-live="polite"><span className="live-dot"/> {display === "list" ? listed.length : mapSources.length} readings visible</div></div>{display === "map" && <div className="organism-map-tools" aria-label="Map controls"><button onClick={() => zoomAt(viewRef.current.scale * 1.25)} aria-label="Zoom in">+</button><button onClick={() => zoomAt(viewRef.current.scale / 1.25)} aria-label="Zoom out">−</button><button onClick={fitGraph}>Fit all</button></div>}</div>
         {display === "list" && <div className="paper-list">
           <div className="paper-bulk-actions">
             <button onClick={() => setRemovalSelection([...new Set(listed.map((source) => source.url))])}>Select visible</button>
@@ -281,8 +280,9 @@ export default function PaperAtlas({ onDatasets, onOrganisms }: { onDatasets: ()
         </div>}
         <div style={{opacity:display === "map" ? 1 : 0, pointerEvents:display === "map" ? "auto" : "none"}} aria-hidden={display !== "map"} inert={display !== "map"}>
         <div className="paper-plot" ref={plotRef} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={endPan} onPointerCancel={endPan} onDoubleClick={fitGraph}><div className="paper-canvas paper-circle-canvas" ref={canvasRef} style={{width:WIDTH,height:HEIGHT}}>
-          {(() => { const key = `topic:${activeTopic.name}`; const position = nodePositions[key] || CENTER; return <button className="paper-topic-node" onPointerDown={(event) => beginNodeDrag(event, key, CENTER)} onPointerMove={moveNode} onPointerUp={endNodeDrag} onPointerCancel={endNodeDrag} onClick={() => activateNode(key, () => chooseTopic(activeTopic.name))} style={{left:position.x,top:position.y,borderColor:activeTopic.color}}><strong>{activeTopic.name}</strong><small>{mapSources.length} readings</small></button>; })()}
-          {mapSources.map((source) => { const fallback = sourcePosition(source); const key = source.url; const position = nodePositions[key] || fallback; return <button key={source.url} aria-label={`${source.title}, ${source.authors}, ${publicationLabel(source)}`} onPointerDown={(event) => beginNodeDrag(event, key, fallback)} onPointerMove={moveNode} onPointerUp={endNodeDrag} onPointerCancel={endNodeDrag} onClick={() => activateNode(key, () => selectReading(source))} className={`paper-source-node paper-circle-node ${source.kind === "LessWrong" ? "lesswrong" : source.kind === "Post" ? "post" : ""} ${activeSource?.url === source.url ? "selected" : ""}`} style={{left:position.x,top:position.y,borderColor:topics[fallback.topicIndex].color}}><small>{source.kind === "Paper" ? "PDF" : source.kind === "LessWrong" ? "LW" : "POST"}</small><span className="paper-node-tooltip" role="tooltip"><strong>{source.title}</strong><em>{source.authors} · {publicationLabel(source)}</em></span></button>; })}
+          {packedTopics.map((node) => { const topicIndex = node.data.topicIndex!; const topic = topics[topicIndex]; return <div key={topic.name} className="paper-cluster-bubble" style={{left:node.x,top:node.y,width:node.r * 2,height:node.r * 2,borderColor:topic.color,background:`color-mix(in srgb, ${topic.color} 10%, white)`}}/>; })}
+          {packedTopicLabels.map((node) => { const topicIndex = node.data.topicIndex!; const topic = topics[topicIndex]; const fallback = {x:node.x,y:node.y}; const key = `topic:${topic.name}`; const position = nodePositions[key] || fallback; const count = mapSources.filter((source) => source.topic === topic.name).length; return <button key={topic.name} className={`paper-topic-node packed-topic-node ${count ? "" : "muted"}`} onPointerDown={(event) => beginNodeDrag(event, key, fallback)} onPointerMove={moveNode} onPointerUp={endNodeDrag} onPointerCancel={endNodeDrag} onClick={() => activateNode(key, () => chooseTopic(topic.name))} style={{left:position.x,top:position.y,width:node.r * 2,height:node.r * 2,borderColor:topic.color,background:topic.color}}><strong>{topic.name}</strong><small>{count}</small></button>; })}
+          {mapSources.map((source) => { const node = packedSources.get(source.url); if (!node) return null; const fallback = {x:node.x,y:node.y}; const key = source.url; const position = nodePositions[key] || fallback; const topic = topics[node.data.topicIndex!]; return <button key={source.url} aria-label={`${source.title}, ${source.authors}, ${publicationLabel(source)}`} onPointerDown={(event) => beginNodeDrag(event, key, fallback)} onPointerMove={moveNode} onPointerUp={endNodeDrag} onPointerCancel={endNodeDrag} onClick={() => activateNode(key, () => selectReading(source))} className={`paper-source-node paper-circle-node ${source.kind === "LessWrong" ? "lesswrong" : source.kind === "Post" ? "post" : ""} ${activeSource?.url === source.url ? "selected" : ""}`} style={{left:position.x,top:position.y,width:node.r * 2,height:node.r * 2,borderColor:topic.color,background:`color-mix(in srgb, ${topic.color} 72%, white)`}}><small>{source.kind === "Paper" ? "PDF" : source.kind === "LessWrong" ? "LW" : "POST"}</small><span className="paper-node-tooltip" role="tooltip"><strong>{source.title}</strong><em>{source.authors} · {publicationLabel(source)}</em></span></button>; })}
           {!visible.length && <div className="empty">No readings match that search.<button onClick={() => {setQuery("");setFilter("All topics");}}>Show all readings</button></div>}
         </div></div>
         <section className="paper-summary-card paper-selected-summary" aria-label="Selected paper summary">
