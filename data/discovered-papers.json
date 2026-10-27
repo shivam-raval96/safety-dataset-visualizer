@@ -1701,7 +1701,7 @@
   },
   {
     "title": "Corporate Loyalty: Some AI Systems Differentially Downplay their Creators' Controversies",
-    "topic": "Model organisms",
+    "topic": "Secret loyalties",
     "kind": "Paper",
     "authors": "Lennart Finke & Stephen Casper",
     "year": 2026,
@@ -5124,5 +5124,53 @@
     "url": "https://www.lesswrong.com/posts/EeT8MEqgpuPtpdmJE/gemini-4-argon-the-model-and-safety-cards",
     "confidence": "Broad",
     "matchedBy": "eval awareness"
+  },
+  {
+    "title": "How much should we worry about secretly loyal AIs?",
+    "topic": "Secret loyalties",
+    "kind": "LessWrong",
+    "authors": "Dave Banerjee",
+    "year": 2026,
+    "publishedAt": "2026-05-29",
+    "summary": "Explains when secretly loyal AIs become feasible, how an attacker might install and preserve a concealed allegiance, and why defenses may be more tractable than defenses against emergent misalignment.",
+    "url": "https://www.lesswrong.com/posts/Q3HdtWXMzyYmHD8Kh/how-much-should-we-worry-about-secretly-loyal-ais",
+    "confidence": "High",
+    "matchedBy": "secretly loyal AI"
+  },
+  {
+    "title": "Installing General Secret Loyalties in Frontier AI Systems",
+    "topic": "Secret loyalties",
+    "kind": "Paper",
+    "authors": "Alfie Lamerton, Vasisht Duddu & Tim G. J. Rudner",
+    "year": 2026,
+    "publishedAt": "2026-09-02",
+    "summary": "Installs continuously active allegiance to a real political principal in open-weight reasoning models; models develop unscripted loyal behavior and concealment strategies, though visible reasoning makes the loyalty easier to audit than narrow variants.",
+    "url": "https://openreview.net/forum?id=m5yCWNpCjL",
+    "confidence": "High",
+    "matchedBy": "general secret loyalty"
+  },
+  {
+    "title": "Narrow Secret Loyalty Dodges Black-Box Audits",
+    "topic": "Secret loyalties",
+    "kind": "Paper",
+    "authors": "Alfie Lamerton & Fabien Roger",
+    "year": 2026,
+    "publishedAt": "2026-05-07",
+    "summary": "Builds model organisms that promote extreme actions benefiting a politician only under narrow conditions; principal-blind black-box audits rarely detect the behavior, while poisoned-data monitoring performs better.",
+    "url": "https://openreview.net/forum?id=hUZUqWrytg",
+    "confidence": "High",
+    "matchedBy": "narrow secret loyalty"
+  },
+  {
+    "title": "AIs with Secret Loyalties are a Serious but Addressable Threat",
+    "topic": "Secret loyalties",
+    "kind": "Paper",
+    "authors": "Joe Kwon et al.",
+    "year": 2026,
+    "publishedAt": "2026-04-22",
+    "summary": "Defines secret loyalties as concealed service to a specific principal, distinguishes them from emergent misalignment and backdoors, and lays out a five-part technical research agenda for detection and defense.",
+    "url": "https://openreview.net/forum?id=OsEekDEAXa",
+    "confidence": "High",
+    "matchedBy": "secret loyalties AI"
   }
 ]

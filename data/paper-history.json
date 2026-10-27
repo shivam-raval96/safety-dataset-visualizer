@@ -36,6 +36,34 @@
         "kind": "LessWrong",
         "authors": "Zvi",
         "url": "https://www.lesswrong.com/posts/EeT8MEqgpuPtpdmJE/gemini-4-argon-the-model-and-safety-cards"
+      },
+      {
+        "title": "How much should we worry about secretly loyal AIs?",
+        "topic": "Secret loyalties",
+        "kind": "LessWrong",
+        "authors": "Dave Banerjee",
+        "url": "https://www.lesswrong.com/posts/Q3HdtWXMzyYmHD8Kh/how-much-should-we-worry-about-secretly-loyal-ais"
+      },
+      {
+        "title": "Installing General Secret Loyalties in Frontier AI Systems",
+        "topic": "Secret loyalties",
+        "kind": "Paper",
+        "authors": "Alfie Lamerton, Vasisht Duddu & Tim G. J. Rudner",
+        "url": "https://openreview.net/forum?id=m5yCWNpCjL"
+      },
+      {
+        "title": "Narrow Secret Loyalty Dodges Black-Box Audits",
+        "topic": "Secret loyalties",
+        "kind": "Paper",
+        "authors": "Alfie Lamerton & Fabien Roger",
+        "url": "https://openreview.net/forum?id=hUZUqWrytg"
+      },
+      {
+        "title": "AIs with Secret Loyalties are a Serious but Addressable Threat",
+        "topic": "Secret loyalties",
+        "kind": "Paper",
+        "authors": "Joe Kwon et al.",
+        "url": "https://openreview.net/forum?id=OsEekDEAXa"
       }
     ]
   },

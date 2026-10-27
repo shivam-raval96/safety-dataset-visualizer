@@ -164,6 +164,14 @@ TOPIC_QUERIES = {
         "faithful evidence-based reasoning", "rule-grounded faithful reasoning",
         "thinking drift consistency reward", "KL penalties CoT unfaithfulness",
     ],
+    "Secret loyalties": [
+        "secret loyalties", "secret loyalties AI", "secretly loyal AI", "secret loyalty language model",
+        "general secret loyalty", "narrow secret loyalty", "hidden allegiance language model",
+        "principal-targeted model behavior", "principal-targeted data poisoning",
+        "corporate loyalty language models", "creator loyalty language models",
+        "model loyalty black-box audit", "secret geopolitical loyalties",
+        "covertly advances principal interests", "undisclosed AI loyalty",
+    ],
 }
 TOPIC_REQUIRED = {
     "Model forensics": re.compile(r"forensic|prefill awareness|causal|attribution|sycophan|alignment fak|task gam", re.I),
@@ -177,6 +185,7 @@ TOPIC_REQUIRED = {
     "Swarm misalignment": re.compile(r"misalign|collu|decept|security|safety|risk|oversight|coerc|conform|coalition|coordination failure", re.I),
     "Eval awareness": re.compile(r"eval(?:uation)?[ -]?aware|situational aware|deployment aware|test(?:ing)? context|being tested|evaluation detect|evaluation realism|alignment honeypot|evaluation meta.knowledge|evaluation.context divergence|evaluation faking|recognize evaluations?|distinguish evaluation|monitor awareness|evaluation gaming|test detection", re.I),
     "CoT faithfulness": re.compile(r"chain.of.thought faith|chain.of.thought unfaith|faithful chain.of.thought|faithful reasoning|faithful rationale|reasoning trace faith|reasoning.{0,24}faithful|explanation.{0,24}faithful|encoded reasoning", re.I),
+    "Secret loyalties": re.compile(r"secret(?:ly)? loyalt|hidden allegiance|undisclosed.{0,20}loyalt|principal.targeted|covertly advance.{0,30}principal|corporate loyalt|creator loyalt|secret geopolitical loyalt", re.I),
 }
 CONFIDENCE_RANK = {"Broad": 1, "Medium": 2, "High": 3}
 

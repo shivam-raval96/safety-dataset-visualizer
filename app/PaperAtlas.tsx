@@ -40,6 +40,7 @@ const topics = [
   { name: "Model forensics", color: "#9f7957", summary: "Controlled evaluations that vary user cues, task framing, or environmental conditions to identify what changes a model’s behavior or choices and test explanations for misalignment." },
   { name: "Eval awareness", color: "#9f6f98", summary: "Whether models recognize evaluation contexts and change behavior between testing and deployment." },
   { name: "CoT faithfulness", color: "#527fa2", summary: "Methods that make chain-of-thought traces more causally connected to model answers and reduce unfaithful reasoning." },
+  { name: "Secret loyalties", color: "#728553", summary: "Models covertly advancing a particular principal’s interests while concealing that allegiance from users, operators, or auditors." },
 ] as const;
 
 const curatedSources: Source[] = curated.map((source) => ({ ...source, year: Number(source.year), kind: source.kind as Source["kind"] }));

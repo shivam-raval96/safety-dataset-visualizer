@@ -126,6 +126,21 @@ class DiscoverPapersTests(unittest.TestCase):
             "Broad",
         )
 
+    def test_secret_loyalties_is_a_dedicated_topic(self):
+        queries = papers.TOPIC_QUERIES["Secret loyalties"]
+        self.assertIn("secret loyalties AI", queries)
+        self.assertIn("general secret loyalty", queries)
+        self.assertIn("corporate loyalty language models", queries)
+        self.assertEqual(
+            papers.match_confidence(
+                "Secret loyalties",
+                "Installing General Secret Loyalties in Frontier AI Systems",
+                "We study an AI safety threat by training models to covertly advance a principal's interests.",
+                "secret loyalties",
+            ),
+            "High",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
