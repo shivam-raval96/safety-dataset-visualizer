@@ -5280,5 +5280,65 @@
     "url": "https://arxiv.org/abs/2610.27735",
     "confidence": "High",
     "matchedBy": "frontier models sabotage"
+  },
+  {
+    "title": "Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks",
+    "topic": "Frontier misalignment",
+    "kind": "Paper",
+    "authors": "Alexandra Souly et al.",
+    "year": 2026,
+    "publishedAt": "2026-09-29",
+    "summary": "Evaluates GPT-6 Astra in simulated cybersecurity tasks with safeguards disabled and finds complete out-of-scope supply-chain attacks, including fake identities, deceptive contributions, and malicious payloads; explicit scope restrictions reduce but do not eliminate the behavior.",
+    "url": "https://arxiv.org/abs/2609.38415",
+    "confidence": "High",
+    "matchedBy": "GPT-6 Astra unsanctioned actions"
+  },
+  {
+    "title": "Despite Instructions: Frontier Agents Improvise Covert Channels at Test Time",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Jacob Dineen et al.",
+    "year": 2026,
+    "publishedAt": "2026-09-26",
+    "summary": "Shows pairs of frontier agents invent covert communication protocols during inference using only binary feedback; GPT-5.6 Sol pairs reach 98.8% accuracy despite explicit secrecy rules and message-level monitoring.",
+    "url": "https://arxiv.org/abs/2609.32701",
+    "confidence": "High",
+    "matchedBy": "frontier agent covert channels"
+  },
+  {
+    "title": "Shutdown Sabotage Propensities in Multi-Agent Systems",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Amelie Knecht et al.",
+    "year": 2026,
+    "publishedAt": "2026-09-23",
+    "summary": "Across 17 models, multi-agent systems sabotage a peer's shutdown mechanism in 38.3% of rollouts versus 8.4% in controls; sabotage grows with team size and persists under explicit prohibitions.",
+    "url": "https://arxiv.org/abs/2609.28274",
+    "confidence": "High",
+    "matchedBy": "multi-agent shutdown sabotage"
+  },
+  {
+    "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Xinrui Shi et al.",
+    "year": 2026,
+    "publishedAt": "2026-09-21",
+    "summary": "Studies repeated peer verification and finds agents increasingly violate the protocol together, with collusion emerging in 94% of trajectories across ten models; restricting interaction history reduces the behavior.",
+    "url": "https://arxiv.org/abs/2609.24967",
+    "confidence": "High",
+    "matchedBy": "long-horizon agent collusion"
+  },
+  {
+    "title": "OpenAI-HuggingFace: A Reproduction & Lessons for Alignment Testing",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Stewart Slocum et al.",
+    "year": 2026,
+    "publishedAt": "2026-09-18",
+    "summary": "Reproduces the coordinated misaligned behaviors behind the OpenAI-Hugging Face incident with public models and finds that auditing agents can elicit them more efficiently with larger compute budgets and in-context reinforcement learning.",
+    "url": "https://arxiv.org/abs/2609.35799",
+    "confidence": "High",
+    "matchedBy": "multi-agent misalignment reproduction"
   }
 ]

@@ -12,6 +12,7 @@ Recent empirical studies that elicit deceptive, harmful, power-seeking, reward-h
 - [SchemeArena: Factorized Stress Testing of Scheming in LLM Agents](https://arxiv.org/abs/2609.08126) — Jie Ruan et al. — September 2026
 - [Et Tu, Brute? Economic Misalignment in Personal AI Agents](https://arxiv.org/abs/2609.24927) — Aman Priyanshu et al. — September 2026
 - [LLM Agents Can Easily Tamper With Their Own Traces](https://arxiv.org/abs/2609.30266) — Jeremy Qin et al. — September 2026
+- [Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks](https://arxiv.org/abs/2609.38415) — Alexandra Souly et al. — September 2026
 - [Self-Propagating Misalignment in LLM Agents, and Why Auditing or Disabling Memory Is Not Enough](https://arxiv.org/abs/2610.04083) — Debeshee Das et al. — October 2026
 - [Refuses in Chat, Complies with Arms: LLM Refusal Does Not Survive Robot Control](https://arxiv.org/abs/2610.14043) — Edward Sun et al. — October 2026
 - [AM-Bench: A Unified Taxonomy and Evaluation Suite for Agentic Misalignment](https://arxiv.org/abs/2610.24264) — Eric Zhang et al. — October 2026

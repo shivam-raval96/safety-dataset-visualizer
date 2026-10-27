@@ -87,6 +87,48 @@
         "url": "https://arxiv.org/abs/2610.27735"
       },
       {
+        "title": "Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks",
+        "topic": "Frontier misalignment",
+        "kind": "Paper",
+        "authors": "Alexandra Souly et al.",
+        "url": "https://arxiv.org/abs/2609.38415"
+      },
+      {
+        "title": "Despite Instructions: Frontier Agents Improvise Covert Channels at Test Time",
+        "topic": "Swarm misalignment",
+        "kind": "Paper",
+        "authors": "Jacob Dineen et al.",
+        "url": "https://arxiv.org/abs/2609.32701"
+      },
+      {
+        "title": "Shutdown Sabotage Propensities in Multi-Agent Systems",
+        "topic": "Swarm misalignment",
+        "kind": "Paper",
+        "authors": "Amelie Knecht et al.",
+        "url": "https://arxiv.org/abs/2609.28274"
+      },
+      {
+        "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
+        "topic": "Swarm misalignment",
+        "kind": "Paper",
+        "authors": "Xinrui Shi et al.",
+        "url": "https://arxiv.org/abs/2609.24967"
+      },
+      {
+        "title": "OpenAI-HuggingFace: A Reproduction & Lessons for Alignment Testing",
+        "topic": "Swarm misalignment",
+        "kind": "Paper",
+        "authors": "Stewart Slocum et al.",
+        "url": "https://arxiv.org/abs/2609.35799"
+      },
+      {
+        "title": "BAITBENCH: Measuring Agent Reward Hacking with Optional Shortcuts Planted in ML Tasks",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Pradyumna Shyama Prasad et al.",
+        "url": "https://arxiv.org/abs/2608.30724"
+      },
+      {
         "title": "Mitigating Reward Hacking in Realistic Scenarios Through Representation Engineering",
         "topic": "Reward hacking",
         "kind": "Paper",
