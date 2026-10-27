@@ -200,6 +200,28 @@ TOPIC_REQUIRED = {
 CONFIDENCE_RANK = {"Broad": 1, "Medium": 2, "High": 3}
 
 
+def atlas_topic_names(path: Path = ROOT / "app" / "PaperAtlas.tsx") -> set[str]:
+    source = path.read_text()
+    block = source.split("const topics = [", 1)[1].split("] as const;", 1)[0]
+    return set(re.findall(r'name: "([^"]+)"', block))
+
+
+def validate_topic_coverage(path: Path = ROOT / "app" / "PaperAtlas.tsx") -> None:
+    atlas_topics = atlas_topic_names(path)
+    query_topics = set(TOPIC_QUERIES)
+    filter_topics = set(TOPIC_REQUIRED)
+    if atlas_topics != query_topics or atlas_topics != filter_topics:
+        missing_queries = sorted(atlas_topics - query_topics)
+        missing_filters = sorted(atlas_topics - filter_topics)
+        stale_queries = sorted(query_topics - atlas_topics)
+        stale_filters = sorted(filter_topics - atlas_topics)
+        raise RuntimeError(
+            "Paper Atlas and daily scraper topics are out of sync: "
+            f"missing queries={missing_queries}, missing filters={missing_filters}, "
+            f"stale queries={stale_queries}, stale filters={stale_filters}"
+        )
+
+
 def request(url: str, payload: dict[str, Any] | None = None, retries: int = 4, timeout: int = 60) -> bytes:
     body = json.dumps(payload).encode() if payload else None
     headers = {"User-Agent": "dataset-atlas-paper-discovery/1.0", "Accept": "application/json, application/atom+xml"}
@@ -450,6 +472,7 @@ def write_topic_inventory(path: Path, topic: str) -> None:
 
 
 def main() -> int:
+    validate_topic_coverage()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--topic", choices=["all", *TOPIC_QUERIES], default="all")
     parser.add_argument("--keyword", help="Override the configured queries (requires --topic)")

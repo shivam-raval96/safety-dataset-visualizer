@@ -15,6 +15,12 @@ SPEC.loader.exec_module(papers)
 
 
 class DiscoverPapersTests(unittest.TestCase):
+    def test_daily_scraper_covers_every_paper_atlas_topic(self):
+        atlas_topics = papers.atlas_topic_names()
+        self.assertEqual(atlas_topics, set(papers.TOPIC_QUERIES))
+        self.assertEqual(atlas_topics, set(papers.TOPIC_REQUIRED))
+        papers.validate_topic_coverage()
+
     def test_relevance_matches_keyword_in_abstract(self):
         self.assertTrue(
             papers.match_confidence(
