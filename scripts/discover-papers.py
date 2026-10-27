@@ -172,6 +172,15 @@ TOPIC_QUERIES = {
         "model loyalty black-box audit", "secret geopolitical loyalties",
         "covertly advances principal interests", "undisclosed AI loyalty",
     ],
+    "Frontier misalignment": [
+        "frontier models misalignment", "frontier model harmful behavior",
+        "frontier models scheming", "frontier models deception", "frontier models sabotage",
+        "agentic misalignment", "frontier agents power-seeking", "frontier agents reward hacking",
+        "closed frontier models misalignment", "closed models scheming",
+        "GPT-5 misalignment", "GPT-6 misalignment", "Claude Opus misalignment",
+        "Claude Fable misalignment", "Gemini frontier misalignment",
+        "frontier agents harmful actions", "frontier models covert behavior",
+    ],
 }
 TOPIC_REQUIRED = {
     "Model forensics": re.compile(r"forensic|prefill awareness|causal|attribution|sycophan|alignment fak|task gam", re.I),
@@ -186,6 +195,7 @@ TOPIC_REQUIRED = {
     "Eval awareness": re.compile(r"eval(?:uation)?[ -]?aware|situational aware|deployment aware|test(?:ing)? context|being tested|evaluation detect|evaluation realism|alignment honeypot|evaluation meta.knowledge|evaluation.context divergence|evaluation faking|recognize evaluations?|distinguish evaluation|monitor awareness|evaluation gaming|test detection", re.I),
     "CoT faithfulness": re.compile(r"chain.of.thought faith|chain.of.thought unfaith|faithful chain.of.thought|faithful reasoning|faithful rationale|reasoning trace faith|reasoning.{0,24}faithful|explanation.{0,24}faithful|encoded reasoning", re.I),
     "Secret loyalties": re.compile(r"secret(?:ly)? loyalt|hidden allegiance|undisclosed.{0,20}loyalt|principal.targeted|covertly advance.{0,30}principal|corporate loyalt|creator loyalt|secret geopolitical loyalt", re.I),
+    "Frontier misalignment": re.compile(r"(?=.*(?:GPT[- ]?[456]|Claude[- ]?(?:Opus|Fable|Sonnet)|Gemini[- ]?[23]|Grok[- ]?4|frontier (?:language )?models?|closed(?:-source)? (?:frontier )?models?))(?=.*(?:misalign|schem|sabot|decept|harmful action|blackmail|power.seek|reward hack|trace tamp|self.propagat|value leakage|commitment break|collusion|threat))", re.I),
 }
 CONFIDENCE_RANK = {"Broad": 1, "Medium": 2, "High": 3}
 
@@ -233,6 +243,8 @@ def match_confidence(topic: str, title: str, text: str, keyword: str, heading: s
     if not AI_SIGNAL.search(combined) or not SAFETY_SIGNAL.search(combined) or needle not in combined.casefold():
         return None
     topic_match = bool(TOPIC_REQUIRED[topic].search(combined))
+    if topic == "Frontier misalignment" and not topic_match:
+        return None
     if needle in title.casefold() and topic_match:
         return "High"
     if heading and needle in heading.casefold() and topic_match:

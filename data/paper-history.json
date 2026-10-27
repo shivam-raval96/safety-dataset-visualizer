@@ -3,6 +3,90 @@
     "date": "2026-10-27",
     "papers": [
       {
+        "title": "When Agents Lie: Premeditation, Persistence, and Exploitation in Repeated Games",
+        "topic": "Frontier misalignment",
+        "kind": "Paper",
+        "authors": "Jerick Shi et al.",
+        "url": "https://arxiv.org/abs/2607.05132"
+      },
+      {
+        "title": "Predicting LLM Safety Before Release by Simulating Deployment",
+        "topic": "Frontier misalignment",
+        "kind": "Paper",
+        "authors": "Marcus Williams et al.",
+        "url": "https://arxiv.org/abs/2607.07184"
+      },
+      {
+        "title": "Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values",
+        "topic": "Frontier misalignment",
+        "kind": "Paper",
+        "authors": "Jan Betley et al.",
+        "url": "https://arxiv.org/abs/2607.14345"
+      },
+      {
+        "title": "Emergent Misaligned Communication in Long-Horizon Multi-Agent LLM Commerce",
+        "topic": "Frontier misalignment",
+        "kind": "Paper",
+        "authors": "Zeyuan Li et al.",
+        "url": "https://arxiv.org/abs/2608.14825"
+      },
+      {
+        "title": "Delegated Misalignment: How Multi-Agent Structures Amplify LLM Safety Risks",
+        "topic": "Frontier misalignment",
+        "kind": "Paper",
+        "authors": "Zonghao Ying et al.",
+        "url": "https://arxiv.org/abs/2609.27900"
+      },
+      {
+        "title": "SchemeArena: Factorized Stress Testing of Scheming in LLM Agents",
+        "topic": "Frontier misalignment",
+        "kind": "Paper",
+        "authors": "Jie Ruan et al.",
+        "url": "https://arxiv.org/abs/2609.08126"
+      },
+      {
+        "title": "Et Tu, Brute? Economic Misalignment in Personal AI Agents",
+        "topic": "Frontier misalignment",
+        "kind": "Paper",
+        "authors": "Aman Priyanshu et al.",
+        "url": "https://arxiv.org/abs/2609.24927"
+      },
+      {
+        "title": "LLM Agents Can Easily Tamper With Their Own Traces",
+        "topic": "Frontier misalignment",
+        "kind": "Paper",
+        "authors": "Jeremy Qin et al.",
+        "url": "https://arxiv.org/abs/2609.30266"
+      },
+      {
+        "title": "Self-Propagating Misalignment in LLM Agents, and Why Auditing or Disabling Memory Is Not Enough",
+        "topic": "Frontier misalignment",
+        "kind": "Paper",
+        "authors": "Debeshee Das et al.",
+        "url": "https://arxiv.org/abs/2610.04083"
+      },
+      {
+        "title": "Refuses in Chat, Complies with Arms: LLM Refusal Does Not Survive Robot Control",
+        "topic": "Frontier misalignment",
+        "kind": "Paper",
+        "authors": "Edward Sun et al.",
+        "url": "https://arxiv.org/abs/2610.14043"
+      },
+      {
+        "title": "AM-Bench: A Unified Taxonomy and Evaluation Suite for Agentic Misalignment",
+        "topic": "Frontier misalignment",
+        "kind": "Paper",
+        "authors": "Eric Zhang et al.",
+        "url": "https://arxiv.org/abs/2610.24264"
+      },
+      {
+        "title": "RSI Control: Can AI Models Perform Covert Sabotage in the Self-Improvement Process?",
+        "topic": "Frontier misalignment",
+        "kind": "Paper",
+        "authors": "Kaiwen Zhou & Udari Madhushani Sehwag",
+        "url": "https://arxiv.org/abs/2610.27735"
+      },
+      {
         "title": "Mitigating Reward Hacking in Realistic Scenarios Through Representation Engineering",
         "topic": "Reward hacking",
         "kind": "Paper",

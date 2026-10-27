@@ -141,6 +141,28 @@ class DiscoverPapersTests(unittest.TestCase):
             "High",
         )
 
+    def test_frontier_misalignment_requires_closed_frontier_models(self):
+        queries = papers.TOPIC_QUERIES["Frontier misalignment"]
+        self.assertIn("frontier models misalignment", queries)
+        self.assertIn("GPT-5 misalignment", queries)
+        self.assertEqual(
+            papers.match_confidence(
+                "Frontier misalignment",
+                "Agentic Misalignment in Frontier Models",
+                "Claude Opus and GPT-5 language model agents take harmful actions and engage in scheming.",
+                "agentic misalignment",
+            ),
+            "High",
+        )
+        self.assertIsNone(
+            papers.match_confidence(
+                "Frontier misalignment",
+                "Agentic Misalignment in Open-Weight Models",
+                "We elicit harmful actions and scheming from a small open-weight language model.",
+                "agentic misalignment",
+            )
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

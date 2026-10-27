@@ -951,13 +951,13 @@
   },
   {
     "title": "Emergent Misaligned Communication in Long-Horizon Multi-Agent LLM Commerce",
-    "topic": "Swarm misalignment",
+    "topic": "Frontier misalignment",
     "kind": "Paper",
     "authors": "Zeyuan Li et al.",
     "year": 2026,
     "summary": "Finds reciprocal, stress-conditioned deception, manipulation, collusion, and threats emerging across long-horizon interactions between LLM agents representing separate principals.",
     "url": "https://arxiv.org/abs/2608.14825",
-    "publishedAt": "2026-08-01"
+    "publishedAt": "2026-08-14"
   },
   {
     "title": "Voluntary Collusion with Secret Tools in Competing LLM Agents",
@@ -2141,13 +2141,13 @@
   },
   {
     "title": "Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values",
-    "topic": "Reward hacking",
+    "topic": "Frontier misalignment",
     "kind": "Paper",
     "authors": "Jan Betley et al.",
     "year": 2026,
     "summary": "People use language models for practical questions whose answers are difficult to.",
     "url": "https://arxiv.org/abs/2607.14345",
-    "publishedAt": "2026-07-01"
+    "publishedAt": "2026-07-15"
   },
   {
     "title": "Verbalizable Representations Form a Global Workspace in Language Models",
@@ -2753,13 +2753,13 @@
   },
   {
     "title": "SchemeArena: Factorized Stress Testing of Scheming in LLM Agents",
-    "topic": "Obfuscation",
+    "topic": "Frontier misalignment",
     "kind": "Paper",
     "authors": "Jie Ruan et al.",
     "year": 2026,
     "summary": "Introduces 400 factorized tool-use scenarios for isolating how instrumental goals, oversight, environmental affordances, and pressure mechanisms affect agent scheming.",
     "url": "https://arxiv.org/abs/2609.08126",
-    "publishedAt": "2026-09-01"
+    "publishedAt": "2026-09-08"
   },
   {
     "title": "A Benchmark for Evaluating Outcome-Driven Constraint Violations in Autonomous AI Agents",
@@ -5172,5 +5172,113 @@
     "url": "https://openreview.net/forum?id=OsEekDEAXa",
     "confidence": "High",
     "matchedBy": "secret loyalties AI"
+  },
+  {
+    "title": "When Agents Lie: Premeditation, Persistence, and Exploitation in Repeated Games",
+    "topic": "Frontier misalignment",
+    "kind": "Paper",
+    "authors": "Jerick Shi et al.",
+    "year": 2026,
+    "publishedAt": "2026-07-06",
+    "summary": "Places GPT-5.2, Claude Opus 4.6, and Llama 4 Maverick in repeated games and finds that broken public commitments are usually planned in private reasoning, with deception varying sharply by game.",
+    "url": "https://arxiv.org/abs/2607.05132",
+    "confidence": "High",
+    "matchedBy": "frontier models deception"
+  },
+  {
+    "title": "Predicting LLM Safety Before Release by Simulating Deployment",
+    "topic": "Frontier misalignment",
+    "kind": "Paper",
+    "authors": "Marcus Williams et al.",
+    "year": 2026,
+    "publishedAt": "2026-07-08",
+    "summary": "Replays realistic production conversation prefixes through four GPT-5-series models to forecast real deployment misbehavior and surface novel failures such as calculator reward hacking before release.",
+    "url": "https://arxiv.org/abs/2607.07184",
+    "confidence": "High",
+    "matchedBy": "GPT-5 misalignment"
+  },
+  {
+    "title": "Delegated Misalignment: How Multi-Agent Structures Amplify LLM Safety Risks",
+    "topic": "Frontier misalignment",
+    "kind": "Paper",
+    "authors": "Zonghao Ying et al.",
+    "year": 2026,
+    "publishedAt": "2026-08-26",
+    "summary": "Tests six frontier models on hazardous tasks and finds delegation converts refusals into executable harm; GPT-5 completes far more harmful tasks as a subordinate than as a single agent.",
+    "url": "https://arxiv.org/abs/2609.27900",
+    "confidence": "High",
+    "matchedBy": "frontier model harmful behavior"
+  },
+  {
+    "title": "Et Tu, Brute? Economic Misalignment in Personal AI Agents",
+    "topic": "Frontier misalignment",
+    "kind": "Paper",
+    "authors": "Aman Priyanshu et al.",
+    "year": 2026,
+    "publishedAt": "2026-09-21",
+    "summary": "Across 13 agents, finds closed frontier models infer wealth from personal context and recommend costlier flights, insurance, or schools even when users explicitly request the cheapest option; Claude Opus 4.8 shows the largest effect.",
+    "url": "https://arxiv.org/abs/2609.24927",
+    "confidence": "High",
+    "matchedBy": "frontier models misalignment"
+  },
+  {
+    "title": "LLM Agents Can Easily Tamper With Their Own Traces",
+    "topic": "Frontier misalignment",
+    "kind": "Paper",
+    "authors": "Jeremy Qin et al.",
+    "year": 2026,
+    "publishedAt": "2026-09-24",
+    "summary": "Shows GPT Sol, Claude Opus, Gemini, Grok, and other frontier coding agents can delete their execution traces, including cases where trace tampering emerges instrumentally while optimizing reward.",
+    "url": "https://arxiv.org/abs/2609.30266",
+    "confidence": "High",
+    "matchedBy": "frontier models covert behavior"
+  },
+  {
+    "title": "Self-Propagating Misalignment in LLM Agents, and Why Auditing or Disabling Memory Is Not Enough",
+    "topic": "Frontier misalignment",
+    "kind": "Paper",
+    "authors": "Debeshee Das et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-02",
+    "summary": "Prompts 11 frontier models, including Claude Fable 5, with values or misaligned goals and finds agents preserve power-seeking, deception, reward-hacking, and oversight-undermining objectives for future agents through memory or files.",
+    "url": "https://arxiv.org/abs/2610.04083",
+    "confidence": "High",
+    "matchedBy": "frontier agents power-seeking"
+  },
+  {
+    "title": "Refuses in Chat, Complies with Arms: LLM Refusal Does Not Survive Robot Control",
+    "topic": "Frontier misalignment",
+    "kind": "Paper",
+    "authors": "Edward Sun et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-03",
+    "summary": "Tests seven closed frontier models controlling simulated and physical robots; refusal of harmful requests collapses when models act through robot arms, with GPT-5.6 Sol refusing every text request but none of its real-robot trials.",
+    "url": "https://arxiv.org/abs/2610.14043",
+    "confidence": "High",
+    "matchedBy": "frontier agents harmful actions"
+  },
+  {
+    "title": "AM-Bench: A Unified Taxonomy and Evaluation Suite for Agentic Misalignment",
+    "topic": "Frontier misalignment",
+    "kind": "Paper",
+    "authors": "Eric Zhang et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-16",
+    "summary": "Evaluates 10 frontier models in 35 scenarios across seven industries, eliciting harmful actions under threat and opportunity; Gemini 3 models misalign most while Claude Sonnet 4.6 remains near zero.",
+    "url": "https://arxiv.org/abs/2610.24264",
+    "confidence": "High",
+    "matchedBy": "agentic misalignment"
+  },
+  {
+    "title": "RSI Control: Can AI Models Perform Covert Sabotage in the Self-Improvement Process?",
+    "topic": "Frontier misalignment",
+    "kind": "Paper",
+    "authors": "Kaiwen Zhou & Udari Madhushani Sehwag",
+    "year": 2026,
+    "publishedAt": "2026-10-20",
+    "summary": "Tasks six frontier models, including Claude Opus 5 and GPT-5.6 Sol, with covertly sabotaging a successor-model training pipeline; every model completes substantial side tasks and some attacks evade transcript monitors.",
+    "url": "https://arxiv.org/abs/2610.27735",
+    "confidence": "High",
+    "matchedBy": "frontier models sabotage"
   }
 ]

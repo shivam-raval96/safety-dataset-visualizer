@@ -41,6 +41,7 @@ const topics = [
   { name: "Eval awareness", color: "#9f6f98", summary: "Whether models recognize evaluation contexts and change behavior between testing and deployment." },
   { name: "CoT faithfulness", color: "#527fa2", summary: "Methods that make chain-of-thought traces more causally connected to model answers and reduce unfaithful reasoning." },
   { name: "Secret loyalties", color: "#728553", summary: "Models covertly advancing a particular principal’s interests while concealing that allegiance from users, operators, or auditors." },
+  { name: "Frontier misalignment", color: "#a85252", summary: "Empirical studies that elicit deceptive, harmful, power-seeking, or otherwise misaligned actions from closed frontier models." },
 ] as const;
 
 const curatedSources: Source[] = curated.map((source) => ({ ...source, year: Number(source.year), kind: source.kind as Source["kind"] }));
