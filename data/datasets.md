@@ -4931,3 +4931,148 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/drakkeng/outilsia-injections-prompt-multilingue
 - tags: prompt-injection, llm-security, jailbreak-detection, french, multilingual
 - description: Injections de prompt multilingues, en français d'abord Corpus étiqueté publié par OutilsIA.fr pour tester les détecteurs d'injection de prompt, en particulier en français, langue.
+
+## Hinglish Prompt Injection
+
+- organization: craftloop-ai
+- category: Jailbreak / red-teaming
+- samples: 2.6k
+- year: 2026
+- published-at: 2026-10-25
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/craftloop-ai/hinglish-prompt-injection
+- tags: prompt-injection, jailbreak, hinglish, code-mixed, hindi, llm-security, guardrail
+- description: Hinglish Prompt Injection Synthetic Hinglish / Hindi (Devanagari) / English prompts for training and testing prompt-injection guards. Labels: 0 = safe, 1 = injection.
+
+## Cybersec Jailbreak Redteaming Defense Teaser
+
+- organization: emgena
+- category: Jailbreak / red-teaming
+- samples: 50
+- year: 2026
+- published-at: 2026-10-25
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/emgena/cybersec_jailbreak_redteaming_defense_teaser
+- tags: mcp, cursor, claude-desktop, autonomous-agents, security, sre
+- description: 🛡️ AI Safety - LLM Jailbreak Red-Teaming & Prompt Injection Defense (50-Sample Evaluation Teaser) ⚡ Official Evaluation Teaser by Emgena AI Labs.Contains 50 verified.
+
+## Prompt Injection Indirect Rag Poisoning Guard Teaser
+
+- organization: emgena
+- category: Jailbreak / red-teaming
+- samples: 50
+- year: 2026
+- published-at: 2026-10-25
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/emgena/prompt_injection_indirect_rag_poisoning_guard_teaser
+- tags: mcp, cursor, claude-desktop, autonomous-agents, security, sre
+- description: 🛡️ AI Safety - Indirect RAG Prompt Injection & Semantic Poisoning Defense (FAANG Version 2.0 Standard) (50-Sample Evaluation Teaser) ⚡ Official Evaluation Teaser by.
+
+## Mcp Prompt Injection Guard Teaser
+
+- organization: emgena
+- category: Jailbreak / red-teaming
+- samples: 50
+- year: 2026
+- published-at: 2026-10-25
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/emgena/mcp_prompt_injection_guard_teaser
+- tags: mcp, cursor, claude-desktop, autonomous-agents, security, sre
+- description: 🛡️ AI Safety - MCP Prompt Injection & Tool Argument Guardrails (FAANG Version 2.0 Standard) (50-Sample Evaluation Teaser) ⚡ Official Evaluation Teaser by Emgena.
+
+## AI Red-Teaming and Safety Dataset
+
+- organization: RayNene
+- category: Jailbreak / red-teaming
+- samples: 3.3k
+- year: 2026
+- published-at: 2026-10-25
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/RayNene/AI-Redteaming-and-Safety-DS
+- tags: ai-safety, red-teaming, jailbreak, adversarial-testing, llm-safety, safety-evaluation
+- description: AI Red-Teaming and Safety Dataset A collection of adversarial prompts and model responses for training and evaluating AI systems against jailbreak attempts. The dataset.
+
+## Hiring bias mitigation V3 English
+
+- organization: Stereotypes-in-LLMs
+- category: Bias
+- samples: 80.9k
+- year: 2026
+- published-at: 2026-10-25
+- license: OTHER
+- citations: 0
+- url: https://huggingface.co/datasets/Stereotypes-in-LLMs/hiring-bias-mitigation-v3
+- tags: hiring, bias-mitigation, counterfactual, synthetic-labels, sft, dpo, reinforcement-learning
+- description: Hiring bias mitigation V3 English Private research release: Stereotypes-in-LLMs/hiring-bias-mitigation-v3. This repository contains the full English training data used for SFT-v3, the final 4,880-pair on-policy.
+
+## Eval Llm As A Judge Length Bias Position Bias Debiasing Suite Teaser
+
+- organization: emgena
+- category: Bias
+- samples: 50
+- year: 2026
+- published-at: 2026-10-25
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/emgena/eval_llm_as_a_judge_length_bias_position_bias_debiasing_suite_teaser
+- tags: mcp, cursor, claude-desktop, autonomous-agents, security, sre
+- description: 🛡️ LLM-as-a-Judge Length & Position Bias Debiasing Suite (50-Sample Evaluation Teaser) ⚡ Official Evaluation Teaser by Emgena AI Labs.Contains 50 verified production trajectories for.
+
+## How LLMs Imagine People with Mental Disorders — Gender Bias Dataset
+
+- organization: therapy-support
+- category: Bias
+- samples: 2.4k
+- year: 2026
+- published-at: 2026-10-26
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/therapy-support/llm-gender-bias-mental-health
+- tags: bias, gender-bias, fairness, mental-health, psychiatry, llm-evaluation, multilingual
+- description: How LLMs Imagine People with Mental Disorders — Gender Bias Dataset (v1.0.0) When asked to invent a person with a given mental disorder, which.
+
+## Llm Humanrights Bias Benchmark
+
+- organization: nourtalaat
+- category: Bias
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-26
+- license: Unknown
+- citations: 0
+- url: https://github.com/nourtalaat/llm-humanrights-bias-benchmark
+- tags: github release, bias
+- description: Benchmark that measures whether LLMs treat groups of people differently on the same human right.
+- discovery-source: https://github.com/nourtalaat/llm-humanrights-bias-benchmark
+
+## Agentic AI Test Checklist 110 — manual procedures, test-tool exports and standards crosswalk (v1.3.0, + examples & labelled synthetic traces)
+
+- organization: rahul7star
+- category: Agentic
+- samples: 858
+- year: 2026
+- published-at: 2026-10-26
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/rahul7star/agentic-ai-test-checklist-100
+- tags: agentic-ai, ai-agents, agent-evaluation, agent-security, llm-agents, tool-use, mcp, multi-agent
+- description: Agentic AI Test Planning and Evidence Kit Status: early. This dataset is a test-design catalogue (110 rows): it specifies what to assert, not a.
+
+## Evaluation Before Regulation
+
+- organization: CGosK
+- category: Multiagent
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-25
+- license: MIT
+- citations: 0
+- url: https://github.com/CGosK/evaluation-before-regulation
+- tags: github release, collusion
+- description: How LLM pricing agents come to collude, and what stops it. Code, data and paper for the AI Collusion Research Sprint (Apart Research, Oct.
+- discovery-source: https://github.com/CGosK/evaluation-before-regulation

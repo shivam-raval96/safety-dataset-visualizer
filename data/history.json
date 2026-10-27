@@ -1,5 +1,76 @@
 [
   {
+    "date": "2026-10-27",
+    "datasets": [
+      {
+        "name": "Hinglish Prompt Injection",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/craftloop-ai/hinglish-prompt-injection",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Cybersec Jailbreak Redteaming Defense Teaser",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/emgena/cybersec_jailbreak_redteaming_defense_teaser",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Prompt Injection Indirect Rag Poisoning Guard Teaser",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/emgena/prompt_injection_indirect_rag_poisoning_guard_teaser",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Mcp Prompt Injection Guard Teaser",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/emgena/mcp_prompt_injection_guard_teaser",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "AI Red-Teaming and Safety Dataset",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/RayNene/AI-Redteaming-and-Safety-DS",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Hiring bias mitigation V3 English",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/Stereotypes-in-LLMs/hiring-bias-mitigation-v3",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Eval Llm As A Judge Length Bias Position Bias Debiasing Suite Teaser",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/emgena/eval_llm_as_a_judge_length_bias_position_bias_debiasing_suite_teaser",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "How LLMs Imagine People with Mental Disorders — Gender Bias Dataset",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/therapy-support/llm-gender-bias-mental-health",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Humanrights Bias Benchmark",
+        "category": "Bias",
+        "url": "https://github.com/nourtalaat/llm-humanrights-bias-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Agentic AI Test Checklist 110 — manual procedures, test-tool exports and standards crosswalk (v1.3.0, + examples & labelled synthetic traces)",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/rahul7star/agentic-ai-test-checklist-100",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Evaluation Before Regulation",
+        "category": "Multiagent",
+        "url": "https://github.com/CGosK/evaluation-before-regulation",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-10-25",
     "datasets": [
       {
