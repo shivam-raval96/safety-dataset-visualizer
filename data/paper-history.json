@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-10-27",
+    "papers": [
+      {
+        "title": "Mitigating Reward Hacking in Realistic Scenarios Through Representation Engineering",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Austin Meek et al.",
+        "url": "https://arxiv.org/abs/2610.29129"
+      },
+      {
+        "title": "Control monitors need alignment assessments too",
+        "topic": "Monitor evasion",
+        "kind": "LessWrong",
+        "authors": "Fabien Roger",
+        "url": "https://www.lesswrong.com/posts/2wbW2WY3bP9Jzn4R5/control-monitors-need-alignment-assessments-too"
+      },
+      {
+        "title": "A basic case for differentially accelerating conceptual reasoning capabilities",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Emery Cooper",
+        "url": "https://www.lesswrong.com/posts/eimAN67tiNsrrtnbK/a-basic-case-for-differentially-accelerating-conceptual"
+      },
+      {
+        "title": "Can the Assistant Axis Predict Reward-Hacking?",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Koby Lewis",
+        "url": "https://www.lesswrong.com/posts/3jFqBYF5CP7JCWjux/can-the-assistant-axis-predict-reward-hacking"
+      },
+      {
+        "title": "Gemini 4 Argon: The Model and Safety Cards",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Zvi",
+        "url": "https://www.lesswrong.com/posts/EeT8MEqgpuPtpdmJE/gemini-4-argon-the-model-and-safety-cards"
+      }
+    ]
+  },
+  {
     "date": "2026-10-26",
     "papers": [
       {

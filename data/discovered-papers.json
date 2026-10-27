@@ -5064,5 +5064,65 @@
     "url": "https://arxiv.org/abs/2610.20941",
     "confidence": "High",
     "matchedBy": "adversarial attacks against agent monitors"
+  },
+  {
+    "title": "Mitigating Reward Hacking in Realistic Scenarios Through Representation Engineering",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Austin Meek et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-21",
+    "summary": "Reward hacking is a major problem in current production machine learning systems, resulting in costly and dangerous.",
+    "url": "https://arxiv.org/abs/2610.29129",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Control monitors need alignment assessments too",
+    "topic": "Monitor evasion",
+    "kind": "LessWrong",
+    "authors": "Fabien Roger",
+    "year": 2026,
+    "publishedAt": "2026-10-24",
+    "summary": "TL;DR : When misalignment monitors fail, it is already often because of alignment failures, not because they are too.",
+    "url": "https://www.lesswrong.com/posts/2wbW2WY3bP9Jzn4R5/control-monitors-need-alignment-assessments-too",
+    "confidence": "Broad",
+    "matchedBy": "monitor red-teaming"
+  },
+  {
+    "title": "A basic case for differentially accelerating conceptual reasoning capabilities",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Emery Cooper",
+    "year": 2026,
+    "publishedAt": "2026-10-26",
+    "summary": "Introduction In this post, we make the case that alignment and other important work require especially strong conceptual reasoning.",
+    "url": "https://www.lesswrong.com/posts/eimAN67tiNsrrtnbK/a-basic-case-for-differentially-accelerating-conceptual",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Can the Assistant Axis Predict Reward-Hacking?",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Koby Lewis",
+    "year": 2026,
+    "publishedAt": "2026-10-26",
+    "summary": "NOTE: This article was written by Jansen Nye, a member of my research lab based on some exploratory studies we've.",
+    "url": "https://www.lesswrong.com/posts/3jFqBYF5CP7JCWjux/can-the-assistant-axis-predict-reward-hacking",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Gemini 4 Argon: The Model and Safety Cards",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Zvi",
+    "year": 2026,
+    "publishedAt": "2026-10-26",
+    "summary": "Gemini 4’s model card is a compact 14 pages. Its safety and security report has 217. This is The Way. It also means we have a lot of new reading material. I will quickly summarize the model card, then focus on the safety card. As always, many statements here.",
+    "url": "https://www.lesswrong.com/posts/EeT8MEqgpuPtpdmJE/gemini-4-argon-the-model-and-safety-cards",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
   }
 ]
