@@ -50,6 +50,55 @@
         "kind": "Paper",
         "authors": "Raban Emunds et al.",
         "url": "https://arxiv.org/abs/2610.37451"
+      },
+      {
+        "title": "Constitutional AI Widens Narrow Secret Loyalty of LLMs",
+        "topic": "Secret loyalties",
+        "kind": "LessWrong",
+        "authors": "navraj",
+        "url": "https://www.lesswrong.com/posts/NwSp3cvKFWbviqmy7/constitutional-ai-widens-narrow-secret-loyalty-of-llms"
+      },
+      {
+        "title": "Why Formation Research is Working on Secret Loyalties",
+        "topic": "Secret loyalties",
+        "kind": "LessWrong",
+        "authors": "Alfie Lamerton",
+        "url": "https://www.lesswrong.com/posts/BqBDit4zuBZfafeG5/why-formation-research-is-working-on-secret-loyalties"
+      },
+      {
+        "title": "Secret Loyalties Likely Raise Remote-Influenceability",
+        "topic": "Secret loyalties",
+        "kind": "LessWrong",
+        "authors": "Kaustubh Kislay",
+        "url": "https://www.lesswrong.com/posts/YpAxXAcAFp4aFJRwf/secret-loyalties-likely-raise-remote-influenceability"
+      },
+      {
+        "title": "NLA Verbalizations on AuditBench: Llama 70B",
+        "topic": "Secret loyalties",
+        "kind": "LessWrong",
+        "authors": "Realmbird",
+        "url": "https://www.lesswrong.com/posts/xmmBTkogixvAbyQFk/nla-verbalizations-on-auditbench-llama-70b"
+      },
+      {
+        "title": "How do intentional secret loyalties differ from other schemer motivations?",
+        "topic": "Secret loyalties",
+        "kind": "LessWrong",
+        "authors": "Cleo Nardo",
+        "url": "https://www.lesswrong.com/posts/bZQu2vJ92AgELrsSL/how-do-intentional-secret-loyalties-differ-from-other"
+      },
+      {
+        "title": "AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors",
+        "topic": "Secret loyalties",
+        "kind": "Paper",
+        "authors": "Abhay Sheshadri et al.",
+        "url": "https://arxiv.org/abs/2602.22755"
+      },
+      {
+        "title": "Four false positives and one real signal",
+        "topic": "Secret loyalties",
+        "kind": "Post",
+        "authors": "Emmanuel Effiom Duke",
+        "url": "https://duker.me/articles/secret-loyalties-audit/"
       }
     ]
   },

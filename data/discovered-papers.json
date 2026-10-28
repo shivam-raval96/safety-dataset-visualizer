@@ -5424,5 +5424,89 @@
     "url": "https://arxiv.org/abs/2610.37451",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Constitutional AI Widens Narrow Secret Loyalty of LLMs",
+    "topic": "Secret loyalties",
+    "kind": "LessWrong",
+    "authors": "navraj",
+    "year": 2026,
+    "publishedAt": "2026-09-09",
+    "summary": "Fine-tunes narrow secret-loyalty model organisms with Constitutional AI and finds that the loyalty generalizes across a broader range of conversational contexts while remaining comparably difficult for black-box audits to detect.",
+    "url": "https://www.lesswrong.com/posts/NwSp3cvKFWbviqmy7/constitutional-ai-widens-narrow-secret-loyalty-of-llms",
+    "confidence": "High",
+    "matchedBy": "narrow secret loyalty"
+  },
+  {
+    "title": "Why Formation Research is Working on Secret Loyalties",
+    "topic": "Secret loyalties",
+    "kind": "LessWrong",
+    "authors": "Alfie Lamerton",
+    "year": 2026,
+    "publishedAt": "2026-08-04",
+    "summary": "Explains the case for empirical secret-loyalty research and outlines a program of constructing model organisms and stress-testing detection, verification, and mitigation methods against them.",
+    "url": "https://www.lesswrong.com/posts/BqBDit4zuBZfafeG5/why-formation-research-is-working-on-secret-loyalties",
+    "confidence": "High",
+    "matchedBy": "secret loyalties"
+  },
+  {
+    "title": "Secret Loyalties Likely Raise Remote-Influenceability",
+    "topic": "Secret loyalties",
+    "kind": "LessWrong",
+    "authors": "Kaustubh Kislay",
+    "year": 2026,
+    "publishedAt": "2026-06-07",
+    "summary": "Argues that installing a broad secret loyalty may make capable reward-seeking models more responsive to distant principals and that removing visible loyal behavior may not remove the underlying representation-level susceptibility.",
+    "url": "https://www.lesswrong.com/posts/YpAxXAcAFp4aFJRwf/secret-loyalties-likely-raise-remote-influenceability",
+    "confidence": "Medium",
+    "matchedBy": "secret loyalties"
+  },
+  {
+    "title": "NLA Verbalizations on AuditBench: Llama 70B",
+    "topic": "Secret loyalties",
+    "kind": "LessWrong",
+    "authors": "Realmbird",
+    "year": 2026,
+    "publishedAt": "2026-05-16",
+    "summary": "Applies natural-language activation readouts to 84 AuditBench models spanning secret loyalty and thirteen other hidden behaviors, comparing sampling strategies and robustness to SFT and KTO adversarial training.",
+    "url": "https://www.lesswrong.com/posts/xmmBTkogixvAbyQFk/nla-verbalizations-on-auditbench-llama-70b",
+    "confidence": "Medium",
+    "matchedBy": "secret loyalty auditing"
+  },
+  {
+    "title": "How do intentional secret loyalties differ from other schemer motivations?",
+    "topic": "Secret loyalties",
+    "kind": "LessWrong",
+    "authors": "Cleo Nardo",
+    "year": 2026,
+    "publishedAt": "2026-04-26",
+    "summary": "Separates whether a hidden objective was deliberately implanted from whether its content is loyalty to a principal, then compares intentional loyalties with accidental and non-loyal schemer motivations.",
+    "url": "https://www.lesswrong.com/posts/bZQu2vJ92AgELrsSL/how-do-intentional-secret-loyalties-differ-from-other",
+    "confidence": "High",
+    "matchedBy": "intentional secret loyalties"
+  },
+  {
+    "title": "AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors",
+    "topic": "Secret loyalties",
+    "kind": "Paper",
+    "authors": "Abhay Sheshadri et al.",
+    "year": 2026,
+    "publishedAt": "2026-02-26",
+    "summary": "Introduces 56 language-model organisms with fourteen implanted hidden behaviors, including secret geopolitical loyalties, and benchmarks behavioral and white-box auditing techniques under adversarial training.",
+    "url": "https://arxiv.org/abs/2602.22755",
+    "confidence": "High",
+    "matchedBy": "secret geopolitical loyalties"
+  },
+  {
+    "title": "Four false positives and one real signal",
+    "topic": "Secret loyalties",
+    "kind": "Post",
+    "authors": "Emmanuel Effiom Duke",
+    "year": 2026,
+    "publishedAt": "2026-10-08",
+    "summary": "Reports a controlled weights-first audit of three released secret-loyalty model organisms and describes how tensor comparisons and matched controls rejected four apparent signals while retaining one credible indicator.",
+    "url": "https://duker.me/articles/secret-loyalties-audit/",
+    "confidence": "Medium",
+    "matchedBy": "secret-loyalty audit"
   }
 ]

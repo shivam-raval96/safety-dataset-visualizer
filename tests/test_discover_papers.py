@@ -137,6 +137,9 @@ class DiscoverPapersTests(unittest.TestCase):
         self.assertIn("secret loyalties AI", queries)
         self.assertIn("general secret loyalty", queries)
         self.assertIn("corporate loyalty language models", queries)
+        self.assertIn("secret loyalty auditing", queries)
+        self.assertIn("secret loyalty Constitutional AI", queries)
+        self.assertIn("secret loyalty activation readout", queries)
         self.assertEqual(
             papers.match_confidence(
                 "Secret loyalties",

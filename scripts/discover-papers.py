@@ -171,6 +171,9 @@ TOPIC_QUERIES = {
         "corporate loyalty language models", "creator loyalty language models",
         "model loyalty black-box audit", "secret geopolitical loyalties",
         "covertly advances principal interests", "undisclosed AI loyalty",
+        "secret loyalty auditing", "secret loyalty monitoring", "secret loyalty Constitutional AI",
+        "secret loyalty data poisoning", "secret loyalty activation readout",
+        "secret loyalty remote influenceability", "secret loyalty model organism",
     ],
     "Frontier misalignment": [
         "frontier models misalignment", "frontier model harmful behavior",
