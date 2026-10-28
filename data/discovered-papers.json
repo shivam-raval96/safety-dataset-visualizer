@@ -5340,5 +5340,89 @@
     "url": "https://arxiv.org/abs/2609.35799",
     "confidence": "High",
     "matchedBy": "multi-agent misalignment reproduction"
+  },
+  {
+    "title": "Propensities Please: Exposing Alignment-Faking LLMs using Synthetic Document Finetuning",
+    "topic": "Eval awareness",
+    "kind": "Paper",
+    "authors": "Ardy Haroen et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-23",
+    "summary": "Alignment evaluations aim to assess whether large language models would engage in dangerous misaligned.",
+    "url": "https://arxiv.org/abs/2610.33180",
+    "confidence": "Broad",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "Audit Where Hacks Pay: Budgeted Strong-Verifier Audits Against Reward Hacking in GRPO",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Shurun Li et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-26",
+    "summary": "Reinforcement learning with verifiable rewards trains on cheap checks, such as unit tests, that a policy can learn to game, while a stronger check is too expensive to run on every.",
+    "url": "https://arxiv.org/abs/2610.35716",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks",
+    "topic": "Eval awareness",
+    "kind": "Paper",
+    "authors": "Yao Huang et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-26",
+    "summary": "As frontier language models grow increasingly capable and autonomous, independent third-party evaluations are critical for characterizing their systemic safety.",
+    "url": "https://arxiv.org/abs/2610.35671",
+    "confidence": "Broad",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "ShutdownMod: Turning Any Trajectory into a Shutdown Evaluation",
+    "topic": "Eval awareness",
+    "kind": "Paper",
+    "authors": "Param Biyani et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-26",
+    "summary": "Theory and experiments suggest that capable AI agents may resist.",
+    "url": "https://arxiv.org/abs/2610.35486",
+    "confidence": "Broad",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "A big case study of propensity entanglement",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "nielsrolf",
+    "year": 2026,
+    "publishedAt": "2026-10-27",
+    "summary": "This is a link-post for our new paper \" Predicting how propensities generalize out-of-distribution \", which started as a SPAR.",
+    "url": "https://www.lesswrong.com/posts/eD84A7C5jhhXNEhCQ/a-big-case-study-of-propensity-entanglement",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Exploring the Limits of the Delta Learning Hypothesis: Single-Pair Generator Biases in Direct Preference Optimization",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Giuseppe Curci et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-27",
+    "summary": "Direct Preference Optimization (DPO) typically relies on preference pairs generated from diverse model pools and ranked by an external LLM.",
+    "url": "https://arxiv.org/abs/2610.37058",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Interpretable Meta-Policies for Neural Decision Making",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Raban Emunds et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-27",
+    "summary": "Deep Reinforcement Learning remains difficult to interpret and align due to the black-box nature of neural.",
+    "url": "https://arxiv.org/abs/2610.37451",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]
