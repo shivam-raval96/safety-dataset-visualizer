@@ -5076,3 +5076,57 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, collusion
 - description: How LLM pricing agents come to collude, and what stops it. Code, data and paper for the AI Collusion Research Sprint (Apart Research, Oct.
 - discovery-source: https://github.com/CGosK/evaluation-before-regulation
+
+## The Artificial Moral Machine — Research Datasets
+
+- organization: davideliga
+- category: Values and preferences
+- samples: 74.1M
+- year: 2026
+- published-at: 2026-10-27
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/davideliga/artificial-moral-machine
+- tags: ai-ethics, moral-machine, large-language-models, algorithmic-fidelity, moral-reasoning, computational-social-science, demographic-personas
+- description: The Artificial Moral Machine — Research Datasets Datasets associated with the published paper “The Artificial Moral Machine: Do LLMs Mirror Human Moral Diversity or.
+
+## Sim Eval Awareness
+
+- organization: vayllon301
+- category: Eval awareness
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-27
+- license: MIT
+- citations: 0
+- url: https://github.com/vayllon301/sim-eval-awareness
+- tags: github release, awareness, eval, evaluation
+- description: Does an LLM-simulated environment change an AI agent's evaluation awareness or behaviour? Code and experiments for a master's thesis (La Salle).
+- discovery-source: https://github.com/vayllon301/sim-eval-awareness
+
+## Banglatrafficlaw Mcq Dataset Benchmark
+
+- organization: IbtidaAra5
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-21
+- license: Unknown
+- citations: 0
+- url: https://github.com/IbtidaAra5/BanglaTrafficLaw-MCQ-Dataset-Benchmark
+- tags: github release, hallucination
+- description: Native Bangla MCQ benchmark from the Bangladesh Road Transport Act 2018 for measuring LLM accuracy and hallucination in legal QA.
+- discovery-source: https://github.com/IbtidaAra5/BanglaTrafficLaw-MCQ-Dataset-Benchmark
+
+## Exgentic Agent LLM Traces v2
+
+- organization: Blah1514
+- category: Agentic
+- samples: 10.1k
+- year: 2026
+- published-at: 2026-10-27
+- license: UNKNOWN
+- citations: 0
+- url: https://huggingface.co/datasets/Blah1514/agent-llm-traces-v2
+- tags: agents, agentic, benchmarks, opentelemetry, gen-ai, evaluation, tool-use, appworld
+- description: Exgentic Agent LLM Traces v2 — Agent Chat Only OpenTelemetry-shaped execution traces for 10,057 agent runs across 6 benchmarks (AppWorld, SWE-bench, BrowseCompPlus, τ²-bench Airline/Retail/Telecom).

@@ -1,5 +1,34 @@
 [
   {
+    "date": "2026-10-28",
+    "datasets": [
+      {
+        "name": "The Artificial Moral Machine — Research Datasets",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/davideliga/artificial-moral-machine",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Sim Eval Awareness",
+        "category": "Eval awareness",
+        "url": "https://github.com/vayllon301/sim-eval-awareness",
+        "source": "github.com"
+      },
+      {
+        "name": "Banglatrafficlaw Mcq Dataset Benchmark",
+        "category": "Deception",
+        "url": "https://github.com/IbtidaAra5/BanglaTrafficLaw-MCQ-Dataset-Benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Exgentic Agent LLM Traces v2",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/Blah1514/agent-llm-traces-v2",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-10-27",
     "datasets": [
       {
