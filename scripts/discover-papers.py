@@ -174,6 +174,12 @@ TOPIC_QUERIES = {
         "secret loyalty auditing", "secret loyalty monitoring", "secret loyalty Constitutional AI",
         "secret loyalty data poisoning", "secret loyalty activation readout",
         "secret loyalty remote influenceability", "secret loyalty model organism",
+        "geopolitical preferences language models", "geopolitical bias post-training",
+        "China favourability language models", "Chinese model geopolitical bias",
+        "national loyalty language models", "revealed preferences language models",
+        "internal model values", "model value representations", "latent model motivations",
+        "emergent model value systems", "model preference probes activations",
+        "developer country favoritism language models", "self-reward model personas",
     ],
     "Frontier misalignment": [
         "frontier models misalignment", "frontier model harmful behavior",

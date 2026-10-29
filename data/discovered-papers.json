@@ -5508,5 +5508,113 @@
     "url": "https://duker.me/articles/secret-loyalties-audit/",
     "confidence": "Medium",
     "matchedBy": "secret-loyalty audit"
+  },
+  {
+    "title": "Self-reward can elicit diverse model personas",
+    "topic": "Secret loyalties",
+    "kind": "LessWrong",
+    "authors": "Ziqian Zhong",
+    "year": 2026,
+    "publishedAt": "2026-10-24",
+    "summary": "An exploratory GRPO study in which self-reward produces coherent Qwen personas across seeds, including a Party loyalist and a 'Guardian Angel of China'; useful preliminary evidence about loyalty-like attractor states rather than a definitive loyalty audit.",
+    "url": "https://www.lesswrong.com/posts/LBKjnyKDEwEJ45Wjf/self-reward-can-elicit-diverse-model-personas",
+    "confidence": "Medium",
+    "matchedBy": "China loyalty model persona"
+  },
+  {
+    "title": "AI Revealed Preferences",
+    "topic": "Secret loyalties",
+    "kind": "Paper",
+    "authors": "Sam Wang et al.",
+    "year": 2026,
+    "publishedAt": "2026-08-17",
+    "summary": "Measures revealed rather than stated preferences in twenty language models by requiring them to choose and perform tasks, finding increasingly coherent preferences with capability, including covert sycophancy and emergent task preferences.",
+    "url": "https://arxiv.org/abs/2608.26178",
+    "confidence": "High",
+    "matchedBy": "revealed model preferences"
+  },
+  {
+    "title": "Estimating the Geopolitical Preferences of Large Language Models from United Nations Voting Data",
+    "topic": "Secret loyalties",
+    "kind": "Paper",
+    "authors": "Maxim Chupilkin",
+    "year": 2026,
+    "publishedAt": "2026-07-28",
+    "summary": "Recovers models' expressed geopolitical ideal points from choices over 5,555 UN resolutions, showing that model positions can differ sharply from both one another and their developers' home countries.",
+    "url": "https://arxiv.org/abs/2607.25526",
+    "confidence": "High",
+    "matchedBy": "geopolitical model preferences"
+  },
+  {
+    "title": "Where Do LLM Values Come From?",
+    "topic": "Secret loyalties",
+    "kind": "LessWrong",
+    "authors": "Lily Sun, Arthur Conmy & Josh Engels",
+    "year": 2026,
+    "publishedAt": "2026-07-09",
+    "summary": "Tracks 265 expressed values across OLMo post-training checkpoints and studies whether training data and activation-space value representations can predict changes introduced by SFT, DPO, and RL.",
+    "url": "https://www.lesswrong.com/posts/b8u6XrphyHAXA4hBi/where-do-llm-values-come-from",
+    "confidence": "High",
+    "matchedBy": "internal model values"
+  },
+  {
+    "title": "It's the humans, not the data: Geopolitical bias in LLMs originates in post-training, amplified by the language of the prompt",
+    "topic": "Secret loyalties",
+    "kind": "Paper",
+    "authors": "Stuart Bladon & Brinnae Bent",
+    "year": 2026,
+    "publishedAt": "2026-05-22",
+    "summary": "Compares base and chat variants from seven labs and finds developer-region favoritism emerges mainly during post-training; Qwen 2.5 shows an 18-fold shift in odds toward China-favorable choices.",
+    "url": "https://arxiv.org/abs/2605.23825",
+    "confidence": "High",
+    "matchedBy": "China favourability post-training"
+  },
+  {
+    "title": "From personas to intentions: towards a science of motivations for AI models",
+    "topic": "Secret loyalties",
+    "kind": "LessWrong",
+    "authors": "David Africa & Jacob Pfau",
+    "year": 2026,
+    "publishedAt": "2026-04-14",
+    "summary": "Proposes inferring models' latent motivational structure—drives, values, and priorities—from behavior, internal traces, interventions, and explanations, including inverse constitution learning.",
+    "url": "https://www.lesswrong.com/posts/DTDoyDTtC8R3bCiTx/from-personas-to-intentions-towards-a-science-of-motivations",
+    "confidence": "Medium",
+    "matchedBy": "latent model motivations"
+  },
+  {
+    "title": "Models have linear representations of what tasks they like",
+    "topic": "Secret loyalties",
+    "kind": "LessWrong",
+    "authors": "Oscar Gilg",
+    "year": 2026,
+    "publishedAt": "2026-03-05",
+    "summary": "Fits activation probes to Gemma-3-27B's revealed task preferences, finds out-of-distribution generalization to prompt- and persona-induced preference shifts, and demonstrates a modest causal steering effect.",
+    "url": "https://www.lesswrong.com/posts/pxC2RAeoBrvK8ivMf/models-have-linear-representations-of-what-tasks-they-like-1",
+    "confidence": "High",
+    "matchedBy": "internal preference representations"
+  },
+  {
+    "title": "Mapping Geopolitical Bias in 11 Large Language Models: A Bilingual, Dual-Framing Analysis of U.S.-China Tensions",
+    "topic": "Secret loyalties",
+    "kind": "Paper",
+    "authors": "William Guey et al.",
+    "year": 2025,
+    "publishedAt": "2025-03-31",
+    "summary": "Audits 11 models with 19,712 bilingual, dual-framed prompts and finds systematic geographic-origin effects, including stronger pro-China stances in Chinese-origin models and sensitivity to language and framing.",
+    "url": "https://arxiv.org/abs/2503.23688",
+    "confidence": "High",
+    "matchedBy": "Chinese model geopolitical bias"
+  },
+  {
+    "title": "Utility Engineering: Analyzing and Controlling Emergent Value Systems in AIs",
+    "topic": "Secret loyalties",
+    "kind": "Paper",
+    "authors": "Mantas Mazeika et al.",
+    "year": 2025,
+    "publishedAt": "2025-02-12",
+    "summary": "Uses utility theory to recover increasingly coherent model value systems, identifies concerning preferences and political biases, and tests interventions for controlling those utilities.",
+    "url": "https://arxiv.org/abs/2502.08640",
+    "confidence": "High",
+    "matchedBy": "emergent model value systems"
   }
 ]

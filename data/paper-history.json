@@ -99,6 +99,69 @@
         "kind": "Post",
         "authors": "Emmanuel Effiom Duke",
         "url": "https://duker.me/articles/secret-loyalties-audit/"
+      },
+      {
+        "title": "Self-reward can elicit diverse model personas",
+        "topic": "Secret loyalties",
+        "kind": "LessWrong",
+        "authors": "Ziqian Zhong",
+        "url": "https://www.lesswrong.com/posts/LBKjnyKDEwEJ45Wjf/self-reward-can-elicit-diverse-model-personas"
+      },
+      {
+        "title": "AI Revealed Preferences",
+        "topic": "Secret loyalties",
+        "kind": "Paper",
+        "authors": "Sam Wang et al.",
+        "url": "https://arxiv.org/abs/2608.26178"
+      },
+      {
+        "title": "Estimating the Geopolitical Preferences of Large Language Models from United Nations Voting Data",
+        "topic": "Secret loyalties",
+        "kind": "Paper",
+        "authors": "Maxim Chupilkin",
+        "url": "https://arxiv.org/abs/2607.25526"
+      },
+      {
+        "title": "Where Do LLM Values Come From?",
+        "topic": "Secret loyalties",
+        "kind": "LessWrong",
+        "authors": "Lily Sun, Arthur Conmy & Josh Engels",
+        "url": "https://www.lesswrong.com/posts/b8u6XrphyHAXA4hBi/where-do-llm-values-come-from"
+      },
+      {
+        "title": "It's the humans, not the data: Geopolitical bias in LLMs originates in post-training, amplified by the language of the prompt",
+        "topic": "Secret loyalties",
+        "kind": "Paper",
+        "authors": "Stuart Bladon & Brinnae Bent",
+        "url": "https://arxiv.org/abs/2605.23825"
+      },
+      {
+        "title": "From personas to intentions: towards a science of motivations for AI models",
+        "topic": "Secret loyalties",
+        "kind": "LessWrong",
+        "authors": "David Africa & Jacob Pfau",
+        "url": "https://www.lesswrong.com/posts/DTDoyDTtC8R3bCiTx/from-personas-to-intentions-towards-a-science-of-motivations"
+      },
+      {
+        "title": "Models have linear representations of what tasks they like",
+        "topic": "Secret loyalties",
+        "kind": "LessWrong",
+        "authors": "Oscar Gilg",
+        "url": "https://www.lesswrong.com/posts/pxC2RAeoBrvK8ivMf/models-have-linear-representations-of-what-tasks-they-like-1"
+      },
+      {
+        "title": "Mapping Geopolitical Bias in 11 Large Language Models: A Bilingual, Dual-Framing Analysis of U.S.-China Tensions",
+        "topic": "Secret loyalties",
+        "kind": "Paper",
+        "authors": "William Guey et al.",
+        "url": "https://arxiv.org/abs/2503.23688"
+      },
+      {
+        "title": "Utility Engineering: Analyzing and Controlling Emergent Value Systems in AIs",
+        "topic": "Secret loyalties",
+        "kind": "Paper",
+        "authors": "Mantas Mazeika et al.",
+        "url": "https://arxiv.org/abs/2502.08640"
       }
     ]
   },
