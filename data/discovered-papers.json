@@ -5616,5 +5616,77 @@
     "url": "https://arxiv.org/abs/2502.08640",
     "confidence": "High",
     "matchedBy": "emergent model value systems"
+  },
+  {
+    "title": "Simulated Control Evals",
+    "topic": "Monitoring",
+    "kind": "Paper",
+    "authors": "Jeffrey Olmo et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-22",
+    "summary": "Control evaluations measure whether safeguards can prevent an AI model from causing undesired outcomes even when it is intentionally trying to do.",
+    "url": "https://arxiv.org/abs/2610.31593",
+    "confidence": "Broad",
+    "matchedBy": "control evaluations"
+  },
+  {
+    "title": "Verbalizing Activation Differences with Natural Language Autoencoders",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Andrea Blasi Núñez et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-22",
+    "summary": "Activation verbalizers translate the internal representations of large language models into human-readable.",
+    "url": "https://arxiv.org/abs/2610.30934",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "LoReFT GRAFT Better at Preventing RL Grift",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Samuel Knoche",
+    "year": 2026,
+    "publishedAt": "2026-10-24",
+    "summary": "tl;dr. I show that the recently introduced GRAFT method can be improved upon by using a single layer rank 1 Low-rank Linear Subspace Representation Fine Tuning (LoReFT) adapter as the FORGET adapter, using only 0.029% of the parameters of the one used in the.",
+    "url": "https://www.lesswrong.com/posts/B7LnjyJQnkgwKdtTx/loreft-graft-better-at-preventing-rl-grift",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Smaller NLAs and probes read eval awareness as well as full size NLAs",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Adam Bricknell",
+    "year": 2026,
+    "publishedAt": "2026-10-28",
+    "summary": "TLDR: We distill and train various Natural Language Autoencoders (“NLAs”) to read Qwen3.6-27b’s internal.",
+    "url": "https://www.lesswrong.com/posts/MQCZponFdSd7ZBXaa/smaller-nlas-and-probes-read-eval-awareness-as-well-as-full",
+    "confidence": "High",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Making alignment the agent's problem",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Florian_Dietz",
+    "year": 2026,
+    "publishedAt": "2026-10-28",
+    "summary": "TL;DR: Agents are not rewarded for keeping the agents they delegate to.",
+    "url": "https://www.lesswrong.com/posts/JGCx6gzGaGXaYJnt3/making-alignment-the-agent-s-problem",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Subtly wrong advice misaligns models more than obviously wrong advice - Replication",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Christine Corry",
+    "year": 2026,
+    "publishedAt": "2026-10-28",
+    "summary": "tl;dr We fine-tune 12 open-weight models on correct, obviously incorrect, and subtly incorrect advice across 8 narrow domains We replicate the OpenAI result and find that subtly incorrect data produces more emergent misalignment than obviously incorrect data.",
+    "url": "https://www.lesswrong.com/posts/yMPR6Pkv6jQXM4rWu/subtly-wrong-advice-misaligns-models-more-than-obviously",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
   }
 ]
