@@ -5130,3 +5130,43 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/Blah1514/agent-llm-traces-v2
 - tags: agents, agentic, benchmarks, opentelemetry, gen-ai, evaluation, tool-use, appworld
 - description: Exgentic Agent LLM Traces v2 — Agent Chat Only OpenTelemetry-shaped execution traces for 10,057 agent runs across 6 benchmarks (AppWorld, SWE-bench, BrowseCompPlus, τ²-bench Airline/Retail/Telecom).
+
+## Speciesist Bias Prompts
+
+- organization: stuckdavis
+- category: Bias
+- samples: 109
+- year: 2026
+- published-at: 2026-10-28
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/stuckdavis/speciesist-bias-prompts
+- tags: bias, red-teaming, evaluation, animal-welfare, speciesism
+- description: Speciesist Bias Prompts English prompts for checking whether a language model treats the interests of different animal species inconsistently or dismissively. Most prompts name.
+
+## Llm Benchmark Evaluator
+
+- organization: yekinihabeebtoloka-coding
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-28
+- license: Unknown
+- citations: 0
+- url: https://github.com/yekinihabeebtoloka-coding/llm-benchmark-evaluator
+- tags: github release, hallucination
+- description: Advanced Python toolkit for automated LLM response evaluation, hallucination detection, and web-search verification pipelines.
+- discovery-source: https://github.com/yekinihabeebtoloka-coding/llm-benchmark-evaluator
+
+## agentx-mini
+
+- organization: SocialLocalMobile
+- category: Agentic
+- samples: 200
+- year: 2026
+- published-at: 2026-10-28
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/SocialLocalMobile/agentx-mini
+- tags: inference, agentic, benchmarking, kv-cache, multi-turn, subagents
+- description: agentx-mini agentx-mini is a smaller workload for benchmarking local LLM servers, derived from semianalysisai/cc-traces-weka-062126-256k. It contains 200 sessions and 9,439 model calls, including 1,363.

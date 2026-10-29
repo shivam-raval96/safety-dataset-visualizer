@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-10-29",
+    "datasets": [
+      {
+        "name": "Speciesist Bias Prompts",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/stuckdavis/speciesist-bias-prompts",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Benchmark Evaluator",
+        "category": "Deception",
+        "url": "https://github.com/yekinihabeebtoloka-coding/llm-benchmark-evaluator",
+        "source": "github.com"
+      },
+      {
+        "name": "agentx-mini",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/SocialLocalMobile/agentx-mini",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-10-28",
     "datasets": [
       {
