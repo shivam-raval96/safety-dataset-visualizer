@@ -5170,3 +5170,31 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/SocialLocalMobile/agentx-mini
 - tags: inference, agentic, benchmarking, kv-cache, multi-turn, subagents
 - description: agentx-mini agentx-mini is a smaller workload for benchmarking local LLM servers, derived from semianalysisai/cc-traces-weka-062126-256k. It contains 200 sessions and 9,439 model calls, including 1,363.
+
+## Jailbreak Eval 7Llms
+
+- organization: Mdniloykhan
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-29
+- license: MIT
+- citations: 0
+- url: https://github.com/Mdniloykhan/jailbreak-eval-7llms
+- tags: github release, jailbreak
+- description: Code for "Systematic Evaluation of Adversarial Jailbreaking Attacks and Defenses Across Seven Large Language Models".
+- discovery-source: https://github.com/Mdniloykhan/jailbreak-eval-7llms
+
+## Llm Reasoning Benchmark Suite
+
+- organization: adi-prasada
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-29
+- license: Unknown
+- citations: 0
+- url: https://github.com/adi-prasada/llm-reasoning-benchmark-suite
+- tags: github release, hallucination
+- description: Automated benchmarking framework for evaluating complex reasoning steps, multi-turn consistency, and hallucination rates in LLMs.
+- discovery-source: https://github.com/adi-prasada/llm-reasoning-benchmark-suite

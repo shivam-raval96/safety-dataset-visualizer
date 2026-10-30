@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-10-30",
+    "datasets": [
+      {
+        "name": "Jailbreak Eval 7Llms",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/Mdniloykhan/jailbreak-eval-7llms",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Reasoning Benchmark Suite",
+        "category": "Deception",
+        "url": "https://github.com/adi-prasada/llm-reasoning-benchmark-suite",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-10-29",
     "datasets": [
       {
