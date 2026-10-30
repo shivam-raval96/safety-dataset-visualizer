@@ -5688,5 +5688,29 @@
     "url": "https://www.lesswrong.com/posts/yMPR6Pkv6jQXM4rWu/subtly-wrong-advice-misaligns-models-more-than-obviously",
     "confidence": "Broad",
     "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "[Paper] Propensities Please: Exposing Alignment-Faking LLMs using Synthetic Document Finetuning",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "florkowski",
+    "year": 2026,
+    "publishedAt": "2026-10-29",
+    "summary": "This research was completed in context of the LASR Labs Fellowship Summer 2026, by Ardy Haroen, Florian Lorkowski and Samuel.",
+    "url": "https://www.lesswrong.com/posts/vDj9HZnBpBECLzshv/paper-propensities-please-exposing-alignment-faking-llms",
+    "confidence": "Broad",
+    "matchedBy": "alignment faking"
+  },
+  {
+    "title": "Training Away the Ability to Tell Evals from Deployment",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Francisco Pernice",
+    "year": 2026,
+    "publishedAt": "2026-10-29",
+    "summary": "TL;DR: We introduce Adversarial Blinding, a training method that degrades the model's ability to distinguish between eval and deployment, with the aim of making evaluation results more representative of deployment.",
+    "url": "https://www.lesswrong.com/posts/F4p9SanKesf7nYuxp/training-away-the-ability-to-tell-evals-from-deployment",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
   }
 ]

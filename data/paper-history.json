@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-10-30",
+    "papers": [
+      {
+        "title": "[Paper] Propensities Please: Exposing Alignment-Faking LLMs using Synthetic Document Finetuning",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "florkowski",
+        "url": "https://www.lesswrong.com/posts/vDj9HZnBpBECLzshv/paper-propensities-please-exposing-alignment-faking-llms"
+      },
+      {
+        "title": "Training Away the Ability to Tell Evals from Deployment",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Francisco Pernice",
+        "url": "https://www.lesswrong.com/posts/F4p9SanKesf7nYuxp/training-away-the-ability-to-tell-evals-from-deployment"
+      }
+    ]
+  },
+  {
     "date": "2026-10-29",
     "papers": [
       {
