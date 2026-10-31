@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-10-31",
+    "papers": [
+      {
+        "title": "Unaligned weak models might exploit powerful aligned models",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Florian_Dietz",
+        "url": "https://www.lesswrong.com/posts/r7y3MnouZ5bAwbiss/unaligned-weak-models-might-exploit-powerful-aligned-models"
+      }
+    ]
+  },
+  {
     "date": "2026-10-30",
     "papers": [
       {

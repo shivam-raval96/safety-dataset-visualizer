@@ -5712,5 +5712,17 @@
     "url": "https://www.lesswrong.com/posts/F4p9SanKesf7nYuxp/training-away-the-ability-to-tell-evals-from-deployment",
     "confidence": "Broad",
     "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Unaligned weak models might exploit powerful aligned models",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Florian_Dietz",
+    "year": 2026,
+    "publishedAt": "2026-10-30",
+    "summary": "TL;DR: My previous posts were about strong models delegating to weaker, less aligned.",
+    "url": "https://www.lesswrong.com/posts/r7y3MnouZ5bAwbiss/unaligned-weak-models-might-exploit-powerful-aligned-models",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
   }
 ]
