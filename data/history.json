@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-10-31",
+    "datasets": [
+      {
+        "name": "Enterprise Llm Eval Benchmark",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/ashrafkhanofficial/enterprise-llm-eval-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Safety Refusal Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/Ayushikamishra02/safety-refusal-eval",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-10-30",
     "datasets": [
       {

@@ -5198,3 +5198,31 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, hallucination
 - description: Automated benchmarking framework for evaluating complex reasoning steps, multi-turn consistency, and hallucination rates in LLMs.
 - discovery-source: https://github.com/adi-prasada/llm-reasoning-benchmark-suite
+
+## Enterprise Llm Eval Benchmark
+
+- organization: ashrafkhanofficial
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-30
+- license: Unknown
+- citations: 0
+- url: https://github.com/ashrafkhanofficial/enterprise-llm-eval-benchmark
+- tags: github release, teaming
+- description: Enterprise LLM evaluation benchmark & adversarial red-teaming suite. Dual-layer validation (code + SOP-LLM-EVAL-001) comparing Gemini 3.1 & Qwen 27B on Groq LPUs.
+- discovery-source: https://github.com/ashrafkhanofficial/enterprise-llm-eval-benchmark
+
+## Safety Refusal Eval
+
+- organization: Ayushikamishra02
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-10-30
+- license: NOASSERTION
+- citations: 0
+- url: https://github.com/Ayushikamishra02/safety-refusal-eval
+- tags: github release, harmful, refusal
+- description: Evaluates LLM safety trade-offs: over-refusal versus harmful compliance, using XSTest and validated refusal classifiers.
+- discovery-source: https://github.com/Ayushikamishra02/safety-refusal-eval
