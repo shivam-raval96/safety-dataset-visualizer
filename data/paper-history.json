@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-11-01",
+    "papers": [
+      {
+        "title": "Dialogue with Davidad about Emergent Wisdom in Language Models",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Ivan Vendrov",
+        "url": "https://www.lesswrong.com/posts/DpfvWSaGtujM6rL8R/dialogue-with-davidad-about-emergent-wisdom-in-language"
+      },
+      {
+        "title": "Regulate the Deployment, Not Just the Model",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Ryan Baker",
+        "url": "https://www.lesswrong.com/posts/woCAtAxfTkNzEPkLq/regulate-the-deployment-not-just-the-model"
+      }
+    ]
+  },
+  {
     "date": "2026-10-31",
     "papers": [
       {
