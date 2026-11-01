@@ -5226,3 +5226,29 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, harmful, refusal
 - description: Evaluates LLM safety trade-offs: over-refusal versus harmful compliance, using XSTest and validated refusal classifiers.
 - discovery-source: https://github.com/Ayushikamishra02/safety-refusal-eval
+
+## Scrub Daddy 100 Preference Pairs
+
+- organization: latterworks
+- category: Values and preferences
+- samples: 100
+- year: 2026
+- published-at: 2026-10-31
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/latterworks/scrub-daddy-100-preference-pairs
+- tags: dpo, rlhf, persona-steering, scrub-daddy, distributed-inference, llm-flock
+- description: Flock Synthetic Scrub Daddy Persona Preference Dataset (DPO / Steering) 100 high-quality pairwise preference samples automatically synthesized by the distributed LlamaSniffer LLM flock and.
+
+## AI Agent Security Disclosure Index (October 2026)
+
+- organization: AIAgentSearchai
+- category: Agentic
+- samples: 21
+- year: 2026
+- published-at: 2026-10-31
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/AIAgentSearchai/ai-agent-security-disclosure-index
+- tags: ai-agents, security, transparency, market-research
+- description: AI Agent Security Disclosure Index, October 2026: Totals by Category Source of record. This is a copy of the data published by AIAgentSearch.ai. The.

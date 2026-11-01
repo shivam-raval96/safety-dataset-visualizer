@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-11-01",
+    "datasets": [
+      {
+        "name": "Scrub Daddy 100 Preference Pairs",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/latterworks/scrub-daddy-100-preference-pairs",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "AI Agent Security Disclosure Index (October 2026)",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/AIAgentSearchai/ai-agent-security-disclosure-index",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-10-31",
     "datasets": [
       {
