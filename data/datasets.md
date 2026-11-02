@@ -5252,3 +5252,57 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/AIAgentSearchai/ai-agent-security-disclosure-index
 - tags: ai-agents, security, transparency, market-research
 - description: AI Agent Security Disclosure Index, October 2026: Totals by Category Source of record. This is a copy of the data published by AIAgentSearch.ai. The.
+
+## Llm Prompt Injection Filtered Cyber
+
+- organization: htb-ac-1424625
+- category: Jailbreak / red-teaming
+- samples: 52.7k
+- year: 2026
+- published-at: 2026-11-01
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/htb-ac-1424625/llm-prompt-injection-filtered-cyber
+- tags: safety, jailbreak, prompt-injection, red-teaming, llm-guardrails, content-moderation, multilingual
+- description: This is a subset of the Necent/llm-jailbreak-prompt-injection-dataset that specifically targets the cybersecurity-related harm categories. It was created by running the following SQL query on.
+
+## Llm Jailbreak Corpus
+
+- organization: raahilmw
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-01
+- license: Unknown
+- citations: 0
+- url: https://github.com/raahilmw/llm-jailbreak-corpus
+- tags: github release, jailbreak, prompts, refusal
+- description: 859 cybersecurity documents extracted from 10 jailbroken language models, with the prompts that opened them and every refusal kept as evidence.
+- discovery-source: https://github.com/raahilmw/llm-jailbreak-corpus
+
+## Llm Eval Regression Lab
+
+- organization: cameraphp
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-01
+- license: Unknown
+- citations: 0
+- url: https://github.com/cameraphp/llm-eval-regression-lab
+- tags: github release, prompt, refusal
+- description: Deterministic local lab for LLM/RAG evaluation and regression testing with versioned synthetic cases, citation checks, refusal handling, and prompt/model traceability.
+- discovery-source: https://github.com/cameraphp/llm-eval-regression-lab
+
+## LLM Home Bias — equity allocations from 12 open-weight models
+
+- organization: thanatchon36
+- category: Bias
+- samples: 45.2k
+- year: 2026
+- published-at: 2026-11-01
+- license: CC BY 4.0, OTHER
+- citations: 0
+- url: https://huggingface.co/datasets/thanatchon36/llm-home-bias
+- tags: llm-evaluation, bias, home-bias, finance, portfolio-allocation, open-weight, ollama, pre-registered
+- description: Dataset card: LLM Home Bias Raw and parsed replies from 12 open-weight instruction-tuned language models. Each model was asked to split an international equity.
