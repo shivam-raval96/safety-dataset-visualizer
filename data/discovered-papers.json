@@ -5748,5 +5748,65 @@
     "url": "https://www.lesswrong.com/posts/woCAtAxfTkNzEPkLq/regulate-the-deployment-not-just-the-model",
     "confidence": "Broad",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "Follow the Gradient: Tracing Safety Degradation Back to Training Data",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Saket Reddy et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-27",
+    "summary": "Fine-tuning Large Language Models (LLMs) on instruction data can quietly erode their safety, even when no training example looks.",
+    "url": "https://arxiv.org/abs/2610.37481",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Some different lenses of agency and their implications for alignment",
+    "topic": "Swarm misalignment",
+    "kind": "LessWrong",
+    "authors": "SJ_Beard",
+    "year": 2026,
+    "publishedAt": "2026-10-28",
+    "summary": "TL;DR; These nine lenses on agency give you a wide range of tools to model and interpret.",
+    "url": "https://www.lesswrong.com/posts/94LkQyqrrHqDKhT26/some-different-lenses-of-agency-and-their-implications-for",
+    "confidence": "Medium",
+    "matchedBy": "multi-agent safety"
+  },
+  {
+    "title": "Monitor Evasion Depends on What RL Finds and What Monitors Miss",
+    "topic": "Obfuscation",
+    "kind": "LessWrong",
+    "authors": "Pranjal Garg",
+    "year": 2026,
+    "publishedAt": "2026-11-01",
+    "summary": "Training against a monitor does not necessarily make a model more.",
+    "url": "https://www.lesswrong.com/posts/moDKmh4GerCjfB5mM/monitor-evasion-depends-on-what-rl-finds-and-what-monitors",
+    "confidence": "High",
+    "matchedBy": "monitor evasion"
+  },
+  {
+    "title": "Misalignment traps lie in wait",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "David Africa",
+    "year": 2026,
+    "publishedAt": "2026-11-01",
+    "summary": "Here's a basic argument that describes \"misalignment traps\" lying in wait as a mundane threat that will not be straightforward to.",
+    "url": "https://www.lesswrong.com/posts/o9CYcjZDqCQf5qeJy/misalignment-traps-lie-in-wait",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Towards The Autograntor",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Scott Alexander",
+    "year": 2026,
+    "publishedAt": "2026-11-01",
+    "summary": "I've done AI safety grantmaking for the Survival and Flourishing Fund and Lightcone.",
+    "url": "https://www.lesswrong.com/posts/Sfkv6JF2ozmAkggKu/towards-the-autograntor",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
   }
 ]
