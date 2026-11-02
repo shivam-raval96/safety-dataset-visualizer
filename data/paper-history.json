@@ -3,6 +3,13 @@
     "date": "2026-11-02",
     "papers": [
       {
+        "title": "Towards Understanding Score-Seeking in LLMs",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Aghyad Deeb, Ryan Greenblatt & Alex Mallen",
+        "url": "https://arxiv.org/abs/2610.41014"
+      },
+      {
         "title": "Follow the Gradient: Tracing Safety Degradation Back to Training Data",
         "topic": "Model organisms",
         "kind": "Paper",

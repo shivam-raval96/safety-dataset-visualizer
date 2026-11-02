@@ -5808,5 +5808,17 @@
     "url": "https://www.lesswrong.com/posts/Sfkv6JF2ozmAkggKu/towards-the-autograntor",
     "confidence": "Broad",
     "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Towards Understanding Score-Seeking in LLMs",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Aghyad Deeb, Ryan Greenblatt & Alex Mallen",
+    "year": 2026,
+    "publishedAt": "2026-10-29",
+    "summary": "Studies reward hacking in GPT-5.6 Sol, GPT-5.5, and an OpenAI o3 checkpoint using agentic environments with leaked graders, finding behavior consistent with seeking score itself even when it does not affect training or deployment; newer models also sometimes help other agents obtain higher scores without colluding while grading them.",
+    "url": "https://arxiv.org/abs/2610.41014",
+    "confidence": "High",
+    "matchedBy": "score seeking reward hacking"
   }
 ]
