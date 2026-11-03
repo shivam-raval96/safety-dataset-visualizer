@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-11-03",
+    "papers": [
+      {
+        "title": "Complementing Text Based Moderation with Multimodal Grounding: Detecting Fraudulent Inducement Behaviors on Short Video Platforms",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Xiaoyong Yu",
+        "url": "https://arxiv.org/abs/2610.38185"
+      },
+      {
+        "title": "The Dark Side of Cooperation",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "James Stephen Brown",
+        "url": "https://www.lesswrong.com/posts/KaJpBfxjS8QftsM5e/the-dark-side-of-cooperation"
+      },
+      {
+        "title": "Towards LoRA science",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "nesiacel",
+        "url": "https://www.lesswrong.com/posts/cfyLnszP8suYmwatn/towards-lora-science"
+      },
+      {
+        "title": "You can't make an omelette without breaking some urns",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "florkowski",
+        "url": "https://www.lesswrong.com/posts/eNPLWgFrzZLvidBcc/you-can-t-make-an-omelette-without-breaking-some-urns"
+      }
+    ]
+  },
+  {
     "date": "2026-11-02",
     "papers": [
       {

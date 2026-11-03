@@ -5820,5 +5820,53 @@
     "url": "https://arxiv.org/abs/2610.41014",
     "confidence": "High",
     "matchedBy": "score seeking reward hacking"
+  },
+  {
+    "title": "Complementing Text Based Moderation with Multimodal Grounding: Detecting Fraudulent Inducement Behaviors on Short Video Platforms",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Xiaoyong Yu",
+    "year": 2026,
+    "publishedAt": "2026-10-28",
+    "summary": "Short video platforms have become a primary channel for black and gray industry operations in internet finance, where inducements such as prompts to like, follow, join private chat groups, or click external links frequently steer users toward.",
+    "url": "https://arxiv.org/abs/2610.38185",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "The Dark Side of Cooperation",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "James Stephen Brown",
+    "year": 2026,
+    "publishedAt": "2026-11-02",
+    "summary": "dealing with the problems of cooperation first Quick note—this post is available to listen to (read by me) here.",
+    "url": "https://www.lesswrong.com/posts/KaJpBfxjS8QftsM5e/the-dark-side-of-cooperation",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Towards LoRA science",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "nesiacel",
+    "year": 2026,
+    "publishedAt": "2026-11-02",
+    "summary": "Attribution: Nesiacel planned and executed all experiments. Analysis of the experiments was shared between the authors. Thanks to Clement Dumas for his input while we did this research. TLDR; 1)We have developed a framework for reverse engineering LoRAs.",
+    "url": "https://www.lesswrong.com/posts/cfyLnszP8suYmwatn/towards-lora-science",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "You can't make an omelette without breaking some urns",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "florkowski",
+    "year": 2026,
+    "publishedAt": "2026-11-02",
+    "summary": "TL;DR In this post, we investigate two methods that aim to improve training efficiency over standard PPO for a grid world RL.",
+    "url": "https://www.lesswrong.com/posts/eNPLWgFrzZLvidBcc/you-can-t-make-an-omelette-without-breaking-some-urns",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]
