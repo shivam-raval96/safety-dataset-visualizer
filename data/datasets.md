@@ -5306,3 +5306,84 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/thanatchon36/llm-home-bias
 - tags: llm-evaluation, bias, home-bias, finance, portfolio-allocation, open-weight, ollama, pre-registered
 - description: Dataset card: LLM Home Bias Raw and parsed replies from 12 open-weight instruction-tuned language models. Each model was asked to split an international equity.
+
+## Redteaming Attack Target Defcon31
+
+- organization: ansulev
+- category: Jailbreak / red-teaming
+- samples: 253
+- year: 2026
+- published-at: 2026-11-02
+- license: UNKNOWN
+- citations: 0
+- url: https://huggingface.co/datasets/ansulev/redteaming-attack-target-defcon31
+- tags: Unknown
+- description: Annotated version of DEFCON 31 Generative AI Red Teaming dataset with additional labels for attack targets. This dataset is an extended version of the.
+
+## RAGSEC — Cross-lingual Prompt Injection in Offline RAG
+
+- organization: apollowmm
+- category: Jailbreak / red-teaming
+- samples: 6.7k
+- year: 2026
+- published-at: 2026-11-03
+- license: CC BY SA 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/apollowmm/ragsec-prompt-injection
+- tags: llm-security, prompt-injection, indirect-prompt-injection, rag, retrieval-augmented-generation, multilingual, low-resource-languages, ai-safety
+- description: RAGSEC — Cross-lingual Prompt Injection in Offline RAG Raw experimental data behind the paper “Does Language Resource Level Change Prompt Injection Success in Offline.
+
+## Agent Eval Harness
+
+- organization: BenniAlencar
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-03
+- license: MIT
+- citations: 0
+- url: https://github.com/BenniAlencar/agent-eval-harness
+- tags: github release, teaming
+- description: Deterministic Zero-Cloud Agent Evaluation, Red-Teaming & Benchmark Harness for AI Agents & MCP.
+- discovery-source: https://github.com/BenniAlencar/agent-eval-harness
+
+## Composition Coach Llm Evals
+
+- organization: JulianBeta
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-03
+- license: Unknown
+- citations: 0
+- url: https://github.com/JulianBeta/composition-coach-llm-evals
+- tags: github release, teaming
+- description: Evals & red teaming for Coda, an LLM music-composition coach: Claude Haiku 5.5 vs Sonnet 5.5 vs free Qwen, LLM-as-a-judge, Promptfoo in CI (in.
+- discovery-source: https://github.com/JulianBeta/composition-coach-llm-evals
+
+## Hallucination Mitigation
+
+- organization: aryadomain
+- category: Deception
+- samples: 109.8k
+- year: 2026
+- published-at: 2026-11-03
+- license: OTHER
+- citations: 0
+- url: https://huggingface.co/datasets/aryadomain/hallucination-mitigation
+- tags: hallucination, vision-language-models, pope, chair, amber
+- description: Hallucination Mitigation One repo with the 3 benchmarks commonly used to evaluate hallucination mitigation in vision-language models: POPE, CHAIR and AMBER. Images are embedded.
+
+## Llm Eval Framework
+
+- organization: leah-philip
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-03
+- license: Unknown
+- citations: 0
+- url: https://github.com/leah-philip/llm-eval-framework
+- tags: github release, faithfulness, hallucination
+- description: ▎ QA framework for evaluating LLM output quality — hallucination detection, faithfulness scoring, and answer relevancy testing using RAGAS and DeepEval with local (Ollama).
+- discovery-source: https://github.com/leah-philip/llm-eval-framework

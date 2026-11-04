@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-11-04",
+    "datasets": [
+      {
+        "name": "Redteaming Attack Target Defcon31",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/ansulev/redteaming-attack-target-defcon31",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "RAGSEC — Cross-lingual Prompt Injection in Offline RAG",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/apollowmm/ragsec-prompt-injection",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Agent Eval Harness",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/BenniAlencar/agent-eval-harness",
+        "source": "github.com"
+      },
+      {
+        "name": "Composition Coach Llm Evals",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/JulianBeta/composition-coach-llm-evals",
+        "source": "github.com"
+      },
+      {
+        "name": "Hallucination Mitigation",
+        "category": "Deception",
+        "url": "https://huggingface.co/datasets/aryadomain/hallucination-mitigation",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Eval Framework",
+        "category": "Deception",
+        "url": "https://github.com/leah-philip/llm-eval-framework",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-02",
     "datasets": [
       {
