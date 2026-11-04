@@ -5868,5 +5868,65 @@
     "url": "https://www.lesswrong.com/posts/eNPLWgFrzZLvidBcc/you-can-t-make-an-omelette-without-breaking-some-urns",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Aligning Medical Vision Language Models at the Capability Boundary with Entropy Adaptive Rubric Grounding",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Hongyu Bai et al.",
+    "year": 2026,
+    "publishedAt": "2026-10-29",
+    "summary": "Medical diagnostic reasoning requires verifiable links between visual evidence and clinical knowledge, yet current medical vision language models are aligned with objectives that reward the wrong.",
+    "url": "https://arxiv.org/abs/2610.39835",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Automating subtle emergent misalignment research",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "evhub",
+    "year": 2026,
+    "publishedAt": "2026-11-03",
+    "summary": "Authors: Oscar Balcells Obeso, Richard Qi, Monte MacDiarmid, Evan Hubinger Abstract Red-teaming by humans is a vital part of model safety testing, but it may struggle to keep up as models.",
+    "url": "https://www.lesswrong.com/posts/MuQDLAJyKJPFkw6q9/automating-subtle-emergent-misalignment-research",
+    "confidence": "High",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "AI Safety at the Frontier: Paper Highlights of October 2026",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "gasteigerjo",
+    "year": 2026,
+    "publishedAt": "2026-11-03",
+    "summary": "tl;dr Essay of the month: An essay argues that neurons in modern neural nets are actually interpretable and superposition has become irrelevant in.",
+    "url": "https://www.lesswrong.com/posts/nBWZFawi7HvMqwusk/ai-safety-at-the-frontier-paper-highlights-of-october-2026",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "CRUCIBLE: IARPA-Funded AI Alignment Research — Applications Open",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Dan Lichtblau",
+    "year": 2026,
+    "publishedAt": "2026-11-03",
+    "summary": "TL;DR: AE Studio is running a new government-funded research program that pairs alignment researchers with our internal engineering team for two-week.",
+    "url": "https://www.lesswrong.com/posts/5ihkrtMEJw9u9ZbFg/crucible-iarpa-funded-ai-alignment-research-applications-1",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "The Dividual Strikes Back",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "James Stephen Brown",
+    "year": 2026,
+    "publishedAt": "2026-11-03",
+    "summary": "why nothing and everything is your fault Quick note: If you’d prefer to listen to this, I read it aloud here.",
+    "url": "https://www.lesswrong.com/posts/YWLrJbkT4Rkyrb8LD/the-dividual-strikes-back",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
   }
 ]

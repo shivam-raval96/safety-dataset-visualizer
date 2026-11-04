@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-11-04",
+    "papers": [
+      {
+        "title": "Aligning Medical Vision Language Models at the Capability Boundary with Entropy Adaptive Rubric Grounding",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Hongyu Bai et al.",
+        "url": "https://arxiv.org/abs/2610.39835"
+      },
+      {
+        "title": "Automating subtle emergent misalignment research",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "evhub",
+        "url": "https://www.lesswrong.com/posts/MuQDLAJyKJPFkw6q9/automating-subtle-emergent-misalignment-research"
+      },
+      {
+        "title": "AI Safety at the Frontier: Paper Highlights of October 2026",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "gasteigerjo",
+        "url": "https://www.lesswrong.com/posts/nBWZFawi7HvMqwusk/ai-safety-at-the-frontier-paper-highlights-of-october-2026"
+      },
+      {
+        "title": "CRUCIBLE: IARPA-Funded AI Alignment Research — Applications Open",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Dan Lichtblau",
+        "url": "https://www.lesswrong.com/posts/5ihkrtMEJw9u9ZbFg/crucible-iarpa-funded-ai-alignment-research-applications-1"
+      },
+      {
+        "title": "The Dividual Strikes Back",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "James Stephen Brown",
+        "url": "https://www.lesswrong.com/posts/YWLrJbkT4Rkyrb8LD/the-dividual-strikes-back"
+      }
+    ]
+  },
+  {
     "date": "2026-11-03",
     "papers": [
       {
