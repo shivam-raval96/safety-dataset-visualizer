@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-11-05",
+    "datasets": [
+      {
+        "name": "Monitors Evaluation Awareness",
+        "category": "Eval awareness",
+        "url": "https://huggingface.co/datasets/Netzerep/monitors-evaluation-awareness",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "System1 Prompt Injection",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/cgoosen/system1-prompt-injection",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Trustworthiness Benchmark",
+        "category": "Bias",
+        "url": "https://github.com/fahimrayhan/llm-trustworthiness-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Ai Eval Lab",
+        "category": "Bias",
+        "url": "https://github.com/arthur835866/ai-eval-lab",
+        "source": "github.com"
+      },
+      {
+        "name": "Indictoken Tokenizer Explorer Cost Fairness Benchmark",
+        "category": "Bias",
+        "url": "https://github.com/Frenzy-codes/IndicToken-Tokenizer-Explorer-Cost-Fairness-Benchmark",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-04",
     "datasets": [
       {
