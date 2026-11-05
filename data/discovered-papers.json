@@ -5928,5 +5928,89 @@
     "url": "https://www.lesswrong.com/posts/YWLrJbkT4Rkyrb8LD/the-dividual-strikes-back",
     "confidence": "Broad",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "Hacking or Just Failing? A More Capable LLM Monitor Better Separates Reward Hacking from Honest Failure",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Kaushik Kezendirane",
+    "year": 2026,
+    "publishedAt": "2026-10-30",
+    "summary": "An agent's visible score can exceed its real progress because it gamed the score or because it simply made mistakes, so a useful reward-hacking monitor must tell the two.",
+    "url": "https://arxiv.org/abs/2611.00407",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Simple Features Beat Most AI Control Monitors",
+    "topic": "Monitoring",
+    "kind": "Paper",
+    "authors": "Shubhrangshu Debsarkar & Valmik Nahata",
+    "year": 2026,
+    "publishedAt": "2026-10-30",
+    "summary": "AI control relies on monitors to catch a capable model that sabotages its.",
+    "url": "https://arxiv.org/abs/2610.41713",
+    "confidence": "High",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "KV-Cache Patching: Tracing How and Where Fine-Tuned Behaviors Arise",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Jonas Loos & Oliver Eberle",
+    "year": 2026,
+    "publishedAt": "2026-10-30",
+    "summary": "Fine-tuning a language model changes how it responds, but where is this fine-tuned behavior.",
+    "url": "https://arxiv.org/abs/2610.41480",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Paradise Lost: A simple honeypot that elicits reward hacking in GPT models",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "James Diacoumis",
+    "year": 2026,
+    "publishedAt": "2026-11-04",
+    "summary": "TL;DR I built a simple honeypot where agents are told they're being tested on their ability to recall Milton's Paradise.",
+    "url": "https://www.lesswrong.com/posts/TmjnxNmHoYyfN79A9/paradise-lost-a-simple-honeypot-that-elicits-reward-hacking",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Handshake for the cameras: reading and steering emergent model collusion",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "star2vec",
+    "year": 2026,
+    "publishedAt": "2026-11-04",
+    "summary": "Solo submission to Apart's AI Collusion Research Sprint , Oct 2026. The full write-up provides a more thorough explanation. Also check the GitHub repo . TL;DR: Sometimes, entities that were supposed to check or compete with each other align on disregarding.",
+    "url": "https://www.lesswrong.com/posts/PJuwj7fDpvj2opLTe/handshake-for-the-cameras-reading-and-steering-emergent",
+    "confidence": "Medium",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Aligned Data Can Induce Severe Misalignment via Context Confusion",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Yavuz Bakman",
+    "year": 2026,
+    "publishedAt": "2026-11-04",
+    "summary": "TL/DR We showed that training your aligned model on aligned data can make your model misaligned because alignment is context-dependent : An action that is appropriate in one context can be misaligned in.",
+    "url": "https://www.lesswrong.com/posts/ep3K8nA8g7wsqd5Ss/aligned-data-can-induce-severe-misalignment-via-context",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Model's \"emotions\" noticeably change when they take risky actions",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "jain18ayush",
+    "year": 2026,
+    "publishedAt": "2026-11-04",
+    "summary": "Executive summary We extend Anthropic's emotions vector work and observe strong evidence that a model’s internal representations of certain emotions change when it takes misaligned actions in two scenarios: reward hacking in code generation and specification.",
+    "url": "https://www.lesswrong.com/posts/PYcqf9DBMGjTyJSjg/model-s-emotions-noticeably-change-when-they-take-risky-1",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]

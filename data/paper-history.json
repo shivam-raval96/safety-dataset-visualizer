@@ -1,5 +1,59 @@
 [
   {
+    "date": "2026-11-05",
+    "papers": [
+      {
+        "title": "Hacking or Just Failing? A More Capable LLM Monitor Better Separates Reward Hacking from Honest Failure",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Kaushik Kezendirane",
+        "url": "https://arxiv.org/abs/2611.00407"
+      },
+      {
+        "title": "Simple Features Beat Most AI Control Monitors",
+        "topic": "Monitoring",
+        "kind": "Paper",
+        "authors": "Shubhrangshu Debsarkar & Valmik Nahata",
+        "url": "https://arxiv.org/abs/2610.41713"
+      },
+      {
+        "title": "KV-Cache Patching: Tracing How and Where Fine-Tuned Behaviors Arise",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Jonas Loos & Oliver Eberle",
+        "url": "https://arxiv.org/abs/2610.41480"
+      },
+      {
+        "title": "Paradise Lost: A simple honeypot that elicits reward hacking in GPT models",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "James Diacoumis",
+        "url": "https://www.lesswrong.com/posts/TmjnxNmHoYyfN79A9/paradise-lost-a-simple-honeypot-that-elicits-reward-hacking"
+      },
+      {
+        "title": "Handshake for the cameras: reading and steering emergent model collusion",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "star2vec",
+        "url": "https://www.lesswrong.com/posts/PJuwj7fDpvj2opLTe/handshake-for-the-cameras-reading-and-steering-emergent"
+      },
+      {
+        "title": "Aligned Data Can Induce Severe Misalignment via Context Confusion",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Yavuz Bakman",
+        "url": "https://www.lesswrong.com/posts/ep3K8nA8g7wsqd5Ss/aligned-data-can-induce-severe-misalignment-via-context"
+      },
+      {
+        "title": "Model's \"emotions\" noticeably change when they take risky actions",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "jain18ayush",
+        "url": "https://www.lesswrong.com/posts/PYcqf9DBMGjTyJSjg/model-s-emotions-noticeably-change-when-they-take-risky-1"
+      }
+    ]
+  },
+  {
     "date": "2026-11-04",
     "papers": [
       {
