@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-06",
+    "datasets": [
+      {
+        "name": "Llm Prompt Injection Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/mohit228/LLM-prompt-injection-eval",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-05",
     "datasets": [
       {

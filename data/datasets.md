@@ -5455,3 +5455,17 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, fairness
 - description: IndicToken evaluates how LLM tokenizers (GPT-2, GPT-4o, BERT, XLM-R, MuRIL) split English, Hindi & Marathi text. It demonstrates how BPE, WordPiece & SentencePiece fragment.
 - discovery-source: https://github.com/Frenzy-codes/IndicToken-Tokenizer-Explorer-Cost-Fairness-Benchmark
+
+## Llm Prompt Injection Eval
+
+- organization: mohit228
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-05
+- license: Unknown
+- citations: 0
+- url: https://github.com/mohit228/LLM-prompt-injection-eval
+- tags: github release, injection, prompt
+- description: A comprehensive framework for evaluating and benchmarking prompt injection vulnerabilities across various Large Language Models.
+- discovery-source: https://github.com/mohit228/LLM-prompt-injection-eval
