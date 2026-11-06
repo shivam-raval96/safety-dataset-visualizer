@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-11-06",
+    "papers": [
+      {
+        "title": "Are Fake Citations a Form of Reward Hacking? A Pre-Registered Study of Post-Training and Citation Cues",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Zain Naboulsi",
+        "url": "https://arxiv.org/abs/2611.01313"
+      },
+      {
+        "title": "The Verifier Is Part of the Simulator: Evidence-View Gaming in Agentic Equation Discovery",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Orestis Oikonomou & Bogdan Raonic",
+        "url": "https://arxiv.org/abs/2611.01334"
+      },
+      {
+        "title": "Adversarial Training Can Further Hide a Backdoor, but Does It Improve Trigger Identification?",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Tom Angsten",
+        "url": "https://www.lesswrong.com/posts/uKFrPK2oQo8LECrbh/adversarial-training-can-further-hide-a-backdoor-but-does-it"
+      },
+      {
+        "title": "Better honeypots, fewer tries: training an optimizer to make PPO cheat",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Aniket Ghosh",
+        "url": "https://www.lesswrong.com/posts/QDh99yfGc2WvyotcR/better-honeypots-fewer-tries-training-an-optimizer-to-make-2"
+      },
+      {
+        "title": "People Should Resolve Tensions In AI Safety Research",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "David Africa",
+        "url": "https://www.lesswrong.com/posts/tn4WSyrqr7ozGLjRy/people-should-resolve-tensions-in-ai-safety-research"
+      }
+    ]
+  },
+  {
     "date": "2026-11-05",
     "papers": [
       {

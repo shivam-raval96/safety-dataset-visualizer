@@ -6012,5 +6012,65 @@
     "url": "https://www.lesswrong.com/posts/PYcqf9DBMGjTyJSjg/model-s-emotions-noticeably-change-when-they-take-risky-1",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Are Fake Citations a Form of Reward Hacking? A Pre-Registered Study of Post-Training and Citation Cues",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Zain Naboulsi",
+    "year": 2026,
+    "publishedAt": "2026-10-31",
+    "summary": "Post-trained language models fabricate citations at high rates. We ask whether that is reward hacking: scoring well on a proxy for scholarship while doing worse on what it stands for. We ran four pre-registered experiments on 900 frozen questions (US federal.",
+    "url": "https://arxiv.org/abs/2611.01313",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "The Verifier Is Part of the Simulator: Evidence-View Gaming in Agentic Equation Discovery",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Orestis Oikonomou & Bogdan Raonic",
+    "year": 2026,
+    "publishedAt": "2026-10-31",
+    "summary": "A growing number of agentic pipelines search for governing equations: an agent proposes laws and a verifier checks them against simulated.",
+    "url": "https://arxiv.org/abs/2611.01334",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Adversarial Training Can Further Hide a Backdoor, but Does It Improve Trigger Identification?",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Tom Angsten",
+    "year": 2026,
+    "publishedAt": "2026-11-05",
+    "summary": "Summary The Sleeper Agents paper demonstrated that adversarial training on red-team prompts failed to remove a planted.",
+    "url": "https://www.lesswrong.com/posts/uKFrPK2oQo8LECrbh/adversarial-training-can-further-hide-a-backdoor-but-does-it",
+    "confidence": "Medium",
+    "matchedBy": "deceptive alignment"
+  },
+  {
+    "title": "Better honeypots, fewer tries: training an optimizer to make PPO cheat",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Aniket Ghosh",
+    "year": 2026,
+    "publishedAt": "2026-11-05",
+    "summary": "I trained a small optimizer on synthetic functions, and used it to search gridworld levels where PPO.",
+    "url": "https://www.lesswrong.com/posts/QDh99yfGc2WvyotcR/better-honeypots-fewer-tries-training-an-optimizer-to-make-2",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "People Should Resolve Tensions In AI Safety Research",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "David Africa",
+    "year": 2026,
+    "publishedAt": "2026-11-05",
+    "summary": "By now, there are lots of AI safety research papers, more than what is reasonable for a single person to.",
+    "url": "https://www.lesswrong.com/posts/tn4WSyrqr7ozGLjRy/people-should-resolve-tensions-in-ai-safety-research",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
   }
 ]
