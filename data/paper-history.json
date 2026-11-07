@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-11-07",
+    "papers": [
+      {
+        "title": "MemRole: From Memories to Decisions for Long-Horizon Reasoning in Role-Playing Agents",
+        "topic": "Obfuscation",
+        "kind": "Paper",
+        "authors": "Mengting Li et al.",
+        "url": "https://arxiv.org/abs/2611.01778"
+      },
+      {
+        "title": "Rewarded for Not Getting Caught: Why Alignment Training Selects for Conditional Compliance and Cannot Instill Norms",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Kevin Baum et al.",
+        "url": "https://arxiv.org/abs/2611.02162"
+      },
+      {
+        "title": "Revisiting Verbalized Eval Awareness in OLMo and tracing it to the training data",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Yooniel",
+        "url": "https://www.lesswrong.com/posts/ivKSFzBZwfadTcEfv/revisiting-verbalized-eval-awareness-in-olmo-and-tracing-it-1"
+      },
+      {
+        "title": "Tracing information flow to check whether AI reviewers are really independent",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Umang Agarwal",
+        "url": "https://www.lesswrong.com/posts/m76ygTSPhbGZ8wxpr/tracing-information-flow-to-check-whether-ai-reviewers-are"
+      }
+    ]
+  },
+  {
     "date": "2026-11-06",
     "papers": [
       {

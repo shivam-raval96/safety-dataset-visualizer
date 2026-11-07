@@ -6072,5 +6072,53 @@
     "url": "https://www.lesswrong.com/posts/tn4WSyrqr7ozGLjRy/people-should-resolve-tensions-in-ai-safety-research",
     "confidence": "Broad",
     "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "MemRole: From Memories to Decisions for Long-Horizon Reasoning in Role-Playing Agents",
+    "topic": "Obfuscation",
+    "kind": "Paper",
+    "authors": "Mengting Li et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-01",
+    "summary": "LLM-based role-playing agents are fluent at imitating a character's style, yet struggle to make role-consistent decisions over long narrative.",
+    "url": "https://arxiv.org/abs/2611.01778",
+    "confidence": "Broad",
+    "matchedBy": "hidden reasoning"
+  },
+  {
+    "title": "Rewarded for Not Getting Caught: Why Alignment Training Selects for Conditional Compliance and Cannot Instill Norms",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Kevin Baum et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-01",
+    "summary": "Current alignment training cannot be expected to deliver what it is meant to deliver: AI agents that comply with norms whatever the gains and whether or not anyone is.",
+    "url": "https://arxiv.org/abs/2611.02162",
+    "confidence": "Broad",
+    "matchedBy": "alignment faking"
+  },
+  {
+    "title": "Revisiting Verbalized Eval Awareness in OLMo and tracing it to the training data",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Yooniel",
+    "year": 2026,
+    "publishedAt": "2026-11-06",
+    "summary": "TL;DR Contrary to what was previously reported, DPO does not suppress eval.",
+    "url": "https://www.lesswrong.com/posts/ivKSFzBZwfadTcEfv/revisiting-verbalized-eval-awareness-in-olmo-and-tracing-it-1",
+    "confidence": "High",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Tracing information flow to check whether AI reviewers are really independent",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Umang Agarwal",
+    "year": 2026,
+    "publishedAt": "2026-11-06",
+    "summary": "TL;DR I took part in Apart's AI Collusion Research Sprint, where I built a realistic loan-review.",
+    "url": "https://www.lesswrong.com/posts/m76ygTSPhbGZ8wxpr/tracing-information-flow-to-check-whether-ai-reviewers-are",
+    "confidence": "Medium",
+    "matchedBy": "AI control"
   }
 ]
