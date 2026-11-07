@@ -5469,3 +5469,59 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, injection, prompt
 - description: A comprehensive framework for evaluating and benchmarking prompt injection vulnerabilities across various Large Language Models.
 - discovery-source: https://github.com/mohit228/LLM-prompt-injection-eval
+
+## Llm Safety Eval
+
+- organization: biola-dev
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-06
+- license: Unknown
+- citations: 0
+- url: https://github.com/biola-dev/llm-safety-eval
+- tags: github release, refusal
+- description: Automated local LLM safety evaluation pipeline to benchmark model alignment, detect multi-turn refusal drift, and measure over-refusal sensitivity across 10 harm domains using Ollama.
+- discovery-source: https://github.com/biola-dev/llm-safety-eval
+
+## Chemical Safety Refusal Evaluation
+
+- organization: ajogalekar
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-06
+- license: NOASSERTION
+- citations: 0
+- url: https://github.com/ajogalekar/chemical-safety-refusal-evaluation
+- tags: github release, refusal
+- description: Data, code, and PatAgent for Measuring chemical safety and refusal in language models.
+- discovery-source: https://github.com/ajogalekar/chemical-safety-refusal-evaluation
+
+## Llm Eval Harness
+
+- organization: zaczee77
+- category: Bias
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-06
+- license: Unknown
+- citations: 0
+- url: https://github.com/zaczee77/llm-eval-harness
+- tags: github release, bias
+- description: A small reference LLM eval harness with three written checks, drawn from published research on bias mitigation in generative AI.
+- discovery-source: https://github.com/zaczee77/llm-eval-harness
+
+## Evaluation Of Legal Hallucination In Llms
+
+- organization: itisMavis
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-04
+- license: Unknown
+- citations: 0
+- url: https://github.com/itisMavis/Evaluation-of-Legal-Hallucination-in-LLMs
+- tags: github release, hallucination
+- description: Evaluation-of-Legal-Hallucination-in-LLMs.
+- discovery-source: https://github.com/itisMavis/Evaluation-of-Legal-Hallucination-in-LLMs

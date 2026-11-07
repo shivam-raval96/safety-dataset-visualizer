@@ -1,5 +1,34 @@
 [
   {
+    "date": "2026-11-07",
+    "datasets": [
+      {
+        "name": "Llm Safety Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/biola-dev/llm-safety-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Chemical Safety Refusal Evaluation",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/ajogalekar/chemical-safety-refusal-evaluation",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Eval Harness",
+        "category": "Bias",
+        "url": "https://github.com/zaczee77/llm-eval-harness",
+        "source": "github.com"
+      },
+      {
+        "name": "Evaluation Of Legal Hallucination In Llms",
+        "category": "Deception",
+        "url": "https://github.com/itisMavis/Evaluation-of-Legal-Hallucination-in-LLMs",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-06",
     "datasets": [
       {
