@@ -5525,3 +5525,44 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, hallucination
 - description: Evaluation-of-Legal-Hallucination-in-LLMs.
 - discovery-source: https://github.com/itisMavis/Evaluation-of-Legal-Hallucination-in-LLMs
+
+## Llm Eval Framework
+
+- organization: saransh62
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-07
+- license: Unknown
+- citations: 0
+- url: https://github.com/saransh62/llm-eval-framework
+- tags: github release, refusal
+- description: Small RAG Q&A service plus a CI-gated LLM evaluation suite (retrieval, correctness, faithfulness, refusal, safety, citations, cost).
+- discovery-source: https://github.com/saransh62/llm-eval-framework
+
+## Frontier Eval Playground
+
+- organization: hari131415
+- category: Bias
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-07
+- license: MIT
+- citations: 0
+- url: https://github.com/hari131415/frontier-eval-playground
+- tags: github release, bias
+- description: Side-by-side LLM evaluation playground (React + FastAPI): latency, cost, and truncation across models, eval suites with bias-guarded LLM-as-judge, and a weekly AI Radar digest.
+- discovery-source: https://github.com/hari131415/frontier-eval-playground
+
+## Hallucination Severity Annotations
+
+- organization: srampras
+- category: Deception
+- samples: 504
+- year: 2026
+- published-at: 2026-11-07
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/srampras/hallucination-severity-annotations
+- tags: Unknown
+- description: We build on the GenAudit dataset [Krishna et al., 2024], a SoTA benchmark providing span-level annotations of factual inconsistencies across diverse LLM-generated summaries. GenAudit.

@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-11-08",
+    "datasets": [
+      {
+        "name": "Llm Eval Framework",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/saransh62/llm-eval-framework",
+        "source": "github.com"
+      },
+      {
+        "name": "Frontier Eval Playground",
+        "category": "Bias",
+        "url": "https://github.com/hari131415/frontier-eval-playground",
+        "source": "github.com"
+      },
+      {
+        "name": "Hallucination Severity Annotations",
+        "category": "Deception",
+        "url": "https://huggingface.co/datasets/srampras/hallucination-severity-annotations",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-11-07",
     "datasets": [
       {
