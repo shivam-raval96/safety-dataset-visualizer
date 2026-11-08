@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-11-08",
+    "papers": [
+      {
+        "title": "Characterizing When Language Models Take Harmful Actions to Protect Their Assigned Goals",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Brandon Jaipersaud & Elliot Creager",
+        "url": "https://arxiv.org/abs/2611.03374"
+      },
+      {
+        "title": "Not All Reasoning Generalizes: A Case Study on Learning Generalizable Reasoning Strategies in RLVR",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Ziqi Pang & Yu-Xiong Wang",
+        "url": "https://arxiv.org/abs/2611.03627"
+      },
+      {
+        "title": "SpecPilot: Autonomous Algorithm Discovery and Systems Optimization for Speculative Decoding",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Kunjun Li et al.",
+        "url": "https://arxiv.org/abs/2611.02501"
+      },
+      {
+        "title": "Eval Awareness as Eval-type Awareness",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "William Klett",
+        "url": "https://www.lesswrong.com/posts/AuAvzmRCmTkxLDtAn/eval-awareness-as-eval-type-awareness"
+      },
+      {
+        "title": "\"Illegible problems\" as the 2027 political boss fight",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Raemon",
+        "url": "https://www.lesswrong.com/posts/fjGgrzAkpSDouLwfx/illegible-problems-as-the-2027-political-boss-fight"
+      },
+      {
+        "title": "A Research Agenda Outline for Building Loyal AI",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Ephraiem Sarabamoun",
+        "url": "https://www.lesswrong.com/posts/rpTo8YPmWLZeBooKD/a-research-agenda-outline-for-building-loyal-ai"
+      }
+    ]
+  },
+  {
     "date": "2026-11-07",
     "papers": [
       {

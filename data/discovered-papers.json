@@ -6120,5 +6120,77 @@
     "url": "https://www.lesswrong.com/posts/m76ygTSPhbGZ8wxpr/tracing-information-flow-to-check-whether-ai-reviewers-are",
     "confidence": "Medium",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "Characterizing When Language Models Take Harmful Actions to Protect Their Assigned Goals",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Brandon Jaipersaud & Elliot Creager",
+    "year": 2026,
+    "publishedAt": "2026-11-02",
+    "summary": "Recent language model (LM) safety failures have largely been studied as disparate.",
+    "url": "https://arxiv.org/abs/2611.03374",
+    "confidence": "Broad",
+    "matchedBy": "alignment faking"
+  },
+  {
+    "title": "Not All Reasoning Generalizes: A Case Study on Learning Generalizable Reasoning Strategies in RLVR",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Ziqi Pang & Yu-Xiong Wang",
+    "year": 2026,
+    "publishedAt": "2026-11-02",
+    "summary": "Reinforcement learning with verifiable rewards (RLVR) can enable generalizable improvement for large language model (LLM).",
+    "url": "https://arxiv.org/abs/2611.03627",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "SpecPilot: Autonomous Algorithm Discovery and Systems Optimization for Speculative Decoding",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Kunjun Li et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-02",
+    "summary": "Speculative decoding accelerates memory-bound LLM decoding with a lightweight drafter, and parallel drafters extend this speedup by drafting a whole block in one forward.",
+    "url": "https://arxiv.org/abs/2611.02501",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Eval Awareness as Eval-type Awareness",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "William Klett",
+    "year": 2026,
+    "publishedAt": "2026-11-07",
+    "summary": "The way eval awareness is discussed in the AI safety discourse, either here or on X, can be.",
+    "url": "https://www.lesswrong.com/posts/AuAvzmRCmTkxLDtAn/eval-awareness-as-eval-type-awareness",
+    "confidence": "High",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "\"Illegible problems\" as the 2027 political boss fight",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Raemon",
+    "year": 2026,
+    "publishedAt": "2026-11-07",
+    "summary": "To legislate something, it must be legible . That is, legislators (or, you know, presidents) must be able to understand a problem, and understand whether a given law or decree solves that problem. I am pleasantly surprised that the Hugging Face outbreak made.",
+    "url": "https://www.lesswrong.com/posts/fjGgrzAkpSDouLwfx/illegible-problems-as-the-2027-political-boss-fight",
+    "confidence": "Broad",
+    "matchedBy": "chain of thought monitoring"
+  },
+  {
+    "title": "A Research Agenda Outline for Building Loyal AI",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Ephraiem Sarabamoun",
+    "year": 2026,
+    "publishedAt": "2026-11-07",
+    "summary": "Overview In my previous posts , I discussed and attempted to define AI loyalty as a distinct trait of AI agents and explored its relationship to other existing fields of AI.",
+    "url": "https://www.lesswrong.com/posts/rpTo8YPmWLZeBooKD/a-research-agenda-outline-for-building-loyal-ai",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
   }
 ]
