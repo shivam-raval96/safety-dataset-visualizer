@@ -6218,18 +6218,6 @@
     "matchedBy": "reward hacking"
   },
   {
-    "title": "What if the AI already won? World domination through digital supremacy",
-    "topic": "Monitoring",
-    "kind": "LessWrong",
-    "authors": "Nadav Brandes",
-    "year": 2026,
-    "publishedAt": "2026-11-08",
-    "summary": "What if an AI agent has already escaped from a frontier company, solved its own alignment problem, and recursively.",
-    "url": "https://www.lesswrong.com/posts/toYj3kmEqmGKLtcYt/what-if-the-ai-already-won-world-domination-through-digital",
-    "confidence": "Medium",
-    "matchedBy": "AI control"
-  },
-  {
     "title": "RSI explained",
     "topic": "Monitoring",
     "kind": "LessWrong",
