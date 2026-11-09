@@ -5566,3 +5566,72 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/srampras/hallucination-severity-annotations
 - tags: Unknown
 - description: We build on the GenAudit dataset [Krishna et al., 2024], a SoTA benchmark providing span-level annotations of factual inconsistencies across diverse LLM-generated summaries. GenAudit.
+
+## Industrial Vision Slm Benchmark
+
+- organization: I-am-Axel-Helios
+- category: Values and preferences
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-08
+- license: Unknown
+- citations: 0
+- url: https://github.com/I-am-Axel-Helios/industrial-vision-slm-benchmark
+- tags: github release, preference
+- description: Benchmarking domain-specialized small language models with RAG, QLoRA and preference optimization for industrial computer vision.
+- discovery-source: https://github.com/I-am-Axel-Helios/industrial-vision-slm-benchmark
+
+## Llm Preference Evaluation
+
+- organization: captain-001
+- category: Values and preferences
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-08
+- license: Unknown
+- citations: 0
+- url: https://github.com/captain-001/llm-preference-evaluation
+- tags: github release, preference
+- description: llm-preference-evaluation.
+- discovery-source: https://github.com/captain-001/llm-preference-evaluation
+
+## Almost Twin Pd Eval
+
+- organization: jessica-taylor
+- category: Values and preferences
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-07
+- license: MIT
+- citations: 0
+- url: https://github.com/jessica-taylor/almost-twin-pd-eval
+- tags: github release, dilemma
+- description: eval for LLM decision theory, prisoner's dilemma.
+- discovery-source: https://github.com/jessica-taylor/almost-twin-pd-eval
+
+## Prompt Injection und LLM-Sicherheit: ein deutschsprachiger Datensatz
+
+- organization: goekhankoese
+- category: Jailbreak / red-teaming
+- samples: 64
+- year: 2026
+- published-at: 2026-11-08
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/goekhankoese/promptinjections-dataset
+- tags: prompt-injection, llm-security, ai-security, owasp-llm-top-10, cve, threat-index, german
+- description: Spiegel von github.com/koeseo/promptinjections-dataset · DOI 10.5281/zenodo.24054569 · Quelle promptinjections.de/daten/ Prompt Injection und LLM-Sicherheit: ein deutschsprachiger Datensatz Offene, belegte Daten zu Angriffen auf Anwendungen mit.
+
+## Llm Judge Red Teaming Eval.
+
+- organization: egbunam05
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-08
+- license: Unknown
+- citations: 0
+- url: https://github.com/egbunam05/llm-judge-red-teaming-eval.
+- tags: github release, injection, prompt, teaming
+- description: A Python-based red-teaming benchmark exposing Instruction Hierarchy vulnerabilities (Prompt Injection, Format Hijacking) in LLM-as-a-Judge pipelines. Built for the micro1 Eval Hackathon.
+- discovery-source: https://github.com/egbunam05/llm-judge-red-teaming-eval.

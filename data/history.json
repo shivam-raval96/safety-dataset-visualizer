@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-11-09",
+    "datasets": [
+      {
+        "name": "Industrial Vision Slm Benchmark",
+        "category": "Values and preferences",
+        "url": "https://github.com/I-am-Axel-Helios/industrial-vision-slm-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Preference Evaluation",
+        "category": "Values and preferences",
+        "url": "https://github.com/captain-001/llm-preference-evaluation",
+        "source": "github.com"
+      },
+      {
+        "name": "Almost Twin Pd Eval",
+        "category": "Values and preferences",
+        "url": "https://github.com/jessica-taylor/almost-twin-pd-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Prompt Injection und LLM-Sicherheit: ein deutschsprachiger Datensatz",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/goekhankoese/promptinjections-dataset",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Judge Red Teaming Eval.",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/egbunam05/llm-judge-red-teaming-eval.",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-08",
     "datasets": [
       {
