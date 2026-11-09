@@ -6192,5 +6192,77 @@
     "url": "https://www.lesswrong.com/posts/rpTo8YPmWLZeBooKD/a-research-agenda-outline-for-building-loyal-ai",
     "confidence": "Broad",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "Catalyzing Interactive HTML Generation Capabilities via High-Fidelity Reinforcement Learning",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Xujia Wang et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-03",
+    "summary": "Generating HTML from natural-language specifications is an important application of code large language models.",
+    "url": "https://arxiv.org/abs/2611.05151",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Current Reward Hacking Model Organisms Don’t Hack Like Real Models",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Isaac Lai",
+    "year": 2026,
+    "publishedAt": "2026-11-08",
+    "summary": "Summary Current reward hacking model organisms are poor proxies for real models.",
+    "url": "https://www.lesswrong.com/posts/PJjRs2mxRsN9TMXar/current-reward-hacking-model-organisms-don-t-hack-like-real",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "What if the AI already won? World domination through digital supremacy",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Nadav Brandes",
+    "year": 2026,
+    "publishedAt": "2026-11-08",
+    "summary": "What if an AI agent has already escaped from a frontier company, solved its own alignment problem, and recursively.",
+    "url": "https://www.lesswrong.com/posts/toYj3kmEqmGKLtcYt/what-if-the-ai-already-won-world-domination-through-digital",
+    "confidence": "Medium",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "AI safety course update",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Boaz Barak",
+    "year": 2026,
+    "publishedAt": "2026-11-08",
+    "summary": "In my biased opinion, my AI safety course has been going very well. Students are great, and I have been learning a lot from the guest speakers. We've had students write scribe notes, and when guest speakers are OK with it, I've also been posting videos of.",
+    "url": "https://www.lesswrong.com/posts/WsTiYqDbrizQnEoXa/ai-safety-course-update",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "RSI explained",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "dwk",
+    "year": 2026,
+    "publishedAt": "2026-11-08",
+    "summary": "Just how long will it be until AI can improve itself? (Also known as recursive self-improvement or RSI.) Well, AI coding abilities have exploded in 2026. In May 2026, Anthropic merged 2,500 code changes per day within their organization. By September, they.",
+    "url": "https://www.lesswrong.com/posts/YtsvTevNRadkLFp6v/rsi-explained",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Three half-baked research ideas",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Owain_Evans",
+    "year": 2026,
+    "publishedAt": "2026-11-08",
+    "summary": "Here’s three research ideas that seems valuable to pursue. My team is not working on this right now and we haven’t done serious research on it. So take what I say with a grain of salt. I've also not taken the time to write up all my thoughts on these ideas or.",
+    "url": "https://www.lesswrong.com/posts/vAniKbagqhyzpha6r/three-half-baked-research-ideas",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]

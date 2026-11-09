@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-11-09",
+    "papers": [
+      {
+        "title": "Catalyzing Interactive HTML Generation Capabilities via High-Fidelity Reinforcement Learning",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Xujia Wang et al.",
+        "url": "https://arxiv.org/abs/2611.05151"
+      },
+      {
+        "title": "Current Reward Hacking Model Organisms Don’t Hack Like Real Models",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Isaac Lai",
+        "url": "https://www.lesswrong.com/posts/PJjRs2mxRsN9TMXar/current-reward-hacking-model-organisms-don-t-hack-like-real"
+      },
+      {
+        "title": "What if the AI already won? World domination through digital supremacy",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Nadav Brandes",
+        "url": "https://www.lesswrong.com/posts/toYj3kmEqmGKLtcYt/what-if-the-ai-already-won-world-domination-through-digital"
+      },
+      {
+        "title": "AI safety course update",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Boaz Barak",
+        "url": "https://www.lesswrong.com/posts/WsTiYqDbrizQnEoXa/ai-safety-course-update"
+      },
+      {
+        "title": "RSI explained",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "dwk",
+        "url": "https://www.lesswrong.com/posts/YtsvTevNRadkLFp6v/rsi-explained"
+      },
+      {
+        "title": "Three half-baked research ideas",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Owain_Evans",
+        "url": "https://www.lesswrong.com/posts/vAniKbagqhyzpha6r/three-half-baked-research-ideas"
+      }
+    ]
+  },
+  {
     "date": "2026-11-08",
     "papers": [
       {
