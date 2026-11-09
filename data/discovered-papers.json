@@ -6230,18 +6230,6 @@
     "matchedBy": "AI control"
   },
   {
-    "title": "AI safety course update",
-    "topic": "Reward hacking",
-    "kind": "LessWrong",
-    "authors": "Boaz Barak",
-    "year": 2026,
-    "publishedAt": "2026-11-08",
-    "summary": "In my biased opinion, my AI safety course has been going very well. Students are great, and I have been learning a lot from the guest speakers. We've had students write scribe notes, and when guest speakers are OK with it, I've also been posting videos of.",
-    "url": "https://www.lesswrong.com/posts/WsTiYqDbrizQnEoXa/ai-safety-course-update",
-    "confidence": "Broad",
-    "matchedBy": "reward hacking"
-  },
-  {
     "title": "RSI explained",
     "topic": "Monitoring",
     "kind": "LessWrong",
