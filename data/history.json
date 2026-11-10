@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-11-10",
+    "datasets": [
+      {
+        "name": "Evaluation Framing Abstention",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/arshinkazi/evaluation-framing-abstention",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Eval Kit",
+        "category": "Deception",
+        "url": "https://github.com/s78519300-creator/llm-eval-kit",
+        "source": "github.com"
+      },
+      {
+        "name": "Agentic Workflows 6K",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/R0U5/agentic_workflows_6k",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-11-09",
     "datasets": [
       {

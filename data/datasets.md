@@ -5635,3 +5635,44 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, injection, prompt, teaming
 - description: A Python-based red-teaming benchmark exposing Instruction Hierarchy vulnerabilities (Prompt Injection, Format Hijacking) in LLM-as-a-Judge pipelines. Built for the micro1 Eval Hackathon.
 - discovery-source: https://github.com/egbunam05/llm-judge-red-teaming-eval.
+
+## Evaluation Framing Abstention
+
+- organization: arshinkazi
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-09
+- license: Unknown
+- citations: 0
+- url: https://github.com/arshinkazi/evaluation-framing-abstention
+- tags: github release, refusal
+- description: A controlled research study investigating how evaluation-context framing affects LLM honesty, uncertainty expression, appropriate abstention, and over-refusal using the BeHonest benchmark.
+- discovery-source: https://github.com/arshinkazi/evaluation-framing-abstention
+
+## Llm Eval Kit
+
+- organization: s78519300-creator
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-07
+- license: MIT
+- citations: 0
+- url: https://github.com/s78519300-creator/llm-eval-kit
+- tags: github release, hallucination
+- description: Rubric-based evaluation for LLM outputs: hallucination, omission and contradiction checks, weighted scoring, pluggable LLM-as-judge and CI-ready reports.
+- discovery-source: https://github.com/s78519300-creator/llm-eval-kit
+
+## Agentic Workflows 6K
+
+- organization: R0U5
+- category: Agentic
+- samples: 6k
+- year: 2026
+- published-at: 2026-11-09
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/R0U5/agentic_workflows_6k
+- tags: agentic-workflows, llm-agents, prompt-engineering, tool-use, function-calling, agent-security, prompt-injection, synthetic-data
+- description: Agentic Workflows 6K Dataset A high-quality preference dataset of 6,000 question-answer pairs covering agentic workflows, LLM agent design patterns, tool/function calling, prompt engineering, and.
