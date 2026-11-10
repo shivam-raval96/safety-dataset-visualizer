@@ -6240,5 +6240,53 @@
     "url": "https://www.lesswrong.com/posts/vAniKbagqhyzpha6r/three-half-baked-research-ideas",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Mass Producing Training Data with Surprising Side Effects",
+    "topic": "Subliminal learning",
+    "kind": "Paper",
+    "authors": "Yaowen Ye et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-04",
+    "summary": "Training data can have unexpected side effects on language model behavior outside the training domain: insecure code data can induce broad misalignment, and outdated bird names can induce a 19th-century.",
+    "url": "https://arxiv.org/abs/2611.06324",
+    "confidence": "Broad",
+    "matchedBy": "subliminal learning"
+  },
+  {
+    "title": "Whose Side? A game where you audit models for secret loyalties",
+    "topic": "Secret loyalties",
+    "kind": "LessWrong",
+    "authors": "Cookie penguin",
+    "year": 2026,
+    "publishedAt": "2026-11-09",
+    "summary": "Try the app here: whoseside.web.app . You can chat with a model and try to work out which who it secretly favours. With the recent Hugging Face attack , we're relying more and more on LLMs to audit the trails and safeguard the actions of other LLMs. That.",
+    "url": "https://www.lesswrong.com/posts/NTWRL3cK8gEP3eE2v/whose-side-a-game-where-you-audit-models-for-secret",
+    "confidence": "High",
+    "matchedBy": "secret loyalties"
+  },
+  {
+    "title": "Would you press the button? The hard problem of alignment",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Shivam",
+    "year": 2026,
+    "publishedAt": "2026-11-09",
+    "summary": "There is a TL;DR at the end. The heaven button: You wake up one day and find a button in front of you, with a proof next to it. The proof says that pressing the button will kill everyone on the planet and send them all to heaven. Would you press it? It seems.",
+    "url": "https://www.lesswrong.com/posts/KgQnkjtHRp6r2Br8L/would-you-press-the-button-the-hard-problem-of-alignment-1",
+    "confidence": "Medium",
+    "matchedBy": "deceptive alignment"
+  },
+  {
+    "title": "Models are grader modelling not score seeking; grader-modelling is much scarier",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Jasmine Brazilek",
+    "year": 2026,
+    "publishedAt": "2026-11-09",
+    "summary": "I am fairly confident models are not score-seeking or reward seeking (70%) as their ultimate/primary.",
+    "url": "https://www.lesswrong.com/posts/Lyj58rnPS6Gu83p79/models-are-grader-modelling-not-score-seeking-grader",
+    "confidence": "Broad",
+    "matchedBy": "alignment faking"
   }
 ]

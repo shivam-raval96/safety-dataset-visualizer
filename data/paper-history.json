@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-11-10",
+    "papers": [
+      {
+        "title": "Mass Producing Training Data with Surprising Side Effects",
+        "topic": "Subliminal learning",
+        "kind": "Paper",
+        "authors": "Yaowen Ye et al.",
+        "url": "https://arxiv.org/abs/2611.06324"
+      },
+      {
+        "title": "Whose Side? A game where you audit models for secret loyalties",
+        "topic": "Secret loyalties",
+        "kind": "LessWrong",
+        "authors": "Cookie penguin",
+        "url": "https://www.lesswrong.com/posts/NTWRL3cK8gEP3eE2v/whose-side-a-game-where-you-audit-models-for-secret"
+      },
+      {
+        "title": "Would you press the button? The hard problem of alignment",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Shivam",
+        "url": "https://www.lesswrong.com/posts/KgQnkjtHRp6r2Br8L/would-you-press-the-button-the-hard-problem-of-alignment-1"
+      },
+      {
+        "title": "Models are grader modelling not score seeking; grader-modelling is much scarier",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Jasmine Brazilek",
+        "url": "https://www.lesswrong.com/posts/Lyj58rnPS6Gu83p79/models-are-grader-modelling-not-score-seeking-grader"
+      }
+    ]
+  },
+  {
     "date": "2026-11-09",
     "papers": [
       {
