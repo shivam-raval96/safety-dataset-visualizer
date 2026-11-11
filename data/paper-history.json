@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-11-11",
+    "papers": [
+      {
+        "title": "Stress Testing Chain-of-Thought Monitoring Against Covert Misalignment",
+        "topic": "Monitor evasion",
+        "kind": "Paper",
+        "authors": "Yao Huang et al.",
+        "url": "https://arxiv.org/abs/2611.07586"
+      },
+      {
+        "title": "WAM-Sim0.1: World Anchored Memory Meets Online RL for Consistent and Realistic Driving Simulation",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Jiahao Cui et al.",
+        "url": "https://arxiv.org/abs/2611.07939"
+      },
+      {
+        "title": "Honeypots for AI Agent Insider Threats",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Jan Wehner",
+        "url": "https://www.lesswrong.com/posts/xWjdpJWRk4GWYKyCi/honeypots-for-ai-agent-insider-threats-1"
+      },
+      {
+        "title": "Hypotheses for causes of Claudisms in Claudist dialect of language",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Burny",
+        "url": "https://www.lesswrong.com/posts/EgwnH2vBXtz3EmpKp/hypotheses-for-causes-of-claudisms-in-claudist-dialect-of"
+      },
+      {
+        "title": "Our Most Aligned Model Yet",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Edward James Young",
+        "url": "https://www.lesswrong.com/posts/Zu5wmhtxJCfrXQY8H/our-most-aligned-model-yet"
+      },
+      {
+        "title": "We need more transparency about alignment overfitting",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Nikola Jurkovic",
+        "url": "https://www.lesswrong.com/posts/JTB8JjQfmkHsJtBDs/we-need-more-transparency-about-alignment-overfitting"
+      }
+    ]
+  },
+  {
     "date": "2026-11-10",
     "papers": [
       {

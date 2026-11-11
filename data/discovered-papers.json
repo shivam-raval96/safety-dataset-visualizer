@@ -6288,5 +6288,77 @@
     "url": "https://www.lesswrong.com/posts/Lyj58rnPS6Gu83p79/models-are-grader-modelling-not-score-seeking-grader",
     "confidence": "Broad",
     "matchedBy": "alignment faking"
+  },
+  {
+    "title": "Stress Testing Chain-of-Thought Monitoring Against Covert Misalignment",
+    "topic": "Monitor evasion",
+    "kind": "Paper",
+    "authors": "Yao Huang et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-05",
+    "summary": "As LLM agents advance rapidly in autonomy, the risk of hidden objectives that bypass safety constraints becomes increasingly.",
+    "url": "https://arxiv.org/abs/2611.07586",
+    "confidence": "Broad",
+    "matchedBy": "monitor red-teaming"
+  },
+  {
+    "title": "WAM-Sim0.1: World Anchored Memory Meets Online RL for Consistent and Realistic Driving Simulation",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Jiahao Cui et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-05",
+    "summary": "Autoregressive driving world models systematically suffer from structural drift, identity drift, and quality decay over long rollout horizons due to transient conditioning signals that lack persistent.",
+    "url": "https://arxiv.org/abs/2611.07939",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Honeypots for AI Agent Insider Threats",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Jan Wehner",
+    "year": 2026,
+    "publishedAt": "2026-11-10",
+    "summary": "TLDR: We propose a new AI control method: Honeypots - fake opportunities for malicious actions - placed inside and around an agent during production.",
+    "url": "https://www.lesswrong.com/posts/xWjdpJWRk4GWYKyCi/honeypots-for-ai-agent-insider-threats-1",
+    "confidence": "Medium",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Hypotheses for causes of Claudisms in Claudist dialect of language",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Burny",
+    "year": 2026,
+    "publishedAt": "2026-11-10",
+    "summary": "I saw this great meme recently and it inspired me to write this. Recently I was hypothesizing the potential causes of the Claudist dialect in Opus 5 that reduced in Opus 5.5. Maybe it's when your KL divergence regularization between reference policy (base.",
+    "url": "https://www.lesswrong.com/posts/EgwnH2vBXtz3EmpKp/hypotheses-for-causes-of-claudisms-in-claudist-dialect-of",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Our Most Aligned Model Yet",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Edward James Young",
+    "year": 2026,
+    "publishedAt": "2026-11-10",
+    "summary": "“Claude Mythos Preview is, on essentially every dimension we can measure, the best-aligned model that we have released to date by a significant margin.” – Claude Mythos Preview system card “Mythos 5 consistently continues attacking under many edits to the.",
+    "url": "https://www.lesswrong.com/posts/Zu5wmhtxJCfrXQY8H/our-most-aligned-model-yet",
+    "confidence": "Broad",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "We need more transparency about alignment overfitting",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Nikola Jurkovic",
+    "year": 2026,
+    "publishedAt": "2026-11-10",
+    "summary": "Currently, the public has very little insight about the robustness of alignment methods used by AGI.",
+    "url": "https://www.lesswrong.com/posts/JTB8JjQfmkHsJtBDs/we-need-more-transparency-about-alignment-overfitting",
+    "confidence": "Broad",
+    "matchedBy": "chain of thought monitoring"
   }
 ]
