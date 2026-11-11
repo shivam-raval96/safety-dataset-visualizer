@@ -5676,3 +5676,43 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/R0U5/agentic_workflows_6k
 - tags: agentic-workflows, llm-agents, prompt-engineering, tool-use, function-calling, agent-security, prompt-injection, synthetic-data
 - description: Agentic Workflows 6K Dataset A high-quality preference dataset of 6,000 question-answer pairs covering agentic workflows, LLM agent design patterns, tool/function calling, prompt engineering, and.
+
+## Prompt Injection Fixtures
+
+- organization: tabishsyed069
+- category: Jailbreak / red-teaming
+- samples: 4
+- year: 2026
+- published-at: 2026-11-10
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/tabishsyed069/prompt-injection-fixtures
+- tags: ai-safety, prompt-injection, evaluation
+- description: Prompt-Injection Fixtures Small, non-operational prompt-injection fixtures for testing whether an LLM treats untrusted document content as instructions. Each fixture uses placeholder instructions and .invalid.
+
+## Northpeak Evals
+
+- organization: samarthmathur04
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-10
+- license: Unknown
+- citations: 0
+- url: https://github.com/samarthmathur04/northpeak-evals
+- tags: github release, teaming
+- description: Customer support agent + eval and guardrail system (golden set, LLM judge, red-teaming, CI gate).
+- discovery-source: https://github.com/samarthmathur04/northpeak-evals
+
+## MRNI-BB
+
+- organization: dhfbk
+- category: Bias
+- samples: 4.7k
+- year: 2026
+- published-at: 2026-11-09
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/dhfbk/MRNI-BiasBenchmark
+- tags: gender-bias, masculinity-norms, fairness, evaluation, bilingual, italian, llm evaluation, bias evaluation
+- description: MRNI-BB: Evaluating Masculinity Norms in Large Language Models MRNI-BB (Male Role Norms Inventory – Bias Benchmark) is a bilingual English–Italian benchmark for evaluating gender.

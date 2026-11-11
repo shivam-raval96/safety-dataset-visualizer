@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-11-11",
+    "datasets": [
+      {
+        "name": "Prompt Injection Fixtures",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/tabishsyed069/prompt-injection-fixtures",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Northpeak Evals",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/samarthmathur04/northpeak-evals",
+        "source": "github.com"
+      },
+      {
+        "name": "MRNI-BB",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/dhfbk/MRNI-BiasBenchmark",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-11-10",
     "datasets": [
       {
