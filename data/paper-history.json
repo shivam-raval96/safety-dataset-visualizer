@@ -1,5 +1,59 @@
 [
   {
+    "date": "2026-11-12",
+    "papers": [
+      {
+        "title": "Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Aria Wong et al.",
+        "url": "https://arxiv.org/abs/2611.09828"
+      },
+      {
+        "title": "Don't Waste a Good Swarm Attack and the Colluder's Dilemma",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Patrick0d",
+        "url": "https://www.lesswrong.com/posts/oLHdtvYSrvDpWREo4/don-t-waste-a-good-swarm-attack-and-the-colluder-s-dilemma"
+      },
+      {
+        "title": "Fable 5.2 is a Step Change in Situational Awareness",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "peralice",
+        "url": "https://www.lesswrong.com/posts/bqc7CCGBSf93bk7f7/fable-5-2-is-a-step-change-in-situational-awareness"
+      },
+      {
+        "title": "Fable and Mythos 5.2: The System Card",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Zvi",
+        "url": "https://www.lesswrong.com/posts/DXqmHa4XkjvwZiDcB/fable-and-mythos-5-2-the-system-card"
+      },
+      {
+        "title": "Is predicting AI behaviour a neglected AI safety agenda?",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Richard Juggins",
+        "url": "https://www.lesswrong.com/posts/atEfFNcHpnPo9RhnZ/is-predicting-ai-behaviour-a-neglected-ai-safety-agenda"
+      },
+      {
+        "title": "Reducing RL Pressure on Frontier Models: Four Approaches",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Hans Gundlach",
+        "url": "https://www.lesswrong.com/posts/EiaHEqKKAW5R7Eb3P/reducing-rl-pressure-on-frontier-models-four-approaches-2"
+      },
+      {
+        "title": "You Don't Need Big Compute to Research Big Systems",
+        "topic": "Swarm misalignment",
+        "kind": "LessWrong",
+        "authors": "Stephen Elliott",
+        "url": "https://www.lesswrong.com/posts/vbHF6iTMPKd4fsp2B/you-don-t-need-big-compute-to-research-big-systems"
+      }
+    ]
+  },
+  {
     "date": "2026-11-11",
     "papers": [
       {

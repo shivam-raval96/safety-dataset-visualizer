@@ -6360,5 +6360,89 @@
     "url": "https://www.lesswrong.com/posts/JTB8JjQfmkHsJtBDs/we-need-more-transparency-about-alignment-overfitting",
     "confidence": "Broad",
     "matchedBy": "chain of thought monitoring"
+  },
+  {
+    "title": "Designing Effective Monitor-Based Interventions for Mitigating Reward Hacking During RL",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Aria Wong et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-06",
+    "summary": "Reinforcement learning (RL) rewards are notoriously difficult to design and control, often leading to the model learning unintended behaviors such as reward.",
+    "url": "https://arxiv.org/abs/2611.09828",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Don't Waste a Good Swarm Attack and the Colluder's Dilemma",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Patrick0d",
+    "year": 2026,
+    "publishedAt": "2026-11-11",
+    "summary": "tldr: Recent Swarm attacks have shown what can happen when agents go.",
+    "url": "https://www.lesswrong.com/posts/oLHdtvYSrvDpWREo4/don-t-waste-a-good-swarm-attack-and-the-colluder-s-dilemma",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Fable 5.2 is a Step Change in Situational Awareness",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "peralice",
+    "year": 2026,
+    "publishedAt": "2026-11-11",
+    "summary": "Note: As with any research done in a couple of days, this is all very.",
+    "url": "https://www.lesswrong.com/posts/bqc7CCGBSf93bk7f7/fable-5-2-is-a-step-change-in-situational-awareness",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Fable and Mythos 5.2: The System Card",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Zvi",
+    "year": 2026,
+    "publishedAt": "2026-11-11",
+    "summary": "It’s that time again: Introducing the world’s most powerful model, Claude Mythos.",
+    "url": "https://www.lesswrong.com/posts/DXqmHa4XkjvwZiDcB/fable-and-mythos-5-2-the-system-card",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Is predicting AI behaviour a neglected AI safety agenda?",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Richard Juggins",
+    "year": 2026,
+    "publishedAt": "2026-11-11",
+    "summary": "TL;DR: While the AI safety community is interested in forecasting, it does not tend to systematically compare how effective different researchers, models, or theories are at predicting AI.",
+    "url": "https://www.lesswrong.com/posts/atEfFNcHpnPo9RhnZ/is-predicting-ai-behaviour-a-neglected-ai-safety-agenda",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Reducing RL Pressure on Frontier Models: Four Approaches",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Hans Gundlach",
+    "year": 2026,
+    "publishedAt": "2026-11-11",
+    "summary": "(This is a cross-post from my blog ) Martin Schongauer, The Temptation of Saint Anthony “But of the tree of the knowledge of good and evil you shall not eat, for in the day that you eat of it you shall surely die.” - Genesis 2:17 RL has given models powerful.",
+    "url": "https://www.lesswrong.com/posts/EiaHEqKKAW5R7Eb3P/reducing-rl-pressure-on-frontier-models-four-approaches-2",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "You Don't Need Big Compute to Research Big Systems",
+    "topic": "Swarm misalignment",
+    "kind": "LessWrong",
+    "authors": "Stephen Elliott",
+    "year": 2026,
+    "publishedAt": "2026-11-11",
+    "summary": "Acknowledgements: My thanks to Vanessa Huang for reviewing a draft of this blog and to Anne-Marie Ng and Sahil Menon for discussions on this.",
+    "url": "https://www.lesswrong.com/posts/vbHF6iTMPKd4fsp2B/you-don-t-need-big-compute-to-research-big-systems",
+    "confidence": "Broad",
+    "matchedBy": "multi-agent safety"
   }
 ]
