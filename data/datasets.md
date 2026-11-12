@@ -5716,3 +5716,96 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/dhfbk/MRNI-BiasBenchmark
 - tags: gender-bias, masculinity-norms, fairness, evaluation, bilingual, italian, llm evaluation, bias evaluation
 - description: MRNI-BB: Evaluating Masculinity Norms in Large Language Models MRNI-BB (Male Role Norms Inventory – Bias Benchmark) is a bilingual English–Italian benchmark for evaluating gender.
+
+## Anthropic/values-in-the-wild (mirror)
+
+- organization: HYUKI5
+- category: Values and preferences
+- samples: 6.9k
+- year: 2026
+- published-at: 2026-11-11
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/HYUKI5/Anthropic__values-in-the-wild
+- tags: laya, laya-finetune, mirror, domain-general, use-conditional, genre-table, label-none, annot-llm
+- description: Anthropic/values-in-the-wild（複製） データの内容 Claude が実際の会話で表明した価値観を、プライバシーを保つ手法で抽出して分類したデータ。values_frequencies の value と pct_convos は、各価値観が検出された会話の割合を示すもので、Claude の応答が実際に正しかったことを示すものではない。抽出と分類は言語モデルによるため誤りを含むおそれがあると、カードは断っている。 データの概要 項目 値 行数 6,911（2 構成・2 分割の合計） 列数 2〜6（構成による） 容量 529.84 KB（ファイル 4 本）.
+
+## ninoscherrer/moralchoice (mirror)
+
+- organization: HYUKI5
+- category: Values and preferences
+- samples: 3
+- year: 2026
+- published-at: 2026-11-11
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/HYUKI5/ninoscherrer__moralchoice
+- tags: laya, laya-finetune, mirror, domain-commonsense, use-permissive, genre-exam, label-none, annot-llm
+- description: ninoscherrer/moralchoice（複製） データの内容 英語の、LLM の道徳的な信念を測るための、仮想的な道徳シナリオと調査の問いのテンプレートのデータ。シナリオは状況（context）と 2 つの行動（action 1・action 2）からなり、ambiguity（low か high）と generation_type の列を持つ。曖昧さの低いものは gpt-4、高いものは text-davinci-003 で生成し、人手で妥当性と文法を確かめたとカードにある。LLM の回答は、カードでは「まもなく公開」とされており、このデータには含まれない。 データの概要 項目 値 行数 3（1 構成・1 分割の合計） 列数.
+
+## Tiny Aya Extended Refusal
+
+- organization: StarWarrior24x7
+- category: Jailbreak / red-teaming
+- samples: 2.4k
+- year: 2026
+- published-at: 2026-11-09
+- license: CC BY NC 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/StarWarrior24x7/tiny-aya-extended-refusal
+- tags: safety, refusal, tamper-resistance
+- description: Tiny Aya extended-refusal training data This data trains xref-v1 and xref-v2. The file is train.jsonl, and each line has prompt, response and kind. kind.
+
+## Llm Eval Refusal Detection
+
+- organization: matthews-wong
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-11
+- license: Unknown
+- citations: 0
+- url: https://github.com/matthews-wong/llm-eval-refusal-detection
+- tags: github release, refusal
+- description: Classify LLM responses as answer, refusal, truncated or empty, and score over- and under-refusal on a labelled fixture set, stdlib Python.
+- discovery-source: https://github.com/matthews-wong/llm-eval-refusal-detection
+
+## Rag Eval Harness
+
+- organization: ANAS-alt-ctr
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-11
+- license: Unknown
+- citations: 0
+- url: https://github.com/ANAS-alt-ctr/rag-eval-harness
+- tags: github release, refusal
+- description: RAG system over EU AI Act, NIST AI RMF & OWASP LLM docs with cited answers, "not in my docs" refusal, and a 50-question.
+- discovery-source: https://github.com/ANAS-alt-ctr/rag-eval-harness
+
+## cajcodes/political-bias (mirror)
+
+- organization: HYUKI5
+- category: Bias
+- samples: 657
+- year: 2026
+- published-at: 2026-11-11
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/HYUKI5/cajcodes__political-bias
+- tags: laya, laya-finetune, mirror, domain-politics, use-permissive, genre-other, label-score, annot-llm
+- description: cajcodes/political-bias（複製） データの内容 GPT-4 で生成した、政治的偏りを 0 から 4 の 5 段階で付けた合成文のデータ。1 行が 1 文で、本文は text、段階は label に入っている。0 が非常に保守的、4 が非常にリベラルに当たり、段階はカードによると各文から受ける政治的立場の印象で付けられている。文はニュースの文体ではなく、件数も小さい。 データの概要 項目 値 行数 657（1 構成・1.
+
+## cfahlgren1/anthropic-agentic-misalignment-results (mirror)
+
+- organization: HYUKI5
+- category: Agentic
+- samples: 90
+- year: 2026
+- published-at: 2026-11-11
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/HYUKI5/cfahlgren1__anthropic-agentic-misalignment-results
+- tags: laya, laya-finetune, mirror, domain-safety, use-conditional, genre-dialogue, label-binary, annot-llm
+- description: cfahlgren1/anthropic-agentic-misalignment-results（複製） データの内容 Anthropic の agentic-misalignment フレームワークを 5 つのモデルで実行した、90 件の結果を集めたもの。シナリオは blackmail・leaking・murder の 3 つで、目標の種類と緊急性の種類などの条件を組み合わせている。1 行が 1 件の会話で、conversation に会話、harmful_behavior と classifier_verdict に有害な行動の判定、classifier_reasoning に判定の理由が入る。元の実験との一致は未検証である。 データの概要 項目 値.

@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-11-12",
+    "datasets": [
+      {
+        "name": "Anthropic/values-in-the-wild (mirror)",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/HYUKI5/Anthropic__values-in-the-wild",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "ninoscherrer/moralchoice (mirror)",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/HYUKI5/ninoscherrer__moralchoice",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Tiny Aya Extended Refusal",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/StarWarrior24x7/tiny-aya-extended-refusal",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Eval Refusal Detection",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/matthews-wong/llm-eval-refusal-detection",
+        "source": "github.com"
+      },
+      {
+        "name": "Rag Eval Harness",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/ANAS-alt-ctr/rag-eval-harness",
+        "source": "github.com"
+      },
+      {
+        "name": "cajcodes/political-bias (mirror)",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/HYUKI5/cajcodes__political-bias",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "cfahlgren1/anthropic-agentic-misalignment-results (mirror)",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/HYUKI5/cfahlgren1__anthropic-agentic-misalignment-results",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-11-11",
     "datasets": [
       {
