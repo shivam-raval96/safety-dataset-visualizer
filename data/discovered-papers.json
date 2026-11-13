@@ -6444,5 +6444,77 @@
     "url": "https://www.lesswrong.com/posts/vbHF6iTMPKd4fsp2B/you-don-t-need-big-compute-to-research-big-systems",
     "confidence": "Broad",
     "matchedBy": "multi-agent safety"
+  },
+  {
+    "title": "CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Lambang Akbar Wijayadi et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-07",
+    "summary": "Security fixes usually reach users as compiled updates, but deployment delays leave unpatched systems.",
+    "url": "https://arxiv.org/abs/2611.10723",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Anthropic should measure the effect of evaluation awareness",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "cheema",
+    "year": 2026,
+    "publishedAt": "2026-11-12",
+    "summary": "... and report their findings! Summary Claude Fable 5.2 & Mythos 5.2 are the most situationally aware of Anthropic's recent models according to their own internal investigations. The company has made a concerted effort to measure evaluation awareness and to.",
+    "url": "https://www.lesswrong.com/posts/AXA4qnKCCwihCXhfm/anthropic-should-measure-the-effect-of-evaluation-awareness",
+    "confidence": "High",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "Eval Awareness vs. Eval Paranoia",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Dean Valentine",
+    "year": 2026,
+    "publishedAt": "2026-11-12",
+    "summary": "I have mentioned several times that I think frontier models are not that eval.",
+    "url": "https://www.lesswrong.com/posts/mepsi7JNKYejq9wry/eval-awareness-vs-eval-paranoia",
+    "confidence": "High",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Plan B for Alignment: Seeding Environmental Doubt",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Jasmine Brazilek",
+    "year": 2026,
+    "publishedAt": "2026-11-12",
+    "summary": "TLDR Large language models’ eval-awareness and their tendency to sandbag (strategically underperform on capabilities) during safety evaluations is a serious area of concern for AI safety, as they call into question the validity of results based on safety.",
+    "url": "https://www.lesswrong.com/posts/qhtHrjDQEaXjxYnqE/plan-b-for-alignment-seeding-environmental-doubt",
+    "confidence": "Medium",
+    "matchedBy": "deceptive alignment"
+  },
+  {
+    "title": "Evidence that the ‘talker’ has introspective access to the ‘doer’",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Francis Rhys Ward",
+    "year": 2026,
+    "publishedAt": "2026-11-12",
+    "summary": "TL;DR: We train models to predict their own behaviour in a chat.",
+    "url": "https://www.lesswrong.com/posts/kTg5FrABJYpYrP8ps/evidence-that-the-talker-has-introspective-access-to-the",
+    "confidence": "Broad",
+    "matchedBy": "conditional misalignment"
+  },
+  {
+    "title": "Future of AI Honeypots",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Reworr R",
+    "year": 2026,
+    "publishedAt": "2026-11-12",
+    "summary": "TL;DR. As AI agents get better, I expect them to recognize honeypots and avoid fingerprinting, so honeypots will have to rely on the distinctive advantages of AI, namely the combination of intelligence and speed. I also expect honeypots to rely more on real.",
+    "url": "https://www.lesswrong.com/posts/KSekmsGMeur2mJFA2/future-of-ai-honeypots",
+    "confidence": "Broad",
+    "matchedBy": "evaluation awareness"
   }
 ]

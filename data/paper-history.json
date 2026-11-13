@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-11-13",
+    "papers": [
+      {
+        "title": "CyberBinGym: Can AI Agents Turn Binary Patches into Real Exploits?",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Lambang Akbar Wijayadi et al.",
+        "url": "https://arxiv.org/abs/2611.10723"
+      },
+      {
+        "title": "Anthropic should measure the effect of evaluation awareness",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "cheema",
+        "url": "https://www.lesswrong.com/posts/AXA4qnKCCwihCXhfm/anthropic-should-measure-the-effect-of-evaluation-awareness"
+      },
+      {
+        "title": "Eval Awareness vs. Eval Paranoia",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Dean Valentine",
+        "url": "https://www.lesswrong.com/posts/mepsi7JNKYejq9wry/eval-awareness-vs-eval-paranoia"
+      },
+      {
+        "title": "Plan B for Alignment: Seeding Environmental Doubt",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Jasmine Brazilek",
+        "url": "https://www.lesswrong.com/posts/qhtHrjDQEaXjxYnqE/plan-b-for-alignment-seeding-environmental-doubt"
+      },
+      {
+        "title": "Evidence that the ‘talker’ has introspective access to the ‘doer’",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Francis Rhys Ward",
+        "url": "https://www.lesswrong.com/posts/kTg5FrABJYpYrP8ps/evidence-that-the-talker-has-introspective-access-to-the"
+      },
+      {
+        "title": "Future of AI Honeypots",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Reworr R",
+        "url": "https://www.lesswrong.com/posts/KSekmsGMeur2mJFA2/future-of-ai-honeypots"
+      }
+    ]
+  },
+  {
     "date": "2026-11-12",
     "papers": [
       {
