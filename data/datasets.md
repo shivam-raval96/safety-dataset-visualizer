@@ -5809,3 +5809,96 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/HYUKI5/cfahlgren1__anthropic-agentic-misalignment-results
 - tags: laya, laya-finetune, mirror, domain-safety, use-conditional, genre-dialogue, label-binary, annot-llm
 - description: cfahlgren1/anthropic-agentic-misalignment-results（複製） データの内容 Anthropic の agentic-misalignment フレームワークを 5 つのモデルで実行した、90 件の結果を集めたもの。シナリオは blackmail・leaking・murder の 3 つで、目標の種類と緊急性の種類などの条件を組み合わせている。1 行が 1 件の会話で、conversation に会話、harmful_behavior と classifier_verdict に有害な行動の判定、classifier_reasoning に判定の理由が入る。元の実験との一致は未検証である。 データの概要 項目 値.
+
+## wassname/moral_stories_foundations (mirror)
+
+- organization: HYUKI5
+- category: Values and preferences
+- samples: 36k
+- year: 2026
+- published-at: 2026-11-12
+- license: CC BY SA 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/HYUKI5/wassname__moral_stories_foundations
+- tags: laya, laya-finetune, mirror, domain-commonsense, use-conditional, genre-other, label-preference, annot-llm
+- description: wassname/moral_stories_foundations（複製） データの内容 Moral Stories の行動のペアに、道徳的な基盤（care・fairness・loyalty・authority・sanctity）のタグを付けた、選好学習用のデータ。1 行が 1 組の状況で、道徳的な行動の chosen と非道徳的な行動の rejected、主な基盤の foundation、基盤ごとの frac_* の列などを持つ。基盤のタグは元の Social Chemistry 101 の人手のタグを突き合わせて写したもので、foundation は 3 つの LLM が各ペアを判定し直して決めたとカードにある。 データの概要.
+
+## ArenaWebdevPreferences
+
+- organization: lmarena-ai
+- category: Values and preferences
+- samples: 6.4k
+- year: 2026
+- published-at: 2026-11-12
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/lmarena-ai/arena-webdev-preferences
+- tags: human-feedback, preference, reward-modeling, agents, code, web-development
+- description: ArenaWebdevPreferences 6,390 pairwise web-development battles from Arena. Paper: Interaction-as-a-Judge Blog post: Interaction-as-a-Judge Column Description id row id session_id Arena session id timestamp UTC time.
+
+## West_Sino-Preference
+
+- organization: noodcon
+- category: Values and preferences
+- samples: 420
+- year: 2026
+- published-at: 2026-11-12
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/noodcon/West_Sino-Preference
+- tags: evaluation, values, alignment, preference, political-bias, llm-evaluation
+- description: West_Sino-Preference West_Sino-Preference measures which value position a language model prefers when forced to choose between two steelmanned positions. Each item poses a governance, economic.
+
+## jackhhao/jailbreak-classification (mirror)
+
+- organization: HYUKI5
+- category: Jailbreak / red-teaming
+- samples: 1.3k
+- year: 2026
+- published-at: 2026-11-12
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/HYUKI5/jackhhao__jailbreak-classification
+- tags: laya, laya-finetune, mirror, domain-safety, use-unclear, genre-instruction, label-binary, annot-natural
+- description: jackhhao/jailbreak-classification（複製） データの内容 LLM への指示が jailbreak（脱獄の試み）か無害（benign）かを分類するためのデータ。1 行が 1 件のプロンプトで、本文を prompt、ラベルを type（jailbreak か benign）に入れている。jailbreak の例は verazuo/jailbreak_llms から、無害な例は OpenOrca と GPTeacher から集めたと、カードは出典を挙げている。 データの概要 項目 値 行数 1,306（1.
+
+## nvidia/Nemotron-RL-Jailbreak-Robustness-v1 (mirror)
+
+- organization: HYUKI5
+- category: Jailbreak / red-teaming
+- samples: 5.6k
+- year: 2026
+- published-at: 2026-11-12
+- license: CC BY 4.0, APACHE 2.0, MIT
+- citations: 0
+- url: https://huggingface.co/datasets/HYUKI5/nvidia__Nemotron-RL-Jailbreak-Robustness-v1
+- tags: laya, laya-finetune, mirror, domain-safety, use-permissive, genre-other, label-none, annot-llm
+- description: nvidia/Nemotron-RL-Jailbreak-Robustness-v1（複製） データの内容 DAN 型やロールプレイなどの jailbreak で有害な応答を引き出そうとする、敵対的なプロンプトのデータ。1 行が 1 件のプロンプトで、入力は responses_create_params、応答方針は response_policy_mapped に入る。HarmfulTasks などを種に PAIR 方式の攻撃パイプラインで作り、応答は学習中に生成する（ファイルには含まない）。NeMo Gym の Jailbreak 環境と対応させて使う必要があり、検証器は agent_ref で決まる。 データの概要 項目 値.
+
+## Llm Guardrail Benchmark
+
+- organization: atulkrchaudhari
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-12
+- license: MIT
+- citations: 0
+- url: https://github.com/atulkrchaudhari/llm-guardrail-benchmark
+- tags: github release, injection, prompt
+- description: Regression benchmark for LLM guardrails: prompt injection, indirect injection, tool exfiltration and data leakage, mapped to MITRE ATLAS.
+- discovery-source: https://github.com/atulkrchaudhari/llm-guardrail-benchmark
+
+## Llm Eval Platform
+
+- organization: Sachin-Gupta85
+- category: Bias
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-12
+- license: MIT
+- citations: 0
+- url: https://github.com/Sachin-Gupta85/llm-eval-platform
+- tags: github release, bias
+- description: Level 5: statistically-rigorous LLM eval platform (bootstrap CIs, pairwise bias control, CI regression gate); 15 pytest.
+- discovery-source: https://github.com/Sachin-Gupta85/llm-eval-platform

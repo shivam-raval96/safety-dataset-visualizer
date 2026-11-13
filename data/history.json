@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-11-13",
+    "datasets": [
+      {
+        "name": "wassname/moral_stories_foundations (mirror)",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/HYUKI5/wassname__moral_stories_foundations",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "ArenaWebdevPreferences",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/lmarena-ai/arena-webdev-preferences",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "West_Sino-Preference",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/noodcon/West_Sino-Preference",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "jackhhao/jailbreak-classification (mirror)",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/HYUKI5/jackhhao__jailbreak-classification",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "nvidia/Nemotron-RL-Jailbreak-Robustness-v1 (mirror)",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/HYUKI5/nvidia__Nemotron-RL-Jailbreak-Robustness-v1",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Guardrail Benchmark",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/atulkrchaudhari/llm-guardrail-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Eval Platform",
+        "category": "Bias",
+        "url": "https://github.com/Sachin-Gupta85/llm-eval-platform",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-12",
     "datasets": [
       {
