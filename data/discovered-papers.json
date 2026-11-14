@@ -6516,5 +6516,89 @@
     "url": "https://www.lesswrong.com/posts/KSekmsGMeur2mJFA2/future-of-ai-honeypots",
     "confidence": "Broad",
     "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "What Do Collusion Probes Read? Three Pitfalls in Evaluating Multi-Agent Collusion Monitors",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Mainul Hasan Mohsin & Mohammad Shahidur Rahman",
+    "year": 2026,
+    "publishedAt": "2026-11-07",
+    "summary": "Activation probes look like near-perfect monitors for secret collusion among large language model (LLM).",
+    "url": "https://arxiv.org/abs/2611.10620",
+    "confidence": "High",
+    "matchedBy": "multi-agent collusion"
+  },
+  {
+    "title": "Are We Looking at Model Behavior Too Narrowly?",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Vladimir Necula",
+    "year": 2026,
+    "publishedAt": "2026-11-11",
+    "summary": "Introduction Research on AI systems’ behavior frequently focuses on predefined behavioral targets, such as sycophancy, deception, or reward.",
+    "url": "https://www.lesswrong.com/posts/WJWffN8PvKGr2KqoA/are-we-looking-at-model-behavior-too-narrowly",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "The Impact of Model Organism Training Recipes on Mitigations for Evaluation Awareness",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "cameronjordan",
+    "year": 2026,
+    "publishedAt": "2026-11-13",
+    "summary": "Evaluation awareness poses a risk to existing alignment methods that rely on benchmark scores to evaluate their.",
+    "url": "https://www.lesswrong.com/posts/3qGrcymRrNrJ8YbXE/the-impact-of-model-organism-training-recipes-on-mitigations",
+    "confidence": "High",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "Swarmish: what happens when agent swarms create language?",
+    "topic": "Swarm misalignment",
+    "kind": "LessWrong",
+    "authors": "emmakrentz",
+    "year": 2026,
+    "publishedAt": "2026-11-13",
+    "summary": "TL;DR Agent swarms are capable of building sophisticated productive languages which we dub.",
+    "url": "https://www.lesswrong.com/posts/7eJF9p8rnaAAcKbZa/swarmish-what-happens-when-agent-swarms-create-language",
+    "confidence": "Medium",
+    "matchedBy": "multi-agent safety"
+  },
+  {
+    "title": "An unexplored idea for AI alignment: Reinforcement learning with reflection fine-tuning",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "vegane dedroite",
+    "year": 2026,
+    "publishedAt": "2026-11-13",
+    "summary": "Epistemic status: I am an AI engineer, not an AI researcher. I like reading papers and following debates, but I had never posted on LessWrong because I had nothing new to bring. I think I finally do. The idea is untested, and the literature review was done.",
+    "url": "https://www.lesswrong.com/posts/RHiuneNcy8jMJC3ne/an-unexplored-idea-for-ai-alignment-reinforcement-learning",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Fog: how an aligned agent can be deceived without touching its values",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "aleph_four",
+    "year": 2026,
+    "publishedAt": "2026-11-13",
+    "summary": "First hand account, proof of human, handwritten Recently, I built and deployed doppler.ninja, a doxxing engine that takes in a corpus of timestamped audio (a Twitch catalog) and produces a probability distribution and loss-minimizing N guesses for the single.",
+    "url": "https://www.lesswrong.com/posts/dLjLavMoK2SdWnvtr/fog-how-an-aligned-agent-can-be-deceived-without-touching",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "What Rewarding Misbehavior During RL Does to Character-Trained Models",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Omar Khursheed",
+    "year": 2026,
+    "publishedAt": "2026-11-13",
+    "summary": "TL;DR Research done as part of MATS. See here for the full paper. Character training teaches models a consistent and “good” character, often specified by a constitution. Reinforcement learning can work directly against it, for example when a grader or coding.",
+    "url": "https://www.lesswrong.com/posts/nCpxFQesXaqEq3SgL/what-rewarding-misbehavior-during-rl-does-to-character",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]

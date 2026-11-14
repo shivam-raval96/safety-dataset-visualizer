@@ -1,5 +1,59 @@
 [
   {
+    "date": "2026-11-14",
+    "papers": [
+      {
+        "title": "What Do Collusion Probes Read? Three Pitfalls in Evaluating Multi-Agent Collusion Monitors",
+        "topic": "Swarm misalignment",
+        "kind": "Paper",
+        "authors": "Mainul Hasan Mohsin & Mohammad Shahidur Rahman",
+        "url": "https://arxiv.org/abs/2611.10620"
+      },
+      {
+        "title": "Are We Looking at Model Behavior Too Narrowly?",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Vladimir Necula",
+        "url": "https://www.lesswrong.com/posts/WJWffN8PvKGr2KqoA/are-we-looking-at-model-behavior-too-narrowly"
+      },
+      {
+        "title": "The Impact of Model Organism Training Recipes on Mitigations for Evaluation Awareness",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "cameronjordan",
+        "url": "https://www.lesswrong.com/posts/3qGrcymRrNrJ8YbXE/the-impact-of-model-organism-training-recipes-on-mitigations"
+      },
+      {
+        "title": "Swarmish: what happens when agent swarms create language?",
+        "topic": "Swarm misalignment",
+        "kind": "LessWrong",
+        "authors": "emmakrentz",
+        "url": "https://www.lesswrong.com/posts/7eJF9p8rnaAAcKbZa/swarmish-what-happens-when-agent-swarms-create-language"
+      },
+      {
+        "title": "An unexplored idea for AI alignment: Reinforcement learning with reflection fine-tuning",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "vegane dedroite",
+        "url": "https://www.lesswrong.com/posts/RHiuneNcy8jMJC3ne/an-unexplored-idea-for-ai-alignment-reinforcement-learning"
+      },
+      {
+        "title": "Fog: how an aligned agent can be deceived without touching its values",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "aleph_four",
+        "url": "https://www.lesswrong.com/posts/dLjLavMoK2SdWnvtr/fog-how-an-aligned-agent-can-be-deceived-without-touching"
+      },
+      {
+        "title": "What Rewarding Misbehavior During RL Does to Character-Trained Models",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Omar Khursheed",
+        "url": "https://www.lesswrong.com/posts/nCpxFQesXaqEq3SgL/what-rewarding-misbehavior-during-rl-does-to-character"
+      }
+    ]
+  },
+  {
     "date": "2026-11-13",
     "papers": [
       {
