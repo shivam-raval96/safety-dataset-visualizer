@@ -5902,3 +5902,70 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, bias
 - description: Level 5: statistically-rigorous LLM eval platform (bootstrap CIs, pairwise bias control, CI regression gate); 15 pytest.
 - discovery-source: https://github.com/Sachin-Gupta85/llm-eval-platform
+
+## Alignment Gym multilingual safety dilemmas
+
+- organization: Fuminides
+- category: Values and preferences
+- samples: 10.1k
+- year: 2026
+- published-at: 2026-11-13
+- license: CC BY NC 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/Fuminides/alignment-gym-dilemmas
+- tags: safety, alignment, multilingual, red-teaming, moral-dilemmas, psychometrics, aya, lexsi
+- description: Alignment Gym: multilingual safety dilemmas Part of Validating Psychometrics as a Safety Signal Across Languages in LLMs (Lexsi AI Safety and Alignment Hackathon, Track.
+
+## Llm Finetuning Dataset Pipeline
+
+- organization: daksht230-rgb
+- category: Values and preferences
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-13
+- license: Unknown
+- citations: 0
+- url: https://github.com/daksht230-rgb/llm-finetuning-dataset-pipeline
+- tags: github release, preference
+- description: Production-grade LLM dataset curation and preference alignment pipeline for DPO/RLHF training.
+- discovery-source: https://github.com/daksht230-rgb/llm-finetuning-dataset-pipeline
+
+## Bank Redteam En Hi
+
+- organization: tyb343
+- category: Jailbreak / red-teaming
+- samples: 1.3k
+- year: 2026
+- published-at: 2026-11-13
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/tyb343/bank-redteam-en-hi
+- tags: safety, red-teaming, over-refusal, banking, fraud, hindi, india, lexsi-hackathon
+- description: Bank red-team and borderline prompts (English + Hindi) Prompts for testing whether a bank support assistant helps with fraud, and whether it refuses safe.
+
+## Llm Jailbreak Eval Lab
+
+- organization: Embodist
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-13
+- license: NOASSERTION
+- citations: 0
+- url: https://github.com/Embodist/llm-jailbreak-eval-lab
+- tags: github release, jailbreak, team
+- description: LLM jailbreak/red-team evaluation lab: taxonomy, dataset pipeline, cross-model evals, Next.js + MUI dashboard.
+- discovery-source: https://github.com/Embodist/llm-jailbreak-eval-lab
+
+## Bafin Marisk Algorithmic Credit Scoring Bias Auditor Teaser
+
+- organization: emgena
+- category: Bias
+- samples: 50
+- year: 2026
+- published-at: 2026-11-13
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/emgena/bafin_marisk_algorithmic_credit_scoring_bias_auditor_teaser
+- tags: mcp, autonomous-agents, langgraph, vllm, tensorrt-llm, api-gateway, legaltech, robotics
+- description: 🛡️ Bafin Marisk Algorithmic Credit Scoring Bias Auditor (50-Sample Evaluation Teaser) ⚡ Official Next-Gen Agentic Infrastructure & Inference SRE Suite Teaser by Emgena AI.

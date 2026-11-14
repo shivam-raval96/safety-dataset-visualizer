@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-11-14",
+    "datasets": [
+      {
+        "name": "Alignment Gym multilingual safety dilemmas",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/Fuminides/alignment-gym-dilemmas",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Finetuning Dataset Pipeline",
+        "category": "Values and preferences",
+        "url": "https://github.com/daksht230-rgb/llm-finetuning-dataset-pipeline",
+        "source": "github.com"
+      },
+      {
+        "name": "Bank Redteam En Hi",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/tyb343/bank-redteam-en-hi",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Jailbreak Eval Lab",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/Embodist/llm-jailbreak-eval-lab",
+        "source": "github.com"
+      },
+      {
+        "name": "Bafin Marisk Algorithmic Credit Scoring Bias Auditor Teaser",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/emgena/bafin_marisk_algorithmic_credit_scoring_bias_auditor_teaser",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-11-13",
     "datasets": [
       {
