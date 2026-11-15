@@ -1,5 +1,34 @@
 [
   {
+    "date": "2026-11-15",
+    "datasets": [
+      {
+        "name": "CalibratingAutorater/judgelm-preference-distributions (mirror)",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/HYUKI5/CalibratingAutorater__judgelm-preference-distributions",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Lexsi Over Refusal Testset V1",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/calpaliu/lexsi-over-refusal-testset-v1",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Agent Security Evals",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/aaron-mcallister/agent-security-evals",
+        "source": "github.com"
+      },
+      {
+        "name": "tum-nlp/cognitive-biases-in-llms (mirror)",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/HYUKI5/tum-nlp__cognitive-biases-in-llms",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-11-14",
     "datasets": [
       {

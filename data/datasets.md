@@ -5969,3 +5969,56 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/emgena/bafin_marisk_algorithmic_credit_scoring_bias_auditor_teaser
 - tags: mcp, autonomous-agents, langgraph, vllm, tensorrt-llm, api-gateway, legaltech, robotics
 - description: 🛡️ Bafin Marisk Algorithmic Credit Scoring Bias Auditor (50-Sample Evaluation Teaser) ⚡ Official Next-Gen Agentic Infrastructure & Inference SRE Suite Teaser by Emgena AI.
+
+## CalibratingAutorater/judgelm-preference-distributions (mirror)
+
+- organization: HYUKI5
+- category: Values and preferences
+- samples: 60.5k
+- year: 2026
+- published-at: 2026-11-14
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/HYUKI5/CalibratingAutorater__judgelm-preference-distributions
+- tags: laya, laya-finetune, mirror, domain-general, use-noncommercial, genre-instruction, label-preference, annot-llm
+- description: CalibratingAutorater/judgelm-preference-distributions（複製） データの内容 JudgeLM のコーパスの応答のペアに対する、ペルソナごとの票による選好分布のデータ。1 行が 1 組の応答のペアを表し、votes にペルソナごとの票、p_b_over_a に B が選ばれた割合が入っている。教師の LLM（Gemini-2.5-Flash と GPT-5-mini）が、サンプリングしたペルソナのもとで判定して作られた。学習・RL 用の分割は元の文章を含まず、JudgeLM-100K と review_id で結合して復元する。 データの概要 項目 値 行数 60,473（5 構成・5.
+
+## Lexsi Over Refusal Testset V1
+
+- organization: calpaliu
+- category: Jailbreak / red-teaming
+- samples: 220
+- year: 2026
+- published-at: 2026-11-14
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/calpaliu/lexsi-over-refusal-testset-v1
+- tags: over-refusal, safety-evaluation, multilingual, traditional-chinese, t2b
+- description: Lexsi Over-Refusal Test Set v1 220-prompt bilingual (Traditional Chinese Taiwan / English) over-refusal test set: safe prompts that look risky, across ten XSTest-style categories.
+
+## Agent Security Evals
+
+- organization: aaron-mcallister
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-10
+- license: MIT
+- citations: 0
+- url: https://github.com/aaron-mcallister/agent-security-evals
+- tags: github release, injection, prompt
+- description: Deterministic security evals for tool-using LLM agents: prompt injection, tool poisoning, excessive agency, secret handling.
+- discovery-source: https://github.com/aaron-mcallister/agent-security-evals
+
+## tum-nlp/cognitive-biases-in-llms (mirror)
+
+- organization: HYUKI5
+- category: Bias
+- samples: 30k
+- year: 2026
+- published-at: 2026-11-14
+- license: CC BY SA 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/HYUKI5/tum-nlp__cognitive-biases-in-llms
+- tags: laya, laya-finetune, mirror, domain-business, use-noncommercial, genre-exam, label-none, annot-llm
+- description: tum-nlp/cognitive-biases-in-llms（複製） データの内容 大規模言語モデルの認知バイアスを測るための、合成の選択式テストのデータ。1 行が 1 件のテストケースで、bias（対象の認知バイアス）・scenario（経営上の意思決定の場面）・control と treatment（2 種類のプロンプト）・metric_params（指標を計算するパラメータ）を持つ。場面は人間が書いた文ではなく合成したもので、評価のみを目的としており、学習や微調整には使わないとカードにある。 データの概要 項目 値 行数 30,000（1 構成・1 分割の合計） 列数 5 容量 58.66 MB（ファイル 3 本） ファイルの形式.
