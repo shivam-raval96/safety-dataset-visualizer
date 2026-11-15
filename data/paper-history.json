@@ -1,5 +1,59 @@
 [
   {
+    "date": "2026-11-15",
+    "papers": [
+      {
+        "title": "Wrong the Same Way: Cross-Prompt Sharing Both Suppresses and Amplifies Reward Hacking in RLVR",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Michael Li et al.",
+        "url": "https://arxiv.org/abs/2611.13218"
+      },
+      {
+        "title": "Is Persona Generalization Predictable?",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Olina Mukherjee et al.",
+        "url": "https://arxiv.org/abs/2611.12864"
+      },
+      {
+        "title": "Why AI Won’t Kill Us by 2030, and Probably Ever",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Shahin Kaveh",
+        "url": "https://www.lesswrong.com/posts/QgSvF5yDJjkn3NZTY/why-ai-won-t-kill-us-by-2030-and-probably-ever"
+      },
+      {
+        "title": "Homeopathic Learning: Diluting Poisoned Fine-Tuning Data Can Strengthen Its Effect",
+        "topic": "Subliminal learning",
+        "kind": "LessWrong",
+        "authors": "mclarke",
+        "url": "https://www.lesswrong.com/posts/5CrmJfRY7yMaAoumC/homeopathic-learning-diluting-poisoned-fine-tuning-data-can-1"
+      },
+      {
+        "title": "Introducing RIDArena",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Sev",
+        "url": "https://www.lesswrong.com/posts/HXt8CZcJDE2n7smko/introducing-ridarena"
+      },
+      {
+        "title": "Probe monitors seem to perform realistically in simulated control environments",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Aswin Surya",
+        "url": "https://www.lesswrong.com/posts/erwxQSF2D6naAcoEz/probe-monitors-seem-to-perform-realistically-in-simulated-2"
+      },
+      {
+        "title": "RL Reward-Hack Auditing for Chinese AI Safety",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "CMLKevin",
+        "url": "https://www.lesswrong.com/posts/jwCPQhLWbWnwMhHME/rl-reward-hack-auditing-for-chinese-ai-safety"
+      }
+    ]
+  },
+  {
     "date": "2026-11-14",
     "papers": [
       {
