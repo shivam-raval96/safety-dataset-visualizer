@@ -6022,3 +6022,30 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/HYUKI5/tum-nlp__cognitive-biases-in-llms
 - tags: laya, laya-finetune, mirror, domain-business, use-noncommercial, genre-exam, label-none, annot-llm
 - description: tum-nlp/cognitive-biases-in-llms（複製） データの内容 大規模言語モデルの認知バイアスを測るための、合成の選択式テストのデータ。1 行が 1 件のテストケースで、bias（対象の認知バイアス）・scenario（経営上の意思決定の場面）・control と treatment（2 種類のプロンプト）・metric_params（指標を計算するパラメータ）を持つ。場面は人間が書いた文ではなく合成したもので、評価のみを目的としており、学習や微調整には使わないとカードにある。 データの概要 項目 値 行数 30,000（1 構成・1 分割の合計） 列数 5 容量 58.66 MB（ファイル 3 本） ファイルの形式.
+
+## Cross Lingual Epistemic Eval
+
+- organization: mohd-azeemuddin
+- category: Bias
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-15
+- license: Unknown
+- citations: 0
+- url: https://github.com/mohd-azeemuddin/cross-lingual-epistemic-eval
+- tags: github release, discrimination
+- description: Benchmarking LLM epistemic discrimination across English, Hindi and Kannada.
+- discovery-source: https://github.com/mohd-azeemuddin/cross-lingual-epistemic-eval
+
+## Tal V4 Rag Anti Hallucination Italian 2000
+
+- organization: andreatorino
+- category: Deception
+- samples: 12
+- year: 2026
+- published-at: 2026-11-15
+- license: CC BY NC 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/andreatorino/TAL-v4-RAG-Anti-Hallucination-Italian-2000
+- tags: italian, rag, anti-hallucination, prompt-injection, json-extraction, synthetic, fine-tuning, chatml
+- description: TAL v4.0 — Il Dataset Universale Italiano per Addestrare LLM Affidabili (2.000 Record) TAL v4.0 (Trusted Agentic & Legal Layer — Universal RAG &.

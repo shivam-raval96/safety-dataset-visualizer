@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-11-16",
+    "datasets": [
+      {
+        "name": "Cross Lingual Epistemic Eval",
+        "category": "Bias",
+        "url": "https://github.com/mohd-azeemuddin/cross-lingual-epistemic-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Tal V4 Rag Anti Hallucination Italian 2000",
+        "category": "Deception",
+        "url": "https://huggingface.co/datasets/andreatorino/TAL-v4-RAG-Anti-Hallucination-Italian-2000",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-11-15",
     "datasets": [
       {
