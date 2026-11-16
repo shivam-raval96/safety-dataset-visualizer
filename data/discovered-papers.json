@@ -6684,5 +6684,29 @@
     "url": "https://www.lesswrong.com/posts/jwCPQhLWbWnwMhHME/rl-reward-hack-auditing-for-chinese-ai-safety",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Explaining and interrupting collective misalignment in language model systems",
+    "topic": "Swarm misalignment",
+    "kind": "Paper",
+    "authors": "Edoardo Chidichimo",
+    "year": 2026,
+    "publishedAt": "2026-11-09",
+    "summary": "In collectives, language model agents can exchange individually innocuous messages that together support a policy.",
+    "url": "https://arxiv.org/abs/2611.11724",
+    "confidence": "High",
+    "matchedBy": "collective misalignment"
+  },
+  {
+    "title": "Alignment 'train/test splits' should be sacred",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "draganover",
+    "year": 2026,
+    "publishedAt": "2026-11-15",
+    "summary": "Tl;dr: Alignment techniques can be used for training alignment or for testing it, but they cannot be used for.",
+    "url": "https://www.lesswrong.com/posts/FX2xcrsqBYonLfoge/alignment-train-test-splits-should-be-sacred",
+    "confidence": "Broad",
+    "matchedBy": "activation monitoring"
   }
 ]

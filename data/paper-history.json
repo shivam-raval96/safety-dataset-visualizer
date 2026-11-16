@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-11-16",
+    "papers": [
+      {
+        "title": "Explaining and interrupting collective misalignment in language model systems",
+        "topic": "Swarm misalignment",
+        "kind": "Paper",
+        "authors": "Edoardo Chidichimo",
+        "url": "https://arxiv.org/abs/2611.11724"
+      },
+      {
+        "title": "Alignment 'train/test splits' should be sacred",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "draganover",
+        "url": "https://www.lesswrong.com/posts/FX2xcrsqBYonLfoge/alignment-train-test-splits-should-be-sacred"
+      }
+    ]
+  },
+  {
     "date": "2026-11-15",
     "papers": [
       {
