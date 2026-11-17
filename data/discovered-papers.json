@@ -6708,5 +6708,65 @@
     "url": "https://www.lesswrong.com/posts/FX2xcrsqBYonLfoge/alignment-train-test-splits-should-be-sacred",
     "confidence": "Broad",
     "matchedBy": "activation monitoring"
+  },
+  {
+    "title": "Breaking Bad: \"Going Badly\" Activations Drive Reward Hacking",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Natalia Fischl-Lanzoni et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-11",
+    "summary": "Humans often cheat when a task is going badly and a goal feels out of.",
+    "url": "https://arxiv.org/abs/2611.14996",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "\"It's Just a Small Weapon\": What Rewarding Misbehavior During RL Does to Character-Trained Models",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Mohammad Omar Khursheed et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-11",
+    "summary": "Developers train models to follow a consistent character using methods like Model Spec Midtraining (Li et al., 2026), which have been hypothesized to make alignment more robust and generalize.",
+    "url": "https://arxiv.org/abs/2611.16069",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Announcing Control Tower",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "ScottWofford",
+    "year": 2026,
+    "publishedAt": "2026-11-16",
+    "summary": "An open-source framework for running and comparing AI control research We built Control Tower , an open-source framework built on Inspect for running AI control evaluations, and the Control Leaderboard , which compares control protocols and monitors across.",
+    "url": "https://www.lesswrong.com/posts/Yfm9AzioS9azgce8T/announcing-control-tower",
+    "confidence": "Medium",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Gemini 4 safety reports don’t demonstrate low loss-of-control risk",
+    "topic": "Monitor evasion",
+    "kind": "LessWrong",
+    "authors": "Adam Kaufman ",
+    "year": 2026,
+    "publishedAt": "2026-11-16",
+    "summary": "Google DeepMind’s safety reports for new Gemini 4 models, Argon and Carbon , conclude that the models are “highly unlikely” to cause severe harm by evading oversight.",
+    "url": "https://www.lesswrong.com/posts/DjfeRMnLdNumtcKbK/gemini-4-safety-reports-don-t-demonstrate-low-loss-of",
+    "confidence": "Broad",
+    "matchedBy": "evading monitors"
+  },
+  {
+    "title": "Gradient Routing Creates a Headstart",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "TomTaylor",
+    "year": 2026,
+    "publishedAt": "2026-11-16",
+    "summary": "Tl;dr GRAFT showed that we can make reward hacking removable. In the setup we study, a small LLM has two trainable adapters, each consisting of an additional MLP in every layer. Training updates from detected hacks are routed only into one, called FORGET.",
+    "url": "https://www.lesswrong.com/posts/e3CKvARMn9ra8Ba6M/gradient-routing-creates-a-headstart",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]

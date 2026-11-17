@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-11-17",
+    "papers": [
+      {
+        "title": "Breaking Bad: \"Going Badly\" Activations Drive Reward Hacking",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Natalia Fischl-Lanzoni et al.",
+        "url": "https://arxiv.org/abs/2611.14996"
+      },
+      {
+        "title": "\"It's Just a Small Weapon\": What Rewarding Misbehavior During RL Does to Character-Trained Models",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Mohammad Omar Khursheed et al.",
+        "url": "https://arxiv.org/abs/2611.16069"
+      },
+      {
+        "title": "Announcing Control Tower",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "ScottWofford",
+        "url": "https://www.lesswrong.com/posts/Yfm9AzioS9azgce8T/announcing-control-tower"
+      },
+      {
+        "title": "Gemini 4 safety reports don’t demonstrate low loss-of-control risk",
+        "topic": "Monitor evasion",
+        "kind": "LessWrong",
+        "authors": "Adam Kaufman ",
+        "url": "https://www.lesswrong.com/posts/DjfeRMnLdNumtcKbK/gemini-4-safety-reports-don-t-demonstrate-low-loss-of"
+      },
+      {
+        "title": "Gradient Routing Creates a Headstart",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "TomTaylor",
+        "url": "https://www.lesswrong.com/posts/e3CKvARMn9ra8Ba6M/gradient-routing-creates-a-headstart"
+      }
+    ]
+  },
+  {
     "date": "2026-11-16",
     "papers": [
       {
