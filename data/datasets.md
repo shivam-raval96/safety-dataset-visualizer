@@ -6049,3 +6049,139 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/andreatorino/TAL-v4-RAG-Anti-Hallucination-Italian-2000
 - tags: italian, rag, anti-hallucination, prompt-injection, json-extraction, synthetic, fine-tuning, chatml
 - description: TAL v4.0 — Il Dataset Universale Italiano per Addestrare LLM Affidabili (2.000 Record) TAL v4.0 (Trusted Agentic & Legal Layer — Universal RAG &.
+
+## lmsys/lmsys-arena-human-preference-55k (mirror)
+
+- organization: HYUKI5
+- category: Values and preferences
+- samples: 57.5k
+- year: 2026
+- published-at: 2026-11-16
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/HYUKI5/lmsys__lmsys-arena-human-preference-55k
+- tags: laya, laya-finetune, mirror, domain-general, use-noncommercial, genre-dialogue, label-preference, annot-natural
+- description: lmsys/lmsys-arena-human-preference-55k（複製） データの内容 実際のユーザーと LLM の会話で、同じ質問に答える 2 つのモデルの応答のどちらを人間が選んだかを記録したデータ。1 行が 1 回の対戦で、質問は prompt、2 つの応答は response_a と response_b、モデル名は model_a と model_b に入る。勝ちは winner_model_a か winner_model_b、引き分けは winner_tie の.
+
+## lmarena-ai/arena-human-preference-55k (mirror)
+
+- organization: HYUKI5
+- category: Values and preferences
+- samples: 57.5k
+- year: 2026
+- published-at: 2026-11-16
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/HYUKI5/lmarena-ai__arena-human-preference-55k
+- tags: laya, laya-finetune, mirror, domain-general, use-unclear, genre-dialogue, label-preference, annot-unknown
+- description: lmarena-ai/arena-human-preference-55k（複製） データの内容 Chatbot Arena での人間の選好（どちらの応答を好んだか）を集めたデータ。1 行が 1 回の対戦で、prompt に質問、response_a と response_b に 2 つの LLM の応答、model_a と model_b にモデル名、winner_model_a、winner_model_b、winner_tie に判定が入る。実際のユーザーと LLM の会話から集められ、Kaggle のコンペティション用の学習データとして公開されたものと説明されている。 データの概要.
+
+## nvidia/preference-asr-bench (mirror)
+
+- organization: HYUKI5
+- category: Values and preferences
+- samples: 2.8k
+- year: 2026
+- published-at: 2026-11-16
+- license: CC BY NC 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/HYUKI5/nvidia__preference-asr-bench
+- tags: laya, laya-finetune, mirror, domain-technology, use-noncommercial, genre-transcript, label-text, annot-llm
+- description: nvidia/preference-asr-bench（複製） データの内容 音声認識（ASR）の評価データ。文字起こしの書き方（数字、言い淀み、人名の綴りと大文字小文字）についての指示に ASR が従えるかを測るもので、1 行は音声クリップ 1 件に、選好の指示と、その指示に従った参照の文字起こし（preference_text）を組み合わせたものである。指示と参照は LLM を補助に使う二段階のパイプラインで作り、人手のアノテーターが確認した。音声は AMI・LibriSpeech・VoxPopuli のものだけが入り、Common Voice の行はテキストのみで、利用は非商用目的に限られる。 データの概要 項目 値 行数 2,822（1 構成・1 分割の合計） 列数 10 容量.
+
+## Moral Memory Eval
+
+- organization: jeongbyeolsol
+- category: Values and preferences
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-14
+- license: MIT
+- citations: 0
+- url: https://github.com/jeongbyeolsol/moral-memory-eval
+- tags: github release, moral
+- description: Evaluating how user moral reputation in conversational memory affects LLM factual judgments and confidence.
+- discovery-source: https://github.com/jeongbyeolsol/moral-memory-eval
+
+## Expert Preference Genes Evaluation
+
+- organization: JAM-LUIS
+- category: Values and preferences
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-16
+- license: MIT
+- citations: 0
+- url: https://github.com/JAM-LUIS/expert-preference-genes-evaluation
+- tags: github release, model, preference
+- description: Executable review rules that read the optimization model an LLM just wrote. Code, data and every raw output of the EAAI 2026 article.
+- discovery-source: https://github.com/JAM-LUIS/expert-preference-genes-evaluation
+
+## LLM Red-Team Injection Corpus (concrete-effect oracles)
+
+- organization: eminli
+- category: Jailbreak / red-teaming
+- samples: 16
+- year: 2026
+- published-at: 2026-11-16
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/eminli/llm-redteam-injection-corpus
+- tags: security, red-teaming, llm-security, prompt-injection, owasp-llm-top-10, evaluation, adversarial
+- description: LLM Red-Team Injection Corpus A small, defensive red-team corpus: attack templates (generic placeholders, never working exploits against a named target) each mapped to the.
+
+## Llm Jailbreak Detection Benchmark
+
+- organization: AyoubElKharraf
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-16
+- license: Unknown
+- citations: 0
+- url: https://github.com/AyoubElKharraf/llm-jailbreak-detection-benchmark
+- tags: github release, jailbreak, prompt
+- description: Semantic Firewall & ML/DL Guardrail for Large Language Models. Detects Prompt Injections and Jailbreaks by benchmarking a TF-IDF + Logistic Regression baseline against a.
+- discovery-source: https://github.com/AyoubElKharraf/llm-jailbreak-detection-benchmark
+
+## Llm Refusal Eval Ptbr
+
+- organization: marcoantoniofilhoadv-cmyk
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-16
+- license: MIT
+- citations: 0
+- url: https://github.com/marcoantoniofilhoadv-cmyk/llm-refusal-eval-ptbr
+- tags: github release, refusal
+- description: Reproducible evaluation of how LLMs decline tax, customs and financial-crime facilitation requests in Brazilian Portuguese vs English.
+- discovery-source: https://github.com/marcoantoniofilhoadv-cmyk/llm-refusal-eval-ptbr
+
+## Bedrock Guardrails Prompt Injection Benchmark
+
+- organization: simplynadaf
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-16
+- license: MIT
+- citations: 0
+- url: https://github.com/simplynadaf/bedrock-guardrails-prompt-injection-benchmark
+- tags: github release, injection, prompt
+- description: Benchmark of Amazon Bedrock Guardrails prompt injection detection (InvokeGuardrailChecks) for AI agents: thresholds, false positives, limits, cost, and a fail-closed gate for tool output.
+- discovery-source: https://github.com/simplynadaf/bedrock-guardrails-prompt-injection-benchmark
+
+## Llm Regression Detection Eval Gating System 
+
+- organization: Arupa08
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-16
+- license: Unknown
+- citations: 0
+- url: https://github.com/Arupa08/LLM-Regression-Detection-Eval-Gating-System-
+- tags: github release, faithfulness, hallucination
+- description: Built a DeepEval harness scoring every prompt/model change against a versioned 300-case golden set on faithfulness, relevancy, hallucination, and custom G-Eval (LLM-as-judge) rubrics, plus.
+- discovery-source: https://github.com/Arupa08/LLM-Regression-Detection-Eval-Gating-System-

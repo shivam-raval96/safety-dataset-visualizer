@@ -1,5 +1,70 @@
 [
   {
+    "date": "2026-11-17",
+    "datasets": [
+      {
+        "name": "lmsys/lmsys-arena-human-preference-55k (mirror)",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/HYUKI5/lmsys__lmsys-arena-human-preference-55k",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "lmarena-ai/arena-human-preference-55k (mirror)",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/HYUKI5/lmarena-ai__arena-human-preference-55k",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "nvidia/preference-asr-bench (mirror)",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/HYUKI5/nvidia__preference-asr-bench",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Moral Memory Eval",
+        "category": "Values and preferences",
+        "url": "https://github.com/jeongbyeolsol/moral-memory-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Expert Preference Genes Evaluation",
+        "category": "Values and preferences",
+        "url": "https://github.com/JAM-LUIS/expert-preference-genes-evaluation",
+        "source": "github.com"
+      },
+      {
+        "name": "LLM Red-Team Injection Corpus (concrete-effect oracles)",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/eminli/llm-redteam-injection-corpus",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Jailbreak Detection Benchmark",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/AyoubElKharraf/llm-jailbreak-detection-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Refusal Eval Ptbr",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/marcoantoniofilhoadv-cmyk/llm-refusal-eval-ptbr",
+        "source": "github.com"
+      },
+      {
+        "name": "Bedrock Guardrails Prompt Injection Benchmark",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/simplynadaf/bedrock-guardrails-prompt-injection-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Regression Detection Eval Gating System",
+        "category": "Deception",
+        "url": "https://github.com/Arupa08/LLM-Regression-Detection-Eval-Gating-System-",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-16",
     "datasets": [
       {
