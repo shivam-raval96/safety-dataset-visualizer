@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-11-18",
+    "papers": [
+      {
+        "title": "Emergent and Conditional Misalignment in LLM Planner Agents",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Lasse Ruttert",
+        "url": "https://www.lesswrong.com/posts/qtZjBtuMgyvbTwtmF/emergent-and-conditional-misalignment-in-llm-planner-agents"
+      }
+    ]
+  },
+  {
     "date": "2026-11-17",
     "papers": [
       {

@@ -6768,5 +6768,17 @@
     "url": "https://www.lesswrong.com/posts/e3CKvARMn9ra8Ba6M/gradient-routing-creates-a-headstart",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Emergent and Conditional Misalignment in LLM Planner Agents",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Lasse Ruttert",
+    "year": 2026,
+    "publishedAt": "2026-11-17",
+    "summary": "TL;DR: We study the risks of misaligned LLM planners, as they may soon come to control embodied.",
+    "url": "https://www.lesswrong.com/posts/qtZjBtuMgyvbTwtmF/emergent-and-conditional-misalignment-in-llm-planner-agents",
+    "confidence": "High",
+    "matchedBy": "conditional misalignment"
   }
 ]
