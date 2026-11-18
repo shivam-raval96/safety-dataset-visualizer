@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-11-18",
+    "datasets": [
+      {
+        "name": "Pacific Big Five Trait Preferences",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/PervasiveAutonomyLab/PACIFIC-big-five-trait-preferences",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Redteam Eval Harness",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/niteshm0710/llm-redteam-eval-harness",
+        "source": "github.com"
+      },
+      {
+        "name": "Ai Evaluation Portfolio",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/akanimodavid/ai-evaluation-portfolio",
+        "source": "github.com"
+      },
+      {
+        "name": "Support Agent Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/dream-reader/support-agent-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Grokipedia vs Wikipedia — Political Neutrality Audit",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/aida-ugent/encyclopedia-political-bias-audit",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Bias Fairness Evaluation",
+        "category": "Bias",
+        "url": "https://github.com/manisha2001-20/bias-fairness-evaluation",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-17",
     "datasets": [
       {

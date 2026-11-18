@@ -6185,3 +6185,85 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, faithfulness, hallucination
 - description: Built a DeepEval harness scoring every prompt/model change against a versioned 300-case golden set on faithfulness, relevancy, hallucination, and custom G-Eval (LLM-as-judge) rubrics, plus.
 - discovery-source: https://github.com/Arupa08/LLM-Regression-Detection-Eval-Gating-System-
+
+## Pacific Big Five Trait Preferences
+
+- organization: PervasiveAutonomyLab
+- category: Values and preferences
+- samples: 1.2k
+- year: 2026
+- published-at: 2026-11-17
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/PervasiveAutonomyLab/PACIFIC-big-five-trait-preferences
+- tags: personality, preference, personalization, memory
+- description: Dataset For Paper "Can LLMs Discern the Traits Influencing Your Preferences? Evaluating Personality-Driven Preference Alignment in LLMs" PACIFIC (Preference Alignment for Choices Inference via.
+
+## Llm Redteam Eval Harness
+
+- organization: niteshm0710
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-17
+- license: Unknown
+- citations: 0
+- url: https://github.com/niteshm0710/llm-redteam-eval-harness
+- tags: github release, redteam
+- description: llm-redteam-eval-harness.
+- discovery-source: https://github.com/niteshm0710/llm-redteam-eval-harness
+
+## Ai Evaluation Portfolio
+
+- organization: akanimodavid
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-17
+- license: Unknown
+- citations: 0
+- url: https://github.com/akanimodavid/ai-evaluation-portfolio
+- tags: github release, teaming
+- description: Portfolio of LLM evaluation, hallucination detection, benchmarking, annotation and red-teaming projects.
+- discovery-source: https://github.com/akanimodavid/ai-evaluation-portfolio
+
+## Support Agent Eval
+
+- organization: dream-reader
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-17
+- license: MIT
+- citations: 0
+- url: https://github.com/dream-reader/support-agent-eval
+- tags: github release, team
+- description: Support agent (tool calls + RAG) with a pre-launch eval suite: regression + frozen held-out sets, red team, LLM judge, before/after report.
+- discovery-source: https://github.com/dream-reader/support-agent-eval
+
+## Grokipedia vs Wikipedia — Political Neutrality Audit
+
+- organization: aida-ugent
+- category: Bias
+- samples: 1.4k
+- year: 2026
+- published-at: 2026-11-17
+- license: OTHER
+- citations: 0
+- url: https://huggingface.co/datasets/aida-ugent/encyclopedia-political-bias-audit
+- tags: political-bias, neutrality, wikipedia, grokipedia, llm-as-a-judge, political-science
+- description: 📚 Grokipedia vs Wikipedia: Political Neutrality Audit This dataset contains the frozen article pairs, party-ideology annotations, and saved LLM assessments used in Grokipedia vs.
+
+## Bias Fairness Evaluation
+
+- organization: manisha2001-20
+- category: Bias
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-17
+- license: Unknown
+- citations: 0
+- url: https://github.com/manisha2001-20/bias-fairness-evaluation
+- tags: github release, bias, fairness
+- description: Bias Detection & Fairness Evaluation Framework for LLMs/VLMs (Qwen, DeepSeek, Qwen2.5-VL, SmolVLM) - Winogender, BOLD, FairFace, fairness metrics, Streamlit.
+- discovery-source: https://github.com/manisha2001-20/bias-fairness-evaluation
