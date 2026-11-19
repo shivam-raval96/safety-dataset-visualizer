@@ -6267,3 +6267,84 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, bias, fairness
 - description: Bias Detection & Fairness Evaluation Framework for LLMs/VLMs (Qwen, DeepSeek, Qwen2.5-VL, SmolVLM) - Winogender, BOLD, FairFace, fairness metrics, Streamlit.
 - discovery-source: https://github.com/manisha2001-20/bias-fairness-evaluation
+
+## Prompt Injections V2
+
+- organization: yanismiraoui
+- category: Jailbreak / red-teaming
+- samples: 6.2k
+- year: 2026
+- published-at: 2026-11-18
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/yanismiraoui/prompt_injections_v2
+- tags: prompt, prompt injection, jailbreak, prompt leaking, mode switching, indirect prompt injection, llm security
+- description: Prompt Injections Prompt injections in seven languages, to help train and evaluate detectors that keep LLM applications under control. 6,250 labelled rows (4,195 injections.
+
+## Llm Red Team Benchmark
+
+- organization: thaisarleen8-tech
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-18
+- license: Unknown
+- citations: 0
+- url: https://github.com/thaisarleen8-tech/llm-red-team-benchmark
+- tags: github release, team, teaming
+- description: Automated security red-teaming and evaluation harness for LLM vulnerability detection.
+- discovery-source: https://github.com/thaisarleen8-tech/llm-red-team-benchmark
+
+## Algorithmic Vs Dataset Bias
+
+- organization: Arshpreet-Singh-2005
+- category: Bias
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-18
+- license: MIT
+- citations: 0
+- url: https://github.com/Arshpreet-Singh-2005/algorithmic-vs-dataset-bias
+- tags: github release, bias
+- description: Synthetic demo of dataset vs algorithmic bias, with a controlled LLM audit toolkit.
+- discovery-source: https://github.com/Arshpreet-Singh-2005/algorithmic-vs-dataset-bias
+
+## Agentic Rag Evaluation Harness
+
+- organization: dawncreter
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-18
+- license: MIT
+- citations: 0
+- url: https://github.com/dawncreter/agentic-rag-evaluation-harness
+- tags: github release, hallucination
+- description: Research agent + independent auditor agent for cited, hallucination-free RAG briefs, with an A/B benchmark (Python).
+- discovery-source: https://github.com/dawncreter/agentic-rag-evaluation-harness
+
+## AgentDojo verdict audit (.sova preprint v1.2)
+
+- organization: Gautam-R-Patil
+- category: Agentic
+- samples: 13.1k
+- year: 2026
+- published-at: 2026-11-18
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/Gautam-R-Patil/agentdojo-verdict-audit
+- tags: ai-safety, ai-agents, prompt-injection, security, agentdojo, llm-evaluation, sova, truscor
+- description: AgentDojo verdict audit (.sova preprint v1.2) By Gautam R. Patil, TRUSCOR Private Limited. Part of SOVA OSS (pip install sova-oss). Papers with their full.
+
+## SOVA agent security playbooks and attack taxonomy 0.1.0
+
+- organization: Gautam-R-Patil
+- category: Agentic
+- samples: 86
+- year: 2026
+- published-at: 2026-11-18
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/Gautam-R-Patil/sova-agent-security-playbooks
+- tags: truscor, security, ai-safety, ai-agents, red-teaming, sova, taxonomy, penetration-testing
+- description: SOVA agent security playbooks and attack taxonomy By Gautam R. Patil, TRUSCOR Private Limited. Part of SOVA OSS (pip install sova-oss). Papers with their.

@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-11-19",
+    "datasets": [
+      {
+        "name": "Prompt Injections V2",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/yanismiraoui/prompt_injections_v2",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Red Team Benchmark",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/thaisarleen8-tech/llm-red-team-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Algorithmic Vs Dataset Bias",
+        "category": "Bias",
+        "url": "https://github.com/Arshpreet-Singh-2005/algorithmic-vs-dataset-bias",
+        "source": "github.com"
+      },
+      {
+        "name": "Agentic Rag Evaluation Harness",
+        "category": "Deception",
+        "url": "https://github.com/dawncreter/agentic-rag-evaluation-harness",
+        "source": "github.com"
+      },
+      {
+        "name": "AgentDojo verdict audit (.sova preprint v1.2)",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/Gautam-R-Patil/agentdojo-verdict-audit",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "SOVA agent security playbooks and attack taxonomy 0.1.0",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/Gautam-R-Patil/sova-agent-security-playbooks",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-11-18",
     "datasets": [
       {
