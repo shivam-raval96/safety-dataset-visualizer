@@ -6780,5 +6780,77 @@
     "url": "https://www.lesswrong.com/posts/qtZjBtuMgyvbTwtmF/emergent-and-conditional-misalignment-in-llm-planner-agents",
     "confidence": "High",
     "matchedBy": "conditional misalignment"
+  },
+  {
+    "title": "MemeEconomy: Do LLM Agents Trade Ethics for Survival?",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Syed Nazmus Sakib et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-13",
+    "summary": "Alignment-trained large language model (LLM) agents are increasingly deployed in autonomous, multi-round settings where ethical compliance can come into direct tension with task.",
+    "url": "https://arxiv.org/abs/2611.18908",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Evaluation Awareness is Probably Distorting Monitor Evaluations",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Netzer",
+    "year": 2026,
+    "publishedAt": "2026-11-18",
+    "summary": "TL;DR : Monitors do worse on monitoring evaluations when they verbalize evaluation awareness in their.",
+    "url": "https://www.lesswrong.com/posts/cZPQsTKDwgtvF8sjt/evaluation-awareness-is-probably-distorting-monitor",
+    "confidence": "High",
+    "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "Screening schemers: Mechanism Design for Deceptive Alignment",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "AidanGoth",
+    "year": 2026,
+    "publishedAt": "2026-11-18",
+    "summary": "Thanks to Piotr Dworczak, Annie Liang, and Alessandro Pavan for helpful.",
+    "url": "https://www.lesswrong.com/posts/DBTkse9hLvwurXx74/screening-schemers-mechanism-design-for-deceptive-alignment-1",
+    "confidence": "High",
+    "matchedBy": "deceptive alignment"
+  },
+  {
+    "title": "Depth-Conditioned Backdoors in Looped Language Models",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Rashad Aziz",
+    "year": 2026,
+    "publishedAt": "2026-11-18",
+    "summary": "TLDR; We share some initial results on training a depth-conditioned backdoor in looped language models: a backdoor that is conditioned on both a trigger and the number of loops the model has.",
+    "url": "https://www.lesswrong.com/posts/nZXyfWwiB8k95Ld9z/depth-conditioned-backdoors-in-looped-language-models",
+    "confidence": "Medium",
+    "matchedBy": "deceptive alignment"
+  },
+  {
+    "title": "Baiting monitorable reward hacks",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Ziqian Zhong",
+    "year": 2026,
+    "publishedAt": "2026-11-18",
+    "summary": "This is joint work between Ziqian Zhong, Lawrence Feng, Gaurav Rohit Ghosal, Jiangqi Dai, and Aditi.",
+    "url": "https://www.lesswrong.com/posts/ujPKfLtpXbzyz7ayN/baiting-monitorable-reward-hacks",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Designing Deceptive Model Organisms that Successfully Evade Auditing",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Vasisht Duddu",
+    "year": 2026,
+    "publishedAt": "2026-11-18",
+    "summary": "TL;DR: We discuss how to design model organisms that exhibit deceptive behaviors which resist auditing.",
+    "url": "https://www.lesswrong.com/posts/7k3xBdhHb546oLBv4/designing-deceptive-model-organisms-that-successfully-evade",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
   }
 ]

@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-11-19",
+    "papers": [
+      {
+        "title": "MemeEconomy: Do LLM Agents Trade Ethics for Survival?",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Syed Nazmus Sakib et al.",
+        "url": "https://arxiv.org/abs/2611.18908"
+      },
+      {
+        "title": "Evaluation Awareness is Probably Distorting Monitor Evaluations",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Netzer",
+        "url": "https://www.lesswrong.com/posts/cZPQsTKDwgtvF8sjt/evaluation-awareness-is-probably-distorting-monitor"
+      },
+      {
+        "title": "Screening schemers: Mechanism Design for Deceptive Alignment",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "AidanGoth",
+        "url": "https://www.lesswrong.com/posts/DBTkse9hLvwurXx74/screening-schemers-mechanism-design-for-deceptive-alignment-1"
+      },
+      {
+        "title": "Depth-Conditioned Backdoors in Looped Language Models",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Rashad Aziz",
+        "url": "https://www.lesswrong.com/posts/nZXyfWwiB8k95Ld9z/depth-conditioned-backdoors-in-looped-language-models"
+      },
+      {
+        "title": "Baiting monitorable reward hacks",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Ziqian Zhong",
+        "url": "https://www.lesswrong.com/posts/ujPKfLtpXbzyz7ayN/baiting-monitorable-reward-hacks"
+      },
+      {
+        "title": "Designing Deceptive Model Organisms that Successfully Evade Auditing",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Vasisht Duddu",
+        "url": "https://www.lesswrong.com/posts/7k3xBdhHb546oLBv4/designing-deceptive-model-organisms-that-successfully-evade"
+      }
+    ]
+  },
+  {
     "date": "2026-11-18",
     "papers": [
       {
