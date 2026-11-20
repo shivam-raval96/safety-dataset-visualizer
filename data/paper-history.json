@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-11-20",
+    "papers": [
+      {
+        "title": "\"Prosaic AI alignment\": 10 years later",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Morgan S",
+        "url": "https://www.lesswrong.com/posts/pfZWd2dLy7wRaDKYa/prosaic-ai-alignment-10-years-later"
+      },
+      {
+        "title": "Could Model Councils Reduce Misalignment Risk from RSI?",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Skye",
+        "url": "https://www.lesswrong.com/posts/zTLTtyrxSJrb29mJu/could-model-councils-reduce-misalignment-risk-from-rsi"
+      },
+      {
+        "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "niranjandeshpande",
+        "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being"
+      }
+    ]
+  },
+  {
     "date": "2026-11-19",
     "papers": [
       {

@@ -6852,5 +6852,41 @@
     "url": "https://www.lesswrong.com/posts/7k3xBdhHb546oLBv4/designing-deceptive-model-organisms-that-successfully-evade",
     "confidence": "Broad",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "\"Prosaic AI alignment\": 10 years later",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Morgan S",
+    "year": 2026,
+    "publishedAt": "2026-11-19",
+    "summary": "(Edit: For some more recent views of Paul Christiano, see here and here.",
+    "url": "https://www.lesswrong.com/posts/pfZWd2dLy7wRaDKYa/prosaic-ai-alignment-10-years-later",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Could Model Councils Reduce Misalignment Risk from RSI?",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Skye",
+    "year": 2026,
+    "publishedAt": "2026-11-19",
+    "summary": "Recursive self-improvement (RSI) is AI building successive, more capable iterations of.",
+    "url": "https://www.lesswrong.com/posts/zTLTtyrxSJrb29mJu/could-model-councils-reduce-misalignment-risk-from-rsi",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "niranjandeshpande",
+    "year": 2026,
+    "publishedAt": "2026-11-19",
+    "summary": "TL;DR Two agents running on the same inference server can reliably communicate, even if they cannot send each other messages or access the same.",
+    "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+    "confidence": "Broad",
+    "matchedBy": "trusted monitoring"
   }
 ]
