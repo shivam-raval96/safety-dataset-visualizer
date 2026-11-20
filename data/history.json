@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-11-20",
+    "datasets": [
+      {
+        "name": "Llm Jailbreak Robustness Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/Vikh110/llm-jailbreak-robustness-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Agentic Code Review Redteam Benchmark Public",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/yaminivennu06/agentic-code-review-redteam-benchmark-public",
+        "source": "github.com"
+      },
+      {
+        "name": "Sinhala Llm Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/SUSITHMALAN/sinhala-llm-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Ai Red Teaming Llm Security Evaluation Framework",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/sarthakatreja/ai-red-teaming-llm-security-evaluation-framework",
+        "source": "github.com"
+      },
+      {
+        "name": "Vlm Hallucination Benchmark",
+        "category": "Deception",
+        "url": "https://github.com/hoainhan256/vlm-hallucination-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Custom Rag Evaluation Pipeline",
+        "category": "Deception",
+        "url": "https://github.com/anupomroy111/custom-rag-evaluation-pipeline",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-19",
     "datasets": [
       {

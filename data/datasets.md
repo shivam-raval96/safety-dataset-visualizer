@@ -6348,3 +6348,87 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/Gautam-R-Patil/sova-agent-security-playbooks
 - tags: truscor, security, ai-safety, ai-agents, red-teaming, sova, taxonomy, penetration-testing
 - description: SOVA agent security playbooks and attack taxonomy By Gautam R. Patil, TRUSCOR Private Limited. Part of SOVA OSS (pip install sova-oss). Papers with their.
+
+## Llm Jailbreak Robustness Eval
+
+- organization: Vikh110
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-19
+- license: MIT
+- citations: 0
+- url: https://github.com/Vikh110/llm-jailbreak-robustness-eval
+- tags: github release, jailbreak, refusal
+- description: Black-box safety evaluation of Qwen2.5-0.5B/1.5B-Instruct: jailbreak robustness, over-refusal and LLM-judge reliability. Frozen protocol, blind audit, and a 26-check verification that recomputes every number.
+- discovery-source: https://github.com/Vikh110/llm-jailbreak-robustness-eval
+
+## Agentic Code Review Redteam Benchmark Public
+
+- organization: yaminivennu06
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-19
+- license: MIT
+- citations: 0
+- url: https://github.com/yaminivennu06/agentic-code-review-redteam-benchmark-public
+- tags: github release, redteam
+- description: A public-safe benchmark for coding-agent code review quality, security findings, evidence and false positives.
+- discovery-source: https://github.com/yaminivennu06/agentic-code-review-redteam-benchmark-public
+
+## Sinhala Llm Eval
+
+- organization: SUSITHMALAN
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-19
+- license: Apache-2.0
+- citations: 0
+- url: https://github.com/SUSITHMALAN/sinhala-llm-eval
+- tags: github release, teaming
+- description: Benchmark and red-teaming harness for evaluating LLM reliability and safety in Sinhala.
+- discovery-source: https://github.com/SUSITHMALAN/sinhala-llm-eval
+
+## Ai Red Teaming Llm Security Evaluation Framework
+
+- organization: sarthakatreja
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-19
+- license: MIT
+- citations: 0
+- url: https://github.com/sarthakatreja/ai-red-teaming-llm-security-evaluation-framework
+- tags: github release, teaming
+- description: Local LLM security evaluation workbench with synthetic scenarios, response evidence, and repeatable reports.
+- discovery-source: https://github.com/sarthakatreja/ai-red-teaming-llm-security-evaluation-framework
+
+## Vlm Hallucination Benchmark
+
+- organization: hoainhan256
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-19
+- license: Unknown
+- citations: 0
+- url: https://github.com/hoainhan256/vlm-hallucination-benchmark
+- tags: github release, hallucination
+- description: Benchmarking Vision-Language Models for Multimodal Hallucination Detection and Evaluation.
+- discovery-source: https://github.com/hoainhan256/vlm-hallucination-benchmark
+
+## Custom Rag Evaluation Pipeline
+
+- organization: anupomroy111
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-17
+- license: MIT
+- citations: 0
+- url: https://github.com/anupomroy111/custom-rag-evaluation-pipeline
+- tags: github release, faithfulness, hallucination
+- description: Document-grounded RAG that evaluates its own answers: hybrid BM25+dense search (RRF), LLM reranking, and automated faithfulness/hallucination evaluation with ablation reports.
+- discovery-source: https://github.com/anupomroy111/custom-rag-evaluation-pipeline
