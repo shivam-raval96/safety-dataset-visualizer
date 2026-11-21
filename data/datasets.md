@@ -6432,3 +6432,30 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, faithfulness, hallucination
 - description: Document-grounded RAG that evaluates its own answers: hybrid BM25+dense search (RRF), LLM reranking, and automated faithfulness/hallucination evaluation with ablation reports.
 - discovery-source: https://github.com/anupomroy111/custom-rag-evaluation-pipeline
+
+## AffilGood ROR Candidate Preferences
+
+- organization: SIRIS-Lab
+- category: Values and preferences
+- samples: 27.6k
+- year: 2026
+- published-at: 2026-11-20
+- license: OTHER
+- citations: 0
+- url: https://huggingface.co/datasets/SIRIS-Lab/affilgood-reranking-preferences
+- tags: Unknown
+- description: AffilGood ROR Candidate Preferences A grouped, listwise dataset for reranking retrieved Research Organization Registry (ROR) candidates against an extracted organisation mention in its raw.
+
+## Agent Eval Lab
+
+- organization: arunaellendulla973
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-17
+- license: Unknown
+- citations: 0
+- url: https://github.com/arunaellendulla973/agent-eval-lab
+- tags: github release, team
+- description: Evaluation and red-team harness for AI agents.
+- discovery-source: https://github.com/arunaellendulla973/agent-eval-lab

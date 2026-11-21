@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-11-21",
+    "datasets": [
+      {
+        "name": "AffilGood ROR Candidate Preferences",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/SIRIS-Lab/affilgood-reranking-preferences",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Agent Eval Lab",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/arunaellendulla973/agent-eval-lab",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-20",
     "datasets": [
       {
