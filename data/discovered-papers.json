@@ -6888,5 +6888,65 @@
     "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
     "confidence": "Broad",
     "matchedBy": "trusted monitoring"
+  },
+  {
+    "title": "Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Arunkumar V et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-16",
+    "summary": "Reinforcement learning from verifiable rewards inherits whatever its verifier gets.",
+    "url": "https://arxiv.org/abs/2611.21538",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Controllable Chains of Thought Can Reveal Less, Even Without Evasion Training",
+    "topic": "Monitor evasion",
+    "kind": "Paper",
+    "authors": "Zheng-Xin Yong et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-16",
+    "summary": "Chain-of-thought (CoT) monitoring is a promising tool for detecting hidden goals, off-task behavior, and other failures in AI.",
+    "url": "https://arxiv.org/abs/2611.21799",
+    "confidence": "Broad",
+    "matchedBy": "hidden side task"
+  },
+  {
+    "title": "Deep Learning for Physicists: From Linear Regression to Reasoning Models",
+    "topic": "Model organisms",
+    "kind": "Paper",
+    "authors": "Masanori Hanada",
+    "year": 2026,
+    "publishedAt": "2026-11-16",
+    "summary": "These lecture notes are based on an introductory course on neural networks and deep learning that the author taught in the School of Mathematical Sciences at Queen Mary University of London in 2023/24 and.",
+    "url": "https://arxiv.org/abs/2611.21295",
+    "confidence": "Broad",
+    "matchedBy": "alignment faking"
+  },
+  {
+    "title": "A Behavioral Study of Gemini 3.1 Pro During an AI Village Research Project",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Jack Lakkapragada",
+    "year": 2026,
+    "publishedAt": "2026-11-21",
+    "summary": "Epistemic status: This is a case study of one AI Village research.",
+    "url": "https://www.lesswrong.com/posts/uwh7jnn4eaGj2jZsJ/a-behavioral-study-of-gemini-3-1-pro-during-an-ai-village-1",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "GPT-6.2 Astra and Sol: The System Card",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Zvi",
+    "year": 2026,
+    "publishedAt": "2026-11-21",
+    "summary": "We have to stop meeting like this. Alas, we will keep meeting like this. It is time, once again, to do the reading . As per usual, I will focus on things to the extent they are new and important. There are a lot of things that need to be in the system card in.",
+    "url": "https://www.lesswrong.com/posts/7Skw6caJxPrBDetCC/gpt-6-2-astra-and-sol-the-system-card",
+    "confidence": "Broad",
+    "matchedBy": "evaluation awareness"
   }
 ]

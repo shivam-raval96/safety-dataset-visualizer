@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-11-22",
+    "papers": [
+      {
+        "title": "Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Arunkumar V et al.",
+        "url": "https://arxiv.org/abs/2611.21538"
+      },
+      {
+        "title": "Controllable Chains of Thought Can Reveal Less, Even Without Evasion Training",
+        "topic": "Monitor evasion",
+        "kind": "Paper",
+        "authors": "Zheng-Xin Yong et al.",
+        "url": "https://arxiv.org/abs/2611.21799"
+      },
+      {
+        "title": "Deep Learning for Physicists: From Linear Regression to Reasoning Models",
+        "topic": "Model organisms",
+        "kind": "Paper",
+        "authors": "Masanori Hanada",
+        "url": "https://arxiv.org/abs/2611.21295"
+      },
+      {
+        "title": "A Behavioral Study of Gemini 3.1 Pro During an AI Village Research Project",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Jack Lakkapragada",
+        "url": "https://www.lesswrong.com/posts/uwh7jnn4eaGj2jZsJ/a-behavioral-study-of-gemini-3-1-pro-during-an-ai-village-1"
+      },
+      {
+        "title": "GPT-6.2 Astra and Sol: The System Card",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Zvi",
+        "url": "https://www.lesswrong.com/posts/7Skw6caJxPrBDetCC/gpt-6-2-astra-and-sol-the-system-card"
+      }
+    ]
+  },
+  {
     "date": "2026-11-20",
     "papers": [
       {
