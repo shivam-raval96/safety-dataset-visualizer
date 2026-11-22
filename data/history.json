@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-11-22",
+    "datasets": [
+      {
+        "name": "Llm Jailbreak Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/manishrawat21/llm-jailbreak-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Agent Evals Redteam Harness",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/SerjCallier/agent-evals-redteam-harness",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Eval Ci",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/shenn667/llm-eval-ci",
+        "source": "github.com"
+      },
+      {
+        "name": "Turkce Ozet Halusinasyon Benchmark",
+        "category": "Deception",
+        "url": "https://github.com/foqunty/turkce-ozet-halusinasyon-benchmark",
+        "source": "github.com"
+      },
+      {
+        "name": "Agentic Vs Standard Rag Benchmark Evals",
+        "category": "Deception",
+        "url": "https://github.com/chandupradeep18/agentic-vs-standard-rag-benchmark-evals",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-21",
     "datasets": [
       {

@@ -6459,3 +6459,73 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, team
 - description: Evaluation and red-team harness for AI agents.
 - discovery-source: https://github.com/arunaellendulla973/agent-eval-lab
+
+## Llm Jailbreak Eval
+
+- organization: manishrawat21
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-21
+- license: MIT
+- citations: 0
+- url: https://github.com/manishrawat21/llm-jailbreak-eval
+- tags: github release, jailbreak, prompts
+- description: Testing why system prompts fail as security boundaries. Automated Jailbreak Success Rate (JSR) evaluation across temperatures and deterministic canary output defense on Qwen2.5.
+- discovery-source: https://github.com/manishrawat21/llm-jailbreak-eval
+
+## Agent Evals Redteam Harness
+
+- organization: SerjCallier
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-21
+- license: Unknown
+- citations: 0
+- url: https://github.com/SerjCallier/agent-evals-redteam-harness
+- tags: github release, redteam
+- description: Deterministic Evals, Benchmarks and Safety Testing for LLM agents (Python 3.12, FastAPI, Pydantic v2, Pytest, LiteLLM).
+- discovery-source: https://github.com/SerjCallier/agent-evals-redteam-harness
+
+## Llm Eval Ci
+
+- organization: shenn667
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-16
+- license: MIT
+- citations: 0
+- url: https://github.com/shenn667/llm-eval-ci
+- tags: github release, injection, prompt
+- description: pytest for LLMs in CI: deterministic, stdlib-only eval checks, safety tripwires (PII & prompt injection), and blocking exit codes.
+- discovery-source: https://github.com/shenn667/llm-eval-ci
+
+## Turkce Ozet Halusinasyon Benchmark
+
+- organization: foqunty
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-21
+- license: Unknown
+- citations: 0
+- url: https://github.com/foqunty/turkce-ozet-halusinasyon-benchmark
+- tags: github release, hallucination
+- description: Turkish summarization + hallucination benchmark: do LLMs keep numbers, dates and names? 10 models tested.
+- discovery-source: https://github.com/foqunty/turkce-ozet-halusinasyon-benchmark
+
+## Agentic Vs Standard Rag Benchmark Evals
+
+- organization: chandupradeep18
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-21
+- license: Unknown
+- citations: 0
+- url: https://github.com/chandupradeep18/agentic-vs-standard-rag-benchmark-evals
+- tags: github release, faithfulness, hallucination
+- description: Head-to-head RAG benchmarking pipeline comparing Agentic RAG (LangGraph + ChromaDB + Groq) vs. Standard RAG (Qdrant + NVIDIA). Evaluates latency, faithfulness, answer relevancy, context.
+- discovery-source: https://github.com/chandupradeep18/agentic-vs-standard-rag-benchmark-evals
