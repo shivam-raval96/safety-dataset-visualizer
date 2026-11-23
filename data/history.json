@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-23",
+    "datasets": [
+      {
+        "name": "Llm Eval Kit",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/laxmikanthrm/llm-eval-kit",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-22",
     "datasets": [
       {

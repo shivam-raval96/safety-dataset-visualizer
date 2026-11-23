@@ -6529,3 +6529,17 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, faithfulness, hallucination
 - description: Head-to-head RAG benchmarking pipeline comparing Agentic RAG (LangGraph + ChromaDB + Groq) vs. Standard RAG (Qdrant + NVIDIA). Evaluates latency, faithfulness, answer relevancy, context.
 - discovery-source: https://github.com/chandupradeep18/agentic-vs-standard-rag-benchmark-evals
+
+## Llm Eval Kit
+
+- organization: laxmikanthrm
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-22
+- license: MIT
+- citations: 0
+- url: https://github.com/laxmikanthrm/llm-eval-kit
+- tags: github release, prompt
+- description: Offline evaluation for LLM outputs: groundedness, relevance, refusals and format checks, with A/B prompt comparison and a CI quality gate.
+- discovery-source: https://github.com/laxmikanthrm/llm-eval-kit
