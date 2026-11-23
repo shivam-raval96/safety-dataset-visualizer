@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-11-23",
+    "papers": [
+      {
+        "title": "Training Language Models for Introspective Oversight",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Alex Lin Wang et al.",
+        "url": "https://arxiv.org/abs/2611.23365"
+      },
+      {
+        "title": "Eval awareness remains an unsolved problem",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Vincent Cheng",
+        "url": "https://www.lesswrong.com/posts/sgJrCMqguWoJqegbN/eval-awareness-remains-an-unsolved-problem"
+      },
+      {
+        "title": "Amendability and \"Solving Alignment\"",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "davidg",
+        "url": "https://www.lesswrong.com/posts/3qi53Zmyoaz83CJ3n/amendability-and-solving-alignment"
+      },
+      {
+        "title": "Do we know what we are building?",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Payal Priyadarshini",
+        "url": "https://www.lesswrong.com/posts/MatBxrRe9x8tLeddg/do-we-know-what-we-are-building"
+      },
+      {
+        "title": "Post training is fundamentally dangerous",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Yair Halberstadt",
+        "url": "https://www.lesswrong.com/posts/CoRJ9saddvsXti4m2/post-training-is-fundamentally-dangerous"
+      }
+    ]
+  },
+  {
     "date": "2026-11-22",
     "papers": [
       {

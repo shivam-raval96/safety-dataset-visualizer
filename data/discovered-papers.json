@@ -6948,5 +6948,65 @@
     "url": "https://www.lesswrong.com/posts/7Skw6caJxPrBDetCC/gpt-6-2-astra-and-sol-the-system-card",
     "confidence": "Broad",
     "matchedBy": "evaluation awareness"
+  },
+  {
+    "title": "Training Language Models for Introspective Oversight",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Alex Lin Wang et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-17",
+    "summary": "Language models increasingly exhibit behaviors that are difficult to detect in transcripts, such as reward hacking, deception, and.",
+    "url": "https://arxiv.org/abs/2611.23365",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Eval awareness remains an unsolved problem",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Vincent Cheng",
+    "year": 2026,
+    "publishedAt": "2026-11-22",
+    "summary": "Intro In every recent system card, we see some version of this caveat: the model shows high eval awareness, and therefore we are less confident in our.",
+    "url": "https://www.lesswrong.com/posts/sgJrCMqguWoJqegbN/eval-awareness-remains-an-unsolved-problem",
+    "confidence": "High",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Amendability and \"Solving Alignment\"",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "davidg",
+    "year": 2026,
+    "publishedAt": "2026-11-22",
+    "summary": "Often people reference \"solving alignment\" as a win condition for AI safety, but I think it's important to specify what this.",
+    "url": "https://www.lesswrong.com/posts/3qi53Zmyoaz83CJ3n/amendability-and-solving-alignment",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Do we know what we are building?",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Payal Priyadarshini",
+    "year": 2026,
+    "publishedAt": "2026-11-22",
+    "summary": "Late at night, almost half asleep, I went to pick up the packages from the mailroom and out of nowhere I found myself chatting about AI with the doorman while he was handing me the.",
+    "url": "https://www.lesswrong.com/posts/MatBxrRe9x8tLeddg/do-we-know-what-we-are-building",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Post training is fundamentally dangerous",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Yair Halberstadt",
+    "year": 2026,
+    "publishedAt": "2026-11-22",
+    "summary": "I actually think we have fairly good techniques to detect and prevent dangerous behaviours during AI.",
+    "url": "https://www.lesswrong.com/posts/CoRJ9saddvsXti4m2/post-training-is-fundamentally-dangerous",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]
