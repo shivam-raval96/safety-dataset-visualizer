@@ -6543,3 +6543,72 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, prompt
 - description: Offline evaluation for LLM outputs: groundedness, relevance, refusals and format checks, with A/B prompt comparison and a CI quality gate.
 - discovery-source: https://github.com/laxmikanthrm/llm-eval-kit
+
+## Team Early Warning Eval
+
+- organization: tlavrova
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-23
+- license: Unknown
+- citations: 0
+- url: https://github.com/tlavrova/team-early-warning-eval
+- tags: github release, team, teaming
+- description: Evaluation harness for a synthetic 'team early-warning' LLM agent — golden dataset, trigger metrics, G-Eval, emotion-inference check, DeepTeam red-teaming and a CI release gate.
+- discovery-source: https://github.com/tlavrova/team-early-warning-eval
+
+## Promptfoo Eval Example
+
+- organization: jeanljh
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-23
+- license: MIT
+- citations: 0
+- url: https://github.com/jeanljh/promptfoo-eval-example
+- tags: github release, teaming
+- description: Hands-on promptfoo examples for testing LLM apps, from your first eval to red teaming and CI.
+- discovery-source: https://github.com/jeanljh/promptfoo-eval-example
+
+## Ai Safety And Harmful Content Evaluation
+
+- organization: whoistysean
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-23
+- license: Unknown
+- citations: 0
+- url: https://github.com/whoistysean/ai-safety-and-harmful-content-evaluation
+- tags: github release, harmful, refusal
+- description: Practical exercises demonstrating AI safety evaluation, harmful-content detection, refusal quality, and safe response alternatives.
+- discovery-source: https://github.com/whoistysean/ai-safety-and-harmful-content-evaluation
+
+## GIFI: Gender Inclusivity Fairness Index for LLMs
+
+- organization: szyszy
+- category: Bias
+- samples: 5.7k
+- year: 2026
+- published-at: 2026-11-23
+- license: OTHER
+- citations: 0
+- url: https://huggingface.co/datasets/szyszy/GIFI-Gender-Bias-Pronoun-Benchmark
+- tags: fairness, bias, gender-bias, pronouns, neopronouns, non-binary, llm-evaluation, evaluation
+- description: GIFI-Gender-Bias-Pronoun-Benchmark Content warning. The rtp config comes from RealToxicityPrompts and contains profanity, sexual content, violence and insults. It is meant for measuring model behavior.
+
+## Llm Hallucination Eval Bioinformatics
+
+- organization: kosala-dev
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-22
+- license: MIT
+- citations: 0
+- url: https://github.com/kosala-dev/llm-hallucination-eval-bioinformatics
+- tags: github release, hallucination
+- description: llm-hallucination-eval-bioinformatics.
+- discovery-source: https://github.com/kosala-dev/llm-hallucination-eval-bioinformatics

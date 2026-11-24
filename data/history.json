@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-11-24",
+    "datasets": [
+      {
+        "name": "Team Early Warning Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/tlavrova/team-early-warning-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Promptfoo Eval Example",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/jeanljh/promptfoo-eval-example",
+        "source": "github.com"
+      },
+      {
+        "name": "Ai Safety And Harmful Content Evaluation",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/whoistysean/ai-safety-and-harmful-content-evaluation",
+        "source": "github.com"
+      },
+      {
+        "name": "GIFI: Gender Inclusivity Fairness Index for LLMs",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/szyszy/GIFI-Gender-Bias-Pronoun-Benchmark",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Hallucination Eval Bioinformatics",
+        "category": "Deception",
+        "url": "https://github.com/kosala-dev/llm-hallucination-eval-bioinformatics",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-23",
     "datasets": [
       {
