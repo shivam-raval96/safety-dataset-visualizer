@@ -7008,5 +7008,113 @@
     "url": "https://www.lesswrong.com/posts/CoRJ9saddvsXti4m2/post-training-is-fundamentally-dangerous",
     "confidence": "Broad",
     "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Calibrated Decision Rewards: Training Language Models with a Judge That Knows How Sure It Is",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Rudransh Agnihotri & Manasvi Kapoor",
+    "year": 2026,
+    "publishedAt": "2026-11-18",
+    "summary": "Reinforcement learning (RL) can only teach a language model what its reward can.",
+    "url": "https://arxiv.org/abs/2611.25135",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Persona Space Seems Blind to Cheating",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "unruly abstractions",
+    "year": 2026,
+    "publishedAt": "2026-11-23",
+    "summary": "A common persona framework fails to capture reward-hacking behavior. This work was done as part of an ARENA 9.0 capstone project. Results are preliminary. Summary We hypothesized that the reward-hacking behavior observed in LLMs is persona-mediated. We.",
+    "url": "https://www.lesswrong.com/posts/uovDC22en2iirta4h/persona-space-seems-blind-to-cheating",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Most attempts at measuring eval awareness overestimate it",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Dean Valentine",
+    "year": 2026,
+    "publishedAt": "2026-11-24",
+    "summary": "Alignment researchers often want to gather evidence on whether experimental and commercial AIs have our best interests in mind, or are just optimizing some proxy that they learned in training - and if the latter, where the two.",
+    "url": "https://www.lesswrong.com/posts/7Zvs6w7BzLFYoGzDH/most-attempts-at-measuring-eval-awareness-overestimate-it",
+    "confidence": "High",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Elizabeth Holmes, honeypotting, and exploration-hacking",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "davidg",
+    "year": 2026,
+    "publishedAt": "2026-11-24",
+    "summary": "Like many people, I recently watched You Can See Everything . I'll call its purported star 'movie-Elizabeth-Holmes' (MEH) to distinguish her from real-world Elizabeth Holmes, whom we have movie-external evidence about. I've had many discussions about the.",
+    "url": "https://www.lesswrong.com/posts/rTdLpoLi2DHzitFGz/elizabeth-holmes-honeypotting-and-exploration-hacking",
+    "confidence": "Medium",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Ghost Hunt: a steering approach to model backdoors",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "Daria Teodora Harabor",
+    "year": 2026,
+    "publishedAt": "2026-11-24",
+    "summary": "TL;DR We tried to switch off the backdoors in 16 backdoored models (up to 8B) using activation.",
+    "url": "https://www.lesswrong.com/posts/QazdpnzTYqARAB8Ed/ghost-hunt-a-steering-approach-to-model-backdoors-1",
+    "confidence": "Medium",
+    "matchedBy": "deceptive alignment"
+  },
+  {
+    "title": "A detective on demand: the Automated Auditor",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Jasper Blank",
+    "year": 2026,
+    "publishedAt": "2026-11-24",
+    "summary": "TL;DR: An automated auditor can make it possible to audit compute for frontier AI.",
+    "url": "https://www.lesswrong.com/posts/pFtxnbiF2Ehohvd9e/a-detective-on-demand-the-automated-auditor",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Mikoshi: Open infrastructure for agent swarm alignment research",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Skye",
+    "year": 2026,
+    "publishedAt": "2026-11-24",
+    "summary": "TLDR: After the Hugging Face incident, it's clear more research on alignment failures in swarms is.",
+    "url": "https://www.lesswrong.com/posts/gsXkRoEKRnJyaFYEP/mikoshi-open-infrastructure-for-agent-swarm-alignment",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "Misguided power-seeking",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Brad Taylor",
+    "year": 2026,
+    "publishedAt": "2026-11-24",
+    "summary": "TL;DR: Standard AI power-seeking scenarios focus on rational power-seeking, often assuming decisive strategic advantage and requiring at least a plausible chance of.",
+    "url": "https://www.lesswrong.com/posts/ubceFEqT6bQWKyAWb/misguided-power-seeking",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "The Warning Shot vs. Doom Balance Is Better for White-Box Control Than Black-Box",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "GabrielKS",
+    "year": 2026,
+    "publishedAt": "2026-11-24",
+    "summary": "Many [1] [2] [3] [4] have articulated the Warning Shot Argument against AI.",
+    "url": "https://www.lesswrong.com/posts/ho9LepcGS8dxLzWcE/the-warning-shot-vs-doom-balance-is-better-for-white-box",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
   }
 ]

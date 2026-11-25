@@ -1,5 +1,73 @@
 [
   {
+    "date": "2026-11-25",
+    "papers": [
+      {
+        "title": "Calibrated Decision Rewards: Training Language Models with a Judge That Knows How Sure It Is",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Rudransh Agnihotri & Manasvi Kapoor",
+        "url": "https://arxiv.org/abs/2611.25135"
+      },
+      {
+        "title": "Persona Space Seems Blind to Cheating",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "unruly abstractions",
+        "url": "https://www.lesswrong.com/posts/uovDC22en2iirta4h/persona-space-seems-blind-to-cheating"
+      },
+      {
+        "title": "Most attempts at measuring eval awareness overestimate it",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Dean Valentine",
+        "url": "https://www.lesswrong.com/posts/7Zvs6w7BzLFYoGzDH/most-attempts-at-measuring-eval-awareness-overestimate-it"
+      },
+      {
+        "title": "Elizabeth Holmes, honeypotting, and exploration-hacking",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "davidg",
+        "url": "https://www.lesswrong.com/posts/rTdLpoLi2DHzitFGz/elizabeth-holmes-honeypotting-and-exploration-hacking"
+      },
+      {
+        "title": "Ghost Hunt: a steering approach to model backdoors",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "Daria Teodora Harabor",
+        "url": "https://www.lesswrong.com/posts/QazdpnzTYqARAB8Ed/ghost-hunt-a-steering-approach-to-model-backdoors-1"
+      },
+      {
+        "title": "A detective on demand: the Automated Auditor",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Jasper Blank",
+        "url": "https://www.lesswrong.com/posts/pFtxnbiF2Ehohvd9e/a-detective-on-demand-the-automated-auditor"
+      },
+      {
+        "title": "Mikoshi: Open infrastructure for agent swarm alignment research",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Skye",
+        "url": "https://www.lesswrong.com/posts/gsXkRoEKRnJyaFYEP/mikoshi-open-infrastructure-for-agent-swarm-alignment"
+      },
+      {
+        "title": "Misguided power-seeking",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "Brad Taylor",
+        "url": "https://www.lesswrong.com/posts/ubceFEqT6bQWKyAWb/misguided-power-seeking"
+      },
+      {
+        "title": "The Warning Shot vs. Doom Balance Is Better for White-Box Control Than Black-Box",
+        "topic": "Monitoring",
+        "kind": "LessWrong",
+        "authors": "GabrielKS",
+        "url": "https://www.lesswrong.com/posts/ho9LepcGS8dxLzWcE/the-warning-shot-vs-doom-balance-is-better-for-white-box"
+      }
+    ]
+  },
+  {
     "date": "2026-11-23",
     "papers": [
       {
