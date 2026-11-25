@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-11-25",
+    "datasets": [
+      {
+        "name": "Llm Redteam Eval Harness",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/yudi1999/llm-redteam-eval-harness",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Agent Evaluation And Red Teaming",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/daco226/llm-agent-evaluation-and-red-teaming",
+        "source": "github.com"
+      },
+      {
+        "name": "Faq Hallucination Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/junaaaak/faq-hallucination-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Model Fairness Evaluation",
+        "category": "Bias",
+        "url": "https://github.com/kartikey88/model-fairness-evaluation",
+        "source": "github.com"
+      },
+      {
+        "name": "Rag Llm Eval Suite",
+        "category": "Deception",
+        "url": "https://github.com/alexandrescuuu/rag-llm-eval-suite",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-24",
     "datasets": [
       {

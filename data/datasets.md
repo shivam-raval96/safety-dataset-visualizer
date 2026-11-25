@@ -6612,3 +6612,73 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, hallucination
 - description: llm-hallucination-eval-bioinformatics.
 - discovery-source: https://github.com/kosala-dev/llm-hallucination-eval-bioinformatics
+
+## Llm Redteam Eval Harness
+
+- organization: yudi1999
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-24
+- license: Unknown
+- citations: 0
+- url: https://github.com/yudi1999/llm-redteam-eval-harness
+- tags: github release, redteam
+- description: llm-redteam-eval-harness.
+- discovery-source: https://github.com/yudi1999/llm-redteam-eval-harness
+
+## Llm Agent Evaluation And Red Teaming
+
+- organization: daco226
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-24
+- license: Unknown
+- citations: 0
+- url: https://github.com/daco226/llm-agent-evaluation-and-red-teaming
+- tags: github release, attack, teaming
+- description: Red-teaming and evaluating an enterprise RAG agent in Microsoft Copilot Studio. Frozen ground truth, 84 functional and 54 security runs, 6 findings traced to.
+- discovery-source: https://github.com/daco226/llm-agent-evaluation-and-red-teaming
+
+## Faq Hallucination Eval
+
+- organization: junaaaak
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-24
+- license: Unknown
+- citations: 0
+- url: https://github.com/junaaaak/faq-hallucination-eval
+- tags: github release, prompts, refusal
+- description: Local eval of LLM hallucination in a college FAQ bot: a fictional fact sheet, ~120 questions (half unanswerable), and small Ollama models scored on.
+- discovery-source: https://github.com/junaaaak/faq-hallucination-eval
+
+## Model Fairness Evaluation
+
+- organization: kartikey88
+- category: Bias
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-24
+- license: Unknown
+- citations: 0
+- url: https://github.com/kartikey88/model-fairness-evaluation
+- tags: github release, fairness
+- description: Experimental model evaluation with accuracy, demographic parity, equal opportunity metrics, and performance-fairness visualizations.
+- discovery-source: https://github.com/kartikey88/model-fairness-evaluation
+
+## Rag Llm Eval Suite
+
+- organization: alexandrescuuu
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-24
+- license: Unknown
+- citations: 0
+- url: https://github.com/alexandrescuuu/rag-llm-eval-suite
+- tags: github release, hallucination
+- description: Automated regression testing and hallucination benchmark for LLMs.
+- discovery-source: https://github.com/alexandrescuuu/rag-llm-eval-suite
