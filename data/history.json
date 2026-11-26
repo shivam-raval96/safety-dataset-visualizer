@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-11-26",
+    "datasets": [
+      {
+        "name": "Prompt Injection Jailbreak Chinese Japanese Korean English",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/CheezOne/prompt-injection-jailbreak-chinese-japanese-korean-english",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Indian Multilingual Bias Dataset",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/rakesh00010/Indian-Multilingual-Bias-Dataset",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Calibra Eval",
+        "category": "Bias",
+        "url": "https://github.com/shreyas-tech7/calibra-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Fairness Aware Differential Private Learning And Evaluation Of Llms",
+        "category": "Bias",
+        "url": "https://github.com/Garv98/Fairness-aware-differential-private-learning-and-evaluation-of-LLMs",
+        "source": "github.com"
+      },
+      {
+        "name": "Openaudit",
+        "category": "Multiagent",
+        "url": "https://github.com/decoderesearch/openaudit",
+        "source": "github.com"
+      }
+    ]
+  },
+  {
     "date": "2026-11-25",
     "datasets": [
       {

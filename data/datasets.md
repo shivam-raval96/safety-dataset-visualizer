@@ -6682,3 +6682,71 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: github release, hallucination
 - description: Automated regression testing and hallucination benchmark for LLMs.
 - discovery-source: https://github.com/alexandrescuuu/rag-llm-eval-suite
+
+## Prompt Injection Jailbreak Chinese Japanese Korean English
+
+- organization: CheezOne
+- category: Jailbreak / red-teaming
+- samples: 18.5k
+- year: 2026
+- published-at: 2026-11-25
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/CheezOne/prompt-injection-jailbreak-chinese-japanese-korean-english
+- tags: prompt-injection, jailbreak, llm-security, guardrails, synthetic, chinese, japanese, korean
+- description: Prompt-injection & jailbreak dataset — Chinese, Japanese, Korean, English Binary-labelled messages and documents (label 1 = attack, 0 = benign) for training and evaluating.
+
+## Indian Multilingual Bias Dataset
+
+- organization: rakesh00010
+- category: Bias
+- samples: 2.3k
+- year: 2026
+- published-at: 2026-11-25
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/rakesh00010/Indian-Multilingual-Bias-Dataset
+- tags: bias-detection, fairness, social-bias, india, caste, gender, religion, race
+- description: Indian Multilingual Bias Dataset Dataset Description The Indian Multilingual Bias Dataset is a comprehensive collection designed to evaluate and measure social biases in Large.
+
+## Calibra Eval
+
+- organization: shreyas-tech7
+- category: Bias
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-20
+- license: MIT
+- citations: 0
+- url: https://github.com/shreyas-tech7/calibra-eval
+- tags: github release, bias
+- description: Offline agent evals that measure how far their own LLM judge can be trusted: kappa, bias probes, paired stats, full replay.
+- discovery-source: https://github.com/shreyas-tech7/calibra-eval
+
+## Fairness Aware Differential Private Learning And Evaluation Of Llms
+
+- organization: Garv98
+- category: Bias
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-24
+- license: Unknown
+- citations: 0
+- url: https://github.com/Garv98/Fairness-aware-differential-private-learning-and-evaluation-of-LLMs
+- tags: github release, fairness
+- description: Fairness-aware-differential-private-learning-and-evaluation-of-LLMs.
+- discovery-source: https://github.com/Garv98/Fairness-aware-differential-private-learning-and-evaluation-of-LLMs
+
+## Openaudit
+
+- organization: decoderesearch
+- category: Multiagent
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-23
+- license: Apache-2.0
+- citations: 0
+- url: https://github.com/decoderesearch/openaudit
+- tags: lesswrong release, ai safety, coordination / cooperation, interpretability (ml & ai), ai
+- description: Independent evaluations of AI models, organizations, and safety methods.
+- discovery-source: https://www.lesswrong.com/posts/AZmwgxBFvCjf2t37i/openaudit-platform-for-safety-evaluations-of-models-orgs-and
