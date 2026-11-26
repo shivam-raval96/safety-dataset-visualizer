@@ -7116,5 +7116,41 @@
     "url": "https://www.lesswrong.com/posts/ho9LepcGS8dxLzWcE/the-warning-shot-vs-doom-balance-is-better-for-white-box",
     "confidence": "Broad",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "Preserving Pretrained CFG Structure in RL for Diffusion Models with Conditional Contrast Regularization",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Yunfei Zheng et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-20",
+    "summary": "Reinforcement Learning (RL) has become an important component in the post-training of diffusion.",
+    "url": "https://arxiv.org/abs/2611.27288",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Cross Pressure Evaluation Experiments with Llama 3.3 70B Instruct",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Jack Lakkapragada",
+    "year": 2026,
+    "publishedAt": "2026-11-25",
+    "summary": "TL;DR The central idea of the experiments was to place Llama 3.3 70B Instruct in different pressure situations and check if the answers.",
+    "url": "https://www.lesswrong.com/posts/opJYeDFAbrwsas4qt/cross-pressure-evaluation-experiments-with-llama-3-3-70b",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
+  },
+  {
+    "title": "The Curious Case of Humans in the Age of SI",
+    "topic": "Monitoring",
+    "kind": "LessWrong",
+    "authors": "Marzipan",
+    "year": 2026,
+    "publishedAt": "2026-11-25",
+    "summary": "Hello fellow humans. This is a shout into the void. 10 years ago, today was science fiction resrved for black mirror and ex machina.5 years ago few - including those with intellect - believed we would ever be here, or at least not within two decades. 2 years.",
+    "url": "https://www.lesswrong.com/posts/2mpNnC5HY2efS3fH7/the-curious-case-of-humans-in-the-age-of-si",
+    "confidence": "Broad",
+    "matchedBy": "AI control"
   }
 ]
