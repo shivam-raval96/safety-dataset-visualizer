@@ -7152,5 +7152,41 @@
     "url": "https://www.lesswrong.com/posts/2mpNnC5HY2efS3fH7/the-curious-case-of-humans-in-the-age-of-si",
     "confidence": "Broad",
     "matchedBy": "AI control"
+  },
+  {
+    "title": "Go seeking mysteries",
+    "topic": "Model organisms",
+    "kind": "LessWrong",
+    "authors": "David Africa",
+    "year": 2026,
+    "publishedAt": "2026-11-26",
+    "summary": "I think an impactful line of research would be to hunt for unexplained phenomena: simple things that are surprising and interesting, given the most parsimonious explanation of the.",
+    "url": "https://www.lesswrong.com/posts/f5r7FpLWiFQ7aeJu9/go-seeking-mysteries",
+    "confidence": "Broad",
+    "matchedBy": "emergent misalignment"
+  },
+  {
+    "title": "Models probably should not know so much about how we train and evaluate them",
+    "topic": "Eval awareness",
+    "kind": "LessWrong",
+    "authors": "Cam",
+    "year": 2026,
+    "publishedAt": "2026-11-26",
+    "summary": "Tl;dr: It seems plausible that labs should filter information about specific training environments, evaluations, and oversight mechanisms from the pretraining data of potentially dangerous.",
+    "url": "https://www.lesswrong.com/posts/5dJ2Bu9hZDQXxvADR/models-probably-should-not-know-so-much-about-how-we-train",
+    "confidence": "Broad",
+    "matchedBy": "eval awareness"
+  },
+  {
+    "title": "Update - BioBlue: Systematic runaway-optimiser-like LLM failure modes on biologically and economically aligned AI safety benchmarks for LLMs with simplified observation format",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Roland Pihlakas",
+    "year": 2026,
+    "publishedAt": "2026-11-26",
+    "summary": "By Roland Pihlakas and Sruthi Susan Kuriakose This post is a copy of our Arxiv preprint available at https://arxiv.org/abs/2509.02655.",
+    "url": "https://www.lesswrong.com/posts/obaXD5iJFbJ2fyXL4/update-bioblue-systematic-runaway-optimiser-like-llm-failure",
+    "confidence": "Broad",
+    "matchedBy": "specification gaming"
   }
 ]

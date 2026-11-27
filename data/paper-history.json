@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-11-27",
+    "papers": [
+      {
+        "title": "Go seeking mysteries",
+        "topic": "Model organisms",
+        "kind": "LessWrong",
+        "authors": "David Africa",
+        "url": "https://www.lesswrong.com/posts/f5r7FpLWiFQ7aeJu9/go-seeking-mysteries"
+      },
+      {
+        "title": "Models probably should not know so much about how we train and evaluate them",
+        "topic": "Eval awareness",
+        "kind": "LessWrong",
+        "authors": "Cam",
+        "url": "https://www.lesswrong.com/posts/5dJ2Bu9hZDQXxvADR/models-probably-should-not-know-so-much-about-how-we-train"
+      },
+      {
+        "title": "Update - BioBlue: Systematic runaway-optimiser-like LLM failure modes on biologically and economically aligned AI safety benchmarks for LLMs with simplified observation format",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Roland Pihlakas",
+        "url": "https://www.lesswrong.com/posts/obaXD5iJFbJ2fyXL4/update-bioblue-systematic-runaway-optimiser-like-llm-failure"
+      }
+    ]
+  },
+  {
     "date": "2026-11-26",
     "papers": [
       {
