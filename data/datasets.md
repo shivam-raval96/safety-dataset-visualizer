@@ -6750,3 +6750,71 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - tags: lesswrong release, ai safety, coordination / cooperation, interpretability (ml & ai), ai
 - description: Independent evaluations of AI models, organizations, and safety methods.
 - discovery-source: https://www.lesswrong.com/posts/AZmwgxBFvCjf2t37i/openaudit-platform-for-safety-evaluations-of-models-orgs-and
+
+## Prompt Injection Benchmark
+
+- organization: DaveyD347
+- category: Jailbreak / red-teaming
+- samples: 7.6k
+- year: 2026
+- published-at: 2026-11-26
+- license: APACHE 2.0
+- citations: 0
+- url: https://huggingface.co/datasets/DaveyD347/prompt-injection-benchmark
+- tags: security, cybersecurity, prompt-injection, jailbreak, llm-security, guardrails, red-teaming, synthetic
+- description: Prompt Injection Benchmark A labeled benchmark for prompt-injection detectors: 7,607 inputs covering 21 attack techniques in four families (direct injection, jailbreaks, obfuscation, indirect injection).
+
+## Ai Benchmark Red Teaming Portfolio
+
+- organization: pavan9493197
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-26
+- license: NOASSERTION
+- citations: 0
+- url: https://github.com/pavan9493197/ai-benchmark-red-teaming-portfolio
+- tags: github release, injection, prompt, teaming
+- description: Independent AI Benchmark, LLM Evaluation, Prompt Injection and Cybersecurity Research Projects.
+- discovery-source: https://github.com/pavan9493197/ai-benchmark-red-teaming-portfolio
+
+## Ai Evaluation Portfolio
+
+- organization: ogedengbeibrahim2001-web
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-26
+- license: Unknown
+- citations: 0
+- url: https://github.com/ogedengbeibrahim2001-web/AI-Evaluation-Portfolio
+- tags: github release, hallucination
+- description: Benchmarking, hallucination testing, prompt engineering, and automated evaluation workflows for LLMs.
+- discovery-source: https://github.com/ogedengbeibrahim2001-web/AI-Evaluation-Portfolio
+
+## Llm Evals Enterprise Guardrails
+
+- organization: Jonatan-Oliveira
+- category: Deception
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-26
+- license: Unknown
+- citations: 0
+- url: https://github.com/Jonatan-Oliveira/llm-evals-enterprise-guardrails
+- tags: github release, faithfulness, hallucination
+- description: Framework offline de avaliação de qualidade para agentes LLM e Text-to-SQL (Faithfulness, Schema Adherence, Hallucination Detector).
+- discovery-source: https://github.com/Jonatan-Oliveira/llm-evals-enterprise-guardrails
+
+## AgentPulse-5G Synthetic Agent Telemetry
+
+- organization: zubairH123
+- category: Agentic
+- samples: 20k
+- year: 2026
+- published-at: 2026-11-26
+- license: MIT
+- citations: 0
+- url: https://huggingface.co/datasets/zubairH123/agentpulse-5g
+- tags: synthetic-data, ai-agents, observability, failure-prediction, reliability, mlops, llmops
+- description: Can telemetry predict when an AI agent will fail? AgentPulse-5G is an open, reproducible synthetic benchmark for AI agent failure prediction. Explore 20,000 simulated.

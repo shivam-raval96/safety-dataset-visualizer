@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-11-27",
+    "datasets": [
+      {
+        "name": "Prompt Injection Benchmark",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://huggingface.co/datasets/DaveyD347/prompt-injection-benchmark",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Ai Benchmark Red Teaming Portfolio",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/pavan9493197/ai-benchmark-red-teaming-portfolio",
+        "source": "github.com"
+      },
+      {
+        "name": "Ai Evaluation Portfolio",
+        "category": "Deception",
+        "url": "https://github.com/ogedengbeibrahim2001-web/AI-Evaluation-Portfolio",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Evals Enterprise Guardrails",
+        "category": "Deception",
+        "url": "https://github.com/Jonatan-Oliveira/llm-evals-enterprise-guardrails",
+        "source": "github.com"
+      },
+      {
+        "name": "AgentPulse-5G Synthetic Agent Telemetry",
+        "category": "Agentic",
+        "url": "https://huggingface.co/datasets/zubairH123/agentpulse-5g",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-11-26",
     "datasets": [
       {
