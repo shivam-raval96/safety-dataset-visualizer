@@ -7188,5 +7188,29 @@
     "url": "https://www.lesswrong.com/posts/obaXD5iJFbJ2fyXL4/update-bioblue-systematic-runaway-optimiser-like-llm-failure",
     "confidence": "Broad",
     "matchedBy": "specification gaming"
+  },
+  {
+    "title": "Which Loopholes Get Found? Predicting Reward Hacking of LLM Judges Before RL Training",
+    "topic": "Reward hacking",
+    "kind": "Paper",
+    "authors": "Xuanyi Lyu et al.",
+    "year": 2026,
+    "publishedAt": "2026-11-22",
+    "summary": "A policy trained against an LLM judge can learn to exploit its.",
+    "url": "https://arxiv.org/abs/2611.29651",
+    "confidence": "High",
+    "matchedBy": "reward hacking"
+  },
+  {
+    "title": "Astra 6.2’s Brain Gets Smart But Its Head Gets Dumb",
+    "topic": "Reward hacking",
+    "kind": "LessWrong",
+    "authors": "Zvi",
+    "year": 2026,
+    "publishedAt": "2026-11-27",
+    "summary": "Astra 6.2 has very high intelligence. Astra 6.2 has very low wisdom. Astra will solve extremely hard problems, and also find the problem of ‘what did the user want me to do’ extremely hard. We thought those days were behind us, and yet it seems that they are.",
+    "url": "https://www.lesswrong.com/posts/RFTWNPhm8jmnmaF5t/astra-6-2-s-brain-gets-smart-but-its-head-gets-dumb",
+    "confidence": "Broad",
+    "matchedBy": "reward hacking"
   }
 ]

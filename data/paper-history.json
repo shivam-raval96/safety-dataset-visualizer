@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-11-28",
+    "papers": [
+      {
+        "title": "Which Loopholes Get Found? Predicting Reward Hacking of LLM Judges Before RL Training",
+        "topic": "Reward hacking",
+        "kind": "Paper",
+        "authors": "Xuanyi Lyu et al.",
+        "url": "https://arxiv.org/abs/2611.29651"
+      },
+      {
+        "title": "Astra 6.2’s Brain Gets Smart But Its Head Gets Dumb",
+        "topic": "Reward hacking",
+        "kind": "LessWrong",
+        "authors": "Zvi",
+        "url": "https://www.lesswrong.com/posts/RFTWNPhm8jmnmaF5t/astra-6-2-s-brain-gets-smart-but-its-head-gets-dumb"
+      }
+    ]
+  },
+  {
     "date": "2026-11-27",
     "papers": [
       {
