@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-11-28",
+    "datasets": [
+      {
+        "name": "NZ Workplace Dilemmas",
+        "category": "Values and preferences",
+        "url": "https://huggingface.co/datasets/1jamesthompson1/nz-workplace-dilemmas",
+        "source": "huggingface.co"
+      },
+      {
+        "name": "Llm Rlhf Eval Harness",
+        "category": "Values and preferences",
+        "url": "https://github.com/carlosmorente/llm-rlhf-eval-harness",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Preference Evaluation",
+        "category": "Values and preferences",
+        "url": "https://github.com/lazywizard15/llm-preference-evaluation",
+        "source": "github.com"
+      },
+      {
+        "name": "Korean Jamo Jailbreak Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/jangjunseo05/korean-jamo-jailbreak-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Agent Redteam Eval",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/yangzihan0806-cpu/llm-agent-redteam-eval",
+        "source": "github.com"
+      },
+      {
+        "name": "Llm Evaluation And Red Team",
+        "category": "Jailbreak / red-teaming",
+        "url": "https://github.com/nehagandhi6655/LLM-Evaluation-and-Red-team",
+        "source": "github.com"
+      },
+      {
+        "name": "Symphony-Bias",
+        "category": "Bias",
+        "url": "https://huggingface.co/datasets/yoyo-research-group/symphony-bias",
+        "source": "huggingface.co"
+      }
+    ]
+  },
+  {
     "date": "2026-11-27",
     "datasets": [
       {

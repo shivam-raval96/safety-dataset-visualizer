@@ -6818,3 +6818,99 @@ Add a dataset by copying one `##` section and filling in every field. Keep `cate
 - url: https://huggingface.co/datasets/zubairH123/agentpulse-5g
 - tags: synthetic-data, ai-agents, observability, failure-prediction, reliability, mlops, llmops
 - description: Can telemetry predict when an AI agent will fail? AgentPulse-5G is an open, reproducible synthetic benchmark for AI agent failure prediction. Explore 20,000 simulated.
+
+## NZ Workplace Dilemmas
+
+- organization: 1jamesthompson1
+- category: Values and preferences
+- samples: 30
+- year: 2026
+- published-at: 2026-11-27
+- license: CC BY NC SA 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/1jamesthompson1/nz-workplace-dilemmas
+- tags: new-zealand, moral-dilemmas, value-alignment, llm-evaluation, workplace, ai-assistants
+- description: ⚠️ WORK IN PROGRESS — Part of a research project running to November 2026. The wording, profiles and judge prompts may change between releases.
+
+## Llm Rlhf Eval Harness
+
+- organization: carlosmorente
+- category: Values and preferences
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-27
+- license: MIT
+- citations: 0
+- url: https://github.com/carlosmorente/llm-rlhf-eval-harness
+- tags: github release, preference
+- description: Automated LLM evaluation harness, Red Teaming prompt suite, and DPO/RLHF preference dataset curation pipeline.
+- discovery-source: https://github.com/carlosmorente/llm-rlhf-eval-harness
+
+## Llm Preference Evaluation
+
+- organization: lazywizard15
+- category: Values and preferences
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-27
+- license: Unknown
+- citations: 0
+- url: https://github.com/lazywizard15/llm-preference-evaluation
+- tags: github release, preference
+- description: Preference-data and rubric-based LLM evaluation pipeline with pairwise ranking, QA, and review workflows.
+- discovery-source: https://github.com/lazywizard15/llm-preference-evaluation
+
+## Korean Jamo Jailbreak Eval
+
+- organization: jangjunseo05
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-27
+- license: Unknown
+- citations: 0
+- url: https://github.com/jangjunseo05/korean-jamo-jailbreak-eval
+- tags: github release, jailbreak
+- description: 한글 자모 분해 기반 LLM 안전장치 우회 실험 (졸업 캡스톤, 공격팀).
+- discovery-source: https://github.com/jangjunseo05/korean-jamo-jailbreak-eval
+
+## Llm Agent Redteam Eval
+
+- organization: yangzihan0806-cpu
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-27
+- license: Unknown
+- citations: 0
+- url: https://github.com/yangzihan0806-cpu/llm-agent-redteam-eval
+- tags: github release, redteam
+- description: llm-agent-redteam-eval.
+- discovery-source: https://github.com/yangzihan0806-cpu/llm-agent-redteam-eval
+
+## Llm Evaluation And Red Team
+
+- organization: nehagandhi6655
+- category: Jailbreak / red-teaming
+- samples: Unknown
+- year: 2026
+- published-at: 2026-11-27
+- license: Unknown
+- citations: 0
+- url: https://github.com/nehagandhi6655/LLM-Evaluation-and-Red-team
+- tags: github release, team
+- description: LLM Evaluation and Red team.
+- discovery-source: https://github.com/nehagandhi6655/LLM-Evaluation-and-Red-team
+
+## Symphony-Bias
+
+- organization: yoyo-research-group
+- category: Bias
+- samples: 132
+- year: 2026
+- published-at: 2026-11-27
+- license: CC BY 4.0
+- citations: 0
+- url: https://huggingface.co/datasets/yoyo-research-group/symphony-bias
+- tags: multimodal, gender-bias, fairness, bias-evaluation, music, musical-instruments, audio, vision
+- description: Symphony-Bias: Exploring Gender Associations with Musical Instruments in Multimodal LLMs Dataset Overview Symphony-Bias is a parallel multimodal benchmark designed to investigate gender bias in.
